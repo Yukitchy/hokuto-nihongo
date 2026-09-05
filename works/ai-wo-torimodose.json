@@ -187,6 +187,31 @@
    "en": "Drill",
    "ja": "ドリル",
    "zh": "練習"
+  },
+  "kara": {
+   "en": "Karaoke",
+   "ja": "カラオケ",
+   "zh": "卡拉OK"
+  },
+  "kara_p": {
+   "en": "Paste the lyrics here once (copy them from the lyrics site). They stay only in this browser and are never uploaded. One line per lyric line; the page then lights up the line being sung.",
+   "ja": "歌詞サイトからコピーして1回だけここに貼る（この端末のブラウザにだけ保存され、どこにも送られない）。1行＝歌詞1行。貼ると、歌っている行が光る。",
+   "zh": "從歌詞網站複製後貼在這裡一次（只存在這個瀏覽器，不會上傳）。一行＝一句歌詞。貼上後正在唱的那句會亮起。"
+  },
+  "kara_save": {
+   "en": "Save",
+   "ja": "保存",
+   "zh": "儲存"
+  },
+  "kara_edit": {
+   "en": "✎ Paste lyrics",
+   "ja": "✎ 歌詞を貼る",
+   "zh": "✎ 貼上歌詞"
+  },
+  "kara_empty": {
+   "en": "No lyrics yet. Tap ✎, paste them from the lyrics site, save. Then this box follows the song like karaoke.",
+   "ja": "まだ歌詞がない。✎ を押して歌詞サイトから貼って保存。すると歌に合わせてここが光る。",
+   "zh": "還沒有歌詞。按 ✎，從歌詞網站貼上並儲存，這裡就會像卡拉OK一樣跟著亮。"
   }
  },
  "lyrics": {
@@ -1329,6 +1354,70 @@
    "お前はもう死んでいる",
    "我が生涯に一片の悔いなし",
    "次はあなたの好きな作品で。"
+  ]
+ },
+ "karaoke": {
+  "lines": [
+   [
+    6.0,
+    11.6
+   ],
+   [
+    11.6,
+    17.3
+   ],
+   [
+    18.0,
+    24.0
+   ],
+   [
+    24.0,
+    29.2
+   ],
+   [
+    30.0,
+    31.4
+   ],
+   [
+    31.5,
+    34.8
+   ],
+   [
+    35.7,
+    37.4
+   ],
+   [
+    38.0,
+    40.8
+   ],
+   [
+    41.7,
+    45.6
+   ],
+   [
+    45.6,
+    47.9
+   ],
+   [
+    47.9,
+    53.1
+   ],
+   [
+    55.5,
+    61.1
+   ],
+   [
+    61.1,
+    66.8
+   ],
+   [
+    67.6,
+    72.9
+   ],
+   [
+    74.4,
+    77.4
+   ]
   ]
  }
 }

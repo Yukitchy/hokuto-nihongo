@@ -51,6 +51,20 @@
 .lk-tip{grid-area:tip;font-size:13px;color:var(--sub);font-weight:700}
 .lk-row .spk{grid-area:spk}
 #song{overflow:visible}#song::before{display:none}
+.kara{background:#fff;padding:14px 16px;margin:22px 0 0}
+html[data-motif="b"] section:nth-of-type(odd) .kara{background:#fff}
+.kara-h{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.kara-h h3{margin:0;flex:1}
+.kara-n{font-size:12px;color:var(--sub);font-weight:700}
+.kara-edit p{font-size:13px;color:var(--sub);margin:0 0 8px}
+.kara-edit textarea{width:100%;font:inherit;font-size:14px;border:1px solid rgba(0,0,0,.2);padding:8px;resize:vertical;background:var(--paper)}
+.kara-edit .row{margin:8px 0 12px;display:flex;gap:8px}
+.kara-lines{max-height:260px;overflow:auto;scroll-behavior:smooth;padding:4px 0}
+.kara-empty{font-size:14px;color:var(--sub);font-weight:700;padding:8px 0}
+.kl{padding:4px 8px;font-size:16px;line-height:1.5;color:var(--sub);cursor:pointer;border-radius:2px;transition:background .15s,color .15s}
+.kl:hover{color:var(--ink)}
+.kl.on{background:var(--gold);color:var(--ink);font-weight:900}
+.kl.done{color:rgba(0,0,0,.35)}
 body{padding-bottom:72px}
 .dock{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--ink);color:var(--paper);display:flex;align-items:center;gap:10px;padding:10px 14px;box-shadow:0 -6px 20px rgba(0,0,0,.18)}
 html[data-motif="b"] .dock{background:#000}
@@ -119,6 +133,17 @@ html[data-motif="b"] .dock{background:#000}
             {%- endfor %}
           </div>
         </div>
+        {%- if d.karaoke %}
+        <div class="kara" id="kara">
+          <div class="kara-h"><h3 {{ t(d.ui.kara) }}>{{ d.ui.kara.base }}</h3><span class="kara-n" id="karaCount"></span><button class="btn sm" id="karaEditBtn" {{ t(d.ui.kara_edit) }}>{{ d.ui.kara_edit.base }}</button></div>
+          <div class="kara-edit" id="karaEdit" hidden>
+            <p {{ t(d.ui.kara_p) }}>{{ d.ui.kara_p.base }}</p>
+            <textarea id="karaText" rows="8"></textarea>
+            <div class="row"><button class="btn sm primary" id="karaSave" {{ t(d.ui.kara_save) }}>{{ d.ui.kara_save.base }}</button></div>
+          </div>
+          <div class="kara-lines" id="karaLines"><div class="kara-empty" {{ t(d.ui.kara_empty) }}>{{ d.ui.kara_empty.base }}</div></div>
+        </div>
+        {%- endif %}
         {%- if d.linking_intro %}
         <div class="lk-intro">
           <h3 {{ t(d.linking_intro.h) }}>{{ d.linking_intro.h.base }}</h3>
@@ -272,6 +297,7 @@ function onYouTubeIframeAPIReady(){
     $('#now').textContent=fmt(t); $('#dTime').textContent=fmt(t)+' / '+fmt(dur);
     if(!seeking&&dur)$('#dRange').value=Math.round(t/dur*1000);
     $('#dPlay').textContent=P.getPlayerState()===1?'⏸':'▶';
+    karaTick(t);
     if(loop&&dur){const L=$('#dLoop');L.style.left=(loop.a/dur*100)+'%';L.style.width=((loop.b-loop.a)/dur*100)+'%';L.classList.add('on');$('#dLoopBtn').classList.add('on');}
     else{$('#dLoop').classList.remove('on');$('#dLoopBtn').classList.remove('on');}
   },200);
@@ -298,6 +324,30 @@ const R=$('#dRange');
 R.addEventListener('pointerdown',()=>{seeking=true}); R.addEventListener('pointerup',()=>{seeking=false});
 R.addEventListener('input',()=>{ if(!P||!P.getDuration)return; const dur=P.getDuration(); const t=R.value/1000*dur; $('#dTime').textContent=fmt(t)+' / '+fmt(dur); });
 R.addEventListener('change',()=>{ if(!P||!P.getDuration)return; const dur=P.getDuration(); const t=R.value/1000*dur; if(loop&&(t<loop.a||t>loop.b))stopLoop(); P.seekTo(t,true); P.playVideo(); seeking=false; });
+
+/* ---------- Karaoke (lyrics pasted by the learner, stored locally) ---------- */
+const KARA={{ (d.karaoke.lines if d.karaoke else [])|tojson }};
+const karaKey='kara-{{ d.slug }}'; let karaIdx=-1;
+function karaRender(){
+  const box=$('#karaLines'); if(!box)return;
+  const txt=(store.get(karaKey)||'').split(/\r?\n/).map(x=>x.trim()).filter(Boolean);
+  if(!txt.length){ $('#karaCount').textContent=''; return; }
+  box.innerHTML=txt.map((l,i)=>`<div class="kl" data-i="${i}">${l.replace(/</g,'&lt;')}</div>`).join('');
+  $('#karaCount').textContent=txt.length+' / '+KARA.length;
+  $$('.kl').forEach(el=>el.onclick=()=>{const k=KARA[+el.dataset.i]; if(k&&P){stopLoop();P.seekTo(k[0],true);P.playVideo();}});
+}
+function karaTick(t){
+  if(!KARA.length||!$('#karaLines'))return;
+  let idx=-1; for(let i=0;i<KARA.length;i++){ if(t>=KARA[i][0]-0.15&&t<(KARA[i+1]?KARA[i+1][0]:KARA[i][1]+2)){idx=i;break;} }
+  if(idx===karaIdx)return; karaIdx=idx;
+  $$('.kl').forEach(el=>{const i=+el.dataset.i; el.classList.toggle('on',i===idx); el.classList.toggle('done',i<idx);});
+  const on=$('.kl.on'); if(on){const box=$('#karaLines'); box.scrollTop=on.offsetTop-box.offsetTop-box.clientHeight/2+on.clientHeight/2;}
+}
+if($('#kara')){
+  $('#karaEditBtn').onclick=()=>{const e=$('#karaEdit'); e.hidden=!e.hidden; if(!e.hidden){$('#karaText').value=store.get(karaKey)||'';$('#karaText').focus();}};
+  $('#karaSave').onclick=()=>{store.set(karaKey,$('#karaText').value); $('#karaEdit').hidden=true; karaRender(); toast('Saved on this device');};
+  karaRender();
+}
 
 /* ---------- TTS ---------- */
 let voice=null;
