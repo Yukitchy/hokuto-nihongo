@@ -43,6 +43,9 @@ a{color:var(--red-ink)}
 .top nav::-webkit-scrollbar{display:none}
 .top nav a{text-decoration:none;color:var(--ink);font-weight:700;font-size:14px;padding:6px 10px;border-radius:999px;white-space:nowrap}
 .top nav a.on,.top nav a:hover{background:var(--ink);color:var(--paper)}
+.lang{display:flex;border:2px solid var(--line);border-radius:999px;overflow:hidden;flex:none}
+.lang button{appearance:none;border:0;background:transparent;font:inherit;font-weight:900;font-size:13px;padding:5px 10px;cursor:pointer;color:var(--ink)}
+.lang button.on{background:var(--ink);color:var(--paper)}
 .top .prog{font-variant-numeric:tabular-nums;font-weight:900;font-size:14px;white-space:nowrap;padding:4px 10px;border:2px solid var(--line);border-radius:999px}
 .top .prog b{color:var(--red)}
 
@@ -201,6 +204,7 @@ footer a{color:var(--ink);font-weight:700}
   .panel .vid{border-right:0;border-bottom:3px solid var(--line)}
   .sec-head .num{font-size:44px}
   .top .prog{display:none}
+  .top nav{display:none}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
@@ -220,6 +224,7 @@ footer a{color:var(--ink);font-weight:700}
       <a href="#l6">6 ゆえに</a>
       <a href="#quiz">Quiz</a>
     </nav>
+    <div class="lang" id="lang"><button data-lang="en" class="on">EN</button><button data-lang="ja">日本語</button><button data-lang="zh">中文</button></div>
     <div class="prog" title="Lines you marked as done"><b id="doneN">0</b> / 6 done</div>
   </div>
 </header>
@@ -772,6 +777,7 @@ footer a{color:var(--ink);font-weight:700}
 <div class="toast" id="toast"></div>
 
 <script src="https://www.youtube.com/iframe_api"></script>
+<script src="i18n.js"></script>
 <script>
 /* ---------- helpers ---------- */
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
@@ -883,6 +889,26 @@ QUIZ.forEach((it,i)=>{
   d.querySelectorAll('button').forEach(b=>b.onclick=()=>{ if(d.classList.contains('answered'))return; d.classList.add('answered'); const j=+b.dataset.j; d.querySelectorAll('button').forEach(x=>x.classList.add(+x.dataset.j===it.a?'ok':'ng')); answered++; if(j===it.a)correct++; if(answered===QUIZ.length){ $('#score').textContent=`${correct} / ${QUIZ.length}` + (correct===QUIZ.length?' — 一片の悔いなし！':correct>=5?' — 退かぬ！':' — お前はもう…'); } });
   qb.appendChild(d);
 });
+
+/* ---------- Language switch (EN / 日本語 / 中文) ---------- */
+const T_SEL="#nav a,.hero h1 .en,.howto .t,.howto .d,.lead,.eyebrow,.meta span,.sec-head h2,.who,.bubble .en,.chip .e,#warmup p,#warmup h3,.gp,.grid2 p,h3,th,td:not(.w),.ex .m,.note,.lbl,.src,.drill .m,.yourturn label,.yourturn .hint,.done label,.q .qt,.q .opts button,.q .why,#quiz ol li,footer span,.tag,.btn,textarea";
+function applyLang(lang){
+  const dict=(window.I18N||{})[lang]||{};
+  document.documentElement.lang=lang==='ja'?'ja':lang==='zh'?'zh-Hant':'en';
+  $$(T_SEL).forEach(el=>{
+    if(el.id==='tVoice')return;
+    if(el.tagName==='TEXTAREA'){ if(!el.dataset.orig)el.dataset.orig=el.placeholder; el.placeholder=dict[el.dataset.orig]||el.dataset.orig; return; }
+    if(!el.dataset.orig)el.dataset.orig=el.innerHTML.trim();
+    const tr=dict[el.dataset.orig]||el.dataset.orig;
+    if(el.querySelector('input')){ const txt=tr.replace(/<input[^>]*>/,'').trim(); [...el.childNodes].filter(n=>n.nodeType===3).forEach(n=>n.remove()); el.appendChild(document.createTextNode(' '+txt)); return; }
+    if(el.innerHTML.trim()!==tr)el.innerHTML=tr;
+  });
+  const k1=$('#tRuby .k'),k2=$('#tRomaji .k'); if(k1)k1.textContent=document.body.classList.contains('no-ruby')?'off':'on'; if(k2)k2.textContent=document.body.classList.contains('no-romaji')?'off':'on';
+  $$('#lang button').forEach(b=>b.classList.toggle('on',b.dataset.lang===lang));
+  store.set('lang',lang);
+}
+$$('#lang button').forEach(b=>b.onclick=()=>applyLang(b.dataset.lang));
+applyLang(store.get('lang')||'en');
 </script>
 </body>
 </html>
