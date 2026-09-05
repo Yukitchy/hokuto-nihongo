@@ -233,7 +233,7 @@ html[data-motif="a"] #quiz .q:nth-child(even){transform:rotate(.5deg)}
 html[data-motif="a"] #quiz .q .why,html[data-motif="a"] #quiz .q .qt rt{color:var(--sub)}
 html[data-motif="a"] #quiz .score{color:#fff}
 html[data-motif="a"] #quiz ol li{color:#fff}
-html[data-motif="a"] .sec-head .num{font-size:64px;-webkit-text-stroke:2px var(--ink);color:#fff;text-shadow:4px 4px 0 var(--red)}
+html[data-motif="a"] .sec-head .num{font-size:64px;color:var(--red);text-shadow:4px 4px 0 var(--ink)}
 html[data-motif="a"] .tag{border-radius:999px;text-transform:uppercase;letter-spacing:.06em;font-size:12px;padding:3px 10px}
 html[data-motif="a"] .bubble{border:1px solid var(--ink);border-radius:7px;box-shadow:rgba(0,0,0,.25) 0 4px 4px 0}
 html[data-motif="a"] .bubble::after{border-width:1px}
