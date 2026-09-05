@@ -1,0 +1,891 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>北斗の拳で日本語 — Learn Japanese with Fist of the North Star</title>
+<meta name="description" content="Trial lesson material by Yuuki@Anime Sensei. Six legendary lines from Fist of the North Star, with looped clips, listen-and-repeat, grammar breakdowns and drills (JLPT N3).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Dela+Gothic+One&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F3EEE4;      /* 昼: マンガの紙 */
+  --paper-2:#E9E2D4;
+  --ink:#151311;
+  --sub:#5C554C;
+  --red:#B5121B;
+  --red-ink:#8E0E15;
+  --gold:#E9B824;
+  --line:#151311;
+  --deco:rgba(181,18,27,.08);
+  --ease-out:cubic-bezier(.22,1,.36,1);
+  --spring:cubic-bezier(.34,1.56,.64,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Zen Kaku Gothic New",-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
+  font-weight:500;line-height:1.8;-webkit-font-smoothing:antialiased}
+body,p,li,td,th,div,span,b,small,summary,button,a,h1,h2,h3,h4{word-break:auto-phrase;line-break:strict;overflow-wrap:anywhere}
+h1,h2,h3,h4,.btn,.chip,.tag,.eyebrow{text-wrap:balance}
+p{text-wrap:pretty;max-width:68ch}
+a{color:var(--red-ink)}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px;position:relative;z-index:1}
+
+/* ---------- header ---------- */
+.top{position:sticky;top:0;z-index:50;background:rgba(243,238,228,.92);backdrop-filter:blur(8px);border-bottom:3px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:14px;height:58px}
+.top .brand{font-weight:900;letter-spacing:.02em;text-decoration:none;color:var(--ink);white-space:nowrap}
+.top .brand b{color:var(--red)}
+.top nav{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.top nav::-webkit-scrollbar{display:none}
+.top nav a{text-decoration:none;color:var(--ink);font-weight:700;font-size:14px;padding:6px 10px;border-radius:999px;white-space:nowrap}
+.top nav a.on,.top nav a:hover{background:var(--ink);color:var(--paper)}
+.top .prog{font-variant-numeric:tabular-nums;font-weight:900;font-size:14px;white-space:nowrap;padding:4px 10px;border:2px solid var(--line);border-radius:999px}
+.top .prog b{color:var(--red)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;padding:56px 0 40px;border-bottom:3px solid var(--line)}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
+  background-image:radial-gradient(var(--deco) 2.2px,transparent 2.4px);background-size:16px 16px;
+  -webkit-mask-image:linear-gradient(115deg,transparent 45%,#000 100%);mask-image:linear-gradient(115deg,transparent 45%,#000 100%)}
+.eyebrow{display:inline-block;font-size:13px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:var(--red);border:2px solid var(--red);padding:2px 10px;border-radius:4px}
+.hero h1{font-family:"Dela Gothic One","Zen Kaku Gothic New",sans-serif;font-weight:400;font-size:clamp(34px,7vw,72px);line-height:1.12;margin:16px 0 8px;letter-spacing:.01em}
+.hero h1 .en{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:clamp(18px,2.6vw,26px);color:var(--sub);margin-top:10px;letter-spacing:0}
+.hero .lead{font-size:17px;margin:14px 0 22px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px;color:var(--sub);font-weight:700}
+.meta span b{color:var(--ink)}
+.howto{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:28px;border:3px solid var(--line);background:var(--paper)}
+.howto div{padding:14px 12px;border-right:3px solid var(--line)}
+.howto div:last-child{border-right:0}
+.howto .n{font-family:"Dela Gothic One",sans-serif;font-size:32px;line-height:1;color:var(--red)}
+.howto .t{font-weight:900;margin-top:6px}
+.howto .d{font-size:13px;color:var(--sub);line-height:1.5;margin-top:2px}
+.toggles{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+
+/* ---------- buttons ---------- */
+.btn{appearance:none;border:2px solid var(--ink);background:var(--paper);color:var(--ink);font:inherit;font-weight:900;font-size:14px;
+  padding:8px 14px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;line-height:1.2;
+  transition:transform .12s var(--spring),background .12s,color .12s}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0) scale(.98)}
+.btn.primary{background:var(--red);border-color:var(--red);color:#fff}
+.btn.dark{background:var(--ink);color:var(--paper)}
+.btn.on{background:var(--gold);border-color:var(--ink);color:var(--ink)}
+.btn[disabled]{opacity:.45;cursor:not-allowed;transform:none}
+.btn.sm{font-size:13px;padding:5px 11px}
+.btn .k{font-size:12px;opacity:.75;font-weight:700}
+
+/* ---------- sections ---------- */
+section{position:relative;overflow:hidden;padding:48px 0;border-bottom:3px solid var(--line)}
+section::before{content:"";position:absolute;pointer-events:none;z-index:0}
+section:nth-of-type(4n+1)::before{top:-40px;right:-60px;width:220px;height:220px;background:var(--deco);border-radius:0 0 0 100%}
+section:nth-of-type(4n+2)::before{bottom:24px;right:-10px;width:180px;height:140px;background-image:radial-gradient(var(--deco) 2px,transparent 2px);background-size:18px 18px}
+section:nth-of-type(4n+3)::before{top:60px;right:-70px;width:200px;height:200px;border-radius:50%;border:14px solid var(--deco)}
+section:nth-of-type(4n+4)::before{top:40px;right:-40px;width:150px;height:26px;border-radius:999px;background:var(--deco);box-shadow:0 52px 0 -4px var(--deco),0 104px 0 8px var(--deco)}
+.sec-head{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.sec-head .num{font-family:"Dela Gothic One",sans-serif;font-size:56px;line-height:.9;color:var(--red)}
+.sec-head h2{margin:0;font-size:clamp(22px,3.4vw,32px);font-weight:900;line-height:1.25}
+.sec-head .who{font-size:14px;color:var(--sub);font-weight:700;margin-top:4px}
+.tag{display:inline-block;font-size:13px;font-weight:900;padding:2px 9px;border-radius:4px;background:var(--ink);color:var(--paper);vertical-align:middle;margin-left:8px}
+.tag.n3{background:var(--red)}
+.tag.n2{background:#2F5D8A}
+.tag.n1{background:#6A3FA0}
+.tag.fun{background:var(--gold);color:var(--ink)}
+
+/* ---------- speech bubble line ---------- */
+.bubble{position:relative;border:3px solid var(--line);background:#fff;padding:26px 26px 20px;margin:0 0 22px;border-radius:6px}
+.bubble::after{content:"";position:absolute;left:44px;bottom:-16px;width:26px;height:26px;background:#fff;border-right:3px solid var(--line);border-bottom:3px solid var(--line);transform:rotate(45deg)}
+.bubble .jp{font-size:clamp(28px,5.2vw,46px);font-weight:900;line-height:1.5;margin:0;letter-spacing:.02em}
+.bubble .jp rt{font-size:.38em;font-weight:700;color:var(--sub);letter-spacing:0}
+.bubble .romaji{font-size:16px;color:var(--sub);font-weight:700;margin:6px 0 0;font-family:-apple-system,"Helvetica Neue",sans-serif;letter-spacing:.01em}
+.bubble .en{font-size:19px;font-weight:700;margin:8px 0 0}
+.bubble .en i{font-style:normal;color:var(--red)}
+body.no-ruby rt{display:none}
+body.no-romaji .romaji{display:none}
+
+/* ---------- media panel ---------- */
+.panel{display:grid;grid-template-columns:1.15fr .85fr;gap:0;border:3px solid var(--line);background:var(--paper-2)}
+.panel>div{padding:16px}
+.panel .vid{padding:0;background:#000;border-right:3px solid var(--line);position:relative}
+.panel .vid .yt{aspect-ratio:16/9;width:100%}
+.panel .vid iframe{width:100%;height:100%;display:block}
+.panel .vid .ph{aspect-ratio:16/9;display:grid;place-items:center;color:#fff;background:#111;text-align:center;padding:20px;font-weight:700}
+.ctl{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.ctl .lbl{font-size:13px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--sub);width:100%;margin-top:6px}
+.ctl .lbl:first-child{margin-top:0}
+.ctl .src{font-size:13px;color:var(--sub);width:100%;line-height:1.4}
+.ctl .src a{color:var(--sub)}
+.loopbar{height:6px;background:#fff;border:2px solid var(--line);border-radius:999px;overflow:hidden;width:100%;margin-top:4px}
+.loopbar i{display:block;height:100%;width:0;background:var(--red);transition:width .1s linear}
+.rec{display:flex;gap:8px;align-items:center;flex-wrap:wrap;width:100%}
+.rec audio{height:32px;flex:1;min-width:140px}
+.rec .dot{width:10px;height:10px;border-radius:50%;background:var(--red);display:none}
+.rec.live .dot{display:inline-block;animation:blink 1s steps(2) infinite}
+@keyframes blink{to{opacity:0}}
+
+/* ---------- grammar ---------- */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:26px}
+h3{font-size:17px;font-weight:900;margin:0 0 10px;display:flex;align-items:center;gap:8px}
+h3::before{content:"";width:14px;height:14px;background:var(--red);transform:rotate(45deg);flex:none}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{text-align:left;padding:7px 8px;border-bottom:1px solid rgba(21,19,17,.18);vertical-align:top}
+th{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--sub)}
+td.w{font-weight:900;font-size:17px;white-space:nowrap}
+td.w rt{font-size:.5em;color:var(--sub);font-weight:700}
+.gp{border-left:6px solid var(--red);padding:2px 0 2px 14px;margin:0 0 12px}
+.gp b{font-size:17px}
+.ex{list-style:none;padding:0;margin:8px 0 0;display:flex;flex-direction:column;gap:6px}
+.ex li{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:16px}
+.ex li rt{font-size:.5em;color:var(--sub)}
+.ex li .m{color:var(--sub);font-size:14px;font-weight:700}
+.spk{appearance:none;border:2px solid var(--ink);background:#fff;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:14px;line-height:1;display:inline-grid;place-items:center;flex:none;transition:transform .12s var(--spring)}
+.spk:hover{transform:scale(1.1)}
+.spk.on{background:var(--gold)}
+.note{background:#fff;border:3px solid var(--line);padding:12px 16px;font-size:15px;margin-top:12px}
+.note b{color:var(--red)}
+
+/* ---------- drills ---------- */
+.drill{margin-top:26px;border-top:3px solid var(--line);padding-top:18px}
+.drill ol{padding-left:22px;margin:0;font-size:17px;display:flex;flex-direction:column;gap:8px}
+.drill ol li rt{font-size:.5em;color:var(--sub)}
+.blank{appearance:none;border:0;border-bottom:3px solid var(--red);background:transparent;font:inherit;font-weight:900;color:transparent;min-width:5.5em;padding:0 6px;cursor:pointer;text-align:center;position:relative}
+.blank::after{content:"tap";position:absolute;left:0;right:0;top:2px;font-size:12px;color:var(--red);font-weight:900;letter-spacing:.1em}
+.blank.show{color:var(--red);background:rgba(233,184,36,.35)}
+.blank.show::after{display:none}
+.drill .m{color:var(--sub);font-size:14px;font-weight:700;margin-left:6px}
+.yourturn{margin-top:16px;background:#fff;border:3px solid var(--line);padding:14px 16px}
+.yourturn label{font-weight:900;display:block;margin-bottom:6px}
+.yourturn textarea{width:100%;font:inherit;font-size:17px;border:0;border-bottom:2px solid var(--line);background:transparent;resize:vertical;min-height:58px;padding:6px 0}
+.yourturn .row{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;align-items:center}
+.yourturn .hint{font-size:14px;color:var(--sub)}
+.done{margin-top:18px;display:flex;justify-content:flex-end}
+.done label{display:inline-flex;align-items:center;gap:8px;font-weight:900;cursor:pointer;border:2px solid var(--ink);padding:6px 14px;border-radius:999px;background:var(--paper)}
+.done input{width:18px;height:18px;accent-color:var(--red)}
+.done label.ok{background:var(--gold)}
+
+/* ---------- warm-up chips ---------- */
+.chips{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px;margin-top:6px}
+.chip{border:3px solid var(--line);background:#fff;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.chip .j{font-weight:900;font-size:20px;line-height:1.3}
+.chip .j rt{font-size:.5em;color:var(--sub)}
+.chip .e{font-size:13px;color:var(--sub);font-weight:700;line-height:1.3}
+.chip .spk{margin-left:auto}
+
+/* ---------- quiz ---------- */
+.q{border:3px solid var(--line);background:#fff;padding:14px 16px;margin-bottom:12px}
+.q .qt{font-weight:900;font-size:17px;margin:0 0 8px}
+.q .qt rt{font-size:.5em;color:var(--sub)}
+.q .opts{display:flex;flex-wrap:wrap;gap:8px}
+.q .opts button{appearance:none;border:2px solid var(--ink);background:var(--paper);font:inherit;font-weight:700;font-size:15px;padding:6px 12px;border-radius:6px;cursor:pointer}
+.q .opts button.ok{background:var(--gold)}
+.q .opts button.ng{background:#e6e0d6;opacity:.6;text-decoration:line-through}
+.q .why{font-size:14px;color:var(--sub);margin:8px 0 0;display:none}
+.q.answered .why{display:block}
+.score{font-family:"Dela Gothic One",sans-serif;font-size:40px;color:var(--red);margin-top:10px}
+
+/* ---------- footer ---------- */
+footer{padding:36px 0 60px;font-size:14px;color:var(--sub)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:center}
+footer a{color:var(--ink);font-weight:700}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);opacity:0;background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:999px;font-weight:900;pointer-events:none;transition:all .25s var(--ease-out);z-index:99;font-size:14px}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+@media(max-width:820px){
+  .grid2{grid-template-columns:1fr}
+  .howto{grid-template-columns:repeat(2,1fr)}
+  .howto div{border-bottom:3px solid var(--line)}
+  .howto div:nth-child(odd){border-right:3px solid var(--line)}
+  .howto div:nth-child(even){border-right:0}
+  .howto div:nth-last-child(-n+1){border-bottom:0}
+  .panel{grid-template-columns:1fr}
+  .panel .vid{border-right:0;border-bottom:3px solid var(--line)}
+  .sec-head .num{font-size:44px}
+  .top .prog{display:none}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">北斗<b>×</b>日本語</a>
+    <nav id="nav">
+      <a href="#warmup">Warm-up</a>
+      <a href="#l1">1 死んでいる</a>
+      <a href="#l2">2 悔いなし</a>
+      <a href="#l3">3 〜ぬ</a>
+      <a href="#l4">4 消毒だ</a>
+      <a href="#l5">5 しか〜ぬ</a>
+      <a href="#l6">6 ゆえに</a>
+      <a href="#quiz">Quiz</a>
+    </nav>
+    <div class="prog" title="Lines you marked as done"><b id="doneN">0</b> / 6 done</div>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow">Trial Lesson · JLPT N3 · with Yuuki@Anime Sensei</span>
+    <h1>北斗の拳で<br>日本語を学ぶ<span class="en">Learn Japanese with Fist of the North Star</span></h1>
+    <p class="lead">Six legendary lines. Each one hides a grammar point you will actually use in Tokyo tomorrow. Watch the clip, loop the line, say it like Kenshiro, then drill it.</p>
+    <div class="meta">
+      <span>👤 Student: <b>Stephen</b></span>
+      <span>📅 <b>Sun 6 Sept 2026, 14:00 JST</b></span>
+      <span>⏱ 30 min · recorded for YouTube</span>
+    </div>
+    <div class="howto">
+      <div><div class="n">1</div><div class="t">Watch</div><div class="d">Play the scene once.</div></div>
+      <div><div class="n">2</div><div class="t">Loop</div><div class="d">Loop just the line. Slow it down.</div></div>
+      <div><div class="n">3</div><div class="t">Repeat</div><div class="d">Shadow it out loud. Record yourself.</div></div>
+      <div><div class="n">4</div><div class="t">Grammar</div><div class="d">See the pattern hiding inside.</div></div>
+      <div><div class="n">5</div><div class="t">Drill</div><div class="d">Tap the blanks, then write your own.</div></div>
+    </div>
+    <div class="toggles">
+      <button class="btn on" id="tRuby">あ Furigana <span class="k">on</span></button>
+      <button class="btn on" id="tRomaji">Aa Romaji <span class="k">on</span></button>
+      <button class="btn" id="tVoice">🔊 Voice: <span id="voiceName">loading…</span></button>
+    </div>
+  </div>
+</div>
+
+<!-- ================= WARM-UP ================= -->
+<section id="warmup">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">0</div>
+      <div><h2>Warm-up: the world of 199X <span class="tag fun">vocab</span></h2><div class="who">Six words you need before anyone punches anyone.</div></div>
+    </div>
+    <div class="chips">
+      <div class="chip"><div><div class="j"><ruby>世紀末<rt>せいきまつ</rt></ruby></div><div class="e">end of the century · post-apocalypse</div></div><button class="spk" data-say="世紀末">🔊</button></div>
+      <div class="chip"><div><div class="j"><ruby>核戦争<rt>かくせんそう</rt></ruby></div><div class="e">nuclear war</div></div><button class="spk" data-say="核戦争">🔊</button></div>
+      <div class="chip"><div><div class="j"><ruby>暴力<rt>ぼうりょく</rt></ruby></div><div class="e">violence</div></div><button class="spk" data-say="暴力">🔊</button></div>
+      <div class="chip"><div><div class="j"><ruby>救世主<rt>きゅうせいしゅ</rt></ruby></div><div class="e">savior</div></div><button class="spk" data-say="救世主">🔊</button></div>
+      <div class="chip"><div><div class="j"><ruby>秘孔<rt>ひこう</rt></ruby></div><div class="e">secret pressure point</div></div><button class="spk" data-say="秘孔">🔊</button></div>
+      <div class="chip"><div><div class="j"><ruby>拳<rt>けん</rt></ruby>・<ruby>拳法<rt>けんぽう</rt></ruby></div><div class="e">fist · fist-fighting art</div></div><button class="spk" data-say="拳、拳法">🔊</button></div>
+    </div>
+    <div class="grid2">
+      <div>
+        <h3>Kanji trick: 強敵 = とも</h3>
+        <p><ruby>強敵<rt>きょうてき</rt></ruby> normally means "powerful enemy" (きょうてき). In Hokuto no Ken it is read <b>とも</b> = "friend". A rival you respect is a friend. Japanese does this all the time: <b>Xと書いてYと読む</b> (written X, read Y).</p>
+        <ul class="ex">
+          <li><ruby>本気<rt>ほんき</rt></ruby>と書いて「マジ」と読む <span class="m">written "serious", read "for real"</span><button class="spk" data-say="本気と書いてマジと読む">🔊</button></li>
+          <li><ruby>宇宙<rt>うちゅう</rt></ruby>と書いて「そら」と読む <span class="m">written "universe", read "sky"</span><button class="spk" data-say="宇宙と書いてそらと読む">🔊</button></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Opening: 愛をとりもどせ!! (official)</h3>
+        <p>Warm your ears up with the official opening. Listen for <b>お前</b> and <b>愛</b>.</p>
+        <div class="panel" style="grid-template-columns:1fr">
+          <div class="vid"><div class="yt" id="ytOP"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LINE 1 ================= -->
+<section id="l1" class="lesson" data-key="l1">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">1</div>
+      <div><h2>お前はもう死んでいる <span class="tag n3">N4→N3 · 〜ている</span></h2><div class="who">Kenshiro · the line everyone knows</div></div>
+    </div>
+
+    <div class="bubble">
+      <p class="jp"><ruby>お前<rt>おまえ</rt></ruby>はもう<ruby>死<rt>し</rt></ruby>んでいる。</p>
+      <p class="romaji">Omae wa mō shinde iru.</p>
+      <p class="en">"You are <i>already dead</i>."</p>
+    </div>
+
+    <div class="panel">
+      <div class="vid"><div class="yt" id="yt1"></div></div>
+      <div class="ctl" data-player="yt1" data-scene="0,11.5" data-line="3.7,6.4">
+        <div class="lbl">Clip</div>
+        <button class="btn primary act-scene">▶ Scene</button>
+        <button class="btn act-loop">🔁 Loop the line</button>
+        <button class="btn act-stop">⏹</button>
+        <button class="btn sm act-slow">🐢 0.75×</button>
+        <div class="loopbar"><i></i></div>
+        <div class="lbl">Listen &amp; repeat</div>
+        <button class="btn act-say" data-say="お前はもう死んでいる。">🔊 Normal</button>
+        <button class="btn act-say-slow" data-say="お前はもう死んでいる。">🐢 Slow</button>
+        <div class="lbl">Record yourself</div>
+        <div class="rec"><button class="btn dark act-rec">🎙 Record</button><span class="dot"></span><audio controls class="mine" hidden></audio></div>
+        <div class="src">Clip: <a href="https://youtu.be/4bv6tNtrU4I" target="_blank" rel="noopener">YouTube</a> · bonus at 0:08 — the famous death cry ひでぶ！</div>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div>
+        <h3>Word by word</h3>
+        <table>
+          <tr><th>word</th><th>meaning</th></tr>
+          <tr><td class="w"><ruby>お前<rt>おまえ</rt></ruby></td><td>you — rough. For enemies, rivals, very close friends. <b>Never</b> for your boss or your host family.</td></tr>
+          <tr><td class="w">は</td><td>topic marker (wa)</td></tr>
+          <tr><td class="w">もう</td><td>already</td></tr>
+          <tr><td class="w"><ruby>死<rt>し</rt></ruby>んでいる</td><td>死ぬ → て-form 死んで + いる → "is (in the state of) dead"</td></tr>
+        </table>
+      </div>
+      <div>
+        <h3>Grammar: 〜ている = the state after a change</h3>
+        <div class="gp"><b>change verb + ている</b> → not "is doing", but "has done and is now in that state".</div>
+        <p>死ぬ, 結婚する, 知る, 持つ, 住む, 始まる, 閉まる are all "change" verbs. Kenshiro is not saying "you are dying". The change already happened; you just haven't noticed.</p>
+        <ul class="ex">
+          <li>もう<ruby>結婚<rt>けっこん</rt></ruby>している <span class="m">I'm (already) married</span><button class="spk" data-say="もう結婚している">🔊</button></li>
+          <li><ruby>電車<rt>でんしゃ</rt></ruby>はもう<ruby>出<rt>で</rt></ruby>ている <span class="m">the train has already left</span><button class="spk" data-say="電車はもう出ている">🔊</button></li>
+          <li><ruby>店<rt>みせ</rt></ruby>はもう<ruby>閉<rt>し</rt></ruby>まっている <span class="m">the shop is already closed</span><button class="spk" data-say="店はもう閉まっている">🔊</button></li>
+        </ul>
+        <div class="note"><b>Tokyo use:</b> a friend runs for the last train — you say「もう出てるよ」(colloquial drops the い).</div>
+      </div>
+    </div>
+
+    <div class="drill">
+      <h3>Drill</h3>
+      <ol>
+        <li><ruby>会議<rt>かいぎ</rt></ruby>はもう<button class="blank">始まっている</button>。<span class="m">The meeting has already started. (始まる)</span></li>
+        <li>すみません、お<ruby>金<rt>かね</rt></ruby>を<button class="blank">持っていない</button>んです。<span class="m">I don't have money on me. (持つ, negative)</span></li>
+        <li><ruby>今<rt>いま</rt></ruby>は<ruby>東京<rt>とうきょう</rt></ruby>に<button class="blank">住んでいる</button>。<span class="m">I live in Tokyo now. (住む)</span></li>
+      </ol>
+      <div class="yourturn">
+        <label>Your turn — be Kenshiro about something harmless</label>
+        <textarea data-store="yt-l1" placeholder="お前はもう ＿＿ ている。  e.g. お前はもう合格している。(You have already passed.)"></textarea>
+        <div class="row"><button class="btn sm act-say-ta">🔊 Read mine</button><span class="hint">Saved on this device.</span></div>
+      </div>
+      <div class="done"><label><input type="checkbox" class="doneBox"> Line 1 done</label></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LINE 2 ================= -->
+<section id="l2" class="lesson" data-key="l2">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">2</div>
+      <div><h2>我が生涯に一片の悔いなし！ <span class="tag n2">N3→N2 · 我が / 〜なし</span></h2><div class="who">Raoh · his last words, fist raised to the sky</div></div>
+    </div>
+
+    <div class="bubble">
+      <p class="jp"><ruby>我<rt>わ</rt></ruby>が<ruby>生涯<rt>しょうがい</rt></ruby>に<ruby>一片<rt>いっぺん</rt></ruby>の<ruby>悔<rt>く</rt></ruby>いなし！</p>
+      <p class="romaji">Waga shōgai ni ippen no kui nashi!</p>
+      <p class="en">"In my life, <i>not one piece of regret</i>!"</p>
+    </div>
+
+    <div class="panel">
+      <div class="vid"><div class="yt" id="yt2"></div></div>
+      <div class="ctl" data-player="yt2" data-scene="0,27" data-line="0,6.2">
+        <div class="lbl">Clip</div>
+        <button class="btn primary act-scene">▶ Scene</button>
+        <button class="btn act-loop">🔁 Loop the line</button>
+        <button class="btn act-stop">⏹</button>
+        <button class="btn sm act-slow">🐢 0.75×</button>
+        <div class="loopbar"><i></i></div>
+        <div class="lbl">Listen &amp; repeat</div>
+        <button class="btn act-say" data-say="我が生涯に一片の悔いなし！">🔊 Normal</button>
+        <button class="btn act-say-slow" data-say="我が生涯に一片の悔いなし！">🐢 Slow</button>
+        <div class="lbl">Record yourself</div>
+        <div class="rec"><button class="btn dark act-rec">🎙 Record</button><span class="dot"></span><audio controls class="mine" hidden></audio></div>
+        <div class="src">Clip: <a href="https://youtu.be/jiKRr4vYUyw" target="_blank" rel="noopener">YouTube</a></div>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div>
+        <h3>Word by word</h3>
+        <table>
+          <tr><th>word</th><th>meaning</th></tr>
+          <tr><td class="w"><ruby>我<rt>わ</rt></ruby>が</td><td>my / our — literary 私の. Still alive in 我が国 (our country), 我が社 (our company), 我が家 (our home)</td></tr>
+          <tr><td class="w"><ruby>生涯<rt>しょうがい</rt></ruby></td><td>(whole) life, lifetime</td></tr>
+          <tr><td class="w">に</td><td>in</td></tr>
+          <tr><td class="w"><ruby>一片<rt>いっぺん</rt></ruby>の</td><td>one piece of / a single</td></tr>
+          <tr><td class="w"><ruby>悔<rt>く</rt></ruby>い</td><td>regret (noun of 悔やむ)</td></tr>
+          <tr><td class="w">なし</td><td>= ない. Literary "there is none"</td></tr>
+        </table>
+      </div>
+      <div>
+        <h3>Grammar: 〜なし — the sign-board negative</h3>
+        <div class="gp"><b>Noun + なし</b> = "no ~ / without ~". Short, hard, final. Used on signs, reports, and by dying warlords.</div>
+        <ul class="ex">
+          <li><ruby>問題<rt>もんだい</rt></ruby>なし <span class="m">no problem (report / text)</span><button class="spk" data-say="問題なし">🔊</button></li>
+          <li><ruby>異常<rt>いじょう</rt></ruby>なし <span class="m">nothing abnormal (health check)</span><button class="spk" data-say="異常なし">🔊</button></li>
+          <li><ruby>予約<rt>よやく</rt></ruby>なしで<ruby>入<rt>はい</rt></ruby>れます <span class="m">you can enter without a reservation</span><button class="spk" data-say="予約なしで入れます">🔊</button></li>
+          <li><ruby>我<rt>わ</rt></ruby>が<ruby>家<rt>や</rt></ruby>へようこそ <span class="m">welcome to our home</span><button class="spk" data-say="我が家へようこそ">🔊</button></li>
+        </ul>
+        <div class="note"><b>Tokyo use:</b> a restaurant sign 「予約なしOK」. A LINE reply from your boss: 「問題なし」= all good.</div>
+      </div>
+    </div>
+
+    <div class="drill">
+      <h3>Drill</h3>
+      <ol>
+        <li>テストの<ruby>結果<rt>けっか</rt></ruby>は？ — <button class="blank">問題なし</button>！<span class="m">No problem!</span></li>
+        <li><ruby>健康診断<rt>けんこうしんだん</rt></ruby>：<button class="blank">異常なし</button>。<span class="m">Health check: nothing abnormal.</span></li>
+        <li>ようこそ、<button class="blank">我が家</button>へ！<span class="m">Welcome to our home! (我が + 家)</span></li>
+      </ol>
+      <div class="yourturn">
+        <label>Your turn — one thing you do not regret</label>
+        <textarea data-store="yt-l2" placeholder="我が ＿＿ に一片の悔いなし！  e.g. 我が東京生活に一片の悔いなし！"></textarea>
+        <div class="row"><button class="btn sm act-say-ta">🔊 Read mine</button><span class="hint">Raise your fist when you say it.</span></div>
+      </div>
+      <div class="done"><label><input type="checkbox" class="doneBox"> Line 2 done</label></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LINE 3 ================= -->
+<section id="l3" class="lesson" data-key="l3">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">3</div>
+      <div><h2>退かぬ！媚びぬ！省みぬ！ <span class="tag n2">N2 · classical 〜ぬ</span></h2><div class="who">Souther, the Holy Emperor · three vows in three words</div></div>
+    </div>
+
+    <div class="bubble">
+      <p class="jp"><ruby>退<rt>ひ</rt></ruby>かぬ！<ruby>媚<rt>こ</rt></ruby>びぬ！<ruby>省<rt>かえり</rt></ruby>みぬ！</p>
+      <p class="romaji">Hikanu! Kobinu! Kaeriminu!</p>
+      <p class="en">"I <i>won't retreat</i>! I <i>won't flatter</i>! I <i>won't look back</i>!"</p>
+    </div>
+
+    <div class="panel">
+      <div class="vid"><div class="yt" id="yt3"></div></div>
+      <div class="ctl" data-player="yt3" data-scene="0,13" data-line="4.6,9.3">
+        <div class="lbl">Clip</div>
+        <button class="btn primary act-scene">▶ Scene</button>
+        <button class="btn act-loop">🔁 Loop the line</button>
+        <button class="btn act-stop">⏹</button>
+        <button class="btn sm act-slow">🐢 0.75×</button>
+        <div class="loopbar"><i></i></div>
+        <div class="lbl">Listen &amp; repeat</div>
+        <button class="btn act-say" data-say="退かぬ！媚びぬ！省みぬ！">🔊 Normal</button>
+        <button class="btn act-say-slow" data-say="退かぬ！媚びぬ！省みぬ！">🐢 Slow</button>
+        <div class="lbl">Record yourself</div>
+        <div class="rec"><button class="btn dark act-rec">🎙 Record</button><span class="dot"></span><audio controls class="mine" hidden></audio></div>
+        <div class="src">Clip: <a href="https://youtu.be/3XY6neA11eI" target="_blank" rel="noopener">YouTube</a></div>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div>
+        <h3>Word by word</h3>
+        <table>
+          <tr><th>verb</th><th>meaning</th><th>〜ぬ form</th></tr>
+          <tr><td class="w"><ruby>退<rt>ひ</rt></ruby>く</td><td>to step back, retreat</td><td class="w">退か<b>ぬ</b></td></tr>
+          <tr><td class="w"><ruby>媚<rt>こ</rt></ruby>びる</td><td>to flatter, suck up to</td><td class="w">媚び<b>ぬ</b></td></tr>
+          <tr><td class="w"><ruby>省<rt>かえり</rt></ruby>みる</td><td>to look back on, reflect</td><td class="w">省み<b>ぬ</b></td></tr>
+        </table>
+        <div class="note">Rule: take the <b>ない-stem</b> and swap ない → ぬ. 行かない → 行か<b>ぬ</b>. する → せ<b>ぬ</b>. 来る → 来(こ)<b>ぬ</b>.</div>
+      </div>
+      <div>
+        <h3>Grammar: 〜ぬ = old-school ない</h3>
+        <div class="gp"><b>〜ぬ</b> is the classical negative. It sounds samurai, dramatic, absolute. You will hear it in anime, proverbs, and a few fixed phrases everyone still uses.</div>
+        <ul class="ex">
+          <li><ruby>知<rt>し</rt></ruby>らぬ<ruby>間<rt>ま</rt></ruby>に <span class="m">before I knew it</span><button class="spk" data-say="知らぬ間に">🔊</button></li>
+          <li><ruby>見知<rt>みし</rt></ruby>らぬ<ruby>人<rt>ひと</rt></ruby> <span class="m">a stranger (an un-known person)</span><button class="spk" data-say="見知らぬ人">🔊</button></li>
+          <li><ruby>思<rt>おも</rt></ruby>わぬプレゼント <span class="m">an unexpected present</span><button class="spk" data-say="思わぬプレゼント">🔊</button></li>
+          <li><ruby>言<rt>い</rt></ruby>わぬが<ruby>花<rt>はな</rt></ruby> <span class="m">some things are better left unsaid (proverb)</span><button class="spk" data-say="言わぬが花">🔊</button></li>
+        </ul>
+        <div class="note"><b>Tokyo use:</b> 見知らぬ人 shows up in news and station announcements. 知らぬ間に is everyday speech.</div>
+      </div>
+    </div>
+
+    <div class="drill">
+      <h3>Drill — convert to 〜ぬ</h3>
+      <ol>
+        <li><ruby>行<rt>い</rt></ruby>かない → <button class="blank">行かぬ</button><span class="m">won't go</span></li>
+        <li><ruby>食<rt>た</rt></ruby>べない → <button class="blank">食べぬ</button><span class="m">won't eat</span></li>
+        <li><ruby>諦<rt>あきら</rt></ruby>めない → <button class="blank">諦めぬ</button><span class="m">won't give up</span></li>
+        <li>しない → <button class="blank">せぬ</button><span class="m">won't do (irregular!)</span></li>
+      </ol>
+      <div class="yourturn">
+        <label>Your turn — your three vows for learning Japanese, Souther style</label>
+        <textarea data-store="yt-l3" placeholder="＿＿ぬ！＿＿ぬ！＿＿ぬ！  e.g. 寝坊せぬ！諦めぬ！サボらぬ！"></textarea>
+        <div class="row"><button class="btn sm act-say-ta">🔊 Read mine</button><span class="hint">Shout it. Souther would.</span></div>
+      </div>
+      <div class="done"><label><input type="checkbox" class="doneBox"> Line 3 done</label></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LINE 4 ================= -->
+<section id="l4" class="lesson" data-key="l4">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">4</div>
+      <div><h2>汚物は消毒だ〜！ <span class="tag n3">N3 · XはYだ / 〜べきだ</span></h2><div class="who">a mohawk with a flamethrower · the most quoted mob line in Japan</div></div>
+    </div>
+
+    <div class="bubble">
+      <p class="jp"><ruby>汚物<rt>おぶつ</rt></ruby>は<ruby>消毒<rt>しょうどく</rt></ruby>だ〜！</p>
+      <p class="romaji">Obutsu wa shōdoku da!</p>
+      <p class="en">"Filth <i>gets disinfected</i>!"</p>
+    </div>
+
+    <div class="panel">
+      <div class="vid"><div class="yt" id="yt4"></div></div>
+      <div class="ctl" data-player="yt4" data-scene="0,22" data-line="2.7,5.3">
+        <div class="lbl">Clip</div>
+        <button class="btn primary act-scene">▶ Scene</button>
+        <button class="btn act-loop">🔁 Loop the line</button>
+        <button class="btn act-stop">⏹</button>
+        <button class="btn sm act-slow">🐢 0.75×</button>
+        <div class="loopbar"><i></i></div>
+        <div class="lbl">Listen &amp; repeat</div>
+        <button class="btn act-say" data-say="汚物は消毒だ！">🔊 Normal</button>
+        <button class="btn act-say-slow" data-say="汚物は消毒だ！">🐢 Slow</button>
+        <div class="lbl">Record yourself</div>
+        <div class="rec"><button class="btn dark act-rec">🎙 Record</button><span class="dot"></span><audio controls class="mine" hidden></audio></div>
+        <div class="src">Clip: <a href="https://youtu.be/5N9ibJg2T18" target="_blank" rel="noopener">YouTube</a> · at 0:19 Kenshiro answers: 汚物は消毒<b>すべき</b>だな</div>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div>
+        <h3>Word by word</h3>
+        <table>
+          <tr><th>word</th><th>meaning</th></tr>
+          <tr><td class="w"><ruby>汚物<rt>おぶつ</rt></ruby></td><td>filth, waste (汚 = dirty, 物 = thing)</td></tr>
+          <tr><td class="w">は</td><td>topic</td></tr>
+          <tr><td class="w"><ruby>消毒<rt>しょうどく</rt></ruby></td><td>disinfection — a する-noun (消毒する)</td></tr>
+          <tr><td class="w">だ</td><td>"is" — plain copula, said with full confidence</td></tr>
+        </table>
+        <div class="note">Literally "filth is disinfection". Japanese lets a noun sentence mean <b>"X → the treatment is Y"</b>. Very common in speech.</div>
+      </div>
+      <div>
+        <h3>Grammar: XはYだ！ as a battle cry · 〜べきだ = should</h3>
+        <div class="gp"><b>Noun は Noun だ！</b> — announce the plan. <b>Verb(dictionary) + べきだ</b> — "should / ought to". Kenshiro replies「消毒<b>すべき</b>だな」(する → すべき).</div>
+        <ul class="ex">
+          <li><ruby>今日<rt>きょう</rt></ruby>は<ruby>焼肉<rt>やきにく</rt></ruby>だ！ <span class="m">Today = yakiniku!</span><button class="spk" data-say="今日は焼肉だ！">🔊</button></li>
+          <li><ruby>週末<rt>しゅうまつ</rt></ruby>は<ruby>大掃除<rt>おおそうじ</rt></ruby>だ！ <span class="m">The weekend = big cleaning!</span><button class="spk" data-say="週末は大掃除だ！">🔊</button></li>
+          <li><ruby>手<rt>て</rt></ruby>は<ruby>消毒<rt>しょうどく</rt></ruby>すべきだ <span class="m">you should disinfect your hands</span><button class="spk" data-say="手は消毒すべきだ">🔊</button></li>
+          <li><ruby>早<rt>はや</rt></ruby>く<ruby>寝<rt>ね</rt></ruby>るべきだ <span class="m">you should go to bed early</span><button class="spk" data-say="早く寝るべきだ">🔊</button></li>
+        </ul>
+        <div class="note"><b>Tokyo use:</b> 消毒 is on every shop entrance bottle since 2020: 「<ruby>手指<rt>しゅし</rt></ruby>消毒にご協力ください」.</div>
+      </div>
+    </div>
+
+    <div class="drill">
+      <h3>Drill</h3>
+      <ol>
+        <li><ruby>風邪<rt>かぜ</rt></ruby>を<ruby>引<rt>ひ</rt></ruby>いたら、<button class="blank">休むべきだ</button>。<span class="m">If you catch a cold, you should rest. (休む)</span></li>
+        <li><ruby>傷口<rt>きずぐち</rt></ruby>は<button class="blank">消毒</button>してください。<span class="m">Please disinfect the wound.</span></li>
+        <li><ruby>今夜<rt>こんや</rt></ruby>は<button class="blank">ラーメンだ</button>！<span class="m">Tonight = ramen!</span></li>
+      </ol>
+      <div class="yourturn">
+        <label>Your turn — announce your Sunday like a 世紀末 mob</label>
+        <textarea data-store="yt-l4" placeholder="＿＿は＿＿だ〜！  e.g. 日曜日は日本語だ〜！"></textarea>
+        <div class="row"><button class="btn sm act-say-ta">🔊 Read mine</button><span class="hint">Extend the だ〜 for full effect.</span></div>
+      </div>
+      <div class="done"><label><input type="checkbox" class="doneBox"> Line 4 done</label></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LINE 5 ================= -->
+<section id="l5" class="lesson" data-key="l5">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">5</div>
+      <div><h2>愛や情けは悲しみしか生まぬ <span class="tag n3">N3 · 〜しか〜ない / 〜み</span></h2><div class="who">Souther, dying · the question that made a generation cry</div></div>
+    </div>
+
+    <div class="bubble">
+      <p class="jp"><ruby>愛<rt>あい</rt></ruby>や<ruby>情<rt>なさ</rt></ruby>けは<ruby>悲<rt>かな</rt></ruby>しみしか<ruby>生<rt>う</rt></ruby>まぬ。</p>
+      <p class="romaji">Ai ya nasake wa kanashimi shika umanu.</p>
+      <p class="en">"Love and mercy give birth to <i>nothing but sorrow</i>."</p>
+    </div>
+
+    <div class="panel">
+      <div class="vid"><div class="yt" id="yt5"></div></div>
+      <div class="ctl" data-player="yt5" data-scene="32,58.5" data-line="38.3,43.2">
+        <div class="lbl">Clip</div>
+        <button class="btn primary act-scene">▶ Scene</button>
+        <button class="btn act-loop">🔁 Loop the line</button>
+        <button class="btn act-stop">⏹</button>
+        <button class="btn sm act-slow">🐢 0.75×</button>
+        <div class="loopbar"><i></i></div>
+        <div class="lbl">Listen &amp; repeat</div>
+        <button class="btn act-say" data-say="愛や情けは、悲しみしか生まぬ。">🔊 Normal</button>
+        <button class="btn act-say-slow" data-say="愛や情けは、悲しみしか生まぬ。">🐢 Slow</button>
+        <div class="lbl">Record yourself</div>
+        <div class="rec"><button class="btn dark act-rec">🎙 Record</button><span class="dot"></span><audio controls class="mine" hidden></audio></div>
+        <div class="src">Clip: <a href="https://youtu.be/N9HM0PLlFSw?t=32" target="_blank" rel="noopener">YouTube</a> · then: なのに、なぜ悲しみを背負おうとする？ — "so why do you choose to carry sorrow?"</div>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div>
+        <h3>Word by word</h3>
+        <table>
+          <tr><th>word</th><th>meaning</th></tr>
+          <tr><td class="w"><ruby>愛<rt>あい</rt></ruby></td><td>love</td></tr>
+          <tr><td class="w">や</td><td>"and (things like)" — an open list. AやB = A, B, and so on</td></tr>
+          <tr><td class="w"><ruby>情<rt>なさ</rt></ruby>け</td><td>mercy, compassion, human warmth</td></tr>
+          <tr><td class="w"><ruby>悲<rt>かな</rt></ruby>しみ</td><td>sorrow — noun made from 悲しい</td></tr>
+          <tr><td class="w">しか 〜 ない</td><td>only / nothing but (always with a negative)</td></tr>
+          <tr><td class="w"><ruby>生<rt>う</rt></ruby>まぬ</td><td>生む (give birth, produce) + ぬ = 生まない</td></tr>
+        </table>
+      </div>
+      <div>
+        <h3>Grammar: 〜しか〜ない · い-adjective → 〜み noun</h3>
+        <div class="gp"><b>Noun + しか + negative</b> = only ~, nothing but ~. Feels more "that's all there is" than だけ.</div>
+        <div class="gp"><b>悲しい → 悲しみ</b>, 苦しい → 苦しみ, 楽しい → 楽しみ, 痛い → 痛み. Drop い, add み = the feeling as a noun.</div>
+        <ul class="ex">
+          <li><ruby>千円<rt>せんえん</rt></ruby>しかない <span class="m">I only have 1,000 yen</span><button class="spk" data-say="千円しかない">🔊</button></li>
+          <li><ruby>日本語<rt>にほんご</rt></ruby>しか<ruby>話<rt>はな</rt></ruby>せない <span class="m">I can only speak Japanese</span><button class="spk" data-say="日本語しか話せない">🔊</button></li>
+          <li><ruby>週末<rt>しゅうまつ</rt></ruby>が<ruby>楽<rt>たの</rt></ruby>しみだ <span class="m">I'm looking forward to the weekend</span><button class="spk" data-say="週末が楽しみだ">🔊</button></li>
+        </ul>
+        <div class="note"><b>Tokyo use:</b> 「現金しか使えません」cash only. 「楽しみにしています」= looking forward to it (say this to Yuuki after class).</div>
+      </div>
+    </div>
+
+    <div class="drill">
+      <h3>Drill</h3>
+      <ol>
+        <li><ruby>財布<rt>さいふ</rt></ruby>に<ruby>百円<rt>ひゃくえん</rt></ruby><button class="blank">しか</button>ない。<span class="m">I only have 100 yen in my wallet.</span></li>
+        <li>この<ruby>店<rt>みせ</rt></ruby>は<ruby>現金<rt>げんきん</rt></ruby><button class="blank">しか使えない</button>。<span class="m">This shop only takes cash. (使う, potential negative)</span></li>
+        <li><ruby>楽<rt>たの</rt></ruby>しい → <button class="blank">楽しみ</button><span class="m">fun → something to look forward to</span></li>
+        <li><ruby>苦<rt>くる</rt></ruby>しい → <button class="blank">苦しみ</button><span class="m">painful → suffering</span></li>
+      </ol>
+      <div class="yourturn">
+        <label>Your turn — answer Souther. What else does love produce?</label>
+        <textarea data-store="yt-l5" placeholder="悲しみだけではない。愛は ＿＿ も生む。  e.g. 愛は勇気も生む。"></textarea>
+        <div class="row"><button class="btn sm act-say-ta">🔊 Read mine</button><span class="hint">Kenshiro's answer is in the next line.</span></div>
+      </div>
+      <div class="done"><label><input type="checkbox" class="doneBox"> Line 5 done</label></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LINE 6 ================= -->
+<section id="l6" class="lesson" data-key="l6">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">6</div>
+      <div><h2>悲しい男よ。誰よりも愛深きゆえに。 <span class="tag n1">N3 誰よりも · N1 ゆえに</span></h2><div class="who">Kenshiro · the eulogy for Souther</div></div>
+    </div>
+
+    <div class="bubble">
+      <p class="jp"><ruby>悲<rt>かな</rt></ruby>しい<ruby>男<rt>おとこ</rt></ruby>よ。<ruby>誰<rt>だれ</rt></ruby>よりも<ruby>愛深<rt>あいふか</rt></ruby>きゆえに。</p>
+      <p class="romaji">Kanashii otoko yo. Dare yori mo ai-fukaki yue ni.</p>
+      <p class="en">"A sad man… <i>because</i> he loved <i>more deeply than anyone</i>."</p>
+    </div>
+
+    <div class="panel">
+      <div class="vid"><div class="yt" id="yt6"></div></div>
+      <div class="ctl" data-player="yt6" data-scene="160,173" data-line="167.4,173">
+        <div class="lbl">Clip</div>
+        <button class="btn primary act-scene">▶ Scene</button>
+        <button class="btn act-loop">🔁 Loop the line</button>
+        <button class="btn act-stop">⏹</button>
+        <button class="btn sm act-slow">🐢 0.75×</button>
+        <div class="loopbar"><i></i></div>
+        <div class="lbl">Listen &amp; repeat</div>
+        <button class="btn act-say" data-say="悲しい男よ。誰よりも愛深きゆえに。">🔊 Normal</button>
+        <button class="btn act-say-slow" data-say="悲しい男よ。誰よりも愛深きゆえに。">🐢 Slow</button>
+        <div class="lbl">Record yourself</div>
+        <div class="rec"><button class="btn dark act-rec">🎙 Record</button><span class="dot"></span><audio controls class="mine" hidden></audio></div>
+        <div class="src">Clip: <a href="https://youtu.be/N9HM0PLlFSw?t=160" target="_blank" rel="noopener">YouTube</a> (same video as line 5, the ending)</div>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div>
+        <h3>Word by word</h3>
+        <table>
+          <tr><th>word</th><th>meaning</th></tr>
+          <tr><td class="w"><ruby>悲<rt>かな</rt></ruby>しい<ruby>男<rt>おとこ</rt></ruby>よ</td><td>"O sad man" — よ after a noun = calling out, poetic</td></tr>
+          <tr><td class="w"><ruby>誰<rt>だれ</rt></ruby>よりも</td><td>more than anyone (誰 + より + も)</td></tr>
+          <tr><td class="w"><ruby>愛深<rt>あいふか</rt></ruby>き</td><td>愛が深い "deep in love" — 深<b>き</b> is the classical form of 深<b>い</b> before a noun</td></tr>
+          <tr><td class="w">ゆえに</td><td>because of that / therefore — formal, written, dramatic</td></tr>
+        </table>
+      </div>
+      <div>
+        <h3>Grammar: 誰よりも (N3) · 〜ゆえに (N1) · 〜き adjectives</h3>
+        <div class="gp"><b>誰よりも + adjective</b> = more than anyone. Swap 誰 for 何 (anything), どこ (anywhere).</div>
+        <div class="gp"><b>Noun / plain form + ゆえに</b> = because of. You will meet it in essays, news, and every villain speech. Everyday speech uses から / ので.</div>
+        <ul class="ex">
+          <li><ruby>母<rt>はは</rt></ruby>は<ruby>誰<rt>だれ</rt></ruby>よりも<ruby>優<rt>やさ</rt></ruby>しい <span class="m">my mother is kinder than anyone</span><button class="spk" data-say="母は誰よりも優しい">🔊</button></li>
+          <li><ruby>経験不足<rt>けいけんぶそく</rt></ruby>ゆえに<ruby>失敗<rt>しっぱい</rt></ruby>した <span class="m">I failed because of lack of experience</span><button class="spk" data-say="経験不足ゆえに失敗した">🔊</button></li>
+          <li><ruby>古<rt>ふる</rt></ruby>き<ruby>良<rt>よ</rt></ruby>き<ruby>時代<rt>じだい</rt></ruby> <span class="m">the good old days (古い→古き, 良い→良き)</span><button class="spk" data-say="古き良き時代">🔊</button></li>
+        </ul>
+        <div class="note"><b>Tokyo use:</b> 「若き日の〜」(in his younger days) on museum captions; 「〜ゆえ」on formal notices.</div>
+      </div>
+    </div>
+
+    <div class="drill">
+      <h3>Drill</h3>
+      <ol>
+        <li><ruby>彼<rt>かれ</rt></ruby>は<button class="blank">誰よりも</button><ruby>速<rt>はや</rt></ruby>い。<span class="m">He is faster than anyone.</span></li>
+        <li><ruby>準備不足<rt>じゅんびぶそく</rt></ruby><button class="blank">ゆえに</button>ミスをした。<span class="m">I made a mistake because of poor preparation.</span></li>
+        <li><ruby>若<rt>わか</rt></ruby>い → <button class="blank">若き</button><ruby>日<rt>ひ</rt></ruby><span class="m">young → younger days (classical)</span></li>
+      </ol>
+      <div class="yourturn">
+        <label>Your turn — praise a friend, Kenshiro style</label>
+        <textarea data-store="yt-l6" placeholder="＿＿よ。誰よりも ＿＿ ゆえに。  e.g. 優しい友よ。誰よりも心広きゆえに。"></textarea>
+        <div class="row"><button class="btn sm act-say-ta">🔊 Read mine</button><span class="hint">Look at the sky while you say it.</span></div>
+      </div>
+      <div class="done"><label><input type="checkbox" class="doneBox"> Line 6 done</label></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUIZ ================= -->
+<section id="quiz">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">✓</div>
+      <div><h2>Final quiz: are you already dead?</h2><div class="who">8 questions. Tap an answer. No secret pressure points involved.</div></div>
+    </div>
+    <div id="quizBox"></div>
+    <div class="score" id="score"></div>
+    <div class="grid2" style="margin-top:22px">
+      <div>
+        <h3>Homework (send in italki chat)</h3>
+        <ol style="padding-left:22px;margin:0;font-size:16px">
+          <li>Record yourself saying all six lines — one take, Kenshiro face optional.</li>
+          <li>Write your own three vows with 〜ぬ.</li>
+          <li>Use「もう〜ている」once in real life this week and report back.</li>
+        </ol>
+      </div>
+      <div>
+        <h3>Cheat sheet</h3>
+        <table>
+          <tr><td class="w">もう〜ている</td><td>already in that state</td></tr>
+          <tr><td class="w">〜なし / 我が</td><td>no ~ (sign style) / my (literary)</td></tr>
+          <tr><td class="w">〜ぬ</td><td>= 〜ない (classical)</td></tr>
+          <tr><td class="w">XはYだ / 〜べきだ</td><td>X → Y! / should</td></tr>
+          <tr><td class="w">〜しか〜ない / 〜み</td><td>only / feeling as a noun</td></tr>
+          <tr><td class="w">誰よりも / 〜ゆえに / 〜き</td><td>more than anyone / because / classical adj</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Made by <a href="https://www.italki.com/teacher/yuuki-anime-sensei" target="_blank" rel="noopener">Yuuki@Anime Sensei</a> for Stephen's trial lesson.</span>
+    <span>Anime tours in Tokyo: <a href="https://tour.animesenseijp.com/" target="_blank" rel="noopener">tour.animesenseijp.com</a></span>
+    <span>Clips are embedded from YouTube and belong to their owners. 北斗の拳 © 武論尊・原哲夫／コアミックス.</span>
+  </div>
+</footer>
+<div class="toast" id="toast"></div>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+/* ---------- helpers ---------- */
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('show'),1800)};
+const store={get:k=>{try{return localStorage.getItem(k)}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}}};
+
+/* ---------- YouTube players + A-B loop ---------- */
+const players={}, loops={};
+const VIDS={ytOP:'xp6rspO4uYY',yt1:'4bv6tNtrU4I',yt2:'jiKRr4vYUyw',yt3:'3XY6neA11eI',yt4:'5N9ibJg2T18',yt5:'N9HM0PLlFSw',yt6:'N9HM0PLlFSw'};
+function onYouTubeIframeAPIReady(){
+  for(const [id,vid] of Object.entries(VIDS)){
+    players[id]=new YT.Player(id,{videoId:vid,playerVars:{rel:0,modestbranding:1,playsinline:1,origin:location.origin},
+      events:{onStateChange:e=>{ if(e.data===YT.PlayerState.ENDED) stopLoop(id); }}});
+  }
+}
+function stopLoop(id){ if(loops[id]){clearInterval(loops[id].t);loops[id]=null;} const c=document.querySelector(`.ctl[data-player="${id}"]`); if(c){c.querySelector('.act-loop').classList.remove('on');c.querySelector('.loopbar i').style.width='0';} }
+function playRange(id,a,b,loop){
+  const p=players[id]; if(!p||!p.seekTo){toast('Player still loading…');return;}
+  stopLoop(id); p.seekTo(a,true); p.playVideo();
+  const c=document.querySelector(`.ctl[data-player="${id}"]`), bar=c.querySelector('.loopbar i');
+  const t=setInterval(()=>{
+    const cur=p.getCurrentTime();
+    bar.style.width=Math.max(0,Math.min(100,(cur-a)/(b-a)*100))+'%';
+    if(cur>=b){ if(loop){p.seekTo(a,true);} else {p.pauseVideo();stopLoop(id);} }
+  },80);
+  loops[id]={t};
+  if(loop) c.querySelector('.act-loop').classList.add('on');
+}
+$$('.ctl').forEach(c=>{
+  const id=c.dataset.player, [sa,sb]=c.dataset.scene.split(',').map(Number), [la,lb]=c.dataset.line.split(',').map(Number);
+  c.querySelector('.act-scene').onclick=()=>playRange(id,sa,sb,false);
+  c.querySelector('.act-loop').onclick=e=>{ if(e.currentTarget.classList.contains('on')){players[id].pauseVideo();stopLoop(id);} else playRange(id,la,lb,true); };
+  c.querySelector('.act-stop').onclick=()=>{players[id]&&players[id].pauseVideo();stopLoop(id);};
+  c.querySelector('.act-slow').onclick=e=>{const p=players[id];if(!p)return;const slow=!e.currentTarget.classList.contains('on');p.setPlaybackRate(slow?0.75:1);e.currentTarget.classList.toggle('on',slow);toast(slow?'0.75× speed':'Normal speed');};
+});
+
+/* ---------- TTS ---------- */
+let voices=[], voice=null, voiceIdx=0;
+function pickVoices(){
+  voices=speechSynthesis.getVoices().filter(v=>/^ja/i.test(v.lang));
+  const pref=['O-Ren','Kyoko','Otoya','Hattori','Google 日本語','Microsoft Nanami','Microsoft Keita'];
+  voices.sort((a,b)=>{const ia=pref.findIndex(p=>a.name.includes(p)),ib=pref.findIndex(p=>b.name.includes(p));return (ia<0?99:ia)-(ib<0?99:ib)});
+  voice=voices[voiceIdx%Math.max(1,voices.length)]||null;
+  $('#voiceName').textContent=voice?voice.name.replace(/\(.*?\)/,'').trim():'no Japanese voice';
+}
+speechSynthesis.onvoiceschanged=pickVoices; pickVoices();
+$('#tVoice').onclick=()=>{ if(!voices.length)return; voiceIdx=(voiceIdx+1)%voices.length; pickVoices(); say('お前はもう死んでいる',1); };
+let currentSpk=null;
+function say(text,rate,btn){
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(text); u.lang='ja-JP'; if(voice)u.voice=voice; u.rate=rate; u.pitch=rate<1?0.9:0.95;
+  if(currentSpk)currentSpk.classList.remove('on'); currentSpk=btn||null; if(btn)btn.classList.add('on');
+  u.onend=u.onerror=()=>{if(btn)btn.classList.remove('on')};
+  speechSynthesis.speak(u);
+}
+$$('.spk').forEach(b=>b.onclick=()=>say(b.dataset.say,0.95,b));
+$$('.act-say').forEach(b=>b.onclick=()=>say(b.dataset.say,0.95,b));
+$$('.act-say-slow').forEach(b=>b.onclick=()=>say(b.dataset.say,0.6,b));
+$$('.act-say-ta').forEach(b=>b.onclick=()=>{const ta=b.closest('.yourturn').querySelector('textarea');const v=ta.value.trim();if(!v){toast('Write something first');ta.focus();return;}say(v,0.9,b)});
+
+/* ---------- Recording ---------- */
+let rec=null, recBtn=null;
+$$('.act-rec').forEach(b=>b.onclick=async()=>{
+  const box=b.closest('.rec'), audio=box.querySelector('audio');
+  if(rec&&rec.state==='recording'){ rec.stop(); return; }
+  if(!navigator.mediaDevices){toast('Recording not supported here');return;}
+  try{
+    const stream=await navigator.mediaDevices.getUserMedia({audio:true});
+    const chunks=[]; rec=new MediaRecorder(stream); recBtn=b;
+    rec.ondataavailable=e=>chunks.push(e.data);
+    rec.onstop=()=>{ stream.getTracks().forEach(t=>t.stop()); const blob=new Blob(chunks,{type:rec.mimeType||'audio/webm'}); audio.src=URL.createObjectURL(blob); audio.hidden=false; box.classList.remove('live'); b.textContent='🎙 Record again'; audio.play().catch(()=>{}); };
+    rec.start(); box.classList.add('live'); b.textContent='⏹ Stop'; toast('Recording… say the line');
+  }catch(e){ toast('Microphone blocked'); }
+});
+
+/* ---------- Drills ---------- */
+$$('.blank').forEach(b=>{b.onclick=()=>{b.classList.toggle('show'); if(b.classList.contains('show')) say(b.textContent,0.95);}});
+$$('textarea[data-store]').forEach(t=>{const v=store.get(t.dataset.store);if(v)t.value=v;t.oninput=()=>store.set(t.dataset.store,t.value)});
+
+/* ---------- Done tracking ---------- */
+function refreshDone(){ const n=$$('.doneBox').filter(c=>c.checked).length; $('#doneN').textContent=n; $$('.done label').forEach(l=>l.classList.toggle('ok',l.querySelector('input').checked)); if(n===6)toast('我が生涯に一片の悔いなし！ All six done.'); }
+$$('.lesson').forEach(s=>{const c=s.querySelector('.doneBox');c.checked=store.get('done-'+s.dataset.key)==='1';c.onchange=()=>{store.set('done-'+s.dataset.key,c.checked?'1':'0');refreshDone()}});
+refreshDone();
+
+/* ---------- Toggles ---------- */
+const tg=(btn,cls,key)=>{ const on=store.get(key)!=='0'; document.body.classList.toggle(cls,!on); btn.classList.toggle('on',on); btn.querySelector('.k').textContent=on?'on':'off';
+  btn.onclick=()=>{const now=document.body.classList.toggle(cls); btn.classList.toggle('on',!now); btn.querySelector('.k').textContent=now?'off':'on'; store.set(key,now?'0':'1');}; };
+tg($('#tRuby'),'no-ruby','ruby'); tg($('#tRomaji'),'no-romaji','romaji');
+
+/* ---------- Nav highlight ---------- */
+const links=$$('#nav a'); const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id))}}),{rootMargin:'-40% 0px -55% 0px'});
+$$('section').forEach(s=>io.observe(s));
+
+/* ---------- Quiz ---------- */
+const QUIZ=[
+ {q:'「お前はもう死んでいる」— What does もう〜ている express here?',o:['an action in progress','a state after a change','a future plan'],a:1,why:'死ぬ is a change verb. 死んでいる = the change is complete; he is in the "dead" state.'},
+ {q:'Your boss asks if there is a problem. The Raoh-style short answer is…',o:['問題なし','問題ぬ','問題しか'],a:0,why:'Noun + なし = "no ~". 問題なし is real office Japanese.'},
+ {q:'Convert 諦めない to Souther style.',o:['諦めぬ','諦めなし','諦めき'],a:0,why:'ない-stem 諦め + ぬ.'},
+ {q:'Which is the irregular one: しない → ?',o:['しぬ','せぬ','すぬ'],a:1,why:'する → せぬ. (しぬ would be… a different verb.)'},
+ {q:'「手は消毒＿＿だ」= you should disinfect your hands.',o:['するべき','すべき','both are fine'],a:2,why:'すべき is the classic form, するべき is also accepted in modern Japanese.'},
+ {q:'「現金しか使えません」means…',o:['cash is not accepted','only cash is accepted','cash is preferred'],a:1,why:'しか + negative = only. The negative is grammar, not meaning.'},
+ {q:'楽しい → noun?',o:['楽しみ','楽しさ','both exist'],a:2,why:'楽しみ = something to look forward to; 楽しさ = the fun-ness. Both real.'},
+ {q:'「誰よりも愛深きゆえに」— ゆえに is closest to…',o:['から / ので (because)','けど (but)','とき (when)'],a:0,why:'ゆえに = formal "because of / therefore". Everyday speech: から, ので.'}
+];
+const qb=$('#quizBox'); let answered=0, correct=0;
+QUIZ.forEach((it,i)=>{
+  const d=document.createElement('div'); d.className='q';
+  d.innerHTML=`<p class="qt">${i+1}. ${it.q}</p><div class="opts">${it.o.map((o,j)=>`<button data-j="${j}">${o}</button>`).join('')}</div><p class="why">${it.why}</p>`;
+  d.querySelectorAll('button').forEach(b=>b.onclick=()=>{ if(d.classList.contains('answered'))return; d.classList.add('answered'); const j=+b.dataset.j; d.querySelectorAll('button').forEach(x=>x.classList.add(+x.dataset.j===it.a?'ok':'ng')); answered++; if(j===it.a)correct++; if(answered===QUIZ.length){ $('#score').textContent=`${correct} / ${QUIZ.length}` + (correct===QUIZ.length?' — 一片の悔いなし！':correct>=5?' — 退かぬ！':' — お前はもう…'); } });
+  qb.appendChild(d);
+});
+</script>
+</body>
+</html>
