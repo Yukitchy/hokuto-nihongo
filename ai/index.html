@@ -51,7 +51,23 @@
 .lk-tip{grid-area:tip;font-size:13px;color:var(--sub);font-weight:700}
 .lk-row .spk{grid-area:spk}
 #song{overflow:visible}#song::before{display:none}
-@media(max-width:880px){.layout{grid-template-columns:1fr}.layout .left{position:static}.player-wrap{position:sticky;top:58px}}
+body{padding-bottom:72px}
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--ink);color:var(--paper);display:flex;align-items:center;gap:10px;padding:10px 14px;box-shadow:0 -6px 20px rgba(0,0,0,.18)}
+html[data-motif="b"] .dock{background:#000}
+.dock .dbtn{appearance:none;border:0;background:rgba(255,255,255,.14);color:#fff;font:inherit;font-weight:900;font-size:15px;width:40px;height:36px;border-radius:0;cursor:pointer;flex:none;display:grid;place-items:center}
+.dock .dbtn.on{background:var(--gold);color:#000}
+.dock .dseek{position:relative;flex:1;height:36px;display:flex;align-items:center}
+.dock .dloop{position:absolute;left:0;width:0;top:12px;height:12px;background:var(--gold);opacity:.55;pointer-events:none;display:none}
+.dock .dloop.on{display:block}
+.dock input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:36px;background:transparent;margin:0;position:relative;z-index:1}
+.dock input[type=range]::-webkit-slider-runnable-track{height:4px;background:rgba(255,255,255,.35);border-radius:2px}
+.dock input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:#fff;margin-top:-7px;border:2px solid var(--gold);cursor:pointer}
+.dock input[type=range]::-moz-range-track{height:4px;background:rgba(255,255,255,.35)}
+.dock input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:#fff;border:2px solid var(--gold)}
+.dock .dtime{font-variant-numeric:tabular-nums;font-weight:900;font-size:13px;white-space:nowrap;flex:none;min-width:84px;text-align:right}
+.dock .dname{font-size:12px;font-weight:700;color:rgba(255,255,255,.7);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:180px}
+.motif-picker{bottom:76px}
+@media(max-width:880px){.layout{grid-template-columns:1fr}.layout .left{position:static}.player-wrap{position:static}.dock .dname{display:none}.dock{padding:8px 10px;gap:8px}}
 </style>
 </head>
 <body><header class="top">
@@ -350,6 +366,14 @@
     <span data-i18n="footer.1">Video embedded from the official Toei Animation channel. 愛をとりもどせ!! © 中村公晴 / 山下三智夫. Lyrics are linked, not reproduced.</span>
   </div>
 </footer>
+<div class="dock" id="dock" aria-label="player">
+  <button class="dbtn" id="dPlay" title="play / pause">▶</button>
+  <span class="dname" id="dName"></span>
+  <div class="dseek"><div class="dloop" id="dLoop"></div><input type="range" id="dRange" min="0" max="1000" value="0" step="1" aria-label="seek"></div>
+  <span class="dtime" id="dTime">0:00 / 0:00</span>
+  <button class="dbtn" id="dLoopBtn" title="loop on/off">🔁</button>
+  <button class="dbtn" id="dSlow" title="0.75x">🐢</button>
+</div>
 <div class="toast" id="toast"></div>
 
 <script src="https://www.youtube.com/iframe_api"></script>
@@ -364,20 +388,36 @@ let P=null, loop=null, activeBtn=null, slow=false;
 function onYouTubeIframeAPIReady(){
   P=new YT.Player('ytOP',{videoId:"xp6rspO4uYY",playerVars:{rel:0,modestbranding:1,playsinline:1,origin:location.origin},
     events:{onStateChange:e=>{if(e.data===YT.PlayerState.ENDED)stopLoop();}}});
-  setInterval(()=>{ if(P&&P.getCurrentTime){const t=P.getCurrentTime();$('#now').textContent=Math.floor(t/60)+':'+String(Math.floor(t%60)).padStart(2,'0');} },250);
+  setInterval(()=>{ if(!(P&&P.getCurrentTime))return; const t=P.getCurrentTime(), dur=P.getDuration()||0;
+    $('#now').textContent=fmt(t); $('#dTime').textContent=fmt(t)+' / '+fmt(dur);
+    if(!seeking&&dur)$('#dRange').value=Math.round(t/dur*1000);
+    $('#dPlay').textContent=P.getPlayerState()===1?'⏸':'▶';
+    if(loop&&dur){const L=$('#dLoop');L.style.left=(loop.a/dur*100)+'%';L.style.width=((loop.b-loop.a)/dur*100)+'%';L.classList.add('on');$('#dLoopBtn').classList.add('on');}
+    else{$('#dLoop').classList.remove('on');$('#dLoopBtn').classList.remove('on');}
+  },200);
 }
+const fmt=t=>Math.floor(t/60)+':'+String(Math.floor(t%60)).padStart(2,'0');
+let seeking=false;
 function stopLoop(){ if(loop){clearInterval(loop.t);loop=null;} if(activeBtn){activeBtn.classList.remove('on');const bar=activeBtn.parentElement.querySelector('.loopbar i');if(bar)bar.style.width='0';activeBtn=null;} }
 function playSeg(a,b,btn){
   if(!P||!P.seekTo){toast('Player still loading…');return;}
   stopLoop(); P.seekTo(a,true); P.playVideo(); activeBtn=btn; btn.classList.add('on');
   const bar=btn.parentElement.querySelector('.loopbar i');
-  loop={t:setInterval(()=>{const cur=P.getCurrentTime(); if(bar)bar.style.width=Math.max(0,Math.min(100,(cur-a)/(b-a)*100))+'%'; if(cur>=b)P.seekTo(a,true); else if(cur<a-0.6&&Date.now()-(loop.last||0)>1000){loop.last=Date.now();P.seekTo(a,true);}},80)};
-  if(window.innerWidth<=880) window.scrollTo({top:0,behavior:'smooth'});
+  loop={a,b,t:setInterval(()=>{const cur=P.getCurrentTime(); if(bar)bar.style.width=Math.max(0,Math.min(100,(cur-a)/(b-a)*100))+'%'; if(cur>=b)P.seekTo(a,true); else if(cur<a-0.6&&Date.now()-(loop.last||0)>1000){loop.last=Date.now();P.seekTo(a,true);}},80)};
+  const nm=btn.closest('.seg')?btn.closest('.seg').querySelector('.head h2').textContent:btn.closest('.title-line')?btn.closest('.title-line').querySelector('.jp').textContent:''; $('#dName').textContent=nm;
 }
 $$('.act-seg').forEach(b=>b.onclick=()=>{ if(b.classList.contains('on')){P.pauseVideo();stopLoop();return;} const [a,c]=b.dataset.seg.split(',').map(Number); playSeg(a,c,b); });
 $('#playAll').onclick=()=>{stopLoop();P.seekTo(0,true);P.playVideo();};
 $('#stopAll').onclick=()=>{P&&P.pauseVideo();stopLoop();};
-$('#slowAll').onclick=e=>{slow=!slow;P.setPlaybackRate(slow?0.75:1);e.currentTarget.classList.toggle('on',slow);toast(slow?'0.75× speed':'Normal speed');};
+function toggleSlow(){slow=!slow;P.setPlaybackRate(slow?0.75:1);$('#slowAll').classList.toggle('on',slow);$('#dSlow').classList.toggle('on',slow);toast(slow?'0.75× speed':'Normal speed');}
+$('#slowAll').onclick=toggleSlow; $('#dSlow').onclick=toggleSlow;
+/* ---------- bottom dock (always visible) ---------- */
+$('#dPlay').onclick=()=>{ if(!P)return; if(P.getPlayerState()===1)P.pauseVideo(); else P.playVideo(); };
+$('#dLoopBtn').onclick=()=>{ if(loop){P.pauseVideo();stopLoop();} else { const b=$('.seg .act-seg'); if(b)b.click(); } };
+const R=$('#dRange');
+R.addEventListener('pointerdown',()=>{seeking=true}); R.addEventListener('pointerup',()=>{seeking=false});
+R.addEventListener('input',()=>{ if(!P||!P.getDuration)return; const dur=P.getDuration(); const t=R.value/1000*dur; $('#dTime').textContent=fmt(t)+' / '+fmt(dur); });
+R.addEventListener('change',()=>{ if(!P||!P.getDuration)return; const dur=P.getDuration(); const t=R.value/1000*dur; if(loop&&(t<loop.a||t>loop.b))stopLoop(); P.seekTo(t,true); P.playVideo(); seeking=false; });
 
 /* ---------- TTS ---------- */
 let voice=null;
