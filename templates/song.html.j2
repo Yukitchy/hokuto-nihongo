@@ -38,6 +38,18 @@
 .title-line .en{font-size:18px;font-weight:700;margin:8px 0 0}
 .title-line .en i{font-style:normal;color:var(--red)}
 .seg .ex li{font-size:15px}
+.lk,.lk-intro{background:var(--paper-2);padding:14px 16px;margin:0 0 14px}
+.lk-intro{margin:22px 0 0}
+.lk-h{font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:var(--sub);margin-bottom:8px}
+.lk-row{display:grid;grid-template-columns:1fr auto;grid-template-areas:"en spk" "kana spk" "tip spk";gap:2px 10px;align-items:center;padding:10px 0;border-top:1px solid rgba(0,0,0,.1)}
+.lk-row:first-of-type{border-top:0}
+.lk-intro .lk-row:nth-of-type(1){border-top:0}
+.lk-en{grid-area:en;font-family:-apple-system,"Helvetica Neue",Arial,sans-serif;font-weight:700;font-size:15px;color:var(--sub);letter-spacing:.01em}
+.lk-en b{color:var(--ink);background:var(--gold);padding:0 3px;border-radius:2px}
+.lk-kana{grid-area:kana;font-weight:900;font-size:22px;line-height:1.3;letter-spacing:.02em}
+.lk-kana b{color:var(--red)}
+.lk-tip{grid-area:tip;font-size:13px;color:var(--sub);font-weight:700}
+.lk-row .spk{grid-area:spk}
 #song{overflow:visible}#song::before{display:none}
 @media(max-width:880px){.layout{grid-template-columns:1fr}.layout .left{position:static}.player-wrap{position:sticky;top:58px}}
 </style>
@@ -91,6 +103,15 @@
             {%- endfor %}
           </div>
         </div>
+        {%- if d.linking_intro %}
+        <div class="lk-intro">
+          <h3 {{ t(d.linking_intro.h) }}>{{ d.linking_intro.h.base }}</h3>
+          <p {{ t(d.linking_intro.p) }}>{{ d.linking_intro.p.base }}</p>
+          {%- for r in d.linking_intro.rules %}
+          <div class="lk-row"><div class="lk-en">{{ r.phrase }}</div><div class="lk-kana">{{ r.kana }}</div><div class="lk-tip" {{ t(r.tip) }}>{{ r.tip.base }}</div><button class="spk" data-say="{{ r.say }}">🔊</button></div>
+          {%- endfor %}
+        </div>
+        {%- endif %}
         <div class="title-line">
           <p class="jp">{{ d.title_line.jp }}</p>
           <p class="en" {{ t(d.title_line.en) }}>{{ d.title_line.en.base }}</p>
@@ -109,6 +130,14 @@
           <div class="body">
             <div class="ctl" data-seg="{{ S.seg[0] }},{{ S.seg[1] }}"><button class="btn primary act-seg" data-seg="{{ S.seg[0] }},{{ S.seg[1] }}" {{ t(d.ui.loop) }}>{{ d.ui.loop.base }}</button><div class="loopbar"><i></i></div></div>
             <p class="cue" {{ t(S.cue) }}>{{ S.cue.base }}</p>
+            {%- if S.linking %}
+            <div class="lk">
+              <div class="lk-h" {{ t(d.ui.linking) }}>{{ d.ui.linking.base }}</div>
+              {%- for l in S.linking %}
+              <div class="lk-row"><div class="lk-en">{{ l.phrase }}</div><div class="lk-kana">{{ l.kana }}</div><div class="lk-tip" {{ t(l.tip) }}>{{ l.tip.base }}</div><button class="spk" data-say="{{ l.say }}">🔊</button></div>
+              {%- endfor %}
+            </div>
+            {%- endif %}
             <table>
               <tr><th {{ t(d.ui.word) }}>{{ d.ui.word.base }}</th><th {{ t(d.ui.meaning) }}>{{ d.ui.meaning.base }}</th></tr>
               {%- for w in S.words %}
@@ -172,6 +201,27 @@
     </div>
   </div>
 </section>
+
+{%- if d.cta %}
+<section class="cta" id="cta">
+  <div class="wrap">
+    <div class="cta-in">
+      <div>
+        <div class="eyebrow" {{ t(d.cta.eyebrow) }}>{{ d.cta.eyebrow.base }}</div>
+        <h2 {{ t(d.cta.h) }}>{{ d.cta.h.base }}</h2>
+        <p {{ t(d.cta.p) }}>{{ d.cta.p.base }}</p>
+        <div class="row">
+          <a class="btn primary" href="{{ d.cta.href }}" target="_blank" rel="noopener" {{ t(d.cta.button) }}>{{ d.cta.button.base }}</a>
+          {%- if d.cta.sub_href %}<a class="btn" href="{{ d.cta.sub_href }}" target="_blank" rel="noopener" {{ t(d.cta.sub) }}>{{ d.cta.sub.base }}</a>{% endif %}
+        </div>
+      </div>
+      <div class="cta-lines">
+        {%- for l in d.cta.lines %}<div>{{ l }}</div>{% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+{%- endif %}
 
 <footer>
   <div class="wrap">

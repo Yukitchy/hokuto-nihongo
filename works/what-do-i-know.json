@@ -1,215 +1,1395 @@
 {
- "slug": "what-do-i-know", "kind": "song", "root": false, "out": "en/what-do-i-know",
- "langs": [{"code": "ja", "label": "日本語"}, {"code": "en", "label": "EN"}],
- "html_lang": {"ja": "ja", "en": "en"}, "tts_lang": "en-US",
- "brand": "そうた<b>×</b>English", "brand_href": "#top",
+ "slug": "what-do-i-know",
+ "kind": "song",
+ "root": false,
+ "out": "en/what-do-i-know",
+ "langs": [
+  {
+   "code": "ja",
+   "label": "日本語"
+  },
+  {
+   "code": "en",
+   "label": "EN"
+  }
+ ],
+ "html_lang": {
+  "ja": "ja",
+  "en": "en"
+ },
+ "tts_lang": "en-US",
+ "brand": "そうた<b>×</b>English",
+ "brand_href": "#top",
  "title_tag": "What Do I Know? で英語 — Ed Sheeranで学ぶ英語（そうた専用）",
  "description": "Ed Sheeran「What Do I Know?」の公式音源をパートごとにループして、単語と文法を覚えて歌う。そうたくん専用の英語レッスンページ。",
  "video": "6B9J3lEyffA",
- "nav": {"back": {"en": "Home", "ja": "← ホーム"}, "back_href": "https://yukitchy.github.io/sota-english-gym/", "quiz": {"en": "Quiz", "ja": "クイズ"},
-         "segs": [{"href": "#s1", "label": "1 gave me"}, {"href": "#s2", "label": "2 when I have"}, {"href": "#s3", "label": "3 could"}, {"href": "#s4", "label": "4 be + ing"}, {"href": "#s5", "label": "5 saw 〜ing"}]},
+ "nav": {
+  "back": {
+   "en": "Home",
+   "ja": "← ホーム"
+  },
+  "back_href": "https://yukitchy.github.io/sota-english-gym/",
+  "quiz": {
+   "en": "Quiz",
+   "ja": "クイズ"
+  },
+  "segs": [
+   {
+    "href": "#s1",
+    "label": "1 gave me"
+   },
+   {
+    "href": "#s2",
+    "label": "2 when I have"
+   },
+   {
+    "href": "#s3",
+    "label": "3 could"
+   },
+   {
+    "href": "#s4",
+    "label": "4 be + ing"
+   },
+   {
+    "href": "#s5",
+    "label": "5 saw 〜ing"
+   }
+  ]
+ },
  "hero": {
-  "eyebrow": {"en": "Song lesson · for Sota · with Yuuki", "ja": "歌でレッスン · そうた専用 · 講師 Yuuki"},
+  "eyebrow": {
+   "en": "Song lesson · for Sota · with Yuuki",
+   "ja": "歌でレッスン · そうた専用 · 講師 Yuuki"
+  },
   "h1": "What Do I Know?",
-  "h1_en": {"en": "Learn English from Ed Sheeran's song", "ja": "Ed Sheeranの歌で英語を学ぶ"},
-  "lead": {"en": "Ed Sheeran, 2017. Loop each part of the official audio, pick up the words, find the grammar, then sing it.", "ja": "Ed Sheeran、2017年。授業で「この曲は？」と聞いてきたあの曲。公式音源をパートごとにループして、単語を拾い、文法を見つけて、最後は歌う。"},
+  "h1_en": {
+   "en": "Learn English from Ed Sheeran's song",
+   "ja": "Ed Sheeranの歌で英語を学ぶ"
+  },
+  "lead": {
+   "en": "Ed Sheeran, 2017. Loop each part of the official audio, pick up the words, find the grammar, then sing it.",
+   "ja": "Ed Sheeran、2017年。授業で「この曲は？」と聞いてきたあの曲。公式音源をパートごとにループして、単語を拾い、文法を見つけて、最後は歌う。"
+  },
   "howto": [
-   {"t": {"en": "Listen", "ja": "聴く"}, "d": {"en": "Play the part once.", "ja": "まずパートを1回再生。"}},
-   {"t": {"en": "Loop", "ja": "ループ"}, "d": {"en": "Loop it. Slow it down.", "ja": "繰り返す。遅くもできる。"}},
-   {"t": {"en": "Read", "ja": "読む"}, "d": {"en": "Open the lyrics in a second tab.", "ja": "歌詞は別タブで開く。"}},
-   {"t": {"en": "Words", "ja": "単語"}, "d": {"en": "Learn the words and the pattern.", "ja": "単語と文法パターンを覚える。"}},
-   {"t": {"en": "Sing", "ja": "歌う"}, "d": {"en": "Record yourself. Loudly.", "ja": "録音する。大声で。"}}
+   {
+    "t": {
+     "en": "Listen",
+     "ja": "聴く"
+    },
+    "d": {
+     "en": "Play the part once.",
+     "ja": "まずパートを1回再生。"
+    }
+   },
+   {
+    "t": {
+     "en": "Loop",
+     "ja": "ループ"
+    },
+    "d": {
+     "en": "Loop it. Slow it down.",
+     "ja": "繰り返す。遅くもできる。"
+    }
+   },
+   {
+    "t": {
+     "en": "Read",
+     "ja": "読む"
+    },
+    "d": {
+     "en": "Open the lyrics in a second tab.",
+     "ja": "歌詞は別タブで開く。"
+    }
+   },
+   {
+    "t": {
+     "en": "Sounds & words",
+     "ja": "音と単語"
+    },
+    "d": {
+     "en": "See the linking, learn the words and the pattern.",
+     "ja": "リンキングを見て、単語と文法を覚える。"
+    }
+   },
+   {
+    "t": {
+     "en": "Sing",
+     "ja": "歌う"
+    },
+    "d": {
+     "en": "Record yourself. Loudly.",
+     "ja": "録音する。大声で。"
+    }
+   }
   ]
  },
  "ui": {
-  "all": {"en": "▶ Whole song", "ja": "▶ 通しで再生"}, "slow": {"en": "🐢 0.75×", "ja": "🐢 0.75倍"},
-  "loop": {"en": "🔁 Loop this part", "ja": "🔁 このパートをループ"}, "loopline": {"en": "🔁 Loop this line", "ja": "🔁 この行をループ"},
-  "rec": {"en": "🎙 Sing it", "ja": "🎙 歌ってみる"}, "readmine": {"en": "🔊 Read mine", "ja": "🔊 自分の文を読ませる"},
-  "word": {"en": "word", "ja": "単語"}, "meaning": {"en": "meaning", "ja": "意味"}, "drill": {"en": "Drill", "ja": "ドリル"}
+  "all": {
+   "en": "▶ Whole song",
+   "ja": "▶ 通しで再生"
+  },
+  "slow": {
+   "en": "🐢 0.75×",
+   "ja": "🐢 0.75倍"
+  },
+  "loop": {
+   "en": "🔁 Loop this part",
+   "ja": "🔁 このパートをループ"
+  },
+  "loopline": {
+   "en": "🔁 Loop this line",
+   "ja": "🔁 この行をループ"
+  },
+  "rec": {
+   "en": "🎙 Sing it",
+   "ja": "🎙 歌ってみる"
+  },
+  "readmine": {
+   "en": "🔊 Read mine",
+   "ja": "🔊 自分の文を読ませる"
+  },
+  "word": {
+   "en": "word",
+   "ja": "単語"
+  },
+  "meaning": {
+   "en": "meaning",
+   "ja": "意味"
+  },
+  "drill": {
+   "en": "Drill",
+   "ja": "ドリル"
+  },
+  "linking": {
+   "en": "🔗 Linking — how it actually sounds",
+   "ja": "🔗 リンキング — つなげて読むとこう聞こえる"
+  }
  },
  "lyrics": {
-  "h": {"en": "Lyrics", "ja": "歌詞"},
-  "p": {"en": "The lyrics are copyrighted, so they are not printed here. Open them in a second tab and sing along while you loop.", "ja": "歌詞は著作物なのでこのページには載せていない。別タブで開いて、ループしながら一緒に歌う。和訳つき動画も便利。"},
+  "h": {
+   "en": "Lyrics",
+   "ja": "歌詞"
+  },
+  "p": {
+   "en": "The lyrics are copyrighted, so they are not printed here. Open them in a second tab and sing along while you loop.",
+   "ja": "歌詞は著作物なのでこのページには載せていない。別タブで開いて、ループしながら一緒に歌う。和訳つき動画も便利。"
+  },
   "links": [
-   {"href": "https://genius.com/Ed-sheeran-what-do-i-know-lyrics", "text": {"en": "Genius (lyrics)", "ja": "Genius（英語歌詞）"}, "dark": true},
-   {"href": "https://www.youtube.com/watch?v=RGmb2xM3XBQ", "text": {"en": "Japanese subtitles (YouTube)", "ja": "和訳つき動画（YouTube）"}, "dark": false}
+   {
+    "href": "https://genius.com/Ed-sheeran-what-do-i-know-lyrics",
+    "text": {
+     "en": "Genius (lyrics)",
+     "ja": "Genius（英語歌詞）"
+    },
+    "dark": true
+   },
+   {
+    "href": "https://www.youtube.com/watch?v=RGmb2xM3XBQ",
+    "text": {
+     "en": "Japanese subtitles (YouTube)",
+     "ja": "和訳つき動画（YouTube）"
+    },
+    "dark": false
+   }
   ]
  },
  "title_line": {
   "jp": "But what do I know?",
-  "en": {"en": "The title. A question that means \"I'm nobody special\" — the chorus ends on it every time.", "ja": "「でも、俺に何が分かるっていうんだ？」— タイトルの一行。サビの最後に毎回来る。<i>疑問文の語順 what do I know</i> をここで体に入れる。"},
-  "say": "But what do I know?", "seg": [65.0, 67.2]
+  "en": {
+   "en": "The title. A question that means \"I'm nobody special\" — the chorus ends on it every time.",
+   "ja": "「でも、俺に何が分かるっていうんだ？」— タイトルの一行。サビの最後に毎回来る。<i>疑問文の語順 what do I know</i> をここで体に入れる。"
+  },
+  "say": "But what do I know?",
+  "seg": [
+   65.0,
+   67.2
+  ]
  },
  "segments": [
   {
-   "id": "s1", "h": {"en": "Verse 1: God gave me a stage", "ja": "1番: 神様は俺にステージをくれた"}, "time": "0:00–0:16", "seg": [0.0, 15.9],
-   "cue": {"en": "Four short lines. Listen for <b>gave me a stage</b> and <b>don't you</b>.", "ja": "短い4行。<b>gave me a stage</b>（俺にステージをくれた）と、お父さんの忠告 <b>don't you ...</b> を聞き取って。"},
+   "id": "s1",
+   "h": {
+    "en": "Verse 1: God gave me a stage",
+    "ja": "1番: 神様は俺にステージをくれた"
+   },
+   "time": "0:00–0:16",
+   "seg": [
+    0.0,
+    15.9
+   ],
+   "cue": {
+    "en": "Four short lines. Listen for <b>gave me a stage</b> and <b>don't you</b>.",
+    "ja": "短い4行。<b>gave me a stage</b>（俺にステージをくれた）と、お父さんの忠告 <b>don't you ...</b> を聞き取って。"
+   },
    "words": [
-    ["soapbox", {"en": "a box you stand on to make a speech", "ja": "演説台。昔は石けんの木箱に乗って演説した"}],
-    ["stage", {"en": "a place to perform", "ja": "ステージ、舞台"}],
-    ["gave me a stage", {"en": "give + person + thing", "ja": "give + 人 + 物 = 人に物をあげる（gaveは過去形）"}],
-    ["my daddy told me", {"en": "tell + person = say to someone", "ja": "tell + 人 = 人に言う、教える（daddy = パパ）"}],
-    ["don't you ...", {"en": "a strong warning", "ja": "〜するなよ（youを入れると忠告が強くなる）"}],
-    ["politics / religion", {"en": "two topics you avoid at dinner", "ja": "政治／宗教（人前で話すと危ない話題の代表）"}],
-    ["ain't", {"en": "casual am not / isn't / hasn't", "ja": "am not / isn't / haven't の口語。歌では普通、テストでは使わない"}]
+    [
+     "soapbox",
+     {
+      "en": "a box you stand on to make a speech",
+      "ja": "演説台。昔は石けんの木箱に乗って演説した"
+     }
+    ],
+    [
+     "stage",
+     {
+      "en": "a place to perform",
+      "ja": "ステージ、舞台"
+     }
+    ],
+    [
+     "gave me a stage",
+     {
+      "en": "give + person + thing",
+      "ja": "give + 人 + 物 = 人に物をあげる（gaveは過去形）"
+     }
+    ],
+    [
+     "my daddy told me",
+     {
+      "en": "tell + person = say to someone",
+      "ja": "tell + 人 = 人に言う、教える（daddy = パパ）"
+     }
+    ],
+    [
+     "don't you ...",
+     {
+      "en": "a strong warning",
+      "ja": "〜するなよ（youを入れると忠告が強くなる）"
+     }
+    ],
+    [
+     "politics / religion",
+     {
+      "en": "two topics you avoid at dinner",
+      "ja": "政治／宗教（人前で話すと危ない話題の代表）"
+     }
+    ],
+    [
+     "ain't",
+     {
+      "en": "casual am not / isn't / hasn't",
+      "ja": "am not / isn't / haven't の口語。歌では普通、テストでは使わない"
+     }
+    ]
    ],
    "gp": [
-    {"en": "<b>give + person + thing</b> — \"God gave me a stage\". Two objects, no preposition.", "ja": "<b>give + 人 + 物</b>（第4文型）: God gave <b>me</b> <b>a stage</b>。前置詞なしで「人」「物」を並べる。tell / show / send も同じ形。"},
-    {"en": "<b>Don't + verb</b> — the negative command. \"Don't you ...\" adds emphasis.", "ja": "<b>Don't + 動詞</b> = 〜するな（否定の命令文）。<b>Don't you</b> は「お前、〜するなよ」と念を押す形。"}
+    {
+     "en": "<b>give + person + thing</b> — \"God gave me a stage\". Two objects, no preposition.",
+     "ja": "<b>give + 人 + 物</b>（第4文型）: God gave <b>me</b> <b>a stage</b>。前置詞なしで「人」「物」を並べる。tell / show / send も同じ形。"
+    },
+    {
+     "en": "<b>Don't + verb</b> — the negative command. \"Don't you ...\" adds emphasis.",
+     "ja": "<b>Don't + 動詞</b> = 〜するな（否定の命令文）。<b>Don't you</b> は「お前、〜するなよ」と念を押す形。"
+    }
    ],
    "examples": [
-    {"jp": "My mother gave me a watch.", "m": {"en": "give + me + a watch", "ja": "母は私に時計をくれた"}, "say": "My mother gave me a watch."},
-    {"jp": "Show me your surfboard.", "m": {"en": "show + me + thing", "ja": "サーフボードを見せて"}, "say": "Show me your surfboard."},
-    {"jp": "Don't you forget it.", "m": {"en": "strong warning", "ja": "忘れるなよ"}, "say": "Don't you forget it."}
+    {
+     "jp": "My mother gave me a watch.",
+     "m": {
+      "en": "give + me + a watch",
+      "ja": "母は私に時計をくれた"
+     },
+     "say": "My mother gave me a watch."
+    },
+    {
+     "jp": "Show me your surfboard.",
+     "m": {
+      "en": "show + me + thing",
+      "ja": "サーフボードを見せて"
+     },
+     "say": "Show me your surfboard."
+    },
+    {
+     "jp": "Don't you forget it.",
+     "m": {
+      "en": "strong warning",
+      "ja": "忘れるなよ"
+     },
+     "say": "Don't you forget it."
+    }
    ],
-   "drill_h": {"en": "Drill", "ja": "ドリル"},
+   "drill_h": {
+    "en": "Drill",
+    "ja": "ドリル"
+   },
    "drill": [
-    {"jp": "He {{blank:gave}} me a present. ", "m": {"en": "give, past", "ja": "彼は私にプレゼントをくれた（giveの過去形）"}},
-    {"jp": "{{blank:Don't}} talk about politics at work. ", "m": {"en": "negative command", "ja": "職場で政治の話をするな（否定の命令文）"}},
-    {"jp": "My teacher {{blank:told}} me the answer. ", "m": {"en": "tell, past", "ja": "先生は私に答えを教えた（tellの過去形）"}}
+    {
+     "jp": "He {{blank:gave}} me a present. ",
+     "m": {
+      "en": "give, past",
+      "ja": "彼は私にプレゼントをくれた（giveの過去形）"
+     }
+    },
+    {
+     "jp": "{{blank:Don't}} talk about politics at work. ",
+     "m": {
+      "en": "negative command",
+      "ja": "職場で政治の話をするな（否定の命令文）"
+     }
+    },
+    {
+     "jp": "My teacher {{blank:told}} me the answer. ",
+     "m": {
+      "en": "tell, past",
+      "ja": "先生は私に答えを教えた（tellの過去形）"
+     }
+    }
    ],
-   "yourturn": {"label": {"en": "Your turn — who gave you what? \"___ gave me ___.\"", "ja": "そうたの番 — 誰が何をくれた？「___ gave me ___.」"}, "ph": {"en": "___ gave me ___.  e.g. My dad gave me a fishing rod.", "ja": "___ gave me ___.  例: My dad gave me a fishing rod.（父が釣り竿をくれた）"}, "store": "wdik-s1"}
+   "yourturn": {
+    "label": {
+     "en": "Your turn — who gave you what? \"___ gave me ___.\"",
+     "ja": "そうたの番 — 誰が何をくれた？「___ gave me ___.」"
+    },
+    "ph": {
+     "en": "___ gave me ___.  e.g. My dad gave me a fishing rod.",
+     "ja": "___ gave me ___.  例: My dad gave me a fishing rod.（父が釣り竿をくれた）"
+    },
+    "store": "wdik-s1"
+   },
+   "linking": [
+    {
+     "phrase": "Ain'<b>t</b> go<b>t a</b> soapbox",
+     "kana": "エイン<b>ッ</b>ゴ<b>ラ</b>ソウプボックス",
+     "tip": {
+      "en": "final t drops, got a → gada",
+      "ja": "t が消えて「ッ」、got a はゴラ"
+     },
+     "say": "Ain't got a soapbox"
+    },
+    {
+     "phrase": "gave m<b>e a</b> stage",
+     "kana": "ゲイヴ<b>ミァ</b>ステイジ",
+     "tip": {
+      "en": "me a → one sound",
+      "ja": "me + a がひとつの音に"
+     },
+     "say": "gave me a stage"
+    },
+    {
+     "phrase": "told me, son",
+     "kana": "トウルミー サン",
+     "tip": {
+      "en": "d in told almost silent",
+      "ja": "told の d はほぼ消える"
+     },
+     "say": "told me, son"
+    },
+    {
+     "phrase": "don'<b>t you</b>",
+     "kana": "ドン<b>チュ</b>ー",
+     "tip": {
+      "en": "t + you → chu",
+      "ja": "t + you → チュ"
+     },
+     "say": "don't you"
+    }
+   ]
   },
   {
-   "id": "s2", "h": {"en": "Pre-chorus: when I have children", "ja": "Bメロ: 子どもができたら"}, "time": "0:16–0:32", "seg": [15.8, 31.8],
-   "cue": {"en": "Listen for <b>when I have children</b> — present tense, even though it's the future.", "ja": "<b>when I have children</b> を聞き取って。未来の話なのに <b>have</b>（現在形）— ここが今回一番大事な文法。"},
+   "id": "s2",
+   "h": {
+    "en": "Pre-chorus: when I have children",
+    "ja": "Bメロ: 子どもができたら"
+   },
+   "time": "0:16–0:32",
+   "seg": [
+    15.8,
+    31.8
+   ],
+   "cue": {
+    "en": "Listen for <b>when I have children</b> — present tense, even though it's the future.",
+    "ja": "<b>when I have children</b> を聞き取って。未来の話なのに <b>have</b>（現在形）— ここが今回一番大事な文法。"
+   },
    "words": [
-    ["paint the picture", {"en": "describe it clearly", "ja": "はっきり描いてみせる、説明する"}],
-    ["let me + verb", {"en": "allow me to", "ja": "〜させて（Let me try = やらせて）"}],
-    ["when I have children", {"en": "when + present = future condition", "ja": "子どもができたら（whenの中は未来でも現在形！）"}],
-    ["pass on", {"en": "hand down to the next person", "ja": "次の人に伝える、受け継がせる"}],
-    ["understanding", {"en": "the noun of understand", "ja": "理解、思いやり（understandの名詞）"}]
+    [
+     "paint the picture",
+     {
+      "en": "describe it clearly",
+      "ja": "はっきり描いてみせる、説明する"
+     }
+    ],
+    [
+     "let me + verb",
+     {
+      "en": "allow me to",
+      "ja": "〜させて（Let me try = やらせて）"
+     }
+    ],
+    [
+     "when I have children",
+     {
+      "en": "when + present = future condition",
+      "ja": "子どもができたら（whenの中は未来でも現在形！）"
+     }
+    ],
+    [
+     "pass on",
+     {
+      "en": "hand down to the next person",
+      "ja": "次の人に伝える、受け継がせる"
+     }
+    ],
+    [
+     "understanding",
+     {
+      "en": "the noun of understand",
+      "ja": "理解、思いやり（understandの名詞）"
+     }
+    ]
    ],
    "gp": [
-    {"en": "<b>When / If + present tense</b> for future conditions. Not \"when I will have\".", "ja": "<b>when / if の中は現在形</b>。未来のことでも <b>will</b> を入れない: when I <b>have</b> children ○ / when I will have ✗。高校英語の超頻出ルール。"},
-    {"en": "<b>Let me + verb</b> — a soft \"allow me\".", "ja": "<b>Let me + 動詞</b> = 〜させて。let のあとの動詞は原形。"}
+    {
+     "en": "<b>When / If + present tense</b> for future conditions. Not \"when I will have\".",
+     "ja": "<b>when / if の中は現在形</b>。未来のことでも <b>will</b> を入れない: when I <b>have</b> children ○ / when I will have ✗。高校英語の超頻出ルール。"
+    },
+    {
+     "en": "<b>Let me + verb</b> — a soft \"allow me\".",
+     "ja": "<b>Let me + 動詞</b> = 〜させて。let のあとの動詞は原形。"
+    }
    ],
    "examples": [
-    {"jp": "When I get home, I'll call you.", "m": {"en": "get, not will get", "ja": "家に着いたら電話する（getは現在形）"}, "say": "When I get home, I'll call you."},
-    {"jp": "If it rains tomorrow, we won't surf.", "m": {"en": "rains, not will rain", "ja": "明日雨ならサーフィンはしない"}, "say": "If it rains tomorrow, we won't surf."},
-    {"jp": "Let me check.", "m": {"en": "allow me to check", "ja": "確認させて"}, "say": "Let me check."}
+    {
+     "jp": "When I get home, I'll call you.",
+     "m": {
+      "en": "get, not will get",
+      "ja": "家に着いたら電話する（getは現在形）"
+     },
+     "say": "When I get home, I'll call you."
+    },
+    {
+     "jp": "If it rains tomorrow, we won't surf.",
+     "m": {
+      "en": "rains, not will rain",
+      "ja": "明日雨ならサーフィンはしない"
+     },
+     "say": "If it rains tomorrow, we won't surf."
+    },
+    {
+     "jp": "Let me check.",
+     "m": {
+      "en": "allow me to check",
+      "ja": "確認させて"
+     },
+     "say": "Let me check."
+    }
    ],
-   "drill_h": {"en": "Drill", "ja": "ドリル"},
+   "drill_h": {
+    "en": "Drill",
+    "ja": "ドリル"
+   },
    "drill": [
-    {"jp": "When I {{blank:finish}} school, I will work on ships. ", "m": {"en": "present, not will finish", "ja": "学校を卒業したら船で働く（現在形）"}},
-    {"jp": "If the waves {{blank:are}} good, I'll go surfing. ", "m": {"en": "are, not will be", "ja": "波が良ければサーフィンに行く"}},
-    {"jp": "{{blank:Let}} me try. ", "m": {"en": "allow me", "ja": "やらせて"}}
+    {
+     "jp": "When I {{blank:finish}} school, I will work on ships. ",
+     "m": {
+      "en": "present, not will finish",
+      "ja": "学校を卒業したら船で働く（現在形）"
+     }
+    },
+    {
+     "jp": "If the waves {{blank:are}} good, I'll go surfing. ",
+     "m": {
+      "en": "are, not will be",
+      "ja": "波が良ければサーフィンに行く"
+     }
+    },
+    {
+     "jp": "{{blank:Let}} me try. ",
+     "m": {
+      "en": "allow me",
+      "ja": "やらせて"
+     }
+    }
    ],
-   "yourturn": {"label": {"en": "Your turn — \"When I ___, I will ___.\"", "ja": "そうたの番 — 「When I ___, I will ___.」whenの中は現在形で"}, "ph": {"en": "When I ___, I will ___.  e.g. When I get my license, I will work on a ship.", "ja": "When I ___, I will ___.  例: When I get my license, I will work on a ship.（資格を取ったら船で働く）"}, "store": "wdik-s2"}
+   "yourturn": {
+    "label": {
+     "en": "Your turn — \"When I ___, I will ___.\"",
+     "ja": "そうたの番 — 「When I ___, I will ___.」whenの中は現在形で"
+    },
+    "ph": {
+     "en": "When I ___, I will ___.  e.g. When I get my license, I will work on a ship.",
+     "ja": "When I ___, I will ___.  例: When I get my license, I will work on a ship.（資格を取ったら船で働く）"
+    },
+    "store": "wdik-s2"
+   },
+   "linking": [
+    {
+     "phrase": "pain<b>t the</b> picture",
+     "kana": "ペイン<b>ッダ</b>ピクチャー",
+     "tip": {
+      "en": "t → stop, the → da",
+      "ja": "t は「ッ」、the はダに近い"
+     },
+     "say": "paint the picture"
+    },
+    {
+     "phrase": "le<b>t me</b>",
+     "kana": "レ<b>ッミ</b>ー",
+     "tip": {
+      "en": "t in let is swallowed",
+      "ja": "let の t は飲み込む"
+     },
+     "say": "let me"
+    },
+    {
+     "phrase": "whe<b>n I</b> have",
+     "kana": "ウェ<b>ナイ</b>ハヴ",
+     "tip": {
+      "en": "n + I → nai",
+      "ja": "n + I → ナイ"
+     },
+     "say": "when I have"
+    },
+    {
+     "phrase": "pas<b>s on</b>",
+     "kana": "パ<b>ソン</b>",
+     "tip": {
+      "en": "s + on → son",
+      "ja": "s + on → ソン"
+     },
+     "say": "pass on"
+    },
+    {
+     "phrase": "lov<b>e and</b> understanding",
+     "kana": "ラ<b>ヴァン</b>アンダースタンディン",
+     "tip": {
+      "en": "and → 'an'; v + and → van",
+      "ja": "and は「アン」まで。v + and → ヴァン"
+     },
+     "say": "love and understanding"
+    }
+   ]
   },
   {
-   "id": "s3", "h": {"en": "Chorus: we could change this whole world", "ja": "サビ: 世界を変えられるかもしれない"}, "time": "0:32–0:50", "seg": [31.6, 49.7],
-   "cue": {"en": "Listen for <b>could change</b>, <b>a one-man show</b>, and <b>no university, no degree</b>.", "ja": "<b>could change</b>（変えられるかも）、<b>a one-man show</b>、<b>no university, no degree</b> を聞き取って。"},
+   "id": "s3",
+   "h": {
+    "en": "Chorus: we could change this whole world",
+    "ja": "サビ: 世界を変えられるかもしれない"
+   },
+   "time": "0:32–0:50",
+   "seg": [
+    31.6,
+    49.7
+   ],
+   "cue": {
+    "en": "Listen for <b>could change</b>, <b>a one-man show</b>, and <b>no university, no degree</b>.",
+    "ja": "<b>could change</b>（変えられるかも）、<b>a one-man show</b>、<b>no university, no degree</b> を聞き取って。"
+   },
    "words": [
-    ["could change", {"en": "could = maybe can", "ja": "変えられるかもしれない（could = 控えめな can）"}],
-    ["whole", {"en": "entire", "ja": "全体の、まるごとの（this whole world = この世界まるごと）"}],
-    ["grab", {"en": "take quickly", "ja": "つかむ、パッと取る"}],
-    ["a boy with a one-man show", {"en": "with = who has", "ja": "一人芝居を持った少年（with = 〜を持った）"}],
-    ["no university, no degree", {"en": "no + noun = there is no", "ja": "大学も学位もない（no + 名詞 = 〜がない）"}],
-    ["degree", {"en": "a university qualification", "ja": "学位（大学を出た証明）"}]
+    [
+     "could change",
+     {
+      "en": "could = maybe can",
+      "ja": "変えられるかもしれない（could = 控えめな can）"
+     }
+    ],
+    [
+     "whole",
+     {
+      "en": "entire",
+      "ja": "全体の、まるごとの（this whole world = この世界まるごと）"
+     }
+    ],
+    [
+     "grab",
+     {
+      "en": "take quickly",
+      "ja": "つかむ、パッと取る"
+     }
+    ],
+    [
+     "a boy with a one-man show",
+     {
+      "en": "with = who has",
+      "ja": "一人芝居を持った少年（with = 〜を持った）"
+     }
+    ],
+    [
+     "no university, no degree",
+     {
+      "en": "no + noun = there is no",
+      "ja": "大学も学位もない（no + 名詞 = 〜がない）"
+     }
+    ],
+    [
+     "degree",
+     {
+      "en": "a university qualification",
+      "ja": "学位（大学を出た証明）"
+     }
+    ]
    ],
    "gp": [
-    {"en": "<b>could + verb</b> — \"might be able to\". Softer than can.", "ja": "<b>could + 動詞</b> = 〜できるかもしれない。can より控えめ・仮の話。過去の意味だけじゃない。"},
-    {"en": "<b>no + noun</b> — \"there is no ~\". No university = I didn't go to university.", "ja": "<b>no + 名詞</b> = 〜がない。No university, no degree = 大学に行ってない、学位もない。not がなくても否定になる。"}
+    {
+     "en": "<b>could + verb</b> — \"might be able to\". Softer than can.",
+     "ja": "<b>could + 動詞</b> = 〜できるかもしれない。can より控えめ・仮の話。過去の意味だけじゃない。"
+    },
+    {
+     "en": "<b>no + noun</b> — \"there is no ~\". No university = I didn't go to university.",
+     "ja": "<b>no + 名詞</b> = 〜がない。No university, no degree = 大学に行ってない、学位もない。not がなくても否定になる。"
+    }
    ],
    "examples": [
-    {"jp": "We could go fishing this weekend.", "m": {"en": "maybe we can", "ja": "今週末、釣りに行けるかもね"}, "say": "We could go fishing this weekend."},
-    {"jp": "No money, no problem.", "m": {"en": "no + noun", "ja": "金がなくても問題ない"}, "say": "No money, no problem."},
-    {"jp": "a man with a big dream", "m": {"en": "with = who has", "ja": "大きな夢を持った男"}, "say": "a man with a big dream"}
+    {
+     "jp": "We could go fishing this weekend.",
+     "m": {
+      "en": "maybe we can",
+      "ja": "今週末、釣りに行けるかもね"
+     },
+     "say": "We could go fishing this weekend."
+    },
+    {
+     "jp": "No money, no problem.",
+     "m": {
+      "en": "no + noun",
+      "ja": "金がなくても問題ない"
+     },
+     "say": "No money, no problem."
+    },
+    {
+     "jp": "a man with a big dream",
+     "m": {
+      "en": "with = who has",
+      "ja": "大きな夢を持った男"
+     },
+     "say": "a man with a big dream"
+    }
    ],
-   "drill_h": {"en": "Drill", "ja": "ドリル"},
+   "drill_h": {
+    "en": "Drill",
+    "ja": "ドリル"
+   },
    "drill": [
-    {"jp": "You {{blank:could}} be a great radio operator. ", "m": {"en": "might be able to", "ja": "君は良い無線技士になれるかもしれない"}},
-    {"jp": "There is {{blank:no}} time. ", "m": {"en": "no + noun", "ja": "時間がない"}},
-    {"jp": "a girl {{blank:with}} long hair ", "m": {"en": "with = who has", "ja": "長い髪の女の子"}}
+    {
+     "jp": "You {{blank:could}} be a great radio operator. ",
+     "m": {
+      "en": "might be able to",
+      "ja": "君は良い無線技士になれるかもしれない"
+     }
+    },
+    {
+     "jp": "There is {{blank:no}} time. ",
+     "m": {
+      "en": "no + noun",
+      "ja": "時間がない"
+     }
+    },
+    {
+     "jp": "a girl {{blank:with}} long hair ",
+     "m": {
+      "en": "with = who has",
+      "ja": "長い髪の女の子"
+     }
+    }
    ],
-   "yourturn": {"label": {"en": "Your turn — \"I'm just a boy with ___.\"", "ja": "そうたの番 — 「I'm just a boy with ___.」自分を一言で"}, "ph": {"en": "I'm just a boy with ___.  e.g. I'm just a boy with a surfboard.", "ja": "I'm just a boy with ___.  例: I'm just a boy with a surfboard.（サーフボードを持ってるだけの男）"}, "store": "wdik-s3"}
+   "yourturn": {
+    "label": {
+     "en": "Your turn — \"I'm just a boy with ___.\"",
+     "ja": "そうたの番 — 「I'm just a boy with ___.」自分を一言で"
+    },
+    "ph": {
+     "en": "I'm just a boy with ___.  e.g. I'm just a boy with a surfboard.",
+     "ja": "I'm just a boy with ___.  例: I'm just a boy with a surfboard.（サーフボードを持ってるだけの男）"
+    },
+    "store": "wdik-s3"
+   },
+   "linking": [
+    {
+     "phrase": "chang<b>e this</b> whole world",
+     "kana": "チェイン<b>ジディス</b>ホウルワールド",
+     "tip": {
+      "en": "ge + this join",
+      "ja": "ge + this がつながる"
+     },
+     "say": "change this whole world"
+    },
+    {
+     "phrase": "gra<b>b a</b> beat",
+     "kana": "グラ<b>バ</b>ビーッ",
+     "tip": {
+      "en": "b + a → ba; final t → stop",
+      "ja": "b + a → バ。beat の t は「ッ」"
+     },
+     "say": "grab a beat"
+    },
+    {
+     "phrase": "boy wi<b>th a</b> one-man show",
+     "kana": "ボイウィ<b>ザ</b>ワンマンショウ",
+     "tip": {
+      "en": "th + a → tha",
+      "ja": "th + a → ザ"
+     },
+     "say": "boy with a one-man show"
+    },
+    {
+     "phrase": "n<b>o u</b>niversity",
+     "kana": "ノ<b>ウユ</b>ニヴァーシティ",
+     "tip": {
+      "en": "a small w-glide between o and u",
+      "ja": "o と u の間に小さな「ウ」が入る"
+     },
+     "say": "no university"
+    }
+   ]
   },
   {
-   "id": "s4", "h": {"en": "Hook: everybody's talking … but what do I know?", "ja": "サビ後半: みんな騒いでるけど、俺に何が分かる？"}, "time": "0:50–1:22", "seg": [49.5, 81.9],
-   "cue": {"en": "Listen for <b>everybody's talking</b> (be + ing) and the question <b>what do I know?</b>", "ja": "<b>everybody's talking</b>（be動詞 + ing）と、疑問文 <b>what do I know?</b> を聞き取って。そうたが間違えやすい「be動詞 + 一般動詞」の区別がここに詰まってる。"},
+   "id": "s4",
+   "h": {
+    "en": "Hook: everybody's talking … but what do I know?",
+    "ja": "サビ後半: みんな騒いでるけど、俺に何が分かる？"
+   },
+   "time": "0:50–1:22",
+   "seg": [
+    49.5,
+    81.9
+   ],
+   "cue": {
+    "en": "Listen for <b>everybody's talking</b> (be + ing) and the question <b>what do I know?</b>",
+    "ja": "<b>everybody's talking</b>（be動詞 + ing）と、疑問文 <b>what do I know?</b> を聞き取って。そうたが間違えやすい「be動詞 + 一般動詞」の区別がここに詰まってる。"
+   },
    "words": [
-    ["everybody's talking", {"en": "everybody is talking", "ja": "みんなが話している（'s = is、進行形）"}],
-    ["exponential growth", {"en": "growing faster and faster", "ja": "急激な成長（経済ニュースの言葉）"}],
-    ["the stock market", {"en": "where shares are traded", "ja": "株式市場"}],
-    ["crash", {"en": "fall suddenly", "ja": "暴落する（stock market crashing = 株が暴落していく）"}],
-    ["sitting here with a song", {"en": "be + ing again", "ja": "ここで歌と一緒に座っている（進行形）"}],
-    ["in a moment", {"en": "in one second", "ja": "一瞬で"}],
-    ["what do I know?", {"en": "= I don't really know", "ja": "俺に何が分かる？（＝分からないよ、という反語）"}]
+    [
+     "everybody's talking",
+     {
+      "en": "everybody is talking",
+      "ja": "みんなが話している（'s = is、進行形）"
+     }
+    ],
+    [
+     "exponential growth",
+     {
+      "en": "growing faster and faster",
+      "ja": "急激な成長（経済ニュースの言葉）"
+     }
+    ],
+    [
+     "the stock market",
+     {
+      "en": "where shares are traded",
+      "ja": "株式市場"
+     }
+    ],
+    [
+     "crash",
+     {
+      "en": "fall suddenly",
+      "ja": "暴落する（stock market crashing = 株が暴落していく）"
+     }
+    ],
+    [
+     "sitting here with a song",
+     {
+      "en": "be + ing again",
+      "ja": "ここで歌と一緒に座っている（進行形）"
+     }
+    ],
+    [
+     "in a moment",
+     {
+      "en": "in one second",
+      "ja": "一瞬で"
+     }
+    ],
+    [
+     "what do I know?",
+     {
+      "en": "= I don't really know",
+      "ja": "俺に何が分かる？（＝分からないよ、という反語）"
+     }
+    ]
    ],
    "gp": [
-    {"en": "<b>be + verb-ing</b> = happening now. <b>be</b> goes with -ing only. Never \"I'm belong\" or \"I'm live\".", "ja": "<b>be動詞 + 〜ing</b> = 今〜している。be動詞の相棒は <b>-ing</b> だけ。<b>I'm belong</b> ✗ <b>I'm live</b> ✗ — 一般動詞なら be動詞はいらない: I belong / I live ○。歌の中の talking / crashing / sitting は全部この形。"},
-    {"en": "<b>Question word + do + I + verb?</b> — \"What do I know?\" The verb stays plain.", "ja": "<b>疑問詞 + do + 主語 + 動詞?</b>: What <b>do</b> I <b>know</b>? 動詞は原形のまま。What am I know ✗。"}
+    {
+     "en": "<b>be + verb-ing</b> = happening now. <b>be</b> goes with -ing only. Never \"I'm belong\" or \"I'm live\".",
+     "ja": "<b>be動詞 + 〜ing</b> = 今〜している。be動詞の相棒は <b>-ing</b> だけ。<b>I'm belong</b> ✗ <b>I'm live</b> ✗ — 一般動詞なら be動詞はいらない: I belong / I live ○。歌の中の talking / crashing / sitting は全部この形。"
+    },
+    {
+     "en": "<b>Question word + do + I + verb?</b> — \"What do I know?\" The verb stays plain.",
+     "ja": "<b>疑問詞 + do + 主語 + 動詞?</b>: What <b>do</b> I <b>know</b>? 動詞は原形のまま。What am I know ✗。"
+    }
    ],
    "examples": [
-    {"jp": "I live in Yokosuka.", "m": {"en": "not I'm live", "ja": "横須賀に住んでいる（I'm live は✗）"}, "say": "I live in Yokosuka."},
-    {"jp": "I'm living in Yokosuka now.", "m": {"en": "be + ing, temporary", "ja": "今は横須賀に住んでいる（一時的な進行形）"}, "say": "I'm living in Yokosuka now."},
-    {"jp": "What do you know about radio?", "m": {"en": "do + you + know", "ja": "無線について何を知ってる？"}, "say": "What do you know about radio?"}
+    {
+     "jp": "I live in Yokosuka.",
+     "m": {
+      "en": "not I'm live",
+      "ja": "横須賀に住んでいる（I'm live は✗）"
+     },
+     "say": "I live in Yokosuka."
+    },
+    {
+     "jp": "I'm living in Yokosuka now.",
+     "m": {
+      "en": "be + ing, temporary",
+      "ja": "今は横須賀に住んでいる（一時的な進行形）"
+     },
+     "say": "I'm living in Yokosuka now."
+    },
+    {
+     "jp": "What do you know about radio?",
+     "m": {
+      "en": "do + you + know",
+      "ja": "無線について何を知ってる？"
+     },
+     "say": "What do you know about radio?"
+    }
    ],
-   "drill_h": {"en": "Drill — be or not be", "ja": "ドリル — be動詞、要る？要らない？"},
+   "drill_h": {
+    "en": "Drill — be or not be",
+    "ja": "ドリル — be動詞、要る？要らない？"
+   },
    "drill": [
-    {"jp": "I {{blank:belong}} to the surfing club. ", "m": {"en": "no be", "ja": "サーフィン部に入っている（I'm belong は✗）"}},
-    {"jp": "Everybody {{blank:is talking}} about the test. ", "m": {"en": "be + ing", "ja": "みんなテストの話をしている"}},
-    {"jp": "What {{blank:do}} you want? ", "m": {"en": "do + you + want", "ja": "何が欲しい？"}},
-    {"jp": "The ship {{blank:is leaving}} now. ", "m": {"en": "be + ing", "ja": "船が今出ていく"}}
+    {
+     "jp": "I {{blank:belong}} to the surfing club. ",
+     "m": {
+      "en": "no be",
+      "ja": "サーフィン部に入っている（I'm belong は✗）"
+     }
+    },
+    {
+     "jp": "Everybody {{blank:is talking}} about the test. ",
+     "m": {
+      "en": "be + ing",
+      "ja": "みんなテストの話をしている"
+     }
+    },
+    {
+     "jp": "What {{blank:do}} you want? ",
+     "m": {
+      "en": "do + you + want",
+      "ja": "何が欲しい？"
+     }
+    },
+    {
+     "jp": "The ship {{blank:is leaving}} now. ",
+     "m": {
+      "en": "be + ing",
+      "ja": "船が今出ていく"
+     }
+    }
    ],
-   "yourturn": {"label": {"en": "Your turn — what is everybody talking about at school? \"Everybody's talking about ___.\"", "ja": "そうたの番 — 学校でみんな何の話をしてる？「Everybody's talking about ___.」"}, "ph": {"en": "Everybody's talking about ___.", "ja": "Everybody's talking about ___.  例: Everybody's talking about the new game."}, "store": "wdik-s4"}
+   "yourturn": {
+    "label": {
+     "en": "Your turn — what is everybody talking about at school? \"Everybody's talking about ___.\"",
+     "ja": "そうたの番 — 学校でみんな何の話をしてる？「Everybody's talking about ___.」"
+    },
+    "ph": {
+     "en": "Everybody's talking about ___.",
+     "ja": "Everybody's talking about ___.  例: Everybody's talking about the new game."
+    },
+    "store": "wdik-s4"
+   },
+   "linking": [
+    {
+     "phrase": "talkin<b>g a</b>bout",
+     "kana": "トーキ<b>ンガ</b>バウッ",
+     "tip": {
+      "en": "ng + a → nga",
+      "ja": "ng + a → ンガ"
+     },
+     "say": "talking about"
+    },
+    {
+     "phrase": "si<b>tt</b>ing here",
+     "kana": "スィ<b>リ</b>ンヒア",
+     "tip": {
+      "en": "tt between vowels flaps",
+      "ja": "tt が母音に挟まれてラ行"
+     },
+     "say": "sitting here"
+    },
+    {
+     "phrase": "wi<b>th a</b> song",
+     "kana": "ウィ<b>ザ</b>ソン",
+     "tip": {
+      "en": "th + a → tha",
+      "ja": "th + a → ザ"
+     },
+     "say": "with a song"
+    },
+    {
+     "phrase": "i<b>n a</b> moment",
+     "kana": "イ<b>ナ</b>モウメン",
+     "tip": {
+      "en": "n + a → na; final t drops",
+      "ja": "n + a → ナ。moment の t は消える"
+     },
+     "say": "in a moment"
+    },
+    {
+     "phrase": "wha<b>t d</b>o I know",
+     "kana": "ワ<b>ッド</b>ゥアイノウ",
+     "tip": {
+      "en": "t before d is swallowed; do I → du-ai",
+      "ja": "t + d は t を飲み込む。do I → ドゥアイ"
+     },
+     "say": "what do I know"
+    }
+   ]
   },
   {
-   "id": "s5", "h": {"en": "Verse 2: I saw people marching", "ja": "2番: 人々が行進するのを見た"}, "time": "1:22–1:39", "seg": [81.7, 99.4],
-   "cue": {"en": "Listen for <b>I saw people marching</b> and <b>made up of</b>.", "ja": "<b>I saw people marching</b>（人々が行進するのを見た）と <b>made up of</b>（〜でできている）を聞き取って。"},
+   "id": "s5",
+   "h": {
+    "en": "Verse 2: I saw people marching",
+    "ja": "2番: 人々が行進するのを見た"
+   },
+   "time": "1:22–1:39",
+   "seg": [
+    81.7,
+    99.4
+   ],
+   "cue": {
+    "en": "Listen for <b>I saw people marching</b> and <b>made up of</b>.",
+    "ja": "<b>I saw people marching</b>（人々が行進するのを見た）と <b>made up of</b>（〜でできている）を聞き取って。"
+   },
    "words": [
-    ["revolution", {"en": "a big change", "ja": "革命、大きな変化"}],
-    ["the revolution's coming", {"en": "is coming = will come soon", "ja": "革命が来ようとしている（進行形で近い未来）"}],
-    ["march", {"en": "walk together in protest", "ja": "行進する、デモで歩く"}],
-    ["I saw people marching", {"en": "see + person + ing", "ja": "人々が行進しているのを見た（see + 人 + 〜ing）"}],
-    ["made up of", {"en": "consists of", "ja": "〜でできている、〜で構成されている"}],
-    ["love and hate", {"en": "opposites", "ja": "愛と憎しみ"}],
-    ["balanced on a knife edge", {"en": "very unstable", "ja": "ナイフの刃の上でバランスを取っている＝ギリギリの状態（balanced = 過去分詞）"}]
+    [
+     "revolution",
+     {
+      "en": "a big change",
+      "ja": "革命、大きな変化"
+     }
+    ],
+    [
+     "the revolution's coming",
+     {
+      "en": "is coming = will come soon",
+      "ja": "革命が来ようとしている（進行形で近い未来）"
+     }
+    ],
+    [
+     "march",
+     {
+      "en": "walk together in protest",
+      "ja": "行進する、デモで歩く"
+     }
+    ],
+    [
+     "I saw people marching",
+     {
+      "en": "see + person + ing",
+      "ja": "人々が行進しているのを見た（see + 人 + 〜ing）"
+     }
+    ],
+    [
+     "made up of",
+     {
+      "en": "consists of",
+      "ja": "〜でできている、〜で構成されている"
+     }
+    ],
+    [
+     "love and hate",
+     {
+      "en": "opposites",
+      "ja": "愛と憎しみ"
+     }
+    ],
+    [
+     "balanced on a knife edge",
+     {
+      "en": "very unstable",
+      "ja": "ナイフの刃の上でバランスを取っている＝ギリギリの状態（balanced = 過去分詞）"
+     }
+    ]
    ],
    "gp": [
-    {"en": "<b>see / hear + person + verb-ing</b> — you see the action happening.", "ja": "<b>知覚動詞 see / hear + 人 + 〜ing</b> = 人が〜しているのを見る／聞く。I saw people <b>marching</b>。to は入らない。"},
-    {"en": "<b>be made up of</b> / <b>balanced</b> — past participles used as adjectives.", "ja": "<b>be made up of</b> = 〜でできている。<b>balanced</b> のように<b>過去分詞</b>は「〜された状態」を表す形容詞になる（made / balanced / broken）。"}
+    {
+     "en": "<b>see / hear + person + verb-ing</b> — you see the action happening.",
+     "ja": "<b>知覚動詞 see / hear + 人 + 〜ing</b> = 人が〜しているのを見る／聞く。I saw people <b>marching</b>。to は入らない。"
+    },
+    {
+     "en": "<b>be made up of</b> / <b>balanced</b> — past participles used as adjectives.",
+     "ja": "<b>be made up of</b> = 〜でできている。<b>balanced</b> のように<b>過去分詞</b>は「〜された状態」を表す形容詞になる（made / balanced / broken）。"
+    }
    ],
    "examples": [
-    {"jp": "I saw him surfing this morning.", "m": {"en": "see + him + ing", "ja": "今朝、彼がサーフィンしてるのを見た"}, "say": "I saw him surfing this morning."},
-    {"jp": "I heard someone calling my name.", "m": {"en": "hear + someone + ing", "ja": "誰かが自分の名前を呼ぶのが聞こえた"}, "say": "I heard someone calling my name."},
-    {"jp": "The team is made up of ten students.", "m": {"en": "consists of", "ja": "チームは10人の生徒でできている"}, "say": "The team is made up of ten students."}
+    {
+     "jp": "I saw him surfing this morning.",
+     "m": {
+      "en": "see + him + ing",
+      "ja": "今朝、彼がサーフィンしてるのを見た"
+     },
+     "say": "I saw him surfing this morning."
+    },
+    {
+     "jp": "I heard someone calling my name.",
+     "m": {
+      "en": "hear + someone + ing",
+      "ja": "誰かが自分の名前を呼ぶのが聞こえた"
+     },
+     "say": "I heard someone calling my name."
+    },
+    {
+     "jp": "The team is made up of ten students.",
+     "m": {
+      "en": "consists of",
+      "ja": "チームは10人の生徒でできている"
+     },
+     "say": "The team is made up of ten students."
+    }
    ],
-   "drill_h": {"en": "Drill", "ja": "ドリル"},
+   "drill_h": {
+    "en": "Drill",
+    "ja": "ドリル"
+   },
    "drill": [
-    {"jp": "I saw a dolphin {{blank:jumping}}. ", "m": {"en": "see + O + ing", "ja": "イルカがジャンプするのを見た"}},
-    {"jp": "Water is {{blank:made}} up of hydrogen and oxygen. ", "m": {"en": "past participle", "ja": "水は水素と酸素でできている（過去分詞）"}},
-    {"jp": "I heard the rain {{blank:falling}} on the roof. ", "m": {"en": "hear + O + ing", "ja": "雨が屋根に落ちる音が聞こえた"}}
+    {
+     "jp": "I saw a dolphin {{blank:jumping}}. ",
+     "m": {
+      "en": "see + O + ing",
+      "ja": "イルカがジャンプするのを見た"
+     }
+    },
+    {
+     "jp": "Water is {{blank:made}} up of hydrogen and oxygen. ",
+     "m": {
+      "en": "past participle",
+      "ja": "水は水素と酸素でできている（過去分詞）"
+     }
+    },
+    {
+     "jp": "I heard the rain {{blank:falling}} on the roof. ",
+     "m": {
+      "en": "hear + O + ing",
+      "ja": "雨が屋根に落ちる音が聞こえた"
+     }
+    }
    ],
-   "yourturn": {"label": {"en": "Your turn — something you saw: \"I saw ___ ___ing.\"", "ja": "そうたの番 — 最近見たもの:「I saw ___ ___ing.」"}, "ph": {"en": "I saw ___ ___ing.  e.g. I saw my friend fishing at the pier.", "ja": "I saw ___ ___ing.  例: I saw my friend fishing at the pier.（友だちが桟橋で釣りしてるのを見た）"}, "store": "wdik-s5"}
+   "yourturn": {
+    "label": {
+     "en": "Your turn — something you saw: \"I saw ___ ___ing.\"",
+     "ja": "そうたの番 — 最近見たもの:「I saw ___ ___ing.」"
+    },
+    "ph": {
+     "en": "I saw ___ ___ing.  e.g. I saw my friend fishing at the pier.",
+     "ja": "I saw ___ ___ing.  例: I saw my friend fishing at the pier.（友だちが桟橋で釣りしてるのを見た）"
+    },
+    "store": "wdik-s5"
+   },
+   "linking": [
+    {
+     "phrase": "revolution'<b>s c</b>oming",
+     "kana": "レヴォルーション<b>ズカ</b>ミン",
+     "tip": {
+      "en": "'s + c in one breath",
+      "ja": "'s + c がひと息"
+     },
+     "say": "revolution's coming"
+    },
+    {
+     "phrase": "mad<b>e up of</b>",
+     "kana": "メイ<b>ダッポヴ</b>",
+     "tip": {
+      "en": "d + up → dup; p + of → pov",
+      "ja": "d + up → ダッ、p + of → ポヴ"
+     },
+     "say": "made up of"
+    },
+    {
+     "phrase": "lov<b>e and</b> hate",
+     "kana": "ラ<b>ヴァン</b>ヘイッ",
+     "tip": {
+      "en": "v + and → van; final t → stop",
+      "ja": "v + and → ヴァン、hate の t は「ッ」"
+     },
+     "say": "love and hate"
+    },
+    {
+     "phrase": "balance<b>d on a</b> knife edge",
+     "kana": "バランス<b>トナ</b>ナイフエッジ",
+     "tip": {
+      "en": "d + on + a → dona, three words become one",
+      "ja": "d + on + a → トナ（3語がひとつに）"
+     },
+     "say": "balanced on a knife edge"
+    }
+   ]
   }
  ],
  "quiz": [
-  {"q": {"ja": "「God gave me a stage」— gave のあとの語順は？", "en": "\"God gave me a stage\" — what comes after gave?"}, "o": [{"ja": "物 + 人", "en": "thing + person"}, {"ja": "人 + 物", "en": "person + thing"}, {"ja": "to + 人", "en": "to + person"}], "a": 1, "why": {"ja": "give + 人 + 物。gave me a stage。", "en": "give + person + thing."}},
-  {"q": {"ja": "正しいのは？", "en": "Which is correct?"}, "o": [{"ja": "When I will have children, I'll pass it on.", "en": "When I will have children, I'll pass it on."}, {"ja": "When I have children, I'll pass it on.", "en": "When I have children, I'll pass it on."}, {"ja": "When I having children, I'll pass it on.", "en": "When I having children, I'll pass it on."}], "a": 1, "why": {"ja": "when / if の中は未来でも現在形。", "en": "When / if clauses use the present tense."}},
-  {"q": {"ja": "「We could change the world」の could に一番近いのは？", "en": "\"We could change the world\" — could is closest to…"}, "o": [{"ja": "変えた（過去）", "en": "changed (past)"}, {"ja": "変えられるかもしれない", "en": "might be able to change"}, {"ja": "変えなければならない", "en": "must change"}], "a": 1, "why": {"ja": "could = 控えめな can。仮の話。", "en": "could = a softer, hypothetical can."}},
-  {"q": {"ja": "正しいのは？", "en": "Which is correct?"}, "o": [{"ja": "I'm belong to the club.", "en": "I'm belong to the club."}, {"ja": "I belong to the club.", "en": "I belong to the club."}, {"ja": "I'm belonging the club.", "en": "I'm belonging the club."}], "a": 1, "why": {"ja": "belong は一般動詞。be動詞はいらない。be動詞の相棒は -ing だけ。", "en": "belong is a normal verb: no be. be goes only with -ing."}},
-  {"q": {"ja": "「俺に何が分かる？」を英語で", "en": "\"What do I know?\" — the correct word order is…"}, "o": [{"ja": "What I know?", "en": "What I know?"}, {"ja": "What am I know?", "en": "What am I know?"}, {"ja": "What do I know?", "en": "What do I know?"}], "a": 2, "why": {"ja": "疑問詞 + do + 主語 + 動詞の原形。", "en": "Question word + do + subject + plain verb."}},
-  {"q": {"ja": "「人々が行進しているのを見た」", "en": "\"I saw people ___\" — marching, to march, or marched?"}, "o": [{"ja": "I saw people to march.", "en": "I saw people to march."}, {"ja": "I saw people marching.", "en": "I saw people marching."}, {"ja": "I saw people marched.", "en": "I saw people marched."}], "a": 1, "why": {"ja": "see + 人 + 〜ing。to は入らない。", "en": "see + person + -ing. No to."}}
+  {
+   "q": {
+    "ja": "「God gave me a stage」— gave のあとの語順は？",
+    "en": "\"God gave me a stage\" — what comes after gave?"
+   },
+   "o": [
+    {
+     "ja": "物 + 人",
+     "en": "thing + person"
+    },
+    {
+     "ja": "人 + 物",
+     "en": "person + thing"
+    },
+    {
+     "ja": "to + 人",
+     "en": "to + person"
+    }
+   ],
+   "a": 1,
+   "why": {
+    "ja": "give + 人 + 物。gave me a stage。",
+    "en": "give + person + thing."
+   }
+  },
+  {
+   "q": {
+    "ja": "正しいのは？",
+    "en": "Which is correct?"
+   },
+   "o": [
+    {
+     "ja": "When I will have children, I'll pass it on.",
+     "en": "When I will have children, I'll pass it on."
+    },
+    {
+     "ja": "When I have children, I'll pass it on.",
+     "en": "When I have children, I'll pass it on."
+    },
+    {
+     "ja": "When I having children, I'll pass it on.",
+     "en": "When I having children, I'll pass it on."
+    }
+   ],
+   "a": 1,
+   "why": {
+    "ja": "when / if の中は未来でも現在形。",
+    "en": "When / if clauses use the present tense."
+   }
+  },
+  {
+   "q": {
+    "ja": "「We could change the world」の could に一番近いのは？",
+    "en": "\"We could change the world\" — could is closest to…"
+   },
+   "o": [
+    {
+     "ja": "変えた（過去）",
+     "en": "changed (past)"
+    },
+    {
+     "ja": "変えられるかもしれない",
+     "en": "might be able to change"
+    },
+    {
+     "ja": "変えなければならない",
+     "en": "must change"
+    }
+   ],
+   "a": 1,
+   "why": {
+    "ja": "could = 控えめな can。仮の話。",
+    "en": "could = a softer, hypothetical can."
+   }
+  },
+  {
+   "q": {
+    "ja": "正しいのは？",
+    "en": "Which is correct?"
+   },
+   "o": [
+    {
+     "ja": "I'm belong to the club.",
+     "en": "I'm belong to the club."
+    },
+    {
+     "ja": "I belong to the club.",
+     "en": "I belong to the club."
+    },
+    {
+     "ja": "I'm belonging the club.",
+     "en": "I'm belonging the club."
+    }
+   ],
+   "a": 1,
+   "why": {
+    "ja": "belong は一般動詞。be動詞はいらない。be動詞の相棒は -ing だけ。",
+    "en": "belong is a normal verb: no be. be goes only with -ing."
+   }
+  },
+  {
+   "q": {
+    "ja": "「俺に何が分かる？」を英語で",
+    "en": "\"What do I know?\" — the correct word order is…"
+   },
+   "o": [
+    {
+     "ja": "What I know?",
+     "en": "What I know?"
+    },
+    {
+     "ja": "What am I know?",
+     "en": "What am I know?"
+    },
+    {
+     "ja": "What do I know?",
+     "en": "What do I know?"
+    }
+   ],
+   "a": 2,
+   "why": {
+    "ja": "疑問詞 + do + 主語 + 動詞の原形。",
+    "en": "Question word + do + subject + plain verb."
+   }
+  },
+  {
+   "q": {
+    "ja": "「人々が行進しているのを見た」",
+    "en": "\"I saw people ___\" — marching, to march, or marched?"
+   },
+   "o": [
+    {
+     "ja": "I saw people to march.",
+     "en": "I saw people to march."
+    },
+    {
+     "ja": "I saw people marching.",
+     "en": "I saw people marching."
+    },
+    {
+     "ja": "I saw people marched.",
+     "en": "I saw people marched."
+    }
+   ],
+   "a": 1,
+   "why": {
+    "ja": "see + 人 + 〜ing。to は入らない。",
+    "en": "see + person + -ing. No to."
+   }
+  }
  ],
- "quiz_head": {"h2": {"en": "Quiz: what do you know?", "ja": "クイズ: What do you know?"}, "who": {"en": "6 questions. Tap an answer.", "ja": "6問。答えをタップ。"}},
+ "quiz_head": {
+  "h2": {
+   "en": "Quiz: what do you know?",
+   "ja": "クイズ: What do you know?"
+  },
+  "who": {
+   "en": "6 questions. Tap an answer.",
+   "ja": "6問。答えをタップ。"
+  }
+ },
  "score_perfect": " — You know a lot!",
- "homework": {"h": {"en": "Homework", "ja": "宿題"}, "list": [
-  {"en": "Sing the chorus (0:32–1:22) with the lyrics open. Record it.", "ja": "歌詞を開いてサビ（0:32–1:22）を歌う。録音する。次のレッスンで聴かせて。"},
-  {"en": "Write three sentences with \"When I ___, I will ___.\"", "ja": "「When I ___, I will ___.」で3文書く（whenの中は現在形）。"},
-  {"en": "Find one more Ed Sheeran song and one word in it you want to keep.", "ja": "Ed Sheeranの別の曲を1つ選んで、その中から残したい単語を1つ見つける。"}
- ]},
- "cheat": {"h": {"en": "Cheat sheet", "ja": "早見表"}, "rows": [
-  ["give + 人 + 物", {"en": "give someone something", "ja": "人に物をあげる（gave me a stage）"}],
-  ["when / if + 現在形", {"en": "future condition", "ja": "未来でも現在形（when I have children）"}],
-  ["could + 動詞", {"en": "might be able to", "ja": "〜できるかもしれない"}],
-  ["be + 〜ing", {"en": "happening now", "ja": "今〜している（be動詞の相棒は -ing だけ）"}],
-  ["What do I know?", {"en": "question word order", "ja": "疑問詞 + do + 主語 + 動詞"}],
-  ["see + 人 + 〜ing", {"en": "see it happening", "ja": "人が〜しているのを見る"}]
- ]},
+ "homework": {
+  "h": {
+   "en": "Homework",
+   "ja": "宿題"
+  },
+  "list": [
+   {
+    "en": "Sing the chorus (0:32–1:22) with the lyrics open. Record it.",
+    "ja": "歌詞を開いてサビ（0:32–1:22）を歌う。録音する。次のレッスンで聴かせて。"
+   },
+   {
+    "en": "Write three sentences with \"When I ___, I will ___.\"",
+    "ja": "「When I ___, I will ___.」で3文書く（whenの中は現在形）。"
+   },
+   {
+    "en": "Find one more Ed Sheeran song and one word in it you want to keep.",
+    "ja": "Ed Sheeranの別の曲を1つ選んで、その中から残したい単語を1つ見つける。"
+   },
+   {
+    "en": "Write your own katakana for each part without looking at the linking table.",
+    "ja": "リンキングの表を見ずに、各パートのカタカナを自分で書いてみる。"
+   }
+  ]
+ },
+ "cheat": {
+  "h": {
+   "en": "Cheat sheet",
+   "ja": "早見表"
+  },
+  "rows": [
+   [
+    "give + 人 + 物",
+    {
+     "en": "give someone something",
+     "ja": "人に物をあげる（gave me a stage）"
+    }
+   ],
+   [
+    "when / if + 現在形",
+    {
+     "en": "future condition",
+     "ja": "未来でも現在形（when I have children）"
+    }
+   ],
+   [
+    "could + 動詞",
+    {
+     "en": "might be able to",
+     "ja": "〜できるかもしれない"
+    }
+   ],
+   [
+    "be + 〜ing",
+    {
+     "en": "happening now",
+     "ja": "今〜している（be動詞の相棒は -ing だけ）"
+    }
+   ],
+   [
+    "What do I know?",
+    {
+     "en": "question word order",
+     "ja": "疑問詞 + do + 主語 + 動詞"
+    }
+   ],
+   [
+    "see + 人 + 〜ing",
+    {
+     "en": "see it happening",
+     "ja": "人が〜しているのを見る"
+    }
+   ]
+  ]
+ },
  "footer": [
-  {"en": "Made by Yuuki for Sota. Part of <a href=\"https://yukitchy.github.io/sota-english-gym/\">Sota's English Gym</a>.", "ja": "Yuukiがそうた用に作ったページ。<a href=\"https://yukitchy.github.io/sota-english-gym/\">そうた英語トレセン</a>の一部。"},
-  {"en": "Audio embedded from Ed Sheeran's official YouTube channel. Lyrics are linked, not reproduced.", "ja": "音源はEd Sheeran公式YouTubeチャンネルからの埋め込み。歌詞は転載せずリンクのみ。"}
- ]
+  {
+   "en": "Made by Yuuki for Sota. Part of <a href=\"https://yukitchy.github.io/sota-english-gym/\">Sota's English Gym</a>.",
+   "ja": "Yuukiがそうた用に作ったページ。<a href=\"https://yukitchy.github.io/sota-english-gym/\">そうた英語トレセン</a>の一部。"
+  },
+  {
+   "en": "Audio embedded from Ed Sheeran's official YouTube channel. Lyrics are linked, not reproduced.",
+   "ja": "音源はEd Sheeran公式YouTubeチャンネルからの埋め込み。歌詞は転載せずリンクのみ。"
+  }
+ ],
+ "linking_intro": {
+  "h": {
+   "en": "Linking: how words connect",
+   "ja": "リンキング（音のつながり）を先に知る"
+  },
+  "p": {
+   "en": "English words run together. The katakana is a guide; <b>red</b> marks the joined sound. Three rules.",
+   "ja": "英語は単語ごとに切らずに、前の語の終わりと次の語の頭がくっつく。カタカナは目安。<b>赤い部分</b>がくっついた音。3つのルールだけ覚える。"
+  },
+  "rules": [
+   {
+    "phrase": "gave m<b>e a</b> stage",
+    "kana": "ゲイヴ<b>ミァ</b>ステイジ",
+    "tip": {
+     "en": "consonant + vowel join: me + a → mia",
+     "ja": "①子音＋母音がくっつく: me + a → ミァ"
+    },
+    "say": "gave me a stage"
+   },
+   {
+    "phrase": "go<b>t a</b>",
+    "kana": "ゴ<b>ラ</b>",
+    "tip": {
+     "en": "t between vowels flaps: got a → gada",
+     "ja": "②母音に挟まれた t はラ行（フラップT）: got a → ゴラ"
+    },
+    "say": "got a"
+   },
+   {
+    "phrase": "don'<b>t</b> you",
+    "kana": "ドン<b>チュ</b>ー",
+    "tip": {
+     "en": "t + you → chu; word-final t often drops",
+     "ja": "③t/d + you → チュ／ヂュ。語末の t は消えて「ッ」になりがち"
+    },
+    "say": "don't you"
+   }
+  ]
+ }
 }

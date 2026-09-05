@@ -2026,5 +2026,39 @@
    "ja": "🔊 自分の文を読ませる",
    "zh": "🔊 讀我寫的"
   }
+ },
+ "cta": {
+  "eyebrow": {
+   "en": "Yuuki@Anime Sensei · Tokyo",
+   "ja": "Yuuki@Anime Sensei · 東京",
+   "zh": "Yuuki@Anime Sensei · 東京"
+  },
+  "h": {
+   "en": "Want a lesson built around <i>your</i> favorite anime?",
+   "ja": "<i>あなたの</i>好きなアニメで、こんなレッスンを",
+   "zh": "想用<i>你</i>最愛的動漫上這樣的課嗎？"
+  },
+  "p": {
+   "en": "I'm Yuuki, a Japanese teacher in Tokyo. Every lesson starts from what you already love: anime lines, songs, games. Tell me your favorite title and I'll build the next lesson around it. First lesson is a trial, so come as you are.",
+   "ja": "東京で日本語を教えているYuukiです。レッスンはいつも、あなたがもう好きなもの（アニメのセリフ・歌・ゲーム）から始めます。好きな作品を教えてくれれば、次のレッスンをそれで組みます。初回は体験レッスンなので気軽にどうぞ。",
+   "zh": "我是Yuuki，在東京教日文。每堂課都從你已經喜歡的東西開始：動漫台詞、歌、遊戲。告訴我你最愛的作品，下一堂課就用它來設計。第一堂是體驗課，放輕鬆來就好。"
+  },
+  "button": {
+   "en": "Book a lesson with Yuuki →",
+   "ja": "Yuukiのレッスンを予約する →",
+   "zh": "預約Yuuki的課 →"
+  },
+  "href": "https://www.animesenseijp.com/",
+  "sub": {
+   "en": "Anime tours in Akihabara",
+   "ja": "秋葉原アニメツアーも",
+   "zh": "秋葉原動漫導覽"
+  },
+  "sub_href": "https://tour.animesenseijp.com/",
+  "lines": [
+   "お前はもう死んでいる",
+   "我が生涯に一片の悔いなし",
+   "次はあなたの好きな作品で。"
+  ]
  }
 }

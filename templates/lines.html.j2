@@ -206,6 +206,27 @@
   </div>
 </section>
 
+{%- if d.cta %}
+<section class="cta" id="cta">
+  <div class="wrap">
+    <div class="cta-in">
+      <div>
+        <div class="eyebrow" {{ t(d.cta.eyebrow) }}>{{ d.cta.eyebrow.base }}</div>
+        <h2 {{ t(d.cta.h) }}>{{ d.cta.h.base }}</h2>
+        <p {{ t(d.cta.p) }}>{{ d.cta.p.base }}</p>
+        <div class="row">
+          <a class="btn primary" href="{{ d.cta.href }}" target="_blank" rel="noopener" {{ t(d.cta.button) }}>{{ d.cta.button.base }}</a>
+          {%- if d.cta.sub_href %}<a class="btn" href="{{ d.cta.sub_href }}" target="_blank" rel="noopener" {{ t(d.cta.sub) }}>{{ d.cta.sub.base }}</a>{% endif %}
+        </div>
+      </div>
+      <div class="cta-lines">
+        {%- for l in d.cta.lines %}<div>{{ l }}</div>{% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+{%- endif %}
+
 <footer>
   <div class="wrap">
     {%- for f in d.footer %}
