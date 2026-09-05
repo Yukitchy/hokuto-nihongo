@@ -68,6 +68,8 @@ html[data-motif="b"] section:nth-of-type(odd) .kara{background:#fff}
 .kl:hover{color:var(--ink)}
 .kl.on{background:var(--gold);color:var(--ink);font-weight:900}
 .kl.done{color:rgba(0,0,0,.35)}
+.kl small{display:block;font-size:12.5px;font-weight:700;color:var(--sub);line-height:1.4}
+.kl.on small{color:var(--ink)}
 body{padding-bottom:72px}
 .dock{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--ink);color:var(--paper);display:flex;align-items:center;gap:10px;padding:10px 14px;box-shadow:0 -6px 20px rgba(0,0,0,.18)}
 html[data-motif="b"] .dock{background:#000}
@@ -141,7 +143,7 @@ html[data-motif="b"] .dock{background:#000}
           <div class="kara-h"><h3 {{ t(d.ui.kara) }}>{{ d.ui.kara.base }}</h3><span class="kara-n" id="karaCount"></span><button class="btn sm" id="karaEditBtn" {{ t(d.ui.kara_edit) }}>{{ d.ui.kara_edit.base }}</button></div>
           <div class="kara-edit" id="karaEdit" hidden>
             <p {{ t(d.ui.kara_p) }}>{{ d.ui.kara_p.base }}</p>
-            <textarea id="karaText" rows="8"></textarea>
+            <textarea id="karaText" rows="8" placeholder="English line&#10;日本語訳（あれば・任意）&#10;&#10;English line&#10;日本語訳"></textarea>
             <div class="row"><button class="btn sm primary" id="karaSave" {{ t(d.ui.kara_save) }}>{{ d.ui.kara_save.base }}</button></div>
           </div>
           <div class="kara-lines" id="karaLines"><div class="kara-empty" {{ t(d.ui.kara_empty) }}>{{ d.ui.kara_empty.base }}</div></div>
@@ -333,10 +335,15 @@ const KARA={{ (d.karaoke.lines if d.karaoke else [])|tojson }};
 const karaKey='kara-{{ d.slug }}'; let karaIdx=-1;
 function karaRender(){
   const box=$('#karaLines'); if(!box)return;
-  const txt=(store.get(karaKey)||'').split(/\r?\n/).map(x=>x.trim()).filter(Boolean);
-  if(!txt.length){ $('#karaCount').textContent=''; return; }
-  box.innerHTML=txt.map((l,i)=>`<div class="kl" data-i="${i}">${l.replace(/</g,'&lt;')}</div>`).join('');
-  $('#karaCount').textContent=txt.length+' / '+KARA.length;
+  /* Accepts plain lines, or "lyric line / translation line" pairs: a line whose script differs from the song
+     language (e.g. Japanese under an English lyric) is attached to the previous line as its translation. */
+  const raw=(store.get(karaKey)||'').split(/\r?\n/).map(x=>x.trim()).filter(Boolean);
+  const isJa=x=>/[\u3040-\u30ff\u4e00-\u9fff]/.test(x), songJa=TTS_LANG.startsWith('ja');
+  const rows=[]; raw.forEach(l=>{ const tr=songJa?!isJa(l)&&/[A-Za-z]/.test(l):isJa(l); if(tr&&rows.length&&!rows[rows.length-1].tr)rows[rows.length-1].tr=l; else rows.push({l}); });
+  if(!rows.length){ $('#karaCount').textContent=''; return; }
+  const esc=x=>x.replace(/</g,'&lt;');
+  box.innerHTML=rows.map((r,i)=>`<div class="kl" data-i="${i}">${esc(r.l)}${r.tr?`<small>${esc(r.tr)}</small>`:''}</div>`).join('');
+  $('#karaCount').textContent=rows.length+' / '+KARA.length;
   $$('.kl').forEach(el=>el.onclick=()=>{const k=KARA[+el.dataset.i]; if(k&&P){stopLoop();P.seekTo(k[0],true);P.playVideo();}});
 }
 function karaTick(t){
