@@ -604,6 +604,7 @@ function playRange(id,a,b,loop){
   const t=setInterval(()=>{
     const cur=p.getCurrentTime();
     bar.style.width=Math.max(0,Math.min(100,(cur-a)/(b-a)*100))+'%';
+    if(p.getPlayerState()===1&&cur<a-0.6){p.seekTo(a,true);return;}
     if(cur>=b){ if(loop){p.seekTo(a,true);} else {p.pauseVideo();stopLoop(id);} }
   },80);
   loops[id]={t};
