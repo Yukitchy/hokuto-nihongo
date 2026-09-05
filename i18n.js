@@ -1,7 +1,7 @@
 /* 北斗の拳で日本語 — UI/explanation translations. Keys = original English innerHTML (trimmed). */
 window.I18N = {
 ja: {
-"Warm-up":"準備運動","Quiz":"クイズ",
+"Warm-up":"準備運動","Quiz":"クイズ","♪ Song":"♪ 主題歌","♪ Learn Japanese from this song →":"♪ この歌で日本語を学ぶ →",
 "Trial Lesson · JLPT N3 · with Yuuki@Anime Sensei":"体験レッスン · JLPT N3 · Yuuki@Anime Sensei",
 "Learn Japanese with Fist of the North Star":"名セリフ6本で学ぶ、明日から使える文法",
 "Six legendary lines. Each one hides a grammar point you will actually use in Tokyo tomorrow. Watch the clip, loop the line, say it like Kenshiro, then drill it.":"伝説の名セリフ6本。それぞれの中に、明日東京で本当に使う文法がひとつ隠れています。クリップを観て、セリフだけをループして、ケンシロウになりきって言って、ドリルで定着させましょう。",
@@ -151,7 +151,7 @@ ja: {
 "Clips are embedded from YouTube and belong to their owners. 北斗の拳 © 武論尊・原哲夫／コアミックス.":"動画はYouTubeからの埋め込みで、権利は各所有者にあります。北斗の拳 © 武論尊・原哲夫／コアミックス"
 },
 zh: {
-"Warm-up":"暖身","Quiz":"測驗",
+"Warm-up":"暖身","Quiz":"測驗","♪ Song":"♪ 主題曲","♪ Learn Japanese from this song →":"♪ 用這首歌學日文 →",
 "Trial Lesson · JLPT N3 · with Yuuki@Anime Sensei":"體驗課 · JLPT N3 · 老師 Yuuki@Anime Sensei",
 "Learn Japanese with Fist of the North Star":"用《北斗神拳》學日文",
 "Six legendary lines. Each one hides a grammar point you will actually use in Tokyo tomorrow. Watch the clip, loop the line, say it like Kenshiro, then drill it.":"六句傳奇台詞。每一句都藏著一個明天在東京真的用得到的文法。先看片段，再單句循環，像拳四郎一樣說出來，最後做練習。",

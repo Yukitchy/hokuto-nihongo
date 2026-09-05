@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>愛をとりもどせ!! で日本語 — YOU は SHOCK, Japanese from the opening</title>
+<meta name="description" content="Learn Japanese from the Fist of the North Star opening 愛をとりもどせ!! (Crystal King). Loop each part of the official video, learn the vocabulary and grammar, then sing it. JLPT N4–N3.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Dela+Gothic+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<style>
+/* page-specific */
+.player-wrap{position:sticky;top:64px;z-index:20;border:3px solid var(--line);background:#000}
+.player-wrap .yt{aspect-ratio:16/9;width:100%}
+.player-wrap iframe{width:100%;height:100%;display:block}
+.pbar{display:flex;gap:6px;flex-wrap:wrap;align-items:center;background:var(--paper-2);padding:10px 12px;border-top:3px solid var(--line)}
+.pbar .now{font-weight:900;font-size:14px;margin-right:auto;font-variant-numeric:tabular-nums}
+.layout{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.layout .left{position:sticky;top:64px}
+.seg{border:3px solid var(--line);background:#fff;margin-bottom:22px}
+.seg .head{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:3px solid var(--line);background:var(--paper-2)}
+.seg .head .n{font-family:"Dela Gothic One",sans-serif;font-size:30px;line-height:1;color:var(--red)}
+.seg .head h2{margin:0;font-size:19px;font-weight:900;flex:1}
+.seg .head .t{font-size:13px;font-weight:900;font-variant-numeric:tabular-nums;color:var(--sub)}
+.seg .body{padding:16px}
+.seg .cue{font-size:15px;color:var(--sub);font-weight:700;margin:0 0 12px}
+.seg .cue b{color:var(--ink)}
+.seg table{margin-bottom:12px}
+.seg .drill{margin-top:16px;padding-top:14px}
+.lyrics{border:3px solid var(--line);background:var(--gold);padding:16px 18px;margin:0 0 22px}
+.lyrics h3::before{background:var(--ink)}
+.lyrics p{margin:0 0 10px;font-size:15px}
+.lyrics .row{display:flex;gap:8px;flex-wrap:wrap}
+.title-line{border:3px solid var(--line);background:#fff;padding:22px 24px;margin:22px 0}
+.title-line .jp{font-family:"Dela Gothic One","Zen Kaku Gothic New",sans-serif;font-size:clamp(30px,6vw,54px);line-height:1.2;margin:0}
+.title-line .jp rt{font-family:"Zen Kaku Gothic New",sans-serif}
+.title-line .en{font-size:18px;font-weight:700;margin:8px 0 0}
+.title-line .en i{font-style:normal;color:var(--red)}
+.seg .ex li{font-size:15px}
+@media(max-width:880px){.layout{grid-template-columns:1fr}.layout .left{position:static}.player-wrap{position:sticky;top:58px}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../">北斗<b>×</b>日本語</a>
+    <nav id="nav">
+      <a href="../" data-i18n="nav.back">← Lines</a>
+      <a href="#s1">1 SHOCK</a><a href="#s2">2 〜ても</a><a href="#s3">3 〜くなる</a><a href="#s4">4 〜はず</a><a href="#s5">5 命令形</a><a href="#quiz" data-i18n="nav.quiz">Quiz</a>
+    </nav>
+    <div class="lang" id="lang"><button data-lang="en" class="on">EN</button><button data-lang="ja">日本語</button><button data-lang="zh">中文</button></div>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow" data-i18n="hero.eyebrow">Song lesson · JLPT N4–N3 · with Yuuki@Anime Sensei</span>
+    <h1>YOU は SHOCK<span class="en" data-i18n="hero.sub">Learn Japanese from the opening 「愛をとりもどせ!!」</span></h1>
+    <p class="lead" data-i18n="hero.lead">Crystal King, 1984. Ninety seconds of screaming love. Loop each part of the official video, pick up the words, find the grammar, then sing it back to Kenshiro.</p>
+    <div class="howto">
+      <div><div class="n">1</div><div class="t" data-i18n="how.1t">Listen</div><div class="d" data-i18n="how.1d">Play the part once.</div></div>
+      <div><div class="n">2</div><div class="t" data-i18n="how.2t">Loop</div><div class="d" data-i18n="how.2d">Loop it. Slow it down.</div></div>
+      <div><div class="n">3</div><div class="t" data-i18n="how.3t">Read</div><div class="d" data-i18n="how.3d">Open the lyrics in a second tab.</div></div>
+      <div><div class="n">4</div><div class="t" data-i18n="how.4t">Words</div><div class="d" data-i18n="how.4d">Learn the words and the pattern.</div></div>
+      <div><div class="n">5</div><div class="t" data-i18n="how.5t">Sing</div><div class="d" data-i18n="how.5d">Record yourself. Loudly.</div></div>
+    </div>
+  </div>
+</div>
+
+<section id="song">
+  <div class="wrap">
+    <div class="layout">
+      <div class="left">
+        <div class="player-wrap">
+          <div class="yt" id="ytOP"></div>
+          <div class="pbar">
+            <span class="now" id="now">0:00</span>
+            <button class="btn sm primary" id="playAll" data-i18n="btn.all">▶ Whole song</button>
+            <button class="btn sm" id="stopAll">⏹</button>
+            <button class="btn sm" id="slowAll" data-i18n="btn.slow">🐢 0.75×</button>
+          </div>
+        </div>
+        <div class="lyrics">
+          <h3 data-i18n="ly.h">Lyrics</h3>
+          <p data-i18n="ly.p">The lyrics are copyrighted, so they are not printed on this page. Open them on the official lyrics site in a second tab and sing along while you loop.</p>
+          <div class="row">
+            <a class="btn dark sm" href="https://www.uta-net.com/song/163/" target="_blank" rel="noopener">歌ネット (official)</a>
+            <a class="btn sm" href="https://utaten.com/lyric/ja00001833/" target="_blank" rel="noopener" data-i18n="ly.furi">うたてん (with furigana)</a>
+          </div>
+        </div>
+        <div class="title-line">
+          <p class="jp"><ruby>愛<rt>あい</rt></ruby>をとりもどせ!!</p>
+          <p class="en" data-i18n="title.en">"<i>Take back</i> the love!!" — the title, and the last line you'll sing.</p>
+          <div class="ctl" style="margin-top:12px">
+            <button class="btn act-say" data-say="愛を取り戻せ！">🔊</button>
+            <button class="btn act-seg" data-seg="74.2,78.2" data-i18n="btn.loopline">🔁 Loop this line</button>
+            <div class="rec"><button class="btn dark act-rec" data-i18n="btn.rec">🎙 Sing it</button><span class="dot"></span><audio controls class="mine" hidden></audio></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+
+        <!-- S1 -->
+        <div class="seg" id="s1">
+          <div class="head"><div class="n">1</div><h2 data-i18n="s1.h">The hook: YOU は SHOCK</h2><span class="t">0:06–0:17</span></div>
+          <div class="body">
+            <div class="ctl" data-seg="5.8,17.5"><button class="btn primary act-seg" data-seg="5.8,17.5" data-i18n="btn.loop">🔁 Loop this part</button><div class="loopbar"><i></i></div></div>
+            <p class="cue" data-i18n="s1.cue">Two lines, same shape. Listen for the English word after <b>は</b>, and for the verb <b>落ちてくる</b> at the end of each line.</p>
+            <table>
+              <tr><th data-i18n="th.word">word</th><th data-i18n="th.meaning">meaning</th></tr>
+              <tr><td class="w">YOU は SHOCK</td><td data-i18n="s1.w1">English noun + は = a Japanese sentence. 80s J-pop loved this. "You (are) shock" = you shock me.</td></tr>
+              <tr><td class="w"><ruby>愛<rt>あい</rt></ruby></td><td data-i18n="s1.w2">love</td></tr>
+              <tr><td class="w"><ruby>空<rt>そら</rt></ruby></td><td data-i18n="s1.w3">sky</td></tr>
+              <tr><td class="w"><ruby>胸<rt>むね</rt></ruby></td><td data-i18n="s1.w4">chest — and in songs, the heart</td></tr>
+              <tr><td class="w"><ruby>落<rt>お</rt></ruby>ちてくる</td><td data-i18n="s1.w5">落ちる (fall) + てくる = falls <b>toward me</b></td></tr>
+            </table>
+            <div class="gp" data-i18n="s1.gp"><b>Verb-て + くる</b> = the action comes toward the speaker. <b>Verb-て + いく</b> = it goes away. The sky falls <i>onto me</i>: 落ちて<b>くる</b>.</div>
+            <ul class="ex">
+              <li><ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>ってきた <span class="m" data-i18n="s1.e1">it started to rain (on me)</span><button class="spk" data-say="雨が降ってきた">🔊</button></li>
+              <li><ruby>友<rt>とも</rt></ruby>だちが<ruby>走<rt>はし</rt></ruby>ってくる <span class="m" data-i18n="s1.e2">my friend comes running (toward me)</span><button class="spk" data-say="友だちが走ってくる">🔊</button></li>
+              <li><ruby>鳥<rt>とり</rt></ruby>が<ruby>飛<rt>と</rt></ruby>んでいく <span class="m" data-i18n="s1.e3">the bird flies away</span><button class="spk" data-say="鳥が飛んでいく">🔊</button></li>
+            </ul>
+            <div class="drill">
+              <h3 data-i18n="drill.h">Drill</h3>
+              <ol>
+                <li>バスが<button class="blank">来た</button>！<span class="m" data-i18n="s1.d1">The bus came (here)! (来る, past)</span></li>
+                <li><ruby>雪<rt>ゆき</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>って<button class="blank">きた</button>。<span class="m" data-i18n="s1.d2">It started snowing. (てくる, past)</span></li>
+                <li><ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>行<rt>い</rt></ruby>って<button class="blank">しまった</button>。<span class="m" data-i18n="s1.d3">The train went away (and I missed it). (てしまう)</span></li>
+              </ol>
+              <div class="yourturn">
+                <label data-i18n="s1.yt">Your turn — what shocks you in Tokyo? 「＿＿ は SHOCK」</label>
+                <textarea data-store="ai-s1" data-i18n-ph="s1.ph" placeholder="＿＿ は SHOCK。  e.g. 家賃 は SHOCK。(The rent is a shock.)"></textarea>
+                <div class="row"><button class="btn sm act-say-ta" data-i18n="btn.readmine">🔊 Read mine</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- S2 -->
+        <div class="seg" id="s2">
+          <div class="head"><div class="n">2</div><h2 data-i18n="s2.h">Verse: chains are useless</h2><span class="t">0:18–0:29</span></div>
+          <div class="body">
+            <div class="ctl" data-seg="17.8,29.6"><button class="btn primary act-seg" data-seg="17.8,29.6" data-i18n="btn.loop">🔁 Loop this part</button><div class="loopbar"><i></i></div></div>
+            <p class="cue" data-i18n="s2.cue">Fast and rough. Listen for <b>〜ても</b> (even if) followed by <b>無駄</b>, and the word <b>ダウン</b> at the very end.</p>
+            <table>
+              <tr><th data-i18n="th.word">word</th><th data-i18n="th.meaning">meaning</th></tr>
+              <tr><td class="w"><ruby>熱<rt>あつ</rt></ruby>い<ruby>心<rt>こころ</rt></ruby></td><td data-i18n="s2.w1">a burning heart (熱い = hot, passionate)</td></tr>
+              <tr><td class="w"><ruby>鎖<rt>くさり</rt></ruby></td><td data-i18n="s2.w2">chain</td></tr>
+              <tr><td class="w">つなぐ</td><td data-i18n="s2.w3">to tie, to chain up (つないでも = even if you chain it)</td></tr>
+              <tr><td class="w"><ruby>無駄<rt>むだ</rt></ruby></td><td data-i18n="s2.w4">useless, no use — one of the most useful words in Japan</td></tr>
+              <tr><td class="w"><ruby>邪魔<rt>じゃま</rt></ruby>する</td><td data-i18n="s2.w5">to get in the way (邪魔する奴 = anyone who gets in the way)</td></tr>
+              <tr><td class="w"><ruby>奴<rt>やつ</rt></ruby></td><td data-i18n="s2.w6">guy, fellow — rough. Fine for villains, not for coworkers.</td></tr>
+              <tr><td class="w"><ruby>指先<rt>ゆびさき</rt></ruby>ひとつで</td><td data-i18n="s2.w7">with a single fingertip (N + ひとつで = with just one N)</td></tr>
+              <tr><td class="w">ダウン</td><td data-i18n="s2.w8">down (a knockdown) — loanwords work as nouns: ダウンさ = they go down</td></tr>
+            </table>
+            <div class="gp" data-i18n="s2.gp"><b>Verb-て + も</b> = even if. The verse says: even if you chain a burning heart, it's useless. <b>〜ても無駄だ</b> is a set phrase worth stealing.</div>
+            <ul class="ex">
+              <li><ruby>今<rt>いま</rt></ruby><ruby>謝<rt>あやま</rt></ruby>っても<ruby>無駄<rt>むだ</rt></ruby>だ <span class="m" data-i18n="s2.e1">apologising now is useless</span><button class="spk" data-say="今謝っても無駄だ">🔊</button></li>
+              <li><ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>っても<ruby>行<rt>い</rt></ruby>く <span class="m" data-i18n="s2.e2">I'll go even if it rains</span><button class="spk" data-say="雨が降っても行く">🔊</button></li>
+              <li>ボタンひとつで<ruby>注文<rt>ちゅうもん</rt></ruby>できる <span class="m" data-i18n="s2.e3">you can order with a single button</span><button class="spk" data-say="ボタンひとつで注文できる">🔊</button></li>
+            </ul>
+            <div class="drill">
+              <h3 data-i18n="drill.h">Drill</h3>
+              <ol>
+                <li><ruby>高<rt>たか</rt></ruby>く<button class="blank">ても</button><ruby>買<rt>か</rt></ruby>う。<span class="m" data-i18n="s2.d1">I'll buy it even if it's expensive. (い-adj: 高く + ても)</span></li>
+                <li><ruby>何回<rt>なんかい</rt></ruby><ruby>説明<rt>せつめい</rt></ruby>し<button class="blank">ても無駄だ</button>。<span class="m" data-i18n="s2.d2">Explaining it any number of times is useless.</span></li>
+                <li>スマホ<button class="blank">ひとつで</button><ruby>旅行<rt>りょこう</rt></ruby>できる。<span class="m" data-i18n="s2.d3">You can travel with just a smartphone.</span></li>
+              </ol>
+              <div class="yourturn">
+                <label data-i18n="s2.yt">Your turn — something that is useless even if you try: 「〜ても無駄だ」</label>
+                <textarea data-store="ai-s2" data-i18n-ph="s2.ph" placeholder="＿＿ても無駄だ。  e.g. 月曜日に早く寝ても無駄だ。"></textarea>
+                <div class="row"><button class="btn sm act-say-ta" data-i18n="btn.readmine">🔊 Read mine</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- S3 -->
+        <div class="seg" id="s3">
+          <div class="head"><div class="n">3</div><h2 data-i18n="s3.h">Hook again: heartbeat gets faster</h2><span class="t">0:30–0:41</span></div>
+          <div class="body">
+            <div class="ctl" data-seg="29.8,41.2"><button class="btn primary act-seg" data-seg="29.8,41.2" data-i18n="btn.loop">🔁 Loop this part</button><div class="loopbar"><i></i></div></div>
+            <p class="cue" data-i18n="s3.cue">Same hook, new ending. Listen for <b>鼓動</b> and the change verb <b>速くなる</b>.</p>
+            <table>
+              <tr><th data-i18n="th.word">word</th><th data-i18n="th.meaning">meaning</th></tr>
+              <tr><td class="w"><ruby>鼓動<rt>こどう</rt></ruby></td><td data-i18n="s3.w1">heartbeat (鼓 = drum, 動 = move)</td></tr>
+              <tr><td class="w"><ruby>速<rt>はや</rt></ruby>い → <ruby>速<rt>はや</rt></ruby>くなる</td><td data-i18n="s3.w2">fast → become fast. い-adjective: drop い, add くなる</td></tr>
+              <tr><td class="w"><ruby>俺<rt>おれ</rt></ruby></td><td data-i18n="s3.w3">"I" — rough, masculine. Kenshiro's pronoun. Use 私 with strangers.</td></tr>
+            </table>
+            <div class="gp" data-i18n="s3.gp"><b>い-adj → 〜くなる</b> / <b>な-adj, noun → 〜になる</b> = to become. 速く<b>なる</b>, 静か<b>になる</b>, 医者<b>になる</b>.</div>
+            <ul class="ex">
+              <li><ruby>日本語<rt>にほんご</rt></ruby>が<ruby>上手<rt>じょうず</rt></ruby>になった <span class="m" data-i18n="s3.e1">my Japanese got good</span><button class="spk" data-say="日本語が上手になった">🔊</button></li>
+              <li><ruby>夜<rt>よる</rt></ruby>は<ruby>寒<rt>さむ</rt></ruby>くなる <span class="m" data-i18n="s3.e2">it gets cold at night</span><button class="spk" data-say="夜は寒くなる">🔊</button></li>
+              <li><ruby>鼓動<rt>こどう</rt></ruby>が<ruby>速<rt>はや</rt></ruby>くなる <span class="m" data-i18n="s3.e3">my heartbeat speeds up</span><button class="spk" data-say="鼓動が速くなる">🔊</button></li>
+            </ul>
+            <div class="drill">
+              <h3 data-i18n="drill.h">Drill</h3>
+              <ol>
+                <li><ruby>暑<rt>あつ</rt></ruby>い → <ruby>暑<rt>あつ</rt></ruby><button class="blank">くなる</button><span class="m" data-i18n="s3.d1">hot → get hot</span></li>
+                <li><ruby>静<rt>しず</rt></ruby>か → <ruby>静<rt>しず</rt></ruby>か<button class="blank">になる</button><span class="m" data-i18n="s3.d2">quiet → become quiet</span></li>
+                <li><ruby>大人<rt>おとな</rt></ruby> → <ruby>大人<rt>おとな</rt></ruby><button class="blank">になる</button><span class="m" data-i18n="s3.d3">adult → become an adult</span></li>
+              </ol>
+              <div class="yourturn">
+                <label data-i18n="s3.yt">Your turn — what makes your heartbeat faster? 「〜と、鼓動が速くなる」</label>
+                <textarea data-store="ai-s3" data-i18n-ph="s3.ph" placeholder="＿＿と、鼓動が速くなる。  e.g. 秋葉原に行くと、鼓動が速くなる。"></textarea>
+                <div class="row"><button class="btn sm act-say-ta" data-i18n="btn.readmine">🔊 Read mine</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- S4 -->
+        <div class="seg" id="s4">
+          <div class="head"><div class="n">4</div><h2 data-i18n="s4.h">Build-up: a wandering heart</h2><span class="t">0:41–0:53</span></div>
+          <div class="body">
+            <div class="ctl" data-seg="41.4,54.2"><button class="btn primary act-seg" data-seg="41.4,54.2" data-i18n="btn.loop">🔁 Loop this part</button><div class="loopbar"><i></i></div></div>
+            <p class="cue" data-i18n="s4.cue">The tension part. Big literary verbs, and it ends on <b>〜はずさ</b>.</p>
+            <table>
+              <tr><th data-i18n="th.word">word</th><th data-i18n="th.meaning">meaning</th></tr>
+              <tr><td class="w"><ruby>求<rt>もと</rt></ruby>める</td><td data-i18n="s4.w1">to seek, to long for (愛を求める = seek love)</td></tr>
+              <tr><td class="w"><ruby>彷徨<rt>さまよ</rt></ruby>う</td><td data-i18n="s4.w2">to wander — a poetic word, huge in songs</td></tr>
+              <tr><td class="w"><ruby>燃<rt>も</rt></ruby>える</td><td data-i18n="s4.w3">to burn (熱く燃えてる = is burning hot)</td></tr>
+              <tr><td class="w"><ruby>溶<rt>と</rt></ruby>かす</td><td data-i18n="s4.w4">to melt (something) — transitive. 溶ける = melts by itself</td></tr>
+              <tr><td class="w"><ruby>無残<rt>むざん</rt></ruby>に</td><td data-i18n="s4.w5">cruelly, without mercy — pure 北斗 vocabulary</td></tr>
+              <tr><td class="w"><ruby>飛<rt>と</rt></ruby>び<ruby>散<rt>ち</rt></ruby>る</td><td data-i18n="s4.w6">to scatter, to fly apart (飛ぶ + 散る)</td></tr>
+              <tr><td class="w">〜はずさ</td><td data-i18n="s4.w7">it is bound to ~ / it should ~. さ = a cool, masculine sentence-ender</td></tr>
+            </table>
+            <div class="gp" data-i18n="s4.gp"><b>Plain form + はずだ</b> = I'm confident it's so (based on reason). Not a wish: an expectation. In the song: it's bound to melt everything and scatter.</div>
+            <ul class="ex">
+              <li>もう<ruby>着<rt>つ</rt></ruby>いているはずだ <span class="m" data-i18n="s4.e1">he should have arrived by now</span><button class="spk" data-say="もう着いているはずだ">🔊</button></li>
+              <li><ruby>今日<rt>きょう</rt></ruby>は<ruby>休<rt>やす</rt></ruby>みのはずだ <span class="m" data-i18n="s4.e2">today should be a day off</span><button class="spk" data-say="今日は休みのはずだ">🔊</button></li>
+              <li>そんなはずはない <span class="m" data-i18n="s4.e3">that can't be right</span><button class="spk" data-say="そんなはずはない">🔊</button></li>
+            </ul>
+            <div class="drill">
+              <h3 data-i18n="drill.h">Drill</h3>
+              <ol>
+                <li>メールを<ruby>送<rt>おく</rt></ruby>ったから、<ruby>届<rt>とど</rt></ruby>いている<button class="blank">はずだ</button>。<span class="m" data-i18n="s4.d1">I sent the mail, so it should have arrived.</span></li>
+                <li>アイスが<ruby>暑<rt>あつ</rt></ruby>さで<button class="blank">溶けた</button>。<span class="m" data-i18n="s4.d2">The ice cream melted from the heat. (intransitive 溶ける)</span></li>
+                <li>チョコを<button class="blank">溶かして</button>ケーキに<ruby>入<rt>い</rt></ruby>れる。<span class="m" data-i18n="s4.d3">Melt the chocolate and put it in the cake. (transitive 溶かす)</span></li>
+              </ol>
+              <div class="yourturn">
+                <label data-i18n="s4.yt">Your turn — a confident prediction about tomorrow's lesson: 「〜はずだ」</label>
+                <textarea data-store="ai-s4" data-i18n-ph="s4.ph" placeholder="＿＿はずだ。  e.g. 明日のレッスンは楽しいはずだ。"></textarea>
+                <div class="row"><button class="btn sm act-say-ta" data-i18n="btn.readmine">🔊 Read mine</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- S5 -->
+        <div class="seg" id="s5">
+          <div class="head"><div class="n">5</div><h2 data-i18n="s5.h">Chorus: take back the love</h2><span class="t">0:55–1:18</span></div>
+          <div class="body">
+            <div class="ctl" data-seg="55.2,78.2"><button class="btn primary act-seg" data-seg="55.2,78.2" data-i18n="btn.loop">🔁 Loop this part</button><div class="loopbar"><i></i></div></div>
+            <p class="cue" data-i18n="s5.cue">The chorus. Listen for <b>〜ため</b> (in order to), <b>見失った</b>, and the command at the very end: <b>取り戻せ</b>.</p>
+            <table>
+              <tr><th data-i18n="th.word">word</th><th data-i18n="th.meaning">meaning</th></tr>
+              <tr><td class="w"><ruby>守<rt>まも</rt></ruby>る</td><td data-i18n="s5.w1">to protect</td></tr>
+              <tr><td class="w">〜ため(に)</td><td data-i18n="s5.w2">in order to (守るため = in order to protect)</td></tr>
+              <tr><td class="w"><ruby>旅立<rt>たびだ</rt></ruby>つ</td><td data-i18n="s5.w3">to set out on a journey (旅 + 立つ)</td></tr>
+              <tr><td class="w"><ruby>明日<rt>あす</rt></ruby></td><td data-i18n="s5.w4">tomorrow — read あす here, the formal/poetic reading (everyday: あした)</td></tr>
+              <tr><td class="w"><ruby>見失<rt>みうしな</rt></ruby>う</td><td data-i18n="s5.w5">to lose sight of (見る + 失う)</td></tr>
+              <tr><td class="w"><ruby>微笑<rt>ほほえ</rt></ruby>み</td><td data-i18n="s5.w6">a smile (noun from 微笑む)</td></tr>
+              <tr><td class="w">〜など</td><td data-i18n="s5.w7">"things like ~" — here it's dismissive: a face like that? no thanks</td></tr>
+              <tr><td class="w"><ruby>見<rt>み</rt></ruby>たくはない</td><td data-i18n="s5.w8">I do NOT want to see (見たい → 見たく + は + ない, は adds stress)</td></tr>
+              <tr><td class="w"><ruby>取<rt>と</rt></ruby>り<ruby>戻<rt>もど</rt></ruby>す → <ruby>取<rt>と</rt></ruby>り<ruby>戻<rt>もど</rt></ruby>せ</td><td data-i18n="s5.w9">to get back → GET IT BACK! (imperative)</td></tr>
+            </table>
+            <div class="gp" data-i18n="s5.gp"><b>Imperative form (命令形)</b>: う-verbs → change the last u to e (取り戻す → 取り戻せ, 行く → 行け). る-verbs → ろ (食べる → 食べろ). する → しろ, 来る → 来い. Rough and direct: for songs, sports, emergencies, and Kenshiro.</div>
+            <ul class="ex">
+              <li><ruby>頑張<rt>がんば</rt></ruby>れ！ <span class="m" data-i18n="s5.e1">Go for it! (the one imperative everyone uses)</span><button class="spk" data-say="頑張れ！">🔊</button></li>
+              <li><ruby>逃<rt>に</rt></ruby>げろ！ <span class="m" data-i18n="s5.e2">Run!</span><button class="spk" data-say="逃げろ！">🔊</button></li>
+              <li><ruby>愛<rt>あい</rt></ruby>を<ruby>取<rt>と</rt></ruby>り<ruby>戻<rt>もど</rt></ruby>せ！ <span class="m" data-i18n="s5.e3">Take back the love!</span><button class="spk" data-say="愛を取り戻せ！">🔊</button></li>
+            </ul>
+            <div class="drill">
+              <h3 data-i18n="drill.h">Drill — make it an order</h3>
+              <ol>
+                <li><ruby>行<rt>い</rt></ruby>く → <button class="blank">行け</button><span class="m" data-i18n="s5.d1">go → Go!</span></li>
+                <li><ruby>食<rt>た</rt></ruby>べる → <button class="blank">食べろ</button><span class="m" data-i18n="s5.d2">eat → Eat!</span></li>
+                <li>する → <button class="blank">しろ</button><span class="m" data-i18n="s5.d3">do → Do it! (irregular)</span></li>
+                <li><ruby>来<rt>く</rt></ruby>る → <button class="blank">来い</button><span class="m" data-i18n="s5.d4">come → Come! (irregular, こい)</span></li>
+                <li><ruby>日本語<rt>にほんご</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>する<button class="blank">ために</button><ruby>東京<rt>とうきょう</rt></ruby>に<ruby>来<rt>き</rt></ruby>た。<span class="m" data-i18n="s5.d5">I came to Tokyo in order to study Japanese.</span></li>
+              </ol>
+              <div class="yourturn">
+                <label data-i18n="s5.yt">Your turn — order yourself to take something back: 「＿＿を取り戻せ！」</label>
+                <textarea data-store="ai-s5" data-i18n-ph="s5.ph" placeholder="＿＿を取り戻せ！  e.g. 睡眠時間を取り戻せ！(Take back your sleep!)"></textarea>
+                <div class="row"><button class="btn sm act-say-ta" data-i18n="btn.readmine">🔊 Read mine</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="quiz">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">✓</div>
+      <div><h2 data-i18n="quiz.h">Quiz: did the love come back?</h2><div class="who" data-i18n="quiz.sub">6 questions. Tap an answer.</div></div>
+    </div>
+    <div id="quizBox"></div>
+    <div class="score" id="score"></div>
+    <div class="grid2" style="margin-top:22px">
+      <div>
+        <h3 data-i18n="hw.h">Homework</h3>
+        <ol style="padding-left:22px;margin:0;font-size:16px">
+          <li data-i18n="hw.1">Sing the chorus (0:55–1:18) with the lyrics open. Record it. Send it, or don't — but record it.</li>
+          <li data-i18n="hw.2">Write three orders with the imperative form (命令形) for your Monday self.</li>
+          <li data-i18n="hw.3">Find one more song and one word in it you want to keep.</li>
+        </ol>
+      </div>
+      <div>
+        <h3 data-i18n="cs.h">Cheat sheet</h3>
+        <table>
+          <tr><td class="w">〜てくる / 〜ていく</td><td data-i18n="cs.1">comes toward me / goes away</td></tr>
+          <tr><td class="w">〜ても（無駄だ）</td><td data-i18n="cs.2">even if (it's useless)</td></tr>
+          <tr><td class="w">〜くなる / 〜になる</td><td data-i18n="cs.3">to become</td></tr>
+          <tr><td class="w">〜はずだ</td><td data-i18n="cs.4">it should / it's bound to</td></tr>
+          <tr><td class="w">〜ため(に)</td><td data-i18n="cs.5">in order to</td></tr>
+          <tr><td class="w">命令形 〜せ / 〜ろ</td><td data-i18n="cs.6">Do it! (imperative)</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span data-i18n="ft.1">Made by <a href="https://www.italki.com/teacher/4732907" target="_blank" rel="noopener">Yuuki@Anime Sensei</a>. Part of <a href="../">北斗の拳で日本語</a>.</span>
+    <span data-i18n="ft.2">Video embedded from the official Toei Animation channel. 愛をとりもどせ!! © 中村公晴 / 山下三智夫. Lyrics are linked, not reproduced.</span>
+  </div>
+</footer>
+<div class="toast" id="toast"></div>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('show'),1800)};
+const store={get:k=>{try{return localStorage.getItem(k)}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}}};
+
+/* ---------- one player, many segments ---------- */
+let P=null, loop=null, activeBtn=null, slow=false;
+function onYouTubeIframeAPIReady(){
+  P=new YT.Player('ytOP',{videoId:'xp6rspO4uYY',playerVars:{rel:0,modestbranding:1,playsinline:1,origin:location.origin},
+    events:{onStateChange:e=>{if(e.data===YT.PlayerState.ENDED)stopLoop();}}});
+  setInterval(()=>{ if(P&&P.getCurrentTime){const t=P.getCurrentTime();$('#now').textContent=Math.floor(t/60)+':'+String(Math.floor(t%60)).padStart(2,'0');} },250);
+}
+function stopLoop(){ if(loop){clearInterval(loop.t);loop=null;} if(activeBtn){activeBtn.classList.remove('on');const bar=activeBtn.parentElement.querySelector('.loopbar i');if(bar)bar.style.width='0';activeBtn=null;} }
+function playSeg(a,b,btn){
+  if(!P||!P.seekTo){toast('Player still loading…');return;}
+  stopLoop(); P.seekTo(a,true); P.playVideo(); activeBtn=btn; btn.classList.add('on');
+  const bar=btn.parentElement.querySelector('.loopbar i');
+  loop={t:setInterval(()=>{const cur=P.getCurrentTime(); if(bar)bar.style.width=Math.max(0,Math.min(100,(cur-a)/(b-a)*100))+'%'; if(cur>=b)P.seekTo(a,true);},80)};
+  if(window.innerWidth<=880) window.scrollTo({top:0,behavior:'smooth'});
+}
+$$('.act-seg').forEach(b=>b.onclick=()=>{ if(b.classList.contains('on')){P.pauseVideo();stopLoop();return;} const [a,c]=b.dataset.seg.split(',').map(Number); playSeg(a,c,b); });
+$('#playAll').onclick=()=>{stopLoop();P.seekTo(0,true);P.playVideo();};
+$('#stopAll').onclick=()=>{P&&P.pauseVideo();stopLoop();};
+$('#slowAll').onclick=e=>{slow=!slow;P.setPlaybackRate(slow?0.75:1);e.currentTarget.classList.toggle('on',slow);toast(slow?'0.75× speed':'Normal speed');};
+
+/* ---------- TTS ---------- */
+let voice=null;
+function pickVoice(){const vs=speechSynthesis.getVoices().filter(v=>/^ja/i.test(v.lang));const pref=['O-Ren','Kyoko','Otoya','Google 日本語','Nanami','Keita'];vs.sort((a,b)=>{const ia=pref.findIndex(p=>a.name.includes(p)),ib=pref.findIndex(p=>b.name.includes(p));return (ia<0?99:ia)-(ib<0?99:ib)});voice=vs[0]||null;}
+speechSynthesis.onvoiceschanged=pickVoice; pickVoice();
+let cur=null;
+function say(text,rate,btn){speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='ja-JP';if(voice)u.voice=voice;u.rate=rate;if(cur)cur.classList.remove('on');cur=btn||null;if(btn)btn.classList.add('on');u.onend=u.onerror=()=>{if(btn)btn.classList.remove('on')};speechSynthesis.speak(u);}
+$$('.spk,.act-say').forEach(b=>b.onclick=()=>say(b.dataset.say,0.95,b));
+$$('.act-say-ta').forEach(b=>b.onclick=()=>{const ta=b.closest('.yourturn').querySelector('textarea');const v=ta.value.trim();if(!v){toast('Write something first');ta.focus();return;}say(v,0.9,b)});
+
+/* ---------- Recording ---------- */
+let rec=null;
+$$('.act-rec').forEach(b=>b.onclick=async()=>{
+  const box=b.closest('.rec'), audio=box.querySelector('audio');
+  if(rec&&rec.state==='recording'){rec.stop();return;}
+  if(!navigator.mediaDevices){toast('Recording not supported here');return;}
+  try{const stream=await navigator.mediaDevices.getUserMedia({audio:true});const chunks=[];rec=new MediaRecorder(stream);
+    rec.ondataavailable=e=>chunks.push(e.data);
+    rec.onstop=()=>{stream.getTracks().forEach(t=>t.stop());const blob=new Blob(chunks,{type:rec.mimeType||'audio/webm'});audio.src=URL.createObjectURL(blob);audio.hidden=false;box.classList.remove('live');b.textContent='🎙 Again';audio.play().catch(()=>{});};
+    rec.start();box.classList.add('live');b.textContent='⏹ Stop';toast('Recording…');
+  }catch(e){toast('Microphone blocked');}
+});
+
+/* ---------- Drills ---------- */
+$$('.blank').forEach(b=>b.onclick=()=>{b.classList.toggle('show');if(b.classList.contains('show'))say(b.textContent,0.95);});
+$$('textarea[data-store]').forEach(t=>{const v=store.get(t.dataset.store);if(v)t.value=v;t.oninput=()=>store.set(t.dataset.store,t.value)});
+
+/* ---------- Quiz ---------- */
+const QUIZ=[
+ {q:{en:'「落ちてくる」— the sky falls…',ja:'「落ちてくる」— 空は…',zh:'「落ちてくる」— 天空…'},o:{en:['away from me','toward me','sideways'],ja:['私から離れて','私の方へ','横に'],zh:['遠離我','朝我而來','往旁邊']},a:1,why:{en:'てくる = the action comes toward the speaker.',ja:'てくる = 動作が話し手の方へ向かってくる。',zh:'てくる = 動作朝說話者而來。'}},
+ {q:{en:'「〜ても無駄だ」means…',ja:'「〜ても無駄だ」の意味は…',zh:'「〜ても無駄だ」的意思是…'},o:{en:["it's useless even if you ~","you must ~","it's useful if you ~"],ja:['〜しても意味がない','〜しなければならない','〜すれば役に立つ'],zh:['就算～也沒用','必須～','～的話很有用']},a:0,why:{en:'ても = even if; 無駄 = useless.',ja:'ても = 〜しても。無駄 = 役に立たない。',zh:'ても = 即使；無駄 = 沒用。'}},
+ {q:{en:'速い → "becomes fast"',ja:'速い → 「速くなる」の作り方は？',zh:'速い → 「變快」怎麼說？'},o:{en:['速いになる','速くなる','速になる'],ja:['速いになる','速くなる','速になる'],zh:['速いになる','速くなる','速になる']},a:1,why:{en:'い-adjective: drop い, add くなる.',ja:'い形容詞は い を取って くなる。',zh:'い形容詞：去掉 い 加 くなる。'}},
+ {q:{en:'「もう着いているはずだ」',ja:'「もう着いているはずだ」の気持ちは？',zh:'「もう着いているはずだ」表達什麼？'},o:{en:['I hope he arrived','He should have arrived by now','He must not arrive'],ja:['着いてほしい','もう着いているに違いない','着いてはいけない'],zh:['希望他到了','他現在應該已經到了','他不可以到']},a:1,why:{en:'はず = confident expectation, not a wish.',ja:'はず = 根拠のある確信。願望ではない。',zh:'はず = 有根據的推測，不是願望。'}},
+ {q:{en:'溶ける vs 溶かす — which one melts the chocolate (you do it)?',ja:'溶ける と 溶かす — 自分でチョコを溶かすのは？',zh:'溶ける 和 溶かす — 你動手融化巧克力是哪個？'},o:{en:['溶ける','溶かす','both'],ja:['溶ける','溶かす','両方'],zh:['溶ける','溶かす','都可以']},a:1,why:{en:'溶かす is transitive (someone melts it). 溶ける is intransitive (it melts).',ja:'溶かす は他動詞（人が溶かす）。溶ける は自動詞（勝手に溶ける）。',zh:'溶かす 是他動詞（有人去融）。溶ける 是自動詞（自己融化）。'}},
+ {q:{en:'Imperative of 取り戻す',ja:'取り戻す の命令形は？',zh:'取り戻す 的命令形是？'},o:{en:['取り戻せ','取り戻ろ','取り戻い'],ja:['取り戻せ','取り戻ろ','取り戻い'],zh:['取り戻せ','取り戻ろ','取り戻い']},a:0,why:{en:'う-verb: last u → e. す → せ.',ja:'う動詞は最後の u を e に。す → せ。',zh:'う動詞：最後的 u 改成 e。す → せ。'}}
+];
+let LANG='en', answered=0, correct=0;
+function renderQuiz(){
+  const qb=$('#quizBox'); qb.innerHTML=''; answered=0; correct=0; $('#score').textContent='';
+  QUIZ.forEach((it,i)=>{const d=document.createElement('div');d.className='q';
+    d.innerHTML=`<p class="qt">${i+1}. ${it.q[LANG]}</p><div class="opts">${it.o[LANG].map((o,j)=>`<button data-j="${j}">${o}</button>`).join('')}</div><p class="why">${it.why[LANG]}</p>`;
+    d.querySelectorAll('button').forEach(b=>b.onclick=()=>{if(d.classList.contains('answered'))return;d.classList.add('answered');const j=+b.dataset.j;d.querySelectorAll('button').forEach(x=>x.classList.add(+x.dataset.j===it.a?'ok':'ng'));answered++;if(j===it.a)correct++;if(answered===QUIZ.length)$('#score').textContent=`${correct} / ${QUIZ.length}`+(correct===QUIZ.length?' — 愛をとりもどせ!!':'');});
+    qb.appendChild(d);});
+}
+
+/* ---------- i18n ---------- */
+const I={
+en:{},
+ja:{
+'nav.back':'← セリフ編','nav.quiz':'クイズ',
+'hero.eyebrow':'歌のレッスン · JLPT N4–N3 · Yuuki@Anime Sensei','hero.sub':'オープニング「愛をとりもどせ!!」で日本語を学ぶ',
+'hero.lead':'クリスタルキング、1984年。愛を叫び続ける90秒。公式映像をパートごとにループして、単語を拾い、文法を見つけて、ケンシロウに向かって歌い返そう。',
+'how.1t':'聴く','how.1d':'まずパートを1回再生。','how.2t':'ループ','how.2d':'繰り返す。遅くもできる。','how.3t':'読む','how.3d':'歌詞は別タブで開く。','how.4t':'単語','how.4d':'単語とパターンを覚える。','how.5t':'歌う','how.5d':'録音する。大声で。',
+'btn.all':'▶ 通しで再生','btn.slow':'🐢 0.75倍','btn.loop':'🔁 このパートをループ','btn.loopline':'🔁 この行をループ','btn.rec':'🎙 歌う','btn.readmine':'🔊 自分の文を読ませる',
+'ly.h':'歌詞','ly.p':'歌詞は著作物なのでこのページには載せていません。公式の歌詞サイトを別タブで開いて、ループしながら一緒に歌ってください。','ly.furi':'うたてん（ふりがな付き）',
+'title.en':'「愛を<i>取り戻せ</i>!!」— タイトルであり、最後に歌う一行。',
+'th.word':'語','th.meaning':'意味','drill.h':'ドリル',
+'s1.h':'フック: YOU は SHOCK','s1.cue':'同じ形の2行。<b>は</b>のあとの英単語と、行末の動詞<b>落ちてくる</b>を聞き取って。',
+'s1.w1':'英語の名詞 + は = 日本語の文になる。80年代の歌謡曲はこれが大好き。「YouはShock」= 君は衝撃。','s1.w2':'愛','s1.w3':'空','s1.w4':'胸 — 歌の中では心のこと','s1.w5':'落ちる + てくる = <b>自分の方へ</b>落ちてくる',
+'s1.gp':'<b>動詞て形 + くる</b> = 動作が話し手の方へ来る。<b>て + いく</b> = 離れていく。空が<i>自分に</i>落ちてくる: 落ちて<b>くる</b>。',
+'s1.e1':'雨が降り始めた（自分に向かって）','s1.e2':'友だちが走って来る','s1.e3':'鳥が飛んでいく',
+'s1.d1':'バスが来た！（来る・過去）','s1.d2':'雪が降ってきた。（てくる・過去）','s1.d3':'電車が行ってしまった。（てしまう）',
+'s1.yt':'あなたの番 — 東京で衝撃だったことは？「＿＿ は SHOCK」','s1.ph':'＿＿ は SHOCK。  例: 家賃 は SHOCK。',
+'s2.h':'Aメロ: 鎖でつないでも無駄','s2.cue':'速くて荒い。<b>〜ても</b>（たとえ〜でも）の後の<b>無駄</b>と、最後の<b>ダウン</b>を聞き取って。',
+'s2.w1':'燃えるような心（熱い = 熱い・情熱的）','s2.w2':'鎖','s2.w3':'つなぐ・縛る（つないでも = 縛っても）','s2.w4':'役に立たない — 日本で一番使える単語のひとつ','s2.w5':'邪魔をする（邪魔する奴 = 邪魔をする者は誰でも）','s2.w6':'やつ — 乱暴。悪役には○、同僚には×。','s2.w7':'指先ひとつで（名詞 + ひとつで = たったひとつの〜で）','s2.w8':'ダウン（ノックダウン）— 外来語は名詞として使える: ダウンさ = 倒れる',
+'s2.gp':'<b>動詞て形 + も</b> = たとえ〜でも。Aメロは「燃える心を鎖でつないでも無駄だ」。<b>〜ても無駄だ</b>は盗む価値のある決まり文句。',
+'s2.e1':'今謝っても意味がない','s2.e2':'雨が降っても行く','s2.e3':'ボタンひとつで注文できる',
+'s2.d1':'高くても買う。（い形容詞: 高く + ても）','s2.d2':'何回説明しても無駄だ。','s2.d3':'スマホひとつで旅行できる。',
+'s2.yt':'あなたの番 — やっても無駄なこと:「〜ても無駄だ」','s2.ph':'＿＿ても無駄だ。  例: 月曜日に早く寝ても無駄だ。',
+'s3.h':'フック再び: 鼓動が速くなる','s3.cue':'同じフックで結びが変わる。<b>鼓動</b>と変化の動詞<b>速くなる</b>を聞き取って。',
+'s3.w1':'心臓の音（鼓 = 太鼓、動 = 動く）','s3.w2':'速い → 速くなる。い形容詞は い を取って くなる','s3.w3':'「私」— 乱暴で男っぽい。ケンシロウの一人称。初対面には 私。',
+'s3.gp':'<b>い形容詞 → 〜くなる</b> ／ <b>な形容詞・名詞 → 〜になる</b> = 〜になる。速く<b>なる</b>、静か<b>になる</b>、医者<b>になる</b>。',
+'s3.e1':'日本語が上手になった','s3.e2':'夜は寒くなる','s3.e3':'鼓動が速くなる',
+'s3.d1':'暑い → 暑くなる','s3.d2':'静か → 静かになる','s3.d3':'大人 → 大人になる',
+'s3.yt':'あなたの番 — 鼓動が速くなるのはどんな時？「〜と、鼓動が速くなる」','s3.ph':'＿＿と、鼓動が速くなる。  例: 秋葉原に行くと、鼓動が速くなる。',
+'s4.h':'Bメロ: 彷徨う心','s4.cue':'盛り上げのパート。文語っぽい大きな動詞が並び、<b>〜はずさ</b>で終わる。',
+'s4.w1':'求める・欲しがる（愛を求める）','s4.w2':'さまよう — 詩的な語。歌に頻出','s4.w3':'燃える（熱く燃えてる = 熱く燃えている）','s4.w4':'（何かを）溶かす — 他動詞。溶ける = 自然に溶ける','s4.w5':'むごく・容赦なく — まさに北斗の語彙','s4.w6':'飛び散る（飛ぶ + 散る）','s4.w7':'〜するはずだ。さ = 男っぽくてかっこいい文末',
+'s4.gp':'<b>普通形 + はずだ</b> = 根拠があってそう確信している。願いではなく予測。歌では「すべてを溶かして飛び散るはずだ」。',
+'s4.e1':'もう着いているはずだ','s4.e2':'今日は休みのはずだ','s4.e3':'そんなはずはない',
+'s4.d1':'メールを送ったから、届いているはずだ。','s4.d2':'アイスが暑さで溶けた。（自動詞 溶ける）','s4.d3':'チョコを溶かしてケーキに入れる。（他動詞 溶かす）',
+'s4.yt':'あなたの番 — 明日のレッスンへの自信ある予測:「〜はずだ」','s4.ph':'＿＿はずだ。  例: 明日のレッスンは楽しいはずだ。',
+'s5.h':'サビ: 愛を取り戻せ','s5.cue':'サビ。<b>〜ため</b>（〜のために）、<b>見失った</b>、そして最後の命令<b>取り戻せ</b>を聞き取って。',
+'s5.w1':'守る','s5.w2':'〜のために（守るため = 守るために）','s5.w3':'旅に出る（旅 + 立つ）','s5.w4':'明日 — ここでは あす。改まった・詩的な読み方（普段は あした）','s5.w5':'見失う（見る + 失う）','s5.w6':'微笑み（微笑む の名詞）','s5.w7':'「〜など」— ここでは突き放す言い方: そんな顔など見たくない','s5.w8':'見たくない（見たい → 見たく + は + ない、は で強調）','s5.w9':'取り戻す → 取り戻せ！（命令形）',
+'s5.gp':'<b>命令形</b>: う動詞は最後の u を e に（取り戻す → 取り戻せ、行く → 行け）。る動詞は ろ（食べる → 食べろ）。する → しろ、来る → 来い。荒くて直接的: 歌・スポーツ・緊急時・ケンシロウ用。',
+'s5.e1':'頑張れ！（誰もが使う命令形）','s5.e2':'逃げろ！','s5.e3':'愛を取り戻せ！',
+'s5.d1':'行く → 行け','s5.d2':'食べる → 食べろ','s5.d3':'する → しろ（不規則）','s5.d4':'来る → 来い（不規則・こい）','s5.d5':'日本語を勉強するために東京に来た。',
+'s5.yt':'あなたの番 — 自分に命令して取り戻す:「＿＿を取り戻せ！」','s5.ph':'＿＿を取り戻せ！  例: 睡眠時間を取り戻せ！',
+'quiz.h':'クイズ: 愛は戻ったか？','quiz.sub':'6問。答えをタップ。',
+'hw.h':'宿題','hw.1':'歌詞を開いてサビ（0:55–1:18）を歌う。録音する。送っても送らなくてもいい、でも録音はする。','hw.2':'月曜日の自分への命令を、命令形で3つ書く。','hw.3':'もう1曲探して、その中から残したい単語を1つ見つける。',
+'cs.h':'早見表','cs.1':'こちらへ来る／離れていく','cs.2':'たとえ〜でも（無駄だ）','cs.3':'〜になる','cs.4':'〜はずだ','cs.5':'〜のために','cs.6':'〜しろ！（命令形）',
+'ft.1':'制作: <a href="https://www.italki.com/teacher/4732907" target="_blank" rel="noopener">Yuuki@Anime Sensei</a>。<a href="../">北斗の拳で日本語</a>の一部。','ft.2':'映像は東映アニメーション公式チャンネルからの埋め込み。愛をとりもどせ!! © 中村公晴／山下三智夫。歌詞は転載せずリンクのみ。'
+},
+zh:{
+'nav.back':'← 台詞篇','nav.quiz':'測驗',
+'hero.eyebrow':'歌曲課 · JLPT N4–N3 · 老師 Yuuki@Anime Sensei','hero.sub':'用片頭曲「愛をとりもどせ!!」學日文',
+'hero.lead':'Crystal King，1984年。吶喊愛的90秒。把官方影片一段一段循環，撿單字、找文法，然後唱回去給拳四郎聽。',
+'how.1t':'聽','how.1d':'先把這段播一次。','how.2t':'循環','how.2d':'重複播放，可放慢。','how.3t':'讀','how.3d':'歌詞在另一個分頁打開。','how.4t':'單字','how.4d':'學單字和句型。','how.5t':'唱','how.5d':'錄下來。大聲唱。',
+'btn.all':'▶ 整首播放','btn.slow':'🐢 0.75倍速','btn.loop':'🔁 循環這一段','btn.loopline':'🔁 循環這一句','btn.rec':'🎙 唱唱看','btn.readmine':'🔊 讀我寫的',
+'ly.h':'歌詞','ly.p':'歌詞有版權，所以這頁不刊登。請在另一個分頁打開官方歌詞網站，一邊循環一邊跟著唱。','ly.furi':'うたてん（附假名）',
+'title.en':'「把愛<i>奪回來</i>!!」— 歌名，也是你最後要唱的那句。',
+'th.word':'單字','th.meaning':'意思','drill.h':'練習',
+'s1.h':'副歌鉤子：YOU は SHOCK','s1.cue':'兩句同樣的形狀。留意<b>は</b>後面的英文單字，和每句結尾的動詞<b>落ちてくる</b>。',
+'s1.w1':'英文名詞 + は = 一個日文句子。80年代日本流行歌超愛這招。「You (are) shock」＝你讓我震撼。','s1.w2':'愛','s1.w3':'天空','s1.w4':'胸口 — 在歌裡就是心','s1.w5':'落ちる（掉落）+ てくる = <b>朝我</b>掉下來',
+'s1.gp':'<b>動詞て形 + くる</b> = 動作朝說話者而來。<b>て + いく</b> = 離開。天空<i>朝我</i>掉下來：落ちて<b>くる</b>。',
+'s1.e1':'開始下雨了（朝我下）','s1.e2':'朋友跑過來','s1.e3':'鳥飛走了',
+'s1.d1':'公車來了！（来る，過去式）','s1.d2':'開始下雪了。（てくる，過去式）','s1.d3':'電車開走了（我沒趕上）。（てしまう）',
+'s1.yt':'換你 — 在東京什麼讓你震撼？「＿＿ は SHOCK」','s1.ph':'＿＿ は SHOCK。  例：家賃 は SHOCK。（房租很震撼。）',
+'s2.h':'主歌：鎖鏈也沒用','s2.cue':'又快又粗。留意<b>〜ても</b>（即使）後面的<b>無駄</b>，還有最後的<b>ダウン</b>。',
+'s2.w1':'燃燒的心（熱い = 熱、熱情）','s2.w2':'鎖鏈','s2.w3':'綁住、鎖住（つないでも = 就算鎖住）','s2.w4':'沒用、白費 — 日本最實用的單字之一','s2.w5':'礙事（邪魔する奴 = 任何礙事的人）','s2.w6':'傢伙 — 粗魯。用在反派可以，用在同事不行。','s2.w7':'用一根指尖（名詞 + ひとつで = 只用一個～）','s2.w8':'倒下（擊倒）— 外來語可當名詞：ダウンさ = 他們倒下',
+'s2.gp':'<b>動詞て形 + も</b> = 即使。主歌說：就算把燃燒的心鎖住也沒用。<b>〜ても無駄だ</b>是值得偷走的固定句。',
+'s2.e1':'現在道歉也沒用','s2.e2':'就算下雨我也去','s2.e3':'一個按鈕就能點餐',
+'s2.d1':'就算貴也買。（い形容詞：高く + ても）','s2.d2':'解釋幾次都沒用。','s2.d3':'只靠一支手機就能旅行。',
+'s2.yt':'換你 — 就算試了也沒用的事：「〜ても無駄だ」','s2.ph':'＿＿ても無駄だ。  例：月曜日に早く寝ても無駄だ。',
+'s3.h':'鉤子再來：心跳變快','s3.cue':'同樣的鉤子，不同的結尾。留意<b>鼓動</b>和變化動詞<b>速くなる</b>。',
+'s3.w1':'心跳（鼓 = 鼓，動 = 動）','s3.w2':'快 → 變快。い形容詞：去掉 い 加 くなる','s3.w3':'「我」— 粗魯、男性化。拳四郎的自稱。對陌生人用 私。',
+'s3.gp':'<b>い形容詞 → 〜くなる</b> ／ <b>な形容詞、名詞 → 〜になる</b> = 變成。速く<b>なる</b>、静か<b>になる</b>、医者<b>になる</b>。',
+'s3.e1':'我的日文變好了','s3.e2':'晚上會變冷','s3.e3':'心跳加速',
+'s3.d1':'熱 → 變熱','s3.d2':'安靜 → 變安靜','s3.d3':'大人 → 變成大人',
+'s3.yt':'換你 — 什麼讓你心跳加速？「〜と、鼓動が速くなる」','s3.ph':'＿＿と、鼓動が速くなる。  例：秋葉原に行くと、鼓動が速くなる。',
+'s4.h':'醞釀段：徬徨的心','s4.cue':'緊張升溫的段落。一堆文言感的大動詞，最後停在<b>〜はずさ</b>。',
+'s4.w1':'追求、渴望（愛を求める = 追求愛）','s4.w2':'徬徨、漂泊 — 詩意的字，歌裡超常見','s4.w3':'燃燒（熱く燃えてる = 正熱烈燃燒）','s4.w4':'融化（某物）— 他動詞。溶ける = 自己融化','s4.w5':'殘酷地、毫不留情 — 純正的北斗詞彙','s4.w6':'四散、飛散（飛ぶ + 散る）','s4.w7':'一定會～／應該～。さ = 帥氣的男性句尾',
+'s4.gp':'<b>普通形 + はずだ</b> = 有根據的確信。不是願望，是推測。歌裡：一定會融化一切然後四散。',
+'s4.e1':'他現在應該到了','s4.e2':'今天應該是休假','s4.e3':'不可能是那樣',
+'s4.d1':'我寄了郵件，所以應該已經送到了。','s4.d2':'冰淇淋被熱融化了。（自動詞 溶ける）','s4.d3':'把巧克力融化後放進蛋糕。（他動詞 溶かす）',
+'s4.yt':'換你 — 對明天課程的自信預測：「〜はずだ」','s4.ph':'＿＿はずだ。  例：明日のレッスンは楽しいはずだ。',
+'s5.h':'副歌：把愛奪回來','s5.cue':'副歌。留意<b>〜ため</b>（為了）、<b>見失った</b>，還有最後的命令：<b>取り戻せ</b>。',
+'s5.w1':'守護','s5.w2':'為了（守るため = 為了守護）','s5.w3':'踏上旅程（旅 + 立つ）','s5.w4':'明天 — 這裡讀 あす，正式／詩意的讀法（平常說 あした）','s5.w5':'失去蹤影、看不見了（見る + 失う）','s5.w6':'微笑（微笑む 的名詞）','s5.w7':'「～之類的」— 這裡帶有輕蔑：那種臉？不想看','s5.w8':'我「不」想看（見たい → 見たく + は + ない，は 加強語氣）','s5.w9':'奪回 → 奪回來！（命令形）',
+'s5.gp':'<b>命令形</b>：う動詞把最後的 u 改成 e（取り戻す → 取り戻せ、行く → 行け）。る動詞改 ろ（食べる → 食べろ）。する → しろ、来る → 来い。粗魯直接：用在歌、運動、緊急狀況，還有拳四郎。',
+'s5.e1':'加油！（大家都在用的命令形）','s5.e2':'快逃！','s5.e3':'把愛奪回來！',
+'s5.d1':'去 → 去！','s5.d2':'吃 → 吃！','s5.d3':'做 → 做！（不規則）','s5.d4':'來 → 來！（不規則，こい）','s5.d5':'為了學日文而來東京。',
+'s5.yt':'換你 — 命令自己奪回某樣東西：「＿＿を取り戻せ！」','s5.ph':'＿＿を取り戻せ！  例：睡眠時間を取り戻せ！（把睡眠時間奪回來！）',
+'quiz.h':'測驗：愛回來了嗎？','quiz.sub':'6題。點選答案。',
+'hw.h':'作業','hw.1':'打開歌詞唱副歌（0:55–1:18）。錄下來。傳不傳都行，但一定要錄。','hw.2':'用命令形寫三個給星期一的自己的命令。','hw.3':'再找一首歌，從裡面找一個想留下的單字。',
+'cs.h':'速查表','cs.1':'朝我而來／離開','cs.2':'即使（也沒用）','cs.3':'變成','cs.4':'應該／一定會','cs.5':'為了','cs.6':'去做！（命令形）',
+'ft.1':'由 <a href="https://www.italki.com/teacher/4732907" target="_blank" rel="noopener">Yuuki@Anime Sensei</a> 製作。<a href="../">北斗の拳で日本語</a>的一部分。','ft.2':'影片嵌入自東映動畫官方頻道。愛をとりもどせ!! © 中村公晴／山下三智夫。歌詞只提供連結，不轉載。'
+}};
+function applyLang(lang){
+  LANG=lang; const d=I[lang]||{};
+  document.documentElement.lang=lang==='ja'?'ja':lang==='zh'?'zh-Hant':'en';
+  $$('[data-i18n]').forEach(el=>{const k=el.dataset.i18n;if(!el.dataset.orig)el.dataset.orig=el.innerHTML;el.innerHTML=d[k]||el.dataset.orig;});
+  $$('[data-i18n-ph]').forEach(el=>{const k=el.dataset.i18nPh;if(!el.dataset.orig)el.dataset.orig=el.placeholder;el.placeholder=d[k]||el.dataset.orig;});
+  $$('#lang button').forEach(b=>b.classList.toggle('on',b.dataset.lang===lang));
+  renderQuiz(); store.set('lang',lang);
+}
+$$('#lang button').forEach(b=>b.onclick=()=>applyLang(b.dataset.lang));
+applyLang(store.get('lang')||'en');
+</script>
+</body>
+</html>
