@@ -356,7 +356,7 @@ function playSeg(a,b,btn){
   if(!P||!P.seekTo){toast('Player still loading…');return;}
   stopLoop(); P.seekTo(a,true); P.playVideo(); activeBtn=btn; btn.classList.add('on');
   const bar=btn.parentElement.querySelector('.loopbar i');
-  loop={t:setInterval(()=>{const cur=P.getCurrentTime(); if(bar)bar.style.width=Math.max(0,Math.min(100,(cur-a)/(b-a)*100))+'%'; if(cur>=b||(P.getPlayerState()===1&&cur<a-0.6))P.seekTo(a,true);},80)};
+  loop={t:setInterval(()=>{const cur=P.getCurrentTime(); if(bar)bar.style.width=Math.max(0,Math.min(100,(cur-a)/(b-a)*100))+'%'; if(cur>=b)P.seekTo(a,true); else if(cur<a-0.6&&Date.now()-(loop.last||0)>1000){loop.last=Date.now();P.seekTo(a,true);}},80)};
   if(window.innerWidth<=880) window.scrollTo({top:0,behavior:'smooth'});
 }
 $$('.act-seg').forEach(b=>b.onclick=()=>{ if(b.classList.contains('on')){P.pauseVideo();stopLoop();return;} const [a,c]=b.dataset.seg.split(',').map(Number); playSeg(a,c,b); });
