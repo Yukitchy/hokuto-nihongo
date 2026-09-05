@@ -79,8 +79,8 @@ section:nth-of-type(4n+1)::before{top:-40px;right:-60px;width:220px;height:220px
 section:nth-of-type(4n+2)::before{bottom:24px;right:-10px;width:180px;height:140px;background-image:radial-gradient(var(--deco) 2px,transparent 2px);background-size:18px 18px}
 section:nth-of-type(4n+3)::before{top:60px;right:-70px;width:200px;height:200px;border-radius:50%;border:14px solid var(--deco)}
 section:nth-of-type(4n+4)::before{top:40px;right:-40px;width:150px;height:26px;border-radius:999px;background:var(--deco);box-shadow:0 52px 0 -4px var(--deco),0 104px 0 8px var(--deco)}
-.sec-head{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:22px}
-.sec-head .num{font-family:"Dela Gothic One",sans-serif;font-size:56px;line-height:.9;color:var(--red)}
+.sec-head{display:flex;align-items:stretch;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.sec-head .num{font-family:"Dela Gothic One",sans-serif;font-size:56px;line-height:1;color:var(--red);display:flex;align-items:center}
 .sec-head h2{margin:0;font-size:clamp(22px,3.4vw,32px);font-weight:900;line-height:1.25}
 .sec-head .who{font-size:14px;color:var(--sub);font-weight:700;margin-top:4px}
 .tag{display:inline-block;font-size:13px;font-weight:900;padding:2px 9px;border-radius:4px;background:var(--ink);color:var(--paper);vertical-align:middle;margin-left:8px}
@@ -288,7 +288,7 @@ html[data-motif="b"] #quiz .sec-head .num,html[data-motif="b"] #quiz .who,html[d
 html[data-motif="b"] #quiz h3::before{background:#fff}
 html[data-motif="b"] #quiz .q{border:0;color:#000}
 html[data-motif="b"] #quiz .q .opts button{border:0;background:var(--paper);border-radius:0}
-html[data-motif="b"] .sec-head .num{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;color:var(--ink);font-size:44px;line-height:1}
+html[data-motif="b"] .sec-head .num{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;color:var(--ink);font-size:68px;line-height:.8;letter-spacing:-.04em}
 html[data-motif="b"] .sec-head h2{font-size:clamp(24px,3.6vw,36px);letter-spacing:-.01em}
 html[data-motif="b"] .tag{border-radius:999px;background:#000;font-size:12px;padding:3px 10px}
 html[data-motif="b"] .tag.n3,html[data-motif="b"] .tag.n2,html[data-motif="b"] .tag.n1{background:#000}

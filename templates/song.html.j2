@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ja" data-motif="b">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ d.title_tag }}</title>
+<meta name="description" content="{{ d.description }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Dela+Gothic+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ base }}style.css">
+<script src="{{ base }}motif.js"></script>
+<style>
+.player-wrap{position:sticky;top:64px;z-index:20;border:3px solid var(--line);background:#000}
+.player-wrap .yt{aspect-ratio:16/9;width:100%}
+.player-wrap iframe{width:100%;height:100%;display:block}
+.pbar{display:flex;gap:6px;flex-wrap:wrap;align-items:center;background:var(--paper-2);padding:10px 12px;border-top:3px solid var(--line)}
+.pbar .now{font-weight:900;font-size:14px;margin-right:auto;font-variant-numeric:tabular-nums}
+.layout{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.layout .left{position:sticky;top:64px}
+.seg{border:3px solid var(--line);background:#fff;margin-bottom:22px}
+.seg .head{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:3px solid var(--line);background:var(--paper-2)}
+.seg .head .n{font-family:"Dela Gothic One",sans-serif;font-size:30px;line-height:1;color:var(--red)}
+.seg .head h2{margin:0;font-size:19px;font-weight:900;flex:1}
+.seg .head .t{font-size:13px;font-weight:900;font-variant-numeric:tabular-nums;color:var(--sub)}
+.seg .body{padding:16px}
+.seg .cue{font-size:15px;color:var(--sub);font-weight:700;margin:0 0 12px}
+.seg .cue b{color:var(--ink)}
+.seg table{margin-bottom:12px}
+.seg .drill{margin-top:16px;padding-top:14px}
+.lyrics{border:3px solid var(--line);background:var(--gold);padding:16px 18px;margin:0 0 22px}
+.lyrics h3::before{background:var(--ink)}
+.lyrics p{margin:0 0 10px;font-size:15px}
+.lyrics .row{display:flex;gap:8px;flex-wrap:wrap}
+.title-line{border:3px solid var(--line);background:#fff;padding:22px 24px;margin:22px 0}
+.title-line .jp{font-family:"Dela Gothic One","Zen Kaku Gothic New",sans-serif;font-size:clamp(30px,6vw,54px);line-height:1.2;margin:0}
+.title-line .jp rt{font-family:"Zen Kaku Gothic New",sans-serif}
+.title-line .en{font-size:18px;font-weight:700;margin:8px 0 0}
+.title-line .en i{font-style:normal;color:var(--red)}
+.seg .ex li{font-size:15px}
+#song{overflow:visible}#song::before{display:none}
+@media(max-width:880px){.layout{grid-template-columns:1fr}.layout .left{position:static}.player-wrap{position:sticky;top:58px}}
+</style>
+</head>
+<body>
+{%- macro t(x) -%}data-i18n="{{ x.k }}"{%- endmacro -%}
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="{{ d.brand_href }}">{{ d.brand }}</a>
+    <nav id="nav">
+      <a href="{{ d.nav.back_href }}" {{ t(d.nav.back) }}>{{ d.nav.back.base }}</a>
+      {%- for s in d.nav.segs %}<a href="{{ s.href }}">{{ s.label }}</a>{% endfor %}<a href="#quiz" {{ t(d.nav.quiz) }}>{{ d.nav.quiz.base }}</a>
+    </nav>
+    <div class="lang" id="lang">{% for l in d.langs %}<button data-lang="{{ l.code }}"{% if loop.first %} class="on"{% endif %}>{{ l.label }}</button>{% endfor %}</div>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow" {{ t(d.hero.eyebrow) }}>{{ d.hero.eyebrow.base }}</span>
+    <h1>{{ d.hero.h1 }}<span class="en" {{ t(d.hero.h1_en) }}>{{ d.hero.h1_en.base }}</span></h1>
+    <p class="lead" {{ t(d.hero.lead) }}>{{ d.hero.lead.base }}</p>
+    <div class="howto">
+      {%- for h in d.hero.howto %}
+      <div><div class="n">{{ loop.index }}</div><div class="t" {{ t(h.t) }}>{{ h.t.base }}</div><div class="d" {{ t(h.d) }}>{{ h.d.base }}</div></div>
+      {%- endfor %}
+    </div>
+  </div>
+</div>
+
+<section id="song">
+  <div class="wrap">
+    <div class="layout">
+      <div class="left">
+        <div class="player-wrap">
+          <div class="yt" id="ytOP"></div>
+          <div class="pbar">
+            <span class="now" id="now">0:00</span>
+            <button class="btn sm primary" id="playAll" {{ t(d.ui.all) }}>{{ d.ui.all.base }}</button>
+            <button class="btn sm" id="stopAll">⏹</button>
+            <button class="btn sm" id="slowAll" {{ t(d.ui.slow) }}>{{ d.ui.slow.base }}</button>
+          </div>
+        </div>
+        <div class="lyrics">
+          <h3 {{ t(d.lyrics.h) }}>{{ d.lyrics.h.base }}</h3>
+          <p {{ t(d.lyrics.p) }}>{{ d.lyrics.p.base }}</p>
+          <div class="row">
+            {%- for a in d.lyrics.links %}
+            <a class="btn sm{% if a.dark %} dark{% endif %}" href="{{ a.href }}" target="_blank" rel="noopener" {{ t(a.text) }}>{{ a.text.base }}</a>
+            {%- endfor %}
+          </div>
+        </div>
+        <div class="title-line">
+          <p class="jp">{{ d.title_line.jp }}</p>
+          <p class="en" {{ t(d.title_line.en) }}>{{ d.title_line.en.base }}</p>
+          <div class="ctl" style="margin-top:12px">
+            <button class="btn act-say" data-say="{{ d.title_line.say }}">🔊</button>
+            <button class="btn act-seg" data-seg="{{ d.title_line.seg[0] }},{{ d.title_line.seg[1] }}" {{ t(d.ui.loopline) }}>{{ d.ui.loopline.base }}</button>
+            <div class="rec"><button class="btn dark act-rec" {{ t(d.ui.rec) }}>{{ d.ui.rec.base }}</button><span class="dot"></span><audio controls class="mine" hidden></audio></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        {%- for S in d.segments %}
+        <div class="seg" id="{{ S.id }}">
+          <div class="head"><div class="n">{{ loop.index }}</div><h2 {{ t(S.h) }}>{{ S.h.base }}</h2><span class="t">{{ S.time }}</span></div>
+          <div class="body">
+            <div class="ctl" data-seg="{{ S.seg[0] }},{{ S.seg[1] }}"><button class="btn primary act-seg" data-seg="{{ S.seg[0] }},{{ S.seg[1] }}" {{ t(d.ui.loop) }}>{{ d.ui.loop.base }}</button><div class="loopbar"><i></i></div></div>
+            <p class="cue" {{ t(S.cue) }}>{{ S.cue.base }}</p>
+            <table>
+              <tr><th {{ t(d.ui.word) }}>{{ d.ui.word.base }}</th><th {{ t(d.ui.meaning) }}>{{ d.ui.meaning.base }}</th></tr>
+              {%- for w in S.words %}
+              <tr><td class="w">{{ w[0] }}</td><td {{ t(w[1]) }}>{{ w[1].base }}</td></tr>
+              {%- endfor %}
+            </table>
+            {%- for g in S.gp %}
+            <div class="gp" {{ t(g) }}>{{ g.base }}</div>
+            {%- endfor %}
+            <ul class="ex">
+              {%- for e in S.examples %}
+              <li>{{ e.jp }} <span class="m" {{ t(e.m) }}>{{ e.m.base }}</span><button class="spk" data-say="{{ e.say }}">🔊</button></li>
+              {%- endfor %}
+            </ul>
+            <div class="drill">
+              <h3 {{ t(S.drill_h) }}>{{ S.drill_h.base }}</h3>
+              <ol>
+                {%- for it in S.drill %}
+                <li>{{ it.jp|blanks }}<span class="m" {{ t(it.m) }}>{{ it.m.base }}</span></li>
+                {%- endfor %}
+              </ol>
+              <div class="yourturn">
+                <label {{ t(S.yourturn.label) }}>{{ S.yourturn.label.base }}</label>
+                <textarea data-store="{{ S.yourturn.store }}" data-i18n-ph="{{ S.yourturn.ph.k }}" placeholder="{{ S.yourturn.ph.base }}"></textarea>
+                <div class="row"><button class="btn sm act-say-ta" {{ t(d.ui.readmine) }}>{{ d.ui.readmine.base }}</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {%- endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="quiz">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">✓</div>
+      <div><h2 {{ t(d.quiz_head.h2) }}>{{ d.quiz_head.h2.base }}</h2><div class="who" {{ t(d.quiz_head.who) }}>{{ d.quiz_head.who.base }}</div></div>
+    </div>
+    <div id="quizBox"></div>
+    <div class="score" id="score"></div>
+    <div class="grid2" style="margin-top:22px">
+      <div>
+        <h3 {{ t(d.homework.h) }}>{{ d.homework.h.base }}</h3>
+        <ol style="padding-left:22px;margin:0;font-size:16px">
+          {%- for it in d.homework.list %}
+          <li {{ t(it) }}>{{ it.base }}</li>
+          {%- endfor %}
+        </ol>
+      </div>
+      <div>
+        <h3 {{ t(d.cheat.h) }}>{{ d.cheat.h.base }}</h3>
+        <table>
+          {%- for r in d.cheat.rows %}
+          <tr><td class="w">{{ r[0] }}</td><td {{ t(r[1]) }}>{{ r[1].base }}</td></tr>
+          {%- endfor %}
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    {%- for f in d.footer %}
+    <span {{ t(f) }}>{{ f.base }}</span>
+    {%- endfor %}
+  </div>
+</footer>
+<div class="toast" id="toast"></div>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('show'),1800)};
+const store={get:k=>{try{return localStorage.getItem(k)}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}}};
+const TTS_LANG={{ d.tts_lang|default('ja-JP')|tojson }};
+
+/* ---------- one player, many segments ---------- */
+let P=null, loop=null, activeBtn=null, slow=false;
+function onYouTubeIframeAPIReady(){
+  P=new YT.Player('ytOP',{videoId:{{ d.video|tojson }},playerVars:{rel:0,modestbranding:1,playsinline:1,origin:location.origin},
+    events:{onStateChange:e=>{if(e.data===YT.PlayerState.ENDED)stopLoop();}}});
+  setInterval(()=>{ if(P&&P.getCurrentTime){const t=P.getCurrentTime();$('#now').textContent=Math.floor(t/60)+':'+String(Math.floor(t%60)).padStart(2,'0');} },250);
+}
+function stopLoop(){ if(loop){clearInterval(loop.t);loop=null;} if(activeBtn){activeBtn.classList.remove('on');const bar=activeBtn.parentElement.querySelector('.loopbar i');if(bar)bar.style.width='0';activeBtn=null;} }
+function playSeg(a,b,btn){
+  if(!P||!P.seekTo){toast('Player still loading…');return;}
+  stopLoop(); P.seekTo(a,true); P.playVideo(); activeBtn=btn; btn.classList.add('on');
+  const bar=btn.parentElement.querySelector('.loopbar i');
+  loop={t:setInterval(()=>{const cur=P.getCurrentTime(); if(bar)bar.style.width=Math.max(0,Math.min(100,(cur-a)/(b-a)*100))+'%'; if(cur>=b)P.seekTo(a,true); else if(cur<a-0.6&&Date.now()-(loop.last||0)>1000){loop.last=Date.now();P.seekTo(a,true);}},80)};
+  if(window.innerWidth<=880) window.scrollTo({top:0,behavior:'smooth'});
+}
+$$('.act-seg').forEach(b=>b.onclick=()=>{ if(b.classList.contains('on')){P.pauseVideo();stopLoop();return;} const [a,c]=b.dataset.seg.split(',').map(Number); playSeg(a,c,b); });
+$('#playAll').onclick=()=>{stopLoop();P.seekTo(0,true);P.playVideo();};
+$('#stopAll').onclick=()=>{P&&P.pauseVideo();stopLoop();};
+$('#slowAll').onclick=e=>{slow=!slow;P.setPlaybackRate(slow?0.75:1);e.currentTarget.classList.toggle('on',slow);toast(slow?'0.75× speed':'Normal speed');};
+
+/* ---------- TTS ---------- */
+let voice=null;
+function pickVoice(){const pfx=TTS_LANG.split('-')[0];const vs=speechSynthesis.getVoices().filter(v=>v.lang.toLowerCase().startsWith(pfx));const pref=['O-Ren','Kyoko','Otoya','Google 日本語','Nanami','Keita','Samantha','Ava','Allison','Daniel','Google US English','Google UK English'];vs.sort((a,b)=>{const ia=pref.findIndex(p=>a.name.includes(p)),ib=pref.findIndex(p=>b.name.includes(p));return (ia<0?99:ia)-(ib<0?99:ib)});voice=vs[0]||null;}
+speechSynthesis.onvoiceschanged=pickVoice; pickVoice();
+let cur=null;
+function say(text,rate,btn){speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang=TTS_LANG;if(voice)u.voice=voice;u.rate=rate;if(cur)cur.classList.remove('on');cur=btn||null;if(btn)btn.classList.add('on');u.onend=u.onerror=()=>{if(btn)btn.classList.remove('on')};speechSynthesis.speak(u);}
+$$('.spk,.act-say').forEach(b=>b.onclick=()=>say(b.dataset.say,0.95,b));
+$$('.act-say-ta').forEach(b=>b.onclick=()=>{const ta=b.closest('.yourturn').querySelector('textarea');const v=ta.value.trim();if(!v){toast('Write something first');ta.focus();return;}say(v,0.9,b)});
+
+/* ---------- Recording ---------- */
+let rec=null;
+$$('.act-rec').forEach(b=>b.onclick=async()=>{
+  const box=b.closest('.rec'), audio=box.querySelector('audio');
+  if(rec&&rec.state==='recording'){rec.stop();return;}
+  if(!navigator.mediaDevices){toast('Recording not supported here');return;}
+  try{const stream=await navigator.mediaDevices.getUserMedia({audio:true});const chunks=[];rec=new MediaRecorder(stream);
+    rec.ondataavailable=e=>chunks.push(e.data);
+    rec.onstop=()=>{stream.getTracks().forEach(t=>t.stop());const blob=new Blob(chunks,{type:rec.mimeType||'audio/webm'});audio.src=URL.createObjectURL(blob);audio.hidden=false;box.classList.remove('live');b.textContent='🎙 Again';audio.play().catch(()=>{});};
+    rec.start();box.classList.add('live');b.textContent='⏹ Stop';toast('Recording…');
+  }catch(e){toast('Microphone blocked');}
+});
+
+/* ---------- Drills ---------- */
+$$('.blank').forEach(b=>b.onclick=()=>{b.classList.toggle('show');if(b.classList.contains('show'))say(b.textContent,0.95);});
+$$('textarea[data-store]').forEach(t=>{const v=store.get(t.dataset.store);if(v)t.value=v;t.oninput=()=>store.set(t.dataset.store,t.value)});
+
+/* ---------- Quiz ---------- */
+const QUIZ={{ quiz|tojson }};
+let LANG='{{ d.langs[0].code }}', answered=0, correct=0;
+function renderQuiz(){
+  const qb=$('#quizBox'); qb.innerHTML=''; answered=0; correct=0; $('#score').textContent='';
+  QUIZ.forEach((it,i)=>{const d=document.createElement('div');d.className='q';
+    d.innerHTML=`<p class="qt">${i+1}. ${it.q[LANG]}</p><div class="opts">${it.o.map((o,j)=>`<button data-j="${j}">${o[LANG]}</button>`).join('')}</div><p class="why">${it.why[LANG]}</p>`;
+    d.querySelectorAll('button').forEach(b=>b.onclick=()=>{if(d.classList.contains('answered'))return;d.classList.add('answered');const j=+b.dataset.j;d.querySelectorAll('button').forEach(x=>x.classList.add(+x.dataset.j===it.a?'ok':'ng'));answered++;if(j===it.a)correct++;if(answered===QUIZ.length)$('#score').textContent=`${correct} / ${QUIZ.length}`+(correct===QUIZ.length?{{ d.score_perfect|tojson }}:'');});
+    qb.appendChild(d);});
+}
+
+/* ---------- i18n ---------- */
+const I={{ i18n|tojson }};
+function applyLang(lang){
+  LANG=lang; const dict=I[lang]||{};
+  document.documentElement.lang={{ d.html_lang|default({})|tojson }}[lang]||lang;
+  $$('[data-i18n]').forEach(el=>{const k=el.dataset.i18n;if(!el.dataset.orig)el.dataset.orig=el.innerHTML;el.innerHTML=dict[k]||el.dataset.orig;});
+  $$('[data-i18n-ph]').forEach(el=>{const k=el.dataset.i18nPh;if(!el.dataset.orig)el.dataset.orig=el.placeholder;el.placeholder=dict[k]||el.dataset.orig;});
+  $$('#lang button').forEach(b=>b.classList.toggle('on',b.dataset.lang===lang));
+  renderQuiz(); store.set('lang-{{ d.slug }}',lang);
+}
+$$('#lang button').forEach(b=>b.onclick=()=>applyLang(b.dataset.lang));
+applyLang(store.get('lang-{{ d.slug }}')||'{{ d.langs[0].code }}');
+</script>
+</body>
+</html>

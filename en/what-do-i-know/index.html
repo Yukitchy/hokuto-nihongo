@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="ja" data-motif="b">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>What Do I Know? で英語 — Ed Sheeranで学ぶ英語（そうた専用）</title>
+<meta name="description" content="Ed Sheeran「What Do I Know?」の公式音源をパートごとにループして、単語と文法を覚えて歌う。そうたくん専用の英語レッスンページ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Dela+Gothic+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../style.css">
+<script src="../../motif.js"></script>
+<style>
+.player-wrap{position:sticky;top:64px;z-index:20;border:3px solid var(--line);background:#000}
+.player-wrap .yt{aspect-ratio:16/9;width:100%}
+.player-wrap iframe{width:100%;height:100%;display:block}
+.pbar{display:flex;gap:6px;flex-wrap:wrap;align-items:center;background:var(--paper-2);padding:10px 12px;border-top:3px solid var(--line)}
+.pbar .now{font-weight:900;font-size:14px;margin-right:auto;font-variant-numeric:tabular-nums}
+.layout{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.layout .left{position:sticky;top:64px}
+.seg{border:3px solid var(--line);background:#fff;margin-bottom:22px}
+.seg .head{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:3px solid var(--line);background:var(--paper-2)}
+.seg .head .n{font-family:"Dela Gothic One",sans-serif;font-size:30px;line-height:1;color:var(--red)}
+.seg .head h2{margin:0;font-size:19px;font-weight:900;flex:1}
+.seg .head .t{font-size:13px;font-weight:900;font-variant-numeric:tabular-nums;color:var(--sub)}
+.seg .body{padding:16px}
+.seg .cue{font-size:15px;color:var(--sub);font-weight:700;margin:0 0 12px}
+.seg .cue b{color:var(--ink)}
+.seg table{margin-bottom:12px}
+.seg .drill{margin-top:16px;padding-top:14px}
+.lyrics{border:3px solid var(--line);background:var(--gold);padding:16px 18px;margin:0 0 22px}
+.lyrics h3::before{background:var(--ink)}
+.lyrics p{margin:0 0 10px;font-size:15px}
+.lyrics .row{display:flex;gap:8px;flex-wrap:wrap}
+.title-line{border:3px solid var(--line);background:#fff;padding:22px 24px;margin:22px 0}
+.title-line .jp{font-family:"Dela Gothic One","Zen Kaku Gothic New",sans-serif;font-size:clamp(30px,6vw,54px);line-height:1.2;margin:0}
+.title-line .jp rt{font-family:"Zen Kaku Gothic New",sans-serif}
+.title-line .en{font-size:18px;font-weight:700;margin:8px 0 0}
+.title-line .en i{font-style:normal;color:var(--red)}
+.seg .ex li{font-size:15px}
+#song{overflow:visible}#song::before{display:none}
+@media(max-width:880px){.layout{grid-template-columns:1fr}.layout .left{position:static}.player-wrap{position:sticky;top:58px}}
+</style>
+</head>
+<body><header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">そうた<b>×</b>English</a>
+    <nav id="nav">
+      <a href="https://yukitchy.github.io/sota-english-gym/" data-i18n="nav.back">← ホーム</a><a href="#s1">1 gave me</a><a href="#s2">2 when I have</a><a href="#s3">3 could</a><a href="#s4">4 be + ing</a><a href="#s5">5 saw 〜ing</a><a href="#quiz" data-i18n="nav.quiz">クイズ</a>
+    </nav>
+    <div class="lang" id="lang"><button data-lang="ja" class="on">日本語</button><button data-lang="en">EN</button></div>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow" data-i18n="hero.eyebrow">歌でレッスン · そうた専用 · 講師 Yuuki</span>
+    <h1>What Do I Know?<span class="en" data-i18n="hero.h1_en">Ed Sheeranの歌で英語を学ぶ</span></h1>
+    <p class="lead" data-i18n="hero.lead">Ed Sheeran、2017年。授業で「この曲は？」と聞いてきたあの曲。公式音源をパートごとにループして、単語を拾い、文法を見つけて、最後は歌う。</p>
+    <div class="howto">
+      <div><div class="n">1</div><div class="t" data-i18n="hero.howto.0.t">聴く</div><div class="d" data-i18n="hero.howto.0.d">まずパートを1回再生。</div></div>
+      <div><div class="n">2</div><div class="t" data-i18n="hero.howto.1.t">ループ</div><div class="d" data-i18n="hero.howto.1.d">繰り返す。遅くもできる。</div></div>
+      <div><div class="n">3</div><div class="t" data-i18n="hero.howto.2.t">読む</div><div class="d" data-i18n="hero.howto.2.d">歌詞は別タブで開く。</div></div>
+      <div><div class="n">4</div><div class="t" data-i18n="hero.howto.3.t">単語</div><div class="d" data-i18n="hero.howto.3.d">単語と文法パターンを覚える。</div></div>
+      <div><div class="n">5</div><div class="t" data-i18n="hero.howto.4.t">歌う</div><div class="d" data-i18n="hero.howto.4.d">録音する。大声で。</div></div>
+    </div>
+  </div>
+</div>
+
+<section id="song">
+  <div class="wrap">
+    <div class="layout">
+      <div class="left">
+        <div class="player-wrap">
+          <div class="yt" id="ytOP"></div>
+          <div class="pbar">
+            <span class="now" id="now">0:00</span>
+            <button class="btn sm primary" id="playAll" data-i18n="ui.all">▶ 通しで再生</button>
+            <button class="btn sm" id="stopAll">⏹</button>
+            <button class="btn sm" id="slowAll" data-i18n="ui.slow">🐢 0.75倍</button>
+          </div>
+        </div>
+        <div class="lyrics">
+          <h3 data-i18n="lyrics.h">歌詞</h3>
+          <p data-i18n="lyrics.p">歌詞は著作物なのでこのページには載せていない。別タブで開いて、ループしながら一緒に歌う。和訳つき動画も便利。</p>
+          <div class="row">
+            <a class="btn sm dark" href="https://genius.com/Ed-sheeran-what-do-i-know-lyrics" target="_blank" rel="noopener" data-i18n="lyrics.links.0.text">Genius（英語歌詞）</a>
+            <a class="btn sm" href="https://www.youtube.com/watch?v=RGmb2xM3XBQ" target="_blank" rel="noopener" data-i18n="lyrics.links.1.text">和訳つき動画（YouTube）</a>
+          </div>
+        </div>
+        <div class="title-line">
+          <p class="jp">But what do I know?</p>
+          <p class="en" data-i18n="title_line.en">「でも、俺に何が分かるっていうんだ？」— タイトルの一行。サビの最後に毎回来る。<i>疑問文の語順 what do I know</i> をここで体に入れる。</p>
+          <div class="ctl" style="margin-top:12px">
+            <button class="btn act-say" data-say="But what do I know?">🔊</button>
+            <button class="btn act-seg" data-seg="65.0,67.2" data-i18n="ui.loopline">🔁 この行をループ</button>
+            <div class="rec"><button class="btn dark act-rec" data-i18n="ui.rec">🎙 歌ってみる</button><span class="dot"></span><audio controls class="mine" hidden></audio></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="seg" id="s1">
+          <div class="head"><div class="n">1</div><h2 data-i18n="segments.0.h">1番: 神様は俺にステージをくれた</h2><span class="t">0:00–0:16</span></div>
+          <div class="body">
+            <div class="ctl" data-seg="0.0,15.9"><button class="btn primary act-seg" data-seg="0.0,15.9" data-i18n="ui.loop">🔁 このパートをループ</button><div class="loopbar"><i></i></div></div>
+            <p class="cue" data-i18n="segments.0.cue">短い4行。<b>gave me a stage</b>（俺にステージをくれた）と、お父さんの忠告 <b>don't you ...</b> を聞き取って。</p>
+            <table>
+              <tr><th data-i18n="ui.word">単語</th><th data-i18n="ui.meaning">意味</th></tr>
+              <tr><td class="w">soapbox</td><td data-i18n="segments.0.words.0.1">演説台。昔は石けんの木箱に乗って演説した</td></tr>
+              <tr><td class="w">stage</td><td data-i18n="segments.0.words.1.1">ステージ、舞台</td></tr>
+              <tr><td class="w">gave me a stage</td><td data-i18n="segments.0.words.2.1">give + 人 + 物 = 人に物をあげる（gaveは過去形）</td></tr>
+              <tr><td class="w">my daddy told me</td><td data-i18n="segments.0.words.3.1">tell + 人 = 人に言う、教える（daddy = パパ）</td></tr>
+              <tr><td class="w">don't you ...</td><td data-i18n="segments.0.words.4.1">〜するなよ（youを入れると忠告が強くなる）</td></tr>
+              <tr><td class="w">politics / religion</td><td data-i18n="segments.0.words.5.1">政治／宗教（人前で話すと危ない話題の代表）</td></tr>
+              <tr><td class="w">ain't</td><td data-i18n="segments.0.words.6.1">am not / isn't / haven't の口語。歌では普通、テストでは使わない</td></tr>
+            </table>
+            <div class="gp" data-i18n="segments.0.gp.0"><b>give + 人 + 物</b>（第4文型）: God gave <b>me</b> <b>a stage</b>。前置詞なしで「人」「物」を並べる。tell / show / send も同じ形。</div>
+            <div class="gp" data-i18n="segments.0.gp.1"><b>Don't + 動詞</b> = 〜するな（否定の命令文）。<b>Don't you</b> は「お前、〜するなよ」と念を押す形。</div>
+            <ul class="ex">
+              <li>My mother gave me a watch. <span class="m" data-i18n="segments.0.examples.0.m">母は私に時計をくれた</span><button class="spk" data-say="My mother gave me a watch.">🔊</button></li>
+              <li>Show me your surfboard. <span class="m" data-i18n="segments.0.examples.1.m">サーフボードを見せて</span><button class="spk" data-say="Show me your surfboard.">🔊</button></li>
+              <li>Don't you forget it. <span class="m" data-i18n="segments.0.examples.2.m">忘れるなよ</span><button class="spk" data-say="Don't you forget it.">🔊</button></li>
+            </ul>
+            <div class="drill">
+              <h3 data-i18n="segments.0.drill_h">ドリル</h3>
+              <ol>
+                <li>He <button class="blank">gave</button> me a present. <span class="m" data-i18n="segments.0.drill.0.m">彼は私にプレゼントをくれた（giveの過去形）</span></li>
+                <li><button class="blank">Don't</button> talk about politics at work. <span class="m" data-i18n="segments.0.drill.1.m">職場で政治の話をするな（否定の命令文）</span></li>
+                <li>My teacher <button class="blank">told</button> me the answer. <span class="m" data-i18n="segments.0.drill.2.m">先生は私に答えを教えた（tellの過去形）</span></li>
+              </ol>
+              <div class="yourturn">
+                <label data-i18n="segments.0.yourturn.label">そうたの番 — 誰が何をくれた？「___ gave me ___.」</label>
+                <textarea data-store="wdik-s1" data-i18n-ph="segments.0.yourturn.ph" placeholder="___ gave me ___.  例: My dad gave me a fishing rod.（父が釣り竿をくれた）"></textarea>
+                <div class="row"><button class="btn sm act-say-ta" data-i18n="ui.readmine">🔊 自分の文を読ませる</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="seg" id="s2">
+          <div class="head"><div class="n">2</div><h2 data-i18n="segments.1.h">Bメロ: 子どもができたら</h2><span class="t">0:16–0:32</span></div>
+          <div class="body">
+            <div class="ctl" data-seg="15.8,31.8"><button class="btn primary act-seg" data-seg="15.8,31.8" data-i18n="ui.loop">🔁 このパートをループ</button><div class="loopbar"><i></i></div></div>
+            <p class="cue" data-i18n="segments.1.cue"><b>when I have children</b> を聞き取って。未来の話なのに <b>have</b>（現在形）— ここが今回一番大事な文法。</p>
+            <table>
+              <tr><th data-i18n="ui.word">単語</th><th data-i18n="ui.meaning">意味</th></tr>
+              <tr><td class="w">paint the picture</td><td data-i18n="segments.1.words.0.1">はっきり描いてみせる、説明する</td></tr>
+              <tr><td class="w">let me + verb</td><td data-i18n="segments.1.words.1.1">〜させて（Let me try = やらせて）</td></tr>
+              <tr><td class="w">when I have children</td><td data-i18n="segments.1.words.2.1">子どもができたら（whenの中は未来でも現在形！）</td></tr>
+              <tr><td class="w">pass on</td><td data-i18n="segments.1.words.3.1">次の人に伝える、受け継がせる</td></tr>
+              <tr><td class="w">understanding</td><td data-i18n="segments.1.words.4.1">理解、思いやり（understandの名詞）</td></tr>
+            </table>
+            <div class="gp" data-i18n="segments.1.gp.0"><b>when / if の中は現在形</b>。未来のことでも <b>will</b> を入れない: when I <b>have</b> children ○ / when I will have ✗。高校英語の超頻出ルール。</div>
+            <div class="gp" data-i18n="segments.1.gp.1"><b>Let me + 動詞</b> = 〜させて。let のあとの動詞は原形。</div>
+            <ul class="ex">
+              <li>When I get home, I'll call you. <span class="m" data-i18n="segments.1.examples.0.m">家に着いたら電話する（getは現在形）</span><button class="spk" data-say="When I get home, I'll call you.">🔊</button></li>
+              <li>If it rains tomorrow, we won't surf. <span class="m" data-i18n="segments.1.examples.1.m">明日雨ならサーフィンはしない</span><button class="spk" data-say="If it rains tomorrow, we won't surf.">🔊</button></li>
+              <li>Let me check. <span class="m" data-i18n="segments.1.examples.2.m">確認させて</span><button class="spk" data-say="Let me check.">🔊</button></li>
+            </ul>
+            <div class="drill">
+              <h3 data-i18n="segments.1.drill_h">ドリル</h3>
+              <ol>
+                <li>When I <button class="blank">finish</button> school, I will work on ships. <span class="m" data-i18n="segments.1.drill.0.m">学校を卒業したら船で働く（現在形）</span></li>
+                <li>If the waves <button class="blank">are</button> good, I'll go surfing. <span class="m" data-i18n="segments.1.drill.1.m">波が良ければサーフィンに行く</span></li>
+                <li><button class="blank">Let</button> me try. <span class="m" data-i18n="segments.1.drill.2.m">やらせて</span></li>
+              </ol>
+              <div class="yourturn">
+                <label data-i18n="segments.1.yourturn.label">そうたの番 — 「When I ___, I will ___.」whenの中は現在形で</label>
+                <textarea data-store="wdik-s2" data-i18n-ph="segments.1.yourturn.ph" placeholder="When I ___, I will ___.  例: When I get my license, I will work on a ship.（資格を取ったら船で働く）"></textarea>
+                <div class="row"><button class="btn sm act-say-ta" data-i18n="ui.readmine">🔊 自分の文を読ませる</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="seg" id="s3">
+          <div class="head"><div class="n">3</div><h2 data-i18n="segments.2.h">サビ: 世界を変えられるかもしれない</h2><span class="t">0:32–0:50</span></div>
+          <div class="body">
+            <div class="ctl" data-seg="31.6,49.7"><button class="btn primary act-seg" data-seg="31.6,49.7" data-i18n="ui.loop">🔁 このパートをループ</button><div class="loopbar"><i></i></div></div>
+            <p class="cue" data-i18n="segments.2.cue"><b>could change</b>（変えられるかも）、<b>a one-man show</b>、<b>no university, no degree</b> を聞き取って。</p>
+            <table>
+              <tr><th data-i18n="ui.word">単語</th><th data-i18n="ui.meaning">意味</th></tr>
+              <tr><td class="w">could change</td><td data-i18n="segments.2.words.0.1">変えられるかもしれない（could = 控えめな can）</td></tr>
+              <tr><td class="w">whole</td><td data-i18n="segments.2.words.1.1">全体の、まるごとの（this whole world = この世界まるごと）</td></tr>
+              <tr><td class="w">grab</td><td data-i18n="segments.2.words.2.1">つかむ、パッと取る</td></tr>
+              <tr><td class="w">a boy with a one-man show</td><td data-i18n="segments.2.words.3.1">一人芝居を持った少年（with = 〜を持った）</td></tr>
+              <tr><td class="w">no university, no degree</td><td data-i18n="segments.2.words.4.1">大学も学位もない（no + 名詞 = 〜がない）</td></tr>
+              <tr><td class="w">degree</td><td data-i18n="segments.2.words.5.1">学位（大学を出た証明）</td></tr>
+            </table>
+            <div class="gp" data-i18n="segments.2.gp.0"><b>could + 動詞</b> = 〜できるかもしれない。can より控えめ・仮の話。過去の意味だけじゃない。</div>
+            <div class="gp" data-i18n="segments.2.gp.1"><b>no + 名詞</b> = 〜がない。No university, no degree = 大学に行ってない、学位もない。not がなくても否定になる。</div>
+            <ul class="ex">
+              <li>We could go fishing this weekend. <span class="m" data-i18n="segments.2.examples.0.m">今週末、釣りに行けるかもね</span><button class="spk" data-say="We could go fishing this weekend.">🔊</button></li>
+              <li>No money, no problem. <span class="m" data-i18n="segments.2.examples.1.m">金がなくても問題ない</span><button class="spk" data-say="No money, no problem.">🔊</button></li>
+              <li>a man with a big dream <span class="m" data-i18n="segments.2.examples.2.m">大きな夢を持った男</span><button class="spk" data-say="a man with a big dream">🔊</button></li>
+            </ul>
+            <div class="drill">
+              <h3 data-i18n="segments.2.drill_h">ドリル</h3>
+              <ol>
+                <li>You <button class="blank">could</button> be a great radio operator. <span class="m" data-i18n="segments.2.drill.0.m">君は良い無線技士になれるかもしれない</span></li>
+                <li>There is <button class="blank">no</button> time. <span class="m" data-i18n="segments.2.drill.1.m">時間がない</span></li>
+                <li>a girl <button class="blank">with</button> long hair <span class="m" data-i18n="segments.2.drill.2.m">長い髪の女の子</span></li>
+              </ol>
+              <div class="yourturn">
+                <label data-i18n="segments.2.yourturn.label">そうたの番 — 「I'm just a boy with ___.」自分を一言で</label>
+                <textarea data-store="wdik-s3" data-i18n-ph="segments.2.yourturn.ph" placeholder="I'm just a boy with ___.  例: I'm just a boy with a surfboard.（サーフボードを持ってるだけの男）"></textarea>
+                <div class="row"><button class="btn sm act-say-ta" data-i18n="ui.readmine">🔊 自分の文を読ませる</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="seg" id="s4">
+          <div class="head"><div class="n">4</div><h2 data-i18n="segments.3.h">サビ後半: みんな騒いでるけど、俺に何が分かる？</h2><span class="t">0:50–1:22</span></div>
+          <div class="body">
+            <div class="ctl" data-seg="49.5,81.9"><button class="btn primary act-seg" data-seg="49.5,81.9" data-i18n="ui.loop">🔁 このパートをループ</button><div class="loopbar"><i></i></div></div>
+            <p class="cue" data-i18n="segments.3.cue"><b>everybody's talking</b>（be動詞 + ing）と、疑問文 <b>what do I know?</b> を聞き取って。そうたが間違えやすい「be動詞 + 一般動詞」の区別がここに詰まってる。</p>
+            <table>
+              <tr><th data-i18n="ui.word">単語</th><th data-i18n="ui.meaning">意味</th></tr>
+              <tr><td class="w">everybody's talking</td><td data-i18n="segments.3.words.0.1">みんなが話している（'s = is、進行形）</td></tr>
+              <tr><td class="w">exponential growth</td><td data-i18n="segments.3.words.1.1">急激な成長（経済ニュースの言葉）</td></tr>
+              <tr><td class="w">the stock market</td><td data-i18n="segments.3.words.2.1">株式市場</td></tr>
+              <tr><td class="w">crash</td><td data-i18n="segments.3.words.3.1">暴落する（stock market crashing = 株が暴落していく）</td></tr>
+              <tr><td class="w">sitting here with a song</td><td data-i18n="segments.3.words.4.1">ここで歌と一緒に座っている（進行形）</td></tr>
+              <tr><td class="w">in a moment</td><td data-i18n="segments.3.words.5.1">一瞬で</td></tr>
+              <tr><td class="w">what do I know?</td><td data-i18n="segments.3.words.6.1">俺に何が分かる？（＝分からないよ、という反語）</td></tr>
+            </table>
+            <div class="gp" data-i18n="segments.3.gp.0"><b>be動詞 + 〜ing</b> = 今〜している。be動詞の相棒は <b>-ing</b> だけ。<b>I'm belong</b> ✗ <b>I'm live</b> ✗ — 一般動詞なら be動詞はいらない: I belong / I live ○。歌の中の talking / crashing / sitting は全部この形。</div>
+            <div class="gp" data-i18n="segments.3.gp.1"><b>疑問詞 + do + 主語 + 動詞?</b>: What <b>do</b> I <b>know</b>? 動詞は原形のまま。What am I know ✗。</div>
+            <ul class="ex">
+              <li>I live in Yokosuka. <span class="m" data-i18n="segments.3.examples.0.m">横須賀に住んでいる（I'm live は✗）</span><button class="spk" data-say="I live in Yokosuka.">🔊</button></li>
+              <li>I'm living in Yokosuka now. <span class="m" data-i18n="segments.3.examples.1.m">今は横須賀に住んでいる（一時的な進行形）</span><button class="spk" data-say="I'm living in Yokosuka now.">🔊</button></li>
+              <li>What do you know about radio? <span class="m" data-i18n="segments.3.examples.2.m">無線について何を知ってる？</span><button class="spk" data-say="What do you know about radio?">🔊</button></li>
+            </ul>
+            <div class="drill">
+              <h3 data-i18n="segments.3.drill_h">ドリル — be動詞、要る？要らない？</h3>
+              <ol>
+                <li>I <button class="blank">belong</button> to the surfing club. <span class="m" data-i18n="segments.3.drill.0.m">サーフィン部に入っている（I'm belong は✗）</span></li>
+                <li>Everybody <button class="blank">is talking</button> about the test. <span class="m" data-i18n="segments.3.drill.1.m">みんなテストの話をしている</span></li>
+                <li>What <button class="blank">do</button> you want? <span class="m" data-i18n="segments.3.drill.2.m">何が欲しい？</span></li>
+                <li>The ship <button class="blank">is leaving</button> now. <span class="m" data-i18n="segments.3.drill.3.m">船が今出ていく</span></li>
+              </ol>
+              <div class="yourturn">
+                <label data-i18n="segments.3.yourturn.label">そうたの番 — 学校でみんな何の話をしてる？「Everybody's talking about ___.」</label>
+                <textarea data-store="wdik-s4" data-i18n-ph="segments.3.yourturn.ph" placeholder="Everybody's talking about ___.  例: Everybody's talking about the new game."></textarea>
+                <div class="row"><button class="btn sm act-say-ta" data-i18n="ui.readmine">🔊 自分の文を読ませる</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="seg" id="s5">
+          <div class="head"><div class="n">5</div><h2 data-i18n="segments.4.h">2番: 人々が行進するのを見た</h2><span class="t">1:22–1:39</span></div>
+          <div class="body">
+            <div class="ctl" data-seg="81.7,99.4"><button class="btn primary act-seg" data-seg="81.7,99.4" data-i18n="ui.loop">🔁 このパートをループ</button><div class="loopbar"><i></i></div></div>
+            <p class="cue" data-i18n="segments.4.cue"><b>I saw people marching</b>（人々が行進するのを見た）と <b>made up of</b>（〜でできている）を聞き取って。</p>
+            <table>
+              <tr><th data-i18n="ui.word">単語</th><th data-i18n="ui.meaning">意味</th></tr>
+              <tr><td class="w">revolution</td><td data-i18n="segments.4.words.0.1">革命、大きな変化</td></tr>
+              <tr><td class="w">the revolution's coming</td><td data-i18n="segments.4.words.1.1">革命が来ようとしている（進行形で近い未来）</td></tr>
+              <tr><td class="w">march</td><td data-i18n="segments.4.words.2.1">行進する、デモで歩く</td></tr>
+              <tr><td class="w">I saw people marching</td><td data-i18n="segments.4.words.3.1">人々が行進しているのを見た（see + 人 + 〜ing）</td></tr>
+              <tr><td class="w">made up of</td><td data-i18n="segments.4.words.4.1">〜でできている、〜で構成されている</td></tr>
+              <tr><td class="w">love and hate</td><td data-i18n="segments.4.words.5.1">愛と憎しみ</td></tr>
+              <tr><td class="w">balanced on a knife edge</td><td data-i18n="segments.4.words.6.1">ナイフの刃の上でバランスを取っている＝ギリギリの状態（balanced = 過去分詞）</td></tr>
+            </table>
+            <div class="gp" data-i18n="segments.4.gp.0"><b>知覚動詞 see / hear + 人 + 〜ing</b> = 人が〜しているのを見る／聞く。I saw people <b>marching</b>。to は入らない。</div>
+            <div class="gp" data-i18n="segments.4.gp.1"><b>be made up of</b> = 〜でできている。<b>balanced</b> のように<b>過去分詞</b>は「〜された状態」を表す形容詞になる（made / balanced / broken）。</div>
+            <ul class="ex">
+              <li>I saw him surfing this morning. <span class="m" data-i18n="segments.4.examples.0.m">今朝、彼がサーフィンしてるのを見た</span><button class="spk" data-say="I saw him surfing this morning.">🔊</button></li>
+              <li>I heard someone calling my name. <span class="m" data-i18n="segments.4.examples.1.m">誰かが自分の名前を呼ぶのが聞こえた</span><button class="spk" data-say="I heard someone calling my name.">🔊</button></li>
+              <li>The team is made up of ten students. <span class="m" data-i18n="segments.4.examples.2.m">チームは10人の生徒でできている</span><button class="spk" data-say="The team is made up of ten students.">🔊</button></li>
+            </ul>
+            <div class="drill">
+              <h3 data-i18n="segments.4.drill_h">ドリル</h3>
+              <ol>
+                <li>I saw a dolphin <button class="blank">jumping</button>. <span class="m" data-i18n="segments.4.drill.0.m">イルカがジャンプするのを見た</span></li>
+                <li>Water is <button class="blank">made</button> up of hydrogen and oxygen. <span class="m" data-i18n="segments.4.drill.1.m">水は水素と酸素でできている（過去分詞）</span></li>
+                <li>I heard the rain <button class="blank">falling</button> on the roof. <span class="m" data-i18n="segments.4.drill.2.m">雨が屋根に落ちる音が聞こえた</span></li>
+              </ol>
+              <div class="yourturn">
+                <label data-i18n="segments.4.yourturn.label">そうたの番 — 最近見たもの:「I saw ___ ___ing.」</label>
+                <textarea data-store="wdik-s5" data-i18n-ph="segments.4.yourturn.ph" placeholder="I saw ___ ___ing.  例: I saw my friend fishing at the pier.（友だちが桟橋で釣りしてるのを見た）"></textarea>
+                <div class="row"><button class="btn sm act-say-ta" data-i18n="ui.readmine">🔊 自分の文を読ませる</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="quiz">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">✓</div>
+      <div><h2 data-i18n="quiz_head.h2">クイズ: What do you know?</h2><div class="who" data-i18n="quiz_head.who">6問。答えをタップ。</div></div>
+    </div>
+    <div id="quizBox"></div>
+    <div class="score" id="score"></div>
+    <div class="grid2" style="margin-top:22px">
+      <div>
+        <h3 data-i18n="homework.h">宿題</h3>
+        <ol style="padding-left:22px;margin:0;font-size:16px">
+          <li data-i18n="homework.list.0">歌詞を開いてサビ（0:32–1:22）を歌う。録音する。次のレッスンで聴かせて。</li>
+          <li data-i18n="homework.list.1">「When I ___, I will ___.」で3文書く（whenの中は現在形）。</li>
+          <li data-i18n="homework.list.2">Ed Sheeranの別の曲を1つ選んで、その中から残したい単語を1つ見つける。</li>
+        </ol>
+      </div>
+      <div>
+        <h3 data-i18n="cheat.h">早見表</h3>
+        <table>
+          <tr><td class="w">give + 人 + 物</td><td data-i18n="cheat.rows.0.1">人に物をあげる（gave me a stage）</td></tr>
+          <tr><td class="w">when / if + 現在形</td><td data-i18n="cheat.rows.1.1">未来でも現在形（when I have children）</td></tr>
+          <tr><td class="w">could + 動詞</td><td data-i18n="cheat.rows.2.1">〜できるかもしれない</td></tr>
+          <tr><td class="w">be + 〜ing</td><td data-i18n="cheat.rows.3.1">今〜している（be動詞の相棒は -ing だけ）</td></tr>
+          <tr><td class="w">What do I know?</td><td data-i18n="cheat.rows.4.1">疑問詞 + do + 主語 + 動詞</td></tr>
+          <tr><td class="w">see + 人 + 〜ing</td><td data-i18n="cheat.rows.5.1">人が〜しているのを見る</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span data-i18n="footer.0">Yuukiがそうた用に作ったページ。<a href="https://yukitchy.github.io/sota-english-gym/">そうた英語トレセン</a>の一部。</span>
+    <span data-i18n="footer.1">音源はEd Sheeran公式YouTubeチャンネルからの埋め込み。歌詞は転載せずリンクのみ。</span>
+  </div>
+</footer>
+<div class="toast" id="toast"></div>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('show'),1800)};
+const store={get:k=>{try{return localStorage.getItem(k)}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}}};
+const TTS_LANG="en-US";
+
+/* ---------- one player, many segments ---------- */
+let P=null, loop=null, activeBtn=null, slow=false;
+function onYouTubeIframeAPIReady(){
+  P=new YT.Player('ytOP',{videoId:"6B9J3lEyffA",playerVars:{rel:0,modestbranding:1,playsinline:1,origin:location.origin},
+    events:{onStateChange:e=>{if(e.data===YT.PlayerState.ENDED)stopLoop();}}});
+  setInterval(()=>{ if(P&&P.getCurrentTime){const t=P.getCurrentTime();$('#now').textContent=Math.floor(t/60)+':'+String(Math.floor(t%60)).padStart(2,'0');} },250);
+}
+function stopLoop(){ if(loop){clearInterval(loop.t);loop=null;} if(activeBtn){activeBtn.classList.remove('on');const bar=activeBtn.parentElement.querySelector('.loopbar i');if(bar)bar.style.width='0';activeBtn=null;} }
+function playSeg(a,b,btn){
+  if(!P||!P.seekTo){toast('Player still loading…');return;}
+  stopLoop(); P.seekTo(a,true); P.playVideo(); activeBtn=btn; btn.classList.add('on');
+  const bar=btn.parentElement.querySelector('.loopbar i');
+  loop={t:setInterval(()=>{const cur=P.getCurrentTime(); if(bar)bar.style.width=Math.max(0,Math.min(100,(cur-a)/(b-a)*100))+'%'; if(cur>=b)P.seekTo(a,true); else if(cur<a-0.6&&Date.now()-(loop.last||0)>1000){loop.last=Date.now();P.seekTo(a,true);}},80)};
+  if(window.innerWidth<=880) window.scrollTo({top:0,behavior:'smooth'});
+}
+$$('.act-seg').forEach(b=>b.onclick=()=>{ if(b.classList.contains('on')){P.pauseVideo();stopLoop();return;} const [a,c]=b.dataset.seg.split(',').map(Number); playSeg(a,c,b); });
+$('#playAll').onclick=()=>{stopLoop();P.seekTo(0,true);P.playVideo();};
+$('#stopAll').onclick=()=>{P&&P.pauseVideo();stopLoop();};
+$('#slowAll').onclick=e=>{slow=!slow;P.setPlaybackRate(slow?0.75:1);e.currentTarget.classList.toggle('on',slow);toast(slow?'0.75× speed':'Normal speed');};
+
+/* ---------- TTS ---------- */
+let voice=null;
+function pickVoice(){const pfx=TTS_LANG.split('-')[0];const vs=speechSynthesis.getVoices().filter(v=>v.lang.toLowerCase().startsWith(pfx));const pref=['O-Ren','Kyoko','Otoya','Google 日本語','Nanami','Keita','Samantha','Ava','Allison','Daniel','Google US English','Google UK English'];vs.sort((a,b)=>{const ia=pref.findIndex(p=>a.name.includes(p)),ib=pref.findIndex(p=>b.name.includes(p));return (ia<0?99:ia)-(ib<0?99:ib)});voice=vs[0]||null;}
+speechSynthesis.onvoiceschanged=pickVoice; pickVoice();
+let cur=null;
+function say(text,rate,btn){speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang=TTS_LANG;if(voice)u.voice=voice;u.rate=rate;if(cur)cur.classList.remove('on');cur=btn||null;if(btn)btn.classList.add('on');u.onend=u.onerror=()=>{if(btn)btn.classList.remove('on')};speechSynthesis.speak(u);}
+$$('.spk,.act-say').forEach(b=>b.onclick=()=>say(b.dataset.say,0.95,b));
+$$('.act-say-ta').forEach(b=>b.onclick=()=>{const ta=b.closest('.yourturn').querySelector('textarea');const v=ta.value.trim();if(!v){toast('Write something first');ta.focus();return;}say(v,0.9,b)});
+
+/* ---------- Recording ---------- */
+let rec=null;
+$$('.act-rec').forEach(b=>b.onclick=async()=>{
+  const box=b.closest('.rec'), audio=box.querySelector('audio');
+  if(rec&&rec.state==='recording'){rec.stop();return;}
+  if(!navigator.mediaDevices){toast('Recording not supported here');return;}
+  try{const stream=await navigator.mediaDevices.getUserMedia({audio:true});const chunks=[];rec=new MediaRecorder(stream);
+    rec.ondataavailable=e=>chunks.push(e.data);
+    rec.onstop=()=>{stream.getTracks().forEach(t=>t.stop());const blob=new Blob(chunks,{type:rec.mimeType||'audio/webm'});audio.src=URL.createObjectURL(blob);audio.hidden=false;box.classList.remove('live');b.textContent='🎙 Again';audio.play().catch(()=>{});};
+    rec.start();box.classList.add('live');b.textContent='⏹ Stop';toast('Recording…');
+  }catch(e){toast('Microphone blocked');}
+});
+
+/* ---------- Drills ---------- */
+$$('.blank').forEach(b=>b.onclick=()=>{b.classList.toggle('show');if(b.classList.contains('show'))say(b.textContent,0.95);});
+$$('textarea[data-store]').forEach(t=>{const v=store.get(t.dataset.store);if(v)t.value=v;t.oninput=()=>store.set(t.dataset.store,t.value)});
+
+/* ---------- Quiz ---------- */
+const QUIZ=[{"a": 1, "o": [{"en": "thing + person", "ja": "\u7269 + \u4eba"}, {"en": "person + thing", "ja": "\u4eba + \u7269"}, {"en": "to + person", "ja": "to + \u4eba"}], "q": {"en": "\"God gave me a stage\" \u2014 what comes after gave?", "ja": "\u300cGod gave me a stage\u300d\u2014 gave \u306e\u3042\u3068\u306e\u8a9e\u9806\u306f\uff1f"}, "why": {"en": "give + person + thing.", "ja": "give + \u4eba + \u7269\u3002gave me a stage\u3002"}}, {"a": 1, "o": [{"en": "When I will have children, I\u0027ll pass it on.", "ja": "When I will have children, I\u0027ll pass it on."}, {"en": "When I have children, I\u0027ll pass it on.", "ja": "When I have children, I\u0027ll pass it on."}, {"en": "When I having children, I\u0027ll pass it on.", "ja": "When I having children, I\u0027ll pass it on."}], "q": {"en": "Which is correct?", "ja": "\u6b63\u3057\u3044\u306e\u306f\uff1f"}, "why": {"en": "When / if clauses use the present tense.", "ja": "when / if \u306e\u4e2d\u306f\u672a\u6765\u3067\u3082\u73fe\u5728\u5f62\u3002"}}, {"a": 1, "o": [{"en": "changed (past)", "ja": "\u5909\u3048\u305f\uff08\u904e\u53bb\uff09"}, {"en": "might be able to change", "ja": "\u5909\u3048\u3089\u308c\u308b\u304b\u3082\u3057\u308c\u306a\u3044"}, {"en": "must change", "ja": "\u5909\u3048\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044"}], "q": {"en": "\"We could change the world\" \u2014 could is closest to\u2026", "ja": "\u300cWe could change the world\u300d\u306e could \u306b\u4e00\u756a\u8fd1\u3044\u306e\u306f\uff1f"}, "why": {"en": "could = a softer, hypothetical can.", "ja": "could = \u63a7\u3048\u3081\u306a can\u3002\u4eee\u306e\u8a71\u3002"}}, {"a": 1, "o": [{"en": "I\u0027m belong to the club.", "ja": "I\u0027m belong to the club."}, {"en": "I belong to the club.", "ja": "I belong to the club."}, {"en": "I\u0027m belonging the club.", "ja": "I\u0027m belonging the club."}], "q": {"en": "Which is correct?", "ja": "\u6b63\u3057\u3044\u306e\u306f\uff1f"}, "why": {"en": "belong is a normal verb: no be. be goes only with -ing.", "ja": "belong \u306f\u4e00\u822c\u52d5\u8a5e\u3002be\u52d5\u8a5e\u306f\u3044\u3089\u306a\u3044\u3002be\u52d5\u8a5e\u306e\u76f8\u68d2\u306f -ing \u3060\u3051\u3002"}}, {"a": 2, "o": [{"en": "What I know?", "ja": "What I know?"}, {"en": "What am I know?", "ja": "What am I know?"}, {"en": "What do I know?", "ja": "What do I know?"}], "q": {"en": "\"What do I know?\" \u2014 the correct word order is\u2026", "ja": "\u300c\u4ffa\u306b\u4f55\u304c\u5206\u304b\u308b\uff1f\u300d\u3092\u82f1\u8a9e\u3067"}, "why": {"en": "Question word + do + subject + plain verb.", "ja": "\u7591\u554f\u8a5e + do + \u4e3b\u8a9e + \u52d5\u8a5e\u306e\u539f\u5f62\u3002"}}, {"a": 1, "o": [{"en": "I saw people to march.", "ja": "I saw people to march."}, {"en": "I saw people marching.", "ja": "I saw people marching."}, {"en": "I saw people marched.", "ja": "I saw people marched."}], "q": {"en": "\"I saw people ___\" \u2014 marching, to march, or marched?", "ja": "\u300c\u4eba\u3005\u304c\u884c\u9032\u3057\u3066\u3044\u308b\u306e\u3092\u898b\u305f\u300d"}, "why": {"en": "see + person + -ing. No to.", "ja": "see + \u4eba + \u301cing\u3002to \u306f\u5165\u3089\u306a\u3044\u3002"}}];
+let LANG='ja', answered=0, correct=0;
+function renderQuiz(){
+  const qb=$('#quizBox'); qb.innerHTML=''; answered=0; correct=0; $('#score').textContent='';
+  QUIZ.forEach((it,i)=>{const d=document.createElement('div');d.className='q';
+    d.innerHTML=`<p class="qt">${i+1}. ${it.q[LANG]}</p><div class="opts">${it.o.map((o,j)=>`<button data-j="${j}">${o[LANG]}</button>`).join('')}</div><p class="why">${it.why[LANG]}</p>`;
+    d.querySelectorAll('button').forEach(b=>b.onclick=()=>{if(d.classList.contains('answered'))return;d.classList.add('answered');const j=+b.dataset.j;d.querySelectorAll('button').forEach(x=>x.classList.add(+x.dataset.j===it.a?'ok':'ng'));answered++;if(j===it.a)correct++;if(answered===QUIZ.length)$('#score').textContent=`${correct} / ${QUIZ.length}`+(correct===QUIZ.length?" \u2014 You know a lot!":'');});
+    qb.appendChild(d);});
+}
+
+/* ---------- i18n ---------- */
+const I={"en": {"cheat.h": "Cheat sheet", "cheat.rows.0.1": "give someone something", "cheat.rows.1.1": "future condition", "cheat.rows.2.1": "might be able to", "cheat.rows.3.1": "happening now", "cheat.rows.4.1": "question word order", "cheat.rows.5.1": "see it happening", "footer.0": "Made by Yuuki for Sota. Part of \u003ca href=\"https://yukitchy.github.io/sota-english-gym/\"\u003eSota\u0027s English Gym\u003c/a\u003e.", "footer.1": "Audio embedded from Ed Sheeran\u0027s official YouTube channel. Lyrics are linked, not reproduced.", "hero.eyebrow": "Song lesson \u00b7 for Sota \u00b7 with Yuuki", "hero.h1_en": "Learn English from Ed Sheeran\u0027s song", "hero.howto.0.d": "Play the part once.", "hero.howto.0.t": "Listen", "hero.howto.1.d": "Loop it. Slow it down.", "hero.howto.1.t": "Loop", "hero.howto.2.d": "Open the lyrics in a second tab.", "hero.howto.2.t": "Read", "hero.howto.3.d": "Learn the words and the pattern.", "hero.howto.3.t": "Words", "hero.howto.4.d": "Record yourself. Loudly.", "hero.howto.4.t": "Sing", "hero.lead": "Ed Sheeran, 2017. Loop each part of the official audio, pick up the words, find the grammar, then sing it.", "homework.h": "Homework", "homework.list.0": "Sing the chorus (0:32\u20131:22) with the lyrics open. Record it.", "homework.list.1": "Write three sentences with \"When I ___, I will ___.\"", "homework.list.2": "Find one more Ed Sheeran song and one word in it you want to keep.", "html_lang": "en", "lyrics.h": "Lyrics", "lyrics.links.0.text": "Genius (lyrics)", "lyrics.links.1.text": "Japanese subtitles (YouTube)", "lyrics.p": "The lyrics are copyrighted, so they are not printed here. Open them in a second tab and sing along while you loop.", "nav.back": "Home", "nav.quiz": "Quiz", "quiz.0.o.0": "thing + person", "quiz.0.o.1": "person + thing", "quiz.0.o.2": "to + person", "quiz.0.q": "\"God gave me a stage\" \u2014 what comes after gave?", "quiz.0.why": "give + person + thing.", "quiz.1.q": "Which is correct?", "quiz.1.why": "When / if clauses use the present tense.", "quiz.2.o.0": "changed (past)", "quiz.2.o.1": "might be able to change", "quiz.2.o.2": "must change", "quiz.2.q": "\"We could change the world\" \u2014 could is closest to\u2026", "quiz.2.why": "could = a softer, hypothetical can.", "quiz.3.q": "Which is correct?", "quiz.3.why": "belong is a normal verb: no be. be goes only with -ing.", "quiz.4.q": "\"What do I know?\" \u2014 the correct word order is\u2026", "quiz.4.why": "Question word + do + subject + plain verb.", "quiz.5.q": "\"I saw people ___\" \u2014 marching, to march, or marched?", "quiz.5.why": "see + person + -ing. No to.", "quiz_head.h2": "Quiz: what do you know?", "quiz_head.who": "6 questions. Tap an answer.", "segments.0.cue": "Four short lines. Listen for \u003cb\u003egave me a stage\u003c/b\u003e and \u003cb\u003edon\u0027t you\u003c/b\u003e.", "segments.0.drill.0.m": "give, past", "segments.0.drill.1.m": "negative command", "segments.0.drill.2.m": "tell, past", "segments.0.drill_h": "Drill", "segments.0.examples.0.m": "give + me + a watch", "segments.0.examples.1.m": "show + me + thing", "segments.0.examples.2.m": "strong warning", "segments.0.gp.0": "\u003cb\u003egive + person + thing\u003c/b\u003e \u2014 \"God gave me a stage\". Two objects, no preposition.", "segments.0.gp.1": "\u003cb\u003eDon\u0027t + verb\u003c/b\u003e \u2014 the negative command. \"Don\u0027t you ...\" adds emphasis.", "segments.0.h": "Verse 1: God gave me a stage", "segments.0.words.0.1": "a box you stand on to make a speech", "segments.0.words.1.1": "a place to perform", "segments.0.words.2.1": "give + person + thing", "segments.0.words.3.1": "tell + person = say to someone", "segments.0.words.4.1": "a strong warning", "segments.0.words.5.1": "two topics you avoid at dinner", "segments.0.words.6.1": "casual am not / isn\u0027t / hasn\u0027t", "segments.0.yourturn.label": "Your turn \u2014 who gave you what? \"___ gave me ___.\"", "segments.0.yourturn.ph": "___ gave me ___.  e.g. My dad gave me a fishing rod.", "segments.1.cue": "Listen for \u003cb\u003ewhen I have children\u003c/b\u003e \u2014 present tense, even though it\u0027s the future.", "segments.1.drill.0.m": "present, not will finish", "segments.1.drill.1.m": "are, not will be", "segments.1.drill.2.m": "allow me", "segments.1.drill_h": "Drill", "segments.1.examples.0.m": "get, not will get", "segments.1.examples.1.m": "rains, not will rain", "segments.1.examples.2.m": "allow me to check", "segments.1.gp.0": "\u003cb\u003eWhen / If + present tense\u003c/b\u003e for future conditions. Not \"when I will have\".", "segments.1.gp.1": "\u003cb\u003eLet me + verb\u003c/b\u003e \u2014 a soft \"allow me\".", "segments.1.h": "Pre-chorus: when I have children", "segments.1.words.0.1": "describe it clearly", "segments.1.words.1.1": "allow me to", "segments.1.words.2.1": "when + present = future condition", "segments.1.words.3.1": "hand down to the next person", "segments.1.words.4.1": "the noun of understand", "segments.1.yourturn.label": "Your turn \u2014 \"When I ___, I will ___.\"", "segments.1.yourturn.ph": "When I ___, I will ___.  e.g. When I get my license, I will work on a ship.", "segments.2.cue": "Listen for \u003cb\u003ecould change\u003c/b\u003e, \u003cb\u003ea one-man show\u003c/b\u003e, and \u003cb\u003eno university, no degree\u003c/b\u003e.", "segments.2.drill.0.m": "might be able to", "segments.2.drill.1.m": "no + noun", "segments.2.drill.2.m": "with = who has", "segments.2.drill_h": "Drill", "segments.2.examples.0.m": "maybe we can", "segments.2.examples.1.m": "no + noun", "segments.2.examples.2.m": "with = who has", "segments.2.gp.0": "\u003cb\u003ecould + verb\u003c/b\u003e \u2014 \"might be able to\". Softer than can.", "segments.2.gp.1": "\u003cb\u003eno + noun\u003c/b\u003e \u2014 \"there is no ~\". No university = I didn\u0027t go to university.", "segments.2.h": "Chorus: we could change this whole world", "segments.2.words.0.1": "could = maybe can", "segments.2.words.1.1": "entire", "segments.2.words.2.1": "take quickly", "segments.2.words.3.1": "with = who has", "segments.2.words.4.1": "no + noun = there is no", "segments.2.words.5.1": "a university qualification", "segments.2.yourturn.label": "Your turn \u2014 \"I\u0027m just a boy with ___.\"", "segments.2.yourturn.ph": "I\u0027m just a boy with ___.  e.g. I\u0027m just a boy with a surfboard.", "segments.3.cue": "Listen for \u003cb\u003eeverybody\u0027s talking\u003c/b\u003e (be + ing) and the question \u003cb\u003ewhat do I know?\u003c/b\u003e", "segments.3.drill.0.m": "no be", "segments.3.drill.1.m": "be + ing", "segments.3.drill.2.m": "do + you + want", "segments.3.drill.3.m": "be + ing", "segments.3.drill_h": "Drill \u2014 be or not be", "segments.3.examples.0.m": "not I\u0027m live", "segments.3.examples.1.m": "be + ing, temporary", "segments.3.examples.2.m": "do + you + know", "segments.3.gp.0": "\u003cb\u003ebe + verb-ing\u003c/b\u003e = happening now. \u003cb\u003ebe\u003c/b\u003e goes with -ing only. Never \"I\u0027m belong\" or \"I\u0027m live\".", "segments.3.gp.1": "\u003cb\u003eQuestion word + do + I + verb?\u003c/b\u003e \u2014 \"What do I know?\" The verb stays plain.", "segments.3.h": "Hook: everybody\u0027s talking \u2026 but what do I know?", "segments.3.words.0.1": "everybody is talking", "segments.3.words.1.1": "growing faster and faster", "segments.3.words.2.1": "where shares are traded", "segments.3.words.3.1": "fall suddenly", "segments.3.words.4.1": "be + ing again", "segments.3.words.5.1": "in one second", "segments.3.words.6.1": "= I don\u0027t really know", "segments.3.yourturn.label": "Your turn \u2014 what is everybody talking about at school? \"Everybody\u0027s talking about ___.\"", "segments.3.yourturn.ph": "Everybody\u0027s talking about ___.", "segments.4.cue": "Listen for \u003cb\u003eI saw people marching\u003c/b\u003e and \u003cb\u003emade up of\u003c/b\u003e.", "segments.4.drill.0.m": "see + O + ing", "segments.4.drill.1.m": "past participle", "segments.4.drill.2.m": "hear + O + ing", "segments.4.drill_h": "Drill", "segments.4.examples.0.m": "see + him + ing", "segments.4.examples.1.m": "hear + someone + ing", "segments.4.examples.2.m": "consists of", "segments.4.gp.0": "\u003cb\u003esee / hear + person + verb-ing\u003c/b\u003e \u2014 you see the action happening.", "segments.4.gp.1": "\u003cb\u003ebe made up of\u003c/b\u003e / \u003cb\u003ebalanced\u003c/b\u003e \u2014 past participles used as adjectives.", "segments.4.h": "Verse 2: I saw people marching", "segments.4.words.0.1": "a big change", "segments.4.words.1.1": "is coming = will come soon", "segments.4.words.2.1": "walk together in protest", "segments.4.words.3.1": "see + person + ing", "segments.4.words.4.1": "consists of", "segments.4.words.5.1": "opposites", "segments.4.words.6.1": "very unstable", "segments.4.yourturn.label": "Your turn \u2014 something you saw: \"I saw ___ ___ing.\"", "segments.4.yourturn.ph": "I saw ___ ___ing.  e.g. I saw my friend fishing at the pier.", "title_line.en": "The title. A question that means \"I\u0027m nobody special\" \u2014 the chorus ends on it every time.", "ui.all": "\u25b6 Whole song", "ui.drill": "Drill", "ui.loop": "\ud83d\udd01 Loop this part", "ui.loopline": "\ud83d\udd01 Loop this line", "ui.meaning": "meaning", "ui.readmine": "\ud83d\udd0a Read mine", "ui.rec": "\ud83c\udf99 Sing it", "ui.slow": "\ud83d\udc22 0.75\u00d7", "ui.word": "word"}};
+function applyLang(lang){
+  LANG=lang; const dict=I[lang]||{};
+  document.documentElement.lang={"base": "ja", "en": "en", "ja": "ja", "k": "html_lang"}[lang]||lang;
+  $$('[data-i18n]').forEach(el=>{const k=el.dataset.i18n;if(!el.dataset.orig)el.dataset.orig=el.innerHTML;el.innerHTML=dict[k]||el.dataset.orig;});
+  $$('[data-i18n-ph]').forEach(el=>{const k=el.dataset.i18nPh;if(!el.dataset.orig)el.dataset.orig=el.placeholder;el.placeholder=dict[k]||el.dataset.orig;});
+  $$('#lang button').forEach(b=>b.classList.toggle('on',b.dataset.lang===lang));
+  renderQuiz(); store.set('lang-what-do-i-know',lang);
+}
+$$('#lang button').forEach(b=>b.onclick=()=>applyLang(b.dataset.lang));
+applyLang(store.get('lang-what-do-i-know')||'ja');
+</script>
+</body>
+</html>

@@ -1,0 +1,1300 @@
+{
+ "slug": "ai-wo-torimodose",
+ "kind": "song",
+ "root": false,
+ "langs": [
+  {
+   "code": "en",
+   "label": "EN"
+  },
+  {
+   "code": "ja",
+   "label": "日本語"
+  },
+  {
+   "code": "zh",
+   "label": "中文"
+  }
+ ],
+ "html_lang": {
+  "en": "en",
+  "ja": "ja",
+  "zh": "zh-Hant"
+ },
+ "tts_lang": "ja-JP",
+ "brand": "北斗<b>×</b>日本語",
+ "brand_href": "../../",
+ "title_tag": "愛をとりもどせ!! で日本語 — YOU は SHOCK, Japanese from the opening",
+ "description": "Learn Japanese from the Fist of the North Star opening 愛をとりもどせ!! (Crystal King). Loop each part of the official video, learn the vocabulary and grammar, then sing it. JLPT N4–N3.",
+ "video": "xp6rspO4uYY",
+ "nav": {
+  "back": {
+   "en": "← Lines",
+   "ja": "← セリフ編",
+   "zh": "← 台詞篇"
+  },
+  "back_href": "../../",
+  "quiz": {
+   "en": "Quiz",
+   "ja": "クイズ",
+   "zh": "測驗"
+  },
+  "segs": [
+   {
+    "href": "#s1",
+    "label": "1 SHOCK"
+   },
+   {
+    "href": "#s2",
+    "label": "2 〜ても"
+   },
+   {
+    "href": "#s3",
+    "label": "3 〜くなる"
+   },
+   {
+    "href": "#s4",
+    "label": "4 〜はず"
+   },
+   {
+    "href": "#s5",
+    "label": "5 命令形"
+   }
+  ]
+ },
+ "hero": {
+  "eyebrow": {
+   "en": "Song lesson · JLPT N4–N3 · with Yuuki@Anime Sensei",
+   "ja": "歌のレッスン · JLPT N4–N3 · Yuuki@Anime Sensei",
+   "zh": "歌曲課 · JLPT N4–N3 · 老師 Yuuki@Anime Sensei"
+  },
+  "h1": "YOU は SHOCK",
+  "h1_en": {
+   "en": "Learn Japanese from the opening 「愛をとりもどせ!!」",
+   "ja": "オープニング「愛をとりもどせ!!」で日本語を学ぶ",
+   "zh": "用片頭曲「愛をとりもどせ!!」學日文"
+  },
+  "lead": {
+   "en": "Crystal King, 1984. Ninety seconds of screaming love. Loop each part of the official video, pick up the words, find the grammar, then sing it back to Kenshiro.",
+   "ja": "クリスタルキング、1984年。愛を叫び続ける90秒。公式映像をパートごとにループして、単語を拾い、文法を見つけて、ケンシロウに向かって歌い返そう。",
+   "zh": "Crystal King，1984年。吶喊愛的90秒。把官方影片一段一段循環，撿單字、找文法，然後唱回去給拳四郎聽。"
+  },
+  "howto": [
+   {
+    "t": {
+     "en": "Listen",
+     "ja": "聴く",
+     "zh": "聽"
+    },
+    "d": {
+     "en": "Play the part once.",
+     "ja": "まずパートを1回再生。",
+     "zh": "先把這段播一次。"
+    }
+   },
+   {
+    "t": {
+     "en": "Loop",
+     "ja": "ループ",
+     "zh": "循環"
+    },
+    "d": {
+     "en": "Loop it. Slow it down.",
+     "ja": "繰り返す。遅くもできる。",
+     "zh": "重複播放，可放慢。"
+    }
+   },
+   {
+    "t": {
+     "en": "Read",
+     "ja": "読む",
+     "zh": "讀"
+    },
+    "d": {
+     "en": "Open the lyrics in a second tab.",
+     "ja": "歌詞は別タブで開く。",
+     "zh": "歌詞在另一個分頁打開。"
+    }
+   },
+   {
+    "t": {
+     "en": "Words",
+     "ja": "単語",
+     "zh": "單字"
+    },
+    "d": {
+     "en": "Learn the words and the pattern.",
+     "ja": "単語とパターンを覚える。",
+     "zh": "學單字和句型。"
+    }
+   },
+   {
+    "t": {
+     "en": "Sing",
+     "ja": "歌う",
+     "zh": "唱"
+    },
+    "d": {
+     "en": "Record yourself. Loudly.",
+     "ja": "録音する。大声で。",
+     "zh": "錄下來。大聲唱。"
+    }
+   }
+  ]
+ },
+ "ui": {
+  "all": {
+   "en": "▶ Whole song",
+   "ja": "▶ 通しで再生",
+   "zh": "▶ 整首播放"
+  },
+  "slow": {
+   "en": "🐢 0.75×",
+   "ja": "🐢 0.75倍",
+   "zh": "🐢 0.75倍速"
+  },
+  "loop": {
+   "en": "🔁 Loop this part",
+   "ja": "🔁 このパートをループ",
+   "zh": "🔁 循環這一段"
+  },
+  "loopline": {
+   "en": "🔁 Loop this line",
+   "ja": "🔁 この行をループ",
+   "zh": "🔁 循環這一句"
+  },
+  "rec": {
+   "en": "🎙 Sing it",
+   "ja": "🎙 歌う",
+   "zh": "🎙 唱唱看"
+  },
+  "readmine": {
+   "en": "🔊 Read mine",
+   "ja": "🔊 自分の文を読ませる",
+   "zh": "🔊 讀我寫的"
+  },
+  "word": {
+   "en": "word",
+   "ja": "語",
+   "zh": "單字"
+  },
+  "meaning": {
+   "en": "meaning",
+   "ja": "意味",
+   "zh": "意思"
+  },
+  "drill": {
+   "en": "Drill",
+   "ja": "ドリル",
+   "zh": "練習"
+  }
+ },
+ "lyrics": {
+  "h": {
+   "en": "Lyrics",
+   "ja": "歌詞",
+   "zh": "歌詞"
+  },
+  "p": {
+   "en": "The lyrics are copyrighted, so they are not printed on this page. Open them on the official lyrics site in a second tab and sing along while you loop.",
+   "ja": "歌詞は著作物なのでこのページには載せていません。公式の歌詞サイトを別タブで開いて、ループしながら一緒に歌ってください。",
+   "zh": "歌詞有版權，所以這頁不刊登。請在另一個分頁打開官方歌詞網站，一邊循環一邊跟著唱。"
+  },
+  "links": [
+   {
+    "href": "https://www.uta-net.com/song/163/",
+    "text": {
+     "en": "歌ネット (official)",
+     "ja": "歌ネット (official)",
+     "zh": "歌ネット (official)"
+    },
+    "dark": true
+   },
+   {
+    "href": "https://utaten.com/lyric/ja00001833/",
+    "text": {
+     "en": "うたてん (with furigana)",
+     "ja": "うたてん（ふりがな付き）",
+     "zh": "うたてん（附假名）"
+    },
+    "dark": false
+   }
+  ]
+ },
+ "title_line": {
+  "jp": "<ruby>愛<rt>あい</rt></ruby>をとりもどせ!!",
+  "en": {
+   "en": "\"<i>Take back</i> the love!!\" — the title, and the last line you'll sing.",
+   "ja": "「愛を<i>取り戻せ</i>!!」— タイトルであり、最後に歌う一行。",
+   "zh": "「把愛<i>奪回來</i>!!」— 歌名，也是你最後要唱的那句。"
+  },
+  "say": "愛を取り戻せ！",
+  "seg": [
+   74.2,
+   78.2
+  ]
+ },
+ "segments": [
+  {
+   "id": "s1",
+   "h": {
+    "en": "The hook: YOU は SHOCK",
+    "ja": "フック: YOU は SHOCK",
+    "zh": "副歌鉤子：YOU は SHOCK"
+   },
+   "time": "0:06–0:17",
+   "seg": [
+    5.8,
+    17.5
+   ],
+   "cue": {
+    "en": "Two lines, same shape. Listen for the English word after <b>は</b>, and for the verb <b>落ちてくる</b> at the end of each line.",
+    "ja": "同じ形の2行。<b>は</b>のあとの英単語と、行末の動詞<b>落ちてくる</b>を聞き取って。",
+    "zh": "兩句同樣的形狀。留意<b>は</b>後面的英文單字，和每句結尾的動詞<b>落ちてくる</b>。"
+   },
+   "words": [
+    [
+     "YOU は SHOCK",
+     {
+      "en": "English noun + は = a Japanese sentence. 80s J-pop loved this. \"You (are) shock\" = you shock me.",
+      "ja": "英語の名詞 + は = 日本語の文になる。80年代の歌謡曲はこれが大好き。「YouはShock」= 君は衝撃。",
+      "zh": "英文名詞 + は = 一個日文句子。80年代日本流行歌超愛這招。「You (are) shock」＝你讓我震撼。"
+     }
+    ],
+    [
+     "<ruby>愛<rt>あい</rt></ruby>",
+     {
+      "en": "love",
+      "ja": "愛",
+      "zh": "愛"
+     }
+    ],
+    [
+     "<ruby>空<rt>そら</rt></ruby>",
+     {
+      "en": "sky",
+      "ja": "空",
+      "zh": "天空"
+     }
+    ],
+    [
+     "<ruby>胸<rt>むね</rt></ruby>",
+     {
+      "en": "chest — and in songs, the heart",
+      "ja": "胸 — 歌の中では心のこと",
+      "zh": "胸口 — 在歌裡就是心"
+     }
+    ],
+    [
+     "<ruby>落<rt>お</rt></ruby>ちてくる",
+     {
+      "en": "落ちる (fall) + てくる = falls <b>toward me</b>",
+      "ja": "落ちる + てくる = <b>自分の方へ</b>落ちてくる",
+      "zh": "落ちる（掉落）+ てくる = <b>朝我</b>掉下來"
+     }
+    ]
+   ],
+   "gp": [
+    {
+     "en": "<b>Verb-て + くる</b> = the action comes toward the speaker. <b>Verb-て + いく</b> = it goes away. The sky falls <i>onto me</i>: 落ちて<b>くる</b>.",
+     "ja": "<b>動詞て形 + くる</b> = 動作が話し手の方へ来る。<b>て + いく</b> = 離れていく。空が<i>自分に</i>落ちてくる: 落ちて<b>くる</b>。",
+     "zh": "<b>動詞て形 + くる</b> = 動作朝說話者而來。<b>て + いく</b> = 離開。天空<i>朝我</i>掉下來：落ちて<b>くる</b>。"
+    }
+   ],
+   "examples": [
+    {
+     "jp": "<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>ってきた",
+     "m": {
+      "en": "it started to rain (on me)",
+      "ja": "雨が降り始めた（自分に向かって）",
+      "zh": "開始下雨了（朝我下）"
+     },
+     "say": "雨が降ってきた"
+    },
+    {
+     "jp": "<ruby>友<rt>とも</rt></ruby>だちが<ruby>走<rt>はし</rt></ruby>ってくる",
+     "m": {
+      "en": "my friend comes running (toward me)",
+      "ja": "友だちが走って来る",
+      "zh": "朋友跑過來"
+     },
+     "say": "友だちが走ってくる"
+    },
+    {
+     "jp": "<ruby>鳥<rt>とり</rt></ruby>が<ruby>飛<rt>と</rt></ruby>んでいく",
+     "m": {
+      "en": "the bird flies away",
+      "ja": "鳥が飛んでいく",
+      "zh": "鳥飛走了"
+     },
+     "say": "鳥が飛んでいく"
+    }
+   ],
+   "drill_h": {
+    "en": "Drill",
+    "ja": "ドリル",
+    "zh": "練習"
+   },
+   "drill": [
+    {
+     "jp": "バスが{{blank:来た}}！",
+     "m": {
+      "en": "The bus came (here)! (来る, past)",
+      "ja": "バスが来た！（来る・過去）",
+      "zh": "公車來了！（来る，過去式）"
+     }
+    },
+    {
+     "jp": "<ruby>雪<rt>ゆき</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>って{{blank:きた}}。",
+     "m": {
+      "en": "It started snowing. (てくる, past)",
+      "ja": "雪が降ってきた。（てくる・過去）",
+      "zh": "開始下雪了。（てくる，過去式）"
+     }
+    },
+    {
+     "jp": "<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>行<rt>い</rt></ruby>って{{blank:しまった}}。",
+     "m": {
+      "en": "The train went away (and I missed it). (てしまう)",
+      "ja": "電車が行ってしまった。（てしまう）",
+      "zh": "電車開走了（我沒趕上）。（てしまう）"
+     }
+    }
+   ],
+   "yourturn": {
+    "label": {
+     "en": "Your turn — what shocks you in Tokyo? 「＿＿ は SHOCK」",
+     "ja": "あなたの番 — 東京で衝撃だったことは？「＿＿ は SHOCK」",
+     "zh": "換你 — 在東京什麼讓你震撼？「＿＿ は SHOCK」"
+    },
+    "ph": {
+     "en": "＿＿ は SHOCK。  e.g. 家賃 は SHOCK。(The rent is a shock.)",
+     "ja": "＿＿ は SHOCK。  例: 家賃 は SHOCK。",
+     "zh": "＿＿ は SHOCK。  例：家賃 は SHOCK。（房租很震撼。）"
+    },
+    "store": "ai-s1"
+   }
+  },
+  {
+   "id": "s2",
+   "h": {
+    "en": "Verse: chains are useless",
+    "ja": "Aメロ: 鎖でつないでも無駄",
+    "zh": "主歌：鎖鏈也沒用"
+   },
+   "time": "0:18–0:29",
+   "seg": [
+    17.8,
+    29.6
+   ],
+   "cue": {
+    "en": "Fast and rough. Listen for <b>〜ても</b> (even if) followed by <b>無駄</b>, and the word <b>ダウン</b> at the very end.",
+    "ja": "速くて荒い。<b>〜ても</b>（たとえ〜でも）の後の<b>無駄</b>と、最後の<b>ダウン</b>を聞き取って。",
+    "zh": "又快又粗。留意<b>〜ても</b>（即使）後面的<b>無駄</b>，還有最後的<b>ダウン</b>。"
+   },
+   "words": [
+    [
+     "<ruby>熱<rt>あつ</rt></ruby>い<ruby>心<rt>こころ</rt></ruby>",
+     {
+      "en": "a burning heart (熱い = hot, passionate)",
+      "ja": "燃えるような心（熱い = 熱い・情熱的）",
+      "zh": "燃燒的心（熱い = 熱、熱情）"
+     }
+    ],
+    [
+     "<ruby>鎖<rt>くさり</rt></ruby>",
+     {
+      "en": "chain",
+      "ja": "鎖",
+      "zh": "鎖鏈"
+     }
+    ],
+    [
+     "つなぐ",
+     {
+      "en": "to tie, to chain up (つないでも = even if you chain it)",
+      "ja": "つなぐ・縛る（つないでも = 縛っても）",
+      "zh": "綁住、鎖住（つないでも = 就算鎖住）"
+     }
+    ],
+    [
+     "<ruby>無駄<rt>むだ</rt></ruby>",
+     {
+      "en": "useless, no use — one of the most useful words in Japan",
+      "ja": "役に立たない — 日本で一番使える単語のひとつ",
+      "zh": "沒用、白費 — 日本最實用的單字之一"
+     }
+    ],
+    [
+     "<ruby>邪魔<rt>じゃま</rt></ruby>する",
+     {
+      "en": "to get in the way (邪魔する奴 = anyone who gets in the way)",
+      "ja": "邪魔をする（邪魔する奴 = 邪魔をする者は誰でも）",
+      "zh": "礙事（邪魔する奴 = 任何礙事的人）"
+     }
+    ],
+    [
+     "<ruby>奴<rt>やつ</rt></ruby>",
+     {
+      "en": "guy, fellow — rough. Fine for villains, not for coworkers.",
+      "ja": "やつ — 乱暴。悪役には○、同僚には×。",
+      "zh": "傢伙 — 粗魯。用在反派可以，用在同事不行。"
+     }
+    ],
+    [
+     "<ruby>指先<rt>ゆびさき</rt></ruby>ひとつで",
+     {
+      "en": "with a single fingertip (N + ひとつで = with just one N)",
+      "ja": "指先ひとつで（名詞 + ひとつで = たったひとつの〜で）",
+      "zh": "用一根指尖（名詞 + ひとつで = 只用一個～）"
+     }
+    ],
+    [
+     "ダウン",
+     {
+      "en": "down (a knockdown) — loanwords work as nouns: ダウンさ = they go down",
+      "ja": "ダウン（ノックダウン）— 外来語は名詞として使える: ダウンさ = 倒れる",
+      "zh": "倒下（擊倒）— 外來語可當名詞：ダウンさ = 他們倒下"
+     }
+    ]
+   ],
+   "gp": [
+    {
+     "en": "<b>Verb-て + も</b> = even if. The verse says: even if you chain a burning heart, it's useless. <b>〜ても無駄だ</b> is a set phrase worth stealing.",
+     "ja": "<b>動詞て形 + も</b> = たとえ〜でも。Aメロは「燃える心を鎖でつないでも無駄だ」。<b>〜ても無駄だ</b>は盗む価値のある決まり文句。",
+     "zh": "<b>動詞て形 + も</b> = 即使。主歌說：就算把燃燒的心鎖住也沒用。<b>〜ても無駄だ</b>是值得偷走的固定句。"
+    }
+   ],
+   "examples": [
+    {
+     "jp": "<ruby>今<rt>いま</rt></ruby><ruby>謝<rt>あやま</rt></ruby>っても<ruby>無駄<rt>むだ</rt></ruby>だ",
+     "m": {
+      "en": "apologising now is useless",
+      "ja": "今謝っても意味がない",
+      "zh": "現在道歉也沒用"
+     },
+     "say": "今謝っても無駄だ"
+    },
+    {
+     "jp": "<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>っても<ruby>行<rt>い</rt></ruby>く",
+     "m": {
+      "en": "I'll go even if it rains",
+      "ja": "雨が降っても行く",
+      "zh": "就算下雨我也去"
+     },
+     "say": "雨が降っても行く"
+    },
+    {
+     "jp": "ボタンひとつで<ruby>注文<rt>ちゅうもん</rt></ruby>できる",
+     "m": {
+      "en": "you can order with a single button",
+      "ja": "ボタンひとつで注文できる",
+      "zh": "一個按鈕就能點餐"
+     },
+     "say": "ボタンひとつで注文できる"
+    }
+   ],
+   "drill_h": {
+    "en": "Drill",
+    "ja": "ドリル",
+    "zh": "練習"
+   },
+   "drill": [
+    {
+     "jp": "<ruby>高<rt>たか</rt></ruby>く{{blank:ても}}<ruby>買<rt>か</rt></ruby>う。",
+     "m": {
+      "en": "I'll buy it even if it's expensive. (い-adj: 高く + ても)",
+      "ja": "高くても買う。（い形容詞: 高く + ても）",
+      "zh": "就算貴也買。（い形容詞：高く + ても）"
+     }
+    },
+    {
+     "jp": "<ruby>何回<rt>なんかい</rt></ruby><ruby>説明<rt>せつめい</rt></ruby>し{{blank:ても無駄だ}}。",
+     "m": {
+      "en": "Explaining it any number of times is useless.",
+      "ja": "何回説明しても無駄だ。",
+      "zh": "解釋幾次都沒用。"
+     }
+    },
+    {
+     "jp": "スマホ{{blank:ひとつで}}<ruby>旅行<rt>りょこう</rt></ruby>できる。",
+     "m": {
+      "en": "You can travel with just a smartphone.",
+      "ja": "スマホひとつで旅行できる。",
+      "zh": "只靠一支手機就能旅行。"
+     }
+    }
+   ],
+   "yourturn": {
+    "label": {
+     "en": "Your turn — something that is useless even if you try: 「〜ても無駄だ」",
+     "ja": "あなたの番 — やっても無駄なこと:「〜ても無駄だ」",
+     "zh": "換你 — 就算試了也沒用的事：「〜ても無駄だ」"
+    },
+    "ph": {
+     "en": "＿＿ても無駄だ。  e.g. 月曜日に早く寝ても無駄だ。",
+     "ja": "＿＿ても無駄だ。  例: 月曜日に早く寝ても無駄だ。",
+     "zh": "＿＿ても無駄だ。  例：月曜日に早く寝ても無駄だ。"
+    },
+    "store": "ai-s2"
+   }
+  },
+  {
+   "id": "s3",
+   "h": {
+    "en": "Hook again: heartbeat gets faster",
+    "ja": "フック再び: 鼓動が速くなる",
+    "zh": "鉤子再來：心跳變快"
+   },
+   "time": "0:30–0:41",
+   "seg": [
+    29.8,
+    41.2
+   ],
+   "cue": {
+    "en": "Same hook, new ending. Listen for <b>鼓動</b> and the change verb <b>速くなる</b>.",
+    "ja": "同じフックで結びが変わる。<b>鼓動</b>と変化の動詞<b>速くなる</b>を聞き取って。",
+    "zh": "同樣的鉤子，不同的結尾。留意<b>鼓動</b>和變化動詞<b>速くなる</b>。"
+   },
+   "words": [
+    [
+     "<ruby>鼓動<rt>こどう</rt></ruby>",
+     {
+      "en": "heartbeat (鼓 = drum, 動 = move)",
+      "ja": "心臓の音（鼓 = 太鼓、動 = 動く）",
+      "zh": "心跳（鼓 = 鼓，動 = 動）"
+     }
+    ],
+    [
+     "<ruby>速<rt>はや</rt></ruby>い → <ruby>速<rt>はや</rt></ruby>くなる",
+     {
+      "en": "fast → become fast. い-adjective: drop い, add くなる",
+      "ja": "速い → 速くなる。い形容詞は い を取って くなる",
+      "zh": "快 → 變快。い形容詞：去掉 い 加 くなる"
+     }
+    ],
+    [
+     "<ruby>俺<rt>おれ</rt></ruby>",
+     {
+      "en": "\"I\" — rough, masculine. Kenshiro's pronoun. Use 私 with strangers.",
+      "ja": "「私」— 乱暴で男っぽい。ケンシロウの一人称。初対面には 私。",
+      "zh": "「我」— 粗魯、男性化。拳四郎的自稱。對陌生人用 私。"
+     }
+    ]
+   ],
+   "gp": [
+    {
+     "en": "<b>い-adj → 〜くなる</b> / <b>な-adj, noun → 〜になる</b> = to become. 速く<b>なる</b>, 静か<b>になる</b>, 医者<b>になる</b>.",
+     "ja": "<b>い形容詞 → 〜くなる</b> ／ <b>な形容詞・名詞 → 〜になる</b> = 〜になる。速く<b>なる</b>、静か<b>になる</b>、医者<b>になる</b>。",
+     "zh": "<b>い形容詞 → 〜くなる</b> ／ <b>な形容詞、名詞 → 〜になる</b> = 變成。速く<b>なる</b>、静か<b>になる</b>、医者<b>になる</b>。"
+    }
+   ],
+   "examples": [
+    {
+     "jp": "<ruby>日本語<rt>にほんご</rt></ruby>が<ruby>上手<rt>じょうず</rt></ruby>になった",
+     "m": {
+      "en": "my Japanese got good",
+      "ja": "日本語が上手になった",
+      "zh": "我的日文變好了"
+     },
+     "say": "日本語が上手になった"
+    },
+    {
+     "jp": "<ruby>夜<rt>よる</rt></ruby>は<ruby>寒<rt>さむ</rt></ruby>くなる",
+     "m": {
+      "en": "it gets cold at night",
+      "ja": "夜は寒くなる",
+      "zh": "晚上會變冷"
+     },
+     "say": "夜は寒くなる"
+    },
+    {
+     "jp": "<ruby>鼓動<rt>こどう</rt></ruby>が<ruby>速<rt>はや</rt></ruby>くなる",
+     "m": {
+      "en": "my heartbeat speeds up",
+      "ja": "鼓動が速くなる",
+      "zh": "心跳加速"
+     },
+     "say": "鼓動が速くなる"
+    }
+   ],
+   "drill_h": {
+    "en": "Drill",
+    "ja": "ドリル",
+    "zh": "練習"
+   },
+   "drill": [
+    {
+     "jp": "<ruby>暑<rt>あつ</rt></ruby>い → <ruby>暑<rt>あつ</rt></ruby>{{blank:くなる}}",
+     "m": {
+      "en": "hot → get hot",
+      "ja": "暑い → 暑くなる",
+      "zh": "熱 → 變熱"
+     }
+    },
+    {
+     "jp": "<ruby>静<rt>しず</rt></ruby>か → <ruby>静<rt>しず</rt></ruby>か{{blank:になる}}",
+     "m": {
+      "en": "quiet → become quiet",
+      "ja": "静か → 静かになる",
+      "zh": "安靜 → 變安靜"
+     }
+    },
+    {
+     "jp": "<ruby>大人<rt>おとな</rt></ruby> → <ruby>大人<rt>おとな</rt></ruby>{{blank:になる}}",
+     "m": {
+      "en": "adult → become an adult",
+      "ja": "大人 → 大人になる",
+      "zh": "大人 → 變成大人"
+     }
+    }
+   ],
+   "yourturn": {
+    "label": {
+     "en": "Your turn — what makes your heartbeat faster? 「〜と、鼓動が速くなる」",
+     "ja": "あなたの番 — 鼓動が速くなるのはどんな時？「〜と、鼓動が速くなる」",
+     "zh": "換你 — 什麼讓你心跳加速？「〜と、鼓動が速くなる」"
+    },
+    "ph": {
+     "en": "＿＿と、鼓動が速くなる。  e.g. 秋葉原に行くと、鼓動が速くなる。",
+     "ja": "＿＿と、鼓動が速くなる。  例: 秋葉原に行くと、鼓動が速くなる。",
+     "zh": "＿＿と、鼓動が速くなる。  例：秋葉原に行くと、鼓動が速くなる。"
+    },
+    "store": "ai-s3"
+   }
+  },
+  {
+   "id": "s4",
+   "h": {
+    "en": "Build-up: a wandering heart",
+    "ja": "Bメロ: 彷徨う心",
+    "zh": "醞釀段：徬徨的心"
+   },
+   "time": "0:41–0:53",
+   "seg": [
+    41.4,
+    54.2
+   ],
+   "cue": {
+    "en": "The tension part. Big literary verbs, and it ends on <b>〜はずさ</b>.",
+    "ja": "盛り上げのパート。文語っぽい大きな動詞が並び、<b>〜はずさ</b>で終わる。",
+    "zh": "緊張升溫的段落。一堆文言感的大動詞，最後停在<b>〜はずさ</b>。"
+   },
+   "words": [
+    [
+     "<ruby>求<rt>もと</rt></ruby>める",
+     {
+      "en": "to seek, to long for (愛を求める = seek love)",
+      "ja": "求める・欲しがる（愛を求める）",
+      "zh": "追求、渴望（愛を求める = 追求愛）"
+     }
+    ],
+    [
+     "<ruby>彷徨<rt>さまよ</rt></ruby>う",
+     {
+      "en": "to wander — a poetic word, huge in songs",
+      "ja": "さまよう — 詩的な語。歌に頻出",
+      "zh": "徬徨、漂泊 — 詩意的字，歌裡超常見"
+     }
+    ],
+    [
+     "<ruby>燃<rt>も</rt></ruby>える",
+     {
+      "en": "to burn (熱く燃えてる = is burning hot)",
+      "ja": "燃える（熱く燃えてる = 熱く燃えている）",
+      "zh": "燃燒（熱く燃えてる = 正熱烈燃燒）"
+     }
+    ],
+    [
+     "<ruby>溶<rt>と</rt></ruby>かす",
+     {
+      "en": "to melt (something) — transitive. 溶ける = melts by itself",
+      "ja": "（何かを）溶かす — 他動詞。溶ける = 自然に溶ける",
+      "zh": "融化（某物）— 他動詞。溶ける = 自己融化"
+     }
+    ],
+    [
+     "<ruby>無残<rt>むざん</rt></ruby>に",
+     {
+      "en": "cruelly, without mercy — pure 北斗 vocabulary",
+      "ja": "むごく・容赦なく — まさに北斗の語彙",
+      "zh": "殘酷地、毫不留情 — 純正的北斗詞彙"
+     }
+    ],
+    [
+     "<ruby>飛<rt>と</rt></ruby>び<ruby>散<rt>ち</rt></ruby>る",
+     {
+      "en": "to scatter, to fly apart (飛ぶ + 散る)",
+      "ja": "飛び散る（飛ぶ + 散る）",
+      "zh": "四散、飛散（飛ぶ + 散る）"
+     }
+    ],
+    [
+     "〜はずさ",
+     {
+      "en": "it is bound to ~ / it should ~. さ = a cool, masculine sentence-ender",
+      "ja": "〜するはずだ。さ = 男っぽくてかっこいい文末",
+      "zh": "一定會～／應該～。さ = 帥氣的男性句尾"
+     }
+    ]
+   ],
+   "gp": [
+    {
+     "en": "<b>Plain form + はずだ</b> = I'm confident it's so (based on reason). Not a wish: an expectation. In the song: it's bound to melt everything and scatter.",
+     "ja": "<b>普通形 + はずだ</b> = 根拠があってそう確信している。願いではなく予測。歌では「すべてを溶かして飛び散るはずだ」。",
+     "zh": "<b>普通形 + はずだ</b> = 有根據的確信。不是願望，是推測。歌裡：一定會融化一切然後四散。"
+    }
+   ],
+   "examples": [
+    {
+     "jp": "もう<ruby>着<rt>つ</rt></ruby>いているはずだ",
+     "m": {
+      "en": "he should have arrived by now",
+      "ja": "もう着いているはずだ",
+      "zh": "他現在應該到了"
+     },
+     "say": "もう着いているはずだ"
+    },
+    {
+     "jp": "<ruby>今日<rt>きょう</rt></ruby>は<ruby>休<rt>やす</rt></ruby>みのはずだ",
+     "m": {
+      "en": "today should be a day off",
+      "ja": "今日は休みのはずだ",
+      "zh": "今天應該是休假"
+     },
+     "say": "今日は休みのはずだ"
+    },
+    {
+     "jp": "そんなはずはない",
+     "m": {
+      "en": "that can't be right",
+      "ja": "そんなはずはない",
+      "zh": "不可能是那樣"
+     },
+     "say": "そんなはずはない"
+    }
+   ],
+   "drill_h": {
+    "en": "Drill",
+    "ja": "ドリル",
+    "zh": "練習"
+   },
+   "drill": [
+    {
+     "jp": "メールを<ruby>送<rt>おく</rt></ruby>ったから、<ruby>届<rt>とど</rt></ruby>いている{{blank:はずだ}}。",
+     "m": {
+      "en": "I sent the mail, so it should have arrived.",
+      "ja": "メールを送ったから、届いているはずだ。",
+      "zh": "我寄了郵件，所以應該已經送到了。"
+     }
+    },
+    {
+     "jp": "アイスが<ruby>暑<rt>あつ</rt></ruby>さで{{blank:溶けた}}。",
+     "m": {
+      "en": "The ice cream melted from the heat. (intransitive 溶ける)",
+      "ja": "アイスが暑さで溶けた。（自動詞 溶ける）",
+      "zh": "冰淇淋被熱融化了。（自動詞 溶ける）"
+     }
+    },
+    {
+     "jp": "チョコを{{blank:溶かして}}ケーキに<ruby>入<rt>い</rt></ruby>れる。",
+     "m": {
+      "en": "Melt the chocolate and put it in the cake. (transitive 溶かす)",
+      "ja": "チョコを溶かしてケーキに入れる。（他動詞 溶かす）",
+      "zh": "把巧克力融化後放進蛋糕。（他動詞 溶かす）"
+     }
+    }
+   ],
+   "yourturn": {
+    "label": {
+     "en": "Your turn — a confident prediction about tomorrow's lesson: 「〜はずだ」",
+     "ja": "あなたの番 — 明日のレッスンへの自信ある予測:「〜はずだ」",
+     "zh": "換你 — 對明天課程的自信預測：「〜はずだ」"
+    },
+    "ph": {
+     "en": "＿＿はずだ。  e.g. 明日のレッスンは楽しいはずだ。",
+     "ja": "＿＿はずだ。  例: 明日のレッスンは楽しいはずだ。",
+     "zh": "＿＿はずだ。  例：明日のレッスンは楽しいはずだ。"
+    },
+    "store": "ai-s4"
+   }
+  },
+  {
+   "id": "s5",
+   "h": {
+    "en": "Chorus: take back the love",
+    "ja": "サビ: 愛を取り戻せ",
+    "zh": "副歌：把愛奪回來"
+   },
+   "time": "0:55–1:18",
+   "seg": [
+    55.2,
+    78.2
+   ],
+   "cue": {
+    "en": "The chorus. Listen for <b>〜ため</b> (in order to), <b>見失った</b>, and the command at the very end: <b>取り戻せ</b>.",
+    "ja": "サビ。<b>〜ため</b>（〜のために）、<b>見失った</b>、そして最後の命令<b>取り戻せ</b>を聞き取って。",
+    "zh": "副歌。留意<b>〜ため</b>（為了）、<b>見失った</b>，還有最後的命令：<b>取り戻せ</b>。"
+   },
+   "words": [
+    [
+     "<ruby>守<rt>まも</rt></ruby>る",
+     {
+      "en": "to protect",
+      "ja": "守る",
+      "zh": "守護"
+     }
+    ],
+    [
+     "〜ため(に)",
+     {
+      "en": "in order to (守るため = in order to protect)",
+      "ja": "〜のために（守るため = 守るために）",
+      "zh": "為了（守るため = 為了守護）"
+     }
+    ],
+    [
+     "<ruby>旅立<rt>たびだ</rt></ruby>つ",
+     {
+      "en": "to set out on a journey (旅 + 立つ)",
+      "ja": "旅に出る（旅 + 立つ）",
+      "zh": "踏上旅程（旅 + 立つ）"
+     }
+    ],
+    [
+     "<ruby>明日<rt>あす</rt></ruby>",
+     {
+      "en": "tomorrow — read あす here, the formal/poetic reading (everyday: あした)",
+      "ja": "明日 — ここでは あす。改まった・詩的な読み方（普段は あした）",
+      "zh": "明天 — 這裡讀 あす，正式／詩意的讀法（平常說 あした）"
+     }
+    ],
+    [
+     "<ruby>見失<rt>みうしな</rt></ruby>う",
+     {
+      "en": "to lose sight of (見る + 失う)",
+      "ja": "見失う（見る + 失う）",
+      "zh": "失去蹤影、看不見了（見る + 失う）"
+     }
+    ],
+    [
+     "<ruby>微笑<rt>ほほえ</rt></ruby>み",
+     {
+      "en": "a smile (noun from 微笑む)",
+      "ja": "微笑み（微笑む の名詞）",
+      "zh": "微笑（微笑む 的名詞）"
+     }
+    ],
+    [
+     "〜など",
+     {
+      "en": "\"things like ~\" — here it's dismissive: a face like that? no thanks",
+      "ja": "「〜など」— ここでは突き放す言い方: そんな顔など見たくない",
+      "zh": "「～之類的」— 這裡帶有輕蔑：那種臉？不想看"
+     }
+    ],
+    [
+     "<ruby>見<rt>み</rt></ruby>たくはない",
+     {
+      "en": "I do NOT want to see (見たい → 見たく + は + ない, は adds stress)",
+      "ja": "見たくない（見たい → 見たく + は + ない、は で強調）",
+      "zh": "我「不」想看（見たい → 見たく + は + ない，は 加強語氣）"
+     }
+    ],
+    [
+     "<ruby>取<rt>と</rt></ruby>り<ruby>戻<rt>もど</rt></ruby>す → <ruby>取<rt>と</rt></ruby>り<ruby>戻<rt>もど</rt></ruby>せ",
+     {
+      "en": "to get back → GET IT BACK! (imperative)",
+      "ja": "取り戻す → 取り戻せ！（命令形）",
+      "zh": "奪回 → 奪回來！（命令形）"
+     }
+    ]
+   ],
+   "gp": [
+    {
+     "en": "<b>Imperative form (命令形)</b>: う-verbs → change the last u to e (取り戻す → 取り戻せ, 行く → 行け). る-verbs → ろ (食べる → 食べろ). する → しろ, 来る → 来い. Rough and direct: for songs, sports, emergencies, and Kenshiro.",
+     "ja": "<b>命令形</b>: う動詞は最後の u を e に（取り戻す → 取り戻せ、行く → 行け）。る動詞は ろ（食べる → 食べろ）。する → しろ、来る → 来い。荒くて直接的: 歌・スポーツ・緊急時・ケンシロウ用。",
+     "zh": "<b>命令形</b>：う動詞把最後的 u 改成 e（取り戻す → 取り戻せ、行く → 行け）。る動詞改 ろ（食べる → 食べろ）。する → しろ、来る → 来い。粗魯直接：用在歌、運動、緊急狀況，還有拳四郎。"
+    }
+   ],
+   "examples": [
+    {
+     "jp": "<ruby>頑張<rt>がんば</rt></ruby>れ！",
+     "m": {
+      "en": "Go for it! (the one imperative everyone uses)",
+      "ja": "頑張れ！（誰もが使う命令形）",
+      "zh": "加油！（大家都在用的命令形）"
+     },
+     "say": "頑張れ！"
+    },
+    {
+     "jp": "<ruby>逃<rt>に</rt></ruby>げろ！",
+     "m": {
+      "en": "Run!",
+      "ja": "逃げろ！",
+      "zh": "快逃！"
+     },
+     "say": "逃げろ！"
+    },
+    {
+     "jp": "<ruby>愛<rt>あい</rt></ruby>を<ruby>取<rt>と</rt></ruby>り<ruby>戻<rt>もど</rt></ruby>せ！",
+     "m": {
+      "en": "Take back the love!",
+      "ja": "愛を取り戻せ！",
+      "zh": "把愛奪回來！"
+     },
+     "say": "愛を取り戻せ！"
+    }
+   ],
+   "drill_h": {
+    "en": "Drill — make it an order",
+    "ja": "ドリル",
+    "zh": "練習"
+   },
+   "drill": [
+    {
+     "jp": "<ruby>行<rt>い</rt></ruby>く → {{blank:行け}}",
+     "m": {
+      "en": "go → Go!",
+      "ja": "行く → 行け",
+      "zh": "去 → 去！"
+     }
+    },
+    {
+     "jp": "<ruby>食<rt>た</rt></ruby>べる → {{blank:食べろ}}",
+     "m": {
+      "en": "eat → Eat!",
+      "ja": "食べる → 食べろ",
+      "zh": "吃 → 吃！"
+     }
+    },
+    {
+     "jp": "する → {{blank:しろ}}",
+     "m": {
+      "en": "do → Do it! (irregular)",
+      "ja": "する → しろ（不規則）",
+      "zh": "做 → 做！（不規則）"
+     }
+    },
+    {
+     "jp": "<ruby>来<rt>く</rt></ruby>る → {{blank:来い}}",
+     "m": {
+      "en": "come → Come! (irregular, こい)",
+      "ja": "来る → 来い（不規則・こい）",
+      "zh": "來 → 來！（不規則，こい）"
+     }
+    },
+    {
+     "jp": "<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>する{{blank:ために}}<ruby>東京<rt>とうきょう</rt></ruby>に<ruby>来<rt>き</rt></ruby>た。",
+     "m": {
+      "en": "I came to Tokyo in order to study Japanese.",
+      "ja": "日本語を勉強するために東京に来た。",
+      "zh": "為了學日文而來東京。"
+     }
+    }
+   ],
+   "yourturn": {
+    "label": {
+     "en": "Your turn — order yourself to take something back: 「＿＿を取り戻せ！」",
+     "ja": "あなたの番 — 自分に命令して取り戻す:「＿＿を取り戻せ！」",
+     "zh": "換你 — 命令自己奪回某樣東西：「＿＿を取り戻せ！」"
+    },
+    "ph": {
+     "en": "＿＿を取り戻せ！  e.g. 睡眠時間を取り戻せ！(Take back your sleep!)",
+     "ja": "＿＿を取り戻せ！  例: 睡眠時間を取り戻せ！",
+     "zh": "＿＿を取り戻せ！  例：睡眠時間を取り戻せ！（把睡眠時間奪回來！）"
+    },
+    "store": "ai-s5"
+   }
+  }
+ ],
+ "quiz": [
+  {
+   "q": {
+    "en": "「落ちてくる」— the sky falls…",
+    "ja": "「落ちてくる」— 空は…",
+    "zh": "「落ちてくる」— 天空…"
+   },
+   "o": [
+    {
+     "en": "away from me",
+     "ja": "私から離れて",
+     "zh": "遠離我"
+    },
+    {
+     "en": "toward me",
+     "ja": "私の方へ",
+     "zh": "朝我而來"
+    },
+    {
+     "en": "sideways",
+     "ja": "横に",
+     "zh": "往旁邊"
+    }
+   ],
+   "a": 1,
+   "why": {
+    "en": "てくる = the action comes toward the speaker.",
+    "ja": "てくる = 動作が話し手の方へ向かってくる。",
+    "zh": "てくる = 動作朝說話者而來。"
+   }
+  },
+  {
+   "q": {
+    "en": "「〜ても無駄だ」means…",
+    "ja": "「〜ても無駄だ」の意味は…",
+    "zh": "「〜ても無駄だ」的意思是…"
+   },
+   "o": [
+    {
+     "en": "it's useless even if you ~",
+     "ja": "〜しても意味がない",
+     "zh": "就算～也沒用"
+    },
+    {
+     "en": "you must ~",
+     "ja": "〜しなければならない",
+     "zh": "必須～"
+    },
+    {
+     "en": "it's useful if you ~",
+     "ja": "〜すれば役に立つ",
+     "zh": "～的話很有用"
+    }
+   ],
+   "a": 0,
+   "why": {
+    "en": "ても = even if; 無駄 = useless.",
+    "ja": "ても = 〜しても。無駄 = 役に立たない。",
+    "zh": "ても = 即使；無駄 = 沒用。"
+   }
+  },
+  {
+   "q": {
+    "en": "速い → \"becomes fast\"",
+    "ja": "速い → 「速くなる」の作り方は？",
+    "zh": "速い → 「變快」怎麼說？"
+   },
+   "o": [
+    {
+     "en": "速いになる",
+     "ja": "速いになる",
+     "zh": "速いになる"
+    },
+    {
+     "en": "速くなる",
+     "ja": "速くなる",
+     "zh": "速くなる"
+    },
+    {
+     "en": "速になる",
+     "ja": "速になる",
+     "zh": "速になる"
+    }
+   ],
+   "a": 1,
+   "why": {
+    "en": "い-adjective: drop い, add くなる.",
+    "ja": "い形容詞は い を取って くなる。",
+    "zh": "い形容詞：去掉 い 加 くなる。"
+   }
+  },
+  {
+   "q": {
+    "en": "「もう着いているはずだ」",
+    "ja": "「もう着いているはずだ」の気持ちは？",
+    "zh": "「もう着いているはずだ」表達什麼？"
+   },
+   "o": [
+    {
+     "en": "I hope he arrived",
+     "ja": "着いてほしい",
+     "zh": "希望他到了"
+    },
+    {
+     "en": "He should have arrived by now",
+     "ja": "もう着いているに違いない",
+     "zh": "他現在應該已經到了"
+    },
+    {
+     "en": "He must not arrive",
+     "ja": "着いてはいけない",
+     "zh": "他不可以到"
+    }
+   ],
+   "a": 1,
+   "why": {
+    "en": "はず = confident expectation, not a wish.",
+    "ja": "はず = 根拠のある確信。願望ではない。",
+    "zh": "はず = 有根據的推測，不是願望。"
+   }
+  },
+  {
+   "q": {
+    "en": "溶ける vs 溶かす — which one melts the chocolate (you do it)?",
+    "ja": "溶ける と 溶かす — 自分でチョコを溶かすのは？",
+    "zh": "溶ける 和 溶かす — 你動手融化巧克力是哪個？"
+   },
+   "o": [
+    {
+     "en": "溶ける",
+     "ja": "溶ける",
+     "zh": "溶ける"
+    },
+    {
+     "en": "溶かす",
+     "ja": "溶かす",
+     "zh": "溶かす"
+    },
+    {
+     "en": "both",
+     "ja": "両方",
+     "zh": "都可以"
+    }
+   ],
+   "a": 1,
+   "why": {
+    "en": "溶かす is transitive (someone melts it). 溶ける is intransitive (it melts).",
+    "ja": "溶かす は他動詞（人が溶かす）。溶ける は自動詞（勝手に溶ける）。",
+    "zh": "溶かす 是他動詞（有人去融）。溶ける 是自動詞（自己融化）。"
+   }
+  },
+  {
+   "q": {
+    "en": "Imperative of 取り戻す",
+    "ja": "取り戻す の命令形は？",
+    "zh": "取り戻す 的命令形是？"
+   },
+   "o": [
+    {
+     "en": "取り戻せ",
+     "ja": "取り戻せ",
+     "zh": "取り戻せ"
+    },
+    {
+     "en": "取り戻ろ",
+     "ja": "取り戻ろ",
+     "zh": "取り戻ろ"
+    },
+    {
+     "en": "取り戻い",
+     "ja": "取り戻い",
+     "zh": "取り戻い"
+    }
+   ],
+   "a": 0,
+   "why": {
+    "en": "う-verb: last u → e. す → せ.",
+    "ja": "う動詞は最後の u を e に。す → せ。",
+    "zh": "う動詞：最後的 u 改成 e。す → せ。"
+   }
+  }
+ ],
+ "homework": {
+  "h": {
+   "en": "Homework",
+   "ja": "宿題",
+   "zh": "作業"
+  },
+  "list": [
+   {
+    "en": "Sing the chorus (0:55–1:18) with the lyrics open. Record it. Send it, or don't — but record it.",
+    "ja": "歌詞を開いてサビ（0:55–1:18）を歌う。録音する。送っても送らなくてもいい、でも録音はする。",
+    "zh": "打開歌詞唱副歌（0:55–1:18）。錄下來。傳不傳都行，但一定要錄。"
+   },
+   {
+    "en": "Write three orders with the imperative form (命令形) for your Monday self.",
+    "ja": "月曜日の自分への命令を、命令形で3つ書く。",
+    "zh": "用命令形寫三個給星期一的自己的命令。"
+   },
+   {
+    "en": "Find one more song and one word in it you want to keep.",
+    "ja": "もう1曲探して、その中から残したい単語を1つ見つける。",
+    "zh": "再找一首歌，從裡面找一個想留下的單字。"
+   }
+  ]
+ },
+ "cheat": {
+  "h": {
+   "en": "Cheat sheet",
+   "ja": "早見表",
+   "zh": "速查表"
+  },
+  "rows": [
+   [
+    "〜てくる / 〜ていく",
+    {
+     "en": "comes toward me / goes away",
+     "ja": "こちらへ来る／離れていく",
+     "zh": "朝我而來／離開"
+    }
+   ],
+   [
+    "〜ても（無駄だ）",
+    {
+     "en": "even if (it's useless)",
+     "ja": "たとえ〜でも（無駄だ）",
+     "zh": "即使（也沒用）"
+    }
+   ],
+   [
+    "〜くなる / 〜になる",
+    {
+     "en": "to become",
+     "ja": "〜になる",
+     "zh": "變成"
+    }
+   ],
+   [
+    "〜はずだ",
+    {
+     "en": "it should / it's bound to",
+     "ja": "〜はずだ",
+     "zh": "應該／一定會"
+    }
+   ],
+   [
+    "〜ため(に)",
+    {
+     "en": "in order to",
+     "ja": "〜のために",
+     "zh": "為了"
+    }
+   ],
+   [
+    "命令形 〜せ / 〜ろ",
+    {
+     "en": "Do it! (imperative)",
+     "ja": "〜しろ！（命令形）",
+     "zh": "去做！（命令形）"
+    }
+   ]
+  ]
+ },
+ "footer": [
+  {
+   "en": "Made by <a href=\"https://www.italki.com/teacher/4732907\" rel=\"noopener\" target=\"_blank\">Yuuki@Anime Sensei</a>. Part of <a href=\"../\">北斗の拳で日本語</a>.",
+   "ja": "制作: <a href=\"https://www.italki.com/teacher/4732907\" target=\"_blank\" rel=\"noopener\">Yuuki@Anime Sensei</a>。<a href=\"../\">北斗の拳で日本語</a>の一部。",
+   "zh": "由 <a href=\"https://www.italki.com/teacher/4732907\" target=\"_blank\" rel=\"noopener\">Yuuki@Anime Sensei</a> 製作。<a href=\"../\">北斗の拳で日本語</a>的一部分。"
+  },
+  {
+   "en": "Video embedded from the official Toei Animation channel. 愛をとりもどせ!! © 中村公晴 / 山下三智夫. Lyrics are linked, not reproduced.",
+   "ja": "映像は東映アニメーション公式チャンネルからの埋め込み。愛をとりもどせ!! © 中村公晴／山下三智夫。歌詞は転載せずリンクのみ。",
+   "zh": "影片嵌入自東映動畫官方頻道。愛をとりもどせ!! © 中村公晴／山下三智夫。歌詞只提供連結，不轉載。"
+  }
+ ],
+ "quiz_head": {
+  "h2": {
+   "en": "Quiz: did the love come back?",
+   "ja": "クイズ: 愛は戻ったか？",
+   "zh": "測驗：愛回來了嗎？"
+  },
+  "who": {
+   "en": "6 questions. Tap an answer.",
+   "ja": "6問。答えをタップ。",
+   "zh": "6題。點選答案。"
+  }
+ },
+ "score_perfect": " — 愛をとりもどせ!!",
+ "out": "ai"
+}

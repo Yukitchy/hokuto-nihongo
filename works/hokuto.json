@@ -451,9 +451,9 @@
     }
    },
    "done": {
-    "en": "<input class=\"doneBox\" type=\"checkbox\"/> Line 1 done",
-    "ja": "<input class=\"doneBox\" type=\"checkbox\"/> Line 1 done",
-    "zh": "<input class=\"doneBox\" type=\"checkbox\"/> Line 1 done"
+    "en": "Line 1 done",
+    "ja": "セリフ1 完了",
+    "zh": "第1句 完成"
    },
    "nav": "死んでいる"
   },
@@ -680,9 +680,9 @@
     }
    },
    "done": {
-    "en": "<input class=\"doneBox\" type=\"checkbox\"/> Line 2 done",
-    "ja": "<input class=\"doneBox\" type=\"checkbox\"/> Line 2 done",
-    "zh": "<input class=\"doneBox\" type=\"checkbox\"/> Line 2 done"
+    "en": "Line 2 done",
+    "ja": "セリフ2 完了",
+    "zh": "第2句 完成"
    },
    "nav": "悔いなし"
   },
@@ -917,9 +917,9 @@
     }
    },
    "done": {
-    "en": "<input class=\"doneBox\" type=\"checkbox\"/> Line 3 done",
-    "ja": "<input class=\"doneBox\" type=\"checkbox\"/> Line 3 done",
-    "zh": "<input class=\"doneBox\" type=\"checkbox\"/> Line 3 done"
+    "en": "Line 3 done",
+    "ja": "セリフ3 完了",
+    "zh": "第3句 完成"
    },
    "nav": "〜ぬ"
   },
@@ -1134,9 +1134,9 @@
     }
    },
    "done": {
-    "en": "<input class=\"doneBox\" type=\"checkbox\"/> Line 4 done",
-    "ja": "<input class=\"doneBox\" type=\"checkbox\"/> Line 4 done",
-    "zh": "<input class=\"doneBox\" type=\"checkbox\"/> Line 4 done"
+    "en": "Line 4 done",
+    "ja": "セリフ4 完了",
+    "zh": "第4句 完成"
    },
    "nav": "消毒だ"
   },
@@ -1367,9 +1367,9 @@
     }
    },
    "done": {
-    "en": "<input class=\"doneBox\" type=\"checkbox\"/> Line 5 done",
-    "ja": "<input class=\"doneBox\" type=\"checkbox\"/> Line 5 done",
-    "zh": "<input class=\"doneBox\" type=\"checkbox\"/> Line 5 done"
+    "en": "Line 5 done",
+    "ja": "セリフ5 完了",
+    "zh": "第5句 完成"
    },
    "nav": "しか〜ぬ"
   },
@@ -1576,9 +1576,9 @@
     }
    },
    "done": {
-    "en": "<input class=\"doneBox\" type=\"checkbox\"/> Line 6 done",
-    "ja": "<input class=\"doneBox\" type=\"checkbox\"/> Line 6 done",
-    "zh": "<input class=\"doneBox\" type=\"checkbox\"/> Line 6 done"
+    "en": "Line 6 done",
+    "ja": "セリフ6 完了",
+    "zh": "第6句 完成"
    },
    "nav": "ゆえに"
   }
@@ -1587,8 +1587,8 @@
   {
    "q": {
     "en": "「お前はもう死んでいる」— What does もう〜ている express here?",
-    "ja": "「お前はもう死んでいる」— What does もう〜ている express here?",
-    "zh": "「お前はもう死んでいる」— What does もう〜ている express here?"
+    "ja": "「お前はもう死んでいる」— ここの もう〜ている は何を表す？",
+    "zh": "「お前はもう死んでいる」— 這裡的 もう〜ている 表示什麼？"
    },
    "o": [
     {
@@ -1617,8 +1617,8 @@
   {
    "q": {
     "en": "Your boss asks if there is a problem. The Raoh-style short answer is…",
-    "ja": "Your boss asks if there is a problem. The Raoh-style short answer is…",
-    "zh": "Your boss asks if there is a problem. The Raoh-style short answer is…"
+    "ja": "上司に「問題ある？」と聞かれた。ラオウ風の短い答えは…",
+    "zh": "上司問有沒有問題。拉歐風格的簡短回答是…"
    },
    "o": [
     {
@@ -1647,8 +1647,8 @@
   {
    "q": {
     "en": "Convert 諦めない to Souther style.",
-    "ja": "Convert 諦めない to Souther style.",
-    "zh": "Convert 諦めない to Souther style."
+    "ja": "諦めない をサウザー風に。",
+    "zh": "把 諦めない 改成沙烏剎風格。"
    },
    "o": [
     {
@@ -1677,8 +1677,8 @@
   {
    "q": {
     "en": "Which is the irregular one: しない → ?",
-    "ja": "Which is the irregular one: しない → ?",
-    "zh": "Which is the irregular one: しない → ?"
+    "ja": "不規則なのはどれ: しない → ?",
+    "zh": "不規則的是哪個：しない → ?"
    },
    "o": [
     {
@@ -1707,8 +1707,8 @@
   {
    "q": {
     "en": "「手は消毒＿＿だ」= you should disinfect your hands.",
-    "ja": "「手は消毒＿＿だ」= you should disinfect your hands.",
-    "zh": "「手は消毒＿＿だ」= you should disinfect your hands."
+    "ja": "「手は消毒＿＿だ」= 手は消毒したほうがいい。",
+    "zh": "「手は消毒＿＿だ」= 手應該消毒。"
    },
    "o": [
     {
@@ -1737,8 +1737,8 @@
   {
    "q": {
     "en": "「現金しか使えません」means…",
-    "ja": "「現金しか使えません」means…",
-    "zh": "「現金しか使えません」means…"
+    "ja": "「現金しか使えません」の意味は…",
+    "zh": "「現金しか使えません」的意思是…"
    },
    "o": [
     {
@@ -1767,8 +1767,8 @@
   {
    "q": {
     "en": "楽しい → noun?",
-    "ja": "楽しい → noun?",
-    "zh": "楽しい → noun?"
+    "ja": "楽しい → 名詞は？",
+    "zh": "楽しい → 名詞？"
    },
    "o": [
     {
@@ -1797,8 +1797,8 @@
   {
    "q": {
     "en": "「誰よりも愛深きゆえに」— ゆえに is closest to…",
-    "ja": "「誰よりも愛深きゆえに」— ゆえに is closest to…",
-    "zh": "「誰よりも愛深きゆえに」— ゆえに is closest to…"
+    "ja": "「誰よりも愛深きゆえに」— ゆえに に一番近いのは…",
+    "zh": "「誰よりも愛深きゆえに」— ゆえに 最接近…"
    },
    "o": [
     {

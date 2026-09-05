@@ -35,8 +35,8 @@ def build(slug):
              "o": [{l: o.get(l) or o["en"] for l in langs} for o in q["o"]],
              "a": q["a"], "why": {l: q["why"].get(l) or q["why"]["en"] for l in langs}} for q in d["quiz"]]
     walk(d, "", i18n, langs)
-    out_dir = ROOT if d.get("root") else ROOT / "works" / slug
-    base = "" if d.get("root") else "../../"
+    out_dir = ROOT if d.get("root") else ROOT / d.get("out", f"works/{slug}")
+    base = "" if d.get("root") else "../" * len(out_dir.relative_to(ROOT).parts)
     ctx = dict(d=d, quiz=quiz, i18n=i18n, base=base)
     if d["kind"] == "lines":
         vids = {f"yt{L['num']}": L["clip"]["video"] for L in d["lines"]}

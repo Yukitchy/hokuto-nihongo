@@ -11,7 +11,6 @@
 <link rel="stylesheet" href="../style.css">
 <script src="../motif.js"></script>
 <style>
-/* page-specific */
 .player-wrap{position:sticky;top:64px;z-index:20;border:3px solid var(--line);background:#000}
 .player-wrap .yt{aspect-ratio:16/9;width:100%}
 .player-wrap iframe{width:100%;height:100%;display:block}
@@ -43,14 +42,11 @@
 @media(max-width:880px){.layout{grid-template-columns:1fr}.layout .left{position:static}.player-wrap{position:sticky;top:58px}}
 </style>
 </head>
-<body>
-
-<header class="top">
+<body><header class="top">
   <div class="wrap">
-    <a class="brand" href="../">北斗<b>×</b>日本語</a>
+    <a class="brand" href="../../">北斗<b>×</b>日本語</a>
     <nav id="nav">
-      <a href="../" data-i18n="nav.back">← Lines</a>
-      <a href="#s1">1 SHOCK</a><a href="#s2">2 〜ても</a><a href="#s3">3 〜くなる</a><a href="#s4">4 〜はず</a><a href="#s5">5 命令形</a><a href="#quiz" data-i18n="nav.quiz">Quiz</a>
+      <a href="../../" data-i18n="nav.back">← Lines</a><a href="#s1">1 SHOCK</a><a href="#s2">2 〜ても</a><a href="#s3">3 〜くなる</a><a href="#s4">4 〜はず</a><a href="#s5">5 命令形</a><a href="#quiz" data-i18n="nav.quiz">Quiz</a>
     </nav>
     <div class="lang" id="lang"><button data-lang="en" class="on">EN</button><button data-lang="ja">日本語</button><button data-lang="zh">中文</button></div>
   </div>
@@ -59,14 +55,14 @@
 <div class="hero" id="top">
   <div class="wrap">
     <span class="eyebrow" data-i18n="hero.eyebrow">Song lesson · JLPT N4–N3 · with Yuuki@Anime Sensei</span>
-    <h1>YOU は SHOCK<span class="en" data-i18n="hero.sub">Learn Japanese from the opening 「愛をとりもどせ!!」</span></h1>
+    <h1>YOU は SHOCK<span class="en" data-i18n="hero.h1_en">Learn Japanese from the opening 「愛をとりもどせ!!」</span></h1>
     <p class="lead" data-i18n="hero.lead">Crystal King, 1984. Ninety seconds of screaming love. Loop each part of the official video, pick up the words, find the grammar, then sing it back to Kenshiro.</p>
     <div class="howto">
-      <div><div class="n">1</div><div class="t" data-i18n="how.1t">Listen</div><div class="d" data-i18n="how.1d">Play the part once.</div></div>
-      <div><div class="n">2</div><div class="t" data-i18n="how.2t">Loop</div><div class="d" data-i18n="how.2d">Loop it. Slow it down.</div></div>
-      <div><div class="n">3</div><div class="t" data-i18n="how.3t">Read</div><div class="d" data-i18n="how.3d">Open the lyrics in a second tab.</div></div>
-      <div><div class="n">4</div><div class="t" data-i18n="how.4t">Words</div><div class="d" data-i18n="how.4d">Learn the words and the pattern.</div></div>
-      <div><div class="n">5</div><div class="t" data-i18n="how.5t">Sing</div><div class="d" data-i18n="how.5d">Record yourself. Loudly.</div></div>
+      <div><div class="n">1</div><div class="t" data-i18n="hero.howto.0.t">Listen</div><div class="d" data-i18n="hero.howto.0.d">Play the part once.</div></div>
+      <div><div class="n">2</div><div class="t" data-i18n="hero.howto.1.t">Loop</div><div class="d" data-i18n="hero.howto.1.d">Loop it. Slow it down.</div></div>
+      <div><div class="n">3</div><div class="t" data-i18n="hero.howto.2.t">Read</div><div class="d" data-i18n="hero.howto.2.d">Open the lyrics in a second tab.</div></div>
+      <div><div class="n">4</div><div class="t" data-i18n="hero.howto.3.t">Words</div><div class="d" data-i18n="hero.howto.3.d">Learn the words and the pattern.</div></div>
+      <div><div class="n">5</div><div class="t" data-i18n="hero.howto.4.t">Sing</div><div class="d" data-i18n="hero.howto.4.d">Record yourself. Loudly.</div></div>
     </div>
   </div>
 </div>
@@ -79,221 +75,210 @@
           <div class="yt" id="ytOP"></div>
           <div class="pbar">
             <span class="now" id="now">0:00</span>
-            <button class="btn sm primary" id="playAll" data-i18n="btn.all">▶ Whole song</button>
+            <button class="btn sm primary" id="playAll" data-i18n="ui.all">▶ Whole song</button>
             <button class="btn sm" id="stopAll">⏹</button>
-            <button class="btn sm" id="slowAll" data-i18n="btn.slow">🐢 0.75×</button>
+            <button class="btn sm" id="slowAll" data-i18n="ui.slow">🐢 0.75×</button>
           </div>
         </div>
         <div class="lyrics">
-          <h3 data-i18n="ly.h">Lyrics</h3>
-          <p data-i18n="ly.p">The lyrics are copyrighted, so they are not printed on this page. Open them on the official lyrics site in a second tab and sing along while you loop.</p>
+          <h3 data-i18n="lyrics.h">Lyrics</h3>
+          <p data-i18n="lyrics.p">The lyrics are copyrighted, so they are not printed on this page. Open them on the official lyrics site in a second tab and sing along while you loop.</p>
           <div class="row">
-            <a class="btn dark sm" href="https://www.uta-net.com/song/163/" target="_blank" rel="noopener">歌ネット (official)</a>
-            <a class="btn sm" href="https://utaten.com/lyric/ja00001833/" target="_blank" rel="noopener" data-i18n="ly.furi">うたてん (with furigana)</a>
+            <a class="btn sm dark" href="https://www.uta-net.com/song/163/" target="_blank" rel="noopener" data-i18n="lyrics.links.0.text">歌ネット (official)</a>
+            <a class="btn sm" href="https://utaten.com/lyric/ja00001833/" target="_blank" rel="noopener" data-i18n="lyrics.links.1.text">うたてん (with furigana)</a>
           </div>
         </div>
         <div class="title-line">
           <p class="jp"><ruby>愛<rt>あい</rt></ruby>をとりもどせ!!</p>
-          <p class="en" data-i18n="title.en">"<i>Take back</i> the love!!" — the title, and the last line you'll sing.</p>
+          <p class="en" data-i18n="title_line.en">"<i>Take back</i> the love!!" — the title, and the last line you'll sing.</p>
           <div class="ctl" style="margin-top:12px">
             <button class="btn act-say" data-say="愛を取り戻せ！">🔊</button>
-            <button class="btn act-seg" data-seg="74.2,78.2" data-i18n="btn.loopline">🔁 Loop this line</button>
-            <div class="rec"><button class="btn dark act-rec" data-i18n="btn.rec">🎙 Sing it</button><span class="dot"></span><audio controls class="mine" hidden></audio></div>
+            <button class="btn act-seg" data-seg="74.2,78.2" data-i18n="ui.loopline">🔁 Loop this line</button>
+            <div class="rec"><button class="btn dark act-rec" data-i18n="ui.rec">🎙 Sing it</button><span class="dot"></span><audio controls class="mine" hidden></audio></div>
           </div>
         </div>
       </div>
 
       <div class="right">
-
-        <!-- S1 -->
         <div class="seg" id="s1">
-          <div class="head"><div class="n">1</div><h2 data-i18n="s1.h">The hook: YOU は SHOCK</h2><span class="t">0:06–0:17</span></div>
+          <div class="head"><div class="n">1</div><h2 data-i18n="segments.0.h">The hook: YOU は SHOCK</h2><span class="t">0:06–0:17</span></div>
           <div class="body">
-            <div class="ctl" data-seg="5.8,17.5"><button class="btn primary act-seg" data-seg="5.8,17.5" data-i18n="btn.loop">🔁 Loop this part</button><div class="loopbar"><i></i></div></div>
-            <p class="cue" data-i18n="s1.cue">Two lines, same shape. Listen for the English word after <b>は</b>, and for the verb <b>落ちてくる</b> at the end of each line.</p>
+            <div class="ctl" data-seg="5.8,17.5"><button class="btn primary act-seg" data-seg="5.8,17.5" data-i18n="ui.loop">🔁 Loop this part</button><div class="loopbar"><i></i></div></div>
+            <p class="cue" data-i18n="segments.0.cue">Two lines, same shape. Listen for the English word after <b>は</b>, and for the verb <b>落ちてくる</b> at the end of each line.</p>
             <table>
-              <tr><th data-i18n="th.word">word</th><th data-i18n="th.meaning">meaning</th></tr>
-              <tr><td class="w">YOU は SHOCK</td><td data-i18n="s1.w1">English noun + は = a Japanese sentence. 80s J-pop loved this. "You (are) shock" = you shock me.</td></tr>
-              <tr><td class="w"><ruby>愛<rt>あい</rt></ruby></td><td data-i18n="s1.w2">love</td></tr>
-              <tr><td class="w"><ruby>空<rt>そら</rt></ruby></td><td data-i18n="s1.w3">sky</td></tr>
-              <tr><td class="w"><ruby>胸<rt>むね</rt></ruby></td><td data-i18n="s1.w4">chest — and in songs, the heart</td></tr>
-              <tr><td class="w"><ruby>落<rt>お</rt></ruby>ちてくる</td><td data-i18n="s1.w5">落ちる (fall) + てくる = falls <b>toward me</b></td></tr>
+              <tr><th data-i18n="ui.word">word</th><th data-i18n="ui.meaning">meaning</th></tr>
+              <tr><td class="w">YOU は SHOCK</td><td data-i18n="segments.0.words.0.1">English noun + は = a Japanese sentence. 80s J-pop loved this. "You (are) shock" = you shock me.</td></tr>
+              <tr><td class="w"><ruby>愛<rt>あい</rt></ruby></td><td data-i18n="segments.0.words.1.1">love</td></tr>
+              <tr><td class="w"><ruby>空<rt>そら</rt></ruby></td><td data-i18n="segments.0.words.2.1">sky</td></tr>
+              <tr><td class="w"><ruby>胸<rt>むね</rt></ruby></td><td data-i18n="segments.0.words.3.1">chest — and in songs, the heart</td></tr>
+              <tr><td class="w"><ruby>落<rt>お</rt></ruby>ちてくる</td><td data-i18n="segments.0.words.4.1">落ちる (fall) + てくる = falls <b>toward me</b></td></tr>
             </table>
-            <div class="gp" data-i18n="s1.gp"><b>Verb-て + くる</b> = the action comes toward the speaker. <b>Verb-て + いく</b> = it goes away. The sky falls <i>onto me</i>: 落ちて<b>くる</b>.</div>
+            <div class="gp" data-i18n="segments.0.gp.0"><b>Verb-て + くる</b> = the action comes toward the speaker. <b>Verb-て + いく</b> = it goes away. The sky falls <i>onto me</i>: 落ちて<b>くる</b>.</div>
             <ul class="ex">
-              <li><ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>ってきた <span class="m" data-i18n="s1.e1">it started to rain (on me)</span><button class="spk" data-say="雨が降ってきた">🔊</button></li>
-              <li><ruby>友<rt>とも</rt></ruby>だちが<ruby>走<rt>はし</rt></ruby>ってくる <span class="m" data-i18n="s1.e2">my friend comes running (toward me)</span><button class="spk" data-say="友だちが走ってくる">🔊</button></li>
-              <li><ruby>鳥<rt>とり</rt></ruby>が<ruby>飛<rt>と</rt></ruby>んでいく <span class="m" data-i18n="s1.e3">the bird flies away</span><button class="spk" data-say="鳥が飛んでいく">🔊</button></li>
+              <li><ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>ってきた <span class="m" data-i18n="segments.0.examples.0.m">it started to rain (on me)</span><button class="spk" data-say="雨が降ってきた">🔊</button></li>
+              <li><ruby>友<rt>とも</rt></ruby>だちが<ruby>走<rt>はし</rt></ruby>ってくる <span class="m" data-i18n="segments.0.examples.1.m">my friend comes running (toward me)</span><button class="spk" data-say="友だちが走ってくる">🔊</button></li>
+              <li><ruby>鳥<rt>とり</rt></ruby>が<ruby>飛<rt>と</rt></ruby>んでいく <span class="m" data-i18n="segments.0.examples.2.m">the bird flies away</span><button class="spk" data-say="鳥が飛んでいく">🔊</button></li>
             </ul>
             <div class="drill">
-              <h3 data-i18n="drill.h">Drill</h3>
+              <h3 data-i18n="segments.0.drill_h">Drill</h3>
               <ol>
-                <li>バスが<button class="blank">来た</button>！<span class="m" data-i18n="s1.d1">The bus came (here)! (来る, past)</span></li>
-                <li><ruby>雪<rt>ゆき</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>って<button class="blank">きた</button>。<span class="m" data-i18n="s1.d2">It started snowing. (てくる, past)</span></li>
-                <li><ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>行<rt>い</rt></ruby>って<button class="blank">しまった</button>。<span class="m" data-i18n="s1.d3">The train went away (and I missed it). (てしまう)</span></li>
+                <li>バスが<button class="blank">来た</button>！<span class="m" data-i18n="segments.0.drill.0.m">The bus came (here)! (来る, past)</span></li>
+                <li><ruby>雪<rt>ゆき</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>って<button class="blank">きた</button>。<span class="m" data-i18n="segments.0.drill.1.m">It started snowing. (てくる, past)</span></li>
+                <li><ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>行<rt>い</rt></ruby>って<button class="blank">しまった</button>。<span class="m" data-i18n="segments.0.drill.2.m">The train went away (and I missed it). (てしまう)</span></li>
               </ol>
               <div class="yourturn">
-                <label data-i18n="s1.yt">Your turn — what shocks you in Tokyo? 「＿＿ は SHOCK」</label>
-                <textarea data-store="ai-s1" data-i18n-ph="s1.ph" placeholder="＿＿ は SHOCK。  e.g. 家賃 は SHOCK。(The rent is a shock.)"></textarea>
-                <div class="row"><button class="btn sm act-say-ta" data-i18n="btn.readmine">🔊 Read mine</button></div>
+                <label data-i18n="segments.0.yourturn.label">Your turn — what shocks you in Tokyo? 「＿＿ は SHOCK」</label>
+                <textarea data-store="ai-s1" data-i18n-ph="segments.0.yourturn.ph" placeholder="＿＿ は SHOCK。  e.g. 家賃 は SHOCK。(The rent is a shock.)"></textarea>
+                <div class="row"><button class="btn sm act-say-ta" data-i18n="ui.readmine">🔊 Read mine</button></div>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- S2 -->
         <div class="seg" id="s2">
-          <div class="head"><div class="n">2</div><h2 data-i18n="s2.h">Verse: chains are useless</h2><span class="t">0:18–0:29</span></div>
+          <div class="head"><div class="n">2</div><h2 data-i18n="segments.1.h">Verse: chains are useless</h2><span class="t">0:18–0:29</span></div>
           <div class="body">
-            <div class="ctl" data-seg="17.8,29.6"><button class="btn primary act-seg" data-seg="17.8,29.6" data-i18n="btn.loop">🔁 Loop this part</button><div class="loopbar"><i></i></div></div>
-            <p class="cue" data-i18n="s2.cue">Fast and rough. Listen for <b>〜ても</b> (even if) followed by <b>無駄</b>, and the word <b>ダウン</b> at the very end.</p>
+            <div class="ctl" data-seg="17.8,29.6"><button class="btn primary act-seg" data-seg="17.8,29.6" data-i18n="ui.loop">🔁 Loop this part</button><div class="loopbar"><i></i></div></div>
+            <p class="cue" data-i18n="segments.1.cue">Fast and rough. Listen for <b>〜ても</b> (even if) followed by <b>無駄</b>, and the word <b>ダウン</b> at the very end.</p>
             <table>
-              <tr><th data-i18n="th.word">word</th><th data-i18n="th.meaning">meaning</th></tr>
-              <tr><td class="w"><ruby>熱<rt>あつ</rt></ruby>い<ruby>心<rt>こころ</rt></ruby></td><td data-i18n="s2.w1">a burning heart (熱い = hot, passionate)</td></tr>
-              <tr><td class="w"><ruby>鎖<rt>くさり</rt></ruby></td><td data-i18n="s2.w2">chain</td></tr>
-              <tr><td class="w">つなぐ</td><td data-i18n="s2.w3">to tie, to chain up (つないでも = even if you chain it)</td></tr>
-              <tr><td class="w"><ruby>無駄<rt>むだ</rt></ruby></td><td data-i18n="s2.w4">useless, no use — one of the most useful words in Japan</td></tr>
-              <tr><td class="w"><ruby>邪魔<rt>じゃま</rt></ruby>する</td><td data-i18n="s2.w5">to get in the way (邪魔する奴 = anyone who gets in the way)</td></tr>
-              <tr><td class="w"><ruby>奴<rt>やつ</rt></ruby></td><td data-i18n="s2.w6">guy, fellow — rough. Fine for villains, not for coworkers.</td></tr>
-              <tr><td class="w"><ruby>指先<rt>ゆびさき</rt></ruby>ひとつで</td><td data-i18n="s2.w7">with a single fingertip (N + ひとつで = with just one N)</td></tr>
-              <tr><td class="w">ダウン</td><td data-i18n="s2.w8">down (a knockdown) — loanwords work as nouns: ダウンさ = they go down</td></tr>
+              <tr><th data-i18n="ui.word">word</th><th data-i18n="ui.meaning">meaning</th></tr>
+              <tr><td class="w"><ruby>熱<rt>あつ</rt></ruby>い<ruby>心<rt>こころ</rt></ruby></td><td data-i18n="segments.1.words.0.1">a burning heart (熱い = hot, passionate)</td></tr>
+              <tr><td class="w"><ruby>鎖<rt>くさり</rt></ruby></td><td data-i18n="segments.1.words.1.1">chain</td></tr>
+              <tr><td class="w">つなぐ</td><td data-i18n="segments.1.words.2.1">to tie, to chain up (つないでも = even if you chain it)</td></tr>
+              <tr><td class="w"><ruby>無駄<rt>むだ</rt></ruby></td><td data-i18n="segments.1.words.3.1">useless, no use — one of the most useful words in Japan</td></tr>
+              <tr><td class="w"><ruby>邪魔<rt>じゃま</rt></ruby>する</td><td data-i18n="segments.1.words.4.1">to get in the way (邪魔する奴 = anyone who gets in the way)</td></tr>
+              <tr><td class="w"><ruby>奴<rt>やつ</rt></ruby></td><td data-i18n="segments.1.words.5.1">guy, fellow — rough. Fine for villains, not for coworkers.</td></tr>
+              <tr><td class="w"><ruby>指先<rt>ゆびさき</rt></ruby>ひとつで</td><td data-i18n="segments.1.words.6.1">with a single fingertip (N + ひとつで = with just one N)</td></tr>
+              <tr><td class="w">ダウン</td><td data-i18n="segments.1.words.7.1">down (a knockdown) — loanwords work as nouns: ダウンさ = they go down</td></tr>
             </table>
-            <div class="gp" data-i18n="s2.gp"><b>Verb-て + も</b> = even if. The verse says: even if you chain a burning heart, it's useless. <b>〜ても無駄だ</b> is a set phrase worth stealing.</div>
+            <div class="gp" data-i18n="segments.1.gp.0"><b>Verb-て + も</b> = even if. The verse says: even if you chain a burning heart, it's useless. <b>〜ても無駄だ</b> is a set phrase worth stealing.</div>
             <ul class="ex">
-              <li><ruby>今<rt>いま</rt></ruby><ruby>謝<rt>あやま</rt></ruby>っても<ruby>無駄<rt>むだ</rt></ruby>だ <span class="m" data-i18n="s2.e1">apologising now is useless</span><button class="spk" data-say="今謝っても無駄だ">🔊</button></li>
-              <li><ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>っても<ruby>行<rt>い</rt></ruby>く <span class="m" data-i18n="s2.e2">I'll go even if it rains</span><button class="spk" data-say="雨が降っても行く">🔊</button></li>
-              <li>ボタンひとつで<ruby>注文<rt>ちゅうもん</rt></ruby>できる <span class="m" data-i18n="s2.e3">you can order with a single button</span><button class="spk" data-say="ボタンひとつで注文できる">🔊</button></li>
+              <li><ruby>今<rt>いま</rt></ruby><ruby>謝<rt>あやま</rt></ruby>っても<ruby>無駄<rt>むだ</rt></ruby>だ <span class="m" data-i18n="segments.1.examples.0.m">apologising now is useless</span><button class="spk" data-say="今謝っても無駄だ">🔊</button></li>
+              <li><ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>っても<ruby>行<rt>い</rt></ruby>く <span class="m" data-i18n="segments.1.examples.1.m">I'll go even if it rains</span><button class="spk" data-say="雨が降っても行く">🔊</button></li>
+              <li>ボタンひとつで<ruby>注文<rt>ちゅうもん</rt></ruby>できる <span class="m" data-i18n="segments.1.examples.2.m">you can order with a single button</span><button class="spk" data-say="ボタンひとつで注文できる">🔊</button></li>
             </ul>
             <div class="drill">
-              <h3 data-i18n="drill.h">Drill</h3>
+              <h3 data-i18n="segments.1.drill_h">Drill</h3>
               <ol>
-                <li><ruby>高<rt>たか</rt></ruby>く<button class="blank">ても</button><ruby>買<rt>か</rt></ruby>う。<span class="m" data-i18n="s2.d1">I'll buy it even if it's expensive. (い-adj: 高く + ても)</span></li>
-                <li><ruby>何回<rt>なんかい</rt></ruby><ruby>説明<rt>せつめい</rt></ruby>し<button class="blank">ても無駄だ</button>。<span class="m" data-i18n="s2.d2">Explaining it any number of times is useless.</span></li>
-                <li>スマホ<button class="blank">ひとつで</button><ruby>旅行<rt>りょこう</rt></ruby>できる。<span class="m" data-i18n="s2.d3">You can travel with just a smartphone.</span></li>
+                <li><ruby>高<rt>たか</rt></ruby>く<button class="blank">ても</button><ruby>買<rt>か</rt></ruby>う。<span class="m" data-i18n="segments.1.drill.0.m">I'll buy it even if it's expensive. (い-adj: 高く + ても)</span></li>
+                <li><ruby>何回<rt>なんかい</rt></ruby><ruby>説明<rt>せつめい</rt></ruby>し<button class="blank">ても無駄だ</button>。<span class="m" data-i18n="segments.1.drill.1.m">Explaining it any number of times is useless.</span></li>
+                <li>スマホ<button class="blank">ひとつで</button><ruby>旅行<rt>りょこう</rt></ruby>できる。<span class="m" data-i18n="segments.1.drill.2.m">You can travel with just a smartphone.</span></li>
               </ol>
               <div class="yourturn">
-                <label data-i18n="s2.yt">Your turn — something that is useless even if you try: 「〜ても無駄だ」</label>
-                <textarea data-store="ai-s2" data-i18n-ph="s2.ph" placeholder="＿＿ても無駄だ。  e.g. 月曜日に早く寝ても無駄だ。"></textarea>
-                <div class="row"><button class="btn sm act-say-ta" data-i18n="btn.readmine">🔊 Read mine</button></div>
+                <label data-i18n="segments.1.yourturn.label">Your turn — something that is useless even if you try: 「〜ても無駄だ」</label>
+                <textarea data-store="ai-s2" data-i18n-ph="segments.1.yourturn.ph" placeholder="＿＿ても無駄だ。  e.g. 月曜日に早く寝ても無駄だ。"></textarea>
+                <div class="row"><button class="btn sm act-say-ta" data-i18n="ui.readmine">🔊 Read mine</button></div>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- S3 -->
         <div class="seg" id="s3">
-          <div class="head"><div class="n">3</div><h2 data-i18n="s3.h">Hook again: heartbeat gets faster</h2><span class="t">0:30–0:41</span></div>
+          <div class="head"><div class="n">3</div><h2 data-i18n="segments.2.h">Hook again: heartbeat gets faster</h2><span class="t">0:30–0:41</span></div>
           <div class="body">
-            <div class="ctl" data-seg="29.8,41.2"><button class="btn primary act-seg" data-seg="29.8,41.2" data-i18n="btn.loop">🔁 Loop this part</button><div class="loopbar"><i></i></div></div>
-            <p class="cue" data-i18n="s3.cue">Same hook, new ending. Listen for <b>鼓動</b> and the change verb <b>速くなる</b>.</p>
+            <div class="ctl" data-seg="29.8,41.2"><button class="btn primary act-seg" data-seg="29.8,41.2" data-i18n="ui.loop">🔁 Loop this part</button><div class="loopbar"><i></i></div></div>
+            <p class="cue" data-i18n="segments.2.cue">Same hook, new ending. Listen for <b>鼓動</b> and the change verb <b>速くなる</b>.</p>
             <table>
-              <tr><th data-i18n="th.word">word</th><th data-i18n="th.meaning">meaning</th></tr>
-              <tr><td class="w"><ruby>鼓動<rt>こどう</rt></ruby></td><td data-i18n="s3.w1">heartbeat (鼓 = drum, 動 = move)</td></tr>
-              <tr><td class="w"><ruby>速<rt>はや</rt></ruby>い → <ruby>速<rt>はや</rt></ruby>くなる</td><td data-i18n="s3.w2">fast → become fast. い-adjective: drop い, add くなる</td></tr>
-              <tr><td class="w"><ruby>俺<rt>おれ</rt></ruby></td><td data-i18n="s3.w3">"I" — rough, masculine. Kenshiro's pronoun. Use 私 with strangers.</td></tr>
+              <tr><th data-i18n="ui.word">word</th><th data-i18n="ui.meaning">meaning</th></tr>
+              <tr><td class="w"><ruby>鼓動<rt>こどう</rt></ruby></td><td data-i18n="segments.2.words.0.1">heartbeat (鼓 = drum, 動 = move)</td></tr>
+              <tr><td class="w"><ruby>速<rt>はや</rt></ruby>い → <ruby>速<rt>はや</rt></ruby>くなる</td><td data-i18n="segments.2.words.1.1">fast → become fast. い-adjective: drop い, add くなる</td></tr>
+              <tr><td class="w"><ruby>俺<rt>おれ</rt></ruby></td><td data-i18n="segments.2.words.2.1">"I" — rough, masculine. Kenshiro's pronoun. Use 私 with strangers.</td></tr>
             </table>
-            <div class="gp" data-i18n="s3.gp"><b>い-adj → 〜くなる</b> / <b>な-adj, noun → 〜になる</b> = to become. 速く<b>なる</b>, 静か<b>になる</b>, 医者<b>になる</b>.</div>
+            <div class="gp" data-i18n="segments.2.gp.0"><b>い-adj → 〜くなる</b> / <b>な-adj, noun → 〜になる</b> = to become. 速く<b>なる</b>, 静か<b>になる</b>, 医者<b>になる</b>.</div>
             <ul class="ex">
-              <li><ruby>日本語<rt>にほんご</rt></ruby>が<ruby>上手<rt>じょうず</rt></ruby>になった <span class="m" data-i18n="s3.e1">my Japanese got good</span><button class="spk" data-say="日本語が上手になった">🔊</button></li>
-              <li><ruby>夜<rt>よる</rt></ruby>は<ruby>寒<rt>さむ</rt></ruby>くなる <span class="m" data-i18n="s3.e2">it gets cold at night</span><button class="spk" data-say="夜は寒くなる">🔊</button></li>
-              <li><ruby>鼓動<rt>こどう</rt></ruby>が<ruby>速<rt>はや</rt></ruby>くなる <span class="m" data-i18n="s3.e3">my heartbeat speeds up</span><button class="spk" data-say="鼓動が速くなる">🔊</button></li>
+              <li><ruby>日本語<rt>にほんご</rt></ruby>が<ruby>上手<rt>じょうず</rt></ruby>になった <span class="m" data-i18n="segments.2.examples.0.m">my Japanese got good</span><button class="spk" data-say="日本語が上手になった">🔊</button></li>
+              <li><ruby>夜<rt>よる</rt></ruby>は<ruby>寒<rt>さむ</rt></ruby>くなる <span class="m" data-i18n="segments.2.examples.1.m">it gets cold at night</span><button class="spk" data-say="夜は寒くなる">🔊</button></li>
+              <li><ruby>鼓動<rt>こどう</rt></ruby>が<ruby>速<rt>はや</rt></ruby>くなる <span class="m" data-i18n="segments.2.examples.2.m">my heartbeat speeds up</span><button class="spk" data-say="鼓動が速くなる">🔊</button></li>
             </ul>
             <div class="drill">
-              <h3 data-i18n="drill.h">Drill</h3>
+              <h3 data-i18n="segments.2.drill_h">Drill</h3>
               <ol>
-                <li><ruby>暑<rt>あつ</rt></ruby>い → <ruby>暑<rt>あつ</rt></ruby><button class="blank">くなる</button><span class="m" data-i18n="s3.d1">hot → get hot</span></li>
-                <li><ruby>静<rt>しず</rt></ruby>か → <ruby>静<rt>しず</rt></ruby>か<button class="blank">になる</button><span class="m" data-i18n="s3.d2">quiet → become quiet</span></li>
-                <li><ruby>大人<rt>おとな</rt></ruby> → <ruby>大人<rt>おとな</rt></ruby><button class="blank">になる</button><span class="m" data-i18n="s3.d3">adult → become an adult</span></li>
+                <li><ruby>暑<rt>あつ</rt></ruby>い → <ruby>暑<rt>あつ</rt></ruby><button class="blank">くなる</button><span class="m" data-i18n="segments.2.drill.0.m">hot → get hot</span></li>
+                <li><ruby>静<rt>しず</rt></ruby>か → <ruby>静<rt>しず</rt></ruby>か<button class="blank">になる</button><span class="m" data-i18n="segments.2.drill.1.m">quiet → become quiet</span></li>
+                <li><ruby>大人<rt>おとな</rt></ruby> → <ruby>大人<rt>おとな</rt></ruby><button class="blank">になる</button><span class="m" data-i18n="segments.2.drill.2.m">adult → become an adult</span></li>
               </ol>
               <div class="yourturn">
-                <label data-i18n="s3.yt">Your turn — what makes your heartbeat faster? 「〜と、鼓動が速くなる」</label>
-                <textarea data-store="ai-s3" data-i18n-ph="s3.ph" placeholder="＿＿と、鼓動が速くなる。  e.g. 秋葉原に行くと、鼓動が速くなる。"></textarea>
-                <div class="row"><button class="btn sm act-say-ta" data-i18n="btn.readmine">🔊 Read mine</button></div>
+                <label data-i18n="segments.2.yourturn.label">Your turn — what makes your heartbeat faster? 「〜と、鼓動が速くなる」</label>
+                <textarea data-store="ai-s3" data-i18n-ph="segments.2.yourturn.ph" placeholder="＿＿と、鼓動が速くなる。  e.g. 秋葉原に行くと、鼓動が速くなる。"></textarea>
+                <div class="row"><button class="btn sm act-say-ta" data-i18n="ui.readmine">🔊 Read mine</button></div>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- S4 -->
         <div class="seg" id="s4">
-          <div class="head"><div class="n">4</div><h2 data-i18n="s4.h">Build-up: a wandering heart</h2><span class="t">0:41–0:53</span></div>
+          <div class="head"><div class="n">4</div><h2 data-i18n="segments.3.h">Build-up: a wandering heart</h2><span class="t">0:41–0:53</span></div>
           <div class="body">
-            <div class="ctl" data-seg="41.4,54.2"><button class="btn primary act-seg" data-seg="41.4,54.2" data-i18n="btn.loop">🔁 Loop this part</button><div class="loopbar"><i></i></div></div>
-            <p class="cue" data-i18n="s4.cue">The tension part. Big literary verbs, and it ends on <b>〜はずさ</b>.</p>
+            <div class="ctl" data-seg="41.4,54.2"><button class="btn primary act-seg" data-seg="41.4,54.2" data-i18n="ui.loop">🔁 Loop this part</button><div class="loopbar"><i></i></div></div>
+            <p class="cue" data-i18n="segments.3.cue">The tension part. Big literary verbs, and it ends on <b>〜はずさ</b>.</p>
             <table>
-              <tr><th data-i18n="th.word">word</th><th data-i18n="th.meaning">meaning</th></tr>
-              <tr><td class="w"><ruby>求<rt>もと</rt></ruby>める</td><td data-i18n="s4.w1">to seek, to long for (愛を求める = seek love)</td></tr>
-              <tr><td class="w"><ruby>彷徨<rt>さまよ</rt></ruby>う</td><td data-i18n="s4.w2">to wander — a poetic word, huge in songs</td></tr>
-              <tr><td class="w"><ruby>燃<rt>も</rt></ruby>える</td><td data-i18n="s4.w3">to burn (熱く燃えてる = is burning hot)</td></tr>
-              <tr><td class="w"><ruby>溶<rt>と</rt></ruby>かす</td><td data-i18n="s4.w4">to melt (something) — transitive. 溶ける = melts by itself</td></tr>
-              <tr><td class="w"><ruby>無残<rt>むざん</rt></ruby>に</td><td data-i18n="s4.w5">cruelly, without mercy — pure 北斗 vocabulary</td></tr>
-              <tr><td class="w"><ruby>飛<rt>と</rt></ruby>び<ruby>散<rt>ち</rt></ruby>る</td><td data-i18n="s4.w6">to scatter, to fly apart (飛ぶ + 散る)</td></tr>
-              <tr><td class="w">〜はずさ</td><td data-i18n="s4.w7">it is bound to ~ / it should ~. さ = a cool, masculine sentence-ender</td></tr>
+              <tr><th data-i18n="ui.word">word</th><th data-i18n="ui.meaning">meaning</th></tr>
+              <tr><td class="w"><ruby>求<rt>もと</rt></ruby>める</td><td data-i18n="segments.3.words.0.1">to seek, to long for (愛を求める = seek love)</td></tr>
+              <tr><td class="w"><ruby>彷徨<rt>さまよ</rt></ruby>う</td><td data-i18n="segments.3.words.1.1">to wander — a poetic word, huge in songs</td></tr>
+              <tr><td class="w"><ruby>燃<rt>も</rt></ruby>える</td><td data-i18n="segments.3.words.2.1">to burn (熱く燃えてる = is burning hot)</td></tr>
+              <tr><td class="w"><ruby>溶<rt>と</rt></ruby>かす</td><td data-i18n="segments.3.words.3.1">to melt (something) — transitive. 溶ける = melts by itself</td></tr>
+              <tr><td class="w"><ruby>無残<rt>むざん</rt></ruby>に</td><td data-i18n="segments.3.words.4.1">cruelly, without mercy — pure 北斗 vocabulary</td></tr>
+              <tr><td class="w"><ruby>飛<rt>と</rt></ruby>び<ruby>散<rt>ち</rt></ruby>る</td><td data-i18n="segments.3.words.5.1">to scatter, to fly apart (飛ぶ + 散る)</td></tr>
+              <tr><td class="w">〜はずさ</td><td data-i18n="segments.3.words.6.1">it is bound to ~ / it should ~. さ = a cool, masculine sentence-ender</td></tr>
             </table>
-            <div class="gp" data-i18n="s4.gp"><b>Plain form + はずだ</b> = I'm confident it's so (based on reason). Not a wish: an expectation. In the song: it's bound to melt everything and scatter.</div>
+            <div class="gp" data-i18n="segments.3.gp.0"><b>Plain form + はずだ</b> = I'm confident it's so (based on reason). Not a wish: an expectation. In the song: it's bound to melt everything and scatter.</div>
             <ul class="ex">
-              <li>もう<ruby>着<rt>つ</rt></ruby>いているはずだ <span class="m" data-i18n="s4.e1">he should have arrived by now</span><button class="spk" data-say="もう着いているはずだ">🔊</button></li>
-              <li><ruby>今日<rt>きょう</rt></ruby>は<ruby>休<rt>やす</rt></ruby>みのはずだ <span class="m" data-i18n="s4.e2">today should be a day off</span><button class="spk" data-say="今日は休みのはずだ">🔊</button></li>
-              <li>そんなはずはない <span class="m" data-i18n="s4.e3">that can't be right</span><button class="spk" data-say="そんなはずはない">🔊</button></li>
+              <li>もう<ruby>着<rt>つ</rt></ruby>いているはずだ <span class="m" data-i18n="segments.3.examples.0.m">he should have arrived by now</span><button class="spk" data-say="もう着いているはずだ">🔊</button></li>
+              <li><ruby>今日<rt>きょう</rt></ruby>は<ruby>休<rt>やす</rt></ruby>みのはずだ <span class="m" data-i18n="segments.3.examples.1.m">today should be a day off</span><button class="spk" data-say="今日は休みのはずだ">🔊</button></li>
+              <li>そんなはずはない <span class="m" data-i18n="segments.3.examples.2.m">that can't be right</span><button class="spk" data-say="そんなはずはない">🔊</button></li>
             </ul>
             <div class="drill">
-              <h3 data-i18n="drill.h">Drill</h3>
+              <h3 data-i18n="segments.3.drill_h">Drill</h3>
               <ol>
-                <li>メールを<ruby>送<rt>おく</rt></ruby>ったから、<ruby>届<rt>とど</rt></ruby>いている<button class="blank">はずだ</button>。<span class="m" data-i18n="s4.d1">I sent the mail, so it should have arrived.</span></li>
-                <li>アイスが<ruby>暑<rt>あつ</rt></ruby>さで<button class="blank">溶けた</button>。<span class="m" data-i18n="s4.d2">The ice cream melted from the heat. (intransitive 溶ける)</span></li>
-                <li>チョコを<button class="blank">溶かして</button>ケーキに<ruby>入<rt>い</rt></ruby>れる。<span class="m" data-i18n="s4.d3">Melt the chocolate and put it in the cake. (transitive 溶かす)</span></li>
+                <li>メールを<ruby>送<rt>おく</rt></ruby>ったから、<ruby>届<rt>とど</rt></ruby>いている<button class="blank">はずだ</button>。<span class="m" data-i18n="segments.3.drill.0.m">I sent the mail, so it should have arrived.</span></li>
+                <li>アイスが<ruby>暑<rt>あつ</rt></ruby>さで<button class="blank">溶けた</button>。<span class="m" data-i18n="segments.3.drill.1.m">The ice cream melted from the heat. (intransitive 溶ける)</span></li>
+                <li>チョコを<button class="blank">溶かして</button>ケーキに<ruby>入<rt>い</rt></ruby>れる。<span class="m" data-i18n="segments.3.drill.2.m">Melt the chocolate and put it in the cake. (transitive 溶かす)</span></li>
               </ol>
               <div class="yourturn">
-                <label data-i18n="s4.yt">Your turn — a confident prediction about tomorrow's lesson: 「〜はずだ」</label>
-                <textarea data-store="ai-s4" data-i18n-ph="s4.ph" placeholder="＿＿はずだ。  e.g. 明日のレッスンは楽しいはずだ。"></textarea>
-                <div class="row"><button class="btn sm act-say-ta" data-i18n="btn.readmine">🔊 Read mine</button></div>
+                <label data-i18n="segments.3.yourturn.label">Your turn — a confident prediction about tomorrow's lesson: 「〜はずだ」</label>
+                <textarea data-store="ai-s4" data-i18n-ph="segments.3.yourturn.ph" placeholder="＿＿はずだ。  e.g. 明日のレッスンは楽しいはずだ。"></textarea>
+                <div class="row"><button class="btn sm act-say-ta" data-i18n="ui.readmine">🔊 Read mine</button></div>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- S5 -->
         <div class="seg" id="s5">
-          <div class="head"><div class="n">5</div><h2 data-i18n="s5.h">Chorus: take back the love</h2><span class="t">0:55–1:18</span></div>
+          <div class="head"><div class="n">5</div><h2 data-i18n="segments.4.h">Chorus: take back the love</h2><span class="t">0:55–1:18</span></div>
           <div class="body">
-            <div class="ctl" data-seg="55.2,78.2"><button class="btn primary act-seg" data-seg="55.2,78.2" data-i18n="btn.loop">🔁 Loop this part</button><div class="loopbar"><i></i></div></div>
-            <p class="cue" data-i18n="s5.cue">The chorus. Listen for <b>〜ため</b> (in order to), <b>見失った</b>, and the command at the very end: <b>取り戻せ</b>.</p>
+            <div class="ctl" data-seg="55.2,78.2"><button class="btn primary act-seg" data-seg="55.2,78.2" data-i18n="ui.loop">🔁 Loop this part</button><div class="loopbar"><i></i></div></div>
+            <p class="cue" data-i18n="segments.4.cue">The chorus. Listen for <b>〜ため</b> (in order to), <b>見失った</b>, and the command at the very end: <b>取り戻せ</b>.</p>
             <table>
-              <tr><th data-i18n="th.word">word</th><th data-i18n="th.meaning">meaning</th></tr>
-              <tr><td class="w"><ruby>守<rt>まも</rt></ruby>る</td><td data-i18n="s5.w1">to protect</td></tr>
-              <tr><td class="w">〜ため(に)</td><td data-i18n="s5.w2">in order to (守るため = in order to protect)</td></tr>
-              <tr><td class="w"><ruby>旅立<rt>たびだ</rt></ruby>つ</td><td data-i18n="s5.w3">to set out on a journey (旅 + 立つ)</td></tr>
-              <tr><td class="w"><ruby>明日<rt>あす</rt></ruby></td><td data-i18n="s5.w4">tomorrow — read あす here, the formal/poetic reading (everyday: あした)</td></tr>
-              <tr><td class="w"><ruby>見失<rt>みうしな</rt></ruby>う</td><td data-i18n="s5.w5">to lose sight of (見る + 失う)</td></tr>
-              <tr><td class="w"><ruby>微笑<rt>ほほえ</rt></ruby>み</td><td data-i18n="s5.w6">a smile (noun from 微笑む)</td></tr>
-              <tr><td class="w">〜など</td><td data-i18n="s5.w7">"things like ~" — here it's dismissive: a face like that? no thanks</td></tr>
-              <tr><td class="w"><ruby>見<rt>み</rt></ruby>たくはない</td><td data-i18n="s5.w8">I do NOT want to see (見たい → 見たく + は + ない, は adds stress)</td></tr>
-              <tr><td class="w"><ruby>取<rt>と</rt></ruby>り<ruby>戻<rt>もど</rt></ruby>す → <ruby>取<rt>と</rt></ruby>り<ruby>戻<rt>もど</rt></ruby>せ</td><td data-i18n="s5.w9">to get back → GET IT BACK! (imperative)</td></tr>
+              <tr><th data-i18n="ui.word">word</th><th data-i18n="ui.meaning">meaning</th></tr>
+              <tr><td class="w"><ruby>守<rt>まも</rt></ruby>る</td><td data-i18n="segments.4.words.0.1">to protect</td></tr>
+              <tr><td class="w">〜ため(に)</td><td data-i18n="segments.4.words.1.1">in order to (守るため = in order to protect)</td></tr>
+              <tr><td class="w"><ruby>旅立<rt>たびだ</rt></ruby>つ</td><td data-i18n="segments.4.words.2.1">to set out on a journey (旅 + 立つ)</td></tr>
+              <tr><td class="w"><ruby>明日<rt>あす</rt></ruby></td><td data-i18n="segments.4.words.3.1">tomorrow — read あす here, the formal/poetic reading (everyday: あした)</td></tr>
+              <tr><td class="w"><ruby>見失<rt>みうしな</rt></ruby>う</td><td data-i18n="segments.4.words.4.1">to lose sight of (見る + 失う)</td></tr>
+              <tr><td class="w"><ruby>微笑<rt>ほほえ</rt></ruby>み</td><td data-i18n="segments.4.words.5.1">a smile (noun from 微笑む)</td></tr>
+              <tr><td class="w">〜など</td><td data-i18n="segments.4.words.6.1">"things like ~" — here it's dismissive: a face like that? no thanks</td></tr>
+              <tr><td class="w"><ruby>見<rt>み</rt></ruby>たくはない</td><td data-i18n="segments.4.words.7.1">I do NOT want to see (見たい → 見たく + は + ない, は adds stress)</td></tr>
+              <tr><td class="w"><ruby>取<rt>と</rt></ruby>り<ruby>戻<rt>もど</rt></ruby>す → <ruby>取<rt>と</rt></ruby>り<ruby>戻<rt>もど</rt></ruby>せ</td><td data-i18n="segments.4.words.8.1">to get back → GET IT BACK! (imperative)</td></tr>
             </table>
-            <div class="gp" data-i18n="s5.gp"><b>Imperative form (命令形)</b>: う-verbs → change the last u to e (取り戻す → 取り戻せ, 行く → 行け). る-verbs → ろ (食べる → 食べろ). する → しろ, 来る → 来い. Rough and direct: for songs, sports, emergencies, and Kenshiro.</div>
+            <div class="gp" data-i18n="segments.4.gp.0"><b>Imperative form (命令形)</b>: う-verbs → change the last u to e (取り戻す → 取り戻せ, 行く → 行け). る-verbs → ろ (食べる → 食べろ). する → しろ, 来る → 来い. Rough and direct: for songs, sports, emergencies, and Kenshiro.</div>
             <ul class="ex">
-              <li><ruby>頑張<rt>がんば</rt></ruby>れ！ <span class="m" data-i18n="s5.e1">Go for it! (the one imperative everyone uses)</span><button class="spk" data-say="頑張れ！">🔊</button></li>
-              <li><ruby>逃<rt>に</rt></ruby>げろ！ <span class="m" data-i18n="s5.e2">Run!</span><button class="spk" data-say="逃げろ！">🔊</button></li>
-              <li><ruby>愛<rt>あい</rt></ruby>を<ruby>取<rt>と</rt></ruby>り<ruby>戻<rt>もど</rt></ruby>せ！ <span class="m" data-i18n="s5.e3">Take back the love!</span><button class="spk" data-say="愛を取り戻せ！">🔊</button></li>
+              <li><ruby>頑張<rt>がんば</rt></ruby>れ！ <span class="m" data-i18n="segments.4.examples.0.m">Go for it! (the one imperative everyone uses)</span><button class="spk" data-say="頑張れ！">🔊</button></li>
+              <li><ruby>逃<rt>に</rt></ruby>げろ！ <span class="m" data-i18n="segments.4.examples.1.m">Run!</span><button class="spk" data-say="逃げろ！">🔊</button></li>
+              <li><ruby>愛<rt>あい</rt></ruby>を<ruby>取<rt>と</rt></ruby>り<ruby>戻<rt>もど</rt></ruby>せ！ <span class="m" data-i18n="segments.4.examples.2.m">Take back the love!</span><button class="spk" data-say="愛を取り戻せ！">🔊</button></li>
             </ul>
             <div class="drill">
-              <h3 data-i18n="drill.h">Drill — make it an order</h3>
+              <h3 data-i18n="segments.4.drill_h">Drill — make it an order</h3>
               <ol>
-                <li><ruby>行<rt>い</rt></ruby>く → <button class="blank">行け</button><span class="m" data-i18n="s5.d1">go → Go!</span></li>
-                <li><ruby>食<rt>た</rt></ruby>べる → <button class="blank">食べろ</button><span class="m" data-i18n="s5.d2">eat → Eat!</span></li>
-                <li>する → <button class="blank">しろ</button><span class="m" data-i18n="s5.d3">do → Do it! (irregular)</span></li>
-                <li><ruby>来<rt>く</rt></ruby>る → <button class="blank">来い</button><span class="m" data-i18n="s5.d4">come → Come! (irregular, こい)</span></li>
-                <li><ruby>日本語<rt>にほんご</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>する<button class="blank">ために</button><ruby>東京<rt>とうきょう</rt></ruby>に<ruby>来<rt>き</rt></ruby>た。<span class="m" data-i18n="s5.d5">I came to Tokyo in order to study Japanese.</span></li>
+                <li><ruby>行<rt>い</rt></ruby>く → <button class="blank">行け</button><span class="m" data-i18n="segments.4.drill.0.m">go → Go!</span></li>
+                <li><ruby>食<rt>た</rt></ruby>べる → <button class="blank">食べろ</button><span class="m" data-i18n="segments.4.drill.1.m">eat → Eat!</span></li>
+                <li>する → <button class="blank">しろ</button><span class="m" data-i18n="segments.4.drill.2.m">do → Do it! (irregular)</span></li>
+                <li><ruby>来<rt>く</rt></ruby>る → <button class="blank">来い</button><span class="m" data-i18n="segments.4.drill.3.m">come → Come! (irregular, こい)</span></li>
+                <li><ruby>日本語<rt>にほんご</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>する<button class="blank">ために</button><ruby>東京<rt>とうきょう</rt></ruby>に<ruby>来<rt>き</rt></ruby>た。<span class="m" data-i18n="segments.4.drill.4.m">I came to Tokyo in order to study Japanese.</span></li>
               </ol>
               <div class="yourturn">
-                <label data-i18n="s5.yt">Your turn — order yourself to take something back: 「＿＿を取り戻せ！」</label>
-                <textarea data-store="ai-s5" data-i18n-ph="s5.ph" placeholder="＿＿を取り戻せ！  e.g. 睡眠時間を取り戻せ！(Take back your sleep!)"></textarea>
-                <div class="row"><button class="btn sm act-say-ta" data-i18n="btn.readmine">🔊 Read mine</button></div>
+                <label data-i18n="segments.4.yourturn.label">Your turn — order yourself to take something back: 「＿＿を取り戻せ！」</label>
+                <textarea data-store="ai-s5" data-i18n-ph="segments.4.yourturn.ph" placeholder="＿＿を取り戻せ！  e.g. 睡眠時間を取り戻せ！(Take back your sleep!)"></textarea>
+                <div class="row"><button class="btn sm act-say-ta" data-i18n="ui.readmine">🔊 Read mine</button></div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -303,28 +288,28 @@
   <div class="wrap">
     <div class="sec-head">
       <div class="num">✓</div>
-      <div><h2 data-i18n="quiz.h">Quiz: did the love come back?</h2><div class="who" data-i18n="quiz.sub">6 questions. Tap an answer.</div></div>
+      <div><h2 data-i18n="quiz_head.h2">Quiz: did the love come back?</h2><div class="who" data-i18n="quiz_head.who">6 questions. Tap an answer.</div></div>
     </div>
     <div id="quizBox"></div>
     <div class="score" id="score"></div>
     <div class="grid2" style="margin-top:22px">
       <div>
-        <h3 data-i18n="hw.h">Homework</h3>
+        <h3 data-i18n="homework.h">Homework</h3>
         <ol style="padding-left:22px;margin:0;font-size:16px">
-          <li data-i18n="hw.1">Sing the chorus (0:55–1:18) with the lyrics open. Record it. Send it, or don't — but record it.</li>
-          <li data-i18n="hw.2">Write three orders with the imperative form (命令形) for your Monday self.</li>
-          <li data-i18n="hw.3">Find one more song and one word in it you want to keep.</li>
+          <li data-i18n="homework.list.0">Sing the chorus (0:55–1:18) with the lyrics open. Record it. Send it, or don't — but record it.</li>
+          <li data-i18n="homework.list.1">Write three orders with the imperative form (命令形) for your Monday self.</li>
+          <li data-i18n="homework.list.2">Find one more song and one word in it you want to keep.</li>
         </ol>
       </div>
       <div>
-        <h3 data-i18n="cs.h">Cheat sheet</h3>
+        <h3 data-i18n="cheat.h">Cheat sheet</h3>
         <table>
-          <tr><td class="w">〜てくる / 〜ていく</td><td data-i18n="cs.1">comes toward me / goes away</td></tr>
-          <tr><td class="w">〜ても（無駄だ）</td><td data-i18n="cs.2">even if (it's useless)</td></tr>
-          <tr><td class="w">〜くなる / 〜になる</td><td data-i18n="cs.3">to become</td></tr>
-          <tr><td class="w">〜はずだ</td><td data-i18n="cs.4">it should / it's bound to</td></tr>
-          <tr><td class="w">〜ため(に)</td><td data-i18n="cs.5">in order to</td></tr>
-          <tr><td class="w">命令形 〜せ / 〜ろ</td><td data-i18n="cs.6">Do it! (imperative)</td></tr>
+          <tr><td class="w">〜てくる / 〜ていく</td><td data-i18n="cheat.rows.0.1">comes toward me / goes away</td></tr>
+          <tr><td class="w">〜ても（無駄だ）</td><td data-i18n="cheat.rows.1.1">even if (it's useless)</td></tr>
+          <tr><td class="w">〜くなる / 〜になる</td><td data-i18n="cheat.rows.2.1">to become</td></tr>
+          <tr><td class="w">〜はずだ</td><td data-i18n="cheat.rows.3.1">it should / it's bound to</td></tr>
+          <tr><td class="w">〜ため(に)</td><td data-i18n="cheat.rows.4.1">in order to</td></tr>
+          <tr><td class="w">命令形 〜せ / 〜ろ</td><td data-i18n="cheat.rows.5.1">Do it! (imperative)</td></tr>
         </table>
       </div>
     </div>
@@ -333,8 +318,8 @@
 
 <footer>
   <div class="wrap">
-    <span data-i18n="ft.1">Made by <a href="https://www.italki.com/teacher/4732907" target="_blank" rel="noopener">Yuuki@Anime Sensei</a>. Part of <a href="../">北斗の拳で日本語</a>.</span>
-    <span data-i18n="ft.2">Video embedded from the official Toei Animation channel. 愛をとりもどせ!! © 中村公晴 / 山下三智夫. Lyrics are linked, not reproduced.</span>
+    <span data-i18n="footer.0">Made by <a href="https://www.italki.com/teacher/4732907" rel="noopener" target="_blank">Yuuki@Anime Sensei</a>. Part of <a href="../">北斗の拳で日本語</a>.</span>
+    <span data-i18n="footer.1">Video embedded from the official Toei Animation channel. 愛をとりもどせ!! © 中村公晴 / 山下三智夫. Lyrics are linked, not reproduced.</span>
   </div>
 </footer>
 <div class="toast" id="toast"></div>
@@ -344,11 +329,12 @@
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('show'),1800)};
 const store={get:k=>{try{return localStorage.getItem(k)}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}}};
+const TTS_LANG="ja-JP";
 
 /* ---------- one player, many segments ---------- */
 let P=null, loop=null, activeBtn=null, slow=false;
 function onYouTubeIframeAPIReady(){
-  P=new YT.Player('ytOP',{videoId:'xp6rspO4uYY',playerVars:{rel:0,modestbranding:1,playsinline:1,origin:location.origin},
+  P=new YT.Player('ytOP',{videoId:"xp6rspO4uYY",playerVars:{rel:0,modestbranding:1,playsinline:1,origin:location.origin},
     events:{onStateChange:e=>{if(e.data===YT.PlayerState.ENDED)stopLoop();}}});
   setInterval(()=>{ if(P&&P.getCurrentTime){const t=P.getCurrentTime();$('#now').textContent=Math.floor(t/60)+':'+String(Math.floor(t%60)).padStart(2,'0');} },250);
 }
@@ -367,10 +353,10 @@ $('#slowAll').onclick=e=>{slow=!slow;P.setPlaybackRate(slow?0.75:1);e.currentTar
 
 /* ---------- TTS ---------- */
 let voice=null;
-function pickVoice(){const vs=speechSynthesis.getVoices().filter(v=>/^ja/i.test(v.lang));const pref=['O-Ren','Kyoko','Otoya','Google 日本語','Nanami','Keita'];vs.sort((a,b)=>{const ia=pref.findIndex(p=>a.name.includes(p)),ib=pref.findIndex(p=>b.name.includes(p));return (ia<0?99:ia)-(ib<0?99:ib)});voice=vs[0]||null;}
+function pickVoice(){const pfx=TTS_LANG.split('-')[0];const vs=speechSynthesis.getVoices().filter(v=>v.lang.toLowerCase().startsWith(pfx));const pref=['O-Ren','Kyoko','Otoya','Google 日本語','Nanami','Keita','Samantha','Ava','Allison','Daniel','Google US English','Google UK English'];vs.sort((a,b)=>{const ia=pref.findIndex(p=>a.name.includes(p)),ib=pref.findIndex(p=>b.name.includes(p));return (ia<0?99:ia)-(ib<0?99:ib)});voice=vs[0]||null;}
 speechSynthesis.onvoiceschanged=pickVoice; pickVoice();
 let cur=null;
-function say(text,rate,btn){speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='ja-JP';if(voice)u.voice=voice;u.rate=rate;if(cur)cur.classList.remove('on');cur=btn||null;if(btn)btn.classList.add('on');u.onend=u.onerror=()=>{if(btn)btn.classList.remove('on')};speechSynthesis.speak(u);}
+function say(text,rate,btn){speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang=TTS_LANG;if(voice)u.voice=voice;u.rate=rate;if(cur)cur.classList.remove('on');cur=btn||null;if(btn)btn.classList.add('on');u.onend=u.onerror=()=>{if(btn)btn.classList.remove('on')};speechSynthesis.speak(u);}
 $$('.spk,.act-say').forEach(b=>b.onclick=()=>say(b.dataset.say,0.95,b));
 $$('.act-say-ta').forEach(b=>b.onclick=()=>{const ta=b.closest('.yourturn').querySelector('textarea');const v=ta.value.trim();if(!v){toast('Write something first');ta.focus();return;}say(v,0.9,b)});
 
@@ -392,124 +378,28 @@ $$('.blank').forEach(b=>b.onclick=()=>{b.classList.toggle('show');if(b.classList
 $$('textarea[data-store]').forEach(t=>{const v=store.get(t.dataset.store);if(v)t.value=v;t.oninput=()=>store.set(t.dataset.store,t.value)});
 
 /* ---------- Quiz ---------- */
-const QUIZ=[
- {q:{en:'「落ちてくる」— the sky falls…',ja:'「落ちてくる」— 空は…',zh:'「落ちてくる」— 天空…'},o:{en:['away from me','toward me','sideways'],ja:['私から離れて','私の方へ','横に'],zh:['遠離我','朝我而來','往旁邊']},a:1,why:{en:'てくる = the action comes toward the speaker.',ja:'てくる = 動作が話し手の方へ向かってくる。',zh:'てくる = 動作朝說話者而來。'}},
- {q:{en:'「〜ても無駄だ」means…',ja:'「〜ても無駄だ」の意味は…',zh:'「〜ても無駄だ」的意思是…'},o:{en:["it's useless even if you ~","you must ~","it's useful if you ~"],ja:['〜しても意味がない','〜しなければならない','〜すれば役に立つ'],zh:['就算～也沒用','必須～','～的話很有用']},a:0,why:{en:'ても = even if; 無駄 = useless.',ja:'ても = 〜しても。無駄 = 役に立たない。',zh:'ても = 即使；無駄 = 沒用。'}},
- {q:{en:'速い → "becomes fast"',ja:'速い → 「速くなる」の作り方は？',zh:'速い → 「變快」怎麼說？'},o:{en:['速いになる','速くなる','速になる'],ja:['速いになる','速くなる','速になる'],zh:['速いになる','速くなる','速になる']},a:1,why:{en:'い-adjective: drop い, add くなる.',ja:'い形容詞は い を取って くなる。',zh:'い形容詞：去掉 い 加 くなる。'}},
- {q:{en:'「もう着いているはずだ」',ja:'「もう着いているはずだ」の気持ちは？',zh:'「もう着いているはずだ」表達什麼？'},o:{en:['I hope he arrived','He should have arrived by now','He must not arrive'],ja:['着いてほしい','もう着いているに違いない','着いてはいけない'],zh:['希望他到了','他現在應該已經到了','他不可以到']},a:1,why:{en:'はず = confident expectation, not a wish.',ja:'はず = 根拠のある確信。願望ではない。',zh:'はず = 有根據的推測，不是願望。'}},
- {q:{en:'溶ける vs 溶かす — which one melts the chocolate (you do it)?',ja:'溶ける と 溶かす — 自分でチョコを溶かすのは？',zh:'溶ける 和 溶かす — 你動手融化巧克力是哪個？'},o:{en:['溶ける','溶かす','both'],ja:['溶ける','溶かす','両方'],zh:['溶ける','溶かす','都可以']},a:1,why:{en:'溶かす is transitive (someone melts it). 溶ける is intransitive (it melts).',ja:'溶かす は他動詞（人が溶かす）。溶ける は自動詞（勝手に溶ける）。',zh:'溶かす 是他動詞（有人去融）。溶ける 是自動詞（自己融化）。'}},
- {q:{en:'Imperative of 取り戻す',ja:'取り戻す の命令形は？',zh:'取り戻す 的命令形是？'},o:{en:['取り戻せ','取り戻ろ','取り戻い'],ja:['取り戻せ','取り戻ろ','取り戻い'],zh:['取り戻せ','取り戻ろ','取り戻い']},a:0,why:{en:'う-verb: last u → e. す → せ.',ja:'う動詞は最後の u を e に。す → せ。',zh:'う動詞：最後的 u 改成 e。す → せ。'}}
-];
+const QUIZ=[{"a": 1, "o": [{"en": "away from me", "ja": "\u79c1\u304b\u3089\u96e2\u308c\u3066", "zh": "\u9060\u96e2\u6211"}, {"en": "toward me", "ja": "\u79c1\u306e\u65b9\u3078", "zh": "\u671d\u6211\u800c\u4f86"}, {"en": "sideways", "ja": "\u6a2a\u306b", "zh": "\u5f80\u65c1\u908a"}], "q": {"en": "\u300c\u843d\u3061\u3066\u304f\u308b\u300d\u2014 the sky falls\u2026", "ja": "\u300c\u843d\u3061\u3066\u304f\u308b\u300d\u2014 \u7a7a\u306f\u2026", "zh": "\u300c\u843d\u3061\u3066\u304f\u308b\u300d\u2014 \u5929\u7a7a\u2026"}, "why": {"en": "\u3066\u304f\u308b = the action comes toward the speaker.", "ja": "\u3066\u304f\u308b = \u52d5\u4f5c\u304c\u8a71\u3057\u624b\u306e\u65b9\u3078\u5411\u304b\u3063\u3066\u304f\u308b\u3002", "zh": "\u3066\u304f\u308b = \u52d5\u4f5c\u671d\u8aaa\u8a71\u8005\u800c\u4f86\u3002"}}, {"a": 0, "o": [{"en": "it\u0027s useless even if you ~", "ja": "\u301c\u3057\u3066\u3082\u610f\u5473\u304c\u306a\u3044", "zh": "\u5c31\u7b97\uff5e\u4e5f\u6c92\u7528"}, {"en": "you must ~", "ja": "\u301c\u3057\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044", "zh": "\u5fc5\u9808\uff5e"}, {"en": "it\u0027s useful if you ~", "ja": "\u301c\u3059\u308c\u3070\u5f79\u306b\u7acb\u3064", "zh": "\uff5e\u7684\u8a71\u5f88\u6709\u7528"}], "q": {"en": "\u300c\u301c\u3066\u3082\u7121\u99c4\u3060\u300dmeans\u2026", "ja": "\u300c\u301c\u3066\u3082\u7121\u99c4\u3060\u300d\u306e\u610f\u5473\u306f\u2026", "zh": "\u300c\u301c\u3066\u3082\u7121\u99c4\u3060\u300d\u7684\u610f\u601d\u662f\u2026"}, "why": {"en": "\u3066\u3082 = even if; \u7121\u99c4 = useless.", "ja": "\u3066\u3082 = \u301c\u3057\u3066\u3082\u3002\u7121\u99c4 = \u5f79\u306b\u7acb\u305f\u306a\u3044\u3002", "zh": "\u3066\u3082 = \u5373\u4f7f\uff1b\u7121\u99c4 = \u6c92\u7528\u3002"}}, {"a": 1, "o": [{"en": "\u901f\u3044\u306b\u306a\u308b", "ja": "\u901f\u3044\u306b\u306a\u308b", "zh": "\u901f\u3044\u306b\u306a\u308b"}, {"en": "\u901f\u304f\u306a\u308b", "ja": "\u901f\u304f\u306a\u308b", "zh": "\u901f\u304f\u306a\u308b"}, {"en": "\u901f\u306b\u306a\u308b", "ja": "\u901f\u306b\u306a\u308b", "zh": "\u901f\u306b\u306a\u308b"}], "q": {"en": "\u901f\u3044 \u2192 \"becomes fast\"", "ja": "\u901f\u3044 \u2192 \u300c\u901f\u304f\u306a\u308b\u300d\u306e\u4f5c\u308a\u65b9\u306f\uff1f", "zh": "\u901f\u3044 \u2192 \u300c\u8b8a\u5feb\u300d\u600e\u9ebc\u8aaa\uff1f"}, "why": {"en": "\u3044-adjective: drop \u3044, add \u304f\u306a\u308b.", "ja": "\u3044\u5f62\u5bb9\u8a5e\u306f \u3044 \u3092\u53d6\u3063\u3066 \u304f\u306a\u308b\u3002", "zh": "\u3044\u5f62\u5bb9\u8a5e\uff1a\u53bb\u6389 \u3044 \u52a0 \u304f\u306a\u308b\u3002"}}, {"a": 1, "o": [{"en": "I hope he arrived", "ja": "\u7740\u3044\u3066\u307b\u3057\u3044", "zh": "\u5e0c\u671b\u4ed6\u5230\u4e86"}, {"en": "He should have arrived by now", "ja": "\u3082\u3046\u7740\u3044\u3066\u3044\u308b\u306b\u9055\u3044\u306a\u3044", "zh": "\u4ed6\u73fe\u5728\u61c9\u8a72\u5df2\u7d93\u5230\u4e86"}, {"en": "He must not arrive", "ja": "\u7740\u3044\u3066\u306f\u3044\u3051\u306a\u3044", "zh": "\u4ed6\u4e0d\u53ef\u4ee5\u5230"}], "q": {"en": "\u300c\u3082\u3046\u7740\u3044\u3066\u3044\u308b\u306f\u305a\u3060\u300d", "ja": "\u300c\u3082\u3046\u7740\u3044\u3066\u3044\u308b\u306f\u305a\u3060\u300d\u306e\u6c17\u6301\u3061\u306f\uff1f", "zh": "\u300c\u3082\u3046\u7740\u3044\u3066\u3044\u308b\u306f\u305a\u3060\u300d\u8868\u9054\u4ec0\u9ebc\uff1f"}, "why": {"en": "\u306f\u305a = confident expectation, not a wish.", "ja": "\u306f\u305a = \u6839\u62e0\u306e\u3042\u308b\u78ba\u4fe1\u3002\u9858\u671b\u3067\u306f\u306a\u3044\u3002", "zh": "\u306f\u305a = \u6709\u6839\u64da\u7684\u63a8\u6e2c\uff0c\u4e0d\u662f\u9858\u671b\u3002"}}, {"a": 1, "o": [{"en": "\u6eb6\u3051\u308b", "ja": "\u6eb6\u3051\u308b", "zh": "\u6eb6\u3051\u308b"}, {"en": "\u6eb6\u304b\u3059", "ja": "\u6eb6\u304b\u3059", "zh": "\u6eb6\u304b\u3059"}, {"en": "both", "ja": "\u4e21\u65b9", "zh": "\u90fd\u53ef\u4ee5"}], "q": {"en": "\u6eb6\u3051\u308b vs \u6eb6\u304b\u3059 \u2014 which one melts the chocolate (you do it)?", "ja": "\u6eb6\u3051\u308b \u3068 \u6eb6\u304b\u3059 \u2014 \u81ea\u5206\u3067\u30c1\u30e7\u30b3\u3092\u6eb6\u304b\u3059\u306e\u306f\uff1f", "zh": "\u6eb6\u3051\u308b \u548c \u6eb6\u304b\u3059 \u2014 \u4f60\u52d5\u624b\u878d\u5316\u5de7\u514b\u529b\u662f\u54ea\u500b\uff1f"}, "why": {"en": "\u6eb6\u304b\u3059 is transitive (someone melts it). \u6eb6\u3051\u308b is intransitive (it melts).", "ja": "\u6eb6\u304b\u3059 \u306f\u4ed6\u52d5\u8a5e\uff08\u4eba\u304c\u6eb6\u304b\u3059\uff09\u3002\u6eb6\u3051\u308b \u306f\u81ea\u52d5\u8a5e\uff08\u52dd\u624b\u306b\u6eb6\u3051\u308b\uff09\u3002", "zh": "\u6eb6\u304b\u3059 \u662f\u4ed6\u52d5\u8a5e\uff08\u6709\u4eba\u53bb\u878d\uff09\u3002\u6eb6\u3051\u308b \u662f\u81ea\u52d5\u8a5e\uff08\u81ea\u5df1\u878d\u5316\uff09\u3002"}}, {"a": 0, "o": [{"en": "\u53d6\u308a\u623b\u305b", "ja": "\u53d6\u308a\u623b\u305b", "zh": "\u53d6\u308a\u623b\u305b"}, {"en": "\u53d6\u308a\u623b\u308d", "ja": "\u53d6\u308a\u623b\u308d", "zh": "\u53d6\u308a\u623b\u308d"}, {"en": "\u53d6\u308a\u623b\u3044", "ja": "\u53d6\u308a\u623b\u3044", "zh": "\u53d6\u308a\u623b\u3044"}], "q": {"en": "Imperative of \u53d6\u308a\u623b\u3059", "ja": "\u53d6\u308a\u623b\u3059 \u306e\u547d\u4ee4\u5f62\u306f\uff1f", "zh": "\u53d6\u308a\u623b\u3059 \u7684\u547d\u4ee4\u5f62\u662f\uff1f"}, "why": {"en": "\u3046-verb: last u \u2192 e. \u3059 \u2192 \u305b.", "ja": "\u3046\u52d5\u8a5e\u306f\u6700\u5f8c\u306e u \u3092 e \u306b\u3002\u3059 \u2192 \u305b\u3002", "zh": "\u3046\u52d5\u8a5e\uff1a\u6700\u5f8c\u7684 u \u6539\u6210 e\u3002\u3059 \u2192 \u305b\u3002"}}];
 let LANG='en', answered=0, correct=0;
 function renderQuiz(){
   const qb=$('#quizBox'); qb.innerHTML=''; answered=0; correct=0; $('#score').textContent='';
   QUIZ.forEach((it,i)=>{const d=document.createElement('div');d.className='q';
-    d.innerHTML=`<p class="qt">${i+1}. ${it.q[LANG]}</p><div class="opts">${it.o[LANG].map((o,j)=>`<button data-j="${j}">${o}</button>`).join('')}</div><p class="why">${it.why[LANG]}</p>`;
-    d.querySelectorAll('button').forEach(b=>b.onclick=()=>{if(d.classList.contains('answered'))return;d.classList.add('answered');const j=+b.dataset.j;d.querySelectorAll('button').forEach(x=>x.classList.add(+x.dataset.j===it.a?'ok':'ng'));answered++;if(j===it.a)correct++;if(answered===QUIZ.length)$('#score').textContent=`${correct} / ${QUIZ.length}`+(correct===QUIZ.length?' — 愛をとりもどせ!!':'');});
+    d.innerHTML=`<p class="qt">${i+1}. ${it.q[LANG]}</p><div class="opts">${it.o.map((o,j)=>`<button data-j="${j}">${o[LANG]}</button>`).join('')}</div><p class="why">${it.why[LANG]}</p>`;
+    d.querySelectorAll('button').forEach(b=>b.onclick=()=>{if(d.classList.contains('answered'))return;d.classList.add('answered');const j=+b.dataset.j;d.querySelectorAll('button').forEach(x=>x.classList.add(+x.dataset.j===it.a?'ok':'ng'));answered++;if(j===it.a)correct++;if(answered===QUIZ.length)$('#score').textContent=`${correct} / ${QUIZ.length}`+(correct===QUIZ.length?" \u2014 \u611b\u3092\u3068\u308a\u3082\u3069\u305b!!":'');});
     qb.appendChild(d);});
 }
 
 /* ---------- i18n ---------- */
-const I={
-en:{},
-ja:{
-'nav.back':'← セリフ編','nav.quiz':'クイズ',
-'hero.eyebrow':'歌のレッスン · JLPT N4–N3 · Yuuki@Anime Sensei','hero.sub':'オープニング「愛をとりもどせ!!」で日本語を学ぶ',
-'hero.lead':'クリスタルキング、1984年。愛を叫び続ける90秒。公式映像をパートごとにループして、単語を拾い、文法を見つけて、ケンシロウに向かって歌い返そう。',
-'how.1t':'聴く','how.1d':'まずパートを1回再生。','how.2t':'ループ','how.2d':'繰り返す。遅くもできる。','how.3t':'読む','how.3d':'歌詞は別タブで開く。','how.4t':'単語','how.4d':'単語とパターンを覚える。','how.5t':'歌う','how.5d':'録音する。大声で。',
-'btn.all':'▶ 通しで再生','btn.slow':'🐢 0.75倍','btn.loop':'🔁 このパートをループ','btn.loopline':'🔁 この行をループ','btn.rec':'🎙 歌う','btn.readmine':'🔊 自分の文を読ませる',
-'ly.h':'歌詞','ly.p':'歌詞は著作物なのでこのページには載せていません。公式の歌詞サイトを別タブで開いて、ループしながら一緒に歌ってください。','ly.furi':'うたてん（ふりがな付き）',
-'title.en':'「愛を<i>取り戻せ</i>!!」— タイトルであり、最後に歌う一行。',
-'th.word':'語','th.meaning':'意味','drill.h':'ドリル',
-'s1.h':'フック: YOU は SHOCK','s1.cue':'同じ形の2行。<b>は</b>のあとの英単語と、行末の動詞<b>落ちてくる</b>を聞き取って。',
-'s1.w1':'英語の名詞 + は = 日本語の文になる。80年代の歌謡曲はこれが大好き。「YouはShock」= 君は衝撃。','s1.w2':'愛','s1.w3':'空','s1.w4':'胸 — 歌の中では心のこと','s1.w5':'落ちる + てくる = <b>自分の方へ</b>落ちてくる',
-'s1.gp':'<b>動詞て形 + くる</b> = 動作が話し手の方へ来る。<b>て + いく</b> = 離れていく。空が<i>自分に</i>落ちてくる: 落ちて<b>くる</b>。',
-'s1.e1':'雨が降り始めた（自分に向かって）','s1.e2':'友だちが走って来る','s1.e3':'鳥が飛んでいく',
-'s1.d1':'バスが来た！（来る・過去）','s1.d2':'雪が降ってきた。（てくる・過去）','s1.d3':'電車が行ってしまった。（てしまう）',
-'s1.yt':'あなたの番 — 東京で衝撃だったことは？「＿＿ は SHOCK」','s1.ph':'＿＿ は SHOCK。  例: 家賃 は SHOCK。',
-'s2.h':'Aメロ: 鎖でつないでも無駄','s2.cue':'速くて荒い。<b>〜ても</b>（たとえ〜でも）の後の<b>無駄</b>と、最後の<b>ダウン</b>を聞き取って。',
-'s2.w1':'燃えるような心（熱い = 熱い・情熱的）','s2.w2':'鎖','s2.w3':'つなぐ・縛る（つないでも = 縛っても）','s2.w4':'役に立たない — 日本で一番使える単語のひとつ','s2.w5':'邪魔をする（邪魔する奴 = 邪魔をする者は誰でも）','s2.w6':'やつ — 乱暴。悪役には○、同僚には×。','s2.w7':'指先ひとつで（名詞 + ひとつで = たったひとつの〜で）','s2.w8':'ダウン（ノックダウン）— 外来語は名詞として使える: ダウンさ = 倒れる',
-'s2.gp':'<b>動詞て形 + も</b> = たとえ〜でも。Aメロは「燃える心を鎖でつないでも無駄だ」。<b>〜ても無駄だ</b>は盗む価値のある決まり文句。',
-'s2.e1':'今謝っても意味がない','s2.e2':'雨が降っても行く','s2.e3':'ボタンひとつで注文できる',
-'s2.d1':'高くても買う。（い形容詞: 高く + ても）','s2.d2':'何回説明しても無駄だ。','s2.d3':'スマホひとつで旅行できる。',
-'s2.yt':'あなたの番 — やっても無駄なこと:「〜ても無駄だ」','s2.ph':'＿＿ても無駄だ。  例: 月曜日に早く寝ても無駄だ。',
-'s3.h':'フック再び: 鼓動が速くなる','s3.cue':'同じフックで結びが変わる。<b>鼓動</b>と変化の動詞<b>速くなる</b>を聞き取って。',
-'s3.w1':'心臓の音（鼓 = 太鼓、動 = 動く）','s3.w2':'速い → 速くなる。い形容詞は い を取って くなる','s3.w3':'「私」— 乱暴で男っぽい。ケンシロウの一人称。初対面には 私。',
-'s3.gp':'<b>い形容詞 → 〜くなる</b> ／ <b>な形容詞・名詞 → 〜になる</b> = 〜になる。速く<b>なる</b>、静か<b>になる</b>、医者<b>になる</b>。',
-'s3.e1':'日本語が上手になった','s3.e2':'夜は寒くなる','s3.e3':'鼓動が速くなる',
-'s3.d1':'暑い → 暑くなる','s3.d2':'静か → 静かになる','s3.d3':'大人 → 大人になる',
-'s3.yt':'あなたの番 — 鼓動が速くなるのはどんな時？「〜と、鼓動が速くなる」','s3.ph':'＿＿と、鼓動が速くなる。  例: 秋葉原に行くと、鼓動が速くなる。',
-'s4.h':'Bメロ: 彷徨う心','s4.cue':'盛り上げのパート。文語っぽい大きな動詞が並び、<b>〜はずさ</b>で終わる。',
-'s4.w1':'求める・欲しがる（愛を求める）','s4.w2':'さまよう — 詩的な語。歌に頻出','s4.w3':'燃える（熱く燃えてる = 熱く燃えている）','s4.w4':'（何かを）溶かす — 他動詞。溶ける = 自然に溶ける','s4.w5':'むごく・容赦なく — まさに北斗の語彙','s4.w6':'飛び散る（飛ぶ + 散る）','s4.w7':'〜するはずだ。さ = 男っぽくてかっこいい文末',
-'s4.gp':'<b>普通形 + はずだ</b> = 根拠があってそう確信している。願いではなく予測。歌では「すべてを溶かして飛び散るはずだ」。',
-'s4.e1':'もう着いているはずだ','s4.e2':'今日は休みのはずだ','s4.e3':'そんなはずはない',
-'s4.d1':'メールを送ったから、届いているはずだ。','s4.d2':'アイスが暑さで溶けた。（自動詞 溶ける）','s4.d3':'チョコを溶かしてケーキに入れる。（他動詞 溶かす）',
-'s4.yt':'あなたの番 — 明日のレッスンへの自信ある予測:「〜はずだ」','s4.ph':'＿＿はずだ。  例: 明日のレッスンは楽しいはずだ。',
-'s5.h':'サビ: 愛を取り戻せ','s5.cue':'サビ。<b>〜ため</b>（〜のために）、<b>見失った</b>、そして最後の命令<b>取り戻せ</b>を聞き取って。',
-'s5.w1':'守る','s5.w2':'〜のために（守るため = 守るために）','s5.w3':'旅に出る（旅 + 立つ）','s5.w4':'明日 — ここでは あす。改まった・詩的な読み方（普段は あした）','s5.w5':'見失う（見る + 失う）','s5.w6':'微笑み（微笑む の名詞）','s5.w7':'「〜など」— ここでは突き放す言い方: そんな顔など見たくない','s5.w8':'見たくない（見たい → 見たく + は + ない、は で強調）','s5.w9':'取り戻す → 取り戻せ！（命令形）',
-'s5.gp':'<b>命令形</b>: う動詞は最後の u を e に（取り戻す → 取り戻せ、行く → 行け）。る動詞は ろ（食べる → 食べろ）。する → しろ、来る → 来い。荒くて直接的: 歌・スポーツ・緊急時・ケンシロウ用。',
-'s5.e1':'頑張れ！（誰もが使う命令形）','s5.e2':'逃げろ！','s5.e3':'愛を取り戻せ！',
-'s5.d1':'行く → 行け','s5.d2':'食べる → 食べろ','s5.d3':'する → しろ（不規則）','s5.d4':'来る → 来い（不規則・こい）','s5.d5':'日本語を勉強するために東京に来た。',
-'s5.yt':'あなたの番 — 自分に命令して取り戻す:「＿＿を取り戻せ！」','s5.ph':'＿＿を取り戻せ！  例: 睡眠時間を取り戻せ！',
-'quiz.h':'クイズ: 愛は戻ったか？','quiz.sub':'6問。答えをタップ。',
-'hw.h':'宿題','hw.1':'歌詞を開いてサビ（0:55–1:18）を歌う。録音する。送っても送らなくてもいい、でも録音はする。','hw.2':'月曜日の自分への命令を、命令形で3つ書く。','hw.3':'もう1曲探して、その中から残したい単語を1つ見つける。',
-'cs.h':'早見表','cs.1':'こちらへ来る／離れていく','cs.2':'たとえ〜でも（無駄だ）','cs.3':'〜になる','cs.4':'〜はずだ','cs.5':'〜のために','cs.6':'〜しろ！（命令形）',
-'ft.1':'制作: <a href="https://www.italki.com/teacher/4732907" target="_blank" rel="noopener">Yuuki@Anime Sensei</a>。<a href="../">北斗の拳で日本語</a>の一部。','ft.2':'映像は東映アニメーション公式チャンネルからの埋め込み。愛をとりもどせ!! © 中村公晴／山下三智夫。歌詞は転載せずリンクのみ。'
-},
-zh:{
-'nav.back':'← 台詞篇','nav.quiz':'測驗',
-'hero.eyebrow':'歌曲課 · JLPT N4–N3 · 老師 Yuuki@Anime Sensei','hero.sub':'用片頭曲「愛をとりもどせ!!」學日文',
-'hero.lead':'Crystal King，1984年。吶喊愛的90秒。把官方影片一段一段循環，撿單字、找文法，然後唱回去給拳四郎聽。',
-'how.1t':'聽','how.1d':'先把這段播一次。','how.2t':'循環','how.2d':'重複播放，可放慢。','how.3t':'讀','how.3d':'歌詞在另一個分頁打開。','how.4t':'單字','how.4d':'學單字和句型。','how.5t':'唱','how.5d':'錄下來。大聲唱。',
-'btn.all':'▶ 整首播放','btn.slow':'🐢 0.75倍速','btn.loop':'🔁 循環這一段','btn.loopline':'🔁 循環這一句','btn.rec':'🎙 唱唱看','btn.readmine':'🔊 讀我寫的',
-'ly.h':'歌詞','ly.p':'歌詞有版權，所以這頁不刊登。請在另一個分頁打開官方歌詞網站，一邊循環一邊跟著唱。','ly.furi':'うたてん（附假名）',
-'title.en':'「把愛<i>奪回來</i>!!」— 歌名，也是你最後要唱的那句。',
-'th.word':'單字','th.meaning':'意思','drill.h':'練習',
-'s1.h':'副歌鉤子：YOU は SHOCK','s1.cue':'兩句同樣的形狀。留意<b>は</b>後面的英文單字，和每句結尾的動詞<b>落ちてくる</b>。',
-'s1.w1':'英文名詞 + は = 一個日文句子。80年代日本流行歌超愛這招。「You (are) shock」＝你讓我震撼。','s1.w2':'愛','s1.w3':'天空','s1.w4':'胸口 — 在歌裡就是心','s1.w5':'落ちる（掉落）+ てくる = <b>朝我</b>掉下來',
-'s1.gp':'<b>動詞て形 + くる</b> = 動作朝說話者而來。<b>て + いく</b> = 離開。天空<i>朝我</i>掉下來：落ちて<b>くる</b>。',
-'s1.e1':'開始下雨了（朝我下）','s1.e2':'朋友跑過來','s1.e3':'鳥飛走了',
-'s1.d1':'公車來了！（来る，過去式）','s1.d2':'開始下雪了。（てくる，過去式）','s1.d3':'電車開走了（我沒趕上）。（てしまう）',
-'s1.yt':'換你 — 在東京什麼讓你震撼？「＿＿ は SHOCK」','s1.ph':'＿＿ は SHOCK。  例：家賃 は SHOCK。（房租很震撼。）',
-'s2.h':'主歌：鎖鏈也沒用','s2.cue':'又快又粗。留意<b>〜ても</b>（即使）後面的<b>無駄</b>，還有最後的<b>ダウン</b>。',
-'s2.w1':'燃燒的心（熱い = 熱、熱情）','s2.w2':'鎖鏈','s2.w3':'綁住、鎖住（つないでも = 就算鎖住）','s2.w4':'沒用、白費 — 日本最實用的單字之一','s2.w5':'礙事（邪魔する奴 = 任何礙事的人）','s2.w6':'傢伙 — 粗魯。用在反派可以，用在同事不行。','s2.w7':'用一根指尖（名詞 + ひとつで = 只用一個～）','s2.w8':'倒下（擊倒）— 外來語可當名詞：ダウンさ = 他們倒下',
-'s2.gp':'<b>動詞て形 + も</b> = 即使。主歌說：就算把燃燒的心鎖住也沒用。<b>〜ても無駄だ</b>是值得偷走的固定句。',
-'s2.e1':'現在道歉也沒用','s2.e2':'就算下雨我也去','s2.e3':'一個按鈕就能點餐',
-'s2.d1':'就算貴也買。（い形容詞：高く + ても）','s2.d2':'解釋幾次都沒用。','s2.d3':'只靠一支手機就能旅行。',
-'s2.yt':'換你 — 就算試了也沒用的事：「〜ても無駄だ」','s2.ph':'＿＿ても無駄だ。  例：月曜日に早く寝ても無駄だ。',
-'s3.h':'鉤子再來：心跳變快','s3.cue':'同樣的鉤子，不同的結尾。留意<b>鼓動</b>和變化動詞<b>速くなる</b>。',
-'s3.w1':'心跳（鼓 = 鼓，動 = 動）','s3.w2':'快 → 變快。い形容詞：去掉 い 加 くなる','s3.w3':'「我」— 粗魯、男性化。拳四郎的自稱。對陌生人用 私。',
-'s3.gp':'<b>い形容詞 → 〜くなる</b> ／ <b>な形容詞、名詞 → 〜になる</b> = 變成。速く<b>なる</b>、静か<b>になる</b>、医者<b>になる</b>。',
-'s3.e1':'我的日文變好了','s3.e2':'晚上會變冷','s3.e3':'心跳加速',
-'s3.d1':'熱 → 變熱','s3.d2':'安靜 → 變安靜','s3.d3':'大人 → 變成大人',
-'s3.yt':'換你 — 什麼讓你心跳加速？「〜と、鼓動が速くなる」','s3.ph':'＿＿と、鼓動が速くなる。  例：秋葉原に行くと、鼓動が速くなる。',
-'s4.h':'醞釀段：徬徨的心','s4.cue':'緊張升溫的段落。一堆文言感的大動詞，最後停在<b>〜はずさ</b>。',
-'s4.w1':'追求、渴望（愛を求める = 追求愛）','s4.w2':'徬徨、漂泊 — 詩意的字，歌裡超常見','s4.w3':'燃燒（熱く燃えてる = 正熱烈燃燒）','s4.w4':'融化（某物）— 他動詞。溶ける = 自己融化','s4.w5':'殘酷地、毫不留情 — 純正的北斗詞彙','s4.w6':'四散、飛散（飛ぶ + 散る）','s4.w7':'一定會～／應該～。さ = 帥氣的男性句尾',
-'s4.gp':'<b>普通形 + はずだ</b> = 有根據的確信。不是願望，是推測。歌裡：一定會融化一切然後四散。',
-'s4.e1':'他現在應該到了','s4.e2':'今天應該是休假','s4.e3':'不可能是那樣',
-'s4.d1':'我寄了郵件，所以應該已經送到了。','s4.d2':'冰淇淋被熱融化了。（自動詞 溶ける）','s4.d3':'把巧克力融化後放進蛋糕。（他動詞 溶かす）',
-'s4.yt':'換你 — 對明天課程的自信預測：「〜はずだ」','s4.ph':'＿＿はずだ。  例：明日のレッスンは楽しいはずだ。',
-'s5.h':'副歌：把愛奪回來','s5.cue':'副歌。留意<b>〜ため</b>（為了）、<b>見失った</b>，還有最後的命令：<b>取り戻せ</b>。',
-'s5.w1':'守護','s5.w2':'為了（守るため = 為了守護）','s5.w3':'踏上旅程（旅 + 立つ）','s5.w4':'明天 — 這裡讀 あす，正式／詩意的讀法（平常說 あした）','s5.w5':'失去蹤影、看不見了（見る + 失う）','s5.w6':'微笑（微笑む 的名詞）','s5.w7':'「～之類的」— 這裡帶有輕蔑：那種臉？不想看','s5.w8':'我「不」想看（見たい → 見たく + は + ない，は 加強語氣）','s5.w9':'奪回 → 奪回來！（命令形）',
-'s5.gp':'<b>命令形</b>：う動詞把最後的 u 改成 e（取り戻す → 取り戻せ、行く → 行け）。る動詞改 ろ（食べる → 食べろ）。する → しろ、来る → 来い。粗魯直接：用在歌、運動、緊急狀況，還有拳四郎。',
-'s5.e1':'加油！（大家都在用的命令形）','s5.e2':'快逃！','s5.e3':'把愛奪回來！',
-'s5.d1':'去 → 去！','s5.d2':'吃 → 吃！','s5.d3':'做 → 做！（不規則）','s5.d4':'來 → 來！（不規則，こい）','s5.d5':'為了學日文而來東京。',
-'s5.yt':'換你 — 命令自己奪回某樣東西：「＿＿を取り戻せ！」','s5.ph':'＿＿を取り戻せ！  例：睡眠時間を取り戻せ！（把睡眠時間奪回來！）',
-'quiz.h':'測驗：愛回來了嗎？','quiz.sub':'6題。點選答案。',
-'hw.h':'作業','hw.1':'打開歌詞唱副歌（0:55–1:18）。錄下來。傳不傳都行，但一定要錄。','hw.2':'用命令形寫三個給星期一的自己的命令。','hw.3':'再找一首歌，從裡面找一個想留下的單字。',
-'cs.h':'速查表','cs.1':'朝我而來／離開','cs.2':'即使（也沒用）','cs.3':'變成','cs.4':'應該／一定會','cs.5':'為了','cs.6':'去做！（命令形）',
-'ft.1':'由 <a href="https://www.italki.com/teacher/4732907" target="_blank" rel="noopener">Yuuki@Anime Sensei</a> 製作。<a href="../">北斗の拳で日本語</a>的一部分。','ft.2':'影片嵌入自東映動畫官方頻道。愛をとりもどせ!! © 中村公晴／山下三智夫。歌詞只提供連結，不轉載。'
-}};
+const I={"ja": {"cheat.h": "\u65e9\u898b\u8868", "cheat.rows.0.1": "\u3053\u3061\u3089\u3078\u6765\u308b\uff0f\u96e2\u308c\u3066\u3044\u304f", "cheat.rows.1.1": "\u305f\u3068\u3048\u301c\u3067\u3082\uff08\u7121\u99c4\u3060\uff09", "cheat.rows.2.1": "\u301c\u306b\u306a\u308b", "cheat.rows.3.1": "\u301c\u306f\u305a\u3060", "cheat.rows.4.1": "\u301c\u306e\u305f\u3081\u306b", "cheat.rows.5.1": "\u301c\u3057\u308d\uff01\uff08\u547d\u4ee4\u5f62\uff09", "footer.0": "\u5236\u4f5c: \u003ca href=\"https://www.italki.com/teacher/4732907\" target=\"_blank\" rel=\"noopener\"\u003eYuuki@Anime Sensei\u003c/a\u003e\u3002\u003ca href=\"../\"\u003e\u5317\u6597\u306e\u62f3\u3067\u65e5\u672c\u8a9e\u003c/a\u003e\u306e\u4e00\u90e8\u3002", "footer.1": "\u6620\u50cf\u306f\u6771\u6620\u30a2\u30cb\u30e1\u30fc\u30b7\u30e7\u30f3\u516c\u5f0f\u30c1\u30e3\u30f3\u30cd\u30eb\u304b\u3089\u306e\u57cb\u3081\u8fbc\u307f\u3002\u611b\u3092\u3068\u308a\u3082\u3069\u305b!! \u00a9 \u4e2d\u6751\u516c\u6674\uff0f\u5c71\u4e0b\u4e09\u667a\u592b\u3002\u6b4c\u8a5e\u306f\u8ee2\u8f09\u305b\u305a\u30ea\u30f3\u30af\u306e\u307f\u3002", "hero.eyebrow": "\u6b4c\u306e\u30ec\u30c3\u30b9\u30f3 \u00b7 JLPT N4\u2013N3 \u00b7 Yuuki@Anime Sensei", "hero.h1_en": "\u30aa\u30fc\u30d7\u30cb\u30f3\u30b0\u300c\u611b\u3092\u3068\u308a\u3082\u3069\u305b!!\u300d\u3067\u65e5\u672c\u8a9e\u3092\u5b66\u3076", "hero.howto.0.d": "\u307e\u305a\u30d1\u30fc\u30c8\u30921\u56de\u518d\u751f\u3002", "hero.howto.0.t": "\u8074\u304f", "hero.howto.1.d": "\u7e70\u308a\u8fd4\u3059\u3002\u9045\u304f\u3082\u3067\u304d\u308b\u3002", "hero.howto.1.t": "\u30eb\u30fc\u30d7", "hero.howto.2.d": "\u6b4c\u8a5e\u306f\u5225\u30bf\u30d6\u3067\u958b\u304f\u3002", "hero.howto.2.t": "\u8aad\u3080", "hero.howto.3.d": "\u5358\u8a9e\u3068\u30d1\u30bf\u30fc\u30f3\u3092\u899a\u3048\u308b\u3002", "hero.howto.3.t": "\u5358\u8a9e", "hero.howto.4.d": "\u9332\u97f3\u3059\u308b\u3002\u5927\u58f0\u3067\u3002", "hero.howto.4.t": "\u6b4c\u3046", "hero.lead": "\u30af\u30ea\u30b9\u30bf\u30eb\u30ad\u30f3\u30b0\u30011984\u5e74\u3002\u611b\u3092\u53eb\u3073\u7d9a\u3051\u308b90\u79d2\u3002\u516c\u5f0f\u6620\u50cf\u3092\u30d1\u30fc\u30c8\u3054\u3068\u306b\u30eb\u30fc\u30d7\u3057\u3066\u3001\u5358\u8a9e\u3092\u62fe\u3044\u3001\u6587\u6cd5\u3092\u898b\u3064\u3051\u3066\u3001\u30b1\u30f3\u30b7\u30ed\u30a6\u306b\u5411\u304b\u3063\u3066\u6b4c\u3044\u8fd4\u305d\u3046\u3002", "homework.h": "\u5bbf\u984c", "homework.list.0": "\u6b4c\u8a5e\u3092\u958b\u3044\u3066\u30b5\u30d3\uff080:55\u20131:18\uff09\u3092\u6b4c\u3046\u3002\u9332\u97f3\u3059\u308b\u3002\u9001\u3063\u3066\u3082\u9001\u3089\u306a\u304f\u3066\u3082\u3044\u3044\u3001\u3067\u3082\u9332\u97f3\u306f\u3059\u308b\u3002", "homework.list.1": "\u6708\u66dc\u65e5\u306e\u81ea\u5206\u3078\u306e\u547d\u4ee4\u3092\u3001\u547d\u4ee4\u5f62\u30673\u3064\u66f8\u304f\u3002", "homework.list.2": "\u3082\u30461\u66f2\u63a2\u3057\u3066\u3001\u305d\u306e\u4e2d\u304b\u3089\u6b8b\u3057\u305f\u3044\u5358\u8a9e\u30921\u3064\u898b\u3064\u3051\u308b\u3002", "html_lang": "ja", "lyrics.h": "\u6b4c\u8a5e", "lyrics.links.1.text": "\u3046\u305f\u3066\u3093\uff08\u3075\u308a\u304c\u306a\u4ed8\u304d\uff09", "lyrics.p": "\u6b4c\u8a5e\u306f\u8457\u4f5c\u7269\u306a\u306e\u3067\u3053\u306e\u30da\u30fc\u30b8\u306b\u306f\u8f09\u305b\u3066\u3044\u307e\u305b\u3093\u3002\u516c\u5f0f\u306e\u6b4c\u8a5e\u30b5\u30a4\u30c8\u3092\u5225\u30bf\u30d6\u3067\u958b\u3044\u3066\u3001\u30eb\u30fc\u30d7\u3057\u306a\u304c\u3089\u4e00\u7dd2\u306b\u6b4c\u3063\u3066\u304f\u3060\u3055\u3044\u3002", "nav.back": "\u2190 \u30bb\u30ea\u30d5\u7de8", "nav.quiz": "\u30af\u30a4\u30ba", "quiz.0.o.0": "\u79c1\u304b\u3089\u96e2\u308c\u3066", "quiz.0.o.1": "\u79c1\u306e\u65b9\u3078", "quiz.0.o.2": "\u6a2a\u306b", "quiz.0.q": "\u300c\u843d\u3061\u3066\u304f\u308b\u300d\u2014 \u7a7a\u306f\u2026", "quiz.0.why": "\u3066\u304f\u308b = \u52d5\u4f5c\u304c\u8a71\u3057\u624b\u306e\u65b9\u3078\u5411\u304b\u3063\u3066\u304f\u308b\u3002", "quiz.1.o.0": "\u301c\u3057\u3066\u3082\u610f\u5473\u304c\u306a\u3044", "quiz.1.o.1": "\u301c\u3057\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044", "quiz.1.o.2": "\u301c\u3059\u308c\u3070\u5f79\u306b\u7acb\u3064", "quiz.1.q": "\u300c\u301c\u3066\u3082\u7121\u99c4\u3060\u300d\u306e\u610f\u5473\u306f\u2026", "quiz.1.why": "\u3066\u3082 = \u301c\u3057\u3066\u3082\u3002\u7121\u99c4 = \u5f79\u306b\u7acb\u305f\u306a\u3044\u3002", "quiz.2.q": "\u901f\u3044 \u2192 \u300c\u901f\u304f\u306a\u308b\u300d\u306e\u4f5c\u308a\u65b9\u306f\uff1f", "quiz.2.why": "\u3044\u5f62\u5bb9\u8a5e\u306f \u3044 \u3092\u53d6\u3063\u3066 \u304f\u306a\u308b\u3002", "quiz.3.o.0": "\u7740\u3044\u3066\u307b\u3057\u3044", "quiz.3.o.1": "\u3082\u3046\u7740\u3044\u3066\u3044\u308b\u306b\u9055\u3044\u306a\u3044", "quiz.3.o.2": "\u7740\u3044\u3066\u306f\u3044\u3051\u306a\u3044", "quiz.3.q": "\u300c\u3082\u3046\u7740\u3044\u3066\u3044\u308b\u306f\u305a\u3060\u300d\u306e\u6c17\u6301\u3061\u306f\uff1f", "quiz.3.why": "\u306f\u305a = \u6839\u62e0\u306e\u3042\u308b\u78ba\u4fe1\u3002\u9858\u671b\u3067\u306f\u306a\u3044\u3002", "quiz.4.o.2": "\u4e21\u65b9", "quiz.4.q": "\u6eb6\u3051\u308b \u3068 \u6eb6\u304b\u3059 \u2014 \u81ea\u5206\u3067\u30c1\u30e7\u30b3\u3092\u6eb6\u304b\u3059\u306e\u306f\uff1f", "quiz.4.why": "\u6eb6\u304b\u3059 \u306f\u4ed6\u52d5\u8a5e\uff08\u4eba\u304c\u6eb6\u304b\u3059\uff09\u3002\u6eb6\u3051\u308b \u306f\u81ea\u52d5\u8a5e\uff08\u52dd\u624b\u306b\u6eb6\u3051\u308b\uff09\u3002", "quiz.5.q": "\u53d6\u308a\u623b\u3059 \u306e\u547d\u4ee4\u5f62\u306f\uff1f", "quiz.5.why": "\u3046\u52d5\u8a5e\u306f\u6700\u5f8c\u306e u \u3092 e \u306b\u3002\u3059 \u2192 \u305b\u3002", "quiz_head.h2": "\u30af\u30a4\u30ba: \u611b\u306f\u623b\u3063\u305f\u304b\uff1f", "quiz_head.who": "6\u554f\u3002\u7b54\u3048\u3092\u30bf\u30c3\u30d7\u3002", "segments.0.cue": "\u540c\u3058\u5f62\u306e2\u884c\u3002\u003cb\u003e\u306f\u003c/b\u003e\u306e\u3042\u3068\u306e\u82f1\u5358\u8a9e\u3068\u3001\u884c\u672b\u306e\u52d5\u8a5e\u003cb\u003e\u843d\u3061\u3066\u304f\u308b\u003c/b\u003e\u3092\u805e\u304d\u53d6\u3063\u3066\u3002", "segments.0.drill.0.m": "\u30d0\u30b9\u304c\u6765\u305f\uff01\uff08\u6765\u308b\u30fb\u904e\u53bb\uff09", "segments.0.drill.1.m": "\u96ea\u304c\u964d\u3063\u3066\u304d\u305f\u3002\uff08\u3066\u304f\u308b\u30fb\u904e\u53bb\uff09", "segments.0.drill.2.m": "\u96fb\u8eca\u304c\u884c\u3063\u3066\u3057\u307e\u3063\u305f\u3002\uff08\u3066\u3057\u307e\u3046\uff09", "segments.0.drill_h": "\u30c9\u30ea\u30eb", "segments.0.examples.0.m": "\u96e8\u304c\u964d\u308a\u59cb\u3081\u305f\uff08\u81ea\u5206\u306b\u5411\u304b\u3063\u3066\uff09", "segments.0.examples.1.m": "\u53cb\u3060\u3061\u304c\u8d70\u3063\u3066\u6765\u308b", "segments.0.examples.2.m": "\u9ce5\u304c\u98db\u3093\u3067\u3044\u304f", "segments.0.gp.0": "\u003cb\u003e\u52d5\u8a5e\u3066\u5f62 + \u304f\u308b\u003c/b\u003e = \u52d5\u4f5c\u304c\u8a71\u3057\u624b\u306e\u65b9\u3078\u6765\u308b\u3002\u003cb\u003e\u3066 + \u3044\u304f\u003c/b\u003e = \u96e2\u308c\u3066\u3044\u304f\u3002\u7a7a\u304c\u003ci\u003e\u81ea\u5206\u306b\u003c/i\u003e\u843d\u3061\u3066\u304f\u308b: \u843d\u3061\u3066\u003cb\u003e\u304f\u308b\u003c/b\u003e\u3002", "segments.0.h": "\u30d5\u30c3\u30af: YOU \u306f SHOCK", "segments.0.words.0.1": "\u82f1\u8a9e\u306e\u540d\u8a5e + \u306f = \u65e5\u672c\u8a9e\u306e\u6587\u306b\u306a\u308b\u300280\u5e74\u4ee3\u306e\u6b4c\u8b21\u66f2\u306f\u3053\u308c\u304c\u5927\u597d\u304d\u3002\u300cYou\u306fShock\u300d= \u541b\u306f\u885d\u6483\u3002", "segments.0.words.1.1": "\u611b", "segments.0.words.2.1": "\u7a7a", "segments.0.words.3.1": "\u80f8 \u2014 \u6b4c\u306e\u4e2d\u3067\u306f\u5fc3\u306e\u3053\u3068", "segments.0.words.4.1": "\u843d\u3061\u308b + \u3066\u304f\u308b = \u003cb\u003e\u81ea\u5206\u306e\u65b9\u3078\u003c/b\u003e\u843d\u3061\u3066\u304f\u308b", "segments.0.yourturn.label": "\u3042\u306a\u305f\u306e\u756a \u2014 \u6771\u4eac\u3067\u885d\u6483\u3060\u3063\u305f\u3053\u3068\u306f\uff1f\u300c\uff3f\uff3f \u306f SHOCK\u300d", "segments.0.yourturn.ph": "\uff3f\uff3f \u306f SHOCK\u3002  \u4f8b: \u5bb6\u8cc3 \u306f SHOCK\u3002", "segments.1.cue": "\u901f\u304f\u3066\u8352\u3044\u3002\u003cb\u003e\u301c\u3066\u3082\u003c/b\u003e\uff08\u305f\u3068\u3048\u301c\u3067\u3082\uff09\u306e\u5f8c\u306e\u003cb\u003e\u7121\u99c4\u003c/b\u003e\u3068\u3001\u6700\u5f8c\u306e\u003cb\u003e\u30c0\u30a6\u30f3\u003c/b\u003e\u3092\u805e\u304d\u53d6\u3063\u3066\u3002", "segments.1.drill.0.m": "\u9ad8\u304f\u3066\u3082\u8cb7\u3046\u3002\uff08\u3044\u5f62\u5bb9\u8a5e: \u9ad8\u304f + \u3066\u3082\uff09", "segments.1.drill.1.m": "\u4f55\u56de\u8aac\u660e\u3057\u3066\u3082\u7121\u99c4\u3060\u3002", "segments.1.drill.2.m": "\u30b9\u30de\u30db\u3072\u3068\u3064\u3067\u65c5\u884c\u3067\u304d\u308b\u3002", "segments.1.drill_h": "\u30c9\u30ea\u30eb", "segments.1.examples.0.m": "\u4eca\u8b1d\u3063\u3066\u3082\u610f\u5473\u304c\u306a\u3044", "segments.1.examples.1.m": "\u96e8\u304c\u964d\u3063\u3066\u3082\u884c\u304f", "segments.1.examples.2.m": "\u30dc\u30bf\u30f3\u3072\u3068\u3064\u3067\u6ce8\u6587\u3067\u304d\u308b", "segments.1.gp.0": "\u003cb\u003e\u52d5\u8a5e\u3066\u5f62 + \u3082\u003c/b\u003e = \u305f\u3068\u3048\u301c\u3067\u3082\u3002A\u30e1\u30ed\u306f\u300c\u71c3\u3048\u308b\u5fc3\u3092\u9396\u3067\u3064\u306a\u3044\u3067\u3082\u7121\u99c4\u3060\u300d\u3002\u003cb\u003e\u301c\u3066\u3082\u7121\u99c4\u3060\u003c/b\u003e\u306f\u76d7\u3080\u4fa1\u5024\u306e\u3042\u308b\u6c7a\u307e\u308a\u6587\u53e5\u3002", "segments.1.h": "A\u30e1\u30ed: \u9396\u3067\u3064\u306a\u3044\u3067\u3082\u7121\u99c4", "segments.1.words.0.1": "\u71c3\u3048\u308b\u3088\u3046\u306a\u5fc3\uff08\u71b1\u3044 = \u71b1\u3044\u30fb\u60c5\u71b1\u7684\uff09", "segments.1.words.1.1": "\u9396", "segments.1.words.2.1": "\u3064\u306a\u3050\u30fb\u7e1b\u308b\uff08\u3064\u306a\u3044\u3067\u3082 = \u7e1b\u3063\u3066\u3082\uff09", "segments.1.words.3.1": "\u5f79\u306b\u7acb\u305f\u306a\u3044 \u2014 \u65e5\u672c\u3067\u4e00\u756a\u4f7f\u3048\u308b\u5358\u8a9e\u306e\u3072\u3068\u3064", "segments.1.words.4.1": "\u90aa\u9b54\u3092\u3059\u308b\uff08\u90aa\u9b54\u3059\u308b\u5974 = \u90aa\u9b54\u3092\u3059\u308b\u8005\u306f\u8ab0\u3067\u3082\uff09", "segments.1.words.5.1": "\u3084\u3064 \u2014 \u4e71\u66b4\u3002\u60aa\u5f79\u306b\u306f\u25cb\u3001\u540c\u50da\u306b\u306f\u00d7\u3002", "segments.1.words.6.1": "\u6307\u5148\u3072\u3068\u3064\u3067\uff08\u540d\u8a5e + \u3072\u3068\u3064\u3067 = \u305f\u3063\u305f\u3072\u3068\u3064\u306e\u301c\u3067\uff09", "segments.1.words.7.1": "\u30c0\u30a6\u30f3\uff08\u30ce\u30c3\u30af\u30c0\u30a6\u30f3\uff09\u2014 \u5916\u6765\u8a9e\u306f\u540d\u8a5e\u3068\u3057\u3066\u4f7f\u3048\u308b: \u30c0\u30a6\u30f3\u3055 = \u5012\u308c\u308b", "segments.1.yourturn.label": "\u3042\u306a\u305f\u306e\u756a \u2014 \u3084\u3063\u3066\u3082\u7121\u99c4\u306a\u3053\u3068:\u300c\u301c\u3066\u3082\u7121\u99c4\u3060\u300d", "segments.1.yourturn.ph": "\uff3f\uff3f\u3066\u3082\u7121\u99c4\u3060\u3002  \u4f8b: \u6708\u66dc\u65e5\u306b\u65e9\u304f\u5bdd\u3066\u3082\u7121\u99c4\u3060\u3002", "segments.2.cue": "\u540c\u3058\u30d5\u30c3\u30af\u3067\u7d50\u3073\u304c\u5909\u308f\u308b\u3002\u003cb\u003e\u9f13\u52d5\u003c/b\u003e\u3068\u5909\u5316\u306e\u52d5\u8a5e\u003cb\u003e\u901f\u304f\u306a\u308b\u003c/b\u003e\u3092\u805e\u304d\u53d6\u3063\u3066\u3002", "segments.2.drill.0.m": "\u6691\u3044 \u2192 \u6691\u304f\u306a\u308b", "segments.2.drill.1.m": "\u9759\u304b \u2192 \u9759\u304b\u306b\u306a\u308b", "segments.2.drill.2.m": "\u5927\u4eba \u2192 \u5927\u4eba\u306b\u306a\u308b", "segments.2.drill_h": "\u30c9\u30ea\u30eb", "segments.2.examples.0.m": "\u65e5\u672c\u8a9e\u304c\u4e0a\u624b\u306b\u306a\u3063\u305f", "segments.2.examples.1.m": "\u591c\u306f\u5bd2\u304f\u306a\u308b", "segments.2.examples.2.m": "\u9f13\u52d5\u304c\u901f\u304f\u306a\u308b", "segments.2.gp.0": "\u003cb\u003e\u3044\u5f62\u5bb9\u8a5e \u2192 \u301c\u304f\u306a\u308b\u003c/b\u003e \uff0f \u003cb\u003e\u306a\u5f62\u5bb9\u8a5e\u30fb\u540d\u8a5e \u2192 \u301c\u306b\u306a\u308b\u003c/b\u003e = \u301c\u306b\u306a\u308b\u3002\u901f\u304f\u003cb\u003e\u306a\u308b\u003c/b\u003e\u3001\u9759\u304b\u003cb\u003e\u306b\u306a\u308b\u003c/b\u003e\u3001\u533b\u8005\u003cb\u003e\u306b\u306a\u308b\u003c/b\u003e\u3002", "segments.2.h": "\u30d5\u30c3\u30af\u518d\u3073: \u9f13\u52d5\u304c\u901f\u304f\u306a\u308b", "segments.2.words.0.1": "\u5fc3\u81d3\u306e\u97f3\uff08\u9f13 = \u592a\u9f13\u3001\u52d5 = \u52d5\u304f\uff09", "segments.2.words.1.1": "\u901f\u3044 \u2192 \u901f\u304f\u306a\u308b\u3002\u3044\u5f62\u5bb9\u8a5e\u306f \u3044 \u3092\u53d6\u3063\u3066 \u304f\u306a\u308b", "segments.2.words.2.1": "\u300c\u79c1\u300d\u2014 \u4e71\u66b4\u3067\u7537\u3063\u307d\u3044\u3002\u30b1\u30f3\u30b7\u30ed\u30a6\u306e\u4e00\u4eba\u79f0\u3002\u521d\u5bfe\u9762\u306b\u306f \u79c1\u3002", "segments.2.yourturn.label": "\u3042\u306a\u305f\u306e\u756a \u2014 \u9f13\u52d5\u304c\u901f\u304f\u306a\u308b\u306e\u306f\u3069\u3093\u306a\u6642\uff1f\u300c\u301c\u3068\u3001\u9f13\u52d5\u304c\u901f\u304f\u306a\u308b\u300d", "segments.2.yourturn.ph": "\uff3f\uff3f\u3068\u3001\u9f13\u52d5\u304c\u901f\u304f\u306a\u308b\u3002  \u4f8b: \u79cb\u8449\u539f\u306b\u884c\u304f\u3068\u3001\u9f13\u52d5\u304c\u901f\u304f\u306a\u308b\u3002", "segments.3.cue": "\u76db\u308a\u4e0a\u3052\u306e\u30d1\u30fc\u30c8\u3002\u6587\u8a9e\u3063\u307d\u3044\u5927\u304d\u306a\u52d5\u8a5e\u304c\u4e26\u3073\u3001\u003cb\u003e\u301c\u306f\u305a\u3055\u003c/b\u003e\u3067\u7d42\u308f\u308b\u3002", "segments.3.drill.0.m": "\u30e1\u30fc\u30eb\u3092\u9001\u3063\u305f\u304b\u3089\u3001\u5c4a\u3044\u3066\u3044\u308b\u306f\u305a\u3060\u3002", "segments.3.drill.1.m": "\u30a2\u30a4\u30b9\u304c\u6691\u3055\u3067\u6eb6\u3051\u305f\u3002\uff08\u81ea\u52d5\u8a5e \u6eb6\u3051\u308b\uff09", "segments.3.drill.2.m": "\u30c1\u30e7\u30b3\u3092\u6eb6\u304b\u3057\u3066\u30b1\u30fc\u30ad\u306b\u5165\u308c\u308b\u3002\uff08\u4ed6\u52d5\u8a5e \u6eb6\u304b\u3059\uff09", "segments.3.drill_h": "\u30c9\u30ea\u30eb", "segments.3.examples.0.m": "\u3082\u3046\u7740\u3044\u3066\u3044\u308b\u306f\u305a\u3060", "segments.3.examples.1.m": "\u4eca\u65e5\u306f\u4f11\u307f\u306e\u306f\u305a\u3060", "segments.3.examples.2.m": "\u305d\u3093\u306a\u306f\u305a\u306f\u306a\u3044", "segments.3.gp.0": "\u003cb\u003e\u666e\u901a\u5f62 + \u306f\u305a\u3060\u003c/b\u003e = \u6839\u62e0\u304c\u3042\u3063\u3066\u305d\u3046\u78ba\u4fe1\u3057\u3066\u3044\u308b\u3002\u9858\u3044\u3067\u306f\u306a\u304f\u4e88\u6e2c\u3002\u6b4c\u3067\u306f\u300c\u3059\u3079\u3066\u3092\u6eb6\u304b\u3057\u3066\u98db\u3073\u6563\u308b\u306f\u305a\u3060\u300d\u3002", "segments.3.h": "B\u30e1\u30ed: \u5f77\u5fa8\u3046\u5fc3", "segments.3.words.0.1": "\u6c42\u3081\u308b\u30fb\u6b32\u3057\u304c\u308b\uff08\u611b\u3092\u6c42\u3081\u308b\uff09", "segments.3.words.1.1": "\u3055\u307e\u3088\u3046 \u2014 \u8a69\u7684\u306a\u8a9e\u3002\u6b4c\u306b\u983b\u51fa", "segments.3.words.2.1": "\u71c3\u3048\u308b\uff08\u71b1\u304f\u71c3\u3048\u3066\u308b = \u71b1\u304f\u71c3\u3048\u3066\u3044\u308b\uff09", "segments.3.words.3.1": "\uff08\u4f55\u304b\u3092\uff09\u6eb6\u304b\u3059 \u2014 \u4ed6\u52d5\u8a5e\u3002\u6eb6\u3051\u308b = \u81ea\u7136\u306b\u6eb6\u3051\u308b", "segments.3.words.4.1": "\u3080\u3054\u304f\u30fb\u5bb9\u8d66\u306a\u304f \u2014 \u307e\u3055\u306b\u5317\u6597\u306e\u8a9e\u5f59", "segments.3.words.5.1": "\u98db\u3073\u6563\u308b\uff08\u98db\u3076 + \u6563\u308b\uff09", "segments.3.words.6.1": "\u301c\u3059\u308b\u306f\u305a\u3060\u3002\u3055 = \u7537\u3063\u307d\u304f\u3066\u304b\u3063\u3053\u3044\u3044\u6587\u672b", "segments.3.yourturn.label": "\u3042\u306a\u305f\u306e\u756a \u2014 \u660e\u65e5\u306e\u30ec\u30c3\u30b9\u30f3\u3078\u306e\u81ea\u4fe1\u3042\u308b\u4e88\u6e2c:\u300c\u301c\u306f\u305a\u3060\u300d", "segments.3.yourturn.ph": "\uff3f\uff3f\u306f\u305a\u3060\u3002  \u4f8b: \u660e\u65e5\u306e\u30ec\u30c3\u30b9\u30f3\u306f\u697d\u3057\u3044\u306f\u305a\u3060\u3002", "segments.4.cue": "\u30b5\u30d3\u3002\u003cb\u003e\u301c\u305f\u3081\u003c/b\u003e\uff08\u301c\u306e\u305f\u3081\u306b\uff09\u3001\u003cb\u003e\u898b\u5931\u3063\u305f\u003c/b\u003e\u3001\u305d\u3057\u3066\u6700\u5f8c\u306e\u547d\u4ee4\u003cb\u003e\u53d6\u308a\u623b\u305b\u003c/b\u003e\u3092\u805e\u304d\u53d6\u3063\u3066\u3002", "segments.4.drill.0.m": "\u884c\u304f \u2192 \u884c\u3051", "segments.4.drill.1.m": "\u98df\u3079\u308b \u2192 \u98df\u3079\u308d", "segments.4.drill.2.m": "\u3059\u308b \u2192 \u3057\u308d\uff08\u4e0d\u898f\u5247\uff09", "segments.4.drill.3.m": "\u6765\u308b \u2192 \u6765\u3044\uff08\u4e0d\u898f\u5247\u30fb\u3053\u3044\uff09", "segments.4.drill.4.m": "\u65e5\u672c\u8a9e\u3092\u52c9\u5f37\u3059\u308b\u305f\u3081\u306b\u6771\u4eac\u306b\u6765\u305f\u3002", "segments.4.drill_h": "\u30c9\u30ea\u30eb", "segments.4.examples.0.m": "\u9811\u5f35\u308c\uff01\uff08\u8ab0\u3082\u304c\u4f7f\u3046\u547d\u4ee4\u5f62\uff09", "segments.4.examples.1.m": "\u9003\u3052\u308d\uff01", "segments.4.examples.2.m": "\u611b\u3092\u53d6\u308a\u623b\u305b\uff01", "segments.4.gp.0": "\u003cb\u003e\u547d\u4ee4\u5f62\u003c/b\u003e: \u3046\u52d5\u8a5e\u306f\u6700\u5f8c\u306e u \u3092 e \u306b\uff08\u53d6\u308a\u623b\u3059 \u2192 \u53d6\u308a\u623b\u305b\u3001\u884c\u304f \u2192 \u884c\u3051\uff09\u3002\u308b\u52d5\u8a5e\u306f \u308d\uff08\u98df\u3079\u308b \u2192 \u98df\u3079\u308d\uff09\u3002\u3059\u308b \u2192 \u3057\u308d\u3001\u6765\u308b \u2192 \u6765\u3044\u3002\u8352\u304f\u3066\u76f4\u63a5\u7684: \u6b4c\u30fb\u30b9\u30dd\u30fc\u30c4\u30fb\u7dca\u6025\u6642\u30fb\u30b1\u30f3\u30b7\u30ed\u30a6\u7528\u3002", "segments.4.h": "\u30b5\u30d3: \u611b\u3092\u53d6\u308a\u623b\u305b", "segments.4.words.0.1": "\u5b88\u308b", "segments.4.words.1.1": "\u301c\u306e\u305f\u3081\u306b\uff08\u5b88\u308b\u305f\u3081 = \u5b88\u308b\u305f\u3081\u306b\uff09", "segments.4.words.2.1": "\u65c5\u306b\u51fa\u308b\uff08\u65c5 + \u7acb\u3064\uff09", "segments.4.words.3.1": "\u660e\u65e5 \u2014 \u3053\u3053\u3067\u306f \u3042\u3059\u3002\u6539\u307e\u3063\u305f\u30fb\u8a69\u7684\u306a\u8aad\u307f\u65b9\uff08\u666e\u6bb5\u306f \u3042\u3057\u305f\uff09", "segments.4.words.4.1": "\u898b\u5931\u3046\uff08\u898b\u308b + \u5931\u3046\uff09", "segments.4.words.5.1": "\u5fae\u7b11\u307f\uff08\u5fae\u7b11\u3080 \u306e\u540d\u8a5e\uff09", "segments.4.words.6.1": "\u300c\u301c\u306a\u3069\u300d\u2014 \u3053\u3053\u3067\u306f\u7a81\u304d\u653e\u3059\u8a00\u3044\u65b9: \u305d\u3093\u306a\u9854\u306a\u3069\u898b\u305f\u304f\u306a\u3044", "segments.4.words.7.1": "\u898b\u305f\u304f\u306a\u3044\uff08\u898b\u305f\u3044 \u2192 \u898b\u305f\u304f + \u306f + \u306a\u3044\u3001\u306f \u3067\u5f37\u8abf\uff09", "segments.4.words.8.1": "\u53d6\u308a\u623b\u3059 \u2192 \u53d6\u308a\u623b\u305b\uff01\uff08\u547d\u4ee4\u5f62\uff09", "segments.4.yourturn.label": "\u3042\u306a\u305f\u306e\u756a \u2014 \u81ea\u5206\u306b\u547d\u4ee4\u3057\u3066\u53d6\u308a\u623b\u3059:\u300c\uff3f\uff3f\u3092\u53d6\u308a\u623b\u305b\uff01\u300d", "segments.4.yourturn.ph": "\uff3f\uff3f\u3092\u53d6\u308a\u623b\u305b\uff01  \u4f8b: \u7761\u7720\u6642\u9593\u3092\u53d6\u308a\u623b\u305b\uff01", "title_line.en": "\u300c\u611b\u3092\u003ci\u003e\u53d6\u308a\u623b\u305b\u003c/i\u003e!!\u300d\u2014 \u30bf\u30a4\u30c8\u30eb\u3067\u3042\u308a\u3001\u6700\u5f8c\u306b\u6b4c\u3046\u4e00\u884c\u3002", "ui.all": "\u25b6 \u901a\u3057\u3067\u518d\u751f", "ui.drill": "\u30c9\u30ea\u30eb", "ui.loop": "\ud83d\udd01 \u3053\u306e\u30d1\u30fc\u30c8\u3092\u30eb\u30fc\u30d7", "ui.loopline": "\ud83d\udd01 \u3053\u306e\u884c\u3092\u30eb\u30fc\u30d7", "ui.meaning": "\u610f\u5473", "ui.readmine": "\ud83d\udd0a \u81ea\u5206\u306e\u6587\u3092\u8aad\u307e\u305b\u308b", "ui.rec": "\ud83c\udf99 \u6b4c\u3046", "ui.slow": "\ud83d\udc22 0.75\u500d", "ui.word": "\u8a9e"}, "zh": {"cheat.h": "\u901f\u67e5\u8868", "cheat.rows.0.1": "\u671d\u6211\u800c\u4f86\uff0f\u96e2\u958b", "cheat.rows.1.1": "\u5373\u4f7f\uff08\u4e5f\u6c92\u7528\uff09", "cheat.rows.2.1": "\u8b8a\u6210", "cheat.rows.3.1": "\u61c9\u8a72\uff0f\u4e00\u5b9a\u6703", "cheat.rows.4.1": "\u70ba\u4e86", "cheat.rows.5.1": "\u53bb\u505a\uff01\uff08\u547d\u4ee4\u5f62\uff09", "footer.0": "\u7531 \u003ca href=\"https://www.italki.com/teacher/4732907\" target=\"_blank\" rel=\"noopener\"\u003eYuuki@Anime Sensei\u003c/a\u003e \u88fd\u4f5c\u3002\u003ca href=\"../\"\u003e\u5317\u6597\u306e\u62f3\u3067\u65e5\u672c\u8a9e\u003c/a\u003e\u7684\u4e00\u90e8\u5206\u3002", "footer.1": "\u5f71\u7247\u5d4c\u5165\u81ea\u6771\u6620\u52d5\u756b\u5b98\u65b9\u983b\u9053\u3002\u611b\u3092\u3068\u308a\u3082\u3069\u305b!! \u00a9 \u4e2d\u6751\u516c\u6674\uff0f\u5c71\u4e0b\u4e09\u667a\u592b\u3002\u6b4c\u8a5e\u53ea\u63d0\u4f9b\u9023\u7d50\uff0c\u4e0d\u8f49\u8f09\u3002", "hero.eyebrow": "\u6b4c\u66f2\u8ab2 \u00b7 JLPT N4\u2013N3 \u00b7 \u8001\u5e2b Yuuki@Anime Sensei", "hero.h1_en": "\u7528\u7247\u982d\u66f2\u300c\u611b\u3092\u3068\u308a\u3082\u3069\u305b!!\u300d\u5b78\u65e5\u6587", "hero.howto.0.d": "\u5148\u628a\u9019\u6bb5\u64ad\u4e00\u6b21\u3002", "hero.howto.0.t": "\u807d", "hero.howto.1.d": "\u91cd\u8907\u64ad\u653e\uff0c\u53ef\u653e\u6162\u3002", "hero.howto.1.t": "\u5faa\u74b0", "hero.howto.2.d": "\u6b4c\u8a5e\u5728\u53e6\u4e00\u500b\u5206\u9801\u6253\u958b\u3002", "hero.howto.2.t": "\u8b80", "hero.howto.3.d": "\u5b78\u55ae\u5b57\u548c\u53e5\u578b\u3002", "hero.howto.3.t": "\u55ae\u5b57", "hero.howto.4.d": "\u9304\u4e0b\u4f86\u3002\u5927\u8072\u5531\u3002", "hero.howto.4.t": "\u5531", "hero.lead": "Crystal King\uff0c1984\u5e74\u3002\u5436\u558a\u611b\u768490\u79d2\u3002\u628a\u5b98\u65b9\u5f71\u7247\u4e00\u6bb5\u4e00\u6bb5\u5faa\u74b0\uff0c\u64bf\u55ae\u5b57\u3001\u627e\u6587\u6cd5\uff0c\u7136\u5f8c\u5531\u56de\u53bb\u7d66\u62f3\u56db\u90ce\u807d\u3002", "homework.h": "\u4f5c\u696d", "homework.list.0": "\u6253\u958b\u6b4c\u8a5e\u5531\u526f\u6b4c\uff080:55\u20131:18\uff09\u3002\u9304\u4e0b\u4f86\u3002\u50b3\u4e0d\u50b3\u90fd\u884c\uff0c\u4f46\u4e00\u5b9a\u8981\u9304\u3002", "homework.list.1": "\u7528\u547d\u4ee4\u5f62\u5beb\u4e09\u500b\u7d66\u661f\u671f\u4e00\u7684\u81ea\u5df1\u7684\u547d\u4ee4\u3002", "homework.list.2": "\u518d\u627e\u4e00\u9996\u6b4c\uff0c\u5f9e\u88e1\u9762\u627e\u4e00\u500b\u60f3\u7559\u4e0b\u7684\u55ae\u5b57\u3002", "html_lang": "zh-Hant", "lyrics.h": "\u6b4c\u8a5e", "lyrics.links.1.text": "\u3046\u305f\u3066\u3093\uff08\u9644\u5047\u540d\uff09", "lyrics.p": "\u6b4c\u8a5e\u6709\u7248\u6b0a\uff0c\u6240\u4ee5\u9019\u9801\u4e0d\u520a\u767b\u3002\u8acb\u5728\u53e6\u4e00\u500b\u5206\u9801\u6253\u958b\u5b98\u65b9\u6b4c\u8a5e\u7db2\u7ad9\uff0c\u4e00\u908a\u5faa\u74b0\u4e00\u908a\u8ddf\u8457\u5531\u3002", "nav.back": "\u2190 \u53f0\u8a5e\u7bc7", "nav.quiz": "\u6e2c\u9a57", "quiz.0.o.0": "\u9060\u96e2\u6211", "quiz.0.o.1": "\u671d\u6211\u800c\u4f86", "quiz.0.o.2": "\u5f80\u65c1\u908a", "quiz.0.q": "\u300c\u843d\u3061\u3066\u304f\u308b\u300d\u2014 \u5929\u7a7a\u2026", "quiz.0.why": "\u3066\u304f\u308b = \u52d5\u4f5c\u671d\u8aaa\u8a71\u8005\u800c\u4f86\u3002", "quiz.1.o.0": "\u5c31\u7b97\uff5e\u4e5f\u6c92\u7528", "quiz.1.o.1": "\u5fc5\u9808\uff5e", "quiz.1.o.2": "\uff5e\u7684\u8a71\u5f88\u6709\u7528", "quiz.1.q": "\u300c\u301c\u3066\u3082\u7121\u99c4\u3060\u300d\u7684\u610f\u601d\u662f\u2026", "quiz.1.why": "\u3066\u3082 = \u5373\u4f7f\uff1b\u7121\u99c4 = \u6c92\u7528\u3002", "quiz.2.q": "\u901f\u3044 \u2192 \u300c\u8b8a\u5feb\u300d\u600e\u9ebc\u8aaa\uff1f", "quiz.2.why": "\u3044\u5f62\u5bb9\u8a5e\uff1a\u53bb\u6389 \u3044 \u52a0 \u304f\u306a\u308b\u3002", "quiz.3.o.0": "\u5e0c\u671b\u4ed6\u5230\u4e86", "quiz.3.o.1": "\u4ed6\u73fe\u5728\u61c9\u8a72\u5df2\u7d93\u5230\u4e86", "quiz.3.o.2": "\u4ed6\u4e0d\u53ef\u4ee5\u5230", "quiz.3.q": "\u300c\u3082\u3046\u7740\u3044\u3066\u3044\u308b\u306f\u305a\u3060\u300d\u8868\u9054\u4ec0\u9ebc\uff1f", "quiz.3.why": "\u306f\u305a = \u6709\u6839\u64da\u7684\u63a8\u6e2c\uff0c\u4e0d\u662f\u9858\u671b\u3002", "quiz.4.o.2": "\u90fd\u53ef\u4ee5", "quiz.4.q": "\u6eb6\u3051\u308b \u548c \u6eb6\u304b\u3059 \u2014 \u4f60\u52d5\u624b\u878d\u5316\u5de7\u514b\u529b\u662f\u54ea\u500b\uff1f", "quiz.4.why": "\u6eb6\u304b\u3059 \u662f\u4ed6\u52d5\u8a5e\uff08\u6709\u4eba\u53bb\u878d\uff09\u3002\u6eb6\u3051\u308b \u662f\u81ea\u52d5\u8a5e\uff08\u81ea\u5df1\u878d\u5316\uff09\u3002", "quiz.5.q": "\u53d6\u308a\u623b\u3059 \u7684\u547d\u4ee4\u5f62\u662f\uff1f", "quiz.5.why": "\u3046\u52d5\u8a5e\uff1a\u6700\u5f8c\u7684 u \u6539\u6210 e\u3002\u3059 \u2192 \u305b\u3002", "quiz_head.h2": "\u6e2c\u9a57\uff1a\u611b\u56de\u4f86\u4e86\u55ce\uff1f", "quiz_head.who": "6\u984c\u3002\u9ede\u9078\u7b54\u6848\u3002", "segments.0.cue": "\u5169\u53e5\u540c\u6a23\u7684\u5f62\u72c0\u3002\u7559\u610f\u003cb\u003e\u306f\u003c/b\u003e\u5f8c\u9762\u7684\u82f1\u6587\u55ae\u5b57\uff0c\u548c\u6bcf\u53e5\u7d50\u5c3e\u7684\u52d5\u8a5e\u003cb\u003e\u843d\u3061\u3066\u304f\u308b\u003c/b\u003e\u3002", "segments.0.drill.0.m": "\u516c\u8eca\u4f86\u4e86\uff01\uff08\u6765\u308b\uff0c\u904e\u53bb\u5f0f\uff09", "segments.0.drill.1.m": "\u958b\u59cb\u4e0b\u96ea\u4e86\u3002\uff08\u3066\u304f\u308b\uff0c\u904e\u53bb\u5f0f\uff09", "segments.0.drill.2.m": "\u96fb\u8eca\u958b\u8d70\u4e86\uff08\u6211\u6c92\u8d95\u4e0a\uff09\u3002\uff08\u3066\u3057\u307e\u3046\uff09", "segments.0.drill_h": "\u7df4\u7fd2", "segments.0.examples.0.m": "\u958b\u59cb\u4e0b\u96e8\u4e86\uff08\u671d\u6211\u4e0b\uff09", "segments.0.examples.1.m": "\u670b\u53cb\u8dd1\u904e\u4f86", "segments.0.examples.2.m": "\u9ce5\u98db\u8d70\u4e86", "segments.0.gp.0": "\u003cb\u003e\u52d5\u8a5e\u3066\u5f62 + \u304f\u308b\u003c/b\u003e = \u52d5\u4f5c\u671d\u8aaa\u8a71\u8005\u800c\u4f86\u3002\u003cb\u003e\u3066 + \u3044\u304f\u003c/b\u003e = \u96e2\u958b\u3002\u5929\u7a7a\u003ci\u003e\u671d\u6211\u003c/i\u003e\u6389\u4e0b\u4f86\uff1a\u843d\u3061\u3066\u003cb\u003e\u304f\u308b\u003c/b\u003e\u3002", "segments.0.h": "\u526f\u6b4c\u9264\u5b50\uff1aYOU \u306f SHOCK", "segments.0.words.0.1": "\u82f1\u6587\u540d\u8a5e + \u306f = \u4e00\u500b\u65e5\u6587\u53e5\u5b50\u300280\u5e74\u4ee3\u65e5\u672c\u6d41\u884c\u6b4c\u8d85\u611b\u9019\u62db\u3002\u300cYou (are) shock\u300d\uff1d\u4f60\u8b93\u6211\u9707\u64bc\u3002", "segments.0.words.1.1": "\u611b", "segments.0.words.2.1": "\u5929\u7a7a", "segments.0.words.3.1": "\u80f8\u53e3 \u2014 \u5728\u6b4c\u88e1\u5c31\u662f\u5fc3", "segments.0.words.4.1": "\u843d\u3061\u308b\uff08\u6389\u843d\uff09+ \u3066\u304f\u308b = \u003cb\u003e\u671d\u6211\u003c/b\u003e\u6389\u4e0b\u4f86", "segments.0.yourturn.label": "\u63db\u4f60 \u2014 \u5728\u6771\u4eac\u4ec0\u9ebc\u8b93\u4f60\u9707\u64bc\uff1f\u300c\uff3f\uff3f \u306f SHOCK\u300d", "segments.0.yourturn.ph": "\uff3f\uff3f \u306f SHOCK\u3002  \u4f8b\uff1a\u5bb6\u8cc3 \u306f SHOCK\u3002\uff08\u623f\u79df\u5f88\u9707\u64bc\u3002\uff09", "segments.1.cue": "\u53c8\u5feb\u53c8\u7c97\u3002\u7559\u610f\u003cb\u003e\u301c\u3066\u3082\u003c/b\u003e\uff08\u5373\u4f7f\uff09\u5f8c\u9762\u7684\u003cb\u003e\u7121\u99c4\u003c/b\u003e\uff0c\u9084\u6709\u6700\u5f8c\u7684\u003cb\u003e\u30c0\u30a6\u30f3\u003c/b\u003e\u3002", "segments.1.drill.0.m": "\u5c31\u7b97\u8cb4\u4e5f\u8cb7\u3002\uff08\u3044\u5f62\u5bb9\u8a5e\uff1a\u9ad8\u304f + \u3066\u3082\uff09", "segments.1.drill.1.m": "\u89e3\u91cb\u5e7e\u6b21\u90fd\u6c92\u7528\u3002", "segments.1.drill.2.m": "\u53ea\u9760\u4e00\u652f\u624b\u6a5f\u5c31\u80fd\u65c5\u884c\u3002", "segments.1.drill_h": "\u7df4\u7fd2", "segments.1.examples.0.m": "\u73fe\u5728\u9053\u6b49\u4e5f\u6c92\u7528", "segments.1.examples.1.m": "\u5c31\u7b97\u4e0b\u96e8\u6211\u4e5f\u53bb", "segments.1.examples.2.m": "\u4e00\u500b\u6309\u9215\u5c31\u80fd\u9ede\u9910", "segments.1.gp.0": "\u003cb\u003e\u52d5\u8a5e\u3066\u5f62 + \u3082\u003c/b\u003e = \u5373\u4f7f\u3002\u4e3b\u6b4c\u8aaa\uff1a\u5c31\u7b97\u628a\u71c3\u71d2\u7684\u5fc3\u9396\u4f4f\u4e5f\u6c92\u7528\u3002\u003cb\u003e\u301c\u3066\u3082\u7121\u99c4\u3060\u003c/b\u003e\u662f\u503c\u5f97\u5077\u8d70\u7684\u56fa\u5b9a\u53e5\u3002", "segments.1.h": "\u4e3b\u6b4c\uff1a\u9396\u93c8\u4e5f\u6c92\u7528", "segments.1.words.0.1": "\u71c3\u71d2\u7684\u5fc3\uff08\u71b1\u3044 = \u71b1\u3001\u71b1\u60c5\uff09", "segments.1.words.1.1": "\u9396\u93c8", "segments.1.words.2.1": "\u7d81\u4f4f\u3001\u9396\u4f4f\uff08\u3064\u306a\u3044\u3067\u3082 = \u5c31\u7b97\u9396\u4f4f\uff09", "segments.1.words.3.1": "\u6c92\u7528\u3001\u767d\u8cbb \u2014 \u65e5\u672c\u6700\u5be6\u7528\u7684\u55ae\u5b57\u4e4b\u4e00", "segments.1.words.4.1": "\u7919\u4e8b\uff08\u90aa\u9b54\u3059\u308b\u5974 = \u4efb\u4f55\u7919\u4e8b\u7684\u4eba\uff09", "segments.1.words.5.1": "\u50a2\u4f19 \u2014 \u7c97\u9b6f\u3002\u7528\u5728\u53cd\u6d3e\u53ef\u4ee5\uff0c\u7528\u5728\u540c\u4e8b\u4e0d\u884c\u3002", "segments.1.words.6.1": "\u7528\u4e00\u6839\u6307\u5c16\uff08\u540d\u8a5e + \u3072\u3068\u3064\u3067 = \u53ea\u7528\u4e00\u500b\uff5e\uff09", "segments.1.words.7.1": "\u5012\u4e0b\uff08\u64ca\u5012\uff09\u2014 \u5916\u4f86\u8a9e\u53ef\u7576\u540d\u8a5e\uff1a\u30c0\u30a6\u30f3\u3055 = \u4ed6\u5011\u5012\u4e0b", "segments.1.yourturn.label": "\u63db\u4f60 \u2014 \u5c31\u7b97\u8a66\u4e86\u4e5f\u6c92\u7528\u7684\u4e8b\uff1a\u300c\u301c\u3066\u3082\u7121\u99c4\u3060\u300d", "segments.1.yourturn.ph": "\uff3f\uff3f\u3066\u3082\u7121\u99c4\u3060\u3002  \u4f8b\uff1a\u6708\u66dc\u65e5\u306b\u65e9\u304f\u5bdd\u3066\u3082\u7121\u99c4\u3060\u3002", "segments.2.cue": "\u540c\u6a23\u7684\u9264\u5b50\uff0c\u4e0d\u540c\u7684\u7d50\u5c3e\u3002\u7559\u610f\u003cb\u003e\u9f13\u52d5\u003c/b\u003e\u548c\u8b8a\u5316\u52d5\u8a5e\u003cb\u003e\u901f\u304f\u306a\u308b\u003c/b\u003e\u3002", "segments.2.drill.0.m": "\u71b1 \u2192 \u8b8a\u71b1", "segments.2.drill.1.m": "\u5b89\u975c \u2192 \u8b8a\u5b89\u975c", "segments.2.drill.2.m": "\u5927\u4eba \u2192 \u8b8a\u6210\u5927\u4eba", "segments.2.drill_h": "\u7df4\u7fd2", "segments.2.examples.0.m": "\u6211\u7684\u65e5\u6587\u8b8a\u597d\u4e86", "segments.2.examples.1.m": "\u665a\u4e0a\u6703\u8b8a\u51b7", "segments.2.examples.2.m": "\u5fc3\u8df3\u52a0\u901f", "segments.2.gp.0": "\u003cb\u003e\u3044\u5f62\u5bb9\u8a5e \u2192 \u301c\u304f\u306a\u308b\u003c/b\u003e \uff0f \u003cb\u003e\u306a\u5f62\u5bb9\u8a5e\u3001\u540d\u8a5e \u2192 \u301c\u306b\u306a\u308b\u003c/b\u003e = \u8b8a\u6210\u3002\u901f\u304f\u003cb\u003e\u306a\u308b\u003c/b\u003e\u3001\u9759\u304b\u003cb\u003e\u306b\u306a\u308b\u003c/b\u003e\u3001\u533b\u8005\u003cb\u003e\u306b\u306a\u308b\u003c/b\u003e\u3002", "segments.2.h": "\u9264\u5b50\u518d\u4f86\uff1a\u5fc3\u8df3\u8b8a\u5feb", "segments.2.words.0.1": "\u5fc3\u8df3\uff08\u9f13 = \u9f13\uff0c\u52d5 = \u52d5\uff09", "segments.2.words.1.1": "\u5feb \u2192 \u8b8a\u5feb\u3002\u3044\u5f62\u5bb9\u8a5e\uff1a\u53bb\u6389 \u3044 \u52a0 \u304f\u306a\u308b", "segments.2.words.2.1": "\u300c\u6211\u300d\u2014 \u7c97\u9b6f\u3001\u7537\u6027\u5316\u3002\u62f3\u56db\u90ce\u7684\u81ea\u7a31\u3002\u5c0d\u964c\u751f\u4eba\u7528 \u79c1\u3002", "segments.2.yourturn.label": "\u63db\u4f60 \u2014 \u4ec0\u9ebc\u8b93\u4f60\u5fc3\u8df3\u52a0\u901f\uff1f\u300c\u301c\u3068\u3001\u9f13\u52d5\u304c\u901f\u304f\u306a\u308b\u300d", "segments.2.yourturn.ph": "\uff3f\uff3f\u3068\u3001\u9f13\u52d5\u304c\u901f\u304f\u306a\u308b\u3002  \u4f8b\uff1a\u79cb\u8449\u539f\u306b\u884c\u304f\u3068\u3001\u9f13\u52d5\u304c\u901f\u304f\u306a\u308b\u3002", "segments.3.cue": "\u7dca\u5f35\u5347\u6eab\u7684\u6bb5\u843d\u3002\u4e00\u5806\u6587\u8a00\u611f\u7684\u5927\u52d5\u8a5e\uff0c\u6700\u5f8c\u505c\u5728\u003cb\u003e\u301c\u306f\u305a\u3055\u003c/b\u003e\u3002", "segments.3.drill.0.m": "\u6211\u5bc4\u4e86\u90f5\u4ef6\uff0c\u6240\u4ee5\u61c9\u8a72\u5df2\u7d93\u9001\u5230\u4e86\u3002", "segments.3.drill.1.m": "\u51b0\u6dc7\u6dcb\u88ab\u71b1\u878d\u5316\u4e86\u3002\uff08\u81ea\u52d5\u8a5e \u6eb6\u3051\u308b\uff09", "segments.3.drill.2.m": "\u628a\u5de7\u514b\u529b\u878d\u5316\u5f8c\u653e\u9032\u86cb\u7cd5\u3002\uff08\u4ed6\u52d5\u8a5e \u6eb6\u304b\u3059\uff09", "segments.3.drill_h": "\u7df4\u7fd2", "segments.3.examples.0.m": "\u4ed6\u73fe\u5728\u61c9\u8a72\u5230\u4e86", "segments.3.examples.1.m": "\u4eca\u5929\u61c9\u8a72\u662f\u4f11\u5047", "segments.3.examples.2.m": "\u4e0d\u53ef\u80fd\u662f\u90a3\u6a23", "segments.3.gp.0": "\u003cb\u003e\u666e\u901a\u5f62 + \u306f\u305a\u3060\u003c/b\u003e = \u6709\u6839\u64da\u7684\u78ba\u4fe1\u3002\u4e0d\u662f\u9858\u671b\uff0c\u662f\u63a8\u6e2c\u3002\u6b4c\u88e1\uff1a\u4e00\u5b9a\u6703\u878d\u5316\u4e00\u5207\u7136\u5f8c\u56db\u6563\u3002", "segments.3.h": "\u919e\u91c0\u6bb5\uff1a\u5fac\u5fa8\u7684\u5fc3", "segments.3.words.0.1": "\u8ffd\u6c42\u3001\u6e34\u671b\uff08\u611b\u3092\u6c42\u3081\u308b = \u8ffd\u6c42\u611b\uff09", "segments.3.words.1.1": "\u5fac\u5fa8\u3001\u6f02\u6cca \u2014 \u8a69\u610f\u7684\u5b57\uff0c\u6b4c\u88e1\u8d85\u5e38\u898b", "segments.3.words.2.1": "\u71c3\u71d2\uff08\u71b1\u304f\u71c3\u3048\u3066\u308b = \u6b63\u71b1\u70c8\u71c3\u71d2\uff09", "segments.3.words.3.1": "\u878d\u5316\uff08\u67d0\u7269\uff09\u2014 \u4ed6\u52d5\u8a5e\u3002\u6eb6\u3051\u308b = \u81ea\u5df1\u878d\u5316", "segments.3.words.4.1": "\u6b98\u9177\u5730\u3001\u6beb\u4e0d\u7559\u60c5 \u2014 \u7d14\u6b63\u7684\u5317\u6597\u8a5e\u5f59", "segments.3.words.5.1": "\u56db\u6563\u3001\u98db\u6563\uff08\u98db\u3076 + \u6563\u308b\uff09", "segments.3.words.6.1": "\u4e00\u5b9a\u6703\uff5e\uff0f\u61c9\u8a72\uff5e\u3002\u3055 = \u5e25\u6c23\u7684\u7537\u6027\u53e5\u5c3e", "segments.3.yourturn.label": "\u63db\u4f60 \u2014 \u5c0d\u660e\u5929\u8ab2\u7a0b\u7684\u81ea\u4fe1\u9810\u6e2c\uff1a\u300c\u301c\u306f\u305a\u3060\u300d", "segments.3.yourturn.ph": "\uff3f\uff3f\u306f\u305a\u3060\u3002  \u4f8b\uff1a\u660e\u65e5\u306e\u30ec\u30c3\u30b9\u30f3\u306f\u697d\u3057\u3044\u306f\u305a\u3060\u3002", "segments.4.cue": "\u526f\u6b4c\u3002\u7559\u610f\u003cb\u003e\u301c\u305f\u3081\u003c/b\u003e\uff08\u70ba\u4e86\uff09\u3001\u003cb\u003e\u898b\u5931\u3063\u305f\u003c/b\u003e\uff0c\u9084\u6709\u6700\u5f8c\u7684\u547d\u4ee4\uff1a\u003cb\u003e\u53d6\u308a\u623b\u305b\u003c/b\u003e\u3002", "segments.4.drill.0.m": "\u53bb \u2192 \u53bb\uff01", "segments.4.drill.1.m": "\u5403 \u2192 \u5403\uff01", "segments.4.drill.2.m": "\u505a \u2192 \u505a\uff01\uff08\u4e0d\u898f\u5247\uff09", "segments.4.drill.3.m": "\u4f86 \u2192 \u4f86\uff01\uff08\u4e0d\u898f\u5247\uff0c\u3053\u3044\uff09", "segments.4.drill.4.m": "\u70ba\u4e86\u5b78\u65e5\u6587\u800c\u4f86\u6771\u4eac\u3002", "segments.4.drill_h": "\u7df4\u7fd2", "segments.4.examples.0.m": "\u52a0\u6cb9\uff01\uff08\u5927\u5bb6\u90fd\u5728\u7528\u7684\u547d\u4ee4\u5f62\uff09", "segments.4.examples.1.m": "\u5feb\u9003\uff01", "segments.4.examples.2.m": "\u628a\u611b\u596a\u56de\u4f86\uff01", "segments.4.gp.0": "\u003cb\u003e\u547d\u4ee4\u5f62\u003c/b\u003e\uff1a\u3046\u52d5\u8a5e\u628a\u6700\u5f8c\u7684 u \u6539\u6210 e\uff08\u53d6\u308a\u623b\u3059 \u2192 \u53d6\u308a\u623b\u305b\u3001\u884c\u304f \u2192 \u884c\u3051\uff09\u3002\u308b\u52d5\u8a5e\u6539 \u308d\uff08\u98df\u3079\u308b \u2192 \u98df\u3079\u308d\uff09\u3002\u3059\u308b \u2192 \u3057\u308d\u3001\u6765\u308b \u2192 \u6765\u3044\u3002\u7c97\u9b6f\u76f4\u63a5\uff1a\u7528\u5728\u6b4c\u3001\u904b\u52d5\u3001\u7dca\u6025\u72c0\u6cc1\uff0c\u9084\u6709\u62f3\u56db\u90ce\u3002", "segments.4.h": "\u526f\u6b4c\uff1a\u628a\u611b\u596a\u56de\u4f86", "segments.4.words.0.1": "\u5b88\u8b77", "segments.4.words.1.1": "\u70ba\u4e86\uff08\u5b88\u308b\u305f\u3081 = \u70ba\u4e86\u5b88\u8b77\uff09", "segments.4.words.2.1": "\u8e0f\u4e0a\u65c5\u7a0b\uff08\u65c5 + \u7acb\u3064\uff09", "segments.4.words.3.1": "\u660e\u5929 \u2014 \u9019\u88e1\u8b80 \u3042\u3059\uff0c\u6b63\u5f0f\uff0f\u8a69\u610f\u7684\u8b80\u6cd5\uff08\u5e73\u5e38\u8aaa \u3042\u3057\u305f\uff09", "segments.4.words.4.1": "\u5931\u53bb\u8e64\u5f71\u3001\u770b\u4e0d\u898b\u4e86\uff08\u898b\u308b + \u5931\u3046\uff09", "segments.4.words.5.1": "\u5fae\u7b11\uff08\u5fae\u7b11\u3080 \u7684\u540d\u8a5e\uff09", "segments.4.words.6.1": "\u300c\uff5e\u4e4b\u985e\u7684\u300d\u2014 \u9019\u88e1\u5e36\u6709\u8f15\u8511\uff1a\u90a3\u7a2e\u81c9\uff1f\u4e0d\u60f3\u770b", "segments.4.words.7.1": "\u6211\u300c\u4e0d\u300d\u60f3\u770b\uff08\u898b\u305f\u3044 \u2192 \u898b\u305f\u304f + \u306f + \u306a\u3044\uff0c\u306f \u52a0\u5f37\u8a9e\u6c23\uff09", "segments.4.words.8.1": "\u596a\u56de \u2192 \u596a\u56de\u4f86\uff01\uff08\u547d\u4ee4\u5f62\uff09", "segments.4.yourturn.label": "\u63db\u4f60 \u2014 \u547d\u4ee4\u81ea\u5df1\u596a\u56de\u67d0\u6a23\u6771\u897f\uff1a\u300c\uff3f\uff3f\u3092\u53d6\u308a\u623b\u305b\uff01\u300d", "segments.4.yourturn.ph": "\uff3f\uff3f\u3092\u53d6\u308a\u623b\u305b\uff01  \u4f8b\uff1a\u7761\u7720\u6642\u9593\u3092\u53d6\u308a\u623b\u305b\uff01\uff08\u628a\u7761\u7720\u6642\u9593\u596a\u56de\u4f86\uff01\uff09", "title_line.en": "\u300c\u628a\u611b\u003ci\u003e\u596a\u56de\u4f86\u003c/i\u003e!!\u300d\u2014 \u6b4c\u540d\uff0c\u4e5f\u662f\u4f60\u6700\u5f8c\u8981\u5531\u7684\u90a3\u53e5\u3002", "ui.all": "\u25b6 \u6574\u9996\u64ad\u653e", "ui.drill": "\u7df4\u7fd2", "ui.loop": "\ud83d\udd01 \u5faa\u74b0\u9019\u4e00\u6bb5", "ui.loopline": "\ud83d\udd01 \u5faa\u74b0\u9019\u4e00\u53e5", "ui.meaning": "\u610f\u601d", "ui.readmine": "\ud83d\udd0a \u8b80\u6211\u5beb\u7684", "ui.rec": "\ud83c\udf99 \u5531\u5531\u770b", "ui.slow": "\ud83d\udc22 0.75\u500d\u901f", "ui.word": "\u55ae\u5b57"}};
 function applyLang(lang){
-  LANG=lang; const d=I[lang]||{};
-  document.documentElement.lang=lang==='ja'?'ja':lang==='zh'?'zh-Hant':'en';
-  $$('[data-i18n]').forEach(el=>{const k=el.dataset.i18n;if(!el.dataset.orig)el.dataset.orig=el.innerHTML;el.innerHTML=d[k]||el.dataset.orig;});
-  $$('[data-i18n-ph]').forEach(el=>{const k=el.dataset.i18nPh;if(!el.dataset.orig)el.dataset.orig=el.placeholder;el.placeholder=d[k]||el.dataset.orig;});
+  LANG=lang; const dict=I[lang]||{};
+  document.documentElement.lang={"base": "en", "en": "en", "ja": "ja", "k": "html_lang", "zh": "zh-Hant"}[lang]||lang;
+  $$('[data-i18n]').forEach(el=>{const k=el.dataset.i18n;if(!el.dataset.orig)el.dataset.orig=el.innerHTML;el.innerHTML=dict[k]||el.dataset.orig;});
+  $$('[data-i18n-ph]').forEach(el=>{const k=el.dataset.i18nPh;if(!el.dataset.orig)el.dataset.orig=el.placeholder;el.placeholder=dict[k]||el.dataset.orig;});
   $$('#lang button').forEach(b=>b.classList.toggle('on',b.dataset.lang===lang));
-  renderQuiz(); store.set('lang',lang);
+  renderQuiz(); store.set('lang-ai-wo-torimodose',lang);
 }
 $$('#lang button').forEach(b=>b.onclick=()=>applyLang(b.dataset.lang));
-applyLang(store.get('lang')||'en');
+applyLang(store.get('lang-ai-wo-torimodose')||'en');
 </script>
 </body>
 </html>
