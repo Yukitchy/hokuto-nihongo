@@ -198,3 +198,213 @@ footer a{color:var(--ink);font-weight:700}
   .top nav{display:none}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* =====================================================================
+   MOTIF VARIANTS (Refero-inspired). Activated by html[data-motif].
+   A = zine poster (Roberta's Pizza) / B = liner notes (Epidemic Sound) / C = scarlet ink on butcher paper (Redbrick Coffee)
+   ===================================================================== */
+
+/* ---------- A: ジン・ポスター ---------- */
+html[data-motif="a"]{--paper:#ffffff;--paper-2:#f4f4f4;--ink:#2b2f36;--sub:#5b6068;--red:#ed2023;--red-ink:#c2181b;--gold:#ffd54a;--line:#2b2f36;--deco:rgba(237,32,35,.10)}
+html[data-motif="a"] body{background:var(--paper)}
+html[data-motif="a"] .top{border-bottom:1px solid var(--line);background:rgba(255,255,255,.94)}
+html[data-motif="a"] .top nav a{text-transform:uppercase;letter-spacing:.06em;font-size:13px;border-radius:7px}
+html[data-motif="a"] .eyebrow{border:0;background:var(--ink);color:#fff;border-radius:7px;letter-spacing:.12em}
+html[data-motif="a"] .hero{border-bottom:0;padding-bottom:0}
+html[data-motif="a"] .hero::before{display:none}
+html[data-motif="a"] .hero .wrap{padding-bottom:40px}
+html[data-motif="a"] .hero::after{content:"";display:block;height:34px;background:repeating-linear-gradient(90deg,var(--ink) 0 17px,#fff 17px 34px),repeating-linear-gradient(90deg,#fff 0 17px,var(--ink) 17px 34px);background-size:34px 17px;background-position:0 0,0 17px;background-repeat:repeat-x}
+html[data-motif="a"] .howto{border:1px solid var(--line);border-radius:7px;overflow:hidden}
+html[data-motif="a"] .howto>div{border-right:1px solid var(--line)}
+html[data-motif="a"] .howto .n{color:var(--red)}
+html[data-motif="a"] .btn{border-radius:7px;border:1px solid var(--ink);text-transform:uppercase;letter-spacing:.04em;font-size:13px;box-shadow:none}
+html[data-motif="a"] .btn:hover{box-shadow:rgba(0,0,0,.25) 0 4px 4px 0;transform:translateY(-1px)}
+html[data-motif="a"] .btn.primary{background:var(--red);border-color:var(--red)}
+html[data-motif="a"] .btn.dark{background:var(--ink)}
+html[data-motif="a"] section{border-bottom:0;padding:56px 0 40px}
+html[data-motif="a"] section::before{display:none}
+html[data-motif="a"] section::after{content:"";position:absolute;left:0;right:0;bottom:0;height:20px;background:repeating-linear-gradient(90deg,var(--ink) 0 10px,#fff 10px 20px),repeating-linear-gradient(90deg,#fff 0 10px,var(--ink) 10px 20px);background-size:20px 10px;background-position:0 0,0 10px;background-repeat:repeat-x;opacity:.9}
+html[data-motif="a"] #quiz{background:var(--red);color:#fff}
+html[data-motif="a"] #quiz::after{display:none}
+html[data-motif="a"] #quiz .sec-head .num,html[data-motif="a"] #quiz .who,html[data-motif="a"] #quiz h3,html[data-motif="a"] #quiz th,html[data-motif="a"] #quiz td{color:#fff}
+html[data-motif="a"] #quiz h3::before{background:#fff}
+html[data-motif="a"] #quiz .q{border:0;box-shadow:rgba(0,0,0,.25) 0 4px 4px 0;transform:rotate(-.6deg);color:var(--ink)}
+html[data-motif="a"] #quiz .q:nth-child(even){transform:rotate(.5deg)}
+html[data-motif="a"] #quiz .q .why,html[data-motif="a"] #quiz .q .qt rt{color:var(--sub)}
+html[data-motif="a"] #quiz .score{color:#fff}
+html[data-motif="a"] #quiz ol li{color:#fff}
+html[data-motif="a"] .sec-head .num{font-size:64px;-webkit-text-stroke:2px var(--ink);color:#fff;text-shadow:4px 4px 0 var(--red)}
+html[data-motif="a"] .tag{border-radius:999px;text-transform:uppercase;letter-spacing:.06em;font-size:12px;padding:3px 10px}
+html[data-motif="a"] .bubble{border:1px solid var(--ink);border-radius:7px;box-shadow:rgba(0,0,0,.25) 0 4px 4px 0}
+html[data-motif="a"] .bubble::after{border-width:1px}
+html[data-motif="a"] .panel{border:1px solid var(--ink);border-radius:7px;overflow:hidden;background:#fff}
+html[data-motif="a"] .panel .vid{border-right:1px solid var(--ink)}
+html[data-motif="a"] .ctl .lbl{color:var(--red);letter-spacing:.14em}
+html[data-motif="a"] .loopbar{border:1px solid var(--ink)}
+html[data-motif="a"] h3::before{background:var(--red);transform:none;border-radius:50%}
+html[data-motif="a"] .note{border:1px solid var(--ink);border-radius:7px;box-shadow:rgba(0,0,0,.25) 0 4px 4px 0}
+html[data-motif="a"] .drill{border-top:1px solid var(--ink)}
+html[data-motif="a"] .yourturn{border:1px solid var(--ink);border-radius:7px}
+html[data-motif="a"] .done label{border-radius:7px;text-transform:uppercase;letter-spacing:.04em;font-size:13px}
+html[data-motif="a"] .chip{border:1px solid var(--ink);border-radius:7px;transform:rotate(-1deg);box-shadow:rgba(0,0,0,.25) 0 4px 4px 0}
+html[data-motif="a"] .chip:nth-child(even){transform:rotate(1deg)}
+html[data-motif="a"] .lang{border-radius:7px;border-width:1px}
+html[data-motif="a"] .top .prog{border-width:1px;border-radius:7px}
+html[data-motif="a"] .spk{border-width:1px}
+html[data-motif="a"] footer{background:var(--ink);color:#c9ccd2}
+html[data-motif="a"] footer a{color:#fff}
+/* song page */
+html[data-motif="a"] .player-wrap,html[data-motif="a"] .seg,html[data-motif="a"] .lyrics,html[data-motif="a"] .title-line{border:1px solid var(--ink);border-radius:7px;overflow:hidden}
+html[data-motif="a"] .seg .head{border-bottom:1px solid var(--ink);background:#fff}
+html[data-motif="a"] .seg{box-shadow:rgba(0,0,0,.25) 0 4px 4px 0}
+html[data-motif="a"] .pbar{border-top:1px solid var(--ink)}
+html[data-motif="a"] .lyrics{background:var(--gold)}
+html[data-motif="a"] #song::after{display:none}
+
+/* ---------- B: ライナーノーツ ---------- */
+html[data-motif="b"]{--paper:#f1f0eb;--paper-2:#e9e7e0;--ink:#000000;--sub:#60605e;--red:#c8102e;--red-ink:#a60d26;--gold:#ffda40;--line:#000000;--deco:rgba(0,0,0,.05)}
+html[data-motif="b"] body{background:var(--paper)}
+html[data-motif="b"] .top{border-bottom:0;background:rgba(241,240,235,.92)}
+html[data-motif="b"] .top nav a,html[data-motif="b"] .lang,html[data-motif="b"] .lang button,html[data-motif="b"] .top .prog{border-radius:0}
+html[data-motif="b"] .top .prog{border:0;background:#fff}
+html[data-motif="b"] .lang{border:0;background:#fff}
+html[data-motif="b"] .eyebrow{border:0;padding:0;color:var(--sub);letter-spacing:.1em;font-size:12px}
+html[data-motif="b"] .hero{border-bottom:0;padding:72px 0 56px;background:#fff}
+html[data-motif="b"] .hero::before{display:none}
+html[data-motif="b"] .hero h1{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;letter-spacing:-.02em;font-size:clamp(40px,7.5vw,84px);line-height:1.05}
+html[data-motif="b"] .hero h1 .en{font-weight:500;color:var(--sub);font-size:clamp(17px,2.2vw,22px)}
+html[data-motif="b"] .howto{border:0;background:transparent;gap:8px}
+html[data-motif="b"] .howto>div{border:0;background:var(--paper);padding:20px 18px}
+html[data-motif="b"] .howto .n{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;color:var(--ink);font-size:24px}
+html[data-motif="b"] .btn{border-radius:0;border:0;background:#e9e7e0;color:var(--ink);letter-spacing:.06em;font-size:13px;padding:10px 18px}
+html[data-motif="b"] .btn:hover{transform:none;background:#dedbd2}
+html[data-motif="b"] .btn.primary,html[data-motif="b"] .btn.dark{background:#000;color:#fff}
+html[data-motif="b"] .btn.on{background:var(--gold);color:#000}
+html[data-motif="b"] section{border-bottom:0;padding:64px 0}
+html[data-motif="b"] section::before{display:none}
+html[data-motif="b"] section:nth-of-type(even){background:#fff}
+html[data-motif="b"] #quiz{background:var(--red);color:#fff}
+html[data-motif="b"] #quiz .sec-head .num,html[data-motif="b"] #quiz .who,html[data-motif="b"] #quiz h3,html[data-motif="b"] #quiz th,html[data-motif="b"] #quiz td,html[data-motif="b"] #quiz ol li,html[data-motif="b"] #quiz .score{color:#fff}
+html[data-motif="b"] #quiz h3::before{background:#fff}
+html[data-motif="b"] #quiz .q{border:0;color:#000}
+html[data-motif="b"] #quiz .q .opts button{border:0;background:var(--paper);border-radius:0}
+html[data-motif="b"] .sec-head .num{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;color:var(--ink);font-size:44px;line-height:1}
+html[data-motif="b"] .sec-head h2{font-size:clamp(24px,3.6vw,36px);letter-spacing:-.01em}
+html[data-motif="b"] .tag{border-radius:999px;background:#000;font-size:12px;padding:3px 10px}
+html[data-motif="b"] .tag.n3,html[data-motif="b"] .tag.n2,html[data-motif="b"] .tag.n1{background:#000}
+html[data-motif="b"] .tag.fun{background:var(--gold);color:#000}
+html[data-motif="b"] .bubble{border:0;border-radius:0;background:#fff;padding:32px 32px 26px}
+html[data-motif="b"] section:nth-of-type(even) .bubble{background:var(--paper)}
+html[data-motif="b"] .bubble::after{display:none}
+html[data-motif="b"] .bubble .jp{letter-spacing:-.01em}
+html[data-motif="b"] .bubble .en i{color:var(--ink);font-style:italic;font-weight:900}
+html[data-motif="b"] .panel{border:0;background:#e9e7e0}
+html[data-motif="b"] .panel .vid{border:0}
+html[data-motif="b"] .ctl .lbl{color:var(--ink);letter-spacing:.1em}
+html[data-motif="b"] .loopbar{border:0;background:#fff}
+html[data-motif="b"] h3::before{display:none}
+html[data-motif="b"] h3{letter-spacing:-.01em;font-size:18px}
+html[data-motif="b"] th,html[data-motif="b"] td{border-bottom:1px solid rgba(0,0,0,.12)}
+html[data-motif="b"] .gp{border-left:0;padding:16px 18px;background:#fff}
+html[data-motif="b"] section:nth-of-type(even) .gp{background:var(--paper)}
+html[data-motif="b"] .gp b{font-style:italic}
+html[data-motif="b"] .note{border:0;background:var(--gold);color:#000}
+html[data-motif="b"] .note b{color:#000}
+html[data-motif="b"] .drill{border-top:1px solid rgba(0,0,0,.15)}
+html[data-motif="b"] .blank{border-bottom-color:var(--ink)}
+html[data-motif="b"] .blank::after{color:var(--ink)}
+html[data-motif="b"] .blank.show{color:#000;background:var(--gold)}
+html[data-motif="b"] .yourturn{border:0;background:#fff}
+html[data-motif="b"] section:nth-of-type(even) .yourturn{background:var(--paper)}
+html[data-motif="b"] .done label{border:0;border-radius:0;background:#e9e7e0}
+html[data-motif="b"] .done label.ok{background:var(--gold)}
+html[data-motif="b"] .chip{border:0;background:#fff;padding:16px}
+html[data-motif="b"] .spk{border:0;background:#e9e7e0}
+html[data-motif="b"] .spk.on{background:var(--gold)}
+html[data-motif="b"] .q{border:0}
+html[data-motif="b"] .q .opts button{border:0;background:var(--paper);border-radius:0}
+html[data-motif="b"] footer{background:#fff}
+/* song page */
+html[data-motif="b"] .player-wrap,html[data-motif="b"] .seg,html[data-motif="b"] .title-line{border:0}
+html[data-motif="b"] .seg{background:#fff}
+html[data-motif="b"] .seg .head{border-bottom:0;background:#fff;padding-bottom:0}
+html[data-motif="b"] .seg .head .n{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;color:var(--ink);font-size:22px}
+html[data-motif="b"] .pbar{border-top:0;background:#e9e7e0}
+html[data-motif="b"] .lyrics{border:0;background:var(--gold)}
+html[data-motif="b"] .title-line{background:#fff}
+html[data-motif="b"] .title-line .jp{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;letter-spacing:-.02em}
+
+/* ---------- C: 朱インク×バターペーパー ---------- */
+html[data-motif="c"]{--paper:#ffffff;--paper-2:#f2f2f2;--ink:#212529;--sub:#6b6f75;--red:#e82c2a;--red-ink:#c9221f;--gold:#ffe7a3;--line:#e82c2a;--deco:rgba(232,44,42,.06)}
+html[data-motif="c"] body{background:#fff}
+html[data-motif="c"] .top{border-bottom:1px solid var(--red);background:rgba(255,255,255,.94)}
+html[data-motif="c"] .top .brand{color:var(--red)}
+html[data-motif="c"] .top nav a{color:var(--red);font-weight:700;letter-spacing:.013em}
+html[data-motif="c"] .top nav a.on,html[data-motif="c"] .top nav a:hover{background:transparent;color:var(--red);opacity:.6}
+html[data-motif="c"] .top .prog,html[data-motif="c"] .lang{border:1px solid var(--red);color:var(--red)}
+html[data-motif="c"] .lang button{color:var(--red)}
+html[data-motif="c"] .lang button.on{background:var(--red);color:#fff}
+html[data-motif="c"] .eyebrow{border:0;padding:0;border-bottom:1px solid var(--red);border-radius:0;display:block;width:100%;font-size:11px;letter-spacing:.06em;padding-bottom:8px}
+html[data-motif="c"] .hero{border-bottom:1px solid var(--red);padding:28px 0 48px}
+html[data-motif="c"] .hero::before{display:none}
+html[data-motif="c"] .hero h1{color:var(--red);font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900;font-size:clamp(44px,8vw,96px);line-height:1;letter-spacing:-.01em}
+html[data-motif="c"] .hero h1 .en{color:var(--ink);font-weight:500;letter-spacing:.017em}
+html[data-motif="c"] .lead{font-size:18px;letter-spacing:.017em;line-height:1.5}
+html[data-motif="c"] .howto{border:0;background:transparent;gap:10px}
+html[data-motif="c"] .howto>div{border:0;background:var(--paper-2);border-radius:25px;padding:24px 22px}
+html[data-motif="c"] .howto .n{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:500;color:var(--red);font-size:28px}
+html[data-motif="c"] .btn{border-radius:50px;border:1px solid var(--red);background:transparent;color:var(--red);font-weight:700;letter-spacing:.013em;font-size:14px;padding:9px 18px}
+html[data-motif="c"] .btn:hover{transform:none;opacity:.7}
+html[data-motif="c"] .btn.primary,html[data-motif="c"] .btn.dark{background:transparent;color:var(--red);border-color:var(--red)}
+html[data-motif="c"] .btn.on{background:var(--red);color:#fff}
+html[data-motif="c"] section{border-bottom:1px solid var(--red);padding:50px 0}
+html[data-motif="c"] section::before{display:none}
+html[data-motif="c"] .sec-head{border-bottom:1px solid var(--red);padding-bottom:10px;align-items:baseline}
+html[data-motif="c"] .sec-head .num{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:500;font-size:14px;letter-spacing:.06em;color:var(--red);text-transform:uppercase}
+html[data-motif="c"] .sec-head .num::before{content:"Line "}
+html[data-motif="c"] #warmup .sec-head .num::before,html[data-motif="c"] #quiz .sec-head .num::before{content:""}
+html[data-motif="c"] .sec-head h2{font-weight:700;font-size:clamp(26px,4vw,40px);letter-spacing:.01em}
+html[data-motif="c"] .who{color:var(--red);font-weight:500;letter-spacing:.06em;font-size:12px;text-transform:uppercase}
+html[data-motif="c"] .tag{background:transparent;color:var(--red);border:1px solid var(--red);border-radius:50px;font-size:11px;letter-spacing:.06em;font-weight:500}
+html[data-motif="c"] .tag.n3,html[data-motif="c"] .tag.n2,html[data-motif="c"] .tag.n1,html[data-motif="c"] .tag.fun{background:transparent;color:var(--red)}
+html[data-motif="c"] .bubble{border:0;border-radius:25px;background:var(--paper-2);padding:40px 36px 32px}
+html[data-motif="c"] .bubble::after{display:none}
+html[data-motif="c"] .bubble .jp{color:var(--red);font-weight:700}
+html[data-motif="c"] .bubble .en{font-weight:500;letter-spacing:.017em}
+html[data-motif="c"] .bubble .en i{color:var(--red)}
+html[data-motif="c"] .panel{border:0;border-radius:25px;overflow:hidden;background:var(--paper-2)}
+html[data-motif="c"] .panel .vid{border:0}
+html[data-motif="c"] .ctl .lbl{color:var(--red);font-size:11px;letter-spacing:.06em;font-weight:500}
+html[data-motif="c"] .loopbar{border:1px solid var(--red);background:#fff}
+html[data-motif="c"] h3{font-weight:500;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--red);border-bottom:1px solid var(--red);padding-bottom:6px}
+html[data-motif="c"] h3::before{display:none}
+html[data-motif="c"] th{color:var(--red);font-weight:500}
+html[data-motif="c"] th,html[data-motif="c"] td{border-bottom:1px solid rgba(232,44,42,.25)}
+html[data-motif="c"] .gp{border-left:1px solid var(--red);padding-left:18px}
+html[data-motif="c"] .note{border:0;border-radius:25px;background:var(--paper-2);padding:18px 22px}
+html[data-motif="c"] .drill{border-top:1px solid var(--red)}
+html[data-motif="c"] .yourturn{border:0;border-radius:25px;background:var(--paper-2);padding:22px 24px}
+html[data-motif="c"] .done label{border:1px solid var(--red);color:var(--red);border-radius:50px;font-weight:700}
+html[data-motif="c"] .done label.ok{background:var(--red);color:#fff}
+html[data-motif="c"] .chip{border:0;border-radius:25px;background:var(--paper-2);padding:18px}
+html[data-motif="c"] .spk{border:1px solid var(--red);color:var(--red)}
+html[data-motif="c"] .q{border:0;border-radius:25px;background:var(--paper-2);padding:22px 24px}
+html[data-motif="c"] .q .opts button{border:1px solid var(--red);color:var(--red);background:#fff;border-radius:50px}
+html[data-motif="c"] .q .opts button.ok{background:var(--red);color:#fff}
+html[data-motif="c"] .score{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:700}
+html[data-motif="c"] footer{border-top:1px solid var(--red);margin-top:0}
+html[data-motif="c"] footer a{color:var(--red)}
+/* song page */
+html[data-motif="c"] .player-wrap,html[data-motif="c"] .seg,html[data-motif="c"] .lyrics,html[data-motif="c"] .title-line{border:0;border-radius:25px;overflow:hidden;background:var(--paper-2)}
+html[data-motif="c"] .seg .head{border-bottom:1px solid var(--red);background:transparent}
+html[data-motif="c"] .seg .head .n{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:500;font-size:14px;color:var(--red);letter-spacing:.06em}
+html[data-motif="c"] .seg .head h2{font-weight:700}
+html[data-motif="c"] .pbar{border-top:0}
+html[data-motif="c"] .lyrics{background:var(--gold)}
+html[data-motif="c"] .title-line .jp{color:var(--red);font-family:"Zen Kaku Gothic New",sans-serif;font-weight:900}
+html[data-motif="c"] .title-line{background:#fff;border:1px solid var(--red)}
+
+/* ---------- picker bar (only when ?motif is in the URL) ---------- */
+.motif-picker{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:999;display:flex;gap:4px;background:#111;padding:6px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.motif-picker button{appearance:none;border:0;background:transparent;color:#ddd;font:inherit;font-weight:900;font-size:13px;padding:6px 12px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.motif-picker button.on{background:#fff;color:#111}
