@@ -427,3 +427,7 @@ html[data-motif="b"] .cta .btn{border:0;background:#2a2a2a;color:#fff}
 html[data-motif="b"] .cta .btn.primary{background:var(--gold);color:#000}
 html[data-motif="b"] .cta .eyebrow{border:0;padding:0;color:var(--gold)}
 @media(max-width:820px){.cta .cta-in{grid-template-columns:1fr}.cta .cta-lines{text-align:left}}
+
+.loophint{font-size:12px;color:var(--sub);font-weight:700;width:100%}
+.act-loop.on{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.act-loop.on::after{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--red);margin-left:8px;animation:blink 1s steps(2) infinite}

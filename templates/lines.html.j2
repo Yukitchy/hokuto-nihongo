@@ -113,10 +113,11 @@
       <div class="ctl" data-player="yt{{ L.num }}" data-scene="{{ L.clip.scene[0] }},{{ L.clip.scene[1] }}" data-line="{{ L.clip.line[0] }},{{ L.clip.line[1] }}">
         <div class="lbl" {{ t(d.ui.clip) }}>{{ d.ui.clip.base }}</div>
         <button class="btn primary act-scene" {{ t(d.ui.scene) }}>{{ d.ui.scene.base }}</button>
-        <button class="btn act-loop" {{ t(d.ui.loop) }}>{{ d.ui.loop.base }}</button>
+        <button class="btn act-loop" data-stop="{{ d.ui.loop_stop.base }}" {{ t(d.ui.loop) }}>{{ d.ui.loop.base }}</button>
         <button class="btn act-stop">⏹</button>
         <button class="btn sm act-slow" {{ t(d.ui.slow) }}>{{ d.ui.slow.base }}</button>
         <div class="loopbar"><i></i></div>
+        <span class="loophint" {{ t(d.ui.loop_hint) }}>{{ d.ui.loop_hint.base }}</span>
         <div class="lbl" {{ t(d.ui.listen) }}>{{ d.ui.listen.base }}</div>
         <button class="btn act-say" data-say="{{ L.line.say }}" {{ t(d.ui.normal) }}>{{ d.ui.normal.base }}</button>
         <button class="btn act-say-slow" data-say="{{ L.line.say }}" {{ t(d.ui.slowsay) }}>{{ d.ui.slowsay.base }}</button>
@@ -254,7 +255,7 @@ function onYouTubeIframeAPIReady(){
       events:{onStateChange:e=>{ if(e.data===YT.PlayerState.ENDED) stopLoop(id); }}});
   }
 }
-function stopLoop(id){ if(loops[id]){clearInterval(loops[id].t);loops[id]=null;} const c=document.querySelector(`.ctl[data-player="${id}"]`); if(c){c.querySelector('.act-loop').classList.remove('on');c.querySelector('.loopbar i').style.width='0';} }
+function stopLoop(id){ if(loops[id]){clearInterval(loops[id].t);loops[id]=null;} const c=document.querySelector(`.ctl[data-player="${id}"]`); if(c){const lb=c.querySelector('.act-loop');lb.classList.remove('on');if(lb.dataset.label)lb.innerHTML=lb.dataset.label;c.querySelector('.loopbar i').style.width='0';} }
 function playRange(id,a,b,loop){
   const p=players[id]; if(!p||!p.seekTo){toast('Player still loading…');return;}
   stopLoop(id); p.seekTo(a,true); p.playVideo();
@@ -266,7 +267,7 @@ function playRange(id,a,b,loop){
     if(cur>=b){ if(loop){p.seekTo(a,true);} else {p.pauseVideo();stopLoop(id);} }
   },80);
   loops[id]={t};
-  if(loop) c.querySelector('.act-loop').classList.add('on');
+  if(loop){const lb=c.querySelector('.act-loop');lb.classList.add('on');lb.dataset.label=lb.innerHTML;lb.innerHTML=lb.dataset.stop||'⏸';}
 }
 $$('.ctl').forEach(c=>{
   const id=c.dataset.player, [sa,sb]=c.dataset.scene.split(',').map(Number), [la,lb]=c.dataset.line.split(',').map(Number);
@@ -354,6 +355,7 @@ function applyLang(lang){
   LANG=lang; const dict=I[lang]||{};
   document.documentElement.lang={{ d.html_lang|default({})|tojson }}[lang]||lang;
   $$('[data-i18n]').forEach(el=>{const k=el.dataset.i18n;if(!el.dataset.orig)el.dataset.orig=el.innerHTML;el.innerHTML=dict[k]||el.dataset.orig;});
+  $$('[data-stop]').forEach(el=>{el.dataset.stop=dict['ui.loop_stop']||{{ d.ui.loop_stop.base|tojson }}; if(el.classList.contains('on'))el.innerHTML=el.dataset.stop;});
   $$('[data-i18n-ph]').forEach(el=>{const k=el.dataset.i18nPh;if(!el.dataset.orig)el.dataset.orig=el.placeholder;el.placeholder=dict[k]||el.dataset.orig;});
   const k1=$('#tRuby .k'),k2=$('#tRomaji .k'); if(k1)k1.textContent=document.body.classList.contains('no-ruby')?'off':'on'; if(k2)k2.textContent=document.body.classList.contains('no-romaji')?'off':'on';
   $$('#lang button').forEach(b=>b.classList.toggle('on',b.dataset.lang===lang));

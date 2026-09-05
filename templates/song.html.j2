@@ -38,6 +38,9 @@
 .title-line .en{font-size:18px;font-weight:700;margin:8px 0 0}
 .title-line .en i{font-style:normal;color:var(--red)}
 .seg .ex li{font-size:15px}
+.loophint{font-size:12px;color:var(--sub);font-weight:700;width:100%}
+.act-seg.on{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.act-seg.on::after{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--red);margin-left:8px;animation:blink 1s steps(2) infinite}
 .lk,.lk-intro{background:var(--paper-2);padding:14px 16px;margin:0 0 14px}
 .lk-intro{margin:22px 0 0}
 .lk-h{font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:var(--sub);margin-bottom:8px}
@@ -158,7 +161,7 @@ html[data-motif="b"] .dock{background:#000}
           <p class="en" {{ t(d.title_line.en) }}>{{ d.title_line.en.base }}</p>
           <div class="ctl" style="margin-top:12px">
             <button class="btn act-say" data-say="{{ d.title_line.say }}">🔊</button>
-            <button class="btn act-seg" data-seg="{{ d.title_line.seg[0] }},{{ d.title_line.seg[1] }}" {{ t(d.ui.loopline) }}>{{ d.ui.loopline.base }}</button>
+            <button class="btn act-seg" data-seg="{{ d.title_line.seg[0] }},{{ d.title_line.seg[1] }}" data-stop="{{ d.ui.loop_stop.base }}" {{ t(d.ui.loopline) }}>{{ d.ui.loopline.base }}</button>
             <div class="rec"><button class="btn dark act-rec" {{ t(d.ui.rec) }}>{{ d.ui.rec.base }}</button><span class="dot"></span><audio controls class="mine" hidden></audio></div>
           </div>
         </div>
@@ -169,7 +172,7 @@ html[data-motif="b"] .dock{background:#000}
         <div class="seg" id="{{ S.id }}">
           <div class="head"><div class="n">{{ loop.index }}</div><h2 {{ t(S.h) }}>{{ S.h.base }}</h2><span class="t">{{ S.time }}</span></div>
           <div class="body">
-            <div class="ctl" data-seg="{{ S.seg[0] }},{{ S.seg[1] }}"><button class="btn primary act-seg" data-seg="{{ S.seg[0] }},{{ S.seg[1] }}" {{ t(d.ui.loop) }}>{{ d.ui.loop.base }}</button><div class="loopbar"><i></i></div></div>
+            <div class="ctl" data-seg="{{ S.seg[0] }},{{ S.seg[1] }}"><button class="btn primary act-seg" data-seg="{{ S.seg[0] }},{{ S.seg[1] }}" data-stop="{{ d.ui.loop_stop.base }}" {{ t(d.ui.loop) }}>{{ d.ui.loop.base }}</button><div class="loopbar"><i></i></div><span class="loophint" {{ t(d.ui.loop_hint) }}>{{ d.ui.loop_hint.base }}</span></div>
             <p class="cue" {{ t(S.cue) }}>{{ S.cue.base }}</p>
             {%- if S.linking %}
             <div class="lk">
@@ -304,10 +307,10 @@ function onYouTubeIframeAPIReady(){
 }
 const fmt=t=>Math.floor(t/60)+':'+String(Math.floor(t%60)).padStart(2,'0');
 let seeking=false;
-function stopLoop(){ if(loop){clearInterval(loop.t);loop=null;} if(activeBtn){activeBtn.classList.remove('on');const bar=activeBtn.parentElement.querySelector('.loopbar i');if(bar)bar.style.width='0';activeBtn=null;} }
+function stopLoop(){ if(loop){clearInterval(loop.t);loop=null;} if(activeBtn){activeBtn.classList.remove('on'); if(activeBtn.dataset.label)activeBtn.innerHTML=activeBtn.dataset.label;const bar=activeBtn.parentElement.querySelector('.loopbar i');if(bar)bar.style.width='0';activeBtn=null;} }
 function playSeg(a,b,btn){
   if(!P||!P.seekTo){toast('Player still loading…');return;}
-  stopLoop(); P.seekTo(a,true); P.playVideo(); activeBtn=btn; btn.classList.add('on');
+  stopLoop(); P.seekTo(a,true); P.playVideo(); activeBtn=btn; btn.classList.add('on'); btn.dataset.label=btn.innerHTML; btn.innerHTML=btn.dataset.stop||'⏸';
   const bar=btn.parentElement.querySelector('.loopbar i');
   loop={a,b,t:setInterval(()=>{const cur=P.getCurrentTime(); if(bar)bar.style.width=Math.max(0,Math.min(100,(cur-a)/(b-a)*100))+'%'; if(cur>=b)P.seekTo(a,true); else if(cur<a-0.6&&Date.now()-(loop.last||0)>1000){loop.last=Date.now();P.seekTo(a,true);}},80)};
   const nm=btn.closest('.seg')?btn.closest('.seg').querySelector('.head h2').textContent:btn.closest('.title-line')?btn.closest('.title-line').querySelector('.jp').textContent:''; $('#dName').textContent=nm;
@@ -392,6 +395,7 @@ function applyLang(lang){
   LANG=lang; const dict=I[lang]||{};
   document.documentElement.lang={{ d.html_lang|default({})|tojson }}[lang]||lang;
   $$('[data-i18n]').forEach(el=>{const k=el.dataset.i18n;if(!el.dataset.orig)el.dataset.orig=el.innerHTML;el.innerHTML=dict[k]||el.dataset.orig;});
+  $$('[data-stop]').forEach(el=>{el.dataset.stop=dict['ui.loop_stop']||{{ d.ui.loop_stop.base|tojson }}; if(el.classList.contains('on'))el.innerHTML=el.dataset.stop;});
   $$('[data-i18n-ph]').forEach(el=>{const k=el.dataset.i18nPh;if(!el.dataset.orig)el.dataset.orig=el.placeholder;el.placeholder=dict[k]||el.dataset.orig;});
   $$('#lang button').forEach(b=>b.classList.toggle('on',b.dataset.lang===lang));
   renderQuiz(); store.set('lang-{{ d.slug }}',lang);

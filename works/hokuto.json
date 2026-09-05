@@ -2025,6 +2025,16 @@
    "en": "🔊 Read mine",
    "ja": "🔊 自分の文を読ませる",
    "zh": "🔊 讀我寫的"
+  },
+  "loop_stop": {
+   "en": "⏸ Stop loop",
+   "ja": "⏸ ループ停止",
+   "zh": "⏸ 停止循環"
+  },
+  "loop_hint": {
+   "en": "Tap again to stop.",
+   "ja": "もう一度押すと止まる。",
+   "zh": "再按一次就停止。"
   }
  },
  "cta": {

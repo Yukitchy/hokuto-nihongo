@@ -183,6 +183,14 @@
   "kara_empty": {
    "en": "No lyrics yet. Tap ✎, paste them from the lyrics site, save. Then this box follows the song like karaoke.",
    "ja": "まだ歌詞がない。✎ を押して歌詞サイトから貼って保存。すると歌に合わせてここが光る。"
+  },
+  "loop_stop": {
+   "en": "⏸ Stop loop",
+   "ja": "⏸ ループを止める"
+  },
+  "loop_hint": {
+   "en": "Tap again to stop. The bottom bar also pauses.",
+   "ja": "もう一度押すと止まる。下のバーの ⏸ でも止まる。"
   }
  },
  "lyrics": {
