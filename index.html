@@ -11,21 +11,19 @@
 <link rel="stylesheet" href="style.css">
 <script src="motif.js"></script>
 </head>
-<body>
-
-<header class="top">
+<body><header class="top">
   <div class="wrap">
     <a class="brand" href="#top">北斗<b>×</b>日本語</a>
     <nav id="nav">
-      <a href="#warmup">Warm-up</a>
+      <a href="#warmup" data-i18n="nav.warmup">Warm-up</a>
       <a href="#l1">1 死んでいる</a>
       <a href="#l2">2 悔いなし</a>
       <a href="#l3">3 〜ぬ</a>
       <a href="#l4">4 消毒だ</a>
       <a href="#l5">5 しか〜ぬ</a>
       <a href="#l6">6 ゆえに</a>
-      <a href="#quiz">Quiz</a>
-      <a href="ai/" class="song">♪ Song</a>
+      <a href="#quiz" data-i18n="nav.quiz">Quiz</a>
+      <a href="ai/" class="song" data-i18n="nav.song">♪ Song</a>
     </nav>
     <div class="lang" id="lang"><button data-lang="en" class="on">EN</button><button data-lang="ja">日本語</button><button data-lang="zh">中文</button></div>
     <div class="prog" title="Lines you marked as done"><b id="doneN">0</b> / 6 done</div>
@@ -34,24 +32,24 @@
 
 <div class="hero" id="top">
   <div class="wrap">
-    <span class="eyebrow">Trial Lesson · JLPT N3 · with Yuuki@Anime Sensei</span>
-    <h1>北斗の拳で<br>日本語を学ぶ<span class="en">Learn Japanese with Fist of the North Star</span></h1>
-    <p class="lead">Six legendary lines. Each one hides a grammar point you will actually use in Tokyo tomorrow. Watch the clip, loop the line, say it like Kenshiro, then drill it.</p>
+    <span class="eyebrow" data-i18n="hero.eyebrow">Trial Lesson · JLPT N3 · with Yuuki@Anime Sensei</span>
+    <h1>北斗の拳で<br/>日本語を学ぶ<span class="en" data-i18n="hero.h1_en">Learn Japanese with Fist of the North Star</span></h1>
+    <p class="lead" data-i18n="hero.lead">Six legendary lines. Each one hides a grammar point you will actually use in Tokyo tomorrow. Watch the clip, loop the line, say it like Kenshiro, then drill it.</p>
     <div class="meta">
-      <span>👤 Student: <b>Stephen</b></span>
-      <span>📅 <b>Sun 6 Sept 2026, 14:00 JST</b></span>
-      <span>⏱ 30 min · recorded for YouTube</span>
+      <span data-i18n="hero.meta.0">👤 Student: <b>Stephen</b></span>
+      <span data-i18n="hero.meta.1">📅 <b>Sun 6 Sept 2026, 14:00 JST</b></span>
+      <span data-i18n="hero.meta.2">⏱ 30 min · recorded for YouTube</span>
     </div>
     <div class="howto">
-      <div><div class="n">1</div><div class="t">Watch</div><div class="d">Play the scene once.</div></div>
-      <div><div class="n">2</div><div class="t">Loop</div><div class="d">Loop just the line. Slow it down.</div></div>
-      <div><div class="n">3</div><div class="t">Repeat</div><div class="d">Shadow it out loud. Record yourself.</div></div>
-      <div><div class="n">4</div><div class="t">Grammar</div><div class="d">See the pattern hiding inside.</div></div>
-      <div><div class="n">5</div><div class="t">Drill</div><div class="d">Tap the blanks, then write your own.</div></div>
+      <div><div class="n">1</div><div class="t" data-i18n="hero.howto.0.t">Watch</div><div class="d" data-i18n="hero.howto.0.d">Play the scene once.</div></div>
+      <div><div class="n">2</div><div class="t" data-i18n="hero.howto.1.t">Loop</div><div class="d" data-i18n="hero.howto.1.d">Loop just the line. Slow it down.</div></div>
+      <div><div class="n">3</div><div class="t" data-i18n="hero.howto.2.t">Repeat</div><div class="d" data-i18n="hero.howto.2.d">Shadow it out loud. Record yourself.</div></div>
+      <div><div class="n">4</div><div class="t" data-i18n="hero.howto.3.t">Grammar</div><div class="d" data-i18n="hero.howto.3.d">See the pattern hiding inside.</div></div>
+      <div><div class="n">5</div><div class="t" data-i18n="hero.howto.4.t">Drill</div><div class="d" data-i18n="hero.howto.4.d">Tap the blanks, then write your own.</div></div>
     </div>
     <div class="toggles">
-      <button class="btn on" id="tRuby">あ Furigana <span class="k">on</span></button>
-      <button class="btn on" id="tRomaji">Aa Romaji <span class="k">on</span></button>
+      <button class="btn on" id="tRuby" data-i18n="toggles.ruby">あ Furigana <span class="k">on</span></button>
+      <button class="btn on" id="tRomaji" data-i18n="toggles.romaji">Aa Romaji <span class="k">on</span></button>
       <button class="btn" id="tVoice">🔊 Voice: <span id="voiceName">loading…</span></button>
     </div>
   </div>
@@ -62,29 +60,29 @@
   <div class="wrap">
     <div class="sec-head">
       <div class="num">0</div>
-      <div><h2>Warm-up: the world of 199X <span class="tag fun">vocab</span></h2><div class="who">Six words you need before anyone punches anyone.</div></div>
+      <div><h2><span data-i18n="warmup.h2">Warm-up: the world of 199X</span> <span class="tag fun" data-i18n="warmup.tag">vocab</span></h2><div class="who" data-i18n="warmup.who">Six words you need before anyone punches anyone.</div></div>
     </div>
     <div class="chips">
-      <div class="chip"><div><div class="j"><ruby>世紀末<rt>せいきまつ</rt></ruby></div><div class="e">end of the century · post-apocalypse</div></div><button class="spk" data-say="世紀末">🔊</button></div>
-      <div class="chip"><div><div class="j"><ruby>核戦争<rt>かくせんそう</rt></ruby></div><div class="e">nuclear war</div></div><button class="spk" data-say="核戦争">🔊</button></div>
-      <div class="chip"><div><div class="j"><ruby>暴力<rt>ぼうりょく</rt></ruby></div><div class="e">violence</div></div><button class="spk" data-say="暴力">🔊</button></div>
-      <div class="chip"><div><div class="j"><ruby>救世主<rt>きゅうせいしゅ</rt></ruby></div><div class="e">savior</div></div><button class="spk" data-say="救世主">🔊</button></div>
-      <div class="chip"><div><div class="j"><ruby>秘孔<rt>ひこう</rt></ruby></div><div class="e">secret pressure point</div></div><button class="spk" data-say="秘孔">🔊</button></div>
-      <div class="chip"><div><div class="j"><ruby>拳<rt>けん</rt></ruby>・<ruby>拳法<rt>けんぽう</rt></ruby></div><div class="e">fist · fist-fighting art</div></div><button class="spk" data-say="拳、拳法">🔊</button></div>
+      <div class="chip"><div><div class="j"><ruby>世紀末<rt>せいきまつ</rt></ruby></div><div class="e" data-i18n="warmup.chips.0.e">end of the century · post-apocalypse</div></div><button class="spk" data-say="世紀末">🔊</button></div>
+      <div class="chip"><div><div class="j"><ruby>核戦争<rt>かくせんそう</rt></ruby></div><div class="e" data-i18n="warmup.chips.1.e">nuclear war</div></div><button class="spk" data-say="核戦争">🔊</button></div>
+      <div class="chip"><div><div class="j"><ruby>暴力<rt>ぼうりょく</rt></ruby></div><div class="e" data-i18n="warmup.chips.2.e">violence</div></div><button class="spk" data-say="暴力">🔊</button></div>
+      <div class="chip"><div><div class="j"><ruby>救世主<rt>きゅうせいしゅ</rt></ruby></div><div class="e" data-i18n="warmup.chips.3.e">savior</div></div><button class="spk" data-say="救世主">🔊</button></div>
+      <div class="chip"><div><div class="j"><ruby>秘孔<rt>ひこう</rt></ruby></div><div class="e" data-i18n="warmup.chips.4.e">secret pressure point</div></div><button class="spk" data-say="秘孔">🔊</button></div>
+      <div class="chip"><div><div class="j"><ruby>拳<rt>けん</rt></ruby>・<ruby>拳法<rt>けんぽう</rt></ruby></div><div class="e" data-i18n="warmup.chips.5.e">fist · fist-fighting art</div></div><button class="spk" data-say="拳、拳法">🔊</button></div>
     </div>
     <div class="grid2">
       <div>
-        <h3>Kanji trick: 強敵 = とも</h3>
-        <p><ruby>強敵<rt>きょうてき</rt></ruby> normally means "powerful enemy" (きょうてき). In Hokuto no Ken it is read <b>とも</b> = "friend". A rival you respect is a friend. Japanese does this all the time: <b>Xと書いてYと読む</b> (written X, read Y).</p>
+        <h3 data-i18n="warmup.cols.0.h">Kanji trick: 強敵 = とも</h3>
+        <p data-i18n="warmup.cols.0.p"><ruby>強敵<rt>きょうてき</rt></ruby> normally means "powerful enemy" (きょうてき). In Hokuto no Ken it is read <b>とも</b> = "friend". A rival you respect is a friend. Japanese does this all the time: <b>Xと書いてYと読む</b> (written X, read Y).</p>
         <ul class="ex">
-          <li><ruby>本気<rt>ほんき</rt></ruby>と書いて「マジ」と読む <span class="m">written "serious", read "for real"</span><button class="spk" data-say="本気と書いてマジと読む">🔊</button></li>
-          <li><ruby>宇宙<rt>うちゅう</rt></ruby>と書いて「そら」と読む <span class="m">written "universe", read "sky"</span><button class="spk" data-say="宇宙と書いてそらと読む">🔊</button></li>
+          <li><ruby>本気<rt>ほんき</rt></ruby>と書いて「マジ」と読む <span class="m" data-i18n="warmup.cols.0.examples.0.m">written "serious", read "for real"</span><button class="spk" data-say="本気と書いてマジと読む">🔊</button></li>
+          <li><ruby>宇宙<rt>うちゅう</rt></ruby>と書いて「そら」と読む <span class="m" data-i18n="warmup.cols.0.examples.1.m">written "universe", read "sky"</span><button class="spk" data-say="宇宙と書いてそらと読む">🔊</button></li>
         </ul>
       </div>
       <div>
-        <h3>Opening: 愛をとりもどせ!! (official)</h3>
-        <p>Warm your ears up with the official opening. Listen for <b>お前</b> and <b>愛</b>.</p>
-        <p><a class="btn primary" href="ai/">♪ Learn Japanese from this song →</a></p>
+        <h3 data-i18n="warmup.cols.1.h">Opening: 愛をとりもどせ!! (official)</h3>
+        <p data-i18n="warmup.cols.1.p">Warm your ears up with the official opening. Listen for <b>お前</b> and <b>愛</b>.</p>
+        <p><a class="btn primary" href="ai/" data-i18n="warmup.cols.1.button.text">♪ Learn Japanese from this song →</a></p>
         <div class="panel" style="grid-template-columns:1fr">
           <div class="vid"><div class="yt" id="ytOP"></div></div>
         </div>
@@ -92,448 +90,442 @@
     </div>
   </div>
 </section>
-
 <!-- ================= LINE 1 ================= -->
 <section id="l1" class="lesson" data-key="l1">
   <div class="wrap">
     <div class="sec-head">
       <div class="num">1</div>
-      <div><h2>お前はもう死んでいる <span class="tag n3">N4→N3 · 〜ている</span></h2><div class="who">Kenshiro · the line everyone knows</div></div>
+      <div><h2>お前はもう死んでいる <span class="tag n3" data-i18n="lines.0.tag.text">N4→N3 · 〜ている</span></h2><div class="who" data-i18n="lines.0.who">Kenshiro · the line everyone knows</div></div>
     </div>
 
     <div class="bubble">
       <p class="jp"><ruby>お前<rt>おまえ</rt></ruby>はもう<ruby>死<rt>し</rt></ruby>んでいる。</p>
       <p class="romaji">Omae wa mō shinde iru.</p>
-      <p class="en">"You are <i>already dead</i>."</p>
+      <p class="en" data-i18n="lines.0.line.en">"You are <i>already dead</i>."</p>
     </div>
 
     <div class="panel">
       <div class="vid"><div class="yt" id="yt1"></div></div>
-      <div class="ctl" data-player="yt1" data-scene="0,11.5" data-line="3.7,6.4">
-        <div class="lbl">Clip</div>
-        <button class="btn primary act-scene">▶ Scene</button>
-        <button class="btn act-loop">🔁 Loop the line</button>
+      <div class="ctl" data-player="yt1" data-scene="0.0,11.5" data-line="3.7,6.4">
+        <div class="lbl" data-i18n="ui.clip">Clip</div>
+        <button class="btn primary act-scene" data-i18n="ui.scene">▶ Scene</button>
+        <button class="btn act-loop" data-i18n="ui.loop">🔁 Loop the line</button>
         <button class="btn act-stop">⏹</button>
-        <button class="btn sm act-slow">🐢 0.75×</button>
+        <button class="btn sm act-slow" data-i18n="ui.slow">🐢 0.75×</button>
         <div class="loopbar"><i></i></div>
-        <div class="lbl">Listen &amp; repeat</div>
-        <button class="btn act-say" data-say="お前はもう死んでいる。">🔊 Normal</button>
-        <button class="btn act-say-slow" data-say="お前はもう死んでいる。">🐢 Slow</button>
-        <div class="lbl">Record yourself</div>
-        <div class="rec"><button class="btn dark act-rec">🎙 Record</button><span class="dot"></span><audio controls class="mine" hidden></audio></div>
-        <div class="src">Clip: <a href="https://youtu.be/4bv6tNtrU4I" target="_blank" rel="noopener">YouTube</a> · bonus at 0:08 — the famous death cry ひでぶ！</div>
+        <div class="lbl" data-i18n="ui.listen">Listen &amp; repeat</div>
+        <button class="btn act-say" data-say="お前はもう死んでいる。" data-i18n="ui.normal">🔊 Normal</button>
+        <button class="btn act-say-slow" data-say="お前はもう死んでいる。" data-i18n="ui.slowsay">🐢 Slow</button>
+        <div class="lbl" data-i18n="ui.record">Record yourself</div>
+        <div class="rec"><button class="btn dark act-rec" data-i18n="ui.rec">🎙 Record</button><span class="dot"></span><audio controls class="mine" hidden></audio></div>
+        <div class="src" data-i18n="lines.0.clip.src">Clip: <a href="https://youtu.be/4bv6tNtrU4I" rel="noopener" target="_blank">YouTube</a> · bonus at 0:08 — the famous death cry ひでぶ！</div>
       </div>
     </div>
 
     <div class="grid2">
       <div>
-        <h3>Word by word</h3>
+        <h3 data-i18n="lines.0.words.h">Word by word</h3>
         <table>
-          <tr><th>word</th><th>meaning</th></tr>
-          <tr><td class="w"><ruby>お前<rt>おまえ</rt></ruby></td><td>you — rough. For enemies, rivals, very close friends. <b>Never</b> for your boss or your host family.</td></tr>
-          <tr><td class="w">は</td><td>topic marker (wa)</td></tr>
-          <tr><td class="w">もう</td><td>already</td></tr>
-          <tr><td class="w"><ruby>死<rt>し</rt></ruby>んでいる</td><td>死ぬ → て-form 死んで + いる → "is (in the state of) dead"</td></tr>
+          <tr><th data-i18n="lines.0.words.head.0">word</th><th data-i18n="lines.0.words.head.1">meaning</th></tr>
+          <tr><td class="w"><ruby>お前<rt>おまえ</rt></ruby></td><td data-i18n="lines.0.words.rows.0.1">you — rough. For enemies, rivals, very close friends. <b>Never</b> for your boss or your host family.</td></tr>
+          <tr><td class="w">は</td><td data-i18n="lines.0.words.rows.1.1">topic marker (wa)</td></tr>
+          <tr><td class="w">もう</td><td data-i18n="lines.0.words.rows.2.1">already</td></tr>
+          <tr><td class="w"><ruby>死<rt>し</rt></ruby>んでいる</td><td data-i18n="lines.0.words.rows.3.1">死ぬ → て-form 死んで + いる → "is (in the state of) dead"</td></tr>
         </table>
       </div>
       <div>
-        <h3>Grammar: 〜ている = the state after a change</h3>
-        <div class="gp"><b>change verb + ている</b> → not "is doing", but "has done and is now in that state".</div>
-        <p>死ぬ, 結婚する, 知る, 持つ, 住む, 始まる, 閉まる are all "change" verbs. Kenshiro is not saying "you are dying". The change already happened; you just haven't noticed.</p>
+        <h3 data-i18n="lines.0.grammar.h">Grammar: 〜ている = the state after a change</h3>
+        <div class="gp" data-i18n="lines.0.grammar.gp.0"><b>change verb + ている</b> → not "is doing", but "has done and is now in that state".</div>
+        <p data-i18n="lines.0.grammar.p">死ぬ, 結婚する, 知る, 持つ, 住む, 始まる, 閉まる are all "change" verbs. Kenshiro is not saying "you are dying". The change already happened; you just haven't noticed.</p>
         <ul class="ex">
-          <li>もう<ruby>結婚<rt>けっこん</rt></ruby>している <span class="m">I'm (already) married</span><button class="spk" data-say="もう結婚している">🔊</button></li>
-          <li><ruby>電車<rt>でんしゃ</rt></ruby>はもう<ruby>出<rt>で</rt></ruby>ている <span class="m">the train has already left</span><button class="spk" data-say="電車はもう出ている">🔊</button></li>
-          <li><ruby>店<rt>みせ</rt></ruby>はもう<ruby>閉<rt>し</rt></ruby>まっている <span class="m">the shop is already closed</span><button class="spk" data-say="店はもう閉まっている">🔊</button></li>
+          <li>もう<ruby>結婚<rt>けっこん</rt></ruby>している <span class="m" data-i18n="lines.0.grammar.examples.0.m">I'm (already) married</span><button class="spk" data-say="もう結婚している">🔊</button></li>
+          <li><ruby>電車<rt>でんしゃ</rt></ruby>はもう<ruby>出<rt>で</rt></ruby>ている <span class="m" data-i18n="lines.0.grammar.examples.1.m">the train has already left</span><button class="spk" data-say="電車はもう出ている">🔊</button></li>
+          <li><ruby>店<rt>みせ</rt></ruby>はもう<ruby>閉<rt>し</rt></ruby>まっている <span class="m" data-i18n="lines.0.grammar.examples.2.m">the shop is already closed</span><button class="spk" data-say="店はもう閉まっている">🔊</button></li>
         </ul>
-        <div class="note"><b>Tokyo use:</b> a friend runs for the last train — you say「もう出てるよ」(colloquial drops the い).</div>
+        <div class="note" data-i18n="lines.0.grammar.note"><b>Tokyo use:</b> a friend runs for the last train — you say「もう出てるよ」(colloquial drops the い).</div>
       </div>
     </div>
 
     <div class="drill">
-      <h3>Drill</h3>
+      <h3 data-i18n="lines.0.drill.h">Drill</h3>
       <ol>
-        <li><ruby>会議<rt>かいぎ</rt></ruby>はもう<button class="blank">始まっている</button>。<span class="m">The meeting has already started. (始まる)</span></li>
-        <li>すみません、お<ruby>金<rt>かね</rt></ruby>を<button class="blank">持っていない</button>んです。<span class="m">I don't have money on me. (持つ, negative)</span></li>
-        <li><ruby>今<rt>いま</rt></ruby>は<ruby>東京<rt>とうきょう</rt></ruby>に<button class="blank">住んでいる</button>。<span class="m">I live in Tokyo now. (住む)</span></li>
+        <li><ruby>会議<rt>かいぎ</rt></ruby>はもう<button class="blank">始まっている</button>。<span class="m" data-i18n="lines.0.drill.list.0.m">The meeting has already started. (始まる)</span></li>
+        <li>すみません、お<ruby>金<rt>かね</rt></ruby>を<button class="blank">持っていない</button>んです。<span class="m" data-i18n="lines.0.drill.list.1.m">I don't have money on me. (持つ, negative)</span></li>
+        <li><ruby>今<rt>いま</rt></ruby>は<ruby>東京<rt>とうきょう</rt></ruby>に<button class="blank">住んでいる</button>。<span class="m" data-i18n="lines.0.drill.list.2.m">I live in Tokyo now. (住む)</span></li>
       </ol>
       <div class="yourturn">
-        <label>Your turn — be Kenshiro about something harmless</label>
-        <textarea data-store="yt-l1" placeholder="お前はもう ＿＿ ている。  e.g. お前はもう合格している。(You have already passed.)"></textarea>
-        <div class="row"><button class="btn sm act-say-ta">🔊 Read mine</button><span class="hint">Saved on this device.</span></div>
+        <label data-i18n="lines.0.yourturn.label">Your turn — be Kenshiro about something harmless</label>
+        <textarea data-store="yt-l1" data-i18n-ph="lines.0.yourturn.ph" placeholder="お前はもう ＿＿ ている。  e.g. お前はもう合格している。(You have already passed.)"></textarea>
+        <div class="row"><button class="btn sm act-say-ta" data-i18n="ui.readmine">🔊 Read mine</button><span class="hint" data-i18n="lines.0.yourturn.hint">Saved on this device.</span></div>
       </div>
-      <div class="done"><label><input type="checkbox" class="doneBox"> Line 1 done</label></div>
+      <div class="done"><label><input type="checkbox" class="doneBox"> <span data-i18n="lines.0.done"><input class="doneBox" type="checkbox"/> Line 1 done</span></label></div>
     </div>
   </div>
 </section>
-
 <!-- ================= LINE 2 ================= -->
 <section id="l2" class="lesson" data-key="l2">
   <div class="wrap">
     <div class="sec-head">
       <div class="num">2</div>
-      <div><h2>我が生涯に一片の悔いなし！ <span class="tag n2">N3→N2 · 我が / 〜なし</span></h2><div class="who">Raoh · his last words, fist raised to the sky</div></div>
+      <div><h2>我が生涯に一片の悔いなし！ <span class="tag n2" data-i18n="lines.1.tag.text">N3→N2 · 我が / 〜なし</span></h2><div class="who" data-i18n="lines.1.who">Raoh · his last words, fist raised to the sky</div></div>
     </div>
 
     <div class="bubble">
       <p class="jp"><ruby>我<rt>わ</rt></ruby>が<ruby>生涯<rt>しょうがい</rt></ruby>に<ruby>一片<rt>いっぺん</rt></ruby>の<ruby>悔<rt>く</rt></ruby>いなし！</p>
       <p class="romaji">Waga shōgai ni ippen no kui nashi!</p>
-      <p class="en">"In my life, <i>not one piece of regret</i>!"</p>
+      <p class="en" data-i18n="lines.1.line.en">"In my life, <i>not one piece of regret</i>!"</p>
     </div>
 
     <div class="panel">
       <div class="vid"><div class="yt" id="yt2"></div></div>
-      <div class="ctl" data-player="yt2" data-scene="0,27" data-line="0,6.2">
-        <div class="lbl">Clip</div>
-        <button class="btn primary act-scene">▶ Scene</button>
-        <button class="btn act-loop">🔁 Loop the line</button>
+      <div class="ctl" data-player="yt2" data-scene="0.0,27.0" data-line="0.0,6.2">
+        <div class="lbl" data-i18n="ui.clip">Clip</div>
+        <button class="btn primary act-scene" data-i18n="ui.scene">▶ Scene</button>
+        <button class="btn act-loop" data-i18n="ui.loop">🔁 Loop the line</button>
         <button class="btn act-stop">⏹</button>
-        <button class="btn sm act-slow">🐢 0.75×</button>
+        <button class="btn sm act-slow" data-i18n="ui.slow">🐢 0.75×</button>
         <div class="loopbar"><i></i></div>
-        <div class="lbl">Listen &amp; repeat</div>
-        <button class="btn act-say" data-say="我が生涯に一片の悔いなし！">🔊 Normal</button>
-        <button class="btn act-say-slow" data-say="我が生涯に一片の悔いなし！">🐢 Slow</button>
-        <div class="lbl">Record yourself</div>
-        <div class="rec"><button class="btn dark act-rec">🎙 Record</button><span class="dot"></span><audio controls class="mine" hidden></audio></div>
-        <div class="src">Clip: <a href="https://youtu.be/jiKRr4vYUyw" target="_blank" rel="noopener">YouTube</a></div>
+        <div class="lbl" data-i18n="ui.listen">Listen &amp; repeat</div>
+        <button class="btn act-say" data-say="我が生涯に一片の悔いなし！" data-i18n="ui.normal">🔊 Normal</button>
+        <button class="btn act-say-slow" data-say="我が生涯に一片の悔いなし！" data-i18n="ui.slowsay">🐢 Slow</button>
+        <div class="lbl" data-i18n="ui.record">Record yourself</div>
+        <div class="rec"><button class="btn dark act-rec" data-i18n="ui.rec">🎙 Record</button><span class="dot"></span><audio controls class="mine" hidden></audio></div>
+        <div class="src" data-i18n="lines.1.clip.src">Clip: <a href="https://youtu.be/jiKRr4vYUyw" rel="noopener" target="_blank">YouTube</a></div>
       </div>
     </div>
 
     <div class="grid2">
       <div>
-        <h3>Word by word</h3>
+        <h3 data-i18n="lines.1.words.h">Word by word</h3>
         <table>
-          <tr><th>word</th><th>meaning</th></tr>
-          <tr><td class="w"><ruby>我<rt>わ</rt></ruby>が</td><td>my / our — literary 私の. Still alive in 我が国 (our country), 我が社 (our company), 我が家 (our home)</td></tr>
-          <tr><td class="w"><ruby>生涯<rt>しょうがい</rt></ruby></td><td>(whole) life, lifetime</td></tr>
-          <tr><td class="w">に</td><td>in</td></tr>
-          <tr><td class="w"><ruby>一片<rt>いっぺん</rt></ruby>の</td><td>one piece of / a single</td></tr>
-          <tr><td class="w"><ruby>悔<rt>く</rt></ruby>い</td><td>regret (noun of 悔やむ)</td></tr>
-          <tr><td class="w">なし</td><td>= ない. Literary "there is none"</td></tr>
+          <tr><th data-i18n="lines.1.words.head.0">word</th><th data-i18n="lines.1.words.head.1">meaning</th></tr>
+          <tr><td class="w"><ruby>我<rt>わ</rt></ruby>が</td><td data-i18n="lines.1.words.rows.0.1">my / our — literary 私の. Still alive in 我が国 (our country), 我が社 (our company), 我が家 (our home)</td></tr>
+          <tr><td class="w"><ruby>生涯<rt>しょうがい</rt></ruby></td><td data-i18n="lines.1.words.rows.1.1">(whole) life, lifetime</td></tr>
+          <tr><td class="w">に</td><td data-i18n="lines.1.words.rows.2.1">in</td></tr>
+          <tr><td class="w"><ruby>一片<rt>いっぺん</rt></ruby>の</td><td data-i18n="lines.1.words.rows.3.1">one piece of / a single</td></tr>
+          <tr><td class="w"><ruby>悔<rt>く</rt></ruby>い</td><td data-i18n="lines.1.words.rows.4.1">regret (noun of 悔やむ)</td></tr>
+          <tr><td class="w">なし</td><td data-i18n="lines.1.words.rows.5.1">= ない. Literary "there is none"</td></tr>
         </table>
       </div>
       <div>
-        <h3>Grammar: 〜なし — the sign-board negative</h3>
-        <div class="gp"><b>Noun + なし</b> = "no ~ / without ~". Short, hard, final. Used on signs, reports, and by dying warlords.</div>
+        <h3 data-i18n="lines.1.grammar.h">Grammar: 〜なし — the sign-board negative</h3>
+        <div class="gp" data-i18n="lines.1.grammar.gp.0"><b>Noun + なし</b> = "no ~ / without ~". Short, hard, final. Used on signs, reports, and by dying warlords.</div>
         <ul class="ex">
-          <li><ruby>問題<rt>もんだい</rt></ruby>なし <span class="m">no problem (report / text)</span><button class="spk" data-say="問題なし">🔊</button></li>
-          <li><ruby>異常<rt>いじょう</rt></ruby>なし <span class="m">nothing abnormal (health check)</span><button class="spk" data-say="異常なし">🔊</button></li>
-          <li><ruby>予約<rt>よやく</rt></ruby>なしで<ruby>入<rt>はい</rt></ruby>れます <span class="m">you can enter without a reservation</span><button class="spk" data-say="予約なしで入れます">🔊</button></li>
-          <li><ruby>我<rt>わ</rt></ruby>が<ruby>家<rt>や</rt></ruby>へようこそ <span class="m">welcome to our home</span><button class="spk" data-say="我が家へようこそ">🔊</button></li>
+          <li><ruby>問題<rt>もんだい</rt></ruby>なし <span class="m" data-i18n="lines.1.grammar.examples.0.m">no problem (report / text)</span><button class="spk" data-say="問題なし">🔊</button></li>
+          <li><ruby>異常<rt>いじょう</rt></ruby>なし <span class="m" data-i18n="lines.1.grammar.examples.1.m">nothing abnormal (health check)</span><button class="spk" data-say="異常なし">🔊</button></li>
+          <li><ruby>予約<rt>よやく</rt></ruby>なしで<ruby>入<rt>はい</rt></ruby>れます <span class="m" data-i18n="lines.1.grammar.examples.2.m">you can enter without a reservation</span><button class="spk" data-say="予約なしで入れます">🔊</button></li>
+          <li><ruby>我<rt>わ</rt></ruby>が<ruby>家<rt>や</rt></ruby>へようこそ <span class="m" data-i18n="lines.1.grammar.examples.3.m">welcome to our home</span><button class="spk" data-say="我が家へようこそ">🔊</button></li>
         </ul>
-        <div class="note"><b>Tokyo use:</b> a restaurant sign 「予約なしOK」. A LINE reply from your boss: 「問題なし」= all good.</div>
+        <div class="note" data-i18n="lines.1.grammar.note"><b>Tokyo use:</b> a restaurant sign 「予約なしOK」. A LINE reply from your boss: 「問題なし」= all good.</div>
       </div>
     </div>
 
     <div class="drill">
-      <h3>Drill</h3>
+      <h3 data-i18n="lines.1.drill.h">Drill</h3>
       <ol>
-        <li>テストの<ruby>結果<rt>けっか</rt></ruby>は？ — <button class="blank">問題なし</button>！<span class="m">No problem!</span></li>
-        <li><ruby>健康診断<rt>けんこうしんだん</rt></ruby>：<button class="blank">異常なし</button>。<span class="m">Health check: nothing abnormal.</span></li>
-        <li>ようこそ、<button class="blank">我が家</button>へ！<span class="m">Welcome to our home! (我が + 家)</span></li>
+        <li>テストの<ruby>結果<rt>けっか</rt></ruby>は？ — <button class="blank">問題なし</button>！<span class="m" data-i18n="lines.1.drill.list.0.m">No problem!</span></li>
+        <li><ruby>健康診断<rt>けんこうしんだん</rt></ruby>：<button class="blank">異常なし</button>。<span class="m" data-i18n="lines.1.drill.list.1.m">Health check: nothing abnormal.</span></li>
+        <li>ようこそ、<button class="blank">我が家</button>へ！<span class="m" data-i18n="lines.1.drill.list.2.m">Welcome to our home! (我が + 家)</span></li>
       </ol>
       <div class="yourturn">
-        <label>Your turn — one thing you do not regret</label>
-        <textarea data-store="yt-l2" placeholder="我が ＿＿ に一片の悔いなし！  e.g. 我が東京生活に一片の悔いなし！"></textarea>
-        <div class="row"><button class="btn sm act-say-ta">🔊 Read mine</button><span class="hint">Raise your fist when you say it.</span></div>
+        <label data-i18n="lines.1.yourturn.label">Your turn — one thing you do not regret</label>
+        <textarea data-store="yt-l2" data-i18n-ph="lines.1.yourturn.ph" placeholder="我が ＿＿ に一片の悔いなし！  e.g. 我が東京生活に一片の悔いなし！"></textarea>
+        <div class="row"><button class="btn sm act-say-ta" data-i18n="ui.readmine">🔊 Read mine</button><span class="hint" data-i18n="lines.1.yourturn.hint">Raise your fist when you say it.</span></div>
       </div>
-      <div class="done"><label><input type="checkbox" class="doneBox"> Line 2 done</label></div>
+      <div class="done"><label><input type="checkbox" class="doneBox"> <span data-i18n="lines.1.done"><input class="doneBox" type="checkbox"/> Line 2 done</span></label></div>
     </div>
   </div>
 </section>
-
 <!-- ================= LINE 3 ================= -->
 <section id="l3" class="lesson" data-key="l3">
   <div class="wrap">
     <div class="sec-head">
       <div class="num">3</div>
-      <div><h2>退かぬ！媚びぬ！省みぬ！ <span class="tag n2">N2 · classical 〜ぬ</span></h2><div class="who">Souther, the Holy Emperor · three vows in three words</div></div>
+      <div><h2>退かぬ！媚びぬ！省みぬ！ <span class="tag n2" data-i18n="lines.2.tag.text">N2 · classical 〜ぬ</span></h2><div class="who" data-i18n="lines.2.who">Souther, the Holy Emperor · three vows in three words</div></div>
     </div>
 
     <div class="bubble">
       <p class="jp"><ruby>退<rt>ひ</rt></ruby>かぬ！<ruby>媚<rt>こ</rt></ruby>びぬ！<ruby>省<rt>かえり</rt></ruby>みぬ！</p>
       <p class="romaji">Hikanu! Kobinu! Kaeriminu!</p>
-      <p class="en">"I <i>won't retreat</i>! I <i>won't flatter</i>! I <i>won't look back</i>!"</p>
+      <p class="en" data-i18n="lines.2.line.en">"I <i>won't retreat</i>! I <i>won't flatter</i>! I <i>won't look back</i>!"</p>
     </div>
 
     <div class="panel">
       <div class="vid"><div class="yt" id="yt3"></div></div>
-      <div class="ctl" data-player="yt3" data-scene="0,13" data-line="4.6,9.3">
-        <div class="lbl">Clip</div>
-        <button class="btn primary act-scene">▶ Scene</button>
-        <button class="btn act-loop">🔁 Loop the line</button>
+      <div class="ctl" data-player="yt3" data-scene="0.0,13.0" data-line="4.6,9.3">
+        <div class="lbl" data-i18n="ui.clip">Clip</div>
+        <button class="btn primary act-scene" data-i18n="ui.scene">▶ Scene</button>
+        <button class="btn act-loop" data-i18n="ui.loop">🔁 Loop the line</button>
         <button class="btn act-stop">⏹</button>
-        <button class="btn sm act-slow">🐢 0.75×</button>
+        <button class="btn sm act-slow" data-i18n="ui.slow">🐢 0.75×</button>
         <div class="loopbar"><i></i></div>
-        <div class="lbl">Listen &amp; repeat</div>
-        <button class="btn act-say" data-say="退かぬ！媚びぬ！省みぬ！">🔊 Normal</button>
-        <button class="btn act-say-slow" data-say="退かぬ！媚びぬ！省みぬ！">🐢 Slow</button>
-        <div class="lbl">Record yourself</div>
-        <div class="rec"><button class="btn dark act-rec">🎙 Record</button><span class="dot"></span><audio controls class="mine" hidden></audio></div>
-        <div class="src">Clip: <a href="https://youtu.be/3XY6neA11eI" target="_blank" rel="noopener">YouTube</a></div>
+        <div class="lbl" data-i18n="ui.listen">Listen &amp; repeat</div>
+        <button class="btn act-say" data-say="退かぬ！媚びぬ！省みぬ！" data-i18n="ui.normal">🔊 Normal</button>
+        <button class="btn act-say-slow" data-say="退かぬ！媚びぬ！省みぬ！" data-i18n="ui.slowsay">🐢 Slow</button>
+        <div class="lbl" data-i18n="ui.record">Record yourself</div>
+        <div class="rec"><button class="btn dark act-rec" data-i18n="ui.rec">🎙 Record</button><span class="dot"></span><audio controls class="mine" hidden></audio></div>
+        <div class="src" data-i18n="lines.2.clip.src">Clip: <a href="https://youtu.be/3XY6neA11eI" rel="noopener" target="_blank">YouTube</a></div>
       </div>
     </div>
 
     <div class="grid2">
       <div>
-        <h3>Word by word</h3>
+        <h3 data-i18n="lines.2.words.h">Word by word</h3>
         <table>
-          <tr><th>verb</th><th>meaning</th><th>〜ぬ form</th></tr>
-          <tr><td class="w"><ruby>退<rt>ひ</rt></ruby>く</td><td>to step back, retreat</td><td class="w">退か<b>ぬ</b></td></tr>
-          <tr><td class="w"><ruby>媚<rt>こ</rt></ruby>びる</td><td>to flatter, suck up to</td><td class="w">媚び<b>ぬ</b></td></tr>
-          <tr><td class="w"><ruby>省<rt>かえり</rt></ruby>みる</td><td>to look back on, reflect</td><td class="w">省み<b>ぬ</b></td></tr>
+          <tr><th data-i18n="lines.2.words.head.0">verb</th><th data-i18n="lines.2.words.head.1">meaning</th><th data-i18n="lines.2.words.head.2">〜ぬ form</th></tr>
+          <tr><td class="w"><ruby>退<rt>ひ</rt></ruby>く</td><td data-i18n="lines.2.words.rows.0.1">to step back, retreat</td><td data-i18n="lines.2.words.rows.0.2">退か<b>ぬ</b></td></tr>
+          <tr><td class="w"><ruby>媚<rt>こ</rt></ruby>びる</td><td data-i18n="lines.2.words.rows.1.1">to flatter, suck up to</td><td data-i18n="lines.2.words.rows.1.2">媚び<b>ぬ</b></td></tr>
+          <tr><td class="w"><ruby>省<rt>かえり</rt></ruby>みる</td><td data-i18n="lines.2.words.rows.2.1">to look back on, reflect</td><td data-i18n="lines.2.words.rows.2.2">省み<b>ぬ</b></td></tr>
         </table>
-        <div class="note">Rule: take the <b>ない-stem</b> and swap ない → ぬ. 行かない → 行か<b>ぬ</b>. する → せ<b>ぬ</b>. 来る → 来(こ)<b>ぬ</b>.</div>
+        <div class="note" data-i18n="lines.2.words.note">Rule: take the <b>ない-stem</b> and swap ない → ぬ. 行かない → 行か<b>ぬ</b>. する → せ<b>ぬ</b>. 来る → 来(こ)<b>ぬ</b>.</div>
       </div>
       <div>
-        <h3>Grammar: 〜ぬ = old-school ない</h3>
-        <div class="gp"><b>〜ぬ</b> is the classical negative. It sounds samurai, dramatic, absolute. You will hear it in anime, proverbs, and a few fixed phrases everyone still uses.</div>
+        <h3 data-i18n="lines.2.grammar.h">Grammar: 〜ぬ = old-school ない</h3>
+        <div class="gp" data-i18n="lines.2.grammar.gp.0"><b>〜ぬ</b> is the classical negative. It sounds samurai, dramatic, absolute. You will hear it in anime, proverbs, and a few fixed phrases everyone still uses.</div>
         <ul class="ex">
-          <li><ruby>知<rt>し</rt></ruby>らぬ<ruby>間<rt>ま</rt></ruby>に <span class="m">before I knew it</span><button class="spk" data-say="知らぬ間に">🔊</button></li>
-          <li><ruby>見知<rt>みし</rt></ruby>らぬ<ruby>人<rt>ひと</rt></ruby> <span class="m">a stranger (an un-known person)</span><button class="spk" data-say="見知らぬ人">🔊</button></li>
-          <li><ruby>思<rt>おも</rt></ruby>わぬプレゼント <span class="m">an unexpected present</span><button class="spk" data-say="思わぬプレゼント">🔊</button></li>
-          <li><ruby>言<rt>い</rt></ruby>わぬが<ruby>花<rt>はな</rt></ruby> <span class="m">some things are better left unsaid (proverb)</span><button class="spk" data-say="言わぬが花">🔊</button></li>
+          <li><ruby>知<rt>し</rt></ruby>らぬ<ruby>間<rt>ま</rt></ruby>に <span class="m" data-i18n="lines.2.grammar.examples.0.m">before I knew it</span><button class="spk" data-say="知らぬ間に">🔊</button></li>
+          <li><ruby>見知<rt>みし</rt></ruby>らぬ<ruby>人<rt>ひと</rt></ruby> <span class="m" data-i18n="lines.2.grammar.examples.1.m">a stranger (an un-known person)</span><button class="spk" data-say="見知らぬ人">🔊</button></li>
+          <li><ruby>思<rt>おも</rt></ruby>わぬプレゼント <span class="m" data-i18n="lines.2.grammar.examples.2.m">an unexpected present</span><button class="spk" data-say="思わぬプレゼント">🔊</button></li>
+          <li><ruby>言<rt>い</rt></ruby>わぬが<ruby>花<rt>はな</rt></ruby> <span class="m" data-i18n="lines.2.grammar.examples.3.m">some things are better left unsaid (proverb)</span><button class="spk" data-say="言わぬが花">🔊</button></li>
         </ul>
-        <div class="note"><b>Tokyo use:</b> 見知らぬ人 shows up in news and station announcements. 知らぬ間に is everyday speech.</div>
+        <div class="note" data-i18n="lines.2.grammar.note"><b>Tokyo use:</b> 見知らぬ人 shows up in news and station announcements. 知らぬ間に is everyday speech.</div>
       </div>
     </div>
 
     <div class="drill">
-      <h3>Drill — convert to 〜ぬ</h3>
+      <h3 data-i18n="lines.2.drill.h">Drill — convert to 〜ぬ</h3>
       <ol>
-        <li><ruby>行<rt>い</rt></ruby>かない → <button class="blank">行かぬ</button><span class="m">won't go</span></li>
-        <li><ruby>食<rt>た</rt></ruby>べない → <button class="blank">食べぬ</button><span class="m">won't eat</span></li>
-        <li><ruby>諦<rt>あきら</rt></ruby>めない → <button class="blank">諦めぬ</button><span class="m">won't give up</span></li>
-        <li>しない → <button class="blank">せぬ</button><span class="m">won't do (irregular!)</span></li>
+        <li><ruby>行<rt>い</rt></ruby>かない → <button class="blank">行かぬ</button><span class="m" data-i18n="lines.2.drill.list.0.m">won't go</span></li>
+        <li><ruby>食<rt>た</rt></ruby>べない → <button class="blank">食べぬ</button><span class="m" data-i18n="lines.2.drill.list.1.m">won't eat</span></li>
+        <li><ruby>諦<rt>あきら</rt></ruby>めない → <button class="blank">諦めぬ</button><span class="m" data-i18n="lines.2.drill.list.2.m">won't give up</span></li>
+        <li>しない → <button class="blank">せぬ</button><span class="m" data-i18n="lines.2.drill.list.3.m">won't do (irregular!)</span></li>
       </ol>
       <div class="yourturn">
-        <label>Your turn — your three vows for learning Japanese, Souther style</label>
-        <textarea data-store="yt-l3" placeholder="＿＿ぬ！＿＿ぬ！＿＿ぬ！  e.g. 寝坊せぬ！諦めぬ！サボらぬ！"></textarea>
-        <div class="row"><button class="btn sm act-say-ta">🔊 Read mine</button><span class="hint">Shout it. Souther would.</span></div>
+        <label data-i18n="lines.2.yourturn.label">Your turn — your three vows for learning Japanese, Souther style</label>
+        <textarea data-store="yt-l3" data-i18n-ph="lines.2.yourturn.ph" placeholder="＿＿ぬ！＿＿ぬ！＿＿ぬ！  e.g. 寝坊せぬ！諦めぬ！サボらぬ！"></textarea>
+        <div class="row"><button class="btn sm act-say-ta" data-i18n="ui.readmine">🔊 Read mine</button><span class="hint" data-i18n="lines.2.yourturn.hint">Shout it. Souther would.</span></div>
       </div>
-      <div class="done"><label><input type="checkbox" class="doneBox"> Line 3 done</label></div>
+      <div class="done"><label><input type="checkbox" class="doneBox"> <span data-i18n="lines.2.done"><input class="doneBox" type="checkbox"/> Line 3 done</span></label></div>
     </div>
   </div>
 </section>
-
 <!-- ================= LINE 4 ================= -->
 <section id="l4" class="lesson" data-key="l4">
   <div class="wrap">
     <div class="sec-head">
       <div class="num">4</div>
-      <div><h2>汚物は消毒だ〜！ <span class="tag n3">N3 · XはYだ / 〜べきだ</span></h2><div class="who">a mohawk with a flamethrower · the most quoted mob line in Japan</div></div>
+      <div><h2>汚物は消毒だ〜！ <span class="tag n3" data-i18n="lines.3.tag.text">N3 · XはYだ / 〜べきだ</span></h2><div class="who" data-i18n="lines.3.who">a mohawk with a flamethrower · the most quoted mob line in Japan</div></div>
     </div>
 
     <div class="bubble">
       <p class="jp"><ruby>汚物<rt>おぶつ</rt></ruby>は<ruby>消毒<rt>しょうどく</rt></ruby>だ〜！</p>
       <p class="romaji">Obutsu wa shōdoku da!</p>
-      <p class="en">"Filth <i>gets disinfected</i>!"</p>
+      <p class="en" data-i18n="lines.3.line.en">"Filth <i>gets disinfected</i>!"</p>
     </div>
 
     <div class="panel">
       <div class="vid"><div class="yt" id="yt4"></div></div>
-      <div class="ctl" data-player="yt4" data-scene="0,22" data-line="2.7,5.3">
-        <div class="lbl">Clip</div>
-        <button class="btn primary act-scene">▶ Scene</button>
-        <button class="btn act-loop">🔁 Loop the line</button>
+      <div class="ctl" data-player="yt4" data-scene="0.0,22.0" data-line="2.7,5.3">
+        <div class="lbl" data-i18n="ui.clip">Clip</div>
+        <button class="btn primary act-scene" data-i18n="ui.scene">▶ Scene</button>
+        <button class="btn act-loop" data-i18n="ui.loop">🔁 Loop the line</button>
         <button class="btn act-stop">⏹</button>
-        <button class="btn sm act-slow">🐢 0.75×</button>
+        <button class="btn sm act-slow" data-i18n="ui.slow">🐢 0.75×</button>
         <div class="loopbar"><i></i></div>
-        <div class="lbl">Listen &amp; repeat</div>
-        <button class="btn act-say" data-say="汚物は消毒だ！">🔊 Normal</button>
-        <button class="btn act-say-slow" data-say="汚物は消毒だ！">🐢 Slow</button>
-        <div class="lbl">Record yourself</div>
-        <div class="rec"><button class="btn dark act-rec">🎙 Record</button><span class="dot"></span><audio controls class="mine" hidden></audio></div>
-        <div class="src">Clip: <a href="https://youtu.be/5N9ibJg2T18" target="_blank" rel="noopener">YouTube</a> · at 0:19 Kenshiro answers: 汚物は消毒<b>すべき</b>だな</div>
+        <div class="lbl" data-i18n="ui.listen">Listen &amp; repeat</div>
+        <button class="btn act-say" data-say="汚物は消毒だ！" data-i18n="ui.normal">🔊 Normal</button>
+        <button class="btn act-say-slow" data-say="汚物は消毒だ！" data-i18n="ui.slowsay">🐢 Slow</button>
+        <div class="lbl" data-i18n="ui.record">Record yourself</div>
+        <div class="rec"><button class="btn dark act-rec" data-i18n="ui.rec">🎙 Record</button><span class="dot"></span><audio controls class="mine" hidden></audio></div>
+        <div class="src" data-i18n="lines.3.clip.src">Clip: <a href="https://youtu.be/5N9ibJg2T18" rel="noopener" target="_blank">YouTube</a> · at 0:19 Kenshiro answers: 汚物は消毒<b>すべき</b>だな</div>
       </div>
     </div>
 
     <div class="grid2">
       <div>
-        <h3>Word by word</h3>
+        <h3 data-i18n="lines.3.words.h">Word by word</h3>
         <table>
-          <tr><th>word</th><th>meaning</th></tr>
-          <tr><td class="w"><ruby>汚物<rt>おぶつ</rt></ruby></td><td>filth, waste (汚 = dirty, 物 = thing)</td></tr>
-          <tr><td class="w">は</td><td>topic</td></tr>
-          <tr><td class="w"><ruby>消毒<rt>しょうどく</rt></ruby></td><td>disinfection — a する-noun (消毒する)</td></tr>
-          <tr><td class="w">だ</td><td>"is" — plain copula, said with full confidence</td></tr>
+          <tr><th data-i18n="lines.3.words.head.0">word</th><th data-i18n="lines.3.words.head.1">meaning</th></tr>
+          <tr><td class="w"><ruby>汚物<rt>おぶつ</rt></ruby></td><td data-i18n="lines.3.words.rows.0.1">filth, waste (汚 = dirty, 物 = thing)</td></tr>
+          <tr><td class="w">は</td><td data-i18n="lines.3.words.rows.1.1">topic</td></tr>
+          <tr><td class="w"><ruby>消毒<rt>しょうどく</rt></ruby></td><td data-i18n="lines.3.words.rows.2.1">disinfection — a する-noun (消毒する)</td></tr>
+          <tr><td class="w">だ</td><td data-i18n="lines.3.words.rows.3.1">"is" — plain copula, said with full confidence</td></tr>
         </table>
-        <div class="note">Literally "filth is disinfection". Japanese lets a noun sentence mean <b>"X → the treatment is Y"</b>. Very common in speech.</div>
+        <div class="note" data-i18n="lines.3.words.note">Literally "filth is disinfection". Japanese lets a noun sentence mean <b>"X → the treatment is Y"</b>. Very common in speech.</div>
       </div>
       <div>
-        <h3>Grammar: XはYだ！ as a battle cry · 〜べきだ = should</h3>
-        <div class="gp"><b>Noun は Noun だ！</b> — announce the plan. <b>Verb(dictionary) + べきだ</b> — "should / ought to". Kenshiro replies「消毒<b>すべき</b>だな」(する → すべき).</div>
+        <h3 data-i18n="lines.3.grammar.h">Grammar: XはYだ！ as a battle cry · 〜べきだ = should</h3>
+        <div class="gp" data-i18n="lines.3.grammar.gp.0"><b>Noun は Noun だ！</b> — announce the plan. <b>Verb(dictionary) + べきだ</b> — "should / ought to". Kenshiro replies「消毒<b>すべき</b>だな」(する → すべき).</div>
         <ul class="ex">
-          <li><ruby>今日<rt>きょう</rt></ruby>は<ruby>焼肉<rt>やきにく</rt></ruby>だ！ <span class="m">Today = yakiniku!</span><button class="spk" data-say="今日は焼肉だ！">🔊</button></li>
-          <li><ruby>週末<rt>しゅうまつ</rt></ruby>は<ruby>大掃除<rt>おおそうじ</rt></ruby>だ！ <span class="m">The weekend = big cleaning!</span><button class="spk" data-say="週末は大掃除だ！">🔊</button></li>
-          <li><ruby>手<rt>て</rt></ruby>は<ruby>消毒<rt>しょうどく</rt></ruby>すべきだ <span class="m">you should disinfect your hands</span><button class="spk" data-say="手は消毒すべきだ">🔊</button></li>
-          <li><ruby>早<rt>はや</rt></ruby>く<ruby>寝<rt>ね</rt></ruby>るべきだ <span class="m">you should go to bed early</span><button class="spk" data-say="早く寝るべきだ">🔊</button></li>
+          <li><ruby>今日<rt>きょう</rt></ruby>は<ruby>焼肉<rt>やきにく</rt></ruby>だ！ <span class="m" data-i18n="lines.3.grammar.examples.0.m">Today = yakiniku!</span><button class="spk" data-say="今日は焼肉だ！">🔊</button></li>
+          <li><ruby>週末<rt>しゅうまつ</rt></ruby>は<ruby>大掃除<rt>おおそうじ</rt></ruby>だ！ <span class="m" data-i18n="lines.3.grammar.examples.1.m">The weekend = big cleaning!</span><button class="spk" data-say="週末は大掃除だ！">🔊</button></li>
+          <li><ruby>手<rt>て</rt></ruby>は<ruby>消毒<rt>しょうどく</rt></ruby>すべきだ <span class="m" data-i18n="lines.3.grammar.examples.2.m">you should disinfect your hands</span><button class="spk" data-say="手は消毒すべきだ">🔊</button></li>
+          <li><ruby>早<rt>はや</rt></ruby>く<ruby>寝<rt>ね</rt></ruby>るべきだ <span class="m" data-i18n="lines.3.grammar.examples.3.m">you should go to bed early</span><button class="spk" data-say="早く寝るべきだ">🔊</button></li>
         </ul>
-        <div class="note"><b>Tokyo use:</b> 消毒 is on every shop entrance bottle since 2020: 「<ruby>手指<rt>しゅし</rt></ruby>消毒にご協力ください」.</div>
+        <div class="note" data-i18n="lines.3.grammar.note"><b>Tokyo use:</b> 消毒 is on every shop entrance bottle since 2020: 「<ruby>手指<rt>しゅし</rt></ruby>消毒にご協力ください」.</div>
       </div>
     </div>
 
     <div class="drill">
-      <h3>Drill</h3>
+      <h3 data-i18n="lines.3.drill.h">Drill</h3>
       <ol>
-        <li><ruby>風邪<rt>かぜ</rt></ruby>を<ruby>引<rt>ひ</rt></ruby>いたら、<button class="blank">休むべきだ</button>。<span class="m">If you catch a cold, you should rest. (休む)</span></li>
-        <li><ruby>傷口<rt>きずぐち</rt></ruby>は<button class="blank">消毒</button>してください。<span class="m">Please disinfect the wound.</span></li>
-        <li><ruby>今夜<rt>こんや</rt></ruby>は<button class="blank">ラーメンだ</button>！<span class="m">Tonight = ramen!</span></li>
+        <li><ruby>風邪<rt>かぜ</rt></ruby>を<ruby>引<rt>ひ</rt></ruby>いたら、<button class="blank">休むべきだ</button>。<span class="m" data-i18n="lines.3.drill.list.0.m">If you catch a cold, you should rest. (休む)</span></li>
+        <li><ruby>傷口<rt>きずぐち</rt></ruby>は<button class="blank">消毒</button>してください。<span class="m" data-i18n="lines.3.drill.list.1.m">Please disinfect the wound.</span></li>
+        <li><ruby>今夜<rt>こんや</rt></ruby>は<button class="blank">ラーメンだ</button>！<span class="m" data-i18n="lines.3.drill.list.2.m">Tonight = ramen!</span></li>
       </ol>
       <div class="yourturn">
-        <label>Your turn — announce your Sunday like a 世紀末 mob</label>
-        <textarea data-store="yt-l4" placeholder="＿＿は＿＿だ〜！  e.g. 日曜日は日本語だ〜！"></textarea>
-        <div class="row"><button class="btn sm act-say-ta">🔊 Read mine</button><span class="hint">Extend the だ〜 for full effect.</span></div>
+        <label data-i18n="lines.3.yourturn.label">Your turn — announce your Sunday like a 世紀末 mob</label>
+        <textarea data-store="yt-l4" data-i18n-ph="lines.3.yourturn.ph" placeholder="＿＿は＿＿だ〜！  e.g. 日曜日は日本語だ〜！"></textarea>
+        <div class="row"><button class="btn sm act-say-ta" data-i18n="ui.readmine">🔊 Read mine</button><span class="hint" data-i18n="lines.3.yourturn.hint">Extend the だ〜 for full effect.</span></div>
       </div>
-      <div class="done"><label><input type="checkbox" class="doneBox"> Line 4 done</label></div>
+      <div class="done"><label><input type="checkbox" class="doneBox"> <span data-i18n="lines.3.done"><input class="doneBox" type="checkbox"/> Line 4 done</span></label></div>
     </div>
   </div>
 </section>
-
 <!-- ================= LINE 5 ================= -->
 <section id="l5" class="lesson" data-key="l5">
   <div class="wrap">
     <div class="sec-head">
       <div class="num">5</div>
-      <div><h2>愛や情けは悲しみしか生まぬ <span class="tag n3">N3 · 〜しか〜ない / 〜み</span></h2><div class="who">Souther, dying · the question that made a generation cry</div></div>
+      <div><h2>愛や情けは悲しみしか生まぬ <span class="tag n3" data-i18n="lines.4.tag.text">N3 · 〜しか〜ない / 〜み</span></h2><div class="who" data-i18n="lines.4.who">Souther, dying · the question that made a generation cry</div></div>
     </div>
 
     <div class="bubble">
       <p class="jp"><ruby>愛<rt>あい</rt></ruby>や<ruby>情<rt>なさ</rt></ruby>けは<ruby>悲<rt>かな</rt></ruby>しみしか<ruby>生<rt>う</rt></ruby>まぬ。</p>
       <p class="romaji">Ai ya nasake wa kanashimi shika umanu.</p>
-      <p class="en">"Love and mercy give birth to <i>nothing but sorrow</i>."</p>
+      <p class="en" data-i18n="lines.4.line.en">"Love and mercy give birth to <i>nothing but sorrow</i>."</p>
     </div>
 
     <div class="panel">
       <div class="vid"><div class="yt" id="yt5"></div></div>
-      <div class="ctl" data-player="yt5" data-scene="32,58.5" data-line="38.3,43.2">
-        <div class="lbl">Clip</div>
-        <button class="btn primary act-scene">▶ Scene</button>
-        <button class="btn act-loop">🔁 Loop the line</button>
+      <div class="ctl" data-player="yt5" data-scene="32.0,58.5" data-line="38.3,43.2">
+        <div class="lbl" data-i18n="ui.clip">Clip</div>
+        <button class="btn primary act-scene" data-i18n="ui.scene">▶ Scene</button>
+        <button class="btn act-loop" data-i18n="ui.loop">🔁 Loop the line</button>
         <button class="btn act-stop">⏹</button>
-        <button class="btn sm act-slow">🐢 0.75×</button>
+        <button class="btn sm act-slow" data-i18n="ui.slow">🐢 0.75×</button>
         <div class="loopbar"><i></i></div>
-        <div class="lbl">Listen &amp; repeat</div>
-        <button class="btn act-say" data-say="愛や情けは、悲しみしか生まぬ。">🔊 Normal</button>
-        <button class="btn act-say-slow" data-say="愛や情けは、悲しみしか生まぬ。">🐢 Slow</button>
-        <div class="lbl">Record yourself</div>
-        <div class="rec"><button class="btn dark act-rec">🎙 Record</button><span class="dot"></span><audio controls class="mine" hidden></audio></div>
-        <div class="src">Clip: <a href="https://youtu.be/N9HM0PLlFSw?t=32" target="_blank" rel="noopener">YouTube</a> · then: なのに、なぜ悲しみを背負おうとする？ — "so why do you choose to carry sorrow?"</div>
+        <div class="lbl" data-i18n="ui.listen">Listen &amp; repeat</div>
+        <button class="btn act-say" data-say="愛や情けは、悲しみしか生まぬ。" data-i18n="ui.normal">🔊 Normal</button>
+        <button class="btn act-say-slow" data-say="愛や情けは、悲しみしか生まぬ。" data-i18n="ui.slowsay">🐢 Slow</button>
+        <div class="lbl" data-i18n="ui.record">Record yourself</div>
+        <div class="rec"><button class="btn dark act-rec" data-i18n="ui.rec">🎙 Record</button><span class="dot"></span><audio controls class="mine" hidden></audio></div>
+        <div class="src" data-i18n="lines.4.clip.src">Clip: <a href="https://youtu.be/N9HM0PLlFSw?t=32" rel="noopener" target="_blank">YouTube</a> · then: なのに、なぜ悲しみを背負おうとする？ — "so why do you choose to carry sorrow?"</div>
       </div>
     </div>
 
     <div class="grid2">
       <div>
-        <h3>Word by word</h3>
+        <h3 data-i18n="lines.4.words.h">Word by word</h3>
         <table>
-          <tr><th>word</th><th>meaning</th></tr>
-          <tr><td class="w"><ruby>愛<rt>あい</rt></ruby></td><td>love</td></tr>
-          <tr><td class="w">や</td><td>"and (things like)" — an open list. AやB = A, B, and so on</td></tr>
-          <tr><td class="w"><ruby>情<rt>なさ</rt></ruby>け</td><td>mercy, compassion, human warmth</td></tr>
-          <tr><td class="w"><ruby>悲<rt>かな</rt></ruby>しみ</td><td>sorrow — noun made from 悲しい</td></tr>
-          <tr><td class="w">しか 〜 ない</td><td>only / nothing but (always with a negative)</td></tr>
-          <tr><td class="w"><ruby>生<rt>う</rt></ruby>まぬ</td><td>生む (give birth, produce) + ぬ = 生まない</td></tr>
+          <tr><th data-i18n="lines.4.words.head.0">word</th><th data-i18n="lines.4.words.head.1">meaning</th></tr>
+          <tr><td class="w"><ruby>愛<rt>あい</rt></ruby></td><td data-i18n="lines.4.words.rows.0.1">love</td></tr>
+          <tr><td class="w">や</td><td data-i18n="lines.4.words.rows.1.1">"and (things like)" — an open list. AやB = A, B, and so on</td></tr>
+          <tr><td class="w"><ruby>情<rt>なさ</rt></ruby>け</td><td data-i18n="lines.4.words.rows.2.1">mercy, compassion, human warmth</td></tr>
+          <tr><td class="w"><ruby>悲<rt>かな</rt></ruby>しみ</td><td data-i18n="lines.4.words.rows.3.1">sorrow — noun made from 悲しい</td></tr>
+          <tr><td class="w">しか 〜 ない</td><td data-i18n="lines.4.words.rows.4.1">only / nothing but (always with a negative)</td></tr>
+          <tr><td class="w"><ruby>生<rt>う</rt></ruby>まぬ</td><td data-i18n="lines.4.words.rows.5.1">生む (give birth, produce) + ぬ = 生まない</td></tr>
         </table>
       </div>
       <div>
-        <h3>Grammar: 〜しか〜ない · い-adjective → 〜み noun</h3>
-        <div class="gp"><b>Noun + しか + negative</b> = only ~, nothing but ~. Feels more "that's all there is" than だけ.</div>
-        <div class="gp"><b>悲しい → 悲しみ</b>, 苦しい → 苦しみ, 楽しい → 楽しみ, 痛い → 痛み. Drop い, add み = the feeling as a noun.</div>
+        <h3 data-i18n="lines.4.grammar.h">Grammar: 〜しか〜ない · い-adjective → 〜み noun</h3>
+        <div class="gp" data-i18n="lines.4.grammar.gp.0"><b>Noun + しか + negative</b> = only ~, nothing but ~. Feels more "that's all there is" than だけ.</div>
+        <div class="gp" data-i18n="lines.4.grammar.gp.1"><b>悲しい → 悲しみ</b>, 苦しい → 苦しみ, 楽しい → 楽しみ, 痛い → 痛み. Drop い, add み = the feeling as a noun.</div>
         <ul class="ex">
-          <li><ruby>千円<rt>せんえん</rt></ruby>しかない <span class="m">I only have 1,000 yen</span><button class="spk" data-say="千円しかない">🔊</button></li>
-          <li><ruby>日本語<rt>にほんご</rt></ruby>しか<ruby>話<rt>はな</rt></ruby>せない <span class="m">I can only speak Japanese</span><button class="spk" data-say="日本語しか話せない">🔊</button></li>
-          <li><ruby>週末<rt>しゅうまつ</rt></ruby>が<ruby>楽<rt>たの</rt></ruby>しみだ <span class="m">I'm looking forward to the weekend</span><button class="spk" data-say="週末が楽しみだ">🔊</button></li>
+          <li><ruby>千円<rt>せんえん</rt></ruby>しかない <span class="m" data-i18n="lines.4.grammar.examples.0.m">I only have 1,000 yen</span><button class="spk" data-say="千円しかない">🔊</button></li>
+          <li><ruby>日本語<rt>にほんご</rt></ruby>しか<ruby>話<rt>はな</rt></ruby>せない <span class="m" data-i18n="lines.4.grammar.examples.1.m">I can only speak Japanese</span><button class="spk" data-say="日本語しか話せない">🔊</button></li>
+          <li><ruby>週末<rt>しゅうまつ</rt></ruby>が<ruby>楽<rt>たの</rt></ruby>しみだ <span class="m" data-i18n="lines.4.grammar.examples.2.m">I'm looking forward to the weekend</span><button class="spk" data-say="週末が楽しみだ">🔊</button></li>
         </ul>
-        <div class="note"><b>Tokyo use:</b> 「現金しか使えません」cash only. 「楽しみにしています」= looking forward to it (say this to Yuuki after class).</div>
+        <div class="note" data-i18n="lines.4.grammar.note"><b>Tokyo use:</b> 「現金しか使えません」cash only. 「楽しみにしています」= looking forward to it (say this to Yuuki after class).</div>
       </div>
     </div>
 
     <div class="drill">
-      <h3>Drill</h3>
+      <h3 data-i18n="lines.4.drill.h">Drill</h3>
       <ol>
-        <li><ruby>財布<rt>さいふ</rt></ruby>に<ruby>百円<rt>ひゃくえん</rt></ruby><button class="blank">しか</button>ない。<span class="m">I only have 100 yen in my wallet.</span></li>
-        <li>この<ruby>店<rt>みせ</rt></ruby>は<ruby>現金<rt>げんきん</rt></ruby><button class="blank">しか使えない</button>。<span class="m">This shop only takes cash. (使う, potential negative)</span></li>
-        <li><ruby>楽<rt>たの</rt></ruby>しい → <button class="blank">楽しみ</button><span class="m">fun → something to look forward to</span></li>
-        <li><ruby>苦<rt>くる</rt></ruby>しい → <button class="blank">苦しみ</button><span class="m">painful → suffering</span></li>
+        <li><ruby>財布<rt>さいふ</rt></ruby>に<ruby>百円<rt>ひゃくえん</rt></ruby><button class="blank">しか</button>ない。<span class="m" data-i18n="lines.4.drill.list.0.m">I only have 100 yen in my wallet.</span></li>
+        <li>この<ruby>店<rt>みせ</rt></ruby>は<ruby>現金<rt>げんきん</rt></ruby><button class="blank">しか使えない</button>。<span class="m" data-i18n="lines.4.drill.list.1.m">This shop only takes cash. (使う, potential negative)</span></li>
+        <li><ruby>楽<rt>たの</rt></ruby>しい → <button class="blank">楽しみ</button><span class="m" data-i18n="lines.4.drill.list.2.m">fun → something to look forward to</span></li>
+        <li><ruby>苦<rt>くる</rt></ruby>しい → <button class="blank">苦しみ</button><span class="m" data-i18n="lines.4.drill.list.3.m">painful → suffering</span></li>
       </ol>
       <div class="yourturn">
-        <label>Your turn — answer Souther. What else does love produce?</label>
-        <textarea data-store="yt-l5" placeholder="悲しみだけではない。愛は ＿＿ も生む。  e.g. 愛は勇気も生む。"></textarea>
-        <div class="row"><button class="btn sm act-say-ta">🔊 Read mine</button><span class="hint">Kenshiro's answer is in the next line.</span></div>
+        <label data-i18n="lines.4.yourturn.label">Your turn — answer Souther. What else does love produce?</label>
+        <textarea data-store="yt-l5" data-i18n-ph="lines.4.yourturn.ph" placeholder="悲しみだけではない。愛は ＿＿ も生む。  e.g. 愛は勇気も生む。"></textarea>
+        <div class="row"><button class="btn sm act-say-ta" data-i18n="ui.readmine">🔊 Read mine</button><span class="hint" data-i18n="lines.4.yourturn.hint">Kenshiro's answer is in the next line.</span></div>
       </div>
-      <div class="done"><label><input type="checkbox" class="doneBox"> Line 5 done</label></div>
+      <div class="done"><label><input type="checkbox" class="doneBox"> <span data-i18n="lines.4.done"><input class="doneBox" type="checkbox"/> Line 5 done</span></label></div>
     </div>
   </div>
 </section>
-
 <!-- ================= LINE 6 ================= -->
 <section id="l6" class="lesson" data-key="l6">
   <div class="wrap">
     <div class="sec-head">
       <div class="num">6</div>
-      <div><h2>悲しい男よ。誰よりも愛深きゆえに。 <span class="tag n1">N3 誰よりも · N1 ゆえに</span></h2><div class="who">Kenshiro · the eulogy for Souther</div></div>
+      <div><h2>悲しい男よ。誰よりも愛深きゆえに。 <span class="tag n1" data-i18n="lines.5.tag.text">N3 誰よりも · N1 ゆえに</span></h2><div class="who" data-i18n="lines.5.who">Kenshiro · the eulogy for Souther</div></div>
     </div>
 
     <div class="bubble">
       <p class="jp"><ruby>悲<rt>かな</rt></ruby>しい<ruby>男<rt>おとこ</rt></ruby>よ。<ruby>誰<rt>だれ</rt></ruby>よりも<ruby>愛深<rt>あいふか</rt></ruby>きゆえに。</p>
       <p class="romaji">Kanashii otoko yo. Dare yori mo ai-fukaki yue ni.</p>
-      <p class="en">"A sad man… <i>because</i> he loved <i>more deeply than anyone</i>."</p>
+      <p class="en" data-i18n="lines.5.line.en">"A sad man… <i>because</i> he loved <i>more deeply than anyone</i>."</p>
     </div>
 
     <div class="panel">
       <div class="vid"><div class="yt" id="yt6"></div></div>
-      <div class="ctl" data-player="yt6" data-scene="160,173" data-line="167.4,173">
-        <div class="lbl">Clip</div>
-        <button class="btn primary act-scene">▶ Scene</button>
-        <button class="btn act-loop">🔁 Loop the line</button>
+      <div class="ctl" data-player="yt6" data-scene="160.0,173.0" data-line="167.4,173.0">
+        <div class="lbl" data-i18n="ui.clip">Clip</div>
+        <button class="btn primary act-scene" data-i18n="ui.scene">▶ Scene</button>
+        <button class="btn act-loop" data-i18n="ui.loop">🔁 Loop the line</button>
         <button class="btn act-stop">⏹</button>
-        <button class="btn sm act-slow">🐢 0.75×</button>
+        <button class="btn sm act-slow" data-i18n="ui.slow">🐢 0.75×</button>
         <div class="loopbar"><i></i></div>
-        <div class="lbl">Listen &amp; repeat</div>
-        <button class="btn act-say" data-say="悲しい男よ。誰よりも愛深きゆえに。">🔊 Normal</button>
-        <button class="btn act-say-slow" data-say="悲しい男よ。誰よりも愛深きゆえに。">🐢 Slow</button>
-        <div class="lbl">Record yourself</div>
-        <div class="rec"><button class="btn dark act-rec">🎙 Record</button><span class="dot"></span><audio controls class="mine" hidden></audio></div>
-        <div class="src">Clip: <a href="https://youtu.be/N9HM0PLlFSw?t=160" target="_blank" rel="noopener">YouTube</a> (same video as line 5, the ending)</div>
+        <div class="lbl" data-i18n="ui.listen">Listen &amp; repeat</div>
+        <button class="btn act-say" data-say="悲しい男よ。誰よりも愛深きゆえに。" data-i18n="ui.normal">🔊 Normal</button>
+        <button class="btn act-say-slow" data-say="悲しい男よ。誰よりも愛深きゆえに。" data-i18n="ui.slowsay">🐢 Slow</button>
+        <div class="lbl" data-i18n="ui.record">Record yourself</div>
+        <div class="rec"><button class="btn dark act-rec" data-i18n="ui.rec">🎙 Record</button><span class="dot"></span><audio controls class="mine" hidden></audio></div>
+        <div class="src" data-i18n="lines.5.clip.src">Clip: <a href="https://youtu.be/N9HM0PLlFSw?t=160" rel="noopener" target="_blank">YouTube</a> (same video as line 5, the ending)</div>
       </div>
     </div>
 
     <div class="grid2">
       <div>
-        <h3>Word by word</h3>
+        <h3 data-i18n="lines.5.words.h">Word by word</h3>
         <table>
-          <tr><th>word</th><th>meaning</th></tr>
-          <tr><td class="w"><ruby>悲<rt>かな</rt></ruby>しい<ruby>男<rt>おとこ</rt></ruby>よ</td><td>"O sad man" — よ after a noun = calling out, poetic</td></tr>
-          <tr><td class="w"><ruby>誰<rt>だれ</rt></ruby>よりも</td><td>more than anyone (誰 + より + も)</td></tr>
-          <tr><td class="w"><ruby>愛深<rt>あいふか</rt></ruby>き</td><td>愛が深い "deep in love" — 深<b>き</b> is the classical form of 深<b>い</b> before a noun</td></tr>
-          <tr><td class="w">ゆえに</td><td>because of that / therefore — formal, written, dramatic</td></tr>
+          <tr><th data-i18n="lines.5.words.head.0">word</th><th data-i18n="lines.5.words.head.1">meaning</th></tr>
+          <tr><td class="w"><ruby>悲<rt>かな</rt></ruby>しい<ruby>男<rt>おとこ</rt></ruby>よ</td><td data-i18n="lines.5.words.rows.0.1">"O sad man" — よ after a noun = calling out, poetic</td></tr>
+          <tr><td class="w"><ruby>誰<rt>だれ</rt></ruby>よりも</td><td data-i18n="lines.5.words.rows.1.1">more than anyone (誰 + より + も)</td></tr>
+          <tr><td class="w"><ruby>愛深<rt>あいふか</rt></ruby>き</td><td data-i18n="lines.5.words.rows.2.1">愛が深い "deep in love" — 深<b>き</b> is the classical form of 深<b>い</b> before a noun</td></tr>
+          <tr><td class="w">ゆえに</td><td data-i18n="lines.5.words.rows.3.1">because of that / therefore — formal, written, dramatic</td></tr>
         </table>
       </div>
       <div>
-        <h3>Grammar: 誰よりも (N3) · 〜ゆえに (N1) · 〜き adjectives</h3>
-        <div class="gp"><b>誰よりも + adjective</b> = more than anyone. Swap 誰 for 何 (anything), どこ (anywhere).</div>
-        <div class="gp"><b>Noun / plain form + ゆえに</b> = because of. You will meet it in essays, news, and every villain speech. Everyday speech uses から / ので.</div>
+        <h3 data-i18n="lines.5.grammar.h">Grammar: 誰よりも (N3) · 〜ゆえに (N1) · 〜き adjectives</h3>
+        <div class="gp" data-i18n="lines.5.grammar.gp.0"><b>誰よりも + adjective</b> = more than anyone. Swap 誰 for 何 (anything), どこ (anywhere).</div>
+        <div class="gp" data-i18n="lines.5.grammar.gp.1"><b>Noun / plain form + ゆえに</b> = because of. You will meet it in essays, news, and every villain speech. Everyday speech uses から / ので.</div>
         <ul class="ex">
-          <li><ruby>母<rt>はは</rt></ruby>は<ruby>誰<rt>だれ</rt></ruby>よりも<ruby>優<rt>やさ</rt></ruby>しい <span class="m">my mother is kinder than anyone</span><button class="spk" data-say="母は誰よりも優しい">🔊</button></li>
-          <li><ruby>経験不足<rt>けいけんぶそく</rt></ruby>ゆえに<ruby>失敗<rt>しっぱい</rt></ruby>した <span class="m">I failed because of lack of experience</span><button class="spk" data-say="経験不足ゆえに失敗した">🔊</button></li>
-          <li><ruby>古<rt>ふる</rt></ruby>き<ruby>良<rt>よ</rt></ruby>き<ruby>時代<rt>じだい</rt></ruby> <span class="m">the good old days (古い→古き, 良い→良き)</span><button class="spk" data-say="古き良き時代">🔊</button></li>
+          <li><ruby>母<rt>はは</rt></ruby>は<ruby>誰<rt>だれ</rt></ruby>よりも<ruby>優<rt>やさ</rt></ruby>しい <span class="m" data-i18n="lines.5.grammar.examples.0.m">my mother is kinder than anyone</span><button class="spk" data-say="母は誰よりも優しい">🔊</button></li>
+          <li><ruby>経験不足<rt>けいけんぶそく</rt></ruby>ゆえに<ruby>失敗<rt>しっぱい</rt></ruby>した <span class="m" data-i18n="lines.5.grammar.examples.1.m">I failed because of lack of experience</span><button class="spk" data-say="経験不足ゆえに失敗した">🔊</button></li>
+          <li><ruby>古<rt>ふる</rt></ruby>き<ruby>良<rt>よ</rt></ruby>き<ruby>時代<rt>じだい</rt></ruby> <span class="m" data-i18n="lines.5.grammar.examples.2.m">the good old days (古い→古き, 良い→良き)</span><button class="spk" data-say="古き良き時代">🔊</button></li>
         </ul>
-        <div class="note"><b>Tokyo use:</b> 「若き日の〜」(in his younger days) on museum captions; 「〜ゆえ」on formal notices.</div>
+        <div class="note" data-i18n="lines.5.grammar.note"><b>Tokyo use:</b> 「若き日の〜」(in his younger days) on museum captions; 「〜ゆえ」on formal notices.</div>
       </div>
     </div>
 
     <div class="drill">
-      <h3>Drill</h3>
+      <h3 data-i18n="lines.5.drill.h">Drill</h3>
       <ol>
-        <li><ruby>彼<rt>かれ</rt></ruby>は<button class="blank">誰よりも</button><ruby>速<rt>はや</rt></ruby>い。<span class="m">He is faster than anyone.</span></li>
-        <li><ruby>準備不足<rt>じゅんびぶそく</rt></ruby><button class="blank">ゆえに</button>ミスをした。<span class="m">I made a mistake because of poor preparation.</span></li>
-        <li><ruby>若<rt>わか</rt></ruby>い → <button class="blank">若き</button><ruby>日<rt>ひ</rt></ruby><span class="m">young → younger days (classical)</span></li>
+        <li><ruby>彼<rt>かれ</rt></ruby>は<button class="blank">誰よりも</button><ruby>速<rt>はや</rt></ruby>い。<span class="m" data-i18n="lines.5.drill.list.0.m">He is faster than anyone.</span></li>
+        <li><ruby>準備不足<rt>じゅんびぶそく</rt></ruby><button class="blank">ゆえに</button>ミスをした。<span class="m" data-i18n="lines.5.drill.list.1.m">I made a mistake because of poor preparation.</span></li>
+        <li><ruby>若<rt>わか</rt></ruby>い → <button class="blank">若き</button><ruby>日<rt>ひ</rt></ruby><span class="m" data-i18n="lines.5.drill.list.2.m">young → younger days (classical)</span></li>
       </ol>
       <div class="yourturn">
-        <label>Your turn — praise a friend, Kenshiro style</label>
-        <textarea data-store="yt-l6" placeholder="＿＿よ。誰よりも ＿＿ ゆえに。  e.g. 優しい友よ。誰よりも心広きゆえに。"></textarea>
-        <div class="row"><button class="btn sm act-say-ta">🔊 Read mine</button><span class="hint">Look at the sky while you say it.</span></div>
+        <label data-i18n="lines.5.yourturn.label">Your turn — praise a friend, Kenshiro style</label>
+        <textarea data-store="yt-l6" data-i18n-ph="lines.5.yourturn.ph" placeholder="＿＿よ。誰よりも ＿＿ ゆえに。  e.g. 優しい友よ。誰よりも心広きゆえに。"></textarea>
+        <div class="row"><button class="btn sm act-say-ta" data-i18n="ui.readmine">🔊 Read mine</button><span class="hint" data-i18n="lines.5.yourturn.hint">Look at the sky while you say it.</span></div>
       </div>
-      <div class="done"><label><input type="checkbox" class="doneBox"> Line 6 done</label></div>
+      <div class="done"><label><input type="checkbox" class="doneBox"> <span data-i18n="lines.5.done"><input class="doneBox" type="checkbox"/> Line 6 done</span></label></div>
     </div>
   </div>
 </section>
@@ -543,28 +535,28 @@
   <div class="wrap">
     <div class="sec-head">
       <div class="num">✓</div>
-      <div><h2>Final quiz: are you already dead?</h2><div class="who">8 questions. Tap an answer. No secret pressure points involved.</div></div>
+      <div><h2 data-i18n="quiz_head.h2">Final quiz: are you already dead?</h2><div class="who" data-i18n="quiz_head.who">8 questions. Tap an answer. No secret pressure points involved.</div></div>
     </div>
     <div id="quizBox"></div>
     <div class="score" id="score"></div>
     <div class="grid2" style="margin-top:22px">
       <div>
-        <h3>Homework (send in italki chat)</h3>
+        <h3 data-i18n="homework.h">Homework (send in italki chat)</h3>
         <ol style="padding-left:22px;margin:0;font-size:16px">
-          <li>Record yourself saying all six lines — one take, Kenshiro face optional.</li>
-          <li>Write your own three vows with 〜ぬ.</li>
-          <li>Use「もう〜ている」once in real life this week and report back.</li>
+          <li data-i18n="homework.list.0">Record yourself saying all six lines — one take, Kenshiro face optional.</li>
+          <li data-i18n="homework.list.1">Write your own three vows with 〜ぬ.</li>
+          <li data-i18n="homework.list.2">Use「もう〜ている」once in real life this week and report back.</li>
         </ol>
       </div>
       <div>
-        <h3>Cheat sheet</h3>
+        <h3 data-i18n="cheat.h">Cheat sheet</h3>
         <table>
-          <tr><td class="w">もう〜ている</td><td>already in that state</td></tr>
-          <tr><td class="w">〜なし / 我が</td><td>no ~ (sign style) / my (literary)</td></tr>
-          <tr><td class="w">〜ぬ</td><td>= 〜ない (classical)</td></tr>
-          <tr><td class="w">XはYだ / 〜べきだ</td><td>X → Y! / should</td></tr>
-          <tr><td class="w">〜しか〜ない / 〜み</td><td>only / feeling as a noun</td></tr>
-          <tr><td class="w">誰よりも / 〜ゆえに / 〜き</td><td>more than anyone / because / classical adj</td></tr>
+          <tr><td class="w">もう〜ている</td><td data-i18n="cheat.rows.0.1">already in that state</td></tr>
+          <tr><td class="w">〜なし / 我が</td><td data-i18n="cheat.rows.1.1">no ~ (sign style) / my (literary)</td></tr>
+          <tr><td class="w">〜ぬ</td><td data-i18n="cheat.rows.2.1">= 〜ない (classical)</td></tr>
+          <tr><td class="w">XはYだ / 〜べきだ</td><td data-i18n="cheat.rows.3.1">X → Y! / should</td></tr>
+          <tr><td class="w">〜しか〜ない / 〜み</td><td data-i18n="cheat.rows.4.1">only / feeling as a noun</td></tr>
+          <tr><td class="w">誰よりも / 〜ゆえに / 〜き</td><td data-i18n="cheat.rows.5.1">more than anyone / because / classical adj</td></tr>
         </table>
       </div>
     </div>
@@ -573,26 +565,27 @@
 
 <footer>
   <div class="wrap">
-    <span>Made by <a href="https://www.italki.com/teacher/4732907" target="_blank" rel="noopener">Yuuki@Anime Sensei</a> for Stephen's trial lesson.</span>
-    <span>Anime tours in Tokyo: <a href="https://tour.animesenseijp.com/" target="_blank" rel="noopener">tour.animesenseijp.com</a></span>
-    <span>Clips are embedded from YouTube and belong to their owners. 北斗の拳 © 武論尊・原哲夫／コアミックス.</span>
+    <span data-i18n="footer.0">Made by <a href="https://www.italki.com/teacher/4732907" rel="noopener" target="_blank">Yuuki@Anime Sensei</a> for Stephen's trial lesson.</span>
+    <span data-i18n="footer.1">Anime tours in Tokyo: <a href="https://tour.animesenseijp.com/" rel="noopener" target="_blank">tour.animesenseijp.com</a></span>
+    <span data-i18n="footer.2">Clips are embedded from YouTube and belong to their owners. 北斗の拳 © 武論尊・原哲夫／コアミックス.</span>
   </div>
 </footer>
 <div class="toast" id="toast"></div>
 
 <script src="https://www.youtube.com/iframe_api"></script>
-<script src="i18n.js"></script>
 <script>
-/* ---------- helpers ---------- */
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('show'),1800)};
 const store={get:k=>{try{return localStorage.getItem(k)}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}}};
+const TTS_LANG="ja-JP";
+const N_LINES=6;
 
 /* ---------- YouTube players + A-B loop ---------- */
 const players={}, loops={};
-const VIDS={ytOP:'xp6rspO4uYY',yt1:'4bv6tNtrU4I',yt2:'jiKRr4vYUyw',yt3:'3XY6neA11eI',yt4:'5N9ibJg2T18',yt5:'N9HM0PLlFSw',yt6:'N9HM0PLlFSw'};
+const VIDS={"yt1": "4bv6tNtrU4I", "yt2": "jiKRr4vYUyw", "yt3": "3XY6neA11eI", "yt4": "5N9ibJg2T18", "yt5": "N9HM0PLlFSw", "yt6": "N9HM0PLlFSw", "ytOP": "xp6rspO4uYY"};
 function onYouTubeIframeAPIReady(){
   for(const [id,vid] of Object.entries(VIDS)){
+    if(!document.getElementById(id))continue;
     players[id]=new YT.Player(id,{videoId:vid,playerVars:{rel:0,modestbranding:1,playsinline:1,origin:location.origin},
       events:{onStateChange:e=>{ if(e.data===YT.PlayerState.ENDED) stopLoop(id); }}});
   }
@@ -622,18 +615,19 @@ $$('.ctl').forEach(c=>{
 /* ---------- TTS ---------- */
 let voices=[], voice=null, voiceIdx=0;
 function pickVoices(){
-  voices=speechSynthesis.getVoices().filter(v=>/^ja/i.test(v.lang));
-  const pref=['O-Ren','Kyoko','Otoya','Hattori','Google 日本語','Microsoft Nanami','Microsoft Keita'];
+  const pfx=TTS_LANG.split('-')[0];
+  voices=speechSynthesis.getVoices().filter(v=>v.lang.toLowerCase().startsWith(pfx));
+  const pref=['O-Ren','Kyoko','Otoya','Hattori','Google 日本語','Nanami','Keita','Samantha','Ava','Allison','Daniel','Google US English','Google UK English'];
   voices.sort((a,b)=>{const ia=pref.findIndex(p=>a.name.includes(p)),ib=pref.findIndex(p=>b.name.includes(p));return (ia<0?99:ia)-(ib<0?99:ib)});
   voice=voices[voiceIdx%Math.max(1,voices.length)]||null;
-  $('#voiceName').textContent=voice?voice.name.replace(/\(.*?\)/,'').trim():'no Japanese voice';
+  $('#voiceName').textContent=voice?voice.name.replace(/\(.*?\)/,'').trim():'no voice';
 }
 speechSynthesis.onvoiceschanged=pickVoices; pickVoices();
-$('#tVoice').onclick=()=>{ if(!voices.length)return; voiceIdx=(voiceIdx+1)%voices.length; pickVoices(); say('お前はもう死んでいる',1); };
+$('#tVoice').onclick=()=>{ if(!voices.length)return; voiceIdx=(voiceIdx+1)%voices.length; pickVoices(); say($('.act-say').dataset.say,1); };
 let currentSpk=null;
 function say(text,rate,btn){
   speechSynthesis.cancel();
-  const u=new SpeechSynthesisUtterance(text); u.lang='ja-JP'; if(voice)u.voice=voice; u.rate=rate; u.pitch=rate<1?0.9:0.95;
+  const u=new SpeechSynthesisUtterance(text); u.lang=TTS_LANG; if(voice)u.voice=voice; u.rate=rate; u.pitch=rate<1?0.9:0.95;
   if(currentSpk)currentSpk.classList.remove('on'); currentSpk=btn||null; if(btn)btn.classList.add('on');
   u.onend=u.onerror=()=>{if(btn)btn.classList.remove('on')};
   speechSynthesis.speak(u);
@@ -644,17 +638,17 @@ $$('.act-say-slow').forEach(b=>b.onclick=()=>say(b.dataset.say,0.6,b));
 $$('.act-say-ta').forEach(b=>b.onclick=()=>{const ta=b.closest('.yourturn').querySelector('textarea');const v=ta.value.trim();if(!v){toast('Write something first');ta.focus();return;}say(v,0.9,b)});
 
 /* ---------- Recording ---------- */
-let rec=null, recBtn=null;
+let rec=null;
 $$('.act-rec').forEach(b=>b.onclick=async()=>{
   const box=b.closest('.rec'), audio=box.querySelector('audio');
   if(rec&&rec.state==='recording'){ rec.stop(); return; }
   if(!navigator.mediaDevices){toast('Recording not supported here');return;}
   try{
     const stream=await navigator.mediaDevices.getUserMedia({audio:true});
-    const chunks=[]; rec=new MediaRecorder(stream); recBtn=b;
+    const chunks=[]; rec=new MediaRecorder(stream);
     rec.ondataavailable=e=>chunks.push(e.data);
-    rec.onstop=()=>{ stream.getTracks().forEach(t=>t.stop()); const blob=new Blob(chunks,{type:rec.mimeType||'audio/webm'}); audio.src=URL.createObjectURL(blob); audio.hidden=false; box.classList.remove('live'); b.textContent='🎙 Record again'; audio.play().catch(()=>{}); };
-    rec.start(); box.classList.add('live'); b.textContent='⏹ Stop'; toast('Recording… say the line');
+    rec.onstop=()=>{ stream.getTracks().forEach(t=>t.stop()); const blob=new Blob(chunks,{type:rec.mimeType||'audio/webm'}); audio.src=URL.createObjectURL(blob); audio.hidden=false; box.classList.remove('live'); b.textContent='🎙 Again'; audio.play().catch(()=>{}); };
+    rec.start(); box.classList.add('live'); b.textContent='⏹ Stop'; toast('Recording…');
   }catch(e){ toast('Microphone blocked'); }
 });
 
@@ -663,8 +657,8 @@ $$('.blank').forEach(b=>{b.onclick=()=>{b.classList.toggle('show'); if(b.classLi
 $$('textarea[data-store]').forEach(t=>{const v=store.get(t.dataset.store);if(v)t.value=v;t.oninput=()=>store.set(t.dataset.store,t.value)});
 
 /* ---------- Done tracking ---------- */
-function refreshDone(){ const n=$$('.doneBox').filter(c=>c.checked).length; $('#doneN').textContent=n; $$('.done label').forEach(l=>l.classList.toggle('ok',l.querySelector('input').checked)); if(n===6)toast('我が生涯に一片の悔いなし！ All six done.'); }
-$$('.lesson').forEach(s=>{const c=s.querySelector('.doneBox');c.checked=store.get('done-'+s.dataset.key)==='1';c.onchange=()=>{store.set('done-'+s.dataset.key,c.checked?'1':'0');refreshDone()}});
+function refreshDone(){ const n=$$('.doneBox').filter(c=>c.checked).length; $('#doneN').textContent=n; $$('.done label').forEach(l=>l.classList.toggle('ok',l.querySelector('input').checked)); if(n===N_LINES)toast("\u6211\u304c\u751f\u6daf\u306b\u4e00\u7247\u306e\u6094\u3044\u306a\u3057\uff01 All six done."); }
+$$('.lesson').forEach(s=>{const c=s.querySelector('.doneBox');c.checked=store.get('done-hokuto-'+s.dataset.key)==='1';c.onchange=()=>{store.set('done-hokuto-'+s.dataset.key,c.checked?'1':'0');refreshDone()}});
 refreshDone();
 
 /* ---------- Toggles ---------- */
@@ -676,44 +670,33 @@ tg($('#tRuby'),'no-ruby','ruby'); tg($('#tRomaji'),'no-romaji','romaji');
 const links=$$('#nav a'); const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id))}}),{rootMargin:'-40% 0px -55% 0px'});
 $$('section').forEach(s=>io.observe(s));
 
-/* ---------- Quiz ---------- */
-const QUIZ=[
- {q:'「お前はもう死んでいる」— What does もう〜ている express here?',o:['an action in progress','a state after a change','a future plan'],a:1,why:'死ぬ is a change verb. 死んでいる = the change is complete; he is in the "dead" state.'},
- {q:'Your boss asks if there is a problem. The Raoh-style short answer is…',o:['問題なし','問題ぬ','問題しか'],a:0,why:'Noun + なし = "no ~". 問題なし is real office Japanese.'},
- {q:'Convert 諦めない to Souther style.',o:['諦めぬ','諦めなし','諦めき'],a:0,why:'ない-stem 諦め + ぬ.'},
- {q:'Which is the irregular one: しない → ?',o:['しぬ','せぬ','すぬ'],a:1,why:'する → せぬ. (しぬ would be… a different verb.)'},
- {q:'「手は消毒＿＿だ」= you should disinfect your hands.',o:['するべき','すべき','both are fine'],a:2,why:'すべき is the classic form, するべき is also accepted in modern Japanese.'},
- {q:'「現金しか使えません」means…',o:['cash is not accepted','only cash is accepted','cash is preferred'],a:1,why:'しか + negative = only. The negative is grammar, not meaning.'},
- {q:'楽しい → noun?',o:['楽しみ','楽しさ','both exist'],a:2,why:'楽しみ = something to look forward to; 楽しさ = the fun-ness. Both real.'},
- {q:'「誰よりも愛深きゆえに」— ゆえに is closest to…',o:['から / ので (because)','けど (but)','とき (when)'],a:0,why:'ゆえに = formal "because of / therefore". Everyday speech: から, ので.'}
-];
-const qb=$('#quizBox'); let answered=0, correct=0;
-QUIZ.forEach((it,i)=>{
-  const d=document.createElement('div'); d.className='q';
-  d.innerHTML=`<p class="qt">${i+1}. ${it.q}</p><div class="opts">${it.o.map((o,j)=>`<button data-j="${j}">${o}</button>`).join('')}</div><p class="why">${it.why}</p>`;
-  d.querySelectorAll('button').forEach(b=>b.onclick=()=>{ if(d.classList.contains('answered'))return; d.classList.add('answered'); const j=+b.dataset.j; d.querySelectorAll('button').forEach(x=>x.classList.add(+x.dataset.j===it.a?'ok':'ng')); answered++; if(j===it.a)correct++; if(answered===QUIZ.length){ $('#score').textContent=`${correct} / ${QUIZ.length}` + (correct===QUIZ.length?' — 一片の悔いなし！':correct>=5?' — 退かぬ！':' — お前はもう…'); } });
-  qb.appendChild(d);
-});
-
-/* ---------- Language switch (EN / 日本語 / 中文) ---------- */
-const T_SEL="#nav a,.hero h1 .en,.howto .t,.howto .d,.lead,.eyebrow,.meta span,.sec-head h2,.who,.bubble .en,.chip .e,#warmup p,#warmup h3,.gp,.grid2 p,h3,th,td:not(.w),.ex .m,.note,.lbl,.src,.drill .m,.yourturn label,.yourturn .hint,.done label,.q .qt,.q .opts button,.q .why,#quiz ol li,footer span,.tag,.btn,textarea";
-function applyLang(lang){
-  const dict=(window.I18N||{})[lang]||{};
-  document.documentElement.lang=lang==='ja'?'ja':lang==='zh'?'zh-Hant':'en';
-  $$(T_SEL).forEach(el=>{
-    if(el.id==='tVoice')return;
-    if(el.tagName==='TEXTAREA'){ if(!el.dataset.orig)el.dataset.orig=el.placeholder; el.placeholder=dict[el.dataset.orig]||el.dataset.orig; return; }
-    if(!el.dataset.orig)el.dataset.orig=el.innerHTML.trim();
-    const tr=dict[el.dataset.orig]||el.dataset.orig;
-    if(el.querySelector('input')){ const txt=tr.replace(/<input[^>]*>/,'').trim(); [...el.childNodes].filter(n=>n.nodeType===3).forEach(n=>n.remove()); el.appendChild(document.createTextNode(' '+txt)); return; }
-    if(el.innerHTML.trim()!==tr)el.innerHTML=tr;
+/* ---------- Quiz (re-rendered per language) ---------- */
+const QUIZ=[{"a": 1, "o": [{"en": "an action in progress", "ja": "\u9032\u884c\u4e2d\u306e\u52d5\u4f5c", "zh": "\u9032\u884c\u4e2d\u7684\u52d5\u4f5c"}, {"en": "a state after a change", "ja": "\u5909\u5316\u306e\u3042\u3068\u306e\u72b6\u614b", "zh": "\u8b8a\u5316\u4e4b\u5f8c\u7684\u72c0\u614b"}, {"en": "a future plan", "ja": "\u672a\u6765\u306e\u4e88\u5b9a", "zh": "\u672a\u4f86\u7684\u8a08\u756b"}], "q": {"en": "\u300c\u304a\u524d\u306f\u3082\u3046\u6b7b\u3093\u3067\u3044\u308b\u300d\u2014 What does \u3082\u3046\u301c\u3066\u3044\u308b express here?", "ja": "\u300c\u304a\u524d\u306f\u3082\u3046\u6b7b\u3093\u3067\u3044\u308b\u300d\u2014 What does \u3082\u3046\u301c\u3066\u3044\u308b express here?", "zh": "\u300c\u304a\u524d\u306f\u3082\u3046\u6b7b\u3093\u3067\u3044\u308b\u300d\u2014 What does \u3082\u3046\u301c\u3066\u3044\u308b express here?"}, "why": {"en": "\u6b7b\u306c is a change verb. \u6b7b\u3093\u3067\u3044\u308b = the change is complete; he is in the \"dead\" state.", "ja": "\u6b7b\u306c \u306f\u5909\u5316\u52d5\u8a5e\u3002\u6b7b\u3093\u3067\u3044\u308b = \u5909\u5316\u304c\u5b8c\u4e86\u3057\u3066\u300c\u6b7b\u3093\u3060\u300d\u72b6\u614b\u306b\u3042\u308b\u3002", "zh": "\u6b7b\u306c \u662f\u8b8a\u5316\u52d5\u8a5e\u3002\u6b7b\u3093\u3067\u3044\u308b = \u8b8a\u5316\u5df2\u5b8c\u6210\uff0c\u8655\u65bc\u300c\u6b7b\u300d\u7684\u72c0\u614b\u3002"}}, {"a": 0, "o": [{"en": "\u554f\u984c\u306a\u3057", "ja": "\u554f\u984c\u306a\u3057", "zh": "\u554f\u984c\u306a\u3057"}, {"en": "\u554f\u984c\u306c", "ja": "\u554f\u984c\u306c", "zh": "\u554f\u984c\u306c"}, {"en": "\u554f\u984c\u3057\u304b", "ja": "\u554f\u984c\u3057\u304b", "zh": "\u554f\u984c\u3057\u304b"}], "q": {"en": "Your boss asks if there is a problem. The Raoh-style short answer is\u2026", "ja": "Your boss asks if there is a problem. The Raoh-style short answer is\u2026", "zh": "Your boss asks if there is a problem. The Raoh-style short answer is\u2026"}, "why": {"en": "Noun + \u306a\u3057 = \"no ~\". \u554f\u984c\u306a\u3057 is real office Japanese.", "ja": "\u540d\u8a5e + \u306a\u3057 = \u300c\u301c\u304c\u306a\u3044\u300d\u3002\u554f\u984c\u306a\u3057 \u306f\u672c\u7269\u306e\u30aa\u30d5\u30a3\u30b9\u65e5\u672c\u8a9e\u3002", "zh": "\u540d\u8a5e + \u306a\u3057 = \u300c\u6c92\u6709\uff5e\u300d\u3002\u554f\u984c\u306a\u3057 \u662f\u771f\u6b63\u7684\u8fa6\u516c\u5ba4\u65e5\u6587\u3002"}}, {"a": 0, "o": [{"en": "\u8ae6\u3081\u306c", "ja": "\u8ae6\u3081\u306c", "zh": "\u8ae6\u3081\u306c"}, {"en": "\u8ae6\u3081\u306a\u3057", "ja": "\u8ae6\u3081\u306a\u3057", "zh": "\u8ae6\u3081\u306a\u3057"}, {"en": "\u8ae6\u3081\u304d", "ja": "\u8ae6\u3081\u304d", "zh": "\u8ae6\u3081\u304d"}], "q": {"en": "Convert \u8ae6\u3081\u306a\u3044 to Souther style.", "ja": "Convert \u8ae6\u3081\u306a\u3044 to Souther style.", "zh": "Convert \u8ae6\u3081\u306a\u3044 to Souther style."}, "why": {"en": "\u306a\u3044-stem \u8ae6\u3081 + \u306c.", "ja": "\u306a\u3044\u5f62\u306e\u8a9e\u5e79 \u8ae6\u3081 + \u306c\u3002", "zh": "\u306a\u3044\u5f62\u8a5e\u5e79 \u8ae6\u3081 + \u306c\u3002"}}, {"a": 1, "o": [{"en": "\u3057\u306c", "ja": "\u3057\u306c", "zh": "\u3057\u306c"}, {"en": "\u305b\u306c", "ja": "\u305b\u306c", "zh": "\u305b\u306c"}, {"en": "\u3059\u306c", "ja": "\u3059\u306c", "zh": "\u3059\u306c"}], "q": {"en": "Which is the irregular one: \u3057\u306a\u3044 \u2192 ?", "ja": "Which is the irregular one: \u3057\u306a\u3044 \u2192 ?", "zh": "Which is the irregular one: \u3057\u306a\u3044 \u2192 ?"}, "why": {"en": "\u3059\u308b \u2192 \u305b\u306c. (\u3057\u306c would be\u2026 a different verb.)", "ja": "\u3059\u308b \u2192 \u305b\u306c\u3002\uff08\u3057\u306c \u3060\u3068\u2026\u5225\u306e\u52d5\u8a5e\u306b\u306a\u308b\uff09", "zh": "\u3059\u308b \u2192 \u305b\u306c\u3002\uff08\u3057\u306c \u6703\u8b8a\u6210\u2026\u2026\u53e6\u4e00\u500b\u52d5\u8a5e\u3002\uff09"}}, {"a": 2, "o": [{"en": "\u3059\u308b\u3079\u304d", "ja": "\u3059\u308b\u3079\u304d", "zh": "\u3059\u308b\u3079\u304d"}, {"en": "\u3059\u3079\u304d", "ja": "\u3059\u3079\u304d", "zh": "\u3059\u3079\u304d"}, {"en": "both are fine", "ja": "\u3069\u3061\u3089\u3082OK", "zh": "\u5169\u500b\u90fd\u53ef\u4ee5"}], "q": {"en": "\u300c\u624b\u306f\u6d88\u6bd2\uff3f\uff3f\u3060\u300d= you should disinfect your hands.", "ja": "\u300c\u624b\u306f\u6d88\u6bd2\uff3f\uff3f\u3060\u300d= you should disinfect your hands.", "zh": "\u300c\u624b\u306f\u6d88\u6bd2\uff3f\uff3f\u3060\u300d= you should disinfect your hands."}, "why": {"en": "\u3059\u3079\u304d is the classic form, \u3059\u308b\u3079\u304d is also accepted in modern Japanese.", "ja": "\u3059\u3079\u304d \u304c\u53e4\u5178\u7684\u306a\u5f62\u3002\u3059\u308b\u3079\u304d \u3082\u73fe\u4ee3\u65e5\u672c\u8a9e\u3067\u306f\u8a8d\u3081\u3089\u308c\u3066\u3044\u308b\u3002", "zh": "\u3059\u3079\u304d \u662f\u53e4\u5178\u5f62\uff0c\u3059\u308b\u3079\u304d \u5728\u73fe\u4ee3\u65e5\u6587\u4e5f\u88ab\u63a5\u53d7\u3002"}}, {"a": 1, "o": [{"en": "cash is not accepted", "ja": "\u73fe\u91d1\u306f\u4f7f\u3048\u306a\u3044", "zh": "\u4e0d\u6536\u73fe\u91d1"}, {"en": "only cash is accepted", "ja": "\u73fe\u91d1\u3060\u3051\u4f7f\u3048\u308b", "zh": "\u53ea\u6536\u73fe\u91d1"}, {"en": "cash is preferred", "ja": "\u73fe\u91d1\u304c\u671b\u307e\u3057\u3044", "zh": "\u5efa\u8b70\u4ed8\u73fe\u91d1"}], "q": {"en": "\u300c\u73fe\u91d1\u3057\u304b\u4f7f\u3048\u307e\u305b\u3093\u300dmeans\u2026", "ja": "\u300c\u73fe\u91d1\u3057\u304b\u4f7f\u3048\u307e\u305b\u3093\u300dmeans\u2026", "zh": "\u300c\u73fe\u91d1\u3057\u304b\u4f7f\u3048\u307e\u305b\u3093\u300dmeans\u2026"}, "why": {"en": "\u3057\u304b + negative = only. The negative is grammar, not meaning.", "ja": "\u3057\u304b + \u5426\u5b9a = \u301c\u3060\u3051\u3002\u5426\u5b9a\u306f\u6587\u6cd5\u4e0a\u306e\u5f62\u3067\u3001\u610f\u5473\u306f\u5426\u5b9a\u3067\u306f\u306a\u3044\u3002", "zh": "\u3057\u304b + \u5426\u5b9a = \u53ea\u6709\u3002\u5426\u5b9a\u53ea\u662f\u6587\u6cd5\u5f62\u5f0f\uff0c\u4e0d\u662f\u610f\u601d\u3002"}}, {"a": 2, "o": [{"en": "\u697d\u3057\u307f", "ja": "\u697d\u3057\u307f", "zh": "\u697d\u3057\u307f"}, {"en": "\u697d\u3057\u3055", "ja": "\u697d\u3057\u3055", "zh": "\u697d\u3057\u3055"}, {"en": "both exist", "ja": "\u3069\u3061\u3089\u3082\u3042\u308b", "zh": "\u5169\u500b\u90fd\u5b58\u5728"}], "q": {"en": "\u697d\u3057\u3044 \u2192 noun?", "ja": "\u697d\u3057\u3044 \u2192 noun?", "zh": "\u697d\u3057\u3044 \u2192 noun?"}, "why": {"en": "\u697d\u3057\u307f = something to look forward to; \u697d\u3057\u3055 = the fun-ness. Both real.", "ja": "\u697d\u3057\u307f = \u697d\u3057\u307f\u306b\u3057\u3066\u3044\u308b\u3053\u3068\u3002\u697d\u3057\u3055 = \u697d\u3057\u3044\u5ea6\u5408\u3044\u3002\u3069\u3061\u3089\u3082\u5b9f\u5728\u3002", "zh": "\u697d\u3057\u307f = \u671f\u5f85\u7684\u4e8b\uff1b\u697d\u3057\u3055 = \u5feb\u6a02\u7684\u7a0b\u5ea6\u3002\u5169\u500b\u90fd\u662f\u771f\u7684\u3002"}}, {"a": 0, "o": [{"en": "\u304b\u3089 / \u306e\u3067 (because)", "ja": "\u304b\u3089\uff0f\u306e\u3067\uff08\u7406\u7531\uff09", "zh": "\u304b\u3089\uff0f\u306e\u3067\uff08\u56e0\u70ba\uff09"}, {"en": "\u3051\u3069 (but)", "ja": "\u3051\u3069\uff08\u9006\u63a5\uff09", "zh": "\u3051\u3069\uff08\u4f46\u662f\uff09"}, {"en": "\u3068\u304d (when)", "ja": "\u3068\u304d\uff08\u6642\uff09", "zh": "\u3068\u304d\uff08\u7576\u2026\u6642\uff09"}], "q": {"en": "\u300c\u8ab0\u3088\u308a\u3082\u611b\u6df1\u304d\u3086\u3048\u306b\u300d\u2014 \u3086\u3048\u306b is closest to\u2026", "ja": "\u300c\u8ab0\u3088\u308a\u3082\u611b\u6df1\u304d\u3086\u3048\u306b\u300d\u2014 \u3086\u3048\u306b is closest to\u2026", "zh": "\u300c\u8ab0\u3088\u308a\u3082\u611b\u6df1\u304d\u3086\u3048\u306b\u300d\u2014 \u3086\u3048\u306b is closest to\u2026"}, "why": {"en": "\u3086\u3048\u306b = formal \"because of / therefore\". Everyday speech: \u304b\u3089, \u306e\u3067.", "ja": "\u3086\u3048\u306b = \u786c\u3044\u300c\u301c\u306e\u305f\u3081\u306b\uff0f\u3060\u304b\u3089\u300d\u3002\u65e5\u5e38\u4f1a\u8a71\u3067\u306f \u304b\u3089\u30fb\u306e\u3067\u3002", "zh": "\u3086\u3048\u306b = \u6b63\u5f0f\u7684\u300c\u56e0\u70ba\uff0f\u56e0\u6b64\u300d\u3002\u65e5\u5e38\u53e3\u8a9e\u7528 \u304b\u3089\u3001\u306e\u3067\u3002"}}];
+const SCORE_MSG={"bad": " \u2014 \u304a\u524d\u306f\u3082\u3046\u2026", "good": " \u2014 \u9000\u304b\u306c\uff01", "perfect": " \u2014 \u4e00\u7247\u306e\u6094\u3044\u306a\u3057\uff01"};
+let LANG='en', answered=0, correct=0;
+function renderQuiz(){
+  const qb=$('#quizBox'); qb.innerHTML=''; answered=0; correct=0; $('#score').textContent='';
+  QUIZ.forEach((it,i)=>{
+    const d=document.createElement('div'); d.className='q';
+    d.innerHTML=`<p class="qt">${i+1}. ${it.q[LANG]}</p><div class="opts">${it.o.map((o,j)=>`<button data-j="${j}">${o[LANG]}</button>`).join('')}</div><p class="why">${it.why[LANG]}</p>`;
+    d.querySelectorAll('button').forEach(b=>b.onclick=()=>{ if(d.classList.contains('answered'))return; d.classList.add('answered'); const j=+b.dataset.j; d.querySelectorAll('button').forEach(x=>x.classList.add(+x.dataset.j===it.a?'ok':'ng')); answered++; if(j===it.a)correct++; if(answered===QUIZ.length){ $('#score').textContent=`${correct} / ${QUIZ.length}` + (correct===QUIZ.length?SCORE_MSG.perfect:correct>=Math.ceil(QUIZ.length*0.6)?SCORE_MSG.good:SCORE_MSG.bad); } });
+    qb.appendChild(d);
   });
+}
+
+/* ---------- Language switch ---------- */
+const I={"ja": {"cheat.h": "\u65e9\u898b\u8868", "cheat.rows.0.1": "\u3082\u3046\u305d\u306e\u72b6\u614b\u306b\u3042\u308b", "cheat.rows.1.1": "\u301c\u304c\u306a\u3044\uff08\u770b\u677f\u98a8\uff09\uff0f\u79c1\u306e\uff08\u6587\u8a9e\uff09", "cheat.rows.2.1": "= \u301c\u306a\u3044\uff08\u53e4\u5178\uff09", "cheat.rows.3.1": "X\u306f\u2192Y\uff01\uff0f\u301c\u3059\u3079\u304d", "cheat.rows.4.1": "\u301c\u3060\u3051\uff0f\u6c17\u6301\u3061\u306e\u540d\u8a5e\u5316", "cheat.rows.5.1": "\u8ab0\u3088\u308a\u3082\uff0f\u301c\u306e\u305f\u3081\u306b\uff0f\u53e4\u5178\u306e\u5f62\u5bb9\u8a5e", "footer.2": "\u52d5\u753b\u306fYouTube\u304b\u3089\u306e\u57cb\u3081\u8fbc\u307f\u3067\u3001\u6a29\u5229\u306f\u5404\u6240\u6709\u8005\u306b\u3042\u308a\u307e\u3059\u3002\u5317\u6597\u306e\u62f3 \u00a9 \u6b66\u8ad6\u5c0a\u30fb\u539f\u54f2\u592b\uff0f\u30b3\u30a2\u30df\u30c3\u30af\u30b9", "hero.eyebrow": "\u4f53\u9a13\u30ec\u30c3\u30b9\u30f3 \u00b7 JLPT N3 \u00b7 Yuuki@Anime Sensei", "hero.h1_en": "\u540d\u30bb\u30ea\u30d56\u672c\u3067\u5b66\u3076\u3001\u660e\u65e5\u304b\u3089\u4f7f\u3048\u308b\u6587\u6cd5", "hero.howto.0.d": "\u307e\u305a\u30b7\u30fc\u30f3\u30921\u56de\u518d\u751f\u3002", "hero.howto.0.t": "\u89b3\u308b", "hero.howto.1.d": "\u30bb\u30ea\u30d5\u3060\u3051\u3092\u7e70\u308a\u8fd4\u3059\u3002\u901f\u5ea6\u3082\u843d\u3068\u305b\u308b\u3002", "hero.howto.1.t": "\u30eb\u30fc\u30d7", "hero.howto.2.d": "\u58f0\u306b\u51fa\u3057\u3066\u30b7\u30e3\u30c9\u30fc\u30a4\u30f3\u30b0\u3002\u81ea\u5206\u306e\u58f0\u3092\u9332\u97f3\u3002", "hero.howto.2.t": "\u771f\u4f3c\u308b", "hero.howto.3.d": "\u30bb\u30ea\u30d5\u306b\u96a0\u308c\u305f\u30d1\u30bf\u30fc\u30f3\u3092\u898b\u308b\u3002", "hero.howto.3.t": "\u6587\u6cd5", "hero.howto.4.d": "\u7a7a\u6b04\u3092\u30bf\u30c3\u30d7\u3002\u6700\u5f8c\u306f\u81ea\u5206\u306e\u6587\u3092\u66f8\u304f\u3002", "hero.howto.4.t": "\u30c9\u30ea\u30eb", "hero.lead": "\u4f1d\u8aac\u306e\u540d\u30bb\u30ea\u30d56\u672c\u3002\u305d\u308c\u305e\u308c\u306e\u4e2d\u306b\u3001\u660e\u65e5\u6771\u4eac\u3067\u672c\u5f53\u306b\u4f7f\u3046\u6587\u6cd5\u304c\u3072\u3068\u3064\u96a0\u308c\u3066\u3044\u307e\u3059\u3002\u30af\u30ea\u30c3\u30d7\u3092\u89b3\u3066\u3001\u30bb\u30ea\u30d5\u3060\u3051\u3092\u30eb\u30fc\u30d7\u3057\u3066\u3001\u30b1\u30f3\u30b7\u30ed\u30a6\u306b\u306a\u308a\u304d\u3063\u3066\u8a00\u3063\u3066\u3001\u30c9\u30ea\u30eb\u3067\u5b9a\u7740\u3055\u305b\u307e\u3057\u3087\u3046\u3002", "hero.meta.0": "\ud83d\udc64 \u751f\u5f92: \u003cb\u003eStephen\u003c/b\u003e", "hero.meta.1": "\ud83d\udcc5 \u003cb\u003e2026\u5e749\u67086\u65e5\uff08\u65e5\uff0914:00 JST\u003c/b\u003e", "hero.meta.2": "\u23f1 30\u5206 \u00b7 YouTube\u7528\u306b\u9332\u753b", "homework.h": "\u5bbf\u984c\uff08italki\u306e\u30c1\u30e3\u30c3\u30c8\u3067\u9001\u308b\uff09", "homework.list.0": "6\u672c\u306e\u30bb\u30ea\u30d5\u3092\u5168\u90e8\u8a00\u3063\u3066\u9332\u97f3 \u2014 \u4e00\u767a\u64ae\u308a\u3001\u30b1\u30f3\u30b7\u30ed\u30a6\u9854\u306f\u4efb\u610f\u3002", "homework.list.1": "\u301c\u306c \u3067\u81ea\u5206\u306e\u4e09\u3064\u306e\u8a93\u3044\u3092\u66f8\u304f\u3002", "homework.list.2": "\u4eca\u9031\u3001\u5b9f\u751f\u6d3b\u3067\u300c\u3082\u3046\u301c\u3066\u3044\u308b\u300d\u30921\u56de\u4f7f\u3063\u3066\u5831\u544a\u3059\u308b\u3002", "html_lang": "ja", "lines.0.drill.h": "\u30c9\u30ea\u30eb", "lines.0.drill.list.0.m": "\u4f1a\u8b70\u306f\u3082\u3046\u59cb\u307e\u3063\u305f\u3002\uff08\u59cb\u307e\u308b\uff09", "lines.0.drill.list.1.m": "\u304a\u91d1\u3092\u6301\u3063\u3066\u3044\u306a\u3044\u3093\u3067\u3059\u3002\uff08\u6301\u3064\u30fb\u5426\u5b9a\uff09", "lines.0.drill.list.2.m": "\u4eca\u306f\u6771\u4eac\u306b\u4f4f\u3093\u3067\u3044\u308b\u3002\uff08\u4f4f\u3080\uff09", "lines.0.grammar.examples.0.m": "\uff08\u3082\u3046\uff09\u7d50\u5a5a\u3057\u3066\u3044\u307e\u3059", "lines.0.grammar.examples.1.m": "\u96fb\u8eca\u306f\u3082\u3046\u51fa\u767a\u3057\u305f", "lines.0.grammar.examples.2.m": "\u5e97\u306f\u3082\u3046\u9589\u307e\u3063\u3066\u3044\u308b", "lines.0.grammar.gp.0": "\u003cb\u003e\u5909\u5316\u52d5\u8a5e + \u3066\u3044\u308b\u003c/b\u003e \u2192 \u300c\u301c\u3057\u3066\u3044\u308b\u6700\u4e2d\u300d\u3067\u306f\u306a\u304f\u300c\u301c\u3057\u7d42\u308f\u3063\u3066\u3001\u4eca\u305d\u306e\u72b6\u614b\u300d\u3002", "lines.0.grammar.h": "\u6587\u6cd5: \u301c\u3066\u3044\u308b = \u5909\u5316\u306e\u3042\u3068\u306e\u72b6\u614b", "lines.0.grammar.note": "\u003cb\u003e\u6771\u4eac\u3067\u306e\u4f7f\u3044\u65b9:\u003c/b\u003e \u7d42\u96fb\u306b\u8d70\u308b\u53cb\u3060\u3061\u306b\u300c\u3082\u3046\u51fa\u3066\u308b\u3088\u300d\uff08\u8a71\u3057\u8a00\u8449\u3067\u306f \u3044 \u304c\u843d\u3061\u308b\uff09\u3002", "lines.0.grammar.p": "\u6b7b\u306c\u30fb\u7d50\u5a5a\u3059\u308b\u30fb\u77e5\u308b\u30fb\u6301\u3064\u30fb\u4f4f\u3080\u30fb\u59cb\u307e\u308b\u30fb\u9589\u307e\u308b \u306f\u3059\u3079\u3066\u300c\u5909\u5316\u300d\u306e\u52d5\u8a5e\u3002\u30b1\u30f3\u30b7\u30ed\u30a6\u306f\u300c\u6b7b\u306b\u304b\u3051\u3066\u3044\u308b\u300d\u3068\u8a00\u3063\u3066\u3044\u308b\u306e\u3067\u306f\u306a\u3044\u3002\u5909\u5316\u306f\u3082\u3046\u8d77\u304d\u3066\u3044\u3066\u3001\u672c\u4eba\u304c\u6c17\u3065\u3044\u3066\u3044\u306a\u3044\u3060\u3051\u3002", "lines.0.line.en": "\u300c\u304a\u524d\u306f\u003ci\u003e\u3082\u3046\u6b7b\u3093\u3067\u3044\u308b\u003c/i\u003e\u300d\uff1d \u3059\u3067\u306b\u6b7b\u3093\u3060\u72b6\u614b\u306b\u3042\u308b", "lines.0.who": "\u30b1\u30f3\u30b7\u30ed\u30a6 \u00b7 \u8ab0\u3082\u304c\u77e5\u308b\u3042\u306e\u4e00\u8a00", "lines.0.words.h": "\u4e00\u8a9e\u305a\u3064", "lines.0.words.head.0": "\u8a9e", "lines.0.words.head.1": "\u610f\u5473", "lines.0.words.rows.0.1": "\u300c\u3042\u306a\u305f\u300d\u306e\u4e71\u66b4\u306a\u8a00\u3044\u65b9\u3002\u6575\u30fb\u30e9\u30a4\u30d0\u30eb\u30fb\u3054\u304f\u89aa\u3057\u3044\u53cb\u4eba\u306b\u3002\u4e0a\u53f8\u3084\u30db\u30b9\u30c8\u30d5\u30a1\u30df\u30ea\u30fc\u306b\u306f\u003cb\u003e\u7d76\u5bfe\u306b\u003c/b\u003e\u4f7f\u308f\u306a\u3044\u3002", "lines.0.words.rows.1.1": "\u4e3b\u984c\u3092\u793a\u3059\u52a9\u8a5e\uff08\u308f\uff09", "lines.0.words.rows.2.1": "\u3059\u3067\u306b", "lines.0.words.rows.3.1": "\u6b7b\u306c \u2192 \u3066\u5f62 \u6b7b\u3093\u3067 + \u3044\u308b \u2192 \u300c\u6b7b\u3093\u3060\u72b6\u614b\u306b\u3042\u308b\u300d", "lines.0.yourturn.hint": "\u3053\u306e\u7aef\u672b\u306b\u4fdd\u5b58\u3055\u308c\u307e\u3059\u3002", "lines.0.yourturn.label": "\u3042\u306a\u305f\u306e\u756a \u2014 \u7121\u5bb3\u306a\u3053\u3068\u3067\u30b1\u30f3\u30b7\u30ed\u30a6\u306b\u306a\u308b", "lines.0.yourturn.ph": "\u304a\u524d\u306f\u3082\u3046 \uff3f\uff3f \u3066\u3044\u308b\u3002  \u4f8b: \u304a\u524d\u306f\u3082\u3046\u5408\u683c\u3057\u3066\u3044\u308b\u3002", "lines.1.drill.h": "\u30c9\u30ea\u30eb", "lines.1.drill.list.0.m": "\u554f\u984c\u306a\u3044\uff01", "lines.1.drill.list.1.m": "\u5065\u5eb7\u8a3a\u65ad: \u7570\u5e38\u306a\u3057\u3002", "lines.1.drill.list.2.m": "\u79c1\u305f\u3061\u306e\u5bb6\u3078\u3088\u3046\u3053\u305d\uff01\uff08\u6211\u304c + \u5bb6\uff09", "lines.1.grammar.examples.0.m": "\u554f\u984c\u306a\u3044\uff08\u5831\u544a\u30fb\u30e1\u30c3\u30bb\u30fc\u30b8\uff09", "lines.1.grammar.examples.1.m": "\u7570\u5e38\u304c\u306a\u3044\uff08\u5065\u5eb7\u8a3a\u65ad\uff09", "lines.1.grammar.examples.2.m": "\u4e88\u7d04\u3057\u306a\u304f\u3066\u3082\u5165\u308c\u308b", "lines.1.grammar.examples.3.m": "\u79c1\u306e\u5bb6\u3078\u3088\u3046\u3053\u305d", "lines.1.grammar.gp.0": "\u003cb\u003e\u540d\u8a5e + \u306a\u3057\u003c/b\u003e = \u300c\u301c\u304c\u306a\u3044\uff0f\u301c\u306a\u3057\u3067\u300d\u3002\u77ed\u304f\u3001\u786c\u304f\u3001\u304d\u3063\u3071\u308a\u3002\u770b\u677f\u30fb\u5831\u544a\u66f8\u30fb\u305d\u3057\u3066\u6b7b\u306b\u3086\u304f\u8987\u8005\u304c\u4f7f\u3046\u3002", "lines.1.grammar.h": "\u6587\u6cd5: \u301c\u306a\u3057 \u2014 \u770b\u677f\u30b9\u30bf\u30a4\u30eb\u306e\u5426\u5b9a", "lines.1.grammar.note": "\u003cb\u003e\u6771\u4eac\u3067\u306e\u4f7f\u3044\u65b9:\u003c/b\u003e \u5e97\u306e\u770b\u677f\u300c\u4e88\u7d04\u306a\u3057OK\u300d\u3002\u4e0a\u53f8\u304b\u3089\u306eLINE\u300c\u554f\u984c\u306a\u3057\u300d= \u5927\u4e08\u592b\u3002", "lines.1.line.en": "\u300c\u6211\u304c\u751f\u6daf\u306b\u003ci\u003e\u4e00\u7247\u306e\u6094\u3044\u306a\u3057\u003c/i\u003e\u300d\uff1d \u4eba\u751f\u306b\u5f8c\u6094\u306f\u3072\u3068\u304b\u3051\u3089\u3082\u306a\u3044", "lines.1.who": "\u30e9\u30aa\u30a6 \u00b7 \u5929\u306b\u62f3\u3092\u7a81\u304d\u4e0a\u3052\u305f\u6700\u671f\u306e\u8a00\u8449", "lines.1.words.h": "\u4e00\u8a9e\u305a\u3064", "lines.1.words.head.0": "\u8a9e", "lines.1.words.head.1": "\u610f\u5473", "lines.1.words.rows.0.1": "\u79c1\u306e\uff0f\u79c1\u305f\u3061\u306e \u2014 \u6587\u8a9e\u306e\u300c\u79c1\u306e\u300d\u3002\u6211\u304c\u56fd\u30fb\u6211\u304c\u793e\u30fb\u6211\u304c\u5bb6 \u306f\u4eca\u3082\u73fe\u5f79", "lines.1.words.rows.1.1": "\u4e00\u751f\u30fb\u751f\u304d\u3066\u3044\u308b\u9593\u305a\u3063\u3068", "lines.1.words.rows.2.1": "\u301c\u306b", "lines.1.words.rows.3.1": "\u3072\u3068\u304b\u3051\u3089\u306e", "lines.1.words.rows.4.1": "\u5f8c\u6094\uff08\u6094\u3084\u3080 \u306e\u540d\u8a5e\uff09", "lines.1.words.rows.5.1": "= \u306a\u3044\u3002\u6587\u8a9e\u306e\u300c\u5b58\u5728\u3057\u306a\u3044\u300d", "lines.1.yourturn.hint": "\u8a00\u3046\u3068\u304d\u306f\u62f3\u3092\u4e0a\u3052\u3066\u3002", "lines.1.yourturn.label": "\u3042\u306a\u305f\u306e\u756a \u2014 \u5f8c\u6094\u3057\u3066\u3044\u306a\u3044\u3053\u30681\u3064", "lines.1.yourturn.ph": "\u6211\u304c \uff3f\uff3f \u306b\u4e00\u7247\u306e\u6094\u3044\u306a\u3057\uff01  \u4f8b: \u6211\u304c\u6771\u4eac\u751f\u6d3b\u306b\u4e00\u7247\u306e\u6094\u3044\u306a\u3057\uff01", "lines.2.drill.h": "\u30c9\u30ea\u30eb \u2014 \u301c\u306c \u306b\u5909\u3048\u308b", "lines.2.drill.list.0.m": "\u884c\u304b\u306a\u3044", "lines.2.drill.list.1.m": "\u98df\u3079\u306a\u3044", "lines.2.drill.list.2.m": "\u8ae6\u3081\u306a\u3044", "lines.2.drill.list.3.m": "\u3057\u306a\u3044\uff08\u4e0d\u898f\u5247\uff01\uff09", "lines.2.grammar.examples.0.m": "\u6c17\u3065\u304b\u306a\u3044\u3046\u3061\u306b", "lines.2.grammar.examples.1.m": "\u77e5\u3089\u306a\u3044\u4eba", "lines.2.grammar.examples.2.m": "\u4e88\u60f3\u5916\u306e\u30d7\u30ec\u30bc\u30f3\u30c8", "lines.2.grammar.examples.3.m": "\u8a00\u308f\u306a\u3044\u65b9\u304c\u3044\u3044\u3053\u3068\u3082\u3042\u308b\uff08\u3053\u3068\u308f\u3056\uff09", "lines.2.grammar.gp.0": "\u003cb\u003e\u301c\u306c\u003c/b\u003e\u306f\u53e4\u5178\u306e\u5426\u5b9a\u3002\u4f8d\u3063\u307d\u304f\u3001\u5287\u7684\u3067\u3001\u7d76\u5bfe\u7684\u3002\u30a2\u30cb\u30e1\u30fb\u3053\u3068\u308f\u3056\u30fb\u4eca\u3082\u7686\u304c\u4f7f\u3046\u6c7a\u307e\u308a\u6587\u53e5\u306b\u6b8b\u3063\u3066\u3044\u308b\u3002", "lines.2.grammar.h": "\u6587\u6cd5: \u301c\u306c = \u6614\u306a\u304c\u3089\u306e \u306a\u3044", "lines.2.grammar.note": "\u003cb\u003e\u6771\u4eac\u3067\u306e\u4f7f\u3044\u65b9:\u003c/b\u003e \u898b\u77e5\u3089\u306c\u4eba \u306f\u30cb\u30e5\u30fc\u30b9\u3084\u99c5\u306e\u30a2\u30ca\u30a6\u30f3\u30b9\u306b\u3002\u77e5\u3089\u306c\u9593\u306b \u306f\u65e5\u5e38\u4f1a\u8a71\u3002", "lines.2.line.en": "\u300c\u003ci\u003e\u9000\u304b\u306a\u3044\u003c/i\u003e\uff01\u003ci\u003e\u5a9a\u3073\u306a\u3044\u003c/i\u003e\uff01\u003ci\u003e\u7701\u307f\u306a\u3044\u003c/i\u003e\uff01\u300d", "lines.2.tag.text": "N2 \u00b7 \u53e4\u5178\u306e \u301c\u306c", "lines.2.who": "\u8056\u5e1d\u30b5\u30a6\u30b6\u30fc \u00b7 \u4e09\u8a9e\u3067\u4e09\u3064\u306e\u8a93\u3044", "lines.2.words.h": "\u4e00\u8a9e\u305a\u3064", "lines.2.words.head.0": "\u52d5\u8a5e", "lines.2.words.head.1": "\u610f\u5473", "lines.2.words.head.2": "\u301c\u306c \u306e\u5f62", "lines.2.words.note": "\u30eb\u30fc\u30eb: \u003cb\u003e\u306a\u3044\u5f62\u306e\u8a9e\u5e79\u003c/b\u003e\u306b \u306a\u3044 \u2192 \u306c \u3092\u4ed8\u3051\u66ff\u3048\u308b\u3002\u884c\u304b\u306a\u3044 \u2192 \u884c\u304b\u003cb\u003e\u306c\u003c/b\u003e\u3002\u3059\u308b \u2192 \u305b\u003cb\u003e\u306c\u003c/b\u003e\u3002\u6765\u308b \u2192 \u6765(\u3053)\u003cb\u003e\u306c\u003c/b\u003e\u3002", "lines.2.words.rows.0.1": "\u5f8c\u308d\u3078\u4e0b\u304c\u308b\u30fb\u9000\u5374\u3059\u308b", "lines.2.words.rows.1.1": "\u3053\u3073\u308b\u30fb\u3054\u307e\u3092\u3059\u308b", "lines.2.words.rows.2.1": "\u632f\u308a\u8fd4\u308b\u30fb\u53cd\u7701\u3059\u308b", "lines.2.yourturn.hint": "\u53eb\u3093\u3067\u3002\u30b5\u30a6\u30b6\u30fc\u306a\u3089\u305d\u3046\u3059\u308b\u3002", "lines.2.yourturn.label": "\u3042\u306a\u305f\u306e\u756a \u2014 \u65e5\u672c\u8a9e\u5b66\u7fd2\u306e\u4e09\u3064\u306e\u8a93\u3044\u3001\u30b5\u30a6\u30b6\u30fc\u98a8\u306b", "lines.2.yourturn.ph": "\uff3f\uff3f\u306c\uff01\uff3f\uff3f\u306c\uff01\uff3f\uff3f\u306c\uff01  \u4f8b: \u5bdd\u574a\u305b\u306c\uff01\u8ae6\u3081\u306c\uff01\u30b5\u30dc\u3089\u306c\uff01", "lines.3.drill.h": "\u30c9\u30ea\u30eb", "lines.3.drill.list.0.m": "\u98a8\u90aa\u3092\u5f15\u3044\u305f\u3089\u4f11\u3080\u3079\u304d\u3060\u3002\uff08\u4f11\u3080\uff09", "lines.3.drill.list.1.m": "\u50b7\u53e3\u3092\u6d88\u6bd2\u3057\u3066\u304f\u3060\u3055\u3044\u3002", "lines.3.drill.list.2.m": "\u4eca\u591c\u306f\u30e9\u30fc\u30e1\u30f3\uff01", "lines.3.grammar.examples.0.m": "\u4eca\u65e5\u306f\u713c\u8089\uff01", "lines.3.grammar.examples.1.m": "\u9031\u672b\u306f\u5927\u6383\u9664\uff01", "lines.3.grammar.examples.2.m": "\u624b\u306f\u6d88\u6bd2\u3057\u305f\u307b\u3046\u304c\u3044\u3044", "lines.3.grammar.examples.3.m": "\u65e9\u304f\u5bdd\u305f\u307b\u3046\u304c\u3044\u3044", "lines.3.grammar.gp.0": "\u003cb\u003e\u540d\u8a5e \u306f \u540d\u8a5e \u3060\uff01\u003c/b\u003e \u2014 \u4e88\u5b9a\u3092\u5ba3\u8a00\u3059\u308b\u3002\u003cb\u003e\u52d5\u8a5e\uff08\u8f9e\u66f8\u5f62\uff09+ \u3079\u304d\u3060\u003c/b\u003e \u2014 \u300c\u301c\u3059\u3079\u304d\u300d\u3002\u30b1\u30f3\u30b7\u30ed\u30a6\u306f\u300c\u6d88\u6bd2\u003cb\u003e\u3059\u3079\u304d\u003c/b\u003e\u3060\u306a\u300d\u3068\u8fd4\u3059\uff08\u3059\u308b \u2192 \u3059\u3079\u304d\uff09\u3002", "lines.3.grammar.h": "\u6587\u6cd5: \u639b\u3051\u58f0\u3068\u3057\u3066\u306e X\u306fY\u3060\uff01 \u00b7 \u301c\u3079\u304d\u3060 = \u3059\u3079\u304d", "lines.3.grammar.note": "\u003cb\u003e\u6771\u4eac\u3067\u306e\u4f7f\u3044\u65b9:\u003c/b\u003e 2020\u5e74\u4ee5\u964d\u3001\u5e97\u306e\u5165\u53e3\u306e\u30dc\u30c8\u30eb\u306b\u5fc5\u305a: \u300c\u003cruby\u003e\u624b\u6307\u003crt\u003e\u3057\u3085\u3057\u003c/rt\u003e\u003c/ruby\u003e\u6d88\u6bd2\u306b\u3054\u5354\u529b\u304f\u3060\u3055\u3044\u300d\u3002", "lines.3.line.en": "\u300c\u6c5a\u7269\u306f\u003ci\u003e\u6d88\u6bd2\u3059\u308b\u003c/i\u003e\u3082\u306e\u3060\uff01\u300d", "lines.3.who": "\u706b\u708e\u653e\u5c04\u5668\u306e\u30e2\u30d2\u30ab\u30f3 \u00b7 \u65e5\u672c\u3067\u4e00\u756a\u5f15\u7528\u3055\u308c\u308b\u96d1\u9b5a\u306e\u30bb\u30ea\u30d5", "lines.3.words.h": "\u4e00\u8a9e\u305a\u3064", "lines.3.words.head.0": "\u8a9e", "lines.3.words.head.1": "\u610f\u5473", "lines.3.words.note": "\u76f4\u8a33\u306f\u300c\u6c5a\u7269\u306f\u6d88\u6bd2\u3067\u3042\u308b\u300d\u3002\u65e5\u672c\u8a9e\u306e\u540d\u8a5e\u6587\u306f\u003cb\u003e\u300cX\u306b\u306f\u2192Y\u3068\u3044\u3046\u51e6\u7f6e\u300d\u003c/b\u003e\u306e\u610f\u5473\u306b\u306a\u308c\u308b\u3002\u8a71\u3057\u8a00\u8449\u3067\u3068\u3066\u3082\u591a\u3044\u3002", "lines.3.words.rows.0.1": "\u6c5a\u3044\u3082\u306e\uff08\u6c5a = \u304d\u305f\u306a\u3044\u3001\u7269 = \u3082\u306e\uff09", "lines.3.words.rows.1.1": "\u4e3b\u984c", "lines.3.words.rows.2.1": "\u6d88\u6bd2 \u2014 \u3059\u308b\u52d5\u8a5e\u306b\u306a\u308b\u540d\u8a5e\uff08\u6d88\u6bd2\u3059\u308b\uff09", "lines.3.words.rows.3.1": "\u300c\u3060\u300d\u2014 \u666e\u901a\u5f62\u306e\u65ad\u5b9a\u3002\u81ea\u4fe1\u6e80\u3005\u306b\u8a00\u3046", "lines.3.yourturn.hint": "\u3060\u301c \u3092\u4f38\u3070\u3059\u3068\u52b9\u679c\u500d\u5897\u3002", "lines.3.yourturn.label": "\u3042\u306a\u305f\u306e\u756a \u2014 \u4e16\u7d00\u672b\u306e\u96d1\u9b5a\u307f\u305f\u3044\u306b\u65e5\u66dc\u65e5\u3092\u5ba3\u8a00", "lines.3.yourturn.ph": "\uff3f\uff3f\u306f\uff3f\uff3f\u3060\u301c\uff01  \u4f8b: \u65e5\u66dc\u65e5\u306f\u65e5\u672c\u8a9e\u3060\u301c\uff01", "lines.4.drill.h": "\u30c9\u30ea\u30eb", "lines.4.drill.list.0.m": "\u8ca1\u5e03\u306b\u767e\u5186\u3057\u304b\u306a\u3044\u3002", "lines.4.drill.list.1.m": "\u3053\u306e\u5e97\u306f\u73fe\u91d1\u3057\u304b\u4f7f\u3048\u306a\u3044\u3002\uff08\u4f7f\u3046\u30fb\u53ef\u80fd\u5f62\u306e\u5426\u5b9a\uff09", "lines.4.drill.list.2.m": "\u697d\u3057\u3044 \u2192 \u697d\u3057\u307f\u306a\u3053\u3068", "lines.4.drill.list.3.m": "\u82e6\u3057\u3044 \u2192 \u82e6\u3057\u307f", "lines.4.grammar.examples.0.m": "\u5343\u5186\u3057\u304b\u6301\u3063\u3066\u3044\u306a\u3044", "lines.4.grammar.examples.1.m": "\u65e5\u672c\u8a9e\u3057\u304b\u8a71\u305b\u306a\u3044", "lines.4.grammar.examples.2.m": "\u9031\u672b\u304c\u697d\u3057\u307f", "lines.4.grammar.gp.0": "\u003cb\u003e\u540d\u8a5e + \u3057\u304b + \u5426\u5b9a\u003c/b\u003e = \u301c\u3060\u3051\u3002\u3060\u3051 \u3088\u308a\u300c\u305d\u308c\u3057\u304b\u306a\u3044\u300d\u3068\u3044\u3046\u6c17\u6301\u3061\u304c\u5f37\u3044\u3002", "lines.4.grammar.gp.1": "\u003cb\u003e\u60b2\u3057\u3044 \u2192 \u60b2\u3057\u307f\u003c/b\u003e\u3001\u82e6\u3057\u3044 \u2192 \u82e6\u3057\u307f\u3001\u697d\u3057\u3044 \u2192 \u697d\u3057\u307f\u3001\u75db\u3044 \u2192 \u75db\u307f\u3002\u3044 \u3092\u53d6\u3063\u3066 \u307f = \u6c17\u6301\u3061\u3092\u540d\u8a5e\u306b\u3002", "lines.4.grammar.h": "\u6587\u6cd5: \u301c\u3057\u304b\u301c\u306a\u3044 \u00b7 \u3044\u5f62\u5bb9\u8a5e \u2192 \u301c\u307f \u306e\u540d\u8a5e", "lines.4.grammar.note": "\u003cb\u003e\u6771\u4eac\u3067\u306e\u4f7f\u3044\u65b9:\u003c/b\u003e \u300c\u73fe\u91d1\u3057\u304b\u4f7f\u3048\u307e\u305b\u3093\u300d= \u73fe\u91d1\u306e\u307f\u3002\u300c\u697d\u3057\u307f\u306b\u3057\u3066\u3044\u307e\u3059\u300d= \u6b21\u304c\u697d\u3057\u307f\uff08\u30ec\u30c3\u30b9\u30f3\u5f8c\u306bYuuki\u306b\u8a00\u3063\u3066\u307f\u3066\uff09\u3002", "lines.4.line.en": "\u300c\u611b\u3084\u60c5\u3051\u306f\u003ci\u003e\u60b2\u3057\u307f\u3057\u304b\u003c/i\u003e\u751f\u307e\u306a\u3044\u300d", "lines.4.who": "\u6b7b\u306b\u3086\u304f\u30b5\u30a6\u30b6\u30fc \u00b7 \u4e00\u4e16\u4ee3\u3092\u6ce3\u304b\u305b\u305f\u554f\u3044", "lines.4.words.h": "\u4e00\u8a9e\u305a\u3064", "lines.4.words.head.0": "\u8a9e", "lines.4.words.head.1": "\u610f\u5473", "lines.4.words.rows.0.1": "\u611b", "lines.4.words.rows.1.1": "\u300c\u301c\u3084\u301c\u306a\u3069\u300d\u2014 \u4f8b\u3092\u3044\u304f\u3064\u304b\u6319\u3052\u308b\u52a9\u8a5e\u3002A\u3084B = A\u3084B\u306a\u3069", "lines.4.words.rows.2.1": "\u60c5\u3051\u30fb\u601d\u3044\u3084\u308a\u30fb\u4eba\u306e\u6e29\u304b\u3055", "lines.4.words.rows.3.1": "\u60b2\u3057\u307f \u2014 \u60b2\u3057\u3044 \u304b\u3089\u3067\u304d\u305f\u540d\u8a5e", "lines.4.words.rows.4.1": "\u301c\u3060\u3051\uff08\u5fc5\u305a\u5426\u5b9a\u3068\u4e00\u7dd2\u306b\uff09", "lines.4.words.rows.5.1": "\u751f\u3080\uff08\u7523\u307f\u51fa\u3059\uff09+ \u306c = \u751f\u307e\u306a\u3044", "lines.4.yourturn.hint": "\u30b1\u30f3\u30b7\u30ed\u30a6\u306e\u7b54\u3048\u306f\u6b21\u306e\u30bb\u30ea\u30d5\u306b\u3002", "lines.4.yourturn.label": "\u3042\u306a\u305f\u306e\u756a \u2014 \u30b5\u30a6\u30b6\u30fc\u306b\u7b54\u3048\u308b\u3002\u611b\u306f\u4ed6\u306b\u4f55\u3092\u751f\u3080\uff1f", "lines.4.yourturn.ph": "\u60b2\u3057\u307f\u3060\u3051\u3067\u306f\u306a\u3044\u3002\u611b\u306f \uff3f\uff3f \u3082\u751f\u3080\u3002  \u4f8b: \u611b\u306f\u52c7\u6c17\u3082\u751f\u3080\u3002", "lines.5.drill.h": "\u30c9\u30ea\u30eb", "lines.5.drill.list.0.m": "\u5f7c\u306f\u8ab0\u3088\u308a\u3082\u901f\u3044\u3002", "lines.5.drill.list.1.m": "\u6e96\u5099\u4e0d\u8db3\u306e\u305b\u3044\u3067\u30df\u30b9\u3092\u3057\u305f\u3002", "lines.5.drill.list.2.m": "\u82e5\u3044 \u2192 \u82e5\u304d\u65e5\uff08\u53e4\u5178\u5f62\uff09", "lines.5.grammar.examples.0.m": "\u6bcd\u306f\u8ab0\u3088\u308a\u3082\u512a\u3057\u3044", "lines.5.grammar.examples.1.m": "\u7d4c\u9a13\u4e0d\u8db3\u306e\u305b\u3044\u3067\u5931\u6557\u3057\u305f", "lines.5.grammar.examples.2.m": "\u53e4\u304d\u826f\u304d\u6642\u4ee3\uff08\u53e4\u3044\u2192\u53e4\u304d\u3001\u826f\u3044\u2192\u826f\u304d\uff09", "lines.5.grammar.gp.0": "\u003cb\u003e\u8ab0\u3088\u308a\u3082 + \u5f62\u5bb9\u8a5e\u003c/b\u003e = \u8ab0\u3068\u6bd4\u3079\u3066\u3082\u3002\u8ab0 \u3092 \u4f55\u30fb\u3069\u3053 \u306b\u66ff\u3048\u3066\u3082\u4f7f\u3048\u308b\u3002", "lines.5.grammar.gp.1": "\u003cb\u003e\u540d\u8a5e\uff0f\u666e\u901a\u5f62 + \u3086\u3048\u306b\u003c/b\u003e = \u301c\u306e\u305f\u3081\u306b\u3002\u8ad6\u6587\u30fb\u30cb\u30e5\u30fc\u30b9\u30fb\u60aa\u5f79\u306e\u6f14\u8aac\u3067\u51fa\u4f1a\u3046\u3002\u65e5\u5e38\u4f1a\u8a71\u306f \u304b\u3089\uff0f\u306e\u3067\u3002", "lines.5.grammar.h": "\u6587\u6cd5: \u8ab0\u3088\u308a\u3082\uff08N3\uff09\u00b7 \u301c\u3086\u3048\u306b\uff08N1\uff09\u00b7 \u301c\u304d \u306e\u5f62\u5bb9\u8a5e", "lines.5.grammar.note": "\u003cb\u003e\u6771\u4eac\u3067\u306e\u4f7f\u3044\u65b9:\u003c/b\u003e \u535a\u7269\u9928\u306e\u30ad\u30e3\u30d7\u30b7\u30e7\u30f3\u306e\u300c\u82e5\u304d\u65e5\u306e\u301c\u300d\u3001\u304a\u77e5\u3089\u305b\u306e\u300c\u301c\u3086\u3048\u300d\u3002", "lines.5.line.en": "\u300c\u60b2\u3057\u3044\u7537\u3088\u2026 \u003ci\u003e\u8ab0\u3088\u308a\u3082\u003c/i\u003e\u611b\u304c\u6df1\u304b\u3063\u305f\u003ci\u003e\u304c\u3086\u3048\u306b\u003c/i\u003e\u300d", "lines.5.who": "\u30b1\u30f3\u30b7\u30ed\u30a6 \u00b7 \u30b5\u30a6\u30b6\u30fc\u3078\u306e\u5f14\u8f9e", "lines.5.words.h": "\u4e00\u8a9e\u305a\u3064", "lines.5.words.head.0": "\u8a9e", "lines.5.words.head.1": "\u610f\u5473", "lines.5.words.rows.0.1": "\u300c\u60b2\u3057\u3044\u7537\u3088\u300d\u2014 \u540d\u8a5e\u306e\u3042\u3068\u306e \u3088 = \u547c\u3073\u304b\u3051\u3001\u8a69\u7684", "lines.5.words.rows.1.1": "\u8ab0\u3068\u6bd4\u3079\u3066\u3082\uff08\u8ab0 + \u3088\u308a + \u3082\uff09", "lines.5.words.rows.2.1": "\u611b\u304c\u6df1\u3044 \u2014 \u540d\u8a5e\u306e\u524d\u306e \u6df1\u003cb\u003e\u304d\u003c/b\u003e \u306f \u6df1\u003cb\u003e\u3044\u003c/b\u003e \u306e\u53e4\u5178\u5f62", "lines.5.words.rows.3.1": "\u305d\u308c\u3086\u3048\u30fb\u3060\u304b\u3089 \u2014 \u786c\u3044\u66f8\u304d\u8a00\u8449\u3001\u5287\u7684", "lines.5.yourturn.hint": "\u7a7a\u3092\u898b\u4e0a\u3052\u306a\u304c\u3089\u8a00\u3063\u3066\u3002", "lines.5.yourturn.label": "\u3042\u306a\u305f\u306e\u756a \u2014 \u53cb\u3060\u3061\u3092\u30b1\u30f3\u30b7\u30ed\u30a6\u98a8\u306b\u79f0\u3048\u308b", "lines.5.yourturn.ph": "\uff3f\uff3f\u3088\u3002\u8ab0\u3088\u308a\u3082 \uff3f\uff3f \u3086\u3048\u306b\u3002  \u4f8b: \u512a\u3057\u3044\u53cb\u3088\u3002\u8ab0\u3088\u308a\u3082\u5fc3\u5e83\u304d\u3086\u3048\u306b\u3002", "nav.quiz": "\u30af\u30a4\u30ba", "nav.song": "\u266a \u4e3b\u984c\u6b4c", "nav.warmup": "\u6e96\u5099\u904b\u52d5", "quiz.0.o.0": "\u9032\u884c\u4e2d\u306e\u52d5\u4f5c", "quiz.0.o.1": "\u5909\u5316\u306e\u3042\u3068\u306e\u72b6\u614b", "quiz.0.o.2": "\u672a\u6765\u306e\u4e88\u5b9a", "quiz.0.why": "\u6b7b\u306c \u306f\u5909\u5316\u52d5\u8a5e\u3002\u6b7b\u3093\u3067\u3044\u308b = \u5909\u5316\u304c\u5b8c\u4e86\u3057\u3066\u300c\u6b7b\u3093\u3060\u300d\u72b6\u614b\u306b\u3042\u308b\u3002", "quiz.1.why": "\u540d\u8a5e + \u306a\u3057 = \u300c\u301c\u304c\u306a\u3044\u300d\u3002\u554f\u984c\u306a\u3057 \u306f\u672c\u7269\u306e\u30aa\u30d5\u30a3\u30b9\u65e5\u672c\u8a9e\u3002", "quiz.2.why": "\u306a\u3044\u5f62\u306e\u8a9e\u5e79 \u8ae6\u3081 + \u306c\u3002", "quiz.3.why": "\u3059\u308b \u2192 \u305b\u306c\u3002\uff08\u3057\u306c \u3060\u3068\u2026\u5225\u306e\u52d5\u8a5e\u306b\u306a\u308b\uff09", "quiz.4.o.2": "\u3069\u3061\u3089\u3082OK", "quiz.4.why": "\u3059\u3079\u304d \u304c\u53e4\u5178\u7684\u306a\u5f62\u3002\u3059\u308b\u3079\u304d \u3082\u73fe\u4ee3\u65e5\u672c\u8a9e\u3067\u306f\u8a8d\u3081\u3089\u308c\u3066\u3044\u308b\u3002", "quiz.5.o.0": "\u73fe\u91d1\u306f\u4f7f\u3048\u306a\u3044", "quiz.5.o.1": "\u73fe\u91d1\u3060\u3051\u4f7f\u3048\u308b", "quiz.5.o.2": "\u73fe\u91d1\u304c\u671b\u307e\u3057\u3044", "quiz.5.why": "\u3057\u304b + \u5426\u5b9a = \u301c\u3060\u3051\u3002\u5426\u5b9a\u306f\u6587\u6cd5\u4e0a\u306e\u5f62\u3067\u3001\u610f\u5473\u306f\u5426\u5b9a\u3067\u306f\u306a\u3044\u3002", "quiz.6.o.2": "\u3069\u3061\u3089\u3082\u3042\u308b", "quiz.6.why": "\u697d\u3057\u307f = \u697d\u3057\u307f\u306b\u3057\u3066\u3044\u308b\u3053\u3068\u3002\u697d\u3057\u3055 = \u697d\u3057\u3044\u5ea6\u5408\u3044\u3002\u3069\u3061\u3089\u3082\u5b9f\u5728\u3002", "quiz.7.o.0": "\u304b\u3089\uff0f\u306e\u3067\uff08\u7406\u7531\uff09", "quiz.7.o.1": "\u3051\u3069\uff08\u9006\u63a5\uff09", "quiz.7.o.2": "\u3068\u304d\uff08\u6642\uff09", "quiz.7.why": "\u3086\u3048\u306b = \u786c\u3044\u300c\u301c\u306e\u305f\u3081\u306b\uff0f\u3060\u304b\u3089\u300d\u3002\u65e5\u5e38\u4f1a\u8a71\u3067\u306f \u304b\u3089\u30fb\u306e\u3067\u3002", "quiz_head.h2": "\u6700\u7d42\u30af\u30a4\u30ba: \u304a\u524d\u306f\u3082\u3046\u6b7b\u3093\u3067\u3044\u308b\u304b\uff1f", "quiz_head.who": "8\u554f\u3002\u7b54\u3048\u3092\u30bf\u30c3\u30d7\u3002\u79d8\u5b54\u306f\u7a81\u304d\u307e\u305b\u3093\u3002", "toggles.romaji": "Aa \u30ed\u30fc\u30de\u5b57 \u003cspan class=\"k\"\u003eon\u003c/span\u003e", "toggles.ruby": "\u3042 \u3075\u308a\u304c\u306a \u003cspan class=\"k\"\u003eon\u003c/span\u003e", "ui.clip": "\u30af\u30ea\u30c3\u30d7", "ui.listen": "\u805e\u3044\u3066\u771f\u4f3c\u308b", "ui.loop": "\ud83d\udd01 \u30bb\u30ea\u30d5\u3092\u30eb\u30fc\u30d7", "ui.normal": "\ud83d\udd0a \u3075\u3064\u3046", "ui.readmine": "\ud83d\udd0a \u81ea\u5206\u306e\u6587\u3092\u8aad\u307e\u305b\u308b", "ui.rec": "\ud83c\udf99 \u9332\u97f3", "ui.record": "\u81ea\u5206\u306e\u58f0\u3092\u9332\u97f3", "ui.scene": "\u25b6 \u30b7\u30fc\u30f3", "ui.slow": "\ud83d\udc22 0.75\u500d", "ui.slowsay": "\ud83d\udc22 \u3086\u3063\u304f\u308a", "warmup.chips.0.e": "\u4e16\u7d00\u306e\u7d42\u308f\u308a \u00b7 \u6838\u6226\u4e89\u5f8c\u306e\u4e16\u754c", "warmup.chips.1.e": "\u6838\u306b\u3088\u308b\u6226\u4e89", "warmup.chips.2.e": "\u66b4\u529b\uff08\u307c\u3046\u308a\u3087\u304f\uff09", "warmup.chips.3.e": "\u4e16\u754c\u3092\u6551\u3046\u4eba", "warmup.chips.4.e": "\u4eba\u4f53\u306e\u79d8\u5bc6\u306e\u30c4\u30dc", "warmup.chips.5.e": "\u3053\u3076\u3057 \u00b7 \u62f3\u3092\u4f7f\u3046\u6b66\u8853", "warmup.cols.0.examples.0.m": "\u300c\u672c\u6c17\u300d\u3068\u66f8\u3044\u3066\u300c\u30de\u30b8\u300d", "warmup.cols.0.examples.1.m": "\u300c\u5b87\u5b99\u300d\u3068\u66f8\u3044\u3066\u300c\u305d\u3089\u300d", "warmup.cols.0.h": "\u6f22\u5b57\u30c8\u30ea\u30c3\u30af: \u5f37\u6575 = \u3068\u3082", "warmup.cols.0.p": "\u003cruby\u003e\u5f37\u6575\u003crt\u003e\u304d\u3087\u3046\u3066\u304d\u003c/rt\u003e\u003c/ruby\u003e\u306f\u666e\u901a\u300c\u5f37\u3044\u6575\u300d\u3002\u5317\u6597\u306e\u62f3\u3067\u306f\u003cb\u003e\u3068\u3082\u003c/b\u003e\u3068\u8aad\u307f\u307e\u3059\u3002\u5c0a\u656c\u3067\u304d\u308b\u30e9\u30a4\u30d0\u30eb\u306f\u53cb\u3002\u65e5\u672c\u8a9e\u3067\u306f\u3088\u304f\u3042\u308b\u904a\u3073\u3067\u3059: \u003cb\u003eX\u3068\u66f8\u3044\u3066Y\u3068\u8aad\u3080\u003c/b\u003e\u3002", "warmup.cols.1.button.text": "\u266a \u3053\u306e\u6b4c\u3067\u65e5\u672c\u8a9e\u3092\u5b66\u3076 \u2192", "warmup.cols.1.h": "\u30aa\u30fc\u30d7\u30cb\u30f3\u30b0: \u611b\u3092\u3068\u308a\u3082\u3069\u305b!!\uff08\u516c\u5f0f\uff09", "warmup.cols.1.p": "\u516c\u5f0fOP\u3067\u8033\u6163\u3089\u3057\u3002\u003cb\u003e\u304a\u524d\u003c/b\u003e\u3068\u003cb\u003e\u611b\u003c/b\u003e\u304c\u805e\u3053\u3048\u308b\u304b\u63a2\u3057\u3066\u307f\u3066\u3002", "warmup.tag": "\u8a9e\u5f59", "warmup.who": "\u8ab0\u304b\u304c\u8ab0\u304b\u3092\u6bb4\u308b\u524d\u306b\u5fc5\u8981\u306a6\u8a9e\u3002"}, "zh": {"cheat.h": "\u901f\u67e5\u8868", "cheat.rows.0.1": "\u5df2\u7d93\u8655\u65bc\u90a3\u500b\u72c0\u614b", "cheat.rows.1.1": "\u6c92\u6709\uff5e\uff08\u62db\u724c\u5f0f\uff09\uff0f\u6211\u7684\uff08\u6587\u8a00\uff09", "cheat.rows.2.1": "= \u301c\u306a\u3044\uff08\u53e4\u5178\uff09", "cheat.rows.3.1": "X\u5c31\u662f\u2192Y\uff01\uff0f\u61c9\u8a72", "cheat.rows.4.1": "\u53ea\u6709\uff0f\u611f\u89ba\u8b8a\u540d\u8a5e", "cheat.rows.5.1": "\u6bd4\u8ab0\u90fd\uff0f\u56e0\u70ba\uff0f\u53e4\u5178\u5f62\u5bb9\u8a5e", "footer.2": "\u5f71\u7247\u7247\u6bb5\u5d4c\u5165\u81eaYouTube\uff0c\u7248\u6b0a\u5c6c\u539f\u4f5c\u8005\u6240\u6709\u3002\u5317\u6597\u306e\u62f3 \u00a9 \u6b66\u8ad6\u5c0a\u30fb\u539f\u54f2\u592b\uff0f\u30b3\u30a2\u30df\u30c3\u30af\u30b9", "hero.eyebrow": "\u9ad4\u9a57\u8ab2 \u00b7 JLPT N3 \u00b7 \u8001\u5e2b Yuuki@Anime Sensei", "hero.h1_en": "\u7528\u300a\u5317\u6597\u795e\u62f3\u300b\u5b78\u65e5\u6587", "hero.howto.0.d": "\u5148\u628a\u5834\u666f\u64ad\u4e00\u6b21\u3002", "hero.howto.0.t": "\u770b", "hero.howto.1.d": "\u53ea\u5faa\u74b0\u90a3\u53e5\u53f0\u8a5e\uff0c\u53ef\u4ee5\u653e\u6162\u3002", "hero.howto.1.t": "\u5faa\u74b0", "hero.howto.2.d": "\u5927\u8072\u8ddf\u8b80\uff0c\u9304\u4e0b\u81ea\u5df1\u7684\u8072\u97f3\u3002", "hero.howto.2.t": "\u8ddf\u8b80", "hero.howto.3.d": "\u770b\u770b\u53f0\u8a5e\u88e1\u85cf\u7684\u53e5\u578b\u3002", "hero.howto.3.t": "\u6587\u6cd5", "hero.howto.4.d": "\u9ede\u7a7a\u683c\u770b\u7b54\u6848\uff0c\u518d\u5beb\u81ea\u5df1\u7684\u53e5\u5b50\u3002", "hero.howto.4.t": "\u7df4\u7fd2", "hero.lead": "\u516d\u53e5\u50b3\u5947\u53f0\u8a5e\u3002\u6bcf\u4e00\u53e5\u90fd\u85cf\u8457\u4e00\u500b\u660e\u5929\u5728\u6771\u4eac\u771f\u7684\u7528\u5f97\u5230\u7684\u6587\u6cd5\u3002\u5148\u770b\u7247\u6bb5\uff0c\u518d\u55ae\u53e5\u5faa\u74b0\uff0c\u50cf\u62f3\u56db\u90ce\u4e00\u6a23\u8aaa\u51fa\u4f86\uff0c\u6700\u5f8c\u505a\u7df4\u7fd2\u3002", "hero.meta.0": "\ud83d\udc64 \u5b78\u751f\uff1a\u003cb\u003eStephen\u003c/b\u003e", "hero.meta.1": "\ud83d\udcc5 \u003cb\u003e2026\u5e749\u67086\u65e5\uff08\u65e5\uff0914:00 \u65e5\u672c\u6642\u9593\u003c/b\u003e", "hero.meta.2": "\u23f1 30\u5206\u9418 \u00b7 \u70baYouTube\u9304\u5f71", "homework.h": "\u4f5c\u696d\uff08\u7528italki\u804a\u5929\u5ba4\u50b3\uff09", "homework.list.0": "\u628a\u516d\u53e5\u53f0\u8a5e\u5168\u90e8\u8aaa\u4e00\u904d\u4e26\u9304\u97f3 \u2014 \u4e00\u93e1\u5230\u5e95\uff0c\u62f3\u56db\u90ce\u7684\u8868\u60c5\u53ef\u9078\u3002", "homework.list.1": "\u7528 \u301c\u306c \u5beb\u4e0b\u4f60\u81ea\u5df1\u7684\u4e09\u500b\u8a93\u8a00\u3002", "homework.list.2": "\u9019\u9031\u5728\u73fe\u5be6\u751f\u6d3b\u4e2d\u7528\u4e00\u6b21\u300c\u3082\u3046\u301c\u3066\u3044\u308b\u300d\uff0c\u7136\u5f8c\u56de\u5831\u3002", "html_lang": "zh-Hant", "lines.0.drill.h": "\u7df4\u7fd2", "lines.0.drill.list.0.m": "\u6703\u8b70\u5df2\u7d93\u958b\u59cb\u4e86\u3002\uff08\u59cb\u307e\u308b\uff09", "lines.0.drill.list.1.m": "\u6211\u8eab\u4e0a\u6c92\u5e36\u9322\u3002\uff08\u6301\u3064\uff0c\u5426\u5b9a\uff09", "lines.0.drill.list.2.m": "\u6211\u73fe\u5728\u4f4f\u5728\u6771\u4eac\u3002\uff08\u4f4f\u3080\uff09", "lines.0.grammar.examples.0.m": "\u6211\uff08\u5df2\u7d93\uff09\u7d50\u5a5a\u4e86", "lines.0.grammar.examples.1.m": "\u96fb\u8eca\u5df2\u7d93\u958b\u8d70\u4e86", "lines.0.grammar.examples.2.m": "\u5e97\u5df2\u7d93\u95dc\u4e86", "lines.0.grammar.gp.0": "\u003cb\u003e\u8b8a\u5316\u52d5\u8a5e + \u3066\u3044\u308b\u003c/b\u003e \u2192 \u4e0d\u662f\u300c\u6b63\u5728\u505a\u300d\uff0c\u800c\u662f\u300c\u5df2\u7d93\u505a\u4e86\uff0c\u73fe\u5728\u8655\u65bc\u90a3\u500b\u72c0\u614b\u300d\u3002", "lines.0.grammar.h": "\u6587\u6cd5\uff1a\u301c\u3066\u3044\u308b = \u8b8a\u5316\u4e4b\u5f8c\u7684\u72c0\u614b", "lines.0.grammar.note": "\u003cb\u003e\u6771\u4eac\u5be6\u7528\uff1a\u003c/b\u003e\u670b\u53cb\u885d\u53bb\u8d95\u672b\u73ed\u8eca\uff0c\u4f60\u8aaa\u300c\u3082\u3046\u51fa\u3066\u308b\u3088\u300d\uff08\u53e3\u8a9e\u6703\u7701\u7565 \u3044\uff09\u3002", "lines.0.grammar.p": "\u6b7b\u306c\u3001\u7d50\u5a5a\u3059\u308b\u3001\u77e5\u308b\u3001\u6301\u3064\u3001\u4f4f\u3080\u3001\u59cb\u307e\u308b\u3001\u9589\u307e\u308b \u90fd\u662f\u300c\u8b8a\u5316\u300d\u52d5\u8a5e\u3002\u62f3\u56db\u90ce\u4e0d\u662f\u8aaa\u300c\u4f60\u6b63\u5728\u6b7b\u300d\u3002\u8b8a\u5316\u5df2\u7d93\u767c\u751f\uff0c\u53ea\u662f\u4f60\u9084\u6c92\u767c\u73fe\u3002", "lines.0.line.en": "\u300c\u4f60\u003ci\u003e\u5df2\u7d93\u6b7b\u4e86\u003c/i\u003e\u3002\u300d", "lines.0.who": "\u62f3\u56db\u90ce \u00b7 \u4eba\u4eba\u90fd\u77e5\u9053\u7684\u90a3\u53e5", "lines.0.words.h": "\u9010\u5b57\u89e3\u91cb", "lines.0.words.head.0": "\u55ae\u5b57", "lines.0.words.head.1": "\u610f\u601d", "lines.0.words.rows.0.1": "\u300c\u4f60\u300d\u7684\u7c97\u9b6f\u8aaa\u6cd5\u3002\u7528\u5728\u6575\u4eba\u3001\u5c0d\u624b\u3001\u5f88\u719f\u7684\u670b\u53cb\u3002\u003cb\u003e\u7d55\u5c0d\u4e0d\u8981\u003c/b\u003e\u5c0d\u4e0a\u53f8\u6216\u5bc4\u5bbf\u5bb6\u5ead\u8aaa\u3002", "lines.0.words.rows.1.1": "\u4e3b\u984c\u52a9\u8a5e\uff08\u8b80 wa\uff09", "lines.0.words.rows.2.1": "\u5df2\u7d93", "lines.0.words.rows.3.1": "\u6b7b\u306c \u2192 \u3066\u5f62 \u6b7b\u3093\u3067 + \u3044\u308b \u2192 \u300c\u8655\u65bc\u6b7b\u4ea1\u7684\u72c0\u614b\u300d", "lines.0.yourturn.hint": "\u6703\u5132\u5b58\u5728\u9019\u53f0\u88dd\u7f6e\u3002", "lines.0.yourturn.label": "\u63db\u4f60 \u2014 \u7528\u7121\u5bb3\u7684\u4e8b\u7576\u4e00\u6b21\u62f3\u56db\u90ce", "lines.0.yourturn.ph": "\u304a\u524d\u306f\u3082\u3046 \uff3f\uff3f \u3066\u3044\u308b\u3002  \u4f8b\uff1a\u304a\u524d\u306f\u3082\u3046\u5408\u683c\u3057\u3066\u3044\u308b\u3002\uff08\u4f60\u5df2\u7d93\u53ca\u683c\u4e86\u3002\uff09", "lines.1.drill.h": "\u7df4\u7fd2", "lines.1.drill.list.0.m": "\u6c92\u554f\u984c\uff01", "lines.1.drill.list.1.m": "\u5065\u5eb7\u6aa2\u67e5\uff1a\u7121\u7570\u5e38\u3002", "lines.1.drill.list.2.m": "\u6b61\u8fce\u4f86\u6211\u5bb6\uff01\uff08\u6211\u304c + \u5bb6\uff09", "lines.1.grammar.examples.0.m": "\u6c92\u554f\u984c\uff08\u5831\u544a\uff0f\u8a0a\u606f\uff09", "lines.1.grammar.examples.1.m": "\u7121\u7570\u5e38\uff08\u5065\u5eb7\u6aa2\u67e5\uff09", "lines.1.grammar.examples.2.m": "\u4e0d\u7528\u9810\u7d04\u4e5f\u80fd\u9032", "lines.1.grammar.examples.3.m": "\u6b61\u8fce\u4f86\u6211\u5bb6", "lines.1.grammar.gp.0": "\u003cb\u003e\u540d\u8a5e + \u306a\u3057\u003c/b\u003e = \u300c\u6c92\u6709\uff5e\uff0f\u4e0d\u7528\uff5e\u300d\u3002\u77ed\u3001\u786c\u3001\u65ac\u91d8\u622a\u9435\u3002\u62db\u724c\u3001\u5831\u544a\uff0c\u9084\u6709\u81e8\u6b7b\u7684\u9738\u4e3b\u90fd\u7528\u3002", "lines.1.grammar.h": "\u6587\u6cd5\uff1a\u301c\u306a\u3057 \u2014 \u62db\u724c\u5f0f\u7684\u5426\u5b9a", "lines.1.grammar.note": "\u003cb\u003e\u6771\u4eac\u5be6\u7528\uff1a\u003c/b\u003e\u9910\u5ef3\u62db\u724c\u300c\u4e88\u7d04\u306a\u3057OK\u300d\u3002\u4e0a\u53f8\u7684LINE\u56de\u8986\u300c\u554f\u984c\u306a\u3057\u300d\uff1d\u4e00\u5207OK\u3002", "lines.1.line.en": "\u300c\u6211\u9019\u4e00\u751f\uff0c\u003ci\u003e\u6c92\u6709\u4e00\u7d72\u6094\u6068\u003c/i\u003e\uff01\u300d", "lines.1.who": "\u62c9\u6b50 \u00b7 \u8209\u62f3\u5411\u5929\u7684\u907a\u8a00", "lines.1.words.h": "\u9010\u5b57\u89e3\u91cb", "lines.1.words.head.0": "\u55ae\u5b57", "lines.1.words.head.1": "\u610f\u601d", "lines.1.words.rows.0.1": "\u6211\u7684\uff0f\u6211\u5011\u7684 \u2014 \u6587\u8a00\u7684 \u79c1\u306e\u3002\u73fe\u5728\u4ecd\u7528\u65bc \u6211\u304c\u56fd\uff08\u6211\u570b\uff09\u3001\u6211\u304c\u793e\uff08\u672c\u516c\u53f8\uff09\u3001\u6211\u304c\u5bb6\uff08\u6211\u5bb6\uff09", "lines.1.words.rows.1.1": "\u4e00\u751f", "lines.1.words.rows.2.1": "\u5728", "lines.1.words.rows.3.1": "\u4e00\u7247\u3001\u4e00\u7d72", "lines.1.words.rows.4.1": "\u6094\u6068\uff08\u6094\u3084\u3080 \u7684\u540d\u8a5e\uff09", "lines.1.words.rows.5.1": "= \u306a\u3044\u3002\u6587\u8a00\u7684\u300c\u6c92\u6709\u300d", "lines.1.yourturn.hint": "\u8aaa\u7684\u6642\u5019\u628a\u62f3\u982d\u8209\u8d77\u4f86\u3002", "lines.1.yourturn.label": "\u63db\u4f60 \u2014 \u8aaa\u4e00\u4ef6\u4f60\u4e0d\u5f8c\u6094\u7684\u4e8b", "lines.1.yourturn.ph": "\u6211\u304c \uff3f\uff3f \u306b\u4e00\u7247\u306e\u6094\u3044\u306a\u3057\uff01  \u4f8b\uff1a\u6211\u304c\u6771\u4eac\u751f\u6d3b\u306b\u4e00\u7247\u306e\u6094\u3044\u306a\u3057\uff01", "lines.2.drill.h": "\u7df4\u7fd2 \u2014 \u6539\u6210 \u301c\u306c", "lines.2.drill.list.0.m": "\u4e0d\u53bb", "lines.2.drill.list.1.m": "\u4e0d\u5403", "lines.2.drill.list.2.m": "\u4e0d\u653e\u68c4", "lines.2.drill.list.3.m": "\u4e0d\u505a\uff08\u4e0d\u898f\u5247\uff01\uff09", "lines.2.grammar.examples.0.m": "\u4e0d\u77e5\u4e0d\u89ba\u9593", "lines.2.grammar.examples.1.m": "\u964c\u751f\u4eba", "lines.2.grammar.examples.2.m": "\u610f\u60f3\u4e0d\u5230\u7684\u79ae\u7269", "lines.2.grammar.examples.3.m": "\u6709\u4e9b\u4e8b\u4e0d\u8aaa\u66f4\u597d\uff08\u8afa\u8a9e\uff09", "lines.2.grammar.gp.0": "\u003cb\u003e\u301c\u306c\u003c/b\u003e\u662f\u53e4\u5178\u5426\u5b9a\u3002\u807d\u8d77\u4f86\u50cf\u6b66\u58eb\u3001\u5f88\u6232\u5287\u5316\u3001\u5f88\u7d55\u5c0d\u3002\u52d5\u756b\u3001\u8afa\u8a9e\uff0c\u9084\u6709\u5e7e\u500b\u5927\u5bb6\u4ecd\u5728\u7528\u7684\u56fa\u5b9a\u8aaa\u6cd5\u88e1\u90fd\u807d\u5f97\u5230\u3002", "lines.2.grammar.h": "\u6587\u6cd5\uff1a\u301c\u306c = \u8001\u6d3e\u7684 \u306a\u3044", "lines.2.grammar.note": "\u003cb\u003e\u6771\u4eac\u5be6\u7528\uff1a\u003c/b\u003e\u898b\u77e5\u3089\u306c\u4eba \u6703\u51fa\u73fe\u5728\u65b0\u805e\u548c\u8eca\u7ad9\u5ee3\u64ad\uff1b\u77e5\u3089\u306c\u9593\u306b \u662f\u65e5\u5e38\u53e3\u8a9e\u3002", "lines.2.line.en": "\u300c\u003ci\u003e\u4e0d\u9000\u003c/i\u003e\uff01\u003ci\u003e\u4e0d\u5a9a\u003c/i\u003e\uff01\u003ci\u003e\u4e0d\u6094\u003c/i\u003e\uff01\u300d", "lines.2.tag.text": "N2 \u00b7 \u53e4\u5178\u7684 \u301c\u306c", "lines.2.who": "\u8056\u5e1d\u6c99\u70cf\u524e \u00b7 \u4e09\u500b\u5b57\uff0c\u4e09\u500b\u8a93\u8a00", "lines.2.words.h": "\u9010\u5b57\u89e3\u91cb", "lines.2.words.head.0": "\u52d5\u8a5e", "lines.2.words.head.1": "\u610f\u601d", "lines.2.words.head.2": "\u301c\u306c \u5f62", "lines.2.words.note": "\u898f\u5247\uff1a\u53d6\u003cb\u003e\u306a\u3044\u5f62\u7684\u8a5e\u5e79\u003c/b\u003e\uff0c\u628a \u306a\u3044 \u63db\u6210 \u306c\u3002\u884c\u304b\u306a\u3044 \u2192 \u884c\u304b\u003cb\u003e\u306c\u003c/b\u003e\u3002\u3059\u308b \u2192 \u305b\u003cb\u003e\u306c\u003c/b\u003e\u3002\u6765\u308b \u2192 \u6765(\u3053)\u003cb\u003e\u306c\u003c/b\u003e\u3002", "lines.2.words.rows.0.1": "\u5f8c\u9000\u3001\u9000\u7e2e", "lines.2.words.rows.1.1": "\u8ac2\u5a9a\u3001\u62cd\u99ac\u5c41", "lines.2.words.rows.2.1": "\u56de\u9867\u3001\u53cd\u7701", "lines.2.yourturn.hint": "\u7528\u543c\u7684\u3002\u6c99\u70cf\u524e\u6703\u9019\u6a23\u3002", "lines.2.yourturn.label": "\u63db\u4f60 \u2014 \u7528\u6c99\u70cf\u524e\u7684\u65b9\u5f0f\u5beb\u5b78\u65e5\u6587\u7684\u4e09\u500b\u8a93\u8a00", "lines.2.yourturn.ph": "\uff3f\uff3f\u306c\uff01\uff3f\uff3f\u306c\uff01\uff3f\uff3f\u306c\uff01  \u4f8b\uff1a\u5bdd\u574a\u305b\u306c\uff01\u8ae6\u3081\u306c\uff01\u30b5\u30dc\u3089\u306c\uff01", "lines.3.drill.h": "\u7df4\u7fd2", "lines.3.drill.list.0.m": "\u611f\u5192\u4e86\u5c31\u61c9\u8a72\u4f11\u606f\u3002\uff08\u4f11\u3080\uff09", "lines.3.drill.list.1.m": "\u8acb\u628a\u50b7\u53e3\u6d88\u6bd2\u3002", "lines.3.drill.list.2.m": "\u4eca\u665a\u5c31\u662f\u62c9\u9eb5\uff01", "lines.3.grammar.examples.0.m": "\u4eca\u5929\u5c31\u662f\u71d2\u8089\uff01", "lines.3.grammar.examples.1.m": "\u9031\u672b\u5c31\u662f\u5927\u6383\u9664\uff01", "lines.3.grammar.examples.2.m": "\u624b\u61c9\u8a72\u6d88\u6bd2", "lines.3.grammar.examples.3.m": "\u61c9\u8a72\u65e9\u9ede\u7761", "lines.3.grammar.gp.0": "\u003cb\u003e\u540d\u8a5e \u306f \u540d\u8a5e \u3060\uff01\u003c/b\u003e \u2014 \u5ba3\u544a\u8a08\u756b\u3002\u003cb\u003e\u52d5\u8a5e\uff08\u8fad\u66f8\u5f62\uff09+ \u3079\u304d\u3060\u003c/b\u003e \u2014 \u300c\u61c9\u8a72\u300d\u3002\u62f3\u56db\u90ce\u56de\u300c\u6d88\u6bd2\u003cb\u003e\u3059\u3079\u304d\u003c/b\u003e\u3060\u306a\u300d\uff08\u3059\u308b \u2192 \u3059\u3079\u304d\uff09\u3002", "lines.3.grammar.h": "\u6587\u6cd5\uff1a\u7576\u6230\u543c\u7528\u7684 X\u306fY\u3060\uff01 \u00b7 \u301c\u3079\u304d\u3060 = \u61c9\u8a72", "lines.3.grammar.note": "\u003cb\u003e\u6771\u4eac\u5be6\u7528\uff1a\u003c/b\u003e2020\u5e74\u4ee5\u5f8c\u6bcf\u5bb6\u5e97\u9580\u53e3\u7684\u74f6\u5b50\u4e0a\u90fd\u6709\uff1a\u300c\u003cruby\u003e\u624b\u6307\u003crt\u003e\u3057\u3085\u3057\u003c/rt\u003e\u003c/ruby\u003e\u6d88\u6bd2\u306b\u3054\u5354\u529b\u304f\u3060\u3055\u3044\u300d\u3002", "lines.3.line.en": "\u300c\u5783\u573e\u5c31\u662f\u003ci\u003e\u8981\u6d88\u6bd2\u003c/i\u003e\uff01\u300d", "lines.3.who": "\u62ff\u706b\u7130\u5674\u5c04\u5668\u7684\u83ab\u970d\u514b\u982d \u00b7 \u65e5\u672c\u6700\u5e38\u88ab\u5f15\u7528\u7684\u5c0f\u560d\u56c9\u53f0\u8a5e", "lines.3.words.h": "\u9010\u5b57\u89e3\u91cb", "lines.3.words.head.0": "\u55ae\u5b57", "lines.3.words.head.1": "\u610f\u601d", "lines.3.words.note": "\u76f4\u8b6f\u662f\u300c\u6c61\u7269\u662f\u6d88\u6bd2\u300d\u3002\u65e5\u6587\u7684\u540d\u8a5e\u53e5\u53ef\u4ee5\u8868\u793a\u003cb\u003e\u300c\u5c0dX \u2192 \u8655\u7f6e\u662fY\u300d\u003c/b\u003e\u3002\u53e3\u8a9e\u88e1\u975e\u5e38\u5e38\u898b\u3002", "lines.3.words.rows.0.1": "\u6c61\u7269\u3001\u5783\u573e\uff08\u6c5a = \u9ad2\uff0c\u7269 = \u6771\u897f\uff09", "lines.3.words.rows.1.1": "\u4e3b\u984c", "lines.3.words.rows.2.1": "\u6d88\u6bd2 \u2014 \u53ef\u63a5 \u3059\u308b \u7684\u540d\u8a5e\uff08\u6d88\u6bd2\u3059\u308b\uff09", "lines.3.words.rows.3.1": "\u300c\u662f\u300d\u2014 \u666e\u901a\u9ad4\u7684\u65b7\u5b9a\uff0c\u8aaa\u5f97\u65ac\u91d8\u622a\u9435", "lines.3.yourturn.hint": "\u628a \u3060\u301c \u62c9\u9577\uff0c\u6548\u679c\u52a0\u500d\u3002", "lines.3.yourturn.label": "\u63db\u4f60 \u2014 \u50cf\u4e16\u7d00\u672b\u7684\u5c0f\u560d\u56c9\u4e00\u6a23\u5ba3\u544a\u4f60\u7684\u661f\u671f\u5929", "lines.3.yourturn.ph": "\uff3f\uff3f\u306f\uff3f\uff3f\u3060\u301c\uff01  \u4f8b\uff1a\u65e5\u66dc\u65e5\u306f\u65e5\u672c\u8a9e\u3060\u301c\uff01", "lines.4.drill.h": "\u7df4\u7fd2", "lines.4.drill.list.0.m": "\u9322\u5305\u88e1\u53ea\u6709\u4e00\u767e\u65e5\u5713\u3002", "lines.4.drill.list.1.m": "\u9019\u5bb6\u5e97\u53ea\u6536\u73fe\u91d1\u3002\uff08\u4f7f\u3046\uff0c\u53ef\u80fd\u5f62\u5426\u5b9a\uff09", "lines.4.drill.list.2.m": "\u958b\u5fc3 \u2192 \u671f\u5f85\u7684\u4e8b", "lines.4.drill.list.3.m": "\u75db\u82e6 \u2192 \u82e6\u96e3", "lines.4.grammar.examples.0.m": "\u6211\u53ea\u6709\u4e00\u5343\u65e5\u5713", "lines.4.grammar.examples.1.m": "\u6211\u53ea\u6703\u8aaa\u65e5\u6587", "lines.4.grammar.examples.2.m": "\u6211\u5f88\u671f\u5f85\u9031\u672b", "lines.4.grammar.gp.0": "\u003cb\u003e\u540d\u8a5e + \u3057\u304b + \u5426\u5b9a\u003c/b\u003e = \u53ea\u6709\uff5e\u3002\u6bd4 \u3060\u3051 \u66f4\u6709\u300c\u5c31\u53ea\u5269\u9019\u500b\u300d\u7684\u611f\u89ba\u3002", "lines.4.grammar.gp.1": "\u003cb\u003e\u60b2\u3057\u3044 \u2192 \u60b2\u3057\u307f\u003c/b\u003e\u3001\u82e6\u3057\u3044 \u2192 \u82e6\u3057\u307f\u3001\u697d\u3057\u3044 \u2192 \u697d\u3057\u307f\u3001\u75db\u3044 \u2192 \u75db\u307f\u3002\u53bb\u6389 \u3044 \u52a0 \u307f = \u628a\u611f\u89ba\u8b8a\u540d\u8a5e\u3002", "lines.4.grammar.h": "\u6587\u6cd5\uff1a\u301c\u3057\u304b\u301c\u306a\u3044 \u00b7 \u3044\u5f62\u5bb9\u8a5e \u2192 \u301c\u307f \u540d\u8a5e", "lines.4.grammar.note": "\u003cb\u003e\u6771\u4eac\u5be6\u7528\uff1a\u003c/b\u003e\u300c\u73fe\u91d1\u3057\u304b\u4f7f\u3048\u307e\u305b\u3093\u300d\uff1d\u53ea\u6536\u73fe\u91d1\u3002\u300c\u697d\u3057\u307f\u306b\u3057\u3066\u3044\u307e\u3059\u300d\uff1d\u5f88\u671f\u5f85\uff08\u4e0b\u8ab2\u5f8c\u5c0dYuuki\u8aaa\u9019\u53e5\uff09\u3002", "lines.4.line.en": "\u300c\u611b\u8207\u60c5\uff0c\u003ci\u003e\u53ea\u6703\u751f\u51fa\u60b2\u50b7\u003c/i\u003e\u3002\u300d", "lines.4.who": "\u81e8\u6b7b\u7684\u6c99\u70cf\u524e \u00b7 \u8b93\u4e00\u6574\u500b\u4e16\u4ee3\u843d\u6dda\u7684\u554f\u984c", "lines.4.words.h": "\u9010\u5b57\u89e3\u91cb", "lines.4.words.head.0": "\u55ae\u5b57", "lines.4.words.head.1": "\u610f\u601d", "lines.4.words.rows.0.1": "\u611b", "lines.4.words.rows.1.1": "\u300c\u548c\uff5e\u4e4b\u985e\u300d\u2014 \u8209\u4f8b\u5f0f\u7684\u5217\u8209\u3002A\u3084B = A\u3001B\u7b49\u7b49", "lines.4.words.rows.2.1": "\u60c5\u7fa9\u3001\u6190\u61ab\u3001\u4eba\u60c5", "lines.4.words.rows.3.1": "\u60b2\u50b7 \u2014 \u7531 \u60b2\u3057\u3044 \u8b8a\u4f86\u7684\u540d\u8a5e", "lines.4.words.rows.4.1": "\u53ea\u6709\uff08\u4e00\u5b9a\u642d\u914d\u5426\u5b9a\uff09", "lines.4.words.rows.5.1": "\u751f\u3080\uff08\u751f\u51fa\u3001\u7522\u751f\uff09+ \u306c = \u751f\u307e\u306a\u3044", "lines.4.yourturn.hint": "\u62f3\u56db\u90ce\u7684\u7b54\u6848\u5728\u4e0b\u4e00\u53e5\u3002", "lines.4.yourturn.label": "\u63db\u4f60 \u2014 \u56de\u7b54\u6c99\u70cf\u524e\u3002\u611b\u9084\u6703\u751f\u51fa\u4ec0\u9ebc\uff1f", "lines.4.yourturn.ph": "\u60b2\u3057\u307f\u3060\u3051\u3067\u306f\u306a\u3044\u3002\u611b\u306f \uff3f\uff3f \u3082\u751f\u3080\u3002  \u4f8b\uff1a\u611b\u306f\u52c7\u6c17\u3082\u751f\u3080\u3002", "lines.5.drill.h": "\u7df4\u7fd2", "lines.5.drill.list.0.m": "\u4ed6\u6bd4\u8ab0\u90fd\u5feb\u3002", "lines.5.drill.list.1.m": "\u56e0\u70ba\u6e96\u5099\u4e0d\u8db3\u800c\u51fa\u932f\u3002", "lines.5.drill.list.2.m": "\u5e74\u8f15 \u2192 \u5e74\u8f15\u6642\uff08\u53e4\u5178\u5f62\uff09", "lines.5.grammar.examples.0.m": "\u6211\u5abd\u6bd4\u8ab0\u90fd\u6eab\u67d4", "lines.5.grammar.examples.1.m": "\u56e0\u70ba\u7d93\u9a57\u4e0d\u8db3\u800c\u5931\u6557", "lines.5.grammar.examples.2.m": "\u7f8e\u597d\u7684\u820a\u6642\u5149\uff08\u53e4\u3044\u2192\u53e4\u304d\uff0c\u826f\u3044\u2192\u826f\u304d\uff09", "lines.5.grammar.gp.0": "\u003cb\u003e\u8ab0\u3088\u308a\u3082 + \u5f62\u5bb9\u8a5e\u003c/b\u003e = \u6bd4\u8ab0\u90fd\u3002\u628a \u8ab0 \u63db\u6210 \u4f55\uff08\u4efb\u4f55\u6771\u897f\uff09\u3001\u3069\u3053\uff08\u4efb\u4f55\u5730\u65b9\uff09\u4e5f\u884c\u3002", "lines.5.grammar.gp.1": "\u003cb\u003e\u540d\u8a5e\uff0f\u666e\u901a\u5f62 + \u3086\u3048\u306b\u003c/b\u003e = \u56e0\u70ba\u3002\u8ad6\u6587\u3001\u65b0\u805e\u3001\u6bcf\u500b\u53cd\u6d3e\u7684\u6f14\u8aaa\u90fd\u6703\u9047\u5230\u3002\u65e5\u5e38\u53e3\u8a9e\u7528 \u304b\u3089\uff0f\u306e\u3067\u3002", "lines.5.grammar.h": "\u6587\u6cd5\uff1a\u8ab0\u3088\u308a\u3082\uff08N3\uff09\u00b7 \u301c\u3086\u3048\u306b\uff08N1\uff09\u00b7 \u301c\u304d \u5f62\u5bb9\u8a5e", "lines.5.grammar.note": "\u003cb\u003e\u6771\u4eac\u5be6\u7528\uff1a\u003c/b\u003e\u535a\u7269\u9928\u8aaa\u660e\u724c\u4e0a\u7684\u300c\u82e5\u304d\u65e5\u306e\u301c\u300d\uff08\u5e74\u8f15\u6642\u7684\uff5e\uff09\uff1b\u6b63\u5f0f\u516c\u544a\u88e1\u7684\u300c\u301c\u3086\u3048\u300d\u3002", "lines.5.line.en": "\u300c\u60b2\u54c0\u7684\u7537\u4eba\u2026\u2026\u003ci\u003e\u56e0\u70ba\u003c/i\u003e\u4ed6\u611b\u5f97\u003ci\u003e\u6bd4\u8ab0\u90fd\u6df1\u003c/i\u003e\u3002\u300d", "lines.5.who": "\u62f3\u56db\u90ce \u00b7 \u7d66\u6c99\u70cf\u524e\u7684\u60bc\u8a5e", "lines.5.words.h": "\u9010\u5b57\u89e3\u91cb", "lines.5.words.head.0": "\u55ae\u5b57", "lines.5.words.head.1": "\u610f\u601d", "lines.5.words.rows.0.1": "\u300c\u60b2\u54c0\u7684\u7537\u4eba\u554a\u300d\u2014 \u540d\u8a5e\u5f8c\u7684 \u3088 = \u547c\u559a\uff0c\u8a69\u610f", "lines.5.words.rows.1.1": "\u6bd4\u4efb\u4f55\u4eba\u90fd\uff08\u8ab0 + \u3088\u308a + \u3082\uff09", "lines.5.words.rows.2.1": "\u611b\u304c\u6df1\u3044\u300c\u611b\u5f97\u6df1\u300d\u2014 \u540d\u8a5e\u524d\u7684 \u6df1\u003cb\u003e\u304d\u003c/b\u003e \u662f \u6df1\u003cb\u003e\u3044\u003c/b\u003e \u7684\u53e4\u5178\u5f62", "lines.5.words.rows.3.1": "\u56e0\u6b64\u3001\u6240\u4ee5 \u2014 \u6b63\u5f0f\u3001\u66f8\u9762\u3001\u6232\u5287\u5316", "lines.5.yourturn.hint": "\u8aaa\u7684\u6642\u5019\u62ac\u982d\u770b\u5929\u3002", "lines.5.yourturn.label": "\u63db\u4f60 \u2014 \u7528\u62f3\u56db\u90ce\u7684\u65b9\u5f0f\u7a31\u8b9a\u670b\u53cb", "lines.5.yourturn.ph": "\uff3f\uff3f\u3088\u3002\u8ab0\u3088\u308a\u3082 \uff3f\uff3f \u3086\u3048\u306b\u3002  \u4f8b\uff1a\u512a\u3057\u3044\u53cb\u3088\u3002\u8ab0\u3088\u308a\u3082\u5fc3\u5e83\u304d\u3086\u3048\u306b\u3002", "nav.quiz": "\u6e2c\u9a57", "nav.song": "\u266a \u4e3b\u984c\u66f2", "nav.warmup": "\u6696\u8eab", "quiz.0.o.0": "\u9032\u884c\u4e2d\u7684\u52d5\u4f5c", "quiz.0.o.1": "\u8b8a\u5316\u4e4b\u5f8c\u7684\u72c0\u614b", "quiz.0.o.2": "\u672a\u4f86\u7684\u8a08\u756b", "quiz.0.why": "\u6b7b\u306c \u662f\u8b8a\u5316\u52d5\u8a5e\u3002\u6b7b\u3093\u3067\u3044\u308b = \u8b8a\u5316\u5df2\u5b8c\u6210\uff0c\u8655\u65bc\u300c\u6b7b\u300d\u7684\u72c0\u614b\u3002", "quiz.1.why": "\u540d\u8a5e + \u306a\u3057 = \u300c\u6c92\u6709\uff5e\u300d\u3002\u554f\u984c\u306a\u3057 \u662f\u771f\u6b63\u7684\u8fa6\u516c\u5ba4\u65e5\u6587\u3002", "quiz.2.why": "\u306a\u3044\u5f62\u8a5e\u5e79 \u8ae6\u3081 + \u306c\u3002", "quiz.3.why": "\u3059\u308b \u2192 \u305b\u306c\u3002\uff08\u3057\u306c \u6703\u8b8a\u6210\u2026\u2026\u53e6\u4e00\u500b\u52d5\u8a5e\u3002\uff09", "quiz.4.o.2": "\u5169\u500b\u90fd\u53ef\u4ee5", "quiz.4.why": "\u3059\u3079\u304d \u662f\u53e4\u5178\u5f62\uff0c\u3059\u308b\u3079\u304d \u5728\u73fe\u4ee3\u65e5\u6587\u4e5f\u88ab\u63a5\u53d7\u3002", "quiz.5.o.0": "\u4e0d\u6536\u73fe\u91d1", "quiz.5.o.1": "\u53ea\u6536\u73fe\u91d1", "quiz.5.o.2": "\u5efa\u8b70\u4ed8\u73fe\u91d1", "quiz.5.why": "\u3057\u304b + \u5426\u5b9a = \u53ea\u6709\u3002\u5426\u5b9a\u53ea\u662f\u6587\u6cd5\u5f62\u5f0f\uff0c\u4e0d\u662f\u610f\u601d\u3002", "quiz.6.o.2": "\u5169\u500b\u90fd\u5b58\u5728", "quiz.6.why": "\u697d\u3057\u307f = \u671f\u5f85\u7684\u4e8b\uff1b\u697d\u3057\u3055 = \u5feb\u6a02\u7684\u7a0b\u5ea6\u3002\u5169\u500b\u90fd\u662f\u771f\u7684\u3002", "quiz.7.o.0": "\u304b\u3089\uff0f\u306e\u3067\uff08\u56e0\u70ba\uff09", "quiz.7.o.1": "\u3051\u3069\uff08\u4f46\u662f\uff09", "quiz.7.o.2": "\u3068\u304d\uff08\u7576\u2026\u6642\uff09", "quiz.7.why": "\u3086\u3048\u306b = \u6b63\u5f0f\u7684\u300c\u56e0\u70ba\uff0f\u56e0\u6b64\u300d\u3002\u65e5\u5e38\u53e3\u8a9e\u7528 \u304b\u3089\u3001\u306e\u3067\u3002", "quiz_head.h2": "\u7e3d\u6e2c\u9a57\uff1a\u4f60\u5df2\u7d93\u6b7b\u4e86\u55ce\uff1f", "quiz_head.who": "8\u984c\u3002\u9ede\u9078\u7b54\u6848\u3002\u4e0d\u6703\u9ede\u4f60\u7684\u7a74\u3002", "toggles.romaji": "Aa \u7f85\u99ac\u62fc\u97f3 \u003cspan class=\"k\"\u003eon\u003c/span\u003e", "toggles.ruby": "\u3042 \u5047\u540d\u6ce8\u97f3 \u003cspan class=\"k\"\u003eon\u003c/span\u003e", "ui.clip": "\u7247\u6bb5", "ui.listen": "\u807d\u4e26\u8ddf\u8b80", "ui.loop": "\ud83d\udd01 \u5faa\u74b0\u53f0\u8a5e", "ui.normal": "\ud83d\udd0a \u6b63\u5e38", "ui.readmine": "\ud83d\udd0a \u8b80\u6211\u5beb\u7684", "ui.rec": "\ud83c\udf99 \u9304\u97f3", "ui.record": "\u9304\u4e0b\u81ea\u5df1", "ui.scene": "\u25b6 \u5834\u666f", "ui.slow": "\ud83d\udc22 0.75\u500d\u901f", "ui.slowsay": "\ud83d\udc22 \u6162\u901f", "warmup.chips.0.e": "\u4e16\u7d00\u672b \u00b7 \u6838\u6230\u5f8c\u7684\u4e16\u754c", "warmup.chips.1.e": "\u6838\u5b50\u6230\u722d", "warmup.chips.2.e": "\u66b4\u529b", "warmup.chips.3.e": "\u6551\u4e16\u4e3b", "warmup.chips.4.e": "\u4eba\u9ad4\u79d8\u5bc6\u7a74\u4f4d", "warmup.chips.5.e": "\u62f3\u982d \u00b7 \u62f3\u6cd5", "warmup.cols.0.examples.0.m": "\u5beb\u300c\u8a8d\u771f\u300d\uff0c\u8b80\u300c\u4f86\u771f\u7684\u300d", "warmup.cols.0.examples.1.m": "\u5beb\u300c\u5b87\u5b99\u300d\uff0c\u8b80\u300c\u5929\u7a7a\u300d", "warmup.cols.0.h": "\u6f22\u5b57\u5c0f\u628a\u6232\uff1a\u5f37\u6575 = \u3068\u3082", "warmup.cols.0.p": "\u003cruby\u003e\u5f37\u6575\u003crt\u003e\u304d\u3087\u3046\u3066\u304d\u003c/rt\u003e\u003c/ruby\u003e\u672c\u4f86\u662f\u300c\u5f37\u5927\u7684\u6575\u4eba\u300d\u3002\u5728\u300a\u5317\u6597\u795e\u62f3\u300b\u88e1\u537b\u8b80\u6210\u003cb\u003e\u3068\u3082\u003c/b\u003e\uff1d\u300c\u670b\u53cb\u300d\u3002\u503c\u5f97\u5c0a\u656c\u7684\u5c0d\u624b\u5c31\u662f\u670b\u53cb\u3002\u65e5\u6587\u5e38\u73a9\u9019\u7a2e\u628a\u6232\uff1a\u003cb\u003eX\u3068\u66f8\u3044\u3066Y\u3068\u8aad\u3080\u003c/b\u003e\uff08\u5beb\u6210X\uff0c\u8b80\u6210Y\uff09\u3002", "warmup.cols.1.button.text": "\u266a \u7528\u9019\u9996\u6b4c\u5b78\u65e5\u6587 \u2192", "warmup.cols.1.h": "\u7247\u982d\u66f2\uff1a\u611b\u3092\u3068\u308a\u3082\u3069\u305b!!\uff08\u5b98\u65b9\uff09", "warmup.cols.1.p": "\u7528\u5b98\u65b9\u7247\u982d\u66f2\u6696\u8033\u3002\u7559\u610f\u003cb\u003e\u304a\u524d\u003c/b\u003e\u548c\u003cb\u003e\u611b\u003c/b\u003e\u9019\u5169\u500b\u5b57\u3002", "warmup.tag": "\u55ae\u5b57", "warmup.who": "\u5728\u6709\u4eba\u63cd\u4eba\u4e4b\u524d\uff0c\u5148\u5b78\u9019\u516d\u500b\u5b57\u3002"}};
+function applyLang(lang){
+  LANG=lang; const dict=I[lang]||{};
+  document.documentElement.lang={"base": "en", "en": "en", "ja": "ja", "k": "html_lang", "zh": "zh-Hant"}[lang]||lang;
+  $$('[data-i18n]').forEach(el=>{const k=el.dataset.i18n;if(!el.dataset.orig)el.dataset.orig=el.innerHTML;el.innerHTML=dict[k]||el.dataset.orig;});
+  $$('[data-i18n-ph]').forEach(el=>{const k=el.dataset.i18nPh;if(!el.dataset.orig)el.dataset.orig=el.placeholder;el.placeholder=dict[k]||el.dataset.orig;});
   const k1=$('#tRuby .k'),k2=$('#tRomaji .k'); if(k1)k1.textContent=document.body.classList.contains('no-ruby')?'off':'on'; if(k2)k2.textContent=document.body.classList.contains('no-romaji')?'off':'on';
   $$('#lang button').forEach(b=>b.classList.toggle('on',b.dataset.lang===lang));
-  store.set('lang',lang);
+  renderQuiz(); store.set('lang-hokuto',lang);
 }
 $$('#lang button').forEach(b=>b.onclick=()=>applyLang(b.dataset.lang));
-applyLang(store.get('lang')||'en');
+applyLang(store.get('lang-hokuto')||'en');
 </script>
 </body>
 </html>

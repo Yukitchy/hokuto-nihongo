@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="ja" data-motif="b">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ d.title_tag }}</title>
+<meta name="description" content="{{ d.description }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Dela+Gothic+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ base }}style.css">
+<script src="{{ base }}motif.js"></script>
+</head>
+<body>
+{%- macro t(x) -%}data-i18n="{{ x.k }}"{%- endmacro -%}
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">{{ d.brand }}</a>
+    <nav id="nav">
+      <a href="#warmup" {{ t(d.nav.warmup) }}>{{ d.nav.warmup.base }}</a>
+      {%- for L in d.lines %}
+      <a href="#{{ L.id }}">{{ L.num }} {{ L.nav or L.title[:6] }}</a>
+      {%- endfor %}
+      <a href="#quiz" {{ t(d.nav.quiz) }}>{{ d.nav.quiz.base }}</a>
+      {%- if d.nav.song_href %}
+      <a href="{{ d.nav.song_href }}" class="song" {{ t(d.nav.song) }}>{{ d.nav.song.base }}</a>
+      {%- endif %}
+    </nav>
+    <div class="lang" id="lang">{% for l in d.langs %}<button data-lang="{{ l.code }}"{% if loop.first %} class="on"{% endif %}>{{ l.label }}</button>{% endfor %}</div>
+    <div class="prog" title="Lines you marked as done"><b id="doneN">0</b> / {{ d.lines|length }} done</div>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow" {{ t(d.hero.eyebrow) }}>{{ d.hero.eyebrow.base }}</span>
+    <h1>{{ d.hero.h1 }}<span class="en" {{ t(d.hero.h1_en) }}>{{ d.hero.h1_en.base }}</span></h1>
+    <p class="lead" {{ t(d.hero.lead) }}>{{ d.hero.lead.base }}</p>
+    <div class="meta">
+      {%- for m in d.hero.meta %}
+      <span {{ t(m) }}>{{ m.base }}</span>
+      {%- endfor %}
+    </div>
+    <div class="howto">
+      {%- for h in d.hero.howto %}
+      <div><div class="n">{{ loop.index }}</div><div class="t" {{ t(h.t) }}>{{ h.t.base }}</div><div class="d" {{ t(h.d) }}>{{ h.d.base }}</div></div>
+      {%- endfor %}
+    </div>
+    <div class="toggles">
+      <button class="btn on" id="tRuby" {{ t(d.toggles.ruby) }}>{{ d.toggles.ruby.base }}</button>
+      <button class="btn on" id="tRomaji" {{ t(d.toggles.romaji) }}>{{ d.toggles.romaji.base }}</button>
+      <button class="btn" id="tVoice">🔊 Voice: <span id="voiceName">loading…</span></button>
+    </div>
+  </div>
+</div>
+
+<!-- ================= WARM-UP ================= -->
+<section id="warmup">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">0</div>
+      <div><h2><span {{ t(d.warmup.h2) }}>{{ d.warmup.h2.base }}</span> <span class="tag fun" {{ t(d.warmup.tag) }}>{{ d.warmup.tag.base }}</span></h2><div class="who" {{ t(d.warmup.who) }}>{{ d.warmup.who.base }}</div></div>
+    </div>
+    <div class="chips">
+      {%- for c in d.warmup.chips %}
+      <div class="chip"><div><div class="j">{{ c.jp }}</div><div class="e" {{ t(c.e) }}>{{ c.e.base }}</div></div><button class="spk" data-say="{{ c.say }}">🔊</button></div>
+      {%- endfor %}
+    </div>
+    <div class="grid2">
+      {%- for col in d.warmup.cols %}
+      <div>
+        <h3 {{ t(col.h) }}>{{ col.h.base }}</h3>
+        <p {{ t(col.p) }}>{{ col.p.base }}</p>
+        {%- if col.examples %}
+        <ul class="ex">
+          {%- for e in col.examples %}
+          <li>{{ e.jp }} <span class="m" {{ t(e.m) }}>{{ e.m.base }}</span><button class="spk" data-say="{{ e.say }}">🔊</button></li>
+          {%- endfor %}
+        </ul>
+        {%- endif %}
+        {%- if col.button %}
+        <p><a class="btn primary" href="{{ col.button.href }}" {{ t(col.button.text) }}>{{ col.button.text.base }}</a></p>
+        {%- endif %}
+        {%- if col.video %}
+        <div class="panel" style="grid-template-columns:1fr">
+          <div class="vid"><div class="yt" id="ytOP"></div></div>
+        </div>
+        {%- endif %}
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+{%- for L in d.lines %}
+<!-- ================= LINE {{ L.num }} ================= -->
+<section id="{{ L.id }}" class="lesson" data-key="{{ L.id }}">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">{{ L.num }}</div>
+      <div><h2>{{ L.title }} <span class="tag {{ L.tag.cls }}" {{ t(L.tag.text) }}>{{ L.tag.text.base }}</span></h2><div class="who" {{ t(L.who) }}>{{ L.who.base }}</div></div>
+    </div>
+
+    <div class="bubble">
+      <p class="jp">{{ L.line.jp }}</p>
+      <p class="romaji">{{ L.line.romaji }}</p>
+      <p class="en" {{ t(L.line.en) }}>{{ L.line.en.base }}</p>
+    </div>
+
+    <div class="panel">
+      <div class="vid"><div class="yt" id="yt{{ L.num }}"></div></div>
+      <div class="ctl" data-player="yt{{ L.num }}" data-scene="{{ L.clip.scene[0] }},{{ L.clip.scene[1] }}" data-line="{{ L.clip.line[0] }},{{ L.clip.line[1] }}">
+        <div class="lbl" {{ t(d.ui.clip) }}>{{ d.ui.clip.base }}</div>
+        <button class="btn primary act-scene" {{ t(d.ui.scene) }}>{{ d.ui.scene.base }}</button>
+        <button class="btn act-loop" {{ t(d.ui.loop) }}>{{ d.ui.loop.base }}</button>
+        <button class="btn act-stop">⏹</button>
+        <button class="btn sm act-slow" {{ t(d.ui.slow) }}>{{ d.ui.slow.base }}</button>
+        <div class="loopbar"><i></i></div>
+        <div class="lbl" {{ t(d.ui.listen) }}>{{ d.ui.listen.base }}</div>
+        <button class="btn act-say" data-say="{{ L.line.say }}" {{ t(d.ui.normal) }}>{{ d.ui.normal.base }}</button>
+        <button class="btn act-say-slow" data-say="{{ L.line.say }}" {{ t(d.ui.slowsay) }}>{{ d.ui.slowsay.base }}</button>
+        <div class="lbl" {{ t(d.ui.record) }}>{{ d.ui.record.base }}</div>
+        <div class="rec"><button class="btn dark act-rec" {{ t(d.ui.rec) }}>{{ d.ui.rec.base }}</button><span class="dot"></span><audio controls class="mine" hidden></audio></div>
+        <div class="src" {{ t(L.clip.src) }}>{{ L.clip.src.base }}</div>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div>
+        <h3 {{ t(L.words.h) }}>{{ L.words.h.base }}</h3>
+        <table>
+          <tr>{% for th in L.words.head %}<th {{ t(th) }}>{{ th.base }}</th>{% endfor %}</tr>
+          {%- for row in L.words.rows %}
+          <tr><td class="w">{{ row[0] }}</td>{% for c in row[1:] %}<td {{ t(c) }}>{{ c.base }}</td>{% endfor %}</tr>
+          {%- endfor %}
+        </table>
+        {%- if L.words.note %}
+        <div class="note" {{ t(L.words.note) }}>{{ L.words.note.base }}</div>
+        {%- endif %}
+      </div>
+      <div>
+        <h3 {{ t(L.grammar.h) }}>{{ L.grammar.h.base }}</h3>
+        {%- for gp in L.grammar.gp %}
+        <div class="gp" {{ t(gp) }}>{{ gp.base }}</div>
+        {%- endfor %}
+        {%- if L.grammar.p %}
+        <p {{ t(L.grammar.p) }}>{{ L.grammar.p.base }}</p>
+        {%- endif %}
+        <ul class="ex">
+          {%- for e in L.grammar.examples %}
+          <li>{{ e.jp }} <span class="m" {{ t(e.m) }}>{{ e.m.base }}</span><button class="spk" data-say="{{ e.say }}">🔊</button></li>
+          {%- endfor %}
+        </ul>
+        {%- if L.grammar.note %}
+        <div class="note" {{ t(L.grammar.note) }}>{{ L.grammar.note.base }}</div>
+        {%- endif %}
+      </div>
+    </div>
+
+    <div class="drill">
+      <h3 {{ t(L.drill.h) }}>{{ L.drill.h.base }}</h3>
+      <ol>
+        {%- for it in L.drill.list %}
+        <li>{{ it.jp|blanks }}<span class="m" {{ t(it.m) }}>{{ it.m.base }}</span></li>
+        {%- endfor %}
+      </ol>
+      <div class="yourturn">
+        <label {{ t(L.yourturn.label) }}>{{ L.yourturn.label.base }}</label>
+        <textarea data-store="{{ L.yourturn.store }}" data-i18n-ph="{{ L.yourturn.ph.k }}" placeholder="{{ L.yourturn.ph.base }}"></textarea>
+        <div class="row"><button class="btn sm act-say-ta" {{ t(d.ui.readmine) }}>{{ d.ui.readmine.base }}</button><span class="hint" {{ t(L.yourturn.hint) }}>{{ L.yourturn.hint.base }}</span></div>
+      </div>
+      <div class="done"><label><input type="checkbox" class="doneBox"> <span {{ t(L.done) }}>{{ L.done.base }}</span></label></div>
+    </div>
+  </div>
+</section>
+{%- endfor %}
+
+<!-- ================= QUIZ ================= -->
+<section id="quiz">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">✓</div>
+      <div><h2 {{ t(d.quiz_head.h2) }}>{{ d.quiz_head.h2.base }}</h2><div class="who" {{ t(d.quiz_head.who) }}>{{ d.quiz_head.who.base }}</div></div>
+    </div>
+    <div id="quizBox"></div>
+    <div class="score" id="score"></div>
+    <div class="grid2" style="margin-top:22px">
+      <div>
+        <h3 {{ t(d.homework.h) }}>{{ d.homework.h.base }}</h3>
+        <ol style="padding-left:22px;margin:0;font-size:16px">
+          {%- for it in d.homework.list %}
+          <li {{ t(it) }}>{{ it.base }}</li>
+          {%- endfor %}
+        </ol>
+      </div>
+      <div>
+        <h3 {{ t(d.cheat.h) }}>{{ d.cheat.h.base }}</h3>
+        <table>
+          {%- for r in d.cheat.rows %}
+          <tr><td class="w">{{ r[0] }}</td><td {{ t(r[1]) }}>{{ r[1].base }}</td></tr>
+          {%- endfor %}
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    {%- for f in d.footer %}
+    <span {{ t(f) }}>{{ f.base }}</span>
+    {%- endfor %}
+  </div>
+</footer>
+<div class="toast" id="toast"></div>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove('show'),1800)};
+const store={get:k=>{try{return localStorage.getItem(k)}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}}};
+const TTS_LANG={{ d.tts_lang|default('ja-JP')|tojson }};
+const N_LINES={{ d.lines|length }};
+
+/* ---------- YouTube players + A-B loop ---------- */
+const players={}, loops={};
+const VIDS={{ vids|tojson }};
+function onYouTubeIframeAPIReady(){
+  for(const [id,vid] of Object.entries(VIDS)){
+    if(!document.getElementById(id))continue;
+    players[id]=new YT.Player(id,{videoId:vid,playerVars:{rel:0,modestbranding:1,playsinline:1,origin:location.origin},
+      events:{onStateChange:e=>{ if(e.data===YT.PlayerState.ENDED) stopLoop(id); }}});
+  }
+}
+function stopLoop(id){ if(loops[id]){clearInterval(loops[id].t);loops[id]=null;} const c=document.querySelector(`.ctl[data-player="${id}"]`); if(c){c.querySelector('.act-loop').classList.remove('on');c.querySelector('.loopbar i').style.width='0';} }
+function playRange(id,a,b,loop){
+  const p=players[id]; if(!p||!p.seekTo){toast('Player still loading…');return;}
+  stopLoop(id); p.seekTo(a,true); p.playVideo();
+  const c=document.querySelector(`.ctl[data-player="${id}"]`), bar=c.querySelector('.loopbar i');
+  const t=setInterval(()=>{
+    const cur=p.getCurrentTime();
+    bar.style.width=Math.max(0,Math.min(100,(cur-a)/(b-a)*100))+'%';
+    if(cur<a-0.6){ if(Date.now()-(loops[id].last||0)>1000){loops[id].last=Date.now();p.seekTo(a,true);} return; }
+    if(cur>=b){ if(loop){p.seekTo(a,true);} else {p.pauseVideo();stopLoop(id);} }
+  },80);
+  loops[id]={t};
+  if(loop) c.querySelector('.act-loop').classList.add('on');
+}
+$$('.ctl').forEach(c=>{
+  const id=c.dataset.player, [sa,sb]=c.dataset.scene.split(',').map(Number), [la,lb]=c.dataset.line.split(',').map(Number);
+  c.querySelector('.act-scene').onclick=()=>playRange(id,sa,sb,false);
+  c.querySelector('.act-loop').onclick=e=>{ if(e.currentTarget.classList.contains('on')){players[id].pauseVideo();stopLoop(id);} else playRange(id,la,lb,true); };
+  c.querySelector('.act-stop').onclick=()=>{players[id]&&players[id].pauseVideo();stopLoop(id);};
+  c.querySelector('.act-slow').onclick=e=>{const p=players[id];if(!p)return;const slow=!e.currentTarget.classList.contains('on');p.setPlaybackRate(slow?0.75:1);e.currentTarget.classList.toggle('on',slow);toast(slow?'0.75× speed':'Normal speed');};
+});
+
+/* ---------- TTS ---------- */
+let voices=[], voice=null, voiceIdx=0;
+function pickVoices(){
+  const pfx=TTS_LANG.split('-')[0];
+  voices=speechSynthesis.getVoices().filter(v=>v.lang.toLowerCase().startsWith(pfx));
+  const pref=['O-Ren','Kyoko','Otoya','Hattori','Google 日本語','Nanami','Keita','Samantha','Ava','Allison','Daniel','Google US English','Google UK English'];
+  voices.sort((a,b)=>{const ia=pref.findIndex(p=>a.name.includes(p)),ib=pref.findIndex(p=>b.name.includes(p));return (ia<0?99:ia)-(ib<0?99:ib)});
+  voice=voices[voiceIdx%Math.max(1,voices.length)]||null;
+  $('#voiceName').textContent=voice?voice.name.replace(/\(.*?\)/,'').trim():'no voice';
+}
+speechSynthesis.onvoiceschanged=pickVoices; pickVoices();
+$('#tVoice').onclick=()=>{ if(!voices.length)return; voiceIdx=(voiceIdx+1)%voices.length; pickVoices(); say($('.act-say').dataset.say,1); };
+let currentSpk=null;
+function say(text,rate,btn){
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(text); u.lang=TTS_LANG; if(voice)u.voice=voice; u.rate=rate; u.pitch=rate<1?0.9:0.95;
+  if(currentSpk)currentSpk.classList.remove('on'); currentSpk=btn||null; if(btn)btn.classList.add('on');
+  u.onend=u.onerror=()=>{if(btn)btn.classList.remove('on')};
+  speechSynthesis.speak(u);
+}
+$$('.spk').forEach(b=>b.onclick=()=>say(b.dataset.say,0.95,b));
+$$('.act-say').forEach(b=>b.onclick=()=>say(b.dataset.say,0.95,b));
+$$('.act-say-slow').forEach(b=>b.onclick=()=>say(b.dataset.say,0.6,b));
+$$('.act-say-ta').forEach(b=>b.onclick=()=>{const ta=b.closest('.yourturn').querySelector('textarea');const v=ta.value.trim();if(!v){toast('Write something first');ta.focus();return;}say(v,0.9,b)});
+
+/* ---------- Recording ---------- */
+let rec=null;
+$$('.act-rec').forEach(b=>b.onclick=async()=>{
+  const box=b.closest('.rec'), audio=box.querySelector('audio');
+  if(rec&&rec.state==='recording'){ rec.stop(); return; }
+  if(!navigator.mediaDevices){toast('Recording not supported here');return;}
+  try{
+    const stream=await navigator.mediaDevices.getUserMedia({audio:true});
+    const chunks=[]; rec=new MediaRecorder(stream);
+    rec.ondataavailable=e=>chunks.push(e.data);
+    rec.onstop=()=>{ stream.getTracks().forEach(t=>t.stop()); const blob=new Blob(chunks,{type:rec.mimeType||'audio/webm'}); audio.src=URL.createObjectURL(blob); audio.hidden=false; box.classList.remove('live'); b.textContent='🎙 Again'; audio.play().catch(()=>{}); };
+    rec.start(); box.classList.add('live'); b.textContent='⏹ Stop'; toast('Recording…');
+  }catch(e){ toast('Microphone blocked'); }
+});
+
+/* ---------- Drills ---------- */
+$$('.blank').forEach(b=>{b.onclick=()=>{b.classList.toggle('show'); if(b.classList.contains('show')) say(b.textContent,0.95);}});
+$$('textarea[data-store]').forEach(t=>{const v=store.get(t.dataset.store);if(v)t.value=v;t.oninput=()=>store.set(t.dataset.store,t.value)});
+
+/* ---------- Done tracking ---------- */
+function refreshDone(){ const n=$$('.doneBox').filter(c=>c.checked).length; $('#doneN').textContent=n; $$('.done label').forEach(l=>l.classList.toggle('ok',l.querySelector('input').checked)); if(n===N_LINES)toast({{ d.done_all_msg|default('All done!')|tojson }}); }
+$$('.lesson').forEach(s=>{const c=s.querySelector('.doneBox');c.checked=store.get('done-{{ d.slug }}-'+s.dataset.key)==='1';c.onchange=()=>{store.set('done-{{ d.slug }}-'+s.dataset.key,c.checked?'1':'0');refreshDone()}});
+refreshDone();
+
+/* ---------- Toggles ---------- */
+const tg=(btn,cls,key)=>{ const on=store.get(key)!=='0'; document.body.classList.toggle(cls,!on); btn.classList.toggle('on',on); btn.querySelector('.k').textContent=on?'on':'off';
+  btn.onclick=()=>{const now=document.body.classList.toggle(cls); btn.classList.toggle('on',!now); btn.querySelector('.k').textContent=now?'off':'on'; store.set(key,now?'0':'1');}; };
+tg($('#tRuby'),'no-ruby','ruby'); tg($('#tRomaji'),'no-romaji','romaji');
+
+/* ---------- Nav highlight ---------- */
+const links=$$('#nav a'); const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id))}}),{rootMargin:'-40% 0px -55% 0px'});
+$$('section').forEach(s=>io.observe(s));
+
+/* ---------- Quiz (re-rendered per language) ---------- */
+const QUIZ={{ quiz|tojson }};
+const SCORE_MSG={{ d.score_msgs|tojson }};
+let LANG='{{ d.langs[0].code }}', answered=0, correct=0;
+function renderQuiz(){
+  const qb=$('#quizBox'); qb.innerHTML=''; answered=0; correct=0; $('#score').textContent='';
+  QUIZ.forEach((it,i)=>{
+    const d=document.createElement('div'); d.className='q';
+    d.innerHTML=`<p class="qt">${i+1}. ${it.q[LANG]}</p><div class="opts">${it.o.map((o,j)=>`<button data-j="${j}">${o[LANG]}</button>`).join('')}</div><p class="why">${it.why[LANG]}</p>`;
+    d.querySelectorAll('button').forEach(b=>b.onclick=()=>{ if(d.classList.contains('answered'))return; d.classList.add('answered'); const j=+b.dataset.j; d.querySelectorAll('button').forEach(x=>x.classList.add(+x.dataset.j===it.a?'ok':'ng')); answered++; if(j===it.a)correct++; if(answered===QUIZ.length){ $('#score').textContent=`${correct} / ${QUIZ.length}` + (correct===QUIZ.length?SCORE_MSG.perfect:correct>=Math.ceil(QUIZ.length*0.6)?SCORE_MSG.good:SCORE_MSG.bad); } });
+    qb.appendChild(d);
+  });
+}
+
+/* ---------- Language switch ---------- */
+const I={{ i18n|tojson }};
+function applyLang(lang){
+  LANG=lang; const dict=I[lang]||{};
+  document.documentElement.lang={{ d.html_lang|default({})|tojson }}[lang]||lang;
+  $$('[data-i18n]').forEach(el=>{const k=el.dataset.i18n;if(!el.dataset.orig)el.dataset.orig=el.innerHTML;el.innerHTML=dict[k]||el.dataset.orig;});
+  $$('[data-i18n-ph]').forEach(el=>{const k=el.dataset.i18nPh;if(!el.dataset.orig)el.dataset.orig=el.placeholder;el.placeholder=dict[k]||el.dataset.orig;});
+  const k1=$('#tRuby .k'),k2=$('#tRomaji .k'); if(k1)k1.textContent=document.body.classList.contains('no-ruby')?'off':'on'; if(k2)k2.textContent=document.body.classList.contains('no-romaji')?'off':'on';
+  $$('#lang button').forEach(b=>b.classList.toggle('on',b.dataset.lang===lang));
+  renderQuiz(); store.set('lang-{{ d.slug }}',lang);
+}
+$$('#lang button').forEach(b=>b.onclick=()=>applyLang(b.dataset.lang));
+applyLang(store.get('lang-{{ d.slug }}')||'{{ d.langs[0].code }}');
+</script>
+</body>
+</html>

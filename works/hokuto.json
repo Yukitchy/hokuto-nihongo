@@ -1,0 +1,2030 @@
+{
+ "slug": "hokuto",
+ "lang_default": "en",
+ "brand": "北斗<b>×</b>日本語",
+ "title_tag": "北斗の拳で日本語 — Learn Japanese with Fist of the North Star",
+ "description": "Trial lesson material by Yuuki@Anime Sensei. Six legendary lines from Fist of the North Star, with looped clips, listen-and-repeat, grammar breakdowns and drills (JLPT N3).",
+ "hero": {
+  "eyebrow": {
+   "en": "Trial Lesson · JLPT N3 · with Yuuki@Anime Sensei",
+   "ja": "体験レッスン · JLPT N3 · Yuuki@Anime Sensei",
+   "zh": "體驗課 · JLPT N3 · 老師 Yuuki@Anime Sensei"
+  },
+  "h1": "北斗の拳で<br/>日本語を学ぶ",
+  "h1_en": {
+   "en": "Learn Japanese with Fist of the North Star",
+   "ja": "名セリフ6本で学ぶ、明日から使える文法",
+   "zh": "用《北斗神拳》學日文"
+  },
+  "lead": {
+   "en": "Six legendary lines. Each one hides a grammar point you will actually use in Tokyo tomorrow. Watch the clip, loop the line, say it like Kenshiro, then drill it.",
+   "ja": "伝説の名セリフ6本。それぞれの中に、明日東京で本当に使う文法がひとつ隠れています。クリップを観て、セリフだけをループして、ケンシロウになりきって言って、ドリルで定着させましょう。",
+   "zh": "六句傳奇台詞。每一句都藏著一個明天在東京真的用得到的文法。先看片段，再單句循環，像拳四郎一樣說出來，最後做練習。"
+  },
+  "meta": [
+   {
+    "en": "👤 Student: <b>Stephen</b>",
+    "ja": "👤 生徒: <b>Stephen</b>",
+    "zh": "👤 學生：<b>Stephen</b>"
+   },
+   {
+    "en": "📅 <b>Sun 6 Sept 2026, 14:00 JST</b>",
+    "ja": "📅 <b>2026年9月6日（日）14:00 JST</b>",
+    "zh": "📅 <b>2026年9月6日（日）14:00 日本時間</b>"
+   },
+   {
+    "en": "⏱ 30 min · recorded for YouTube",
+    "ja": "⏱ 30分 · YouTube用に録画",
+    "zh": "⏱ 30分鐘 · 為YouTube錄影"
+   }
+  ],
+  "howto": [
+   {
+    "t": {
+     "en": "Watch",
+     "ja": "観る",
+     "zh": "看"
+    },
+    "d": {
+     "en": "Play the scene once.",
+     "ja": "まずシーンを1回再生。",
+     "zh": "先把場景播一次。"
+    }
+   },
+   {
+    "t": {
+     "en": "Loop",
+     "ja": "ループ",
+     "zh": "循環"
+    },
+    "d": {
+     "en": "Loop just the line. Slow it down.",
+     "ja": "セリフだけを繰り返す。速度も落とせる。",
+     "zh": "只循環那句台詞，可以放慢。"
+    }
+   },
+   {
+    "t": {
+     "en": "Repeat",
+     "ja": "真似る",
+     "zh": "跟讀"
+    },
+    "d": {
+     "en": "Shadow it out loud. Record yourself.",
+     "ja": "声に出してシャドーイング。自分の声を録音。",
+     "zh": "大聲跟讀，錄下自己的聲音。"
+    }
+   },
+   {
+    "t": {
+     "en": "Grammar",
+     "ja": "文法",
+     "zh": "文法"
+    },
+    "d": {
+     "en": "See the pattern hiding inside.",
+     "ja": "セリフに隠れたパターンを見る。",
+     "zh": "看看台詞裡藏的句型。"
+    }
+   },
+   {
+    "t": {
+     "en": "Drill",
+     "ja": "ドリル",
+     "zh": "練習"
+    },
+    "d": {
+     "en": "Tap the blanks, then write your own.",
+     "ja": "空欄をタップ。最後は自分の文を書く。",
+     "zh": "點空格看答案，再寫自己的句子。"
+    }
+   }
+  ]
+ },
+ "nav": {
+  "warmup": {
+   "en": "Warm-up",
+   "ja": "準備運動",
+   "zh": "暖身"
+  },
+  "quiz": {
+   "en": "Quiz",
+   "ja": "クイズ",
+   "zh": "測驗"
+  },
+  "song": {
+   "en": "♪ Song",
+   "ja": "♪ 主題歌",
+   "zh": "♪ 主題曲"
+  },
+  "song_href": "ai/"
+ },
+ "warmup": {
+  "h2": {
+   "en": "Warm-up: the world of 199X",
+   "ja": "Warm-up: the world of 199X",
+   "zh": "Warm-up: the world of 199X"
+  },
+  "tag": {
+   "en": "vocab",
+   "ja": "語彙",
+   "zh": "單字"
+  },
+  "who": {
+   "en": "Six words you need before anyone punches anyone.",
+   "ja": "誰かが誰かを殴る前に必要な6語。",
+   "zh": "在有人揍人之前，先學這六個字。"
+  },
+  "chips": [
+   {
+    "jp": "<ruby>世紀末<rt>せいきまつ</rt></ruby>",
+    "e": {
+     "en": "end of the century · post-apocalypse",
+     "ja": "世紀の終わり · 核戦争後の世界",
+     "zh": "世紀末 · 核戰後的世界"
+    },
+    "say": "世紀末"
+   },
+   {
+    "jp": "<ruby>核戦争<rt>かくせんそう</rt></ruby>",
+    "e": {
+     "en": "nuclear war",
+     "ja": "核による戦争",
+     "zh": "核子戰爭"
+    },
+    "say": "核戦争"
+   },
+   {
+    "jp": "<ruby>暴力<rt>ぼうりょく</rt></ruby>",
+    "e": {
+     "en": "violence",
+     "ja": "暴力（ぼうりょく）",
+     "zh": "暴力"
+    },
+    "say": "暴力"
+   },
+   {
+    "jp": "<ruby>救世主<rt>きゅうせいしゅ</rt></ruby>",
+    "e": {
+     "en": "savior",
+     "ja": "世界を救う人",
+     "zh": "救世主"
+    },
+    "say": "救世主"
+   },
+   {
+    "jp": "<ruby>秘孔<rt>ひこう</rt></ruby>",
+    "e": {
+     "en": "secret pressure point",
+     "ja": "人体の秘密のツボ",
+     "zh": "人體秘密穴位"
+    },
+    "say": "秘孔"
+   },
+   {
+    "jp": "<ruby>拳<rt>けん</rt></ruby>・<ruby>拳法<rt>けんぽう</rt></ruby>",
+    "e": {
+     "en": "fist · fist-fighting art",
+     "ja": "こぶし · 拳を使う武術",
+     "zh": "拳頭 · 拳法"
+    },
+    "say": "拳、拳法"
+   }
+  ],
+  "cols": [
+   {
+    "h": {
+     "en": "Kanji trick: 強敵 = とも",
+     "ja": "漢字トリック: 強敵 = とも",
+     "zh": "漢字小把戲：強敵 = とも"
+    },
+    "p": {
+     "en": "<ruby>強敵<rt>きょうてき</rt></ruby> normally means \"powerful enemy\" (きょうてき). In Hokuto no Ken it is read <b>とも</b> = \"friend\". A rival you respect is a friend. Japanese does this all the time: <b>Xと書いてYと読む</b> (written X, read Y).",
+     "ja": "<ruby>強敵<rt>きょうてき</rt></ruby>は普通「強い敵」。北斗の拳では<b>とも</b>と読みます。尊敬できるライバルは友。日本語ではよくある遊びです: <b>Xと書いてYと読む</b>。",
+     "zh": "<ruby>強敵<rt>きょうてき</rt></ruby>本來是「強大的敵人」。在《北斗神拳》裡卻讀成<b>とも</b>＝「朋友」。值得尊敬的對手就是朋友。日文常玩這種把戲：<b>Xと書いてYと読む</b>（寫成X，讀成Y）。"
+    },
+    "examples": [
+     {
+      "jp": "<ruby>本気<rt>ほんき</rt></ruby>と書いて「マジ」と読む",
+      "m": {
+       "en": "written \"serious\", read \"for real\"",
+       "ja": "「本気」と書いて「マジ」",
+       "zh": "寫「認真」，讀「來真的」"
+      },
+      "say": "本気と書いてマジと読む"
+     },
+     {
+      "jp": "<ruby>宇宙<rt>うちゅう</rt></ruby>と書いて「そら」と読む",
+      "m": {
+       "en": "written \"universe\", read \"sky\"",
+       "ja": "「宇宙」と書いて「そら」",
+       "zh": "寫「宇宙」，讀「天空」"
+      },
+      "say": "宇宙と書いてそらと読む"
+     }
+    ]
+   },
+   {
+    "h": {
+     "en": "Opening: 愛をとりもどせ!! (official)",
+     "ja": "オープニング: 愛をとりもどせ!!（公式）",
+     "zh": "片頭曲：愛をとりもどせ!!（官方）"
+    },
+    "p": {
+     "en": "Warm your ears up with the official opening. Listen for <b>お前</b> and <b>愛</b>.",
+     "ja": "公式OPで耳慣らし。<b>お前</b>と<b>愛</b>が聞こえるか探してみて。",
+     "zh": "用官方片頭曲暖耳。留意<b>お前</b>和<b>愛</b>這兩個字。"
+    },
+    "examples": [],
+    "button": {
+     "text": {
+      "en": "♪ Learn Japanese from this song →",
+      "ja": "♪ この歌で日本語を学ぶ →",
+      "zh": "♪ 用這首歌學日文 →"
+     },
+     "href": "ai/"
+    },
+    "video": "xp6rspO4uYY"
+   }
+  ]
+ },
+ "lines": [
+  {
+   "id": "l1",
+   "num": "1",
+   "title": "お前はもう死んでいる",
+   "tag": {
+    "cls": "n3",
+    "text": {
+     "en": "N4→N3 · 〜ている",
+     "ja": "N4→N3 · 〜ている",
+     "zh": "N4→N3 · 〜ている"
+    }
+   },
+   "who": {
+    "en": "Kenshiro · the line everyone knows",
+    "ja": "ケンシロウ · 誰もが知るあの一言",
+    "zh": "拳四郎 · 人人都知道的那句"
+   },
+   "line": {
+    "jp": "<ruby>お前<rt>おまえ</rt></ruby>はもう<ruby>死<rt>し</rt></ruby>んでいる。",
+    "romaji": "Omae wa mō shinde iru.",
+    "en": {
+     "en": "\"You are <i>already dead</i>.\"",
+     "ja": "「お前は<i>もう死んでいる</i>」＝ すでに死んだ状態にある",
+     "zh": "「你<i>已經死了</i>。」"
+    },
+    "say": "お前はもう死んでいる。"
+   },
+   "clip": {
+    "video": "4bv6tNtrU4I",
+    "scene": [
+     0.0,
+     11.5
+    ],
+    "line": [
+     3.7,
+     6.4
+    ],
+    "src": {
+     "en": "Clip: <a href=\"https://youtu.be/4bv6tNtrU4I\" rel=\"noopener\" target=\"_blank\">YouTube</a> · bonus at 0:08 — the famous death cry ひでぶ！",
+     "ja": "Clip: <a href=\"https://youtu.be/4bv6tNtrU4I\" rel=\"noopener\" target=\"_blank\">YouTube</a> · bonus at 0:08 — the famous death cry ひでぶ！",
+     "zh": "Clip: <a href=\"https://youtu.be/4bv6tNtrU4I\" rel=\"noopener\" target=\"_blank\">YouTube</a> · bonus at 0:08 — the famous death cry ひでぶ！"
+    }
+   },
+   "words": {
+    "h": {
+     "en": "Word by word",
+     "ja": "一語ずつ",
+     "zh": "逐字解釋"
+    },
+    "head": [
+     {
+      "en": "word",
+      "ja": "語",
+      "zh": "單字"
+     },
+     {
+      "en": "meaning",
+      "ja": "意味",
+      "zh": "意思"
+     }
+    ],
+    "rows": [
+     [
+      "<ruby>お前<rt>おまえ</rt></ruby>",
+      {
+       "en": "you — rough. For enemies, rivals, very close friends. <b>Never</b> for your boss or your host family.",
+       "ja": "「あなた」の乱暴な言い方。敵・ライバル・ごく親しい友人に。上司やホストファミリーには<b>絶対に</b>使わない。",
+       "zh": "「你」的粗魯說法。用在敵人、對手、很熟的朋友。<b>絕對不要</b>對上司或寄宿家庭說。"
+      }
+     ],
+     [
+      "は",
+      {
+       "en": "topic marker (wa)",
+       "ja": "主題を示す助詞（わ）",
+       "zh": "主題助詞（讀 wa）"
+      }
+     ],
+     [
+      "もう",
+      {
+       "en": "already",
+       "ja": "すでに",
+       "zh": "已經"
+      }
+     ],
+     [
+      "<ruby>死<rt>し</rt></ruby>んでいる",
+      {
+       "en": "死ぬ → て-form 死んで + いる → \"is (in the state of) dead\"",
+       "ja": "死ぬ → て形 死んで + いる → 「死んだ状態にある」",
+       "zh": "死ぬ → て形 死んで + いる → 「處於死亡的狀態」"
+      }
+     ]
+    ],
+    "note": null
+   },
+   "grammar": {
+    "h": {
+     "en": "Grammar: 〜ている = the state after a change",
+     "ja": "文法: 〜ている = 変化のあとの状態",
+     "zh": "文法：〜ている = 變化之後的狀態"
+    },
+    "gp": [
+     {
+      "en": "<b>change verb + ている</b> → not \"is doing\", but \"has done and is now in that state\".",
+      "ja": "<b>変化動詞 + ている</b> → 「〜している最中」ではなく「〜し終わって、今その状態」。",
+      "zh": "<b>變化動詞 + ている</b> → 不是「正在做」，而是「已經做了，現在處於那個狀態」。"
+     }
+    ],
+    "p": {
+     "en": "死ぬ, 結婚する, 知る, 持つ, 住む, 始まる, 閉まる are all \"change\" verbs. Kenshiro is not saying \"you are dying\". The change already happened; you just haven't noticed.",
+     "ja": "死ぬ・結婚する・知る・持つ・住む・始まる・閉まる はすべて「変化」の動詞。ケンシロウは「死にかけている」と言っているのではない。変化はもう起きていて、本人が気づいていないだけ。",
+     "zh": "死ぬ、結婚する、知る、持つ、住む、始まる、閉まる 都是「變化」動詞。拳四郎不是說「你正在死」。變化已經發生，只是你還沒發現。"
+    },
+    "examples": [
+     {
+      "jp": "もう<ruby>結婚<rt>けっこん</rt></ruby>している",
+      "m": {
+       "en": "I'm (already) married",
+       "ja": "（もう）結婚しています",
+       "zh": "我（已經）結婚了"
+      },
+      "say": "もう結婚している"
+     },
+     {
+      "jp": "<ruby>電車<rt>でんしゃ</rt></ruby>はもう<ruby>出<rt>で</rt></ruby>ている",
+      "m": {
+       "en": "the train has already left",
+       "ja": "電車はもう出発した",
+       "zh": "電車已經開走了"
+      },
+      "say": "電車はもう出ている"
+     },
+     {
+      "jp": "<ruby>店<rt>みせ</rt></ruby>はもう<ruby>閉<rt>し</rt></ruby>まっている",
+      "m": {
+       "en": "the shop is already closed",
+       "ja": "店はもう閉まっている",
+       "zh": "店已經關了"
+      },
+      "say": "店はもう閉まっている"
+     }
+    ],
+    "note": {
+     "en": "<b>Tokyo use:</b> a friend runs for the last train — you say「もう出てるよ」(colloquial drops the い).",
+     "ja": "<b>東京での使い方:</b> 終電に走る友だちに「もう出てるよ」（話し言葉では い が落ちる）。",
+     "zh": "<b>東京實用：</b>朋友衝去趕末班車，你說「もう出てるよ」（口語會省略 い）。"
+    }
+   },
+   "drill": {
+    "h": {
+     "en": "Drill",
+     "ja": "ドリル",
+     "zh": "練習"
+    },
+    "list": [
+     {
+      "jp": "<ruby>会議<rt>かいぎ</rt></ruby>はもう{{blank:始まっている}}。",
+      "m": {
+       "en": "The meeting has already started. (始まる)",
+       "ja": "会議はもう始まった。（始まる）",
+       "zh": "會議已經開始了。（始まる）"
+      }
+     },
+     {
+      "jp": "すみません、お<ruby>金<rt>かね</rt></ruby>を{{blank:持っていない}}んです。",
+      "m": {
+       "en": "I don't have money on me. (持つ, negative)",
+       "ja": "お金を持っていないんです。（持つ・否定）",
+       "zh": "我身上沒帶錢。（持つ，否定）"
+      }
+     },
+     {
+      "jp": "<ruby>今<rt>いま</rt></ruby>は<ruby>東京<rt>とうきょう</rt></ruby>に{{blank:住んでいる}}。",
+      "m": {
+       "en": "I live in Tokyo now. (住む)",
+       "ja": "今は東京に住んでいる。（住む）",
+       "zh": "我現在住在東京。（住む）"
+      }
+     }
+    ]
+   },
+   "yourturn": {
+    "label": {
+     "en": "Your turn — be Kenshiro about something harmless",
+     "ja": "あなたの番 — 無害なことでケンシロウになる",
+     "zh": "換你 — 用無害的事當一次拳四郎"
+    },
+    "ph": {
+     "en": "お前はもう ＿＿ ている。  e.g. お前はもう合格している。(You have already passed.)",
+     "ja": "お前はもう ＿＿ ている。  例: お前はもう合格している。",
+     "zh": "お前はもう ＿＿ ている。  例：お前はもう合格している。（你已經及格了。）"
+    },
+    "store": "yt-l1",
+    "hint": {
+     "en": "Saved on this device.",
+     "ja": "この端末に保存されます。",
+     "zh": "會儲存在這台裝置。"
+    }
+   },
+   "done": {
+    "en": "<input class=\"doneBox\" type=\"checkbox\"/> Line 1 done",
+    "ja": "<input class=\"doneBox\" type=\"checkbox\"/> Line 1 done",
+    "zh": "<input class=\"doneBox\" type=\"checkbox\"/> Line 1 done"
+   },
+   "nav": "死んでいる"
+  },
+  {
+   "id": "l2",
+   "num": "2",
+   "title": "我が生涯に一片の悔いなし！",
+   "tag": {
+    "cls": "n2",
+    "text": {
+     "en": "N3→N2 · 我が / 〜なし",
+     "ja": "N3→N2 · 我が / 〜なし",
+     "zh": "N3→N2 · 我が / 〜なし"
+    }
+   },
+   "who": {
+    "en": "Raoh · his last words, fist raised to the sky",
+    "ja": "ラオウ · 天に拳を突き上げた最期の言葉",
+    "zh": "拉歐 · 舉拳向天的遺言"
+   },
+   "line": {
+    "jp": "<ruby>我<rt>わ</rt></ruby>が<ruby>生涯<rt>しょうがい</rt></ruby>に<ruby>一片<rt>いっぺん</rt></ruby>の<ruby>悔<rt>く</rt></ruby>いなし！",
+    "romaji": "Waga shōgai ni ippen no kui nashi!",
+    "en": {
+     "en": "\"In my life, <i>not one piece of regret</i>!\"",
+     "ja": "「我が生涯に<i>一片の悔いなし</i>」＝ 人生に後悔はひとかけらもない",
+     "zh": "「我這一生，<i>沒有一絲悔恨</i>！」"
+    },
+    "say": "我が生涯に一片の悔いなし！"
+   },
+   "clip": {
+    "video": "jiKRr4vYUyw",
+    "scene": [
+     0.0,
+     27.0
+    ],
+    "line": [
+     0.0,
+     6.2
+    ],
+    "src": {
+     "en": "Clip: <a href=\"https://youtu.be/jiKRr4vYUyw\" rel=\"noopener\" target=\"_blank\">YouTube</a>",
+     "ja": "Clip: <a href=\"https://youtu.be/jiKRr4vYUyw\" rel=\"noopener\" target=\"_blank\">YouTube</a>",
+     "zh": "Clip: <a href=\"https://youtu.be/jiKRr4vYUyw\" rel=\"noopener\" target=\"_blank\">YouTube</a>"
+    }
+   },
+   "words": {
+    "h": {
+     "en": "Word by word",
+     "ja": "一語ずつ",
+     "zh": "逐字解釋"
+    },
+    "head": [
+     {
+      "en": "word",
+      "ja": "語",
+      "zh": "單字"
+     },
+     {
+      "en": "meaning",
+      "ja": "意味",
+      "zh": "意思"
+     }
+    ],
+    "rows": [
+     [
+      "<ruby>我<rt>わ</rt></ruby>が",
+      {
+       "en": "my / our — literary 私の. Still alive in 我が国 (our country), 我が社 (our company), 我が家 (our home)",
+       "ja": "私の／私たちの — 文語の「私の」。我が国・我が社・我が家 は今も現役",
+       "zh": "我的／我們的 — 文言的 私の。現在仍用於 我が国（我國）、我が社（本公司）、我が家（我家）"
+      }
+     ],
+     [
+      "<ruby>生涯<rt>しょうがい</rt></ruby>",
+      {
+       "en": "(whole) life, lifetime",
+       "ja": "一生・生きている間ずっと",
+       "zh": "一生"
+      }
+     ],
+     [
+      "に",
+      {
+       "en": "in",
+       "ja": "〜に",
+       "zh": "在"
+      }
+     ],
+     [
+      "<ruby>一片<rt>いっぺん</rt></ruby>の",
+      {
+       "en": "one piece of / a single",
+       "ja": "ひとかけらの",
+       "zh": "一片、一絲"
+      }
+     ],
+     [
+      "<ruby>悔<rt>く</rt></ruby>い",
+      {
+       "en": "regret (noun of 悔やむ)",
+       "ja": "後悔（悔やむ の名詞）",
+       "zh": "悔恨（悔やむ 的名詞）"
+      }
+     ],
+     [
+      "なし",
+      {
+       "en": "= ない. Literary \"there is none\"",
+       "ja": "= ない。文語の「存在しない」",
+       "zh": "= ない。文言的「沒有」"
+      }
+     ]
+    ],
+    "note": null
+   },
+   "grammar": {
+    "h": {
+     "en": "Grammar: 〜なし — the sign-board negative",
+     "ja": "文法: 〜なし — 看板スタイルの否定",
+     "zh": "文法：〜なし — 招牌式的否定"
+    },
+    "gp": [
+     {
+      "en": "<b>Noun + なし</b> = \"no ~ / without ~\". Short, hard, final. Used on signs, reports, and by dying warlords.",
+      "ja": "<b>名詞 + なし</b> = 「〜がない／〜なしで」。短く、硬く、きっぱり。看板・報告書・そして死にゆく覇者が使う。",
+      "zh": "<b>名詞 + なし</b> = 「沒有～／不用～」。短、硬、斬釘截鐵。招牌、報告，還有臨死的霸主都用。"
+     }
+    ],
+    "p": null,
+    "examples": [
+     {
+      "jp": "<ruby>問題<rt>もんだい</rt></ruby>なし",
+      "m": {
+       "en": "no problem (report / text)",
+       "ja": "問題ない（報告・メッセージ）",
+       "zh": "沒問題（報告／訊息）"
+      },
+      "say": "問題なし"
+     },
+     {
+      "jp": "<ruby>異常<rt>いじょう</rt></ruby>なし",
+      "m": {
+       "en": "nothing abnormal (health check)",
+       "ja": "異常がない（健康診断）",
+       "zh": "無異常（健康檢查）"
+      },
+      "say": "異常なし"
+     },
+     {
+      "jp": "<ruby>予約<rt>よやく</rt></ruby>なしで<ruby>入<rt>はい</rt></ruby>れます",
+      "m": {
+       "en": "you can enter without a reservation",
+       "ja": "予約しなくても入れる",
+       "zh": "不用預約也能進"
+      },
+      "say": "予約なしで入れます"
+     },
+     {
+      "jp": "<ruby>我<rt>わ</rt></ruby>が<ruby>家<rt>や</rt></ruby>へようこそ",
+      "m": {
+       "en": "welcome to our home",
+       "ja": "私の家へようこそ",
+       "zh": "歡迎來我家"
+      },
+      "say": "我が家へようこそ"
+     }
+    ],
+    "note": {
+     "en": "<b>Tokyo use:</b> a restaurant sign 「予約なしOK」. A LINE reply from your boss: 「問題なし」= all good.",
+     "ja": "<b>東京での使い方:</b> 店の看板「予約なしOK」。上司からのLINE「問題なし」= 大丈夫。",
+     "zh": "<b>東京實用：</b>餐廳招牌「予約なしOK」。上司的LINE回覆「問題なし」＝一切OK。"
+    }
+   },
+   "drill": {
+    "h": {
+     "en": "Drill",
+     "ja": "ドリル",
+     "zh": "練習"
+    },
+    "list": [
+     {
+      "jp": "テストの<ruby>結果<rt>けっか</rt></ruby>は？ — {{blank:問題なし}}！",
+      "m": {
+       "en": "No problem!",
+       "ja": "問題ない！",
+       "zh": "沒問題！"
+      }
+     },
+     {
+      "jp": "<ruby>健康診断<rt>けんこうしんだん</rt></ruby>：{{blank:異常なし}}。",
+      "m": {
+       "en": "Health check: nothing abnormal.",
+       "ja": "健康診断: 異常なし。",
+       "zh": "健康檢查：無異常。"
+      }
+     },
+     {
+      "jp": "ようこそ、{{blank:我が家}}へ！",
+      "m": {
+       "en": "Welcome to our home! (我が + 家)",
+       "ja": "私たちの家へようこそ！（我が + 家）",
+       "zh": "歡迎來我家！（我が + 家）"
+      }
+     }
+    ]
+   },
+   "yourturn": {
+    "label": {
+     "en": "Your turn — one thing you do not regret",
+     "ja": "あなたの番 — 後悔していないこと1つ",
+     "zh": "換你 — 說一件你不後悔的事"
+    },
+    "ph": {
+     "en": "我が ＿＿ に一片の悔いなし！  e.g. 我が東京生活に一片の悔いなし！",
+     "ja": "我が ＿＿ に一片の悔いなし！  例: 我が東京生活に一片の悔いなし！",
+     "zh": "我が ＿＿ に一片の悔いなし！  例：我が東京生活に一片の悔いなし！"
+    },
+    "store": "yt-l2",
+    "hint": {
+     "en": "Raise your fist when you say it.",
+     "ja": "言うときは拳を上げて。",
+     "zh": "說的時候把拳頭舉起來。"
+    }
+   },
+   "done": {
+    "en": "<input class=\"doneBox\" type=\"checkbox\"/> Line 2 done",
+    "ja": "<input class=\"doneBox\" type=\"checkbox\"/> Line 2 done",
+    "zh": "<input class=\"doneBox\" type=\"checkbox\"/> Line 2 done"
+   },
+   "nav": "悔いなし"
+  },
+  {
+   "id": "l3",
+   "num": "3",
+   "title": "退かぬ！媚びぬ！省みぬ！",
+   "tag": {
+    "cls": "n2",
+    "text": {
+     "en": "N2 · classical 〜ぬ",
+     "ja": "N2 · 古典の 〜ぬ",
+     "zh": "N2 · 古典的 〜ぬ"
+    }
+   },
+   "who": {
+    "en": "Souther, the Holy Emperor · three vows in three words",
+    "ja": "聖帝サウザー · 三語で三つの誓い",
+    "zh": "聖帝沙烏剎 · 三個字，三個誓言"
+   },
+   "line": {
+    "jp": "<ruby>退<rt>ひ</rt></ruby>かぬ！<ruby>媚<rt>こ</rt></ruby>びぬ！<ruby>省<rt>かえり</rt></ruby>みぬ！",
+    "romaji": "Hikanu! Kobinu! Kaeriminu!",
+    "en": {
+     "en": "\"I <i>won't retreat</i>! I <i>won't flatter</i>! I <i>won't look back</i>!\"",
+     "ja": "「<i>退かない</i>！<i>媚びない</i>！<i>省みない</i>！」",
+     "zh": "「<i>不退</i>！<i>不媚</i>！<i>不悔</i>！」"
+    },
+    "say": "退かぬ！媚びぬ！省みぬ！"
+   },
+   "clip": {
+    "video": "3XY6neA11eI",
+    "scene": [
+     0.0,
+     13.0
+    ],
+    "line": [
+     4.6,
+     9.3
+    ],
+    "src": {
+     "en": "Clip: <a href=\"https://youtu.be/3XY6neA11eI\" rel=\"noopener\" target=\"_blank\">YouTube</a>",
+     "ja": "Clip: <a href=\"https://youtu.be/3XY6neA11eI\" rel=\"noopener\" target=\"_blank\">YouTube</a>",
+     "zh": "Clip: <a href=\"https://youtu.be/3XY6neA11eI\" rel=\"noopener\" target=\"_blank\">YouTube</a>"
+    }
+   },
+   "words": {
+    "h": {
+     "en": "Word by word",
+     "ja": "一語ずつ",
+     "zh": "逐字解釋"
+    },
+    "head": [
+     {
+      "en": "verb",
+      "ja": "動詞",
+      "zh": "動詞"
+     },
+     {
+      "en": "meaning",
+      "ja": "意味",
+      "zh": "意思"
+     },
+     {
+      "en": "〜ぬ form",
+      "ja": "〜ぬ の形",
+      "zh": "〜ぬ 形"
+     }
+    ],
+    "rows": [
+     [
+      "<ruby>退<rt>ひ</rt></ruby>く",
+      {
+       "en": "to step back, retreat",
+       "ja": "後ろへ下がる・退却する",
+       "zh": "後退、退縮"
+      },
+      {
+       "en": "退か<b>ぬ</b>",
+       "ja": "退か<b>ぬ</b>",
+       "zh": "退か<b>ぬ</b>"
+      }
+     ],
+     [
+      "<ruby>媚<rt>こ</rt></ruby>びる",
+      {
+       "en": "to flatter, suck up to",
+       "ja": "こびる・ごまをする",
+       "zh": "諂媚、拍馬屁"
+      },
+      {
+       "en": "媚び<b>ぬ</b>",
+       "ja": "媚び<b>ぬ</b>",
+       "zh": "媚び<b>ぬ</b>"
+      }
+     ],
+     [
+      "<ruby>省<rt>かえり</rt></ruby>みる",
+      {
+       "en": "to look back on, reflect",
+       "ja": "振り返る・反省する",
+       "zh": "回顧、反省"
+      },
+      {
+       "en": "省み<b>ぬ</b>",
+       "ja": "省み<b>ぬ</b>",
+       "zh": "省み<b>ぬ</b>"
+      }
+     ]
+    ],
+    "note": {
+     "en": "Rule: take the <b>ない-stem</b> and swap ない → ぬ. 行かない → 行か<b>ぬ</b>. する → せ<b>ぬ</b>. 来る → 来(こ)<b>ぬ</b>.",
+     "ja": "ルール: <b>ない形の語幹</b>に ない → ぬ を付け替える。行かない → 行か<b>ぬ</b>。する → せ<b>ぬ</b>。来る → 来(こ)<b>ぬ</b>。",
+     "zh": "規則：取<b>ない形的詞幹</b>，把 ない 換成 ぬ。行かない → 行か<b>ぬ</b>。する → せ<b>ぬ</b>。来る → 来(こ)<b>ぬ</b>。"
+    }
+   },
+   "grammar": {
+    "h": {
+     "en": "Grammar: 〜ぬ = old-school ない",
+     "ja": "文法: 〜ぬ = 昔ながらの ない",
+     "zh": "文法：〜ぬ = 老派的 ない"
+    },
+    "gp": [
+     {
+      "en": "<b>〜ぬ</b> is the classical negative. It sounds samurai, dramatic, absolute. You will hear it in anime, proverbs, and a few fixed phrases everyone still uses.",
+      "ja": "<b>〜ぬ</b>は古典の否定。侍っぽく、劇的で、絶対的。アニメ・ことわざ・今も皆が使う決まり文句に残っている。",
+      "zh": "<b>〜ぬ</b>是古典否定。聽起來像武士、很戲劇化、很絕對。動畫、諺語，還有幾個大家仍在用的固定說法裡都聽得到。"
+     }
+    ],
+    "p": null,
+    "examples": [
+     {
+      "jp": "<ruby>知<rt>し</rt></ruby>らぬ<ruby>間<rt>ま</rt></ruby>に",
+      "m": {
+       "en": "before I knew it",
+       "ja": "気づかないうちに",
+       "zh": "不知不覺間"
+      },
+      "say": "知らぬ間に"
+     },
+     {
+      "jp": "<ruby>見知<rt>みし</rt></ruby>らぬ<ruby>人<rt>ひと</rt></ruby>",
+      "m": {
+       "en": "a stranger (an un-known person)",
+       "ja": "知らない人",
+       "zh": "陌生人"
+      },
+      "say": "見知らぬ人"
+     },
+     {
+      "jp": "<ruby>思<rt>おも</rt></ruby>わぬプレゼント",
+      "m": {
+       "en": "an unexpected present",
+       "ja": "予想外のプレゼント",
+       "zh": "意想不到的禮物"
+      },
+      "say": "思わぬプレゼント"
+     },
+     {
+      "jp": "<ruby>言<rt>い</rt></ruby>わぬが<ruby>花<rt>はな</rt></ruby>",
+      "m": {
+       "en": "some things are better left unsaid (proverb)",
+       "ja": "言わない方がいいこともある（ことわざ）",
+       "zh": "有些事不說更好（諺語）"
+      },
+      "say": "言わぬが花"
+     }
+    ],
+    "note": {
+     "en": "<b>Tokyo use:</b> 見知らぬ人 shows up in news and station announcements. 知らぬ間に is everyday speech.",
+     "ja": "<b>東京での使い方:</b> 見知らぬ人 はニュースや駅のアナウンスに。知らぬ間に は日常会話。",
+     "zh": "<b>東京實用：</b>見知らぬ人 會出現在新聞和車站廣播；知らぬ間に 是日常口語。"
+    }
+   },
+   "drill": {
+    "h": {
+     "en": "Drill — convert to 〜ぬ",
+     "ja": "ドリル — 〜ぬ に変える",
+     "zh": "練習 — 改成 〜ぬ"
+    },
+    "list": [
+     {
+      "jp": "<ruby>行<rt>い</rt></ruby>かない → {{blank:行かぬ}}",
+      "m": {
+       "en": "won't go",
+       "ja": "行かない",
+       "zh": "不去"
+      }
+     },
+     {
+      "jp": "<ruby>食<rt>た</rt></ruby>べない → {{blank:食べぬ}}",
+      "m": {
+       "en": "won't eat",
+       "ja": "食べない",
+       "zh": "不吃"
+      }
+     },
+     {
+      "jp": "<ruby>諦<rt>あきら</rt></ruby>めない → {{blank:諦めぬ}}",
+      "m": {
+       "en": "won't give up",
+       "ja": "諦めない",
+       "zh": "不放棄"
+      }
+     },
+     {
+      "jp": "しない → {{blank:せぬ}}",
+      "m": {
+       "en": "won't do (irregular!)",
+       "ja": "しない（不規則！）",
+       "zh": "不做（不規則！）"
+      }
+     }
+    ]
+   },
+   "yourturn": {
+    "label": {
+     "en": "Your turn — your three vows for learning Japanese, Souther style",
+     "ja": "あなたの番 — 日本語学習の三つの誓い、サウザー風に",
+     "zh": "換你 — 用沙烏剎的方式寫學日文的三個誓言"
+    },
+    "ph": {
+     "en": "＿＿ぬ！＿＿ぬ！＿＿ぬ！  e.g. 寝坊せぬ！諦めぬ！サボらぬ！",
+     "ja": "＿＿ぬ！＿＿ぬ！＿＿ぬ！  例: 寝坊せぬ！諦めぬ！サボらぬ！",
+     "zh": "＿＿ぬ！＿＿ぬ！＿＿ぬ！  例：寝坊せぬ！諦めぬ！サボらぬ！"
+    },
+    "store": "yt-l3",
+    "hint": {
+     "en": "Shout it. Souther would.",
+     "ja": "叫んで。サウザーならそうする。",
+     "zh": "用吼的。沙烏剎會這樣。"
+    }
+   },
+   "done": {
+    "en": "<input class=\"doneBox\" type=\"checkbox\"/> Line 3 done",
+    "ja": "<input class=\"doneBox\" type=\"checkbox\"/> Line 3 done",
+    "zh": "<input class=\"doneBox\" type=\"checkbox\"/> Line 3 done"
+   },
+   "nav": "〜ぬ"
+  },
+  {
+   "id": "l4",
+   "num": "4",
+   "title": "汚物は消毒だ〜！",
+   "tag": {
+    "cls": "n3",
+    "text": {
+     "en": "N3 · XはYだ / 〜べきだ",
+     "ja": "N3 · XはYだ / 〜べきだ",
+     "zh": "N3 · XはYだ / 〜べきだ"
+    }
+   },
+   "who": {
+    "en": "a mohawk with a flamethrower · the most quoted mob line in Japan",
+    "ja": "火炎放射器のモヒカン · 日本で一番引用される雑魚のセリフ",
+    "zh": "拿火焰噴射器的莫霍克頭 · 日本最常被引用的小嘍囉台詞"
+   },
+   "line": {
+    "jp": "<ruby>汚物<rt>おぶつ</rt></ruby>は<ruby>消毒<rt>しょうどく</rt></ruby>だ〜！",
+    "romaji": "Obutsu wa shōdoku da!",
+    "en": {
+     "en": "\"Filth <i>gets disinfected</i>!\"",
+     "ja": "「汚物は<i>消毒する</i>ものだ！」",
+     "zh": "「垃圾就是<i>要消毒</i>！」"
+    },
+    "say": "汚物は消毒だ！"
+   },
+   "clip": {
+    "video": "5N9ibJg2T18",
+    "scene": [
+     0.0,
+     22.0
+    ],
+    "line": [
+     2.7,
+     5.3
+    ],
+    "src": {
+     "en": "Clip: <a href=\"https://youtu.be/5N9ibJg2T18\" rel=\"noopener\" target=\"_blank\">YouTube</a> · at 0:19 Kenshiro answers: 汚物は消毒<b>すべき</b>だな",
+     "ja": "Clip: <a href=\"https://youtu.be/5N9ibJg2T18\" rel=\"noopener\" target=\"_blank\">YouTube</a> · at 0:19 Kenshiro answers: 汚物は消毒<b>すべき</b>だな",
+     "zh": "Clip: <a href=\"https://youtu.be/5N9ibJg2T18\" rel=\"noopener\" target=\"_blank\">YouTube</a> · at 0:19 Kenshiro answers: 汚物は消毒<b>すべき</b>だな"
+    }
+   },
+   "words": {
+    "h": {
+     "en": "Word by word",
+     "ja": "一語ずつ",
+     "zh": "逐字解釋"
+    },
+    "head": [
+     {
+      "en": "word",
+      "ja": "語",
+      "zh": "單字"
+     },
+     {
+      "en": "meaning",
+      "ja": "意味",
+      "zh": "意思"
+     }
+    ],
+    "rows": [
+     [
+      "<ruby>汚物<rt>おぶつ</rt></ruby>",
+      {
+       "en": "filth, waste (汚 = dirty, 物 = thing)",
+       "ja": "汚いもの（汚 = きたない、物 = もの）",
+       "zh": "污物、垃圾（汚 = 髒，物 = 東西）"
+      }
+     ],
+     [
+      "は",
+      {
+       "en": "topic",
+       "ja": "主題",
+       "zh": "主題"
+      }
+     ],
+     [
+      "<ruby>消毒<rt>しょうどく</rt></ruby>",
+      {
+       "en": "disinfection — a する-noun (消毒する)",
+       "ja": "消毒 — する動詞になる名詞（消毒する）",
+       "zh": "消毒 — 可接 する 的名詞（消毒する）"
+      }
+     ],
+     [
+      "だ",
+      {
+       "en": "\"is\" — plain copula, said with full confidence",
+       "ja": "「だ」— 普通形の断定。自信満々に言う",
+       "zh": "「是」— 普通體的斷定，說得斬釘截鐵"
+      }
+     ]
+    ],
+    "note": {
+     "en": "Literally \"filth is disinfection\". Japanese lets a noun sentence mean <b>\"X → the treatment is Y\"</b>. Very common in speech.",
+     "ja": "直訳は「汚物は消毒である」。日本語の名詞文は<b>「Xには→Yという処置」</b>の意味になれる。話し言葉でとても多い。",
+     "zh": "直譯是「污物是消毒」。日文的名詞句可以表示<b>「對X → 處置是Y」</b>。口語裡非常常見。"
+    }
+   },
+   "grammar": {
+    "h": {
+     "en": "Grammar: XはYだ！ as a battle cry · 〜べきだ = should",
+     "ja": "文法: 掛け声としての XはYだ！ · 〜べきだ = すべき",
+     "zh": "文法：當戰吼用的 XはYだ！ · 〜べきだ = 應該"
+    },
+    "gp": [
+     {
+      "en": "<b>Noun は Noun だ！</b> — announce the plan. <b>Verb(dictionary) + べきだ</b> — \"should / ought to\". Kenshiro replies「消毒<b>すべき</b>だな」(する → すべき).",
+      "ja": "<b>名詞 は 名詞 だ！</b> — 予定を宣言する。<b>動詞（辞書形）+ べきだ</b> — 「〜すべき」。ケンシロウは「消毒<b>すべき</b>だな」と返す（する → すべき）。",
+      "zh": "<b>名詞 は 名詞 だ！</b> — 宣告計畫。<b>動詞（辭書形）+ べきだ</b> — 「應該」。拳四郎回「消毒<b>すべき</b>だな」（する → すべき）。"
+     }
+    ],
+    "p": null,
+    "examples": [
+     {
+      "jp": "<ruby>今日<rt>きょう</rt></ruby>は<ruby>焼肉<rt>やきにく</rt></ruby>だ！",
+      "m": {
+       "en": "Today = yakiniku!",
+       "ja": "今日は焼肉！",
+       "zh": "今天就是燒肉！"
+      },
+      "say": "今日は焼肉だ！"
+     },
+     {
+      "jp": "<ruby>週末<rt>しゅうまつ</rt></ruby>は<ruby>大掃除<rt>おおそうじ</rt></ruby>だ！",
+      "m": {
+       "en": "The weekend = big cleaning!",
+       "ja": "週末は大掃除！",
+       "zh": "週末就是大掃除！"
+      },
+      "say": "週末は大掃除だ！"
+     },
+     {
+      "jp": "<ruby>手<rt>て</rt></ruby>は<ruby>消毒<rt>しょうどく</rt></ruby>すべきだ",
+      "m": {
+       "en": "you should disinfect your hands",
+       "ja": "手は消毒したほうがいい",
+       "zh": "手應該消毒"
+      },
+      "say": "手は消毒すべきだ"
+     },
+     {
+      "jp": "<ruby>早<rt>はや</rt></ruby>く<ruby>寝<rt>ね</rt></ruby>るべきだ",
+      "m": {
+       "en": "you should go to bed early",
+       "ja": "早く寝たほうがいい",
+       "zh": "應該早點睡"
+      },
+      "say": "早く寝るべきだ"
+     }
+    ],
+    "note": {
+     "en": "<b>Tokyo use:</b> 消毒 is on every shop entrance bottle since 2020: 「<ruby>手指<rt>しゅし</rt></ruby>消毒にご協力ください」.",
+     "ja": "<b>東京での使い方:</b> 2020年以降、店の入口のボトルに必ず: 「<ruby>手指<rt>しゅし</rt></ruby>消毒にご協力ください」。",
+     "zh": "<b>東京實用：</b>2020年以後每家店門口的瓶子上都有：「<ruby>手指<rt>しゅし</rt></ruby>消毒にご協力ください」。"
+    }
+   },
+   "drill": {
+    "h": {
+     "en": "Drill",
+     "ja": "ドリル",
+     "zh": "練習"
+    },
+    "list": [
+     {
+      "jp": "<ruby>風邪<rt>かぜ</rt></ruby>を<ruby>引<rt>ひ</rt></ruby>いたら、{{blank:休むべきだ}}。",
+      "m": {
+       "en": "If you catch a cold, you should rest. (休む)",
+       "ja": "風邪を引いたら休むべきだ。（休む）",
+       "zh": "感冒了就應該休息。（休む）"
+      }
+     },
+     {
+      "jp": "<ruby>傷口<rt>きずぐち</rt></ruby>は{{blank:消毒}}してください。",
+      "m": {
+       "en": "Please disinfect the wound.",
+       "ja": "傷口を消毒してください。",
+       "zh": "請把傷口消毒。"
+      }
+     },
+     {
+      "jp": "<ruby>今夜<rt>こんや</rt></ruby>は{{blank:ラーメンだ}}！",
+      "m": {
+       "en": "Tonight = ramen!",
+       "ja": "今夜はラーメン！",
+       "zh": "今晚就是拉麵！"
+      }
+     }
+    ]
+   },
+   "yourturn": {
+    "label": {
+     "en": "Your turn — announce your Sunday like a 世紀末 mob",
+     "ja": "あなたの番 — 世紀末の雑魚みたいに日曜日を宣言",
+     "zh": "換你 — 像世紀末的小嘍囉一樣宣告你的星期天"
+    },
+    "ph": {
+     "en": "＿＿は＿＿だ〜！  e.g. 日曜日は日本語だ〜！",
+     "ja": "＿＿は＿＿だ〜！  例: 日曜日は日本語だ〜！",
+     "zh": "＿＿は＿＿だ〜！  例：日曜日は日本語だ〜！"
+    },
+    "store": "yt-l4",
+    "hint": {
+     "en": "Extend the だ〜 for full effect.",
+     "ja": "だ〜 を伸ばすと効果倍増。",
+     "zh": "把 だ〜 拉長，效果加倍。"
+    }
+   },
+   "done": {
+    "en": "<input class=\"doneBox\" type=\"checkbox\"/> Line 4 done",
+    "ja": "<input class=\"doneBox\" type=\"checkbox\"/> Line 4 done",
+    "zh": "<input class=\"doneBox\" type=\"checkbox\"/> Line 4 done"
+   },
+   "nav": "消毒だ"
+  },
+  {
+   "id": "l5",
+   "num": "5",
+   "title": "愛や情けは悲しみしか生まぬ",
+   "tag": {
+    "cls": "n3",
+    "text": {
+     "en": "N3 · 〜しか〜ない / 〜み",
+     "ja": "N3 · 〜しか〜ない / 〜み",
+     "zh": "N3 · 〜しか〜ない / 〜み"
+    }
+   },
+   "who": {
+    "en": "Souther, dying · the question that made a generation cry",
+    "ja": "死にゆくサウザー · 一世代を泣かせた問い",
+    "zh": "臨死的沙烏剎 · 讓一整個世代落淚的問題"
+   },
+   "line": {
+    "jp": "<ruby>愛<rt>あい</rt></ruby>や<ruby>情<rt>なさ</rt></ruby>けは<ruby>悲<rt>かな</rt></ruby>しみしか<ruby>生<rt>う</rt></ruby>まぬ。",
+    "romaji": "Ai ya nasake wa kanashimi shika umanu.",
+    "en": {
+     "en": "\"Love and mercy give birth to <i>nothing but sorrow</i>.\"",
+     "ja": "「愛や情けは<i>悲しみしか</i>生まない」",
+     "zh": "「愛與情，<i>只會生出悲傷</i>。」"
+    },
+    "say": "愛や情けは、悲しみしか生まぬ。"
+   },
+   "clip": {
+    "video": "N9HM0PLlFSw",
+    "scene": [
+     32.0,
+     58.5
+    ],
+    "line": [
+     38.3,
+     43.2
+    ],
+    "src": {
+     "en": "Clip: <a href=\"https://youtu.be/N9HM0PLlFSw?t=32\" rel=\"noopener\" target=\"_blank\">YouTube</a> · then: なのに、なぜ悲しみを背負おうとする？ — \"so why do you choose to carry sorrow?\"",
+     "ja": "Clip: <a href=\"https://youtu.be/N9HM0PLlFSw?t=32\" rel=\"noopener\" target=\"_blank\">YouTube</a> · then: なのに、なぜ悲しみを背負おうとする？ — \"so why do you choose to carry sorrow?\"",
+     "zh": "Clip: <a href=\"https://youtu.be/N9HM0PLlFSw?t=32\" rel=\"noopener\" target=\"_blank\">YouTube</a> · then: なのに、なぜ悲しみを背負おうとする？ — \"so why do you choose to carry sorrow?\""
+    }
+   },
+   "words": {
+    "h": {
+     "en": "Word by word",
+     "ja": "一語ずつ",
+     "zh": "逐字解釋"
+    },
+    "head": [
+     {
+      "en": "word",
+      "ja": "語",
+      "zh": "單字"
+     },
+     {
+      "en": "meaning",
+      "ja": "意味",
+      "zh": "意思"
+     }
+    ],
+    "rows": [
+     [
+      "<ruby>愛<rt>あい</rt></ruby>",
+      {
+       "en": "love",
+       "ja": "愛",
+       "zh": "愛"
+      }
+     ],
+     [
+      "や",
+      {
+       "en": "\"and (things like)\" — an open list. AやB = A, B, and so on",
+       "ja": "「〜や〜など」— 例をいくつか挙げる助詞。AやB = AやBなど",
+       "zh": "「和～之類」— 舉例式的列舉。AやB = A、B等等"
+      }
+     ],
+     [
+      "<ruby>情<rt>なさ</rt></ruby>け",
+      {
+       "en": "mercy, compassion, human warmth",
+       "ja": "情け・思いやり・人の温かさ",
+       "zh": "情義、憐憫、人情"
+      }
+     ],
+     [
+      "<ruby>悲<rt>かな</rt></ruby>しみ",
+      {
+       "en": "sorrow — noun made from 悲しい",
+       "ja": "悲しみ — 悲しい からできた名詞",
+       "zh": "悲傷 — 由 悲しい 變來的名詞"
+      }
+     ],
+     [
+      "しか 〜 ない",
+      {
+       "en": "only / nothing but (always with a negative)",
+       "ja": "〜だけ（必ず否定と一緒に）",
+       "zh": "只有（一定搭配否定）"
+      }
+     ],
+     [
+      "<ruby>生<rt>う</rt></ruby>まぬ",
+      {
+       "en": "生む (give birth, produce) + ぬ = 生まない",
+       "ja": "生む（産み出す）+ ぬ = 生まない",
+       "zh": "生む（生出、產生）+ ぬ = 生まない"
+      }
+     ]
+    ],
+    "note": null
+   },
+   "grammar": {
+    "h": {
+     "en": "Grammar: 〜しか〜ない · い-adjective → 〜み noun",
+     "ja": "文法: 〜しか〜ない · い形容詞 → 〜み の名詞",
+     "zh": "文法：〜しか〜ない · い形容詞 → 〜み 名詞"
+    },
+    "gp": [
+     {
+      "en": "<b>Noun + しか + negative</b> = only ~, nothing but ~. Feels more \"that's all there is\" than だけ.",
+      "ja": "<b>名詞 + しか + 否定</b> = 〜だけ。だけ より「それしかない」という気持ちが強い。",
+      "zh": "<b>名詞 + しか + 否定</b> = 只有～。比 だけ 更有「就只剩這個」的感覺。"
+     },
+     {
+      "en": "<b>悲しい → 悲しみ</b>, 苦しい → 苦しみ, 楽しい → 楽しみ, 痛い → 痛み. Drop い, add み = the feeling as a noun.",
+      "ja": "<b>悲しい → 悲しみ</b>、苦しい → 苦しみ、楽しい → 楽しみ、痛い → 痛み。い を取って み = 気持ちを名詞に。",
+      "zh": "<b>悲しい → 悲しみ</b>、苦しい → 苦しみ、楽しい → 楽しみ、痛い → 痛み。去掉 い 加 み = 把感覺變名詞。"
+     }
+    ],
+    "p": null,
+    "examples": [
+     {
+      "jp": "<ruby>千円<rt>せんえん</rt></ruby>しかない",
+      "m": {
+       "en": "I only have 1,000 yen",
+       "ja": "千円しか持っていない",
+       "zh": "我只有一千日圓"
+      },
+      "say": "千円しかない"
+     },
+     {
+      "jp": "<ruby>日本語<rt>にほんご</rt></ruby>しか<ruby>話<rt>はな</rt></ruby>せない",
+      "m": {
+       "en": "I can only speak Japanese",
+       "ja": "日本語しか話せない",
+       "zh": "我只會說日文"
+      },
+      "say": "日本語しか話せない"
+     },
+     {
+      "jp": "<ruby>週末<rt>しゅうまつ</rt></ruby>が<ruby>楽<rt>たの</rt></ruby>しみだ",
+      "m": {
+       "en": "I'm looking forward to the weekend",
+       "ja": "週末が楽しみ",
+       "zh": "我很期待週末"
+      },
+      "say": "週末が楽しみだ"
+     }
+    ],
+    "note": {
+     "en": "<b>Tokyo use:</b> 「現金しか使えません」cash only. 「楽しみにしています」= looking forward to it (say this to Yuuki after class).",
+     "ja": "<b>東京での使い方:</b> 「現金しか使えません」= 現金のみ。「楽しみにしています」= 次が楽しみ（レッスン後にYuukiに言ってみて）。",
+     "zh": "<b>東京實用：</b>「現金しか使えません」＝只收現金。「楽しみにしています」＝很期待（下課後對Yuuki說這句）。"
+    }
+   },
+   "drill": {
+    "h": {
+     "en": "Drill",
+     "ja": "ドリル",
+     "zh": "練習"
+    },
+    "list": [
+     {
+      "jp": "<ruby>財布<rt>さいふ</rt></ruby>に<ruby>百円<rt>ひゃくえん</rt></ruby>{{blank:しか}}ない。",
+      "m": {
+       "en": "I only have 100 yen in my wallet.",
+       "ja": "財布に百円しかない。",
+       "zh": "錢包裡只有一百日圓。"
+      }
+     },
+     {
+      "jp": "この<ruby>店<rt>みせ</rt></ruby>は<ruby>現金<rt>げんきん</rt></ruby>{{blank:しか使えない}}。",
+      "m": {
+       "en": "This shop only takes cash. (使う, potential negative)",
+       "ja": "この店は現金しか使えない。（使う・可能形の否定）",
+       "zh": "這家店只收現金。（使う，可能形否定）"
+      }
+     },
+     {
+      "jp": "<ruby>楽<rt>たの</rt></ruby>しい → {{blank:楽しみ}}",
+      "m": {
+       "en": "fun → something to look forward to",
+       "ja": "楽しい → 楽しみなこと",
+       "zh": "開心 → 期待的事"
+      }
+     },
+     {
+      "jp": "<ruby>苦<rt>くる</rt></ruby>しい → {{blank:苦しみ}}",
+      "m": {
+       "en": "painful → suffering",
+       "ja": "苦しい → 苦しみ",
+       "zh": "痛苦 → 苦難"
+      }
+     }
+    ]
+   },
+   "yourturn": {
+    "label": {
+     "en": "Your turn — answer Souther. What else does love produce?",
+     "ja": "あなたの番 — サウザーに答える。愛は他に何を生む？",
+     "zh": "換你 — 回答沙烏剎。愛還會生出什麼？"
+    },
+    "ph": {
+     "en": "悲しみだけではない。愛は ＿＿ も生む。  e.g. 愛は勇気も生む。",
+     "ja": "悲しみだけではない。愛は ＿＿ も生む。  例: 愛は勇気も生む。",
+     "zh": "悲しみだけではない。愛は ＿＿ も生む。  例：愛は勇気も生む。"
+    },
+    "store": "yt-l5",
+    "hint": {
+     "en": "Kenshiro's answer is in the next line.",
+     "ja": "ケンシロウの答えは次のセリフに。",
+     "zh": "拳四郎的答案在下一句。"
+    }
+   },
+   "done": {
+    "en": "<input class=\"doneBox\" type=\"checkbox\"/> Line 5 done",
+    "ja": "<input class=\"doneBox\" type=\"checkbox\"/> Line 5 done",
+    "zh": "<input class=\"doneBox\" type=\"checkbox\"/> Line 5 done"
+   },
+   "nav": "しか〜ぬ"
+  },
+  {
+   "id": "l6",
+   "num": "6",
+   "title": "悲しい男よ。誰よりも愛深きゆえに。",
+   "tag": {
+    "cls": "n1",
+    "text": {
+     "en": "N3 誰よりも · N1 ゆえに",
+     "ja": "N3 誰よりも · N1 ゆえに",
+     "zh": "N3 誰よりも · N1 ゆえに"
+    }
+   },
+   "who": {
+    "en": "Kenshiro · the eulogy for Souther",
+    "ja": "ケンシロウ · サウザーへの弔辞",
+    "zh": "拳四郎 · 給沙烏剎的悼詞"
+   },
+   "line": {
+    "jp": "<ruby>悲<rt>かな</rt></ruby>しい<ruby>男<rt>おとこ</rt></ruby>よ。<ruby>誰<rt>だれ</rt></ruby>よりも<ruby>愛深<rt>あいふか</rt></ruby>きゆえに。",
+    "romaji": "Kanashii otoko yo. Dare yori mo ai-fukaki yue ni.",
+    "en": {
+     "en": "\"A sad man… <i>because</i> he loved <i>more deeply than anyone</i>.\"",
+     "ja": "「悲しい男よ… <i>誰よりも</i>愛が深かった<i>がゆえに</i>」",
+     "zh": "「悲哀的男人……<i>因為</i>他愛得<i>比誰都深</i>。」"
+    },
+    "say": "悲しい男よ。誰よりも愛深きゆえに。"
+   },
+   "clip": {
+    "video": "N9HM0PLlFSw",
+    "scene": [
+     160.0,
+     173.0
+    ],
+    "line": [
+     167.4,
+     173.0
+    ],
+    "src": {
+     "en": "Clip: <a href=\"https://youtu.be/N9HM0PLlFSw?t=160\" rel=\"noopener\" target=\"_blank\">YouTube</a> (same video as line 5, the ending)",
+     "ja": "Clip: <a href=\"https://youtu.be/N9HM0PLlFSw?t=160\" rel=\"noopener\" target=\"_blank\">YouTube</a> (same video as line 5, the ending)",
+     "zh": "Clip: <a href=\"https://youtu.be/N9HM0PLlFSw?t=160\" rel=\"noopener\" target=\"_blank\">YouTube</a> (same video as line 5, the ending)"
+    }
+   },
+   "words": {
+    "h": {
+     "en": "Word by word",
+     "ja": "一語ずつ",
+     "zh": "逐字解釋"
+    },
+    "head": [
+     {
+      "en": "word",
+      "ja": "語",
+      "zh": "單字"
+     },
+     {
+      "en": "meaning",
+      "ja": "意味",
+      "zh": "意思"
+     }
+    ],
+    "rows": [
+     [
+      "<ruby>悲<rt>かな</rt></ruby>しい<ruby>男<rt>おとこ</rt></ruby>よ",
+      {
+       "en": "\"O sad man\" — よ after a noun = calling out, poetic",
+       "ja": "「悲しい男よ」— 名詞のあとの よ = 呼びかけ、詩的",
+       "zh": "「悲哀的男人啊」— 名詞後的 よ = 呼喚，詩意"
+      }
+     ],
+     [
+      "<ruby>誰<rt>だれ</rt></ruby>よりも",
+      {
+       "en": "more than anyone (誰 + より + も)",
+       "ja": "誰と比べても（誰 + より + も）",
+       "zh": "比任何人都（誰 + より + も）"
+      }
+     ],
+     [
+      "<ruby>愛深<rt>あいふか</rt></ruby>き",
+      {
+       "en": "愛が深い \"deep in love\" — 深<b>き</b> is the classical form of 深<b>い</b> before a noun",
+       "ja": "愛が深い — 名詞の前の 深<b>き</b> は 深<b>い</b> の古典形",
+       "zh": "愛が深い「愛得深」— 名詞前的 深<b>き</b> 是 深<b>い</b> 的古典形"
+      }
+     ],
+     [
+      "ゆえに",
+      {
+       "en": "because of that / therefore — formal, written, dramatic",
+       "ja": "それゆえ・だから — 硬い書き言葉、劇的",
+       "zh": "因此、所以 — 正式、書面、戲劇化"
+      }
+     ]
+    ],
+    "note": null
+   },
+   "grammar": {
+    "h": {
+     "en": "Grammar: 誰よりも (N3) · 〜ゆえに (N1) · 〜き adjectives",
+     "ja": "文法: 誰よりも（N3）· 〜ゆえに（N1）· 〜き の形容詞",
+     "zh": "文法：誰よりも（N3）· 〜ゆえに（N1）· 〜き 形容詞"
+    },
+    "gp": [
+     {
+      "en": "<b>誰よりも + adjective</b> = more than anyone. Swap 誰 for 何 (anything), どこ (anywhere).",
+      "ja": "<b>誰よりも + 形容詞</b> = 誰と比べても。誰 を 何・どこ に替えても使える。",
+      "zh": "<b>誰よりも + 形容詞</b> = 比誰都。把 誰 換成 何（任何東西）、どこ（任何地方）也行。"
+     },
+     {
+      "en": "<b>Noun / plain form + ゆえに</b> = because of. You will meet it in essays, news, and every villain speech. Everyday speech uses から / ので.",
+      "ja": "<b>名詞／普通形 + ゆえに</b> = 〜のために。論文・ニュース・悪役の演説で出会う。日常会話は から／ので。",
+      "zh": "<b>名詞／普通形 + ゆえに</b> = 因為。論文、新聞、每個反派的演說都會遇到。日常口語用 から／ので。"
+     }
+    ],
+    "p": null,
+    "examples": [
+     {
+      "jp": "<ruby>母<rt>はは</rt></ruby>は<ruby>誰<rt>だれ</rt></ruby>よりも<ruby>優<rt>やさ</rt></ruby>しい",
+      "m": {
+       "en": "my mother is kinder than anyone",
+       "ja": "母は誰よりも優しい",
+       "zh": "我媽比誰都溫柔"
+      },
+      "say": "母は誰よりも優しい"
+     },
+     {
+      "jp": "<ruby>経験不足<rt>けいけんぶそく</rt></ruby>ゆえに<ruby>失敗<rt>しっぱい</rt></ruby>した",
+      "m": {
+       "en": "I failed because of lack of experience",
+       "ja": "経験不足のせいで失敗した",
+       "zh": "因為經驗不足而失敗"
+      },
+      "say": "経験不足ゆえに失敗した"
+     },
+     {
+      "jp": "<ruby>古<rt>ふる</rt></ruby>き<ruby>良<rt>よ</rt></ruby>き<ruby>時代<rt>じだい</rt></ruby>",
+      "m": {
+       "en": "the good old days (古い→古き, 良い→良き)",
+       "ja": "古き良き時代（古い→古き、良い→良き）",
+       "zh": "美好的舊時光（古い→古き，良い→良き）"
+      },
+      "say": "古き良き時代"
+     }
+    ],
+    "note": {
+     "en": "<b>Tokyo use:</b> 「若き日の〜」(in his younger days) on museum captions; 「〜ゆえ」on formal notices.",
+     "ja": "<b>東京での使い方:</b> 博物館のキャプションの「若き日の〜」、お知らせの「〜ゆえ」。",
+     "zh": "<b>東京實用：</b>博物館說明牌上的「若き日の〜」（年輕時的～）；正式公告裡的「〜ゆえ」。"
+    }
+   },
+   "drill": {
+    "h": {
+     "en": "Drill",
+     "ja": "ドリル",
+     "zh": "練習"
+    },
+    "list": [
+     {
+      "jp": "<ruby>彼<rt>かれ</rt></ruby>は{{blank:誰よりも}}<ruby>速<rt>はや</rt></ruby>い。",
+      "m": {
+       "en": "He is faster than anyone.",
+       "ja": "彼は誰よりも速い。",
+       "zh": "他比誰都快。"
+      }
+     },
+     {
+      "jp": "<ruby>準備不足<rt>じゅんびぶそく</rt></ruby>{{blank:ゆえに}}ミスをした。",
+      "m": {
+       "en": "I made a mistake because of poor preparation.",
+       "ja": "準備不足のせいでミスをした。",
+       "zh": "因為準備不足而出錯。"
+      }
+     },
+     {
+      "jp": "<ruby>若<rt>わか</rt></ruby>い → {{blank:若き}}<ruby>日<rt>ひ</rt></ruby>",
+      "m": {
+       "en": "young → younger days (classical)",
+       "ja": "若い → 若き日（古典形）",
+       "zh": "年輕 → 年輕時（古典形）"
+      }
+     }
+    ]
+   },
+   "yourturn": {
+    "label": {
+     "en": "Your turn — praise a friend, Kenshiro style",
+     "ja": "あなたの番 — 友だちをケンシロウ風に称える",
+     "zh": "換你 — 用拳四郎的方式稱讚朋友"
+    },
+    "ph": {
+     "en": "＿＿よ。誰よりも ＿＿ ゆえに。  e.g. 優しい友よ。誰よりも心広きゆえに。",
+     "ja": "＿＿よ。誰よりも ＿＿ ゆえに。  例: 優しい友よ。誰よりも心広きゆえに。",
+     "zh": "＿＿よ。誰よりも ＿＿ ゆえに。  例：優しい友よ。誰よりも心広きゆえに。"
+    },
+    "store": "yt-l6",
+    "hint": {
+     "en": "Look at the sky while you say it.",
+     "ja": "空を見上げながら言って。",
+     "zh": "說的時候抬頭看天。"
+    }
+   },
+   "done": {
+    "en": "<input class=\"doneBox\" type=\"checkbox\"/> Line 6 done",
+    "ja": "<input class=\"doneBox\" type=\"checkbox\"/> Line 6 done",
+    "zh": "<input class=\"doneBox\" type=\"checkbox\"/> Line 6 done"
+   },
+   "nav": "ゆえに"
+  }
+ ],
+ "quiz": [
+  {
+   "q": {
+    "en": "「お前はもう死んでいる」— What does もう〜ている express here?",
+    "ja": "「お前はもう死んでいる」— What does もう〜ている express here?",
+    "zh": "「お前はもう死んでいる」— What does もう〜ている express here?"
+   },
+   "o": [
+    {
+     "en": "an action in progress",
+     "ja": "進行中の動作",
+     "zh": "進行中的動作"
+    },
+    {
+     "en": "a state after a change",
+     "ja": "変化のあとの状態",
+     "zh": "變化之後的狀態"
+    },
+    {
+     "en": "a future plan",
+     "ja": "未来の予定",
+     "zh": "未來的計畫"
+    }
+   ],
+   "a": 1,
+   "why": {
+    "en": "死ぬ is a change verb. 死んでいる = the change is complete; he is in the \"dead\" state.",
+    "ja": "死ぬ は変化動詞。死んでいる = 変化が完了して「死んだ」状態にある。",
+    "zh": "死ぬ 是變化動詞。死んでいる = 變化已完成，處於「死」的狀態。"
+   }
+  },
+  {
+   "q": {
+    "en": "Your boss asks if there is a problem. The Raoh-style short answer is…",
+    "ja": "Your boss asks if there is a problem. The Raoh-style short answer is…",
+    "zh": "Your boss asks if there is a problem. The Raoh-style short answer is…"
+   },
+   "o": [
+    {
+     "en": "問題なし",
+     "ja": "問題なし",
+     "zh": "問題なし"
+    },
+    {
+     "en": "問題ぬ",
+     "ja": "問題ぬ",
+     "zh": "問題ぬ"
+    },
+    {
+     "en": "問題しか",
+     "ja": "問題しか",
+     "zh": "問題しか"
+    }
+   ],
+   "a": 0,
+   "why": {
+    "en": "Noun + なし = \"no ~\". 問題なし is real office Japanese.",
+    "ja": "名詞 + なし = 「〜がない」。問題なし は本物のオフィス日本語。",
+    "zh": "名詞 + なし = 「沒有～」。問題なし 是真正的辦公室日文。"
+   }
+  },
+  {
+   "q": {
+    "en": "Convert 諦めない to Souther style.",
+    "ja": "Convert 諦めない to Souther style.",
+    "zh": "Convert 諦めない to Souther style."
+   },
+   "o": [
+    {
+     "en": "諦めぬ",
+     "ja": "諦めぬ",
+     "zh": "諦めぬ"
+    },
+    {
+     "en": "諦めなし",
+     "ja": "諦めなし",
+     "zh": "諦めなし"
+    },
+    {
+     "en": "諦めき",
+     "ja": "諦めき",
+     "zh": "諦めき"
+    }
+   ],
+   "a": 0,
+   "why": {
+    "en": "ない-stem 諦め + ぬ.",
+    "ja": "ない形の語幹 諦め + ぬ。",
+    "zh": "ない形詞幹 諦め + ぬ。"
+   }
+  },
+  {
+   "q": {
+    "en": "Which is the irregular one: しない → ?",
+    "ja": "Which is the irregular one: しない → ?",
+    "zh": "Which is the irregular one: しない → ?"
+   },
+   "o": [
+    {
+     "en": "しぬ",
+     "ja": "しぬ",
+     "zh": "しぬ"
+    },
+    {
+     "en": "せぬ",
+     "ja": "せぬ",
+     "zh": "せぬ"
+    },
+    {
+     "en": "すぬ",
+     "ja": "すぬ",
+     "zh": "すぬ"
+    }
+   ],
+   "a": 1,
+   "why": {
+    "en": "する → せぬ. (しぬ would be… a different verb.)",
+    "ja": "する → せぬ。（しぬ だと…別の動詞になる）",
+    "zh": "する → せぬ。（しぬ 會變成……另一個動詞。）"
+   }
+  },
+  {
+   "q": {
+    "en": "「手は消毒＿＿だ」= you should disinfect your hands.",
+    "ja": "「手は消毒＿＿だ」= you should disinfect your hands.",
+    "zh": "「手は消毒＿＿だ」= you should disinfect your hands."
+   },
+   "o": [
+    {
+     "en": "するべき",
+     "ja": "するべき",
+     "zh": "するべき"
+    },
+    {
+     "en": "すべき",
+     "ja": "すべき",
+     "zh": "すべき"
+    },
+    {
+     "en": "both are fine",
+     "ja": "どちらもOK",
+     "zh": "兩個都可以"
+    }
+   ],
+   "a": 2,
+   "why": {
+    "en": "すべき is the classic form, するべき is also accepted in modern Japanese.",
+    "ja": "すべき が古典的な形。するべき も現代日本語では認められている。",
+    "zh": "すべき 是古典形，するべき 在現代日文也被接受。"
+   }
+  },
+  {
+   "q": {
+    "en": "「現金しか使えません」means…",
+    "ja": "「現金しか使えません」means…",
+    "zh": "「現金しか使えません」means…"
+   },
+   "o": [
+    {
+     "en": "cash is not accepted",
+     "ja": "現金は使えない",
+     "zh": "不收現金"
+    },
+    {
+     "en": "only cash is accepted",
+     "ja": "現金だけ使える",
+     "zh": "只收現金"
+    },
+    {
+     "en": "cash is preferred",
+     "ja": "現金が望ましい",
+     "zh": "建議付現金"
+    }
+   ],
+   "a": 1,
+   "why": {
+    "en": "しか + negative = only. The negative is grammar, not meaning.",
+    "ja": "しか + 否定 = 〜だけ。否定は文法上の形で、意味は否定ではない。",
+    "zh": "しか + 否定 = 只有。否定只是文法形式，不是意思。"
+   }
+  },
+  {
+   "q": {
+    "en": "楽しい → noun?",
+    "ja": "楽しい → noun?",
+    "zh": "楽しい → noun?"
+   },
+   "o": [
+    {
+     "en": "楽しみ",
+     "ja": "楽しみ",
+     "zh": "楽しみ"
+    },
+    {
+     "en": "楽しさ",
+     "ja": "楽しさ",
+     "zh": "楽しさ"
+    },
+    {
+     "en": "both exist",
+     "ja": "どちらもある",
+     "zh": "兩個都存在"
+    }
+   ],
+   "a": 2,
+   "why": {
+    "en": "楽しみ = something to look forward to; 楽しさ = the fun-ness. Both real.",
+    "ja": "楽しみ = 楽しみにしていること。楽しさ = 楽しい度合い。どちらも実在。",
+    "zh": "楽しみ = 期待的事；楽しさ = 快樂的程度。兩個都是真的。"
+   }
+  },
+  {
+   "q": {
+    "en": "「誰よりも愛深きゆえに」— ゆえに is closest to…",
+    "ja": "「誰よりも愛深きゆえに」— ゆえに is closest to…",
+    "zh": "「誰よりも愛深きゆえに」— ゆえに is closest to…"
+   },
+   "o": [
+    {
+     "en": "から / ので (because)",
+     "ja": "から／ので（理由）",
+     "zh": "から／ので（因為）"
+    },
+    {
+     "en": "けど (but)",
+     "ja": "けど（逆接）",
+     "zh": "けど（但是）"
+    },
+    {
+     "en": "とき (when)",
+     "ja": "とき（時）",
+     "zh": "とき（當…時）"
+    }
+   ],
+   "a": 0,
+   "why": {
+    "en": "ゆえに = formal \"because of / therefore\". Everyday speech: から, ので.",
+    "ja": "ゆえに = 硬い「〜のために／だから」。日常会話では から・ので。",
+    "zh": "ゆえに = 正式的「因為／因此」。日常口語用 から、ので。"
+   }
+  }
+ ],
+ "homework": {
+  "h": {
+   "en": "Homework (send in italki chat)",
+   "ja": "宿題（italkiのチャットで送る）",
+   "zh": "作業（用italki聊天室傳）"
+  },
+  "list": [
+   {
+    "en": "Record yourself saying all six lines — one take, Kenshiro face optional.",
+    "ja": "6本のセリフを全部言って録音 — 一発撮り、ケンシロウ顔は任意。",
+    "zh": "把六句台詞全部說一遍並錄音 — 一鏡到底，拳四郎的表情可選。"
+   },
+   {
+    "en": "Write your own three vows with 〜ぬ.",
+    "ja": "〜ぬ で自分の三つの誓いを書く。",
+    "zh": "用 〜ぬ 寫下你自己的三個誓言。"
+   },
+   {
+    "en": "Use「もう〜ている」once in real life this week and report back.",
+    "ja": "今週、実生活で「もう〜ている」を1回使って報告する。",
+    "zh": "這週在現實生活中用一次「もう〜ている」，然後回報。"
+   }
+  ]
+ },
+ "cheat": {
+  "h": {
+   "en": "Cheat sheet",
+   "ja": "早見表",
+   "zh": "速查表"
+  },
+  "rows": [
+   [
+    "もう〜ている",
+    {
+     "en": "already in that state",
+     "ja": "もうその状態にある",
+     "zh": "已經處於那個狀態"
+    }
+   ],
+   [
+    "〜なし / 我が",
+    {
+     "en": "no ~ (sign style) / my (literary)",
+     "ja": "〜がない（看板風）／私の（文語）",
+     "zh": "沒有～（招牌式）／我的（文言）"
+    }
+   ],
+   [
+    "〜ぬ",
+    {
+     "en": "= 〜ない (classical)",
+     "ja": "= 〜ない（古典）",
+     "zh": "= 〜ない（古典）"
+    }
+   ],
+   [
+    "XはYだ / 〜べきだ",
+    {
+     "en": "X → Y! / should",
+     "ja": "Xは→Y！／〜すべき",
+     "zh": "X就是→Y！／應該"
+    }
+   ],
+   [
+    "〜しか〜ない / 〜み",
+    {
+     "en": "only / feeling as a noun",
+     "ja": "〜だけ／気持ちの名詞化",
+     "zh": "只有／感覺變名詞"
+    }
+   ],
+   [
+    "誰よりも / 〜ゆえに / 〜き",
+    {
+     "en": "more than anyone / because / classical adj",
+     "ja": "誰よりも／〜のために／古典の形容詞",
+     "zh": "比誰都／因為／古典形容詞"
+    }
+   ]
+  ]
+ },
+ "footer": [
+  {
+   "en": "Made by <a href=\"https://www.italki.com/teacher/4732907\" rel=\"noopener\" target=\"_blank\">Yuuki@Anime Sensei</a> for Stephen's trial lesson.",
+   "ja": "Made by <a href=\"https://www.italki.com/teacher/4732907\" rel=\"noopener\" target=\"_blank\">Yuuki@Anime Sensei</a> for Stephen's trial lesson.",
+   "zh": "Made by <a href=\"https://www.italki.com/teacher/4732907\" rel=\"noopener\" target=\"_blank\">Yuuki@Anime Sensei</a> for Stephen's trial lesson."
+  },
+  {
+   "en": "Anime tours in Tokyo: <a href=\"https://tour.animesenseijp.com/\" rel=\"noopener\" target=\"_blank\">tour.animesenseijp.com</a>",
+   "ja": "Anime tours in Tokyo: <a href=\"https://tour.animesenseijp.com/\" rel=\"noopener\" target=\"_blank\">tour.animesenseijp.com</a>",
+   "zh": "Anime tours in Tokyo: <a href=\"https://tour.animesenseijp.com/\" rel=\"noopener\" target=\"_blank\">tour.animesenseijp.com</a>"
+  },
+  {
+   "en": "Clips are embedded from YouTube and belong to their owners. 北斗の拳 © 武論尊・原哲夫／コアミックス.",
+   "ja": "動画はYouTubeからの埋め込みで、権利は各所有者にあります。北斗の拳 © 武論尊・原哲夫／コアミックス",
+   "zh": "影片片段嵌入自YouTube，版權屬原作者所有。北斗の拳 © 武論尊・原哲夫／コアミックス"
+  }
+ ],
+ "quiz_head": {
+  "h2": {
+   "en": "Final quiz: are you already dead?",
+   "ja": "最終クイズ: お前はもう死んでいるか？",
+   "zh": "總測驗：你已經死了嗎？"
+  },
+  "who": {
+   "en": "8 questions. Tap an answer. No secret pressure points involved.",
+   "ja": "8問。答えをタップ。秘孔は突きません。",
+   "zh": "8題。點選答案。不會點你的穴。"
+  }
+ },
+ "score_msgs": {
+  "perfect": " — 一片の悔いなし！",
+  "good": " — 退かぬ！",
+  "bad": " — お前はもう…"
+ },
+ "toggles": {
+  "ruby": {
+   "en": "あ Furigana <span class=\"k\">on</span>",
+   "ja": "あ ふりがな <span class=\"k\">on</span>",
+   "zh": "あ 假名注音 <span class=\"k\">on</span>"
+  },
+  "romaji": {
+   "en": "Aa Romaji <span class=\"k\">on</span>",
+   "ja": "Aa ローマ字 <span class=\"k\">on</span>",
+   "zh": "Aa 羅馬拼音 <span class=\"k\">on</span>"
+  }
+ },
+ "kind": "lines",
+ "root": true,
+ "langs": [
+  {
+   "code": "en",
+   "label": "EN"
+  },
+  {
+   "code": "ja",
+   "label": "日本語"
+  },
+  {
+   "code": "zh",
+   "label": "中文"
+  }
+ ],
+ "html_lang": {
+  "en": "en",
+  "ja": "ja",
+  "zh": "zh-Hant"
+ },
+ "tts_lang": "ja-JP",
+ "done_all_msg": "我が生涯に一片の悔いなし！ All six done.",
+ "ui": {
+  "clip": {
+   "en": "Clip",
+   "ja": "クリップ",
+   "zh": "片段"
+  },
+  "scene": {
+   "en": "▶ Scene",
+   "ja": "▶ シーン",
+   "zh": "▶ 場景"
+  },
+  "loop": {
+   "en": "🔁 Loop the line",
+   "ja": "🔁 セリフをループ",
+   "zh": "🔁 循環台詞"
+  },
+  "slow": {
+   "en": "🐢 0.75×",
+   "ja": "🐢 0.75倍",
+   "zh": "🐢 0.75倍速"
+  },
+  "listen": {
+   "en": "Listen &amp; repeat",
+   "ja": "聞いて真似る",
+   "zh": "聽並跟讀"
+  },
+  "normal": {
+   "en": "🔊 Normal",
+   "ja": "🔊 ふつう",
+   "zh": "🔊 正常"
+  },
+  "slowsay": {
+   "en": "🐢 Slow",
+   "ja": "🐢 ゆっくり",
+   "zh": "🐢 慢速"
+  },
+  "record": {
+   "en": "Record yourself",
+   "ja": "自分の声を録音",
+   "zh": "錄下自己"
+  },
+  "rec": {
+   "en": "🎙 Record",
+   "ja": "🎙 録音",
+   "zh": "🎙 錄音"
+  },
+  "readmine": {
+   "en": "🔊 Read mine",
+   "ja": "🔊 自分の文を読ませる",
+   "zh": "🔊 讀我寫的"
+  }
+ }
+}
