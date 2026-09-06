@@ -1,0 +1,406 @@
+{
+ "slug": "frieren", "kind": "lines", "root": false, "out": "frieren",
+ "langs": [{"code": "en", "label": "EN"}, {"code": "ja", "label": "日本語"}],
+ "html_lang": {"en": "en", "ja": "ja"}, "tts_lang": "ja-JP",
+ "brand": "フリーレン<b>×</b>日本語",
+ "title_tag": "葬送のフリーレンで日本語 — Learn Japanese with Frieren",
+ "description": "Lesson material by Yuuki@Anime Sensei for Rolando. Six lines from Frieren: Beyond Journey's End, with looped clips, listen-and-repeat, grammar breakdowns and drills (JLPT N2–N1).",
+ "done_all_msg": "全部終わった。……たった6本だけどね。",
+ "score_msgs": {"perfect": " — 一級魔法使い", "good": " — 二級魔法使い", "bad": " — もっと知ろうと思っている"},
+ "toggles": {"ruby": {"en": "あ Furigana <span class=\"k\">on</span>", "ja": "あ ふりがな <span class=\"k\">on</span>"}, "romaji": {"en": "Aa Romaji <span class=\"k\">on</span>", "ja": "Aa ローマ字 <span class=\"k\">on</span>"}},
+ "ui": {
+  "clip": {"en": "Clip", "ja": "クリップ"}, "scene": {"en": "▶ Scene", "ja": "▶ シーン"}, "loop": {"en": "🔁 Loop the line", "ja": "🔁 セリフをループ"}, "loop_stop": {"en": "⏸ Stop loop", "ja": "⏸ ループ停止"}, "loop_hint": {"en": "Tap again to stop.", "ja": "もう一度押すと止まる。"}, "slow": {"en": "🐢 0.75×", "ja": "🐢 0.75倍"},
+  "listen": {"en": "Listen &amp; repeat", "ja": "聞いて真似る"}, "normal": {"en": "🔊 Normal", "ja": "🔊 ふつう"}, "slowsay": {"en": "🐢 Slow", "ja": "🐢 ゆっくり"},
+  "record": {"en": "Record yourself", "ja": "自分の声を録音"}, "rec": {"en": "🎙 Record", "ja": "🎙 録音"}, "readmine": {"en": "🔊 Read mine", "ja": "🔊 自分の文を読ませる"}
+ },
+ "nav": {"warmup": {"en": "Warm-up", "ja": "準備運動"}, "quiz": {"en": "Quiz", "ja": "クイズ"}, "song": {"en": "", "ja": ""}, "song_href": ""},
+ "hero": {
+  "eyebrow": {"en": "Lesson material · JLPT N2–N1 · with Yuuki@Anime Sensei", "ja": "レッスン教材 · JLPT N2–N1 · Yuuki@Anime Sensei"},
+  "h1": "フリーレンで<br>日本語を学ぶ",
+  "h1_en": {"en": "Learn Japanese with Frieren: Beyond Journey's End", "ja": "静かなセリフ6本で、上級の文法を体に入れる"},
+  "lead": {"en": "Six quiet lines. Each one hides a grammar point you already half-know and never quite use: のに, 〜ようと思う, 〜てもらう, 〜ないように, 〜たって. Watch the clip, loop the line, say it like Frieren, then make it yours.", "ja": "静かなセリフ6本。それぞれに、知ってはいるのに使いこなせていない文法がひとつ隠れています（のに・〜ようと思う・〜てもらう・〜ないように・〜たって）。クリップを観て、セリフだけをループして、フリーレンになりきって言って、自分の文にする。"},
+  "meta": [{"en": "👤 Student: <b>Rolando</b>", "ja": "👤 生徒: <b>Rolando</b>"}, {"en": "📍 San Diego ↔ Tokyo", "ja": "📍 サンディエゴ ↔ 東京"}, {"en": "🧝 Level: advanced · natural speech", "ja": "🧝 レベル: 上級 · 自然な話し言葉"}],
+  "howto": [
+   {"t": {"en": "Watch", "ja": "観る"}, "d": {"en": "Play the scene once.", "ja": "まずシーンを1回再生。"}},
+   {"t": {"en": "Loop", "ja": "ループ"}, "d": {"en": "Loop just the line. Slow it down.", "ja": "セリフだけを繰り返す。速度も落とせる。"}},
+   {"t": {"en": "Repeat", "ja": "真似る"}, "d": {"en": "Shadow it out loud. Record yourself.", "ja": "声に出してシャドーイング。自分の声を録音。"}},
+   {"t": {"en": "Grammar", "ja": "文法"}, "d": {"en": "See the pattern hiding inside.", "ja": "セリフに隠れたパターンを見る。"}},
+   {"t": {"en": "Drill", "ja": "ドリル"}, "d": {"en": "Tap the blanks, then write your own.", "ja": "空欄をタップ。最後は自分の文を書く。"}}
+  ]
+ },
+ "warmup": {
+  "h2": {"en": "Warm-up: the world after the Demon King", "ja": "ウォームアップ: 魔王を倒したあとの世界"},
+  "tag": {"en": "vocab", "ja": "語彙"},
+  "who": {"en": "Six words the show uses in every episode.", "ja": "毎話出てくる6語。"},
+  "chips": [
+   {"jp": "<ruby>葬送<rt>そうそう</rt></ruby>", "e": {"en": "sending off the dead · the title: Frieren the funeral-goer / the slayer", "ja": "死者を送ること。タイトルの「葬送」は仲間を見送るフリーレン＝魔族を葬る者、の二重の意味"}, "say": "葬送"},
+   {"jp": "<ruby>寿命<rt>じゅみょう</rt></ruby>", "e": {"en": "lifespan — the word the whole story turns on", "ja": "いのちの長さ。この物語の中心の語"}, "say": "寿命"},
+   {"jp": "<ruby>勇者<rt>ゆうしゃ</rt></ruby>", "e": {"en": "hero (Himmel)", "ja": "ヒンメルのこと"}, "say": "勇者"},
+   {"jp": "<ruby>魔法使<rt>まほうつか</rt></ruby>い", "e": {"en": "mage (Frieren, Fern)", "ja": "フリーレン、フェルン"}, "say": "魔法使い"},
+   {"jp": "<ruby>弟子<rt>でし</rt></ruby>", "e": {"en": "apprentice, student of a master", "ja": "師匠につく人。フェルンはフリーレンの弟子"}, "say": "弟子"},
+   {"jp": "<ruby>旅立<rt>たびだ</rt></ruby>つ", "e": {"en": "to set out on a journey (旅 + 立つ)", "ja": "旅に出る（旅 + 立つ）"}, "say": "旅立つ"}
+  ],
+  "cols": [
+   {
+    "h": {"en": "Sentence endings: 語尾 is character", "ja": "語尾トリック: 語尾でキャラが決まる"},
+    "p": {"en": "The mini-anime \"語尾が変なふうになる魔法\" (a spell that changes your sentence endings) is a whole lesson in one joke: Japanese shows <b>who you are</b> in the last syllable. Frieren's flat だよ／だね, Fern's polite でございます, Himmel's confident さ／だろう, Heiter's old-man ぞい.", "ja": "ミニアニメ「語尾が変なふうになる魔法」はそれ自体が教材。日本語は<b>語尾で人物が分かる</b>。フリーレンの平坦な「だよ／だね」、フェルンの「でございます」、ヒンメルの「さ／だろう」、ハイターの「ぞい」。"},
+    "examples": [
+     {"jp": "楽しみだにゃん", "m": {"en": "cat ending (にゃん) — cute, mocking", "ja": "猫語尾。かわいい／ふざけ"}, "say": "楽しみだにゃん"},
+     {"jp": "恥ずかしいぞい", "m": {"en": "old-man ending (ぞい)", "ja": "老人語尾"}, "say": "恥ずかしいぞい"},
+     {"jp": "何がいいんだっちゃ", "m": {"en": "Sendai-dialect ending (だっちゃ)", "ja": "仙台弁の語尾（ラムちゃんでも有名）"}, "say": "何がいいんだっちゃ"}
+    ]
+   },
+   {
+    "h": {"en": "Official mini-anime: 考えていることを言ってしまう魔法", "ja": "公式ミニアニメ: 考えていることを言ってしまう魔法"},
+    "p": {"en": "Warm your ears up with the official short. Listen for <b>〜てしまう</b> (\"end up saying\") and <b>壊しかねない</b> (\"could well destroy\").", "ja": "公式ショートで耳慣らし。<b>〜てしまう</b>（言ってしまう）と<b>壊しかねない</b>（壊す恐れがある）を聞き取って。"},
+    "examples": [],
+    "video": "X3Y9esqDspY"
+   }
+  ]
+ },
+ "lines": [
+  {
+   "id": "l1", "num": "1", "nav": "のに",
+   "title": "なんでもっと知ろうと思わなかったんだろう",
+   "tag": {"cls": "n2", "text": {"en": "N3→N2 · のに / 〜ようと思う / 〜んだろう", "ja": "N3→N2 · のに / 〜ようと思う / 〜んだろう"}},
+   "who": {"en": "Frieren, at Himmel's grave · episode 1 · the line the whole series grows out of", "ja": "フリーレン、ヒンメルの墓の前で · 第1話 · 物語すべての出発点"},
+   "line": {
+    "jp": "<ruby>人間<rt>にんげん</rt></ruby>の<ruby>寿命<rt>じゅみょう</rt></ruby>は<ruby>短<rt>みじか</rt></ruby>いってわかっていたのに、なんでもっと<ruby>知<rt>し</rt></ruby>ろうと<ruby>思<rt>おも</rt></ruby>わなかったんだろう。",
+    "romaji": "Ningen no jumyō wa mijikai tte wakatte ita noni, nande motto shirō to omowanakatta n darō.",
+    "en": {"en": "\"I knew human lives were short. <i>So why</i> didn't I try to know him better?\"", "ja": "「人間の寿命が短いと分かっていた<i>のに</i>、なぜもっと知ろうとしなかったのか」— 自分への問い"},
+    "say": "人間の寿命は短いってわかっていたのに、なんでもっと知ろうと思わなかったんだろう。"
+   },
+   "clip": {"video": "tR8YH0G67Rk", "scene": [0, 20.0], "line": [0, 10.9], "src": {"en": "Clip: <a href=\"https://youtu.be/tR8YH0G67Rk\" target=\"_blank\" rel=\"noopener\">official trailer (TOHO animation)</a> · then Himmel: 君のこの先の人生は…長いものになるんだろうね", "ja": "クリップ: <a href=\"https://youtu.be/tR8YH0G67Rk\" target=\"_blank\" rel=\"noopener\">公式本PV（TOHO animation）</a> · 続けてヒンメル「君のこの先の人生は…長いものになるんだろうね」"}},
+   "words": {
+    "h": {"en": "Word by word", "ja": "一語ずつ"},
+    "head": [{"en": "word", "ja": "語"}, {"en": "meaning", "ja": "意味"}],
+    "rows": [
+     ["<ruby>寿命<rt>じゅみょう</rt></ruby>", {"en": "lifespan", "ja": "いのちの長さ"}],
+     ["〜って", {"en": "casual と (quotation): 短いって = that (it) is short", "ja": "引用の「と」の話し言葉。短いって = 短いと"}],
+     ["わかっていた", {"en": "わかる + ていた = I had understood (a state that was already there)", "ja": "わかる + ていた = すでに分かっている状態だった"}],
+     ["のに", {"en": "even though — with regret", "ja": "〜だったのに。後悔の逆接"}],
+     ["なんで", {"en": "why (casual どうして)", "ja": "どうして の話し言葉"}],
+     ["<ruby>知<rt>し</rt></ruby>ろうと<ruby>思<rt>おも</rt></ruby>う", {"en": "volitional 知ろう + と思う = try to / decide to know", "ja": "意向形 知ろう + と思う = 知ろうとする、知る気になる"}],
+     ["〜なかったんだろう", {"en": "didn't I… I wonder (asking yourself)", "ja": "〜なかったのだろう。自分への問い"}]
+    ],
+    "note": null
+   },
+   "grammar": {
+    "h": {"en": "Grammar: 〜のに — the regret hinge", "ja": "文法: 〜のに — 後悔のつなぎ"},
+    "gp": [
+     {"en": "<b>A のに、B</b> = \"even though A, B\" — and B is <i>not</i> what should have followed. Use it when you feel the gap: knew it, still didn't act.", "ja": "<b>A のに、B</b> = Aなのに、B。Bは「本来そうなるはずではない」こと。分かっていたのに、しなかった。そのズレを言う時に使う。"},
+     {"en": "<b>Volitional + と思う</b> = decide to / try to. 知ろうと思う is not \"I think I know\"; it is \"I make up my mind to find out\".", "ja": "<b>意向形 + と思う</b> = 〜しようという気持ちになる。知ろうと思う は「知っていると思う」ではなく「知る気になる」。"}
+    ],
+    "p": {"en": "Frieren spent ten years with Himmel and only starts to want to know him after he is gone. Grammar carries the regret: のに (the gap) + 〜ようと思わなかった (the choice she never made) + んだろう (she is asking herself, not us).", "ja": "10年一緒に旅をして、いなくなってから初めて「知りたい」と思う。後悔は文法が運んでいる: のに（ズレ）＋ 〜ようと思わなかった（しなかった選択）＋ んだろう（他人でなく自分に聞いている）。"},
+    "examples": [
+     {"jp": "<ruby>時間<rt>じかん</rt></ruby>があったのに、<ruby>連絡<rt>れんらく</rt></ruby>しなかった。", "m": {"en": "I had time, and still didn't get in touch", "ja": "時間はあった。でも連絡しなかった"}, "say": "時間があったのに、連絡しなかった。"},
+     {"jp": "<ruby>日本<rt>にほん</rt></ruby>に<ruby>住<rt>す</rt></ruby>もうと<ruby>思<rt>おも</rt></ruby>っている。", "m": {"en": "I'm thinking of moving to Japan (decision forming)", "ja": "住む方向で気持ちが固まりつつある"}, "say": "日本に住もうと思っている。"},
+     {"jp": "なんで<ruby>言<rt>い</rt></ruby>わなかったんだろう。", "m": {"en": "why didn't I say it… (to yourself)", "ja": "自分への問い"}, "say": "なんで言わなかったんだろう。"}
+    ],
+    "note": {"en": "<b>Natural speech:</b> in conversation, 〜のに at the end of a sentence with nothing after it is a full sigh: 「せっかく来たのに…」= \"and I came all this way…\"", "ja": "<b>会話では:</b> 文末の「〜のに…」だけで、ため息になる。「せっかく来たのに…」"}
+   },
+   "drill": {
+    "h": {"en": "Drill", "ja": "ドリル"},
+    "list": [
+     {"jp": "<ruby>勉強<rt>べんきょう</rt></ruby>した{{blank:のに}}、<ruby>試験<rt>しけん</rt></ruby>に<ruby>落<rt>お</rt></ruby>ちた。", "m": {"en": "I studied, and still failed the exam.", "ja": "勉強した。それでも落ちた"}},
+     {"jp": "<ruby>来年<rt>らいねん</rt></ruby>、<ruby>麻雀<rt>マージャン</rt></ruby>の<ruby>大会<rt>たいかい</rt></ruby>に{{blank:出ようと思っている}}。", "m": {"en": "I'm planning to enter a mahjong tournament next year. (出る, volitional + と思っている)", "ja": "出る → 出よう + と思っている"}},
+     {"jp": "なんであの<ruby>時<rt>とき</rt></ruby>、<ruby>写真<rt>しゃしん</rt></ruby>を{{blank:撮らなかったんだろう}}。", "m": {"en": "Why didn't I take a photo back then… (撮る)", "ja": "撮る → 撮らなかったんだろう"}}
+    ]
+   },
+   "yourturn": {"label": {"en": "Your turn — one small regret, Frieren style", "ja": "あなたの番 — 小さな後悔をひとつ、フリーレン風に"}, "ph": {"en": "＿＿のに、なんで＿＿なかったんだろう。  e.g. 東京にいたのに、なんで大喜に行かなかったんだろう。", "ja": "＿＿のに、なんで＿＿なかったんだろう。  例: 東京にいたのに、なんで大喜に行かなかったんだろう。"}, "store": "fr-l1", "hint": {"en": "Say it flat, like Frieren. No drama.", "ja": "フリーレンみたいに平坦に。感情は入れない。"}},
+   "done": {"en": "Line 1 done", "ja": "セリフ1 完了"}
+  },
+  {
+   "id": "l2", "num": "2", "nav": "〜てもらう",
+   "title": "生きているということは覚えていてもらうことだ",
+   "tag": {"cls": "n2", "text": {"en": "N2 · 〜ということは〜ことだ / 〜てもらう", "ja": "N2 · 〜ということは〜ことだ / 〜てもらう"}},
+   "who": {"en": "Himmel · what being alive means, in one sentence", "ja": "ヒンメル · 「生きている」の定義を一文で"},
+   "line": {
+    "jp": "<ruby>人間<rt>にんげん</rt></ruby>には<ruby>寿命<rt>じゅみょう</rt></ruby>がある。<ruby>生<rt>い</rt></ruby>きているということは、<ruby>覚<rt>おぼ</rt></ruby>えていてもらうことだ。",
+    "romaji": "Ningen ni wa jumyō ga aru. Ikite iru to iu koto wa, oboete ite morau koto da.",
+    "en": {"en": "\"Humans have a lifespan. Being alive <i>means being remembered</i> by someone.\"", "ja": "「人間には寿命がある。生きているということは、誰かに<i>覚えていてもらう</i>ことだ」"},
+    "say": "人間には寿命がある。生きているということは、覚えていてもらうことだ。"
+   },
+   "clip": {"video": "4jC3owE69iM", "scene": [58.7, 72.1], "line": [63.3, 69.6], "src": {"en": "Clip: <a href=\"https://youtu.be/4jC3owE69iM?t=58\" target=\"_blank\" rel=\"noopener\">official \"Journey's memory\" video (TOHO animation)</a> · full version in ep. 2: 誰かに知ってもらって、覚えていてもらうことだ", "ja": "クリップ: <a href=\"https://youtu.be/4jC3owE69iM?t=58\" target=\"_blank\" rel=\"noopener\">公式「旅の記憶」スペシャルビデオ</a> · 本編第2話では「誰かに知ってもらって、覚えていてもらうことだ」"}},
+   "words": {
+    "h": {"en": "Word by word", "ja": "一語ずつ"},
+    "head": [{"en": "word", "ja": "語"}, {"en": "meaning", "ja": "意味"}],
+    "rows": [
+     ["〜には〜がある", {"en": "X has Y (as a property): humans have a lifespan", "ja": "Xには Yがある = Xの性質としてYを持つ"}],
+     ["〜ということは", {"en": "\"the thing called ~\" — turns a clause into a topic to define", "ja": "「〜というもの」を主題にして定義する"}],
+     ["<ruby>覚<rt>おぼ</rt></ruby>えている", {"en": "to remember (state)", "ja": "覚えた状態が続いている"}],
+     ["〜ていてもらう", {"en": "ている + もらう = have someone keep doing it for you: be remembered", "ja": "ている + もらう = 誰かにその状態を続けてもらう＝覚えていてもらう"}],
+     ["〜ことだ", {"en": "\"is (the act of) ~\" — closes a definition", "ja": "定義の締め。〜とは〜ことだ"}]
+    ],
+    "note": null
+   },
+   "grammar": {
+    "h": {"en": "Grammar: defining things · 〜てもらう as receiving", "ja": "文法: 定義の型 · 受け取る〜てもらう"},
+    "gp": [
+     {"en": "<b>X ということは Y ことだ</b> = \"X means Y\". The advanced way to define, explain, or philosophize. Pair it with 〜とは for written style.", "ja": "<b>X ということは Y ことだ</b> = XとはYだ。定義・説明・哲学の型。書き言葉なら「Xとは Yことだ」。"},
+     {"en": "<b>Verb-て + もらう</b> = someone does it and <i>you</i> benefit. 覚えていてもらう: they keep remembering; you receive that. English has no verb for this; Japanese cannot say it without one.", "ja": "<b>動詞て形 + もらう</b> = 相手の行為を自分が受け取る。覚えていてもらう = 相手が覚え続けてくれる、それを自分が受ける。英語には無い視点。"}
+    ],
+    "p": null,
+    "examples": [
+     {"jp": "<ruby>旅<rt>たび</rt></ruby>をするということは、<ruby>知<rt>し</rt></ruby>らない<ruby>自分<rt>じぶん</rt></ruby>に<ruby>会<rt>あ</rt></ruby>うことだ。", "m": {"en": "to travel is to meet a self you didn't know", "ja": "定義の型"}, "say": "旅をするということは、知らない自分に会うことだ。"},
+     {"jp": "<ruby>友<rt>とも</rt></ruby>だちに<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>ってもらった。", "m": {"en": "I had a friend take the photo", "ja": "撮る + てもらう"}, "say": "友だちに写真を撮ってもらった。"},
+     {"jp": "<ruby>名前<rt>なまえ</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えていてもらえて、うれしい。", "m": {"en": "I'm glad you remembered my name (〜てもらえて = potential)", "ja": "てもらえる（可能形）＋て"}, "say": "名前を覚えていてもらえて、うれしい。"}
+    ],
+    "note": {"en": "<b>Mahjong club use:</b> 「ルールを教えてもらった」(they taught me) vs 「ルールを教えてあげた」(I taught them). Same verb, opposite direction.", "ja": "<b>麻雀クラブで:</b> 「ルールを教えてもらった」と「教えてあげた」で向きが逆になる。"}
+   },
+   "drill": {
+    "h": {"en": "Drill", "ja": "ドリル"},
+    "list": [
+     {"jp": "<ruby>働<rt>はたら</rt></ruby>く{{blank:ということは}}、<ruby>誰<rt>だれ</rt></ruby>かの<ruby>役<rt>やく</rt></ruby>に<ruby>立<rt>た</rt></ruby>つ{{blank:ことだ}}。", "m": {"en": "To work is to be useful to someone.", "ja": "定義の型"}},
+     {"jp": "<ruby>兄<rt>あに</rt></ruby>にゴルフを{{blank:教えてもらった}}。", "m": {"en": "My brother taught me golf. (教える + てもらう, past)", "ja": "教える → 教えてもらった"}},
+     {"jp": "<ruby>先生<rt>せんせい</rt></ruby>に<ruby>作文<rt>さくぶん</rt></ruby>を{{blank:直してもらう}}。", "m": {"en": "I'll have the teacher correct my essay. (直す)", "ja": "直す → 直してもらう"}}
+    ]
+   },
+   "yourturn": {"label": {"en": "Your turn — define something with 〜ということは〜ことだ", "ja": "あなたの番 — 「〜ということは〜ことだ」で何かを定義する"}, "ph": {"en": "＿＿ということは、＿＿ことだ。  e.g. 麻雀が強いということは、捨て牌をちゃんと見ることだ。", "ja": "＿＿ということは、＿＿ことだ。  例: 麻雀が強いということは、捨て牌をちゃんと見ることだ。"}, "store": "fr-l2", "hint": {"en": "Himmel would say it smiling.", "ja": "ヒンメルなら笑顔で言う。"}},
+   "done": {"en": "Line 2 done", "ja": "セリフ2 完了"}
+  },
+  {
+   "id": "l3", "num": "3", "nav": "〜ないように",
+   "title": "君が未来でひとりぼっちにならないようにするためかな",
+   "tag": {"cls": "n2", "text": {"en": "N2 · 〜ないようにする / 〜ため / 〜かな", "ja": "N2 · 〜ないようにする / 〜ため / 〜かな"}},
+   "who": {"en": "Himmel · why he keeps asking for statues", "ja": "ヒンメル · なぜ像を建ててもらうのか"},
+   "line": {
+    "jp": "<ruby>一番<rt>いちばん</rt></ruby>の<ruby>理由<rt>りゆう</rt></ruby>は、<ruby>君<rt>きみ</rt></ruby>が<ruby>未来<rt>みらい</rt></ruby>でひとりぼっちにならないようにするためかな。",
+    "romaji": "Ichiban no riyū wa, kimi ga mirai de hitoribotchi ni naranai yō ni suru tame kana.",
+    "en": {"en": "\"The biggest reason? <i>So that you won't be alone</i> in the future, I suppose.\"", "ja": "「一番の理由は、君が未来で<i>ひとりぼっちにならないように</i>するため、かな」"},
+    "say": "一番の理由は、君が未来でひとりぼっちにならないようにするためかな。"
+   },
+   "clip": {"video": "3TdAQon7oI4", "scene": [0, 33.0], "line": [15.8, 27.9], "src": {"en": "Clip: <a href=\"https://youtu.be/3TdAQon7oI4\" target=\"_blank\" rel=\"noopener\">YouTube</a> · listen for the joke first: 僕のイケメンぶりを残しておかないと", "ja": "クリップ: <a href=\"https://youtu.be/3TdAQon7oI4\" target=\"_blank\" rel=\"noopener\">YouTube</a> · 直前の冗談「僕のイケメンぶりを残しておかないと」も聞き取って"}},
+   "words": {
+    "h": {"en": "Word by word", "ja": "一語ずつ"},
+    "head": [{"en": "word", "ja": "語"}, {"en": "meaning", "ja": "意味"}],
+    "rows": [
+     ["<ruby>一番<rt>いちばん</rt></ruby>の<ruby>理由<rt>りゆう</rt></ruby>", {"en": "the number-one reason", "ja": "最大の理由"}],
+     ["<ruby>君<rt>きみ</rt></ruby>", {"en": "you — soft, used to someone close or younger", "ja": "親しい相手・目下への「あなた」。ヒンメルの定番"}],
+     ["ひとりぼっち", {"en": "all alone (emotional, not just 一人)", "ja": "孤独な一人。感情のこもった言い方"}],
+     ["〜にならないように", {"en": "so as not to become ~", "ja": "〜という状態にならないために"}],
+     ["〜ようにする", {"en": "make it so that ~; take measures", "ja": "そうなるように手を打つ"}],
+     ["〜ため", {"en": "for the purpose of", "ja": "目的"}],
+     ["〜かな", {"en": "\"…I suppose\" — softens a serious statement", "ja": "断言を和らげる。照れ隠しにも"}]
+    ],
+    "note": {"en": "<b>〜ぶり:</b> イケメンぶり = \"the way I'm handsome\" (noun + ぶり = manner of). Also 久しぶり, 仕事ぶり.", "ja": "<b>〜ぶり:</b> イケメンぶり = イケメンである様子。久しぶり・仕事ぶり も同じ。"}
+   },
+   "grammar": {
+    "h": {"en": "Grammar: 〜ないように — arranging the future", "ja": "文法: 〜ないように — 未来を整える"},
+    "gp": [
+     {"en": "<b>Verb-ない + ように</b> = so that (it) won't. <b>〜ようにする</b> = make sure that / make a habit of. Use it for precautions, habits, and kindness planned in advance.", "ja": "<b>動詞ない形 + ように</b> = 〜しないために。<b>〜ようにする</b> = そうなるように心がける・手を打つ。予防・習慣・先回りの優しさに。"},
+     {"en": "<b>〜かな</b> at the end: Himmel just said something heavy, so he ends with かな to keep it light. That is very Japanese: the bigger the feeling, the softer the ending.", "ja": "<b>文末の〜かな</b>: 重いことを言ったので、かな で軽くする。気持ちが大きいほど語尾はやわらかく。日本語らしい呼吸。"}
+    ],
+    "p": null,
+    "examples": [
+     {"jp": "<ruby>忘<rt>わす</rt></ruby>れないようにメモしておく。", "m": {"en": "I'll write it down so I don't forget", "ja": "忘れない + ように"}, "say": "忘れないようにメモしておく。"},
+     {"jp": "<ruby>毎朝<rt>まいあさ</rt></ruby><ruby>日本語<rt>にほんご</rt></ruby>を<ruby>読<rt>よ</rt></ruby>むようにしている。", "m": {"en": "I make a point of reading Japanese every morning", "ja": "習慣の〜ようにしている"}, "say": "毎朝日本語を読むようにしている。"},
+     {"jp": "たぶん<ruby>来週<rt>らいしゅう</rt></ruby>かな。", "m": {"en": "probably next week, I guess", "ja": "断言を避ける かな"}, "say": "たぶん来週かな。"}
+    ],
+    "note": {"en": "<b>Natural speech:</b> 〜ないようにする often shrinks to 〜ないようにしてる in conversation: 「夜はコーヒー飲まないようにしてる」.", "ja": "<b>会話では:</b> 「夜はコーヒー飲まないようにしてる」のように い が落ちる。"}
+   },
+   "drill": {
+    "h": {"en": "Drill", "ja": "ドリル"},
+    "list": [
+     {"jp": "<ruby>遅刻<rt>ちこく</rt></ruby>し{{blank:ないように}}、<ruby>早<rt>はや</rt></ruby>く<ruby>出<rt>で</rt></ruby>た。", "m": {"en": "I left early so as not to be late.", "ja": "遅刻しない + ように"}},
+     {"jp": "<ruby>放銃<rt>ほうじゅう</rt></ruby>し{{blank:ないようにしている}}。", "m": {"en": "I try not to deal into someone's hand. (mahjong: 放銃する)", "ja": "麻雀の 放銃 を使って"}},
+     {"jp": "この<ruby>像<rt>ぞう</rt></ruby>は、<ruby>後世<rt>こうせい</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>が<ruby>忘<rt>わす</rt></ruby>れないようにする{{blank:ため}}のものだ。", "m": {"en": "This statue is so that future people won't forget.", "ja": "〜ようにする + ため"}}
+    ]
+   },
+   "yourturn": {"label": {"en": "Your turn — something you do so that a future you won't regret", "ja": "あなたの番 — 未来の自分が困らないように、していること"}, "ph": {"en": "＿＿ないように、＿＿ようにしている。  e.g. 日本語を忘れないように、毎週レッスンを受けるようにしている。", "ja": "＿＿ないように、＿＿ようにしている。  例: 日本語を忘れないように、毎週レッスンを受けるようにしている。"}, "store": "fr-l3", "hint": {"en": "End it with かな if it got too serious.", "ja": "重くなったら「かな」で締める。"}},
+   "done": {"en": "Line 3 done", "ja": "セリフ3 完了"}
+  },
+  {
+   "id": "l4", "num": "4", "nav": "〜にとって",
+   "title": "わからない。だから知ろうと思っている。",
+   "tag": {"cls": "n2", "text": {"en": "N2 · 〜にとって / でございます / だから", "ja": "N2 · 〜にとって / でございます / だから"}},
+   "who": {"en": "Fern asks, Frieren answers · the honest version of \"I don't know\"", "ja": "フェルンが聞き、フリーレンが答える · 一番正直な「わからない」"},
+   "line": {
+    "jp": "「それはフリーレン<ruby>様<rt>さま</rt></ruby>にとって、<ruby>大切<rt>たいせつ</rt></ruby>なことなのでございますね」<br>「わからない。だから<ruby>知<rt>し</rt></ruby>ろうと<ruby>思<rt>おも</rt></ruby>っている」",
+    "romaji": "\"Sore wa Frieren-sama ni totte, taisetsu na koto na no de gozaimasu ne.\" — \"Wakaranai. Dakara shirō to omotte iru.\"",
+    "en": {"en": "\"So this is something <i>important to you</i>, Lady Frieren.\" — \"I don't know. <i>That's why</i> I'm trying to find out.\"", "ja": "「それはフリーレン様<i>にとって</i>大切なことなのですね」—「わからない。<i>だから</i>知ろうと思っている」"},
+    "say": "それはフリーレン様にとって、大切なことなのでございますね。わからない。だから知ろうと思っている。"
+   },
+   "clip": {"video": "tR8YH0G67Rk", "scene": [50.7, 62.5], "line": [53.7, 62.3], "src": {"en": "Clip: <a href=\"https://youtu.be/tR8YH0G67Rk?t=50\" target=\"_blank\" rel=\"noopener\">official trailer (TOHO animation)</a> · Fern's でございます is her whole personality", "ja": "クリップ: <a href=\"https://youtu.be/tR8YH0G67Rk?t=50\" target=\"_blank\" rel=\"noopener\">公式本PV</a> · フェルンの「でございます」は彼女の人格そのもの"}},
+   "words": {
+    "h": {"en": "Word by word", "ja": "一語ずつ"},
+    "head": [{"en": "word", "ja": "語"}, {"en": "meaning", "ja": "意味"}],
+    "rows": [
+     ["〜<ruby>様<rt>さま</rt></ruby>", {"en": "honorific above さん. Fern calls her master フリーレン様", "ja": "さん より上の敬称。弟子から師匠へ"}],
+     ["〜にとって", {"en": "for ~ / from ~'s point of view", "ja": "〜の立場から見て"}],
+     ["<ruby>大切<rt>たいせつ</rt></ruby>なこと", {"en": "something important (な-adj + こと)", "ja": "な形容詞 + こと で名詞化"}],
+     ["〜なのでございます", {"en": "= なのです, very polite. Old-fashioned, servant-like", "ja": "なのです の最上級の丁寧。使用人・執事の響き"}],
+     ["わからない", {"en": "I don't know — flat, honest", "ja": "平坦で正直な「わからない」"}],
+     ["だから", {"en": "so / that's why — sentence-initial", "ja": "文頭の「だから」= それゆえ"}]
+    ],
+    "note": null
+   },
+   "grammar": {
+    "h": {"en": "Grammar: 〜にとって · politeness as character", "ja": "文法: 〜にとって · 丁寧さもキャラになる"},
+    "gp": [
+     {"en": "<b>Noun + にとって</b> = \"for (someone)\", judged from their standpoint. Not \"for\" as in purpose (that is ため). 私にとって日本語は… / 外国人にとって漢字は…", "ja": "<b>名詞 + にとって</b> = その人の立場から見て。目的の「ため」とは別物。私にとって日本語は… / 外国人にとって漢字は…"},
+     {"en": "<b>でございます</b> = です in its most formal coat. Hotels, department stores, butlers, and Fern. Hearing it, a Japanese listener instantly pictures who is speaking.", "ja": "<b>でございます</b> = です の最上級。ホテル・デパート・執事・そしてフェルン。聞いただけで人物が浮かぶ。"}
+    ],
+    "p": null,
+    "examples": [
+     {"jp": "<ruby>私<rt>わたし</rt></ruby>にとって、サンディエゴは<ruby>第二<rt>だいに</rt></ruby>の<ruby>故郷<rt>ふるさと</rt></ruby>だ。", "m": {"en": "for me, San Diego is a second hometown", "ja": "立場の〜にとって"}, "say": "私にとって、サンディエゴは第二の故郷だ。"},
+     {"jp": "こちらがメニューでございます。", "m": {"en": "here is the menu (restaurant staff)", "ja": "店員の でございます"}, "say": "こちらがメニューでございます。"},
+     {"jp": "わからない。だから<ruby>聞<rt>き</rt></ruby>いている。", "m": {"en": "I don't know. That's why I'm asking.", "ja": "だから の文頭用法"}, "say": "わからない。だから聞いている。"}
+    ],
+    "note": {"en": "<b>Natural speech:</b> 〜にとって often shortens to 〜には in casual talk: 「俺には難しい」= it's hard for me.", "ja": "<b>会話では:</b> 〜にとって は 〜には に縮むことが多い。「俺には難しい」。"}
+   },
+   "drill": {
+    "h": {"en": "Drill", "ja": "ドリル"},
+    "list": [
+     {"jp": "<ruby>音響<rt>おんきょう</rt></ruby>エンジニア{{blank:にとって}}、<ruby>耳<rt>みみ</rt></ruby>は<ruby>命<rt>いのち</rt></ruby>だ。", "m": {"en": "For an audio engineer, ears are everything.", "ja": "立場の〜にとって"}},
+     {"jp": "お<ruby>待<rt>ま</rt></ruby>たせいたしました。こちらが<ruby>会計<rt>かいけい</rt></ruby>{{blank:でございます}}。", "m": {"en": "Sorry to keep you waiting. Here is the bill. (most polite です)", "ja": "です → でございます"}},
+     {"jp": "わからない。{{blank:だから}}<ruby>調<rt>しら</rt></ruby>べている。", "m": {"en": "I don't know. That's why I'm looking it up.", "ja": "文頭の だから"}}
+    ]
+   },
+   "yourturn": {"label": {"en": "Your turn — what is important to you? 「私にとって〜は〜だ」", "ja": "あなたの番 — 「私にとって〜は〜だ」"}, "ph": {"en": "私にとって＿＿は＿＿だ。  e.g. 私にとって麻雀は、人と話すための道具だ。", "ja": "私にとって＿＿は＿＿だ。  例: 私にとって麻雀は、人と話すための道具だ。"}, "store": "fr-l4", "hint": {"en": "Then answer as Fern: 〜なのでございますね。", "ja": "フェルンになって返す: 〜なのでございますね。"}},
+   "done": {"en": "Line 4 done", "ja": "セリフ4 完了"}
+  },
+  {
+   "id": "l5", "num": "5", "nav": "〜ような",
+   "title": "くだらなかったって笑い飛ばせるような楽しい旅がしたいんだ",
+   "tag": {"cls": "n2", "text": {"en": "N2 · 〜って(引用) / 〜ような / 可能形 / 〜たいんだ", "ja": "N2 · 〜って(引用) / 〜ような / 可能形 / 〜たいんだ"}},
+   "who": {"en": "Himmel, at the start of the journey · the sentence Eisen quotes back 80 years later", "ja": "旅の始まりのヒンメル · 80年後にアイゼンが引用する一文"},
+   "line": {
+    "jp": "<ruby>僕<rt>ぼく</rt></ruby>はね、<ruby>終<rt>お</rt></ruby>わった<ruby>後<rt>あと</rt></ruby>にくだらなかったって<ruby>笑<rt>わら</rt></ruby>い<ruby>飛<rt>と</rt></ruby>ばせるような<ruby>楽<rt>たの</rt></ruby>しい<ruby>旅<rt>たび</rt></ruby>がしたいんだ。",
+    "romaji": "Boku wa ne, owatta ato ni kudaranakatta tte waraitobaseru yō na tanoshii tabi ga shitai n da.",
+    "en": {"en": "\"Me? I want a journey so fun that, when it's over, we can laugh and say <i>'that was pointless'</i>.\"", "ja": "「僕はね、終わったあとに『くだらなかった』って<i>笑い飛ばせるような</i>楽しい旅がしたいんだ」"},
+    "say": "僕はね、終わった後にくだらなかったって笑い飛ばせるような楽しい旅がしたいんだ。"
+   },
+   "clip": {"video": "pOhQlrWm_Qc", "scene": [0, 24.0], "line": [0, 8.0], "src": {"en": "Clip: <a href=\"https://youtu.be/pOhQlrWm_Qc\" target=\"_blank\" rel=\"noopener\">YouTube (fan compilation)</a> · the payoff is in the <a href=\"https://youtu.be/tR8YH0G67Rk?t=62\" target=\"_blank\" rel=\"noopener\">official trailer</a>: くだらなくてとても楽しい旅だったってよ", "ja": "クリップ: <a href=\"https://youtu.be/pOhQlrWm_Qc\" target=\"_blank\" rel=\"noopener\">YouTube（ファン編集）</a> · 回収は<a href=\"https://youtu.be/tR8YH0G67Rk?t=62\" target=\"_blank\" rel=\"noopener\">公式本PV</a>の「くだらなくてとても楽しい旅だったってよ」"}},
+   "words": {
+    "h": {"en": "Word by word", "ja": "一語ずつ"},
+    "head": [{"en": "word", "ja": "語"}, {"en": "meaning", "ja": "意味"}],
+    "rows": [
+     ["<ruby>僕<rt>ぼく</rt></ruby>はね", {"en": "as for me… (ね inside the sentence = a gentle pause)", "ja": "文中の ね = やわらかい間"}],
+     ["くだらない", {"en": "silly, pointless, trivial — here it is a compliment", "ja": "つまらない・意味がない。ここでは褒め言葉"}],
+     ["〜って", {"en": "casual quotation と: (say) \"it was pointless\"", "ja": "引用の と の話し言葉"}],
+     ["<ruby>笑<rt>わら</rt></ruby>い<ruby>飛<rt>と</rt></ruby>ばす", {"en": "laugh (something) off (笑う + 飛ばす)", "ja": "笑って吹き飛ばす（笑う + 飛ばす の複合動詞）"}],
+     ["<ruby>笑<rt>わら</rt></ruby>い<ruby>飛<rt>と</rt></ruby>ばせる", {"en": "potential form: can laugh off", "ja": "可能形"}],
+     ["〜ような", {"en": "such a ~ that / like ~ (connects a clause to a noun)", "ja": "〜という感じの。節を名詞につなぐ"}],
+     ["〜がしたいんだ", {"en": "I want to do ~ (んだ = explaining my feeling)", "ja": "〜したい + んだ（気持ちの説明）"}]
+    ],
+    "note": null
+   },
+   "grammar": {
+    "h": {"en": "Grammar: building a long noun phrase", "ja": "文法: 長い名詞句を組み立てる"},
+    "gp": [
+     {"en": "<b>[clause] ような + noun</b> lets you hang a whole idea on one noun: 笑い飛ばせる<b>ような</b>旅 = a journey (of the kind) you can laugh off. Advanced speakers build sentences this way instead of chaining short ones.", "ja": "<b>[節] ような + 名詞</b> で、ひとつの名詞に丸ごとの考えを掛けられる: 笑い飛ばせる<b>ような</b>旅。上級者は短文を並べる代わりにこの型で話す。"},
+     {"en": "<b>Quotation って</b> works inside: くだらなかった<b>って</b>笑い飛ばせる = can laugh (saying) \"it was pointless\". Quote → verb → ような → noun. Four layers, one breath.", "ja": "<b>引用の って</b> がその中に入る: くだらなかった<b>って</b>笑い飛ばせる。引用 → 動詞 → ような → 名詞。4層を一息で。"}
+    ],
+    "p": null,
+    "examples": [
+     {"jp": "<ruby>何度<rt>なんど</rt></ruby>も<ruby>見<rt>み</rt></ruby>たくなるような<ruby>映画<rt>えいが</rt></ruby>", "m": {"en": "a movie you want to watch again and again", "ja": "節 + ような + 名詞"}, "say": "何度も見たくなるような映画"},
+     {"jp": "「もう<ruby>無理<rt>むり</rt></ruby>」って<ruby>言<rt>い</rt></ruby>いたくなる<ruby>時<rt>とき</rt></ruby>もある。", "m": {"en": "there are times I want to say \"I can't anymore\"", "ja": "引用の って"}, "say": "もう無理って言いたくなる時もある。"},
+     {"jp": "<ruby>失敗<rt>しっぱい</rt></ruby>を<ruby>笑<rt>わら</rt></ruby>い<ruby>飛<rt>と</rt></ruby>ばせる<ruby>人<rt>ひと</rt></ruby>は<ruby>強<rt>つよ</rt></ruby>い。", "m": {"en": "people who can laugh off failure are strong", "ja": "可能形 + 名詞"}, "say": "失敗を笑い飛ばせる人は強い。"}
+    ],
+    "note": {"en": "<b>Natural speech:</b> くだらない is the word for your friends' jokes, bad movies, and the best trips. 「くだらな！」alone is a laugh.", "ja": "<b>会話では:</b> くだらない は友だちの冗談・B級映画・最高の旅に使う。「くだらな！」だけで笑いになる。"}
+   },
+   "drill": {
+    "h": {"en": "Drill", "ja": "ドリル"},
+    "list": [
+     {"jp": "<ruby>一生<rt>いっしょう</rt></ruby><ruby>忘<rt>わす</rt></ruby>れられない{{blank:ような}}<ruby>旅<rt>たび</rt></ruby>がしたい。", "m": {"en": "I want a trip I'll never forget.", "ja": "節 + ような + 名詞"}},
+     {"jp": "「<ruby>最高<rt>さいこう</rt></ruby>だった」{{blank:って}}<ruby>言<rt>い</rt></ruby>えるような<ruby>一年<rt>いちねん</rt></ruby>にしたい。", "m": {"en": "I want to make it a year I can call \"the best\".", "ja": "引用の って"}},
+     {"jp": "その<ruby>失敗<rt>しっぱい</rt></ruby>は、もう{{blank:笑い飛ばせる}}。", "m": {"en": "I can laugh that failure off now. (笑い飛ばす, potential)", "ja": "笑い飛ばす → 笑い飛ばせる"}}
+    ]
+   },
+   "yourturn": {"label": {"en": "Your turn — what kind of ___ do you want? 「〜ような〜がしたいんだ」", "ja": "あなたの番 — 「〜ような〜がしたいんだ」"}, "ph": {"en": "＿＿ような＿＿がしたいんだ。  e.g. 帰ってから「くだらなかった」って言えるような日本旅行がしたいんだ。", "ja": "＿＿ような＿＿がしたいんだ。  例: 帰ってから「くだらなかった」って言えるような日本旅行がしたいんだ。"}, "store": "fr-l5", "hint": {"en": "Start with 僕はね／私はね.", "ja": "「僕はね／私はね」から。"}},
+   "done": {"en": "Line 5 done", "ja": "セリフ5 完了"}
+  },
+  {
+   "id": "l6", "num": "6", "nav": "〜たって",
+   "title": "ハゲなんだからこだわったって意味ないよ",
+   "tag": {"cls": "n1", "text": {"en": "N2→N1 · 〜なんだから / 〜たって / 〜なりの", "ja": "N2→N1 · 〜なんだから / 〜たって / 〜なりの"}},
+   "who": {"en": "Frieren to Heiter · the show is also a comedy, and this is its rhythm", "ja": "フリーレン → ハイター · この作品はコメディでもある。そのテンポ"},
+   "line": {
+    "jp": "「ハゲなんだからこだわったって<ruby>意味<rt>いみ</rt></ruby>ないよ」<br>「ハゲなりのこだわりがあるの」",
+    "romaji": "\"Hage nan dakara kodawatta tte imi nai yo.\" — \"Hage nari no kodawari ga aru no.\"",
+    "en": {"en": "\"You're bald, so <i>what's the point</i> of fussing?\" — \"A bald man has <i>his own way</i> of fussing.\"", "ja": "「ハゲなんだから、こだわっ<i>たって</i>意味ないよ」—「ハゲ<i>なりの</i>こだわりがあるの」"},
+    "say": "ハゲなんだからこだわったって意味ないよ。ハゲなりのこだわりがあるの。"
+   },
+   "clip": {"video": "bdv-uvb1FL4", "scene": [0, 11.0], "line": [4.8, 10.8], "src": {"en": "Clip: <a href=\"https://youtu.be/bdv-uvb1FL4\" target=\"_blank\" rel=\"noopener\">YouTube</a> · 11 seconds, three grammar points", "ja": "クリップ: <a href=\"https://youtu.be/bdv-uvb1FL4\" target=\"_blank\" rel=\"noopener\">YouTube</a> · 11秒に文法3つ"}},
+   "words": {
+    "h": {"en": "Word by word", "ja": "一語ずつ"},
+    "head": [{"en": "word", "ja": "語"}, {"en": "meaning", "ja": "意味"}],
+    "rows": [
+     ["ハゲ", {"en": "bald / a bald guy — blunt. Between friends only", "ja": "禿げ。直球。友だち同士だけ"}],
+     ["〜なんだから", {"en": "\"since you ARE ~\" — reason with a push", "ja": "〜なのだから。理由を押しつける感じ"}],
+     ["こだわる", {"en": "to be particular about, to fuss over", "ja": "細部にこだわる、譲らない"}],
+     ["〜たって", {"en": "= 〜ても (even if), casual", "ja": "〜ても の話し言葉"}],
+     ["<ruby>意味<rt>いみ</rt></ruby>ないよ", {"en": "it's pointless (意味がない, が dropped)", "ja": "意味がない の が が落ちた形"}],
+     ["〜なりの", {"en": "in one's own way / as befits ~", "ja": "その人・その立場らしい"}],
+     ["〜があるの", {"en": "sentence-final の = soft assertion", "ja": "文末の の = やわらかい断定"}]
+    ],
+    "note": null
+   },
+   "grammar": {
+    "h": {"en": "Grammar: the casual trio 〜なんだから · 〜たって · 〜なりの", "ja": "文法: 会話の三点セット 〜なんだから · 〜たって · 〜なりの"},
+    "gp": [
+     {"en": "<b>〜たって</b> = 〜ても in speech. Verb-た + って: こだわったって (even if you fuss), 言ったって (even if I say it). Plus: 〜たって意味ない / 〜たって無駄だ = a set phrase for \"no use\".", "ja": "<b>〜たって</b> = 〜ても の話し言葉。動詞た形 + って: こだわったって、言ったって。「〜たって意味ない／無駄だ」は決まり文句。"},
+     {"en": "<b>〜なりの</b> = one's own kind of. 子どもなりの考え (a child's own thinking), 私なりの答え (my own answer). It grants dignity to a limited position: even a bald man has a bald man's standards.", "ja": "<b>〜なりの</b> = その立場らしい。子どもなりの考え、私なりの答え。限られた立場に尊厳を与える言い方: ハゲにはハゲなりのこだわりがある。"}
+    ],
+    "p": {"en": "This is the register Rolando asked for: how friends actually talk. Frieren is blunt (ハゲなんだから), Heiter answers with a shrug (〜があるの). Nobody is angry.", "ja": "これがRolandoの言う「自然な日本語」。フリーレンは直球（ハゲなんだから）、ハイターは肩をすくめて返す（〜があるの）。誰も怒っていない。"},
+    "examples": [
+     {"jp": "<ruby>今<rt>いま</rt></ruby>さら<ruby>急<rt>いそ</rt></ruby>いだって<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>わないよ。", "m": {"en": "rushing now won't get us there in time", "ja": "急いだって = 急いでも"}, "say": "今さら急いだって間に合わないよ。"},
+     {"jp": "<ruby>俺<rt>おれ</rt></ruby>なりに<ruby>頑張<rt>がんば</rt></ruby>ったよ。", "m": {"en": "I did my best, in my own way", "ja": "俺なりに（副詞形）"}, "say": "俺なりに頑張ったよ。"},
+     {"jp": "<ruby>初心者<rt>しょしんしゃ</rt></ruby>なんだから、<ruby>負<rt>ま</rt></ruby>けたって<ruby>当<rt>あ</rt></ruby>たり<ruby>前<rt>まえ</rt></ruby>だよ。", "m": {"en": "you're a beginner, so of course you lose sometimes", "ja": "なんだから + たって"}, "say": "初心者なんだから、負けたって当たり前だよ。"}
+    ],
+    "note": {"en": "<b>Warning:</b> 〜なんだから sounds like scolding. Use it on friends and yourself, never on a client.", "ja": "<b>注意:</b> 〜なんだから は説教っぽく響く。友だちと自分にだけ。仕事相手には使わない。"}
+   },
+   "drill": {
+    "h": {"en": "Drill", "ja": "ドリル"},
+    "list": [
+     {"jp": "<ruby>今<rt>いま</rt></ruby><ruby>謝<rt>あやま</rt></ruby>っ{{blank:たって}}<ruby>遅<rt>おそ</rt></ruby>いよ。", "m": {"en": "It's too late to apologise now. (謝る)", "ja": "謝った + って"}},
+     {"jp": "<ruby>大人<rt>おとな</rt></ruby>{{blank:なんだから}}、<ruby>自分<rt>じぶん</rt></ruby>で<ruby>決<rt>き</rt></ruby>めなよ。", "m": {"en": "You're an adult, so decide for yourself.", "ja": "理由を押す なんだから"}},
+     {"jp": "<ruby>初心者<rt>しょしんしゃ</rt></ruby>には<ruby>初心者<rt>しょしんしゃ</rt></ruby>{{blank:なりの}}<ruby>戦<rt>たたか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>がある。", "m": {"en": "Beginners have their own way of fighting.", "ja": "〜なりの + 名詞"}}
+    ]
+   },
+   "yourturn": {"label": {"en": "Your turn — defend a small obsession: 「〜なりのこだわりがあるの」", "ja": "あなたの番 — 小さなこだわりを守る: 「〜なりのこだわりがあるの」"}, "ph": {"en": "＿＿なんだから＿＿たって意味ないよ。／＿＿なりのこだわりがあるの。  e.g. フィルムなんだから何枚撮ったって高いよ。／フィルムなりのこだわりがあるの。", "ja": "＿＿なんだから＿＿たって意味ないよ。／＿＿なりのこだわりがあるの。  例: フィルムなんだから何枚撮ったって高いよ。／フィルムなりのこだわりがあるの。"}, "store": "fr-l6", "hint": {"en": "Two voices: Frieren blunt, Heiter shrugging.", "ja": "二役で。フリーレンは直球、ハイターは肩をすくめる。"}},
+   "done": {"en": "Line 6 done", "ja": "セリフ6 完了"}
+  }
+ ],
+ "quiz": [
+  {"q": {"en": "「わかっていたのに、しなかった」— what does のに add?", "ja": "「わかっていたのに、しなかった」— のに が足す意味は？"}, "o": [{"en": "a reason", "ja": "理由"}, {"en": "a regretful gap between A and B", "ja": "AとBの後悔のズレ"}, {"en": "a condition", "ja": "条件"}], "a": 1, "why": {"en": "のに = even though, and B is not what should have followed.", "ja": "のに = 〜なのに。Bは本来と違う結果。"}},
+  {"q": {"en": "知ろうと思う means…", "ja": "知ろうと思う の意味は…"}, "o": [{"en": "I think I know", "ja": "知っていると思う"}, {"en": "I decide to / try to find out", "ja": "知る気になる・知ろうとする"}, {"en": "I want you to know", "ja": "知ってほしい"}], "a": 1, "why": {"en": "volitional + と思う = form the intention.", "ja": "意向形 + と思う = 意志を持つ。"}},
+  {"q": {"en": "「兄にゴルフを教えて＿＿」= my brother taught me.", "ja": "「兄にゴルフを教えて＿＿」= 兄が教えてくれた。"}, "o": [{"en": "あげた", "ja": "あげた"}, {"en": "もらった", "ja": "もらった"}, {"en": "しまった", "ja": "しまった"}], "a": 1, "why": {"en": "に + てもらう = receive the action from them.", "ja": "に + てもらう = 相手の行為を受け取る。"}},
+  {"q": {"en": "「忘れ＿＿ようにメモする」", "ja": "「忘れ＿＿ようにメモする」"}, "o": [{"en": "る", "ja": "る"}, {"en": "ない", "ja": "ない"}, {"en": "た", "ja": "た"}], "a": 1, "why": {"en": "ない + ように = so as not to.", "ja": "ない + ように = 〜しないために。"}},
+  {"q": {"en": "Who says でございます in the show?", "ja": "作中で でございます を使うのは？"}, "o": [{"en": "Frieren", "ja": "フリーレン"}, {"en": "Fern", "ja": "フェルン"}, {"en": "Stark", "ja": "シュタルク"}], "a": 1, "why": {"en": "Fern's ultra-polite register is her character.", "ja": "フェルンの最上級の丁寧さは人格そのもの。"}},
+  {"q": {"en": "私＿＿日本語は宝物だ = for me, Japanese is a treasure.", "ja": "私＿＿日本語は宝物だ"}, "o": [{"en": "にとって", "ja": "にとって"}, {"en": "のために", "ja": "のために"}, {"en": "によって", "ja": "によって"}], "a": 0, "why": {"en": "にとって = from someone's standpoint. ために = purpose.", "ja": "にとって = 立場から見て。ために = 目的。"}},
+  {"q": {"en": "こだわったって means…", "ja": "こだわったって の意味は…"}, "o": [{"en": "because you fussed", "ja": "こだわったから"}, {"en": "even if you fuss", "ja": "こだわっても"}, {"en": "you said you fussed", "ja": "こだわったと言った"}], "a": 1, "why": {"en": "た + って = ても in casual speech.", "ja": "た形 + って = ても の話し言葉。"}},
+  {"q": {"en": "「子ども＿＿考えがある」= a child has a child's own thinking.", "ja": "「子ども＿＿考えがある」"}, "o": [{"en": "なりの", "ja": "なりの"}, {"en": "ような", "ja": "ような"}, {"en": "だけの", "ja": "だけの"}], "a": 0, "why": {"en": "なりの = befitting that position.", "ja": "なりの = その立場らしい。"}}
+ ],
+ "quiz_head": {"h2": {"en": "Final quiz: first-class mage exam", "ja": "最終クイズ: 一級魔法使い試験"}, "who": {"en": "8 questions. Tap an answer. No mimic involved.", "ja": "8問。答えをタップ。ミミックは出ません。"}},
+ "homework": {"h": {"en": "Homework (send in the lesson chat)", "ja": "宿題（レッスンのチャットで送る）"}, "list": [
+  {"en": "Record all six lines in one take. Frieren voice for 1, 4, 6; Himmel voice for 2, 3, 5.", "ja": "6本を一発撮りで録音。1・4・6はフリーレンの声、2・3・5はヒンメルの声で。"},
+  {"en": "Write one paragraph about your mahjong club using のに, 〜ようにしている and 〜なりの.", "ja": "麻雀クラブについて、のに・〜ようにしている・〜なりの を使って1段落書く。"},
+  {"en": "Catch one 語尾 in the next episode you watch and tell me who said it and why.", "ja": "次に観る回で語尾をひとつ拾って、誰が・なぜその語尾かを教えて。"}
+ ]},
+ "cheat": {"h": {"en": "Cheat sheet", "ja": "早見表"}, "rows": [
+  ["〜のに", {"en": "even though (regret)", "ja": "〜なのに（後悔）"}],
+  ["〜ようと思う", {"en": "decide / try to", "ja": "〜する気になる"}],
+  ["〜ということは〜ことだ", {"en": "X means Y", "ja": "定義の型"}],
+  ["〜てもらう", {"en": "receive someone's action", "ja": "相手の行為を受け取る"}],
+  ["〜ないように(する)", {"en": "so as not to / make sure not to", "ja": "〜しないために（心がける）"}],
+  ["〜にとって", {"en": "for (from one's standpoint)", "ja": "立場から見て"}],
+  ["〜ような + noun", {"en": "such a ~ that", "ja": "節を名詞に掛ける"}],
+  ["〜たって / 〜なりの", {"en": "even if (casual) / one's own kind of", "ja": "〜ても（話し言葉）／その立場らしい"}]
+ ]},
+ "cta": {
+  "eyebrow": {"en": "Yuuki@Anime Sensei · Tokyo", "ja": "Yuuki@Anime Sensei · 東京"},
+  "h": {"en": "Next lesson: pick the next title, Rolando.", "ja": "次のレッスンは、次の作品をRolandoが決めて。"},
+  "p": {"en": "Kaguya-sama? Love Live? Ponnomichi for the mahjong vocabulary? Every lesson can start from what you already love. Book the next slot and tell me the title in the chat.", "ja": "かぐや様？ラブライブ？麻雀語彙なら ぽんのみち？レッスンはいつも、もう好きなものから始められます。次の枠を予約して、チャットで作品名を送ってください。"},
+  "button": {"en": "Book the next lesson →", "ja": "次のレッスンを予約 →"},
+  "href": "https://www.animesenseijp.com/",
+  "sub": {"en": "Anime tours in Akihabara", "ja": "秋葉原アニメツアー"},
+  "sub_href": "https://tour.animesenseijp.com/",
+  "lines": ["なんでもっと知ろうと思わなかったんだろう", "だから知ろうと思っている", "次はあなたの好きな作品で。"]
+ },
+ "footer": [
+  {"en": "Made by <a href=\"https://www.italki.com/teacher/4732907\" target=\"_blank\" rel=\"noopener\">Yuuki@Anime Sensei</a> for Rolando's lessons.", "ja": "制作: <a href=\"https://www.italki.com/teacher/4732907\" target=\"_blank\" rel=\"noopener\">Yuuki@Anime Sensei</a>（Rolandoのレッスン用）"},
+  {"en": "Clips are embedded from YouTube and belong to their owners. 葬送のフリーレン © 山田鐘人・アベツカサ／小学館／「葬送のフリーレン」製作委員会", "ja": "動画はYouTubeからの埋め込みで権利は各所有者にあります。葬送のフリーレン © 山田鐘人・アベツカサ／小学館／「葬送のフリーレン」製作委員会"}
+ ]
+}
